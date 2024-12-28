@@ -17,7 +17,7 @@ timezone: Asia/Seoul
 title: Fadongkwon Soft # the main title
 
 tagline: 
-Fadongkwon Soft is a business established by a Korean S/W engineer father with the goal of creating and launching two apps per month to leave a digital legacy for his two children. # it will display as the subtitle
+"Fadongkwon Soft is a business established by a Korean S/W engineer father with the goal of creating and launching two apps per month to leave a digital legacy for his two children." # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
   Fadongkwon-Soft's Blog
