@@ -17,7 +17,7 @@ timezone: Asia/Seoul
 title: Fadongkwon Soft # the main title
 
 tagline: >- # the tagline below the title
-  **Fadongkwon Soft** is a father’s mission to build two apps monthly as a digital legacy for his kids.
+  A father’s mission to build two apps monthly as a digital legacy for his kids.
 
 description: >- # used by seo meta and the atom feed
   Fadongkwon-Soft's Blog
@@ -89,7 +89,7 @@ pageviews:
 #     light — Use the light color scheme
 #     dark — Use the dark color scheme
 #
-theme_mode: dark # [light | dark]
+theme_mode: # [light | dark]
 
 # The CDN endpoint for media resources.
 # Notice that once it is assigned, the CDN url
