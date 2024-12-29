@@ -3,7 +3,7 @@ title: 첫 앱 출시까지의 여정
 description: 이 속도로 목표한 바를 이룰 수 있을 것인가...
 date: 2024-12-29 15:39:00 +0900
 categories: [Blogging, Episode]
-tags: [준비, 앱출시, 사업자, Play Store, App Store, 플레이스토어, 앱스토어, 애플, 개발자, 앱개발]
+tags: [앱출시, 개발자, 앱개발, 1인개발자, 사업자, Play Store, App Store, 플레이스토어, 앱스토어, 애플]
 pin: false
 math: true
 mermaid: true
@@ -65,4 +65,3 @@ image:
 - 통신판매업 등록변허세: 45,000원/년
 
 &nbsp;&nbsp; 구글 개발자 등록비를 제외하면 나머지는 매년 부과되는 비용이다. 대략 20만원 내외의 비용이 연간 유지비로 투입될 예정이며, 얼마나 회수가 가능할 것인지 그리고 수익을 낼 수 있을지는 일단 진행하면서 확인하려고 한다.
-
