@@ -14,10 +14,10 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: FadongkwonSoft # the main title
+title: Fadongkwon # the main title
 
 tagline: >- # the tagline below the title
-  A father’s mission to build two apps monthly as a digital legacy for his kids.
+  Fadongkwon Soft is a father’s mission to build two apps monthly as a digital legacy for his kids.
 
 description: >- # used by seo meta and the atom feed
   Fadongkwon-Soft's Blog
