@@ -14,7 +14,7 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Fadongkwon Soft # the main title
+title: FadongkwonSoft # the main title
 
 tagline: >- # the tagline below the title
   A father’s mission to build two apps monthly as a digital legacy for his kids.
@@ -48,7 +48,6 @@ social:
 # Site Verification Settings
 webmaster_verifications:
   google: Zkdc30NqLSbm2qwusd8zOP-GCGpXAR_M1XclaBDB0W0 # fill in your Google verification code
-  apple: NQ5NzlrOTPAESJhf
   bing: # fill in your Bing verification code
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
