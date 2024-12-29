@@ -15,5 +15,6 @@ order: 1
 > - And that's how the name 'Fadongkwon' was born.
 
 ## LOGO
-![Desktop View](/assets/img/about/streetfighter.png){: .w-50 .normal}
 > The letter 'F' in Fadongkwon was designed by combining the joystick motion sequence used to execute a move in the game with the shape of the energy wave.
+
+![Desktop View](/assets/img/about/streetfighter.png){: .normal}
