@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 1
 ---
 
-![Desktop View](/assets/img/about/Logo_w_text_3.png){: width="300" .normal}
+![Desktop View](/assets/img/about/Logo_w_text_3.png){: width="350" .normal}
 
 **Fadongkwon Soft** is a business founded by a Korean software developer. He aims to launch two apps every month. Through this, he seeks to create digital assets and build wealth for his family.
 - - -
@@ -18,4 +18,4 @@ order: 1
 ## LOGO
 The letter 'F' in Fadongkwon was designed by combining the joystick motion sequence used to execute a move in the game with the shape of the energy wave.
 
-![Desktop View](/assets/img/about/streetfighter.png){: width="300" .normal}
+![Desktop View](/assets/img/about/streetfighter.png){: width="350" .normal}
