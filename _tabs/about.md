@@ -6,7 +6,7 @@ order: 1
 
 > ![Desktop View](/assets/img/about/Logo_w_text_3.png){: .w-50 .normal}
 > 
-> **Fadongkwon Soft** is a business established by a Korean S/W engineer father with the goal of creating and launching two apps per month to leave a digital legacy for his two children.
+> **Fadongkwon Soft** is a business founded by a Korean software developer. He aims to launch two apps every month. Through this, he seeks to create digital assets and build wealth for his family.
 
 ## WHY Fadongkwon?
 > - My children's first name is 류O(Ryu OOO).
