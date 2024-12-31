@@ -17,7 +17,7 @@ timezone: Asia/Seoul
 title: Fadongkwon # the main title
 
 tagline: >- # the tagline below the title
-  **Fa**ther’s<br>**Fa**mily-focused mission:<br>**Fa**shioning your <br>**Fa**vorite apps.
+  <b>Fa</<b>ther’s<br><b>Fa</<b>mily-focused mission:<br><b>Fa</<b>shioning your <br><b>Fa</<b>vorite apps.
 
 description: >- # used by seo meta and the atom feed
   Fadongkwon-Soft's Blog
