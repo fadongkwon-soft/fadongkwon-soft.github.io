@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 5
 ---
 This Privacy Policy applies to all mobile applications (referred to as the "Application") developed by Fadongkwon Soft (referred to as the "Service Provider"). The Application is provided as an ad-supported service and is intended for use "as is."
 - - -
