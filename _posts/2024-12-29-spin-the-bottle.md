@@ -27,9 +27,11 @@ image:
 ## Play Video
 {% include embed/youtube.html id='7pIVdiZN86M' %}
 
-## Download(TBD)
+## Download
+> - Ad-supported version released globally on Google Play Store (excluding Korea, as of January 5, 2025)
+{: .prompt-info }
 - With Ad<br>
-![Desktop View](/assets/img/common/google.png){: .normal}
+[![Desktop View](/assets/img/common/google.png){: .normal}](https://play.google.com/store/apps/details?id=com.fadongkwon.spin_the_bottle_ad){:target="_blank"}
 ![Desktop View](/assets/img/common/apple.png){: .normal}
 - Ad free<br>
 ![Desktop View](/assets/img/common/google.png){: .normal}
