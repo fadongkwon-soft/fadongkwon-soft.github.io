@@ -28,7 +28,7 @@ image:
 {% include embed/youtube.html id='7pIVdiZN86M' %}
 
 ## Download
-{: .prompt-info }
+
 - With Ad<br>
 [![Desktop View](/assets/img/common/google.png){: .normal}](https://play.google.com/store/apps/details?id=com.fadongkwon.spin_the_bottle_ad){:target="_blank"}
 - Ad free<br>
