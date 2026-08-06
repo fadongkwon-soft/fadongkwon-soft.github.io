@@ -28,4 +28,3 @@ image:
 ## Download
 
 [![Desktop View](/assets/img/common/google.png){: .normal}](https://play.google.com/store/apps/details?id=com.fadongkwon.juice_spinner_ad){:target="_blank"}
-[![Desktop View](/assets/img/common/apple.png){: .normal}](https://apps.apple.com/us/app/juice-spinner/id6742254371){:target="_blank"}
