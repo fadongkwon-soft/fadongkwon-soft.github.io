@@ -8,8 +8,9 @@
 <style>
   /* Chirpy caps the sidebar subtitle at 3rem (two lines), but our tagline is
      four lines, so lines 3-4 spilled over the nav menu. Let the box grow;
-     the nav is in normal flow and moves down with it. */
+     the nav is in normal flow and moves down with it. !important because this
+     hook is emitted before the theme stylesheet, which would otherwise win. */
   #sidebar .site-subtitle {
-    height: auto;
+    height: auto !important;
   }
 </style>
