@@ -31,8 +31,9 @@ Google Play에 올려둔 세 앱을 Flutter Web으로 포팅해 토스 미니앱
 로또형(범위 지정)과 연금복권 720+형을 지원하고, 번호 저장·지난 회차 당첨 확인·
 '내 사주로또 운' 시뮬레이션까지 토스 안에서 그대로 동작합니다.
 
-- 열기: `intoss://saju-lucky-number`
+- 열기: `intoss://saju-lucky-number` — 아래 QR을 폰 카메라로 찍으면 바로 열립니다
 
+![사주로또 QR](/assets/img/20260812_apps-in-toss/qr-saju-lotto.png){: .w-25 .normal}
 ![Desktop View](/assets/img/20260812_apps-in-toss/saju-input.png){: .w-25 .normal}
 ![Desktop View](/assets/img/20260812_apps-in-toss/saju-result.png){: .w-25 .normal}
 
@@ -40,16 +41,18 @@ Google Play에 올려둔 세 앱을 Flutter Web으로 포팅해 토스 미니앱
 인원 수(2~12명)와 과일을 고르고 돌리는 복불복 룰렛입니다. 음료 내기, 청소 당번 정하기,
 순서 정하기 등 모임에서 가볍게 쓰기 좋습니다.
 
-- 열기: `intoss://juice-spinner`
+- 열기: `intoss://juice-spinner` — 아래 QR을 폰 카메라로 찍으면 바로 열립니다
 
+![주스 스피너 QR](/assets/img/20260812_apps-in-toss/qr-juice-spinner.png){: .w-25 .normal}
 ![Desktop View](/assets/img/20260812_apps-in-toss/juice-main.png){: .w-25 .normal}
 
 ### 병 돌리기 (Spin the Bottle)
 클래식한 병 돌리기를 그대로 옮겼습니다. 소주·맥주·와인 등 9종의 병 중에 골라 돌리면
 병 입구가 가리키는 사람이 당첨. 벌칙 정하기, 진실게임까지 자리에 맞게 활용해 보세요.
 
-- 열기: `intoss://spin-the-bottle`
+- 열기: `intoss://spin-the-bottle` — 아래 QR을 폰 카메라로 찍으면 바로 열립니다
 
+![병 돌리기 QR](/assets/img/20260812_apps-in-toss/qr-spin-the-bottle.png){: .w-25 .normal}
 ![Desktop View](/assets/img/20260812_apps-in-toss/bottle-main.png){: .w-25 .normal}
 
 ## 뒷이야기
@@ -59,6 +62,6 @@ Flutter 앱을 토스 WebView 미니앱으로 옮기면서 겪은 것들이 꽤 
 작업들이었는데, 이 과정은 기회가 되면 별도 포스트로 정리해 보겠습니다.
 
 ## Download
-> 토스 앱에서 **사주로또**, **주스 스피너**, **병 돌리기**를 검색하거나 위의 `intoss://` 링크를
-> 휴대폰에서 열어주세요. Google Play 버전은 각 앱의 제품 포스트에서 확인할 수 있습니다.
+> 토스 앱에서 **사주로또**, **주스 스피너**, **병 돌리기**를 검색하거나, 각 앱의 QR을 폰 카메라로
+> 찍어주세요(토스가 설치돼 있어야 합니다). Google Play 버전은 각 앱의 제품 포스트에서 확인할 수 있습니다.
 {: .prompt-tip }
