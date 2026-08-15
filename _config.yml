@@ -228,3 +228,5 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+
+# Pages source switched to GitHub Actions on 2026-08-15
