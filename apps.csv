@@ -1,5 +1,5 @@
-id,name,tagline,emoji,play_package,toss_scheme,play,toss
-juice-spinner,주스 스피너,오늘 주스는 누가 쏠까? 복불복 룰렛,🧃,com.fadongkwon.juice_spinner_ad,intoss://juice-spinner,1,1
-spin-the-bottle,병 돌리기,모임을 달구는 병 돌리기 복불복,🍾,com.fadongkwon.spin_the_bottle_ad,intoss://spin-the-bottle,1,1
-saju-lotto,사주로또,내 사주로 뽑는 로또 번호,🔮,com.fadongkwon.saju_lotto,intoss://saju-lucky-number,1,1
-reaction,반응속도 챌린지,당신의 반응속도는 몇 ms?,⚡,com.fadongkwon.reaction,intoss://reaction,0,0
+id,name,tagline,emoji,play_package,toss_scheme,play,toss,name_en,tagline_en,icon
+juice-spinner,주스 스피너,오늘 주스는 누가 쏠까? 복불복 룰렛,🧃,com.fadongkwon.juice_spinner_ad,intoss://juice-spinner,1,1,Juice Spinner,Who buys the juice? Party roulette,https://fadongkwon.com/app-icons/juice-spinner.png
+spin-the-bottle,병 돌리기,모임을 달구는 병 돌리기 복불복,🍾,com.fadongkwon.spin_the_bottle_ad,intoss://spin-the-bottle,1,1,Spin the Bottle,The party classic bottle spin,https://fadongkwon.com/app-icons/spin-the-bottle.png
+saju-lotto,사주로또,내 사주로 뽑는 로또 번호,🔮,com.fadongkwon.saju_lotto,intoss://saju-lucky-number,1,1,Saju Lotto,Lucky lotto numbers from your saju,https://fadongkwon.com/app-icons/saju-lotto.png
+reaction,반응속도 챌린지,당신의 반응속도는 몇 ms?,⚡,com.fadongkwon.reaction,intoss://reaction,0,0,Reaction Challenge,How fast can you tap?,https://fadongkwon.com/app-icons/reaction.png
