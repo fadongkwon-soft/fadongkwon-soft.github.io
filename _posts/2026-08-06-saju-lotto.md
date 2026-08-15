@@ -30,5 +30,6 @@ image:
 ![Desktop View](/assets/img/20260806_saju-lotto/screenshot-3-pension.png){: .w-25 .normal}
 
 ## Download
-> Google Play: **TBD** — currently under review. The download link will be added once the app is approved and publicly released.
+> Google Play: [사주로또 (Saju Lotto)](https://play.google.com/store/apps/details?id=com.fadongkwon.saju_lotto)
+> 토스 미니앱: `intoss://saju-lucky-number` — [QR로 바로 열기](/posts/apps-in-toss-launch/)
 {: .prompt-tip }
