@@ -46,6 +46,8 @@ Google Play에 올려둔 세 앱을 Flutter Web으로 포팅해 토스 미니앱
 ![주스 스피너 QR](/assets/img/20260812_apps-in-toss/qr-juice-spinner.png){: .w-25 .normal}
 ![Desktop View](/assets/img/20260812_apps-in-toss/juice-main.png){: .w-25 .normal}
 
+{% include embed/youtube.html id='6fmDzfNP6aA' %}
+
 ### 병 돌리기 (Spin the Bottle)
 클래식한 병 돌리기를 그대로 옮겼습니다. 소주·맥주·와인 등 9종의 병 중에 골라 돌리면
 병 입구가 가리키는 사람이 당첨. 벌칙 정하기, 진실게임까지 자리에 맞게 활용해 보세요.
@@ -54,6 +56,8 @@ Google Play에 올려둔 세 앱을 Flutter Web으로 포팅해 토스 미니앱
 
 ![병 돌리기 QR](/assets/img/20260812_apps-in-toss/qr-spin-the-bottle.png){: .w-25 .normal}
 ![Desktop View](/assets/img/20260812_apps-in-toss/bottle-main.png){: .w-25 .normal}
+
+{% include embed/youtube.html id='7pIVdiZN86M' %}
 
 ## 뒷이야기
 Flutter 앱을 토스 WebView 미니앱으로 옮기면서 겪은 것들이 꽤 많았습니다.
