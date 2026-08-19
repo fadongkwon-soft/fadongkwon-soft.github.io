@@ -1,0 +1,21 @@
+<!-- 토스 미니앱 리다이렉트 공용 조각.
+     사용: include 전에 page.toss_scheme(intoss://…), page.app_name 설정.
+     동작: 진입 즉시 intoss 딥링크 시도 → 안 열리면(토스 미설치/PC) 안내 표시. -->
+<div style="max-width:420px;margin:8vh auto;padding:2rem 1.5rem;text-align:center;font-family:'Pretendard Variable',Pretendard,-apple-system,'Noto Sans KR',sans-serif;">
+  <h1 style="font-size:1.5rem;margin-bottom:.6rem;">{{ page.app_name }}</h1>
+  <p style="color:#888;margin-bottom:1.6rem;">토스 앱에서 미니앱을 여는 중입니다…</p>
+  <a id="open-toss" href="{{ page.toss_scheme }}"
+     style="display:inline-block;background:#3182f6;color:#fff;text-decoration:none;font-weight:700;padding:.9rem 2rem;border-radius:14px;">
+    토스에서 열기
+  </a>
+  <p style="color:#888;font-size:.85rem;margin-top:1.4rem;line-height:1.6;">
+    버튼이 동작하지 않으면 휴대폰에 <a href="https://toss.im" style="color:#3182f6;">토스 앱</a>을 설치한 뒤 다시 열어주세요.<br>
+    PC에서는 열 수 없어요 — 휴대폰으로 이 페이지를 열어주세요.
+  </p>
+</div>
+<script>
+  // 모바일이면 진입 즉시 딥링크 시도 (실패해도 위 안내가 그대로 남는다)
+  if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
+    setTimeout(function () { window.location.href = '{{ page.toss_scheme }}'; }, 300);
+  }
+</script>
