@@ -32,6 +32,6 @@ image:
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.hangul_monsters>
-- 앱인토스(토스 미니앱) 버전은 심사 중입니다 — 출시되면 이 글에 링크를 추가할게요.
+- 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/hangul-monsters/> — 토스 앱에서 설치 없이 바로 실행돼요.
 
 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.
