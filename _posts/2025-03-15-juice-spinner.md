@@ -1,4 +1,4 @@
----
+﻿---
 title: Juice Spinner
 description: A cute juice roulette to spin and enjoy
 date: 2025-03-15 22:48:00 +0900
@@ -28,3 +28,5 @@ image:
 ## Download
 
 [![Desktop View](/assets/img/common/google.png){: .normal}](https://play.google.com/store/apps/details?id=com.fadongkwon.juice_spinner_ad){:target="_blank"}
+
+토스 미니앱: <https://fadongkwon.com/toss/juice-spinner/>

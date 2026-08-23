@@ -1,4 +1,4 @@
----
+﻿---
 title: Saju Lotto (사주로또)
 description: Lucky lottery numbers drawn from your birth date
 date: 2026-08-06 15:00:00 +0900
@@ -31,5 +31,5 @@ image:
 
 ## Download
 > Google Play: [사주로또 (Saju Lotto)](https://play.google.com/store/apps/details?id=com.fadongkwon.saju_lotto)
-> 토스 미니앱: `intoss://saju-lucky-number` — [QR로 바로 열기](/posts/apps-in-toss-launch/)
+> 토스 미니앱: <https://fadongkwon.com/toss/saju-lucky-number/>
 {: .prompt-tip }

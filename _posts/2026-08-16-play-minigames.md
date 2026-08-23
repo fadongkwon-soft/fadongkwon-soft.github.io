@@ -46,10 +46,10 @@ Flutter 없이 순수 웹 기술(Vite + TypeScript)로 만든 초경량 미니�
 {% include embed/youtube.html id='NTpypkCBVxc' %}
 
 ## Download
-현재 두 게임 모두 Google Play 심사 중입니다. 승인되는 대로 아래 링크가 활성화됩니다.
+두 게임 모두 Google Play와 앱인토스(토스 미니앱)에 출시되었습니다.
 
-- 반응속도 챌린지: <https://play.google.com/store/apps/details?id=com.fadongkwon.reaction>
-- 기억력 카드: <https://play.google.com/store/apps/details?id=com.fadongkwon.memory_card>
+- 반응속도 챌린지: [Google Play](https://play.google.com/store/apps/details?id=com.fadongkwon.reaction) · [토스 미니앱](https://fadongkwon.com/toss/reaction/)
+- 기억력 카드: [Google Play](https://play.google.com/store/apps/details?id=com.fadongkwon.memory_card) · [토스 미니앱](https://fadongkwon.com/toss/memory-card/)
 
-앱인토스(토스 미니앱) 버전도 준비 중입니다. 소식은 이 블로그와
+소식은 이 블로그와
 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드릴게요.

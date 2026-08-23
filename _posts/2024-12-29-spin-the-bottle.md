@@ -1,4 +1,4 @@
----
+﻿---
 title: Spin the Bottle
 description: A simple drinking game
 date: 2024-12-29 22:38:00 +0900
@@ -33,3 +33,5 @@ image:
 [![Desktop View](/assets/img/common/google.png){: .normal}](https://play.google.com/store/apps/details?id=com.fadongkwon.spin_the_bottle_ad){:target="_blank"}
 - Ad free<br>
 [![Desktop View](/assets/img/common/google.png){: .normal}](https://play.google.com/store/apps/details?id=com.fadongkwon.spin_the_bottle){:target="_blank"}
+
+토스 미니앱: <https://fadongkwon.com/toss/spin-the-bottle/>
