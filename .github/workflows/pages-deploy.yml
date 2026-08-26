@@ -9,12 +9,6 @@ on:
       - README.md
       - LICENSE
 
-  # 예약 게시용 정기 빌드: Jekyll은 미래 날짜 포스트를 빌드에서 제외하므로,
-  # 날짜가 도래한 포스트를 공개하려면 push 없이도 매일 한 번 빌드해야 한다.
-  # 12:00 UTC = 21:00 KST — 그날 날짜의 포스트(09:00~10:40 KST)가 모두 포함되는 시각.
-  schedule:
-    - cron: "0 12 * * *"
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
