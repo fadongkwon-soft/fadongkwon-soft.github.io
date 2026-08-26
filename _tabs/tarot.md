@@ -12,7 +12,7 @@ order: 2
 {: .prompt-warning }
 
 {% assign all_tarot = site.categories['Tarot'] %}
-**공개 진행: {{ all_tarot.size }} / 78장**
+{% if all_tarot %}**공개 진행: {{ all_tarot.size }} / 78장**{% endif %}
 
 {% assign groups = "Major Arcana|Wands|Cups|Swords|Pentacles" | split: "|" %}
 {% assign labels = "메이저 아르카나 (22장)|완드 Wands · 불 (14장)|컵 Cups · 물 (14장)|소드 Swords · 공기 (14장)|펜타클 Pentacles · 흙 (14장)" | split: "|" %}
@@ -20,8 +20,9 @@ order: 2
 
 {% for g in groups %}
 {% assign gi = forloop.index0 %}
-{% assign items = site.categories[g] | sort: 'date' %}
-{% if items.size > 0 %}
+{% assign group_posts = site.categories[g] %}
+{% if group_posts %}
+{% assign items = group_posts | sort: 'date' %}
 ## {{ labels[gi] }}
 
 {{ notes[gi] }}
