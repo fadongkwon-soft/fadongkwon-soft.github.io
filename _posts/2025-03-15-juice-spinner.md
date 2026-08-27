@@ -1,4 +1,4 @@
-﻿---
+---
 title: Juice Spinner
 description: A cute juice roulette to spin and enjoy
 date: 2025-03-15 22:48:00 +0900

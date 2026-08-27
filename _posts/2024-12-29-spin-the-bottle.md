@@ -1,4 +1,4 @@
-﻿---
+---
 title: Spin the Bottle
 description: A simple drinking game
 date: 2024-12-29 22:38:00 +0900

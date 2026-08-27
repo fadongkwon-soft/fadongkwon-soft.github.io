@@ -1,4 +1,4 @@
-﻿---
+---
 title: Saju Lotto (사주로또)
 description: Lucky lottery numbers drawn from your birth date
 date: 2026-08-06 15:00:00 +0900
