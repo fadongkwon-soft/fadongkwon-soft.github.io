@@ -87,6 +87,16 @@ def check(path):
         if not re.match(r'^---\n.*?\n---\n', text, re.S):
             out.append('%s: front matter 가 닫히지 않았다' % rel)
 
+    # HTML 주석은 Liquid 를 가리지 못한다. `<!-- {% include x %} -->` 도 그대로 실행된다.
+    # 2026-08-29: search-loader.html 주석에 "이렇게 불린다"는 설명으로 자기 자신을
+    # include 하는 태그를 적었다가 무한 재귀로 jekyll build 가 죽었다.
+    # 주석에 예시를 남기려면 중괄호를 빼거나 {% raw %} 로 감쌀 것.
+    for m in re.finditer(r'<!--.*?-->', text, re.S):
+        for t in TAG_RE.finditer(m.group(0)):
+            line = text.count('\n', 0, m.start() + t.start()) + 1
+            out.append('%s:%d: HTML 주석 안의 {%% %s %%} 는 그대로 실행된다 '
+                       '(주석은 Liquid 를 가리지 못한다)' % (rel, line, t.group(1)))
+
     stack = []
     in_raw = False
     for m in TAG_RE.finditer(text):
