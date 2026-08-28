@@ -5,17 +5,22 @@
   crossorigin="anonymous"
 ></script>
 
+{%- comment -%}
+  아래 <style> 은 모든 페이지 HTML 에 그대로 실려 나간다. 설명은 여기(Liquid 주석,
+  출력되지 않음)에 쓰고 CSS 안에는 최소한만 남긴다.
+
+  · #sidebar .site-subtitle — Chirpy 는 사이드바 부제를 3rem(두 줄)으로 자르는데
+    이 사이트 tagline 은 네 줄이라 3~4번째 줄이 내비 메뉴 위로 넘쳤다. 박스를
+    늘려주면 내비는 normal flow 라 같이 내려간다. 이 훅이 테마 스타일시트보다
+    먼저 나오기 때문에 !important 가 필요하다.
+  · .lang-switch — sidebar.html 오버라이드의 한/영 스위처. 사이드바 하단 아이콘 줄
+    바로 위에 놓이며, 현재 언어는 강조하고 다른 언어는 흐리게 둔다.
+{%- endcomment -%}
 <style>
-  /* Chirpy caps the sidebar subtitle at 3rem (two lines), but our tagline is
-     four lines, so lines 3-4 spilled over the nav menu. Let the box grow;
-     the nav is in normal flow and moves down with it. !important because this
-     hook is emitted before the theme stylesheet, which would otherwise win. */
   #sidebar .site-subtitle {
     height: auto !important;
   }
 
-  /* 한/영 언어 스위처 (sidebar.html 오버라이드에서 사용). 사이드바 하단 아이콘 줄
-     바로 위에 놓이며, 현재 언어는 강조하고 다른 언어는 흐리게 둔다. */
   #sidebar .lang-switch {
     text-align: center;
     font-size: 0.82rem;
