@@ -45,6 +45,41 @@ TARGETS = [
 ]
 ROOT_FILES = ['index.html', 'sitemap.xml', 'robots.txt']
 
+INCLUDE_RE = re.compile(r'\{%-?\s*include(?:_cached|_relative)?\s+([A-Za-z0-9/_.-]+\.html)')
+
+
+def theme_includes():
+    """Gemfile 이 고정한 테마 버전이 제공하는 include 목록.
+
+    테마는 gem 이라 로컬에 파일이 없다. 목록을 저장소에 고정해 두고 대조한다.
+    2026-08-29 사고: 오버라이드를 7.2.4 원본에서 복사했는데 CI 는 `~> 7.2` 로
+    7.6.0 을 받아왔고, 7.6.0 에서 제거된 post-description.html / no-linenos.html 을
+    참조해 jekyll build 가 실패했다. 이 검사가 그때 있었다면 푸시 전에 잡혔다.
+    """
+    p = os.path.join(ROOT, 'tools', 'theme-includes.txt')
+    names = set()
+    if os.path.exists(p):
+        for line in io.open(p, encoding='utf-8'):
+            line = line.strip()
+            if line and not line.startswith('#') and line.endswith('.html'):
+                names.add(line.split('_includes/', 1)[-1])
+    return names
+
+
+def check_includes(path, text, rel, theme):
+    """{% include X %} 가 저장소나 테마에 실제로 존재하는지 확인."""
+    out = []
+    for m in INCLUDE_RE.finditer(text):
+        name = m.group(1)
+        line = text.count('\n', 0, m.start()) + 1
+        if os.path.exists(os.path.join(ROOT, '_includes', name.replace('/', os.sep))):
+            continue
+        if name in theme:
+            continue
+        out.append('%s:%d: include %s 를 저장소와 테마(tools/theme-includes.txt) '
+                   '어디서도 찾을 수 없다' % (rel, line, name))
+    return out
+
 
 def collect():
     files = []
@@ -63,7 +98,7 @@ def collect():
     return sorted(files)
 
 
-def check(path):
+def check(path, theme=frozenset()):
     rel = os.path.relpath(path, ROOT).replace('\\', '/')
     out = []
     raw = io.open(path, 'rb').read()
@@ -134,15 +169,17 @@ def check(path):
             pass
     for tag, line in stack:
         out.append('%s:%d: %s 블록이 닫히지 않았다' % (rel, line, tag))
+    out.extend(check_includes(path, text, rel, theme))
     return out
 
 
 def main():
     files = collect()
+    theme = theme_includes()
     problems = []
     for p in files:
-        problems.extend(check(p))
-    print('검사 %d개 파일' % len(files))
+        problems.extend(check(p, theme))
+    print('검사 %d개 파일 (테마 include %d개 대조)' % (len(files), len(theme)))
     if problems:
         print('')
         print('[문제] %d건' % len(problems))

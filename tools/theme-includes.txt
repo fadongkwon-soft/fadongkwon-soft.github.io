@@ -1,0 +1,53 @@
+#   curl -sL https://github.com/cotes2020/jekyll-theme-chirpy/archive/refs/tags/vX.Y.Z.tar.gz | tar tz | grep _includes/
+# jekyll-theme-chirpy 7.6.0 이 제공하는 include 목록 (Gemfile 이 고정한 버전).
+# liquid_lint.py 가 이 목록으로 {% include %} 참조를 검증한다.
+# 테마를 올리면 이 파일을 반드시 갱신할 것:
+_includes/analytics
+_includes/analytics/cloudflare.html
+_includes/analytics/fathom.html
+_includes/analytics/goatcounter.html
+_includes/analytics/google.html
+_includes/analytics/matomo.html
+_includes/analytics/umami.html
+_includes/comment.html
+_includes/comments
+_includes/comments/disqus.html
+_includes/comments/giscus.html
+_includes/comments/utterances.html
+_includes/datetime.html
+_includes/embed
+_includes/embed/audio.html
+_includes/embed/bilibili.html
+_includes/embed/spotify.html
+_includes/embed/twitch.html
+_includes/embed/video.html
+_includes/embed/youtube.html
+_includes/favicons.html
+_includes/footer.html
+_includes/head.html
+_includes/js-selector.html
+_includes/jsdelivr-combine.html
+_includes/lang.html
+_includes/language-alias.html
+_includes/media-url.html
+_includes/metadata-hook.html
+_includes/notification.html
+_includes/origin-type.html
+_includes/pageviews
+_includes/pageviews/goatcounter.html
+_includes/post-edit.html
+_includes/post-nav.html
+_includes/post-paginator.html
+_includes/post-sharing.html
+_includes/post-summary.html
+_includes/read-time.html
+_includes/refactor-content.html
+_includes/related-posts.html
+_includes/search-loader.html
+_includes/search-results.html
+_includes/sidebar.html
+_includes/toc-status.html
+_includes/toc.html
+_includes/topbar.html
+_includes/trending-tags.html
+_includes/update-list.html

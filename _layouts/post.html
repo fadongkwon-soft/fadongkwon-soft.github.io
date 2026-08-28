@@ -1,9 +1,9 @@
 ---
-# ⚠️ jekyll-theme-chirpy v7.2.4 의 _layouts/post.html 오버라이드다.
-# 원본 대비 변경점은 한 곳뿐 — 하단 카테고리를 영문 포스트에서만 평문으로 낸다.
-# 테마를 올릴 때 원본과 대조할 것.
+#   jekyll-theme-chirpy v7.6.0 의 _layouts/post.html 오버라이드다.
+# Gemfile 이 버전을 고정하고 있으니, 테마를 올릴 때 원본과 다시 대조할 것.
+# (7.2.4 기준으로 만들었다가 7.6.0 에서 제거된 include 를 참조해 빌드가 죽었다)
+# 원본 대비 변경점 한 곳 — 하단 카테고리를 영문 포스트에서만 평문으로 낸다.
 layout: default
-refactor: true
 panel_includes:
   - toc
 tail_includes:
@@ -117,9 +117,7 @@ script_includes:
     <dialog id="toc-popup" class="p-0">
       <div class="header d-flex flex-row align-items-center justify-content-between">
         <div class="label text-truncate py-2 ms-4">{{- page.title -}}</div>
-        <button id="toc-popup-close" type="button" class="btn mx-1 my-1 opacity-75">
-          <i class="fas fa-close"></i>
-        </button>
+        <button id="toc-popup-close" type="button" class="btn-close btn-sm mx-3" aria-label="Close"></button>
       </div>
       <div id="toc-popup-content" class="px-4 py-3 pb-4"></div>
     </dialog>
@@ -130,27 +128,32 @@ script_includes:
   </div>
 
   <div class="post-tail-wrapper text-muted">
-    <!-- categories -->
-    {%- comment -%}
-      영문 포스트에서는 카테고리를 링크가 아니라 평문으로 낸다.
-      `/categories/<name>/` 아카이브는 jekyll-archives 가 site.posts(한국어)에서만
-      만들기 때문에, 링크로 두면 영문 독자가 한국어 목록 페이지로 떨어진다.
-      카테고리 값 자체는 영문 타로 허브(/en/tarot/)와 영문 홈의 분류에 쓰이므로
-      front matter 에서 빼지 않고 유지한다.
-    {%- endcomment -%}
-    {% if page.categories.size > 0 %}
-      <div class="post-meta mb-3">
-        <i class="far fa-folder-open fa-fw me-1"></i>
-        {% for category in page.categories %}
-          {%- if page.lang == 'en' -%}
-            {{ category }}
-          {%- else -%}
-            <a href="{{ site.baseurl }}/categories/{{ category | slugify | url_encode }}/">{{ category }}</a>
-          {%- endif -%}
-          {%- unless forloop.last -%},{%- endunless -%}
-        {% endfor %}
-      </div>
-    {% endif %}
+    <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+      <!-- categories -->
+      {% if page.categories.size > 0 %}
+        <div class="post-meta">
+          <i class="far fa-folder-open fa-fw me-1"></i>
+          {%- comment -%}
+            영문 포스트에서는 카테고리를 링크가 아니라 평문으로 낸다.
+            `/categories/<name>/` 아카이브는 jekyll-archives 가 site.posts(한국어)에서만
+            만들기 때문에, 링크로 두면 영문 독자가 한국어 목록 페이지로 떨어진다.
+            카테고리 값 자체는 영문 타로 허브(/en/tarot/)와 영문 홈의 분류에 쓰이므로
+            front matter 에서 빼지 않고 유지한다.
+          {%- endcomment -%}
+          {% for category in page.categories %}
+            {%- if page.lang == 'en' -%}
+              {{ category }}
+            {%- else -%}
+              <a href="{{ site.baseurl }}/categories/{{ category | slugify | url_encode }}/">{{ category }}</a>
+            {%- endif -%}
+            {%- unless forloop.last -%},{%- endunless -%}
+          {% endfor %}
+        </div>
+      {% endif %}
+
+      <!-- "Edit this post" link -->
+      {% include post-edit.html lang=lang %}
+    </div>
 
     <!-- tags -->
     {% if page.tags.size > 0 %}
