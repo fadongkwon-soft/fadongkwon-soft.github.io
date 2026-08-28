@@ -6,7 +6,10 @@ theme: jekyll-theme-chirpy
 # The language of the webpage › http://www.lingoes.net/en/translator/langcode.htm
 # If it has the same name as one of the files in folder `_data/locales`, the layout language will also be changed,
 # otherwise, the layout language will use the default value of 'en'.
-lang: en
+lang: ko-KR
+
+# jekyll-seo-tag 의 og:locale 용. lang 과 별개 키라 둘 다 지정한다.
+locale: ko_KR
 
 # Change to your timezone › https://kevinnovak.github.io/Time-Zone-Picker
 timezone: Asia/Seoul
@@ -174,6 +177,11 @@ collections:
   tabs:
     output: true
     sort_by: order
+  # 영문판 포스트. 한국어 `_posts` 와 분리해 site.posts·페이지네이션·
+  # jekyll-archives·RSS 를 한국어 전용으로 유지한다(기존 URL 무변경).
+  # URL 은 각 문서 front matter 의 permalink 로 명시한다.
+  en_posts:
+    output: true
 
 defaults:
   - scope:
@@ -190,6 +198,15 @@ defaults:
       path: _drafts
     values:
       comments: false
+  - scope:
+      path: ""
+      type: en_posts
+    values:
+      layout: post
+      lang: en
+      locale: en_US
+      comments: true
+      toc: true
   - scope:
       path: ""
       type: tabs # see `site.collections`

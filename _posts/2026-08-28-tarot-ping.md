@@ -7,6 +7,7 @@ tags: [app, android, 타로, 타로카드, 운세, 귀여운앱, tarot, 1인개�
 pin: false
 image:
   path: /assets/img/20260828_tarot-ping/feature.png
+alt_url: /en/posts/tarot-ping/
 ---
 ## Info
 > **Tarot Ping** is the cute-deck edition of our tarot reading app: the same 78 cards ×

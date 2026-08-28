@@ -9,6 +9,7 @@ math: true
 mermaid: true
 image:
   path: /assets/img/20241229_spin-the-bottle/icon.png
+alt_url: /en/posts/spin-the-bottle/
 ---
 ## Info
 > - This is a simple game you can enjoy at a drinking gathering.  

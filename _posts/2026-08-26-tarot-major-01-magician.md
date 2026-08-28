@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 마법사카드, TheMagician
 image:
   path: /assets/img/tarot/feature_major_01_magician.jpg
   alt: 타로 카드 마법사(The Magician)
+alt_url: /en/posts/tarot-major-01-magician/
 ---
 
 손 하나로 세상을 바꿀 수 있을까요? 타로 메이저 아르카나 1번 **마법사(The Magician)**는 이 물음에 "필요한 재료는 이미 당신 손 안에 있다"고 답하는 카드입니다. 0번 바보가 아무것도 정해지지 않은 가능성 그 자체였다면, 마법사는 그 가능성을 처음으로 손에 쥐고 실제로 무언가를 빚어내는 순간을 그립니다.

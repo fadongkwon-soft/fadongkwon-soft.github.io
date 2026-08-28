@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 운명의수레바퀴카드,
 image:
   path: /assets/img/tarot/feature_major_10_wheel.jpg
   alt: 타로 카드 운명의 수레바퀴(Wheel of Fortune)
+alt_url: /en/posts/tarot-major-10-wheel/
 ---
 
 "요즘 하는 일마다 자꾸 삐걱거리는데 이 흐름이 언제 풀릴까요", "잘 되던 일이 갑자기 방향을 트는데 지금 올라타야 할까요" — 리딩 도중 이런 질문을 손에 쥐고 있을 때 **10번 운명의 수레바퀴(Wheel of Fortune)** 카드를 만난다면, 카드는 질문의 답보다 먼저 한 가지 사실을 알려줍니다. 바퀴는 멈추는 법이 없다는 것. 지금이 상승 구간이든 하강 구간이든, 다음 칸은 이미 돌아가는 중입니다.

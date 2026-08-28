@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 황제카드, TheEmperor, �
 image:
   path: /assets/img/tarot/feature_major_04_emperor.jpg
   alt: 타로 카드 황제(The Emperor)
+alt_url: /en/posts/tarot-major-04-emperor/
 ---
 
 "이 프로젝트를 내가 끝까지 밀어붙여도 될까", "이 관계에서 이제는 기준을 확실히 정해야 하지 않을까" — 이런 질문을 품고 카드를 뽑았는데 황제가 나왔다면 어떨까요. 메이저 아르카나 4번 **황제(The Emperor)**는 감이나 즉흥적인 판단 대신, 흔들림 없는 원칙과 책임감으로 답을 내놓는 카드입니다.

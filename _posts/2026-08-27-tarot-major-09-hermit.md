@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 은둔자카드, TheHermit, 
 image:
   path: /assets/img/tarot/feature_major_09_hermit.jpg
   alt: 타로 카드 은둔자(The Hermit)
+alt_url: /en/posts/tarot-major-09-hermit/
 ---
 
 굳이 한 문장으로 압축하면, 메이저 아르카나 9번 **은둔자(The Hermit)**는 군중을 떠나 홀로 켠 등불로 길을 비추는 카드입니다. 전차가 목표를 향해 질주하고 힘이 사나운 본능을 다독였다면, 은둔자는 잠시 멈춰 서서 그 모든 여정이 과연 맞는 방향인지 되짚어보는 자리에 놓여 있습니다.

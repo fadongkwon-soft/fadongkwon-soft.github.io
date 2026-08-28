@@ -1,0 +1,85 @@
+---
+layout: default
+refactor: true
+---
+
+<!-- 영문판 홈. Chirpy 의 home 레이아웃은 jekyll-paginate 의 paginator 를 요구하는데
+     paginator 는 site.posts(한국어) 만 페이지네이션하므로 그대로 쓸 수 없다.
+     카드 마크업은 테마 CSS(.card-wrapper/.post-preview)를 그대로 재사용하고,
+     테마 include 의존성은 일부러 없앴다 — description 은 front matter 에서 직접 읽는다.
+     타로 사전 78장은 목록이 너무 길어져 별도 허브(/en/tarot/)로 보낸다. -->
+
+{%- comment -%}
+  ⚠️ 컬렉션은 `_posts` 와 달리 미래 날짜 문서가 site.en_posts 에 그대로 남는다.
+  (Jekyll 4.3: PostReader#read_publishable 은 읽을 때 걸러내지만,
+   Collection#read_document 는 `published:` 만 보고 future 는 write? 단계에서만 본다)
+  따라서 목록에서 날짜로 직접 걸러야 한다 — 안 그러면 아직 생성되지 않은 페이지를
+  링크해 htmlproofer 가 빌드를 실패시킨다.
+  영문 글의 date 는 한국어 원문과 동일하게 두므로 양쪽이 같은 날 함께 공개된다.
+{%- endcomment -%}
+{% assign feature_posts = site.en_posts
+  | where_exp: 'item', 'item.hidden != true'
+  | where_exp: 'item', 'item.date <= site.time'
+  | sort: 'date' | reverse %}
+
+<div class="px-1">
+  {{ content }}
+</div>
+
+<div id="post-list" class="flex-grow-1 px-xl-1">
+  {% for post in feature_posts %}
+    {% unless post.categories contains 'Tarot' %}
+      <article class="card-wrapper card">
+        <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
+          {% assign card_body_col = '12' %}
+
+          {% if post.image %}
+            {% assign src = post.image.path | default: post.image %}
+            {% unless src contains '//' %}
+              {% assign src = post.media_subpath | append: '/' | append: src | replace: '//', '/' %}
+            {% endunless %}
+            {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
+
+            <div class="col-md-5">
+              <img src="{{ src }}" alt="{{ alt }}">
+            </div>
+
+            {% assign card_body_col = '7' %}
+          {% endif %}
+
+          <div class="col-md-{{ card_body_col }}">
+            <div class="card-body d-flex flex-column">
+              <h2 class="card-title my-2 mt-md-0">{{ post.title }}</h2>
+
+              <div class="card-text content mt-0 mb-3">
+                <p>{{ post.description | strip_html | truncate: 200 }}</p>
+              </div>
+
+              <div class="post-meta flex-grow-1 d-flex align-items-end">
+                <div class="me-auto">
+                  <i class="far fa-calendar fa-fw me-1"></i>
+                  <time datetime="{{ post.date | date_to_xmlschema }}">
+                    {{- post.date | date: '%b %-d, %Y' -}}
+                  </time>
+
+                  {% if post.categories.size > 0 %}
+                    <i class="far fa-folder-open fa-fw me-1"></i>
+                    <span class="categories">
+                      {% for category in post.categories %}
+                        {{ category }}
+                        {%- unless forloop.last -%},{%- endunless -%}
+                      {% endfor %}
+                    </span>
+                  {% endif %}
+                </div>
+              </div>
+              <!-- .post-meta -->
+            </div>
+            <!-- .card-body -->
+          </div>
+        </a>
+      </article>
+    {% endunless %}
+  {% endfor %}
+</div>
+<!-- #post-list -->

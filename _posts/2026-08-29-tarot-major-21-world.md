@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 세계카드, TheWorld, 타�
 image:
   path: /assets/img/tarot/feature_major_21_world.jpg
   alt: 타로 카드 세계(The World)
+alt_url: /en/posts/tarot-major-21-world/
 ---
 
 세계(The World)는 0번 바보에서 시작한 스물두 장의 여정이 마침내 한 바퀴를 완전히 돌아 닫히는 자리에 놓인 카드입니다. 메이저 아르카나의 마지막 번호를 달고 있는 만큼, 이 카드가 나왔다는 것은 크든 작든 하나의 이야기가 마무리 국면에 들어섰다는 뜻으로 읽힙니다.

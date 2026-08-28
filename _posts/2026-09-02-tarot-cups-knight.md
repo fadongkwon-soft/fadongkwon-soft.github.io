@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 컵, 궁정카드, KnightOfC
 image:
   path: /assets/img/tarot/feature_cups_knight.jpg
   alt: 타로 카드 컵 기사(Knight of Cups)
+alt_url: /en/posts/tarot-cups-knight/
 ---
 
 궁정 카드 열여섯 장 안에서 기사는 언제나 시종과 여왕 사이, 배움을 마치고 아직 완숙에는 이르지 못한 자리에 놓입니다. 네 명의 기사 중에서도 컵 기사는 물의 원소가 가장 낭만적으로 흘러넘치는 자리이며, 감정을 실어 움직이기 시작한 청년의 얼굴을 하고 있습니다.

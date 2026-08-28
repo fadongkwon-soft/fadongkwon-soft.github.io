@@ -7,6 +7,7 @@ tags: [app, android, 간호조무사, 국가시험, 문제은행, 모의고사, 
 pin: false
 image:
   path: /assets/img/20260823_nursing-quiz/feature.png
+alt_url: /en/posts/nursing-quiz/
 ---
 ## Info
 > **Nursing Exam Bank** is a mock-exam app for the Korean nursing assistant license:

@@ -9,6 +9,7 @@ math: true
 mermaid: true
 image:
   path: /assets/img/20260806_saju-lotto/icon.png
+alt_url: /en/posts/saju-lotto/
 ---
 ## Info
 > Enter your birth date and time (solar or lunar), and Saju Lotto deterministically draws

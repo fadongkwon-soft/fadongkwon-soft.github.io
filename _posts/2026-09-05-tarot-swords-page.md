@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 소드시종, PageOfSwords, 
 image:
   path: /assets/img/tarot/feature_swords_page.jpg
   alt: 타로 카드 소드 시종(Page of Swords)
+alt_url: /en/posts/tarot-swords-page/
 ---
 
 바람이 세차게 부는 언덕 위, 아직 앳된 얼굴의 인물이 검을 양손으로 곧게 세워 쥔 채 어깨 너머를 살피고 있습니다. 머리카락과 옷자락은 사방으로 휘날리고, 등 뒤 하늘에는 구름과 새 떼가 어지럽게 흩어져 있습니다. 소드 코트에서 가장 어린 자리에 놓인 **소드 시종(Page of Swords)**은 이렇게 "아직 다 배우지 못한 예리함"을 그리는 카드입니다.

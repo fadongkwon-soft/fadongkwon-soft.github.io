@@ -7,6 +7,7 @@ tags: [app, android, 타로, 타로카드, 운세, 오늘의운세, tarot, 1인�
 pin: false
 image:
   path: /assets/img/20260828_tarot/feature.png
+alt_url: /en/posts/tarot-fortune/
 ---
 ## Info
 > **Tarot Fortune** is a one-card tarot reading app: pick a theme, draw a card and

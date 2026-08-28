@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 소드10, TenOfSwords, 타�
 image:
   path: /assets/img/tarot/feature_swords_10.jpg
   alt: 타로 카드 소드 10(Ten of Swords)
+alt_url: /en/posts/tarot-swords-10/
 ---
 
 소드 에이스에서 시작한 공기의 여정은 숫자를 하나씩 더해가며 판단과 갈등, 정체와 불안을 차례로 지나옵니다. 소드 9가 아직 결과를 모른 채 견디는 마지막 밤이었다면, 소드 10은 그 결과가 마침내 눈앞에 도착한 자리입니다. 더는 미룰 수 없는 국면의 완전한 매듭이죠.

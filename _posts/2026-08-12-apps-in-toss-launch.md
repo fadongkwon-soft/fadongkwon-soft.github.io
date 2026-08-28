@@ -9,6 +9,7 @@ math: true
 mermaid: true
 image:
   path: /assets/img/20260812_apps-in-toss/icon.png
+alt_url: /en/posts/apps-in-toss-launch/
 ---
 ## Info
 > Our three apps — **Saju Lotto**, **Juice Spinner**, and **Spin the Bottle** — are now

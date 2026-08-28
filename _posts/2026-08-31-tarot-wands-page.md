@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 완드, 마이너아르카나, 코트카드, PageOf
 image:
   path: /assets/img/tarot/feature_wands_page.jpg
   alt: 타로 카드 완드 시종(Page of Wands)
+alt_url: /en/posts/tarot-wands-page/
 ---
 
 타로를 처음 배울 때 흔히 하는 오해 중 하나는, 코트 카드가 나오면 반드시 '실제 인물'을 가리킨다고 생각하는 것입니다. 물론 그렇게 읽을 때도 있지만, 완드 시종은 그보다 우리 안에 있는 가장 어린 호기심의 태도, 아직 서툴지만 뭐든 해보고 싶은 마음 그 자체를 보여주는 카드에 가깝습니다.

@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 매달린사람카드, TheHa
 image:
   path: /assets/img/tarot/feature_major_12_hanged_man.jpg
   alt: 타로 카드 매달린 사람(The Hanged Man)
+alt_url: /en/posts/tarot-major-12-hanged-man/
 ---
 
 발목 하나가 나뭇가지에 묶인 채 거꾸로 매달린 남자가 있습니다. 팔은 등 뒤로 접혀 있고 다리는 숫자 4 모양으로 교차되어 있는데, 이상하게도 표정은 고통스럽지 않습니다. 오히려 편안해 보이기까지 하죠. 머리 주변에는 은은한 빛까지 감돌고 있습니다. 메이저 아르카나 **12번 매달린 사람(The Hanged Man)**은 이렇게 거꾸로 매달린 채로 무언가를 바라보는 순간을 그립니다.

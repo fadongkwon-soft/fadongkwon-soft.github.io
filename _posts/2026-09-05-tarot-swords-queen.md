@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 소드여왕, QueenOfSwords,
 image:
   path: /assets/img/tarot/feature_swords_queen.jpg
   alt: 타로 카드 소드 여왕(Queen of Swords)
+alt_url: /en/posts/tarot-swords-queen/
 ---
 
 오래된 타로 해설서에서는 소드 여왕을 "차갑고 냉정한 여성", 심지어 "이혼했거나 사별한 사람"으로 소개하는 경우가 있습니다. 하지만 이 카드가 실제로 그리는 것은 감정이 없는 사람이 아니라, 아픔을 이미 통과하고 그 자리에서 명료함을 얻은 사람입니다. 차가움이 아니라 **정직함**이 이 카드의 본질에 더 가깝습니다.

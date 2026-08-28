@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 여사제카드, HighPrieste
 image:
   path: /assets/img/tarot/feature_major_02_high_priestess.jpg
   alt: 타로 카드 여사제(The High Priestess)
+alt_url: /en/posts/tarot-major-02-high-priestess/
 ---
 
 여사제 카드를 두고 "모든 것을 미리 꿰뚫어 보는 예언자의 카드"라고 오해하는 경우가 많습니다. 신비로운 분위기 때문에 생기는 착각이지만, 실제 이 카드가 말하는 힘은 미래를 앞서 아는 능력이 아니라 **아직 드러나지 않은 것을 함부로 재촉하지 않는 태도**에 가깝습니다. 메이저 아르카나 2번 **여사제(The High Priestess)**는 답을 갖고 있으면서도 때가 될 때까지 말을 아끼는 카드입니다.

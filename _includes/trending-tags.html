@@ -1,0 +1,87 @@
+<!-- The trending tags list
+
+  ⚠️ jekyll-theme-chirpy v7.2.4 의 _includes/trending-tags.html 오버라이드다.
+  원본 대비 변경점: 영문 페이지에서는 카테고리 목록을 보여준다.
+
+  왜 필요한가 — site.tags 는 site.posts(한국어)에서만 만들어지므로 원본을 그대로 두면
+  영문 페이지 우측 패널에 한국어 태그가 뜨고 `/tags/<한글>/` 로 링크된다.
+  영문 포스트에는 태그를 달지 않았다(영문 태그 아카이브 페이지가 없어 링크가 404 난다).
+  대신 카테고리는 원문과 같은 영어 값이고 jekyll-archives 가 만든
+  `/categories/<name>/` 페이지가 실제로 존재하므로 그것을 쓴다.
+-->
+
+{% assign MAX = 10 %}
+
+{% if include.lang == 'en' %}
+  {%- comment -%}
+    영문판: 공개된 영문 글의 카테고리를 빈도순으로. 링크 대상인 카테고리 아카이브는
+    한국어 포스트에서 생성되지만 카테고리 값 자체가 영어라 링크가 유효하다.
+  {%- endcomment -%}
+  {% assign en_live = site.en_posts | where_exp: 'p', 'p.date <= site.time' %}
+  {% assign cat_names = '' | split: '' %}
+  {% for p in en_live %}
+    {% for c in p.categories %}
+      {% unless cat_names contains c %}
+        {% assign cat_names = cat_names | push: c %}
+      {% endunless %}
+    {% endfor %}
+  {% endfor %}
+
+  {% if cat_names.size > 0 %}
+    <section>
+      <h2 class="panel-heading">{{- site.data.locales[include.lang].panel.categories | default: 'Categories' -}}</h2>
+      <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+        {% for cat_name in cat_names limit: MAX %}
+          {% assign url = cat_name | slugify | url_encode | prepend: '/categories/' | append: '/' %}
+          <a class="post-tag btn btn-outline-primary" href="{{ url | relative_url }}">{{ cat_name }}</a>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+{% else %}
+
+  {% assign size_list = '' | split: '' %}
+  {% assign tag_list = '' | split: '' %}
+
+  {% for tag in site.tags %}
+    {% assign size = tag | last | size %}
+    {% assign size_list = size_list | push: size %}
+
+    {% assign tag_str = tag | first | append: '::' | append: size %}
+    {% assign tag_list = tag_list | push: tag_str %}
+  {% endfor %}
+
+  {% assign size_list = size_list | sort | reverse %}
+
+  {% assign tag_list = tag_list | sort_natural %}
+
+  {% assign trending_tags = '' | split: '' %}
+
+  {% for size in size_list limit: MAX %}
+    {% for tag_str in tag_list %}
+      {% assign tag = tag_str | split: '::' %}
+      {% assign tag_name = tag | first %}
+      {% assign tag_size = tag | last | plus: 0 %}
+      {% if tag_size == size %}
+        {% unless trending_tags contains tag_name %}
+          {% assign trending_tags = trending_tags | push: tag_name %}
+          {% break %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  {% if trending_tags.size > 0 %}
+    <section>
+      <h2 class="panel-heading">{{- site.data.locales[include.lang].panel.trending_tags -}}</h2>
+      <div class="d-flex flex-wrap mt-3 mb-1 me-3">
+        {% for tag_name in trending_tags %}
+          {% assign url = tag_name | slugify | url_encode | prepend: '/tags/' | append: '/' %}
+          <a class="post-tag btn btn-outline-primary" href="{{ url | relative_url }}">{{ tag_name }}</a>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+{% endif %}

@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 컵, 궁정카드, KingOfCup
 image:
   path: /assets/img/tarot/feature_cups_king.jpg
   alt: 타로 카드 컵 왕(King of Cups)
+alt_url: /en/posts/tarot-cups-king/
 ---
 
 파도가 넘실대는 바다 한가운데, 흔들리는 왕좌 위에 앉아 있으면서도 어떻게 저토록 평온한 표정을 지을 수 있을까요? **컵 왕(King of Cups)**이 그 답을 쥐고 있는 카드입니다.

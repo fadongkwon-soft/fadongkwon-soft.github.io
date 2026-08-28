@@ -2,6 +2,7 @@
 # the default layout is 'page'
 icon: fas fa-info-circle
 order: 1
+alt_url: /en/about/
 ---
 
 ![Fadongkwon Soft](/assets/img/about/Logo_w_text_3.png){: width="350" .normal}

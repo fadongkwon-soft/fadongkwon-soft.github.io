@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 소드, 마이너아르카나, 소드2, TwoofSwords
 image:
   path: /assets/img/tarot/feature_swords_02.jpg
   alt: 타로 카드 소드 2(Two of Swords)
+alt_url: /en/posts/tarot-swords-02/
 ---
 
 한 문장으로 요약하면, 소드 2는 **두 개의 저울추를 동시에 들고 있어 어느 쪽으로도 손을 뻗지 못하는 순간**을 그린 카드입니다. 눈을 가린 채 두 자루의 검을 엇갈려 든 인물이 이 수트에서 가장 널리 알려진 이미지 중 하나로 꼽히는 이유도 여기에 있습니다.

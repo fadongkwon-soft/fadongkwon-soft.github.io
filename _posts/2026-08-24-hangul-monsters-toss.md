@@ -7,6 +7,7 @@ tags: [game, toss, 앱인토스, 미니앱, education, 한글, 한글공부, 유
 pin: false
 image:
   path: /assets/img/20260823_hangul-monsters/feature.png
+alt_url: /en/posts/hangul-monsters-toss/
 ---
 ## Info
 > **Hangul Monsters** is now live on Apps in Toss. Open it instantly inside the Toss app —

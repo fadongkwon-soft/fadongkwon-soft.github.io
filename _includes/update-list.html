@@ -1,0 +1,60 @@
+<!-- Get 5 last posted/updated posts
+
+  ⚠️ jekyll-theme-chirpy v7.2.4 의 _includes/update-list.html 오버라이드다.
+  원본 대비 변경점: 영문 페이지에서는 site.posts(한국어) 대신 site.en_posts 를 쓴다.
+  원본을 그대로 두면 모든 영문 페이지의 우측 패널에 한국어 글 제목 5개가 떠서
+  영문 독자에게 깨진 사이트로 보이고, 언어 신호도 흐려진다.
+  컬렉션은 미래 날짜 문서가 남으므로 date 로 걸러야 한다(안 그러면 아직 생성되지
+  않은 페이지를 링크해 htmlproofer 가 빌드를 실패시킨다).
+-->
+
+{% assign MAX_SIZE = 5 %}
+
+{%- comment -%}
+  분기는 `page.lang` 이 아니라 `include.lang` 으로 한다. 이 include 는 default.html
+  에서 `include_cached ... lang=lang` 으로 불리고 include_cached 는 **파라미터 조합**을
+  캐시 키로 쓴다. page.lang 으로 분기하면 캐시가 첫 렌더 결과를 다른 언어 페이지에도
+  돌려줄 수 있다. lang 은 lang.html 이 page.lang 에서 해석한 값이라 en/ko-KR 로 갈린다.
+{%- endcomment -%}
+{% if include.lang == 'en' %}
+  {% assign source = site.en_posts | where_exp: 'p', 'p.date <= site.time' %}
+{% else %}
+  {% assign source = site.posts %}
+{% endif %}
+
+{% assign all_list = '' | split: '' %}
+
+{% for post in source %}
+  {% assign datetime = post.last_modified_at | default: post.date %}
+
+  {% capture elem %}
+    {{- datetime | date: "%Y%m%d%H%M%S" -}}::{{- forloop.index0 -}}
+  {% endcapture %}
+
+  {% assign all_list = all_list | push: elem %}
+{% endfor %}
+
+{% assign all_list = all_list | sort | reverse %}
+
+{% assign update_list = '' | split: '' %}
+
+{% for entry in all_list limit: MAX_SIZE %}
+  {% assign update_list = update_list | push: entry %}
+{% endfor %}
+
+{% if update_list.size > 0 %}
+  <section id="access-lastmod">
+    <h2 class="panel-heading">{{- site.data.locales[include.lang].panel.lastmod -}}</h2>
+    <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
+      {% for item in update_list %}
+        {% assign index = item | split: '::' | last | plus: 0 %}
+        {% assign post = source[index] %}
+        {% assign url = post.url | relative_url %}
+        <li class="text-truncate lh-lg">
+          <a href="{{ url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+  <!-- #access-lastmod -->
+{% endif %}

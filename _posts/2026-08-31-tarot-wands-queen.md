@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 완드, 마이너아르카나, 코트카드, QueenO
 image:
   path: /assets/img/tarot/feature_wands_queen.jpg
   alt: 타로 카드 완드 여왕(Queen of Wands)
+alt_url: /en/posts/tarot-wands-queen/
 ---
 
 모임에 들어서자마자 자연스럽게 중심이 되는 사람, 자신감 넘치는 태도로 주변까지 밝게 만드는 사람이 누구인지 궁금할 때 — 이런 질문에 이 카드가 나온다면 완드 여왕일 가능성이 높습니다.

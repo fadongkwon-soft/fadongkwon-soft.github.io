@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 별카드, TheStar, 타로�
 image:
   path: /assets/img/tarot/feature_major_17_star.jpg
   alt: 타로 카드 별(The Star)
+alt_url: /en/posts/tarot-major-17-star/
 ---
 
 메이저 아르카나의 순서를 쭉 살펴보면 16번 탑 다음에 17번 별이 옵니다. 우연이 아닙니다. 탑이 무너뜨린 자리, 잔해만 남은 폐허 위에 가장 먼저 내려앉는 것이 바로 별빛입니다. 벼락과 붕괴, 추락으로 이어지던 급박한 흐름이 별 카드에 이르러 처음으로 잠잠해집니다. **17번 별(The Star)**은 이렇게 폭풍이 지나간 뒤에 찾아오는 카드입니다.

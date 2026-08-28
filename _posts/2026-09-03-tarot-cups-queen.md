@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 컵, 궁정카드, QueenOfCu
 image:
   path: /assets/img/tarot/feature_cups_queen.jpg
   alt: 타로 카드 컵 여왕(Queen of Cups)
+alt_url: /en/posts/tarot-cups-queen/
 ---
 
 바닷가 왕좌에 앉아 정교하게 장식된 잔을 두 손으로 가만히 감싸 쥔 여인이 있습니다. 시선은 잔 속을 향해 있지만, 마음은 파도 너머 누군가의 감정에까지 가닿아 있는 듯합니다. **컵 여왕(Queen of Cups)**은 이렇게 감정을 다스리는 법을 아는 사람의 초상입니다.

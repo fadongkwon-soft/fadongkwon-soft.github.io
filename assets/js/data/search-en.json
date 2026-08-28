@@ -1,0 +1,29 @@
+---
+layout: compress
+swcache: true
+permalink: /assets/js/data/search-en.json
+---
+
+{%- comment -%}
+  영문판 사이트 검색 인덱스. 한국어판(테마 기본 assets/js/data/search.json)은
+  site.posts 만 훑기 때문에 영문 컬렉션이 검색되지 않았다.
+  컬렉션은 미래 날짜 문서가 docs 에 남으므로 date 로 걸러야 한다
+  (아직 생성되지 않은 페이지가 검색결과에 나오면 404 로 이어진다).
+{%- endcomment -%}
+{%- assign docs = site.en_posts | where_exp: 'p', 'p.date <= site.time' | sort: 'date' | reverse -%}
+
+[
+  {% for post in docs %}
+  {
+    "title": {{ post.title | jsonify }},
+    "url": {{ post.url | relative_url | jsonify }},
+    "categories": {{ post.categories | join: ', ' | jsonify }},
+    "tags": "",
+    "date": "{{ post.date }}",
+    {% include no-linenos.html content=post.content %}
+    {% assign _content = content | strip_html | strip_newlines %}
+    "snippet": {{ _content | truncate: 200 | jsonify }},
+    "content": {{ _content | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

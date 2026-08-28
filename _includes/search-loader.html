@@ -1,0 +1,63 @@
+<!--
+  Jekyll Simple Search loader
+  See: <https://github.com/christian-fei/Simple-Jekyll-Search>
+
+  ⚠️ jekyll-theme-chirpy v7.2.4 의 _includes/search-loader.html 오버라이드다.
+  원본 대비 변경점은 `json:` 경로 한 줄뿐 — 페이지 언어에 따라 인덱스를 갈라 쓴다.
+  테마 기본 인덱스(assets/js/data/search.json)는 site.posts 만 훑어서 영문
+  컬렉션이 검색되지 않았다. 영문은 assets/js/data/search-en.json 을 쓴다.
+
+  default.html 이 `{% include_cached search-loader.html lang=lang %}` 로 부르는데,
+  include_cached 는 파라미터 조합별로 캐시하므로 ko-KR/en 각각 따로 렌더된다.
+-->
+
+{% if include.lang == 'en' %}
+  {% assign search_json = '/assets/js/data/search-en.json' %}
+{% else %}
+  {% assign search_json = '/assets/js/data/search.json' %}
+{% endif %}
+
+{% capture result_elem %}
+  <article class="px-1 px-sm-2 px-lg-4 px-xl-0">
+    <header>
+      <h2><a href="{url}">{title}</a></h2>
+      <div class="post-meta d-flex flex-column flex-sm-row text-muted mt-1 mb-1">
+        {categories}
+        {tags}
+      </div>
+    </header>
+    <p>{snippet}</p>
+  </article>
+{% endcapture %}
+
+{% capture not_found %}<p class="mt-5">{{ site.data.locales[include.lang].search.no_results }}</p>{% endcapture %}
+
+<script>
+  {% comment %} Note: dependent library will be loaded in `js-selector.html` {% endcomment %}
+  document.addEventListener('DOMContentLoaded', () => {
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('search-results'),
+      json: '{{ search_json | relative_url }}',
+      searchResultTemplate: '{{ result_elem | strip_newlines }}',
+      noResultsText: '{{ not_found }}',
+      templateMiddleware: function(prop, value, template) {
+        if (prop === 'categories') {
+          if (value === '') {
+            return `${value}`;
+          } else {
+            return `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`;
+          }
+        }
+
+        if (prop === 'tags') {
+          if (value === '') {
+            return `${value}`;
+          } else {
+            return `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`;
+          }
+        }
+      }
+    });
+  });
+</script>

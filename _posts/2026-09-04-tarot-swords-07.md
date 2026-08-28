@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 소드, 마이너아르카나, 소드7, SevenofSwor
 image:
   path: /assets/img/tarot/feature_swords_07.jpg
   alt: 타로 카드 소드 7(Seven of Swords)
+alt_url: /en/posts/tarot-swords-07/
 ---
 
 소드 7이 나오면 '도둑질'이나 '배신'부터 떠올리는 경우가 많습니다. 진영에서 몰래 검을 훔쳐 달아나는 그림이니 그럴 만도 합니다. 하지만 이 카드를 훔친 자의 카드로만 읽으면 절반밖에 보지 못한 셈입니다. 소드 7의 본래 의미는 정면 승부 대신 **전략적인 우회**를 택하는 순간에 훨씬 가깝기 때문입니다.

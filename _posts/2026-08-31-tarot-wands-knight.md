@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 완드, 마이너아르카나, 코트카드, Knight
 image:
   path: /assets/img/tarot/feature_wands_knight.jpg
   alt: 타로 카드 완드 기사(Knight of Wands)
+alt_url: /en/posts/tarot-wands-knight/
 ---
 
 완드 기사는 생각이 채 끝나기도 전에 이미 말을 몰아 달려나가는, 완드 수트에서 가장 속도감 넘치는 카드입니다.

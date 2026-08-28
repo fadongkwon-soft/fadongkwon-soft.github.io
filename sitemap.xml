@@ -1,0 +1,59 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+{%- comment -%}
+  jekyll-sitemap 의 기본 템플릿을 대체한다.
+  플러그인은 `@site.pages << sitemap unless file_exists?("sitemap.xml")` 이므로
+  이 파일이 루트에 있으면 플러그인이 자기 사이트맵을 만들지 않는다.
+
+  왜 대체하는가 — 기본 템플릿은 `collection.docs` 를 `doc.sitemap != false` 로만
+  걸러서 **미래 날짜 문서까지 넣는다.**
+  `_posts` 는 PostReader 가 읽는 단계에서 미래 글을 빼기 때문에 문제가 없지만,
+  컬렉션(`_en_posts`)은 미래 문서가 docs 에 남아 있고 페이지만 생성되지 않는다.
+  그대로 두면 예약 게시 대기 중인 영문 글 수십 개가 404 URL 로 등록되고,
+  Search Console 이 "제출된 URL을 찾을 수 없음"으로 보고한다.
+
+  hreflang 은 사이트맵이 아니라 HTML `<link rel="alternate">` 로만 넣는다
+  (_includes/metadata-hook.html). 구글은 셋 중 하나만 요구하며, 두 곳에 중복하면
+  어긋날 여지만 생긴다.
+{%- endcomment -%}
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- assign collections = site.collections | where_exp: 'collection', 'collection.output != false' -%}
+{%- for collection in collections -%}
+  {%- assign docs = collection.docs
+      | where_exp: 'doc', 'doc.sitemap != false'
+      | where_exp: 'doc', 'doc.date <= site.time' -%}
+  {%- for doc in docs %}
+  <url>
+    <loc>{{ doc.url | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc>
+    {%- if doc.last_modified_at or doc.date %}
+    <lastmod>{{ doc.last_modified_at | default: doc.date | date_to_xmlschema }}</lastmod>
+    {%- endif %}
+  </url>
+  {%- endfor -%}
+{%- endfor -%}
+
+{%- assign pages = site.html_pages
+    | where_exp: 'doc', 'doc.sitemap != false'
+    | where_exp: 'doc', 'doc.url != "/404.html"' -%}
+{%- for page in pages %}
+  <url>
+    <loc>{{ page.url | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc>
+    {%- if page.last_modified_at %}
+    <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
+    {%- endif %}
+  </url>
+{%- endfor -%}
+
+{%- assign exts = '.html,.htm,.xhtml,.pdf,.xml' | split: ',' -%}
+{%- for file in site.static_files -%}
+  {%- if file.sitemap != false and file.name != '404.html' and exts contains file.extname %}
+  <url>
+    <loc>{{ file.path | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc>
+    <lastmod>{{ file.modified_time | date_to_xmlschema }}</lastmod>
+  </url>
+  {%- endif -%}
+{%- endfor %}
+</urlset>

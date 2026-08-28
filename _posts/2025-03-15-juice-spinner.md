@@ -9,6 +9,7 @@ math: true
 mermaid: true
 image:
   path: /assets/img/20250315_juice-spinner/icon_ad.png
+alt_url: /en/posts/juice-spinner/
 ---
 ## Info
 > Up to 12 players can join in the fun, freely choosing from 9 types of fruits to enjoy this juice-spinning game.

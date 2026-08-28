@@ -7,6 +7,7 @@ tags: [game, android, education, 한글, 한글공부, 유아교육, hangul, 몬
 pin: false
 image:
   path: /assets/img/20260823_hangul-monsters/feature.png
+alt_url: /en/posts/hangul-monsters/
 ---
 ## Info
 > **Hangul Monsters** is a Korean-learning game for kids: listen to native-quality voice

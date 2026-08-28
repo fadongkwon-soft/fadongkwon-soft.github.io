@@ -7,6 +7,7 @@ tags: [game, android, education, 수학, 수학공부, 유아교육, math, 몬�
 pin: false
 image:
   path: /assets/img/20260825_math-monsters/feature.png
+alt_url: /en/posts/math-monsters/
 ---
 ## Info
 > **Math Monsters** is a math-practice game for kids: solve addition, subtraction,

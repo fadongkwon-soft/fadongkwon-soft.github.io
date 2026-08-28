@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 심판카드, Judgement, 타
 image:
   path: /assets/img/tarot/feature_major_20_judgement.jpg
   alt: 타로 카드 심판(Judgement)
+alt_url: /en/posts/tarot-major-20-judgement/
 ---
 
 "심판"이라는 이름을 처음 들으면 최후의 심판, 죄를 묻는 재판정 같은 장면을 떠올리기 쉽습니다. 실제로 이 카드를 뽑고 표정이 굳는 사람도 적지 않습니다. 하지만 라이더-웨이트 덱의 20번 카드가 그리는 것은 벌이 아니라 부름입니다. 나팔 소리에 응답해 무덤에서 일어나는 사람들의 모습은 심판받는 순간이 아니라, 다시 눈을 뜨는 순간에 더 가깝습니다.

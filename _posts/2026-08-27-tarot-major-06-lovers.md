@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 연인카드, TheLovers, 연
 image:
   path: /assets/img/tarot/feature_major_06_lovers.jpg
   alt: 타로 카드 연인(The Lovers)
+alt_url: /en/posts/tarot-major-06-lovers/
 ---
 
 연애운을 볼 때 가장 반가운 카드를 하나만 꼽으라면 많은 사람이 **연인(The Lovers)**을 고를 겁니다. 이름부터 사랑이니까요. 그런데 타로를 조금 공부해 보면 이 카드의 두 번째 얼굴을 만나게 됩니다. 연인 카드는 사랑의 카드인 동시에 **"인생의 중요한 선택"의 카드**라는 것. 연애 질문이 아닌데 이 카드가 나왔다면, 지금 당신 앞에 갈림길이 놓여 있다는 뜻일 가능성이 큽니다.

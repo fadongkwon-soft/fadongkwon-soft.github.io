@@ -13,4 +13,48 @@
   #sidebar .site-subtitle {
     height: auto !important;
   }
+
+  /* 한/영 언어 스위처 (sidebar.html 오버라이드에서 사용). 사이드바 하단 아이콘 줄
+     바로 위에 놓이며, 현재 언어는 강조하고 다른 언어는 흐리게 둔다. */
+  #sidebar .lang-switch {
+    text-align: center;
+    font-size: 0.82rem;
+    line-height: 1.2;
+  }
+  #sidebar .lang-switch a {
+    color: var(--sidebar-muted-color, #8e8e8e);
+    text-decoration: none;
+    padding: 0.15rem 0.3rem;
+    border-radius: 0.35rem;
+  }
+  #sidebar .lang-switch a:hover {
+    color: var(--sidebar-active-color, #fff);
+  }
+  #sidebar .lang-switch a.active {
+    color: var(--sidebar-active-color, #fff);
+    font-weight: 700;
+  }
+  #sidebar .lang-switch .sep {
+    color: var(--sidebar-muted-color, #8e8e8e);
+    opacity: 0.6;
+  }
 </style>
+
+<!-- ===== 다국어(한/영) hreflang =====
+     각 문서는 front matter 에 상대 언어판 경로를 `alt_url` 로 들고 있다.
+     컬렉션 전체를 Liquid 로 훑어 짝을 찾으면 문서 수의 제곱만큼 반복이 생기므로
+     (95쌍 × 190페이지) 짝은 생성 스크립트가 front matter 에 박아 넣는다.
+     hreflang 은 반드시 절대 URL 이어야 하고 양쪽이 서로를 가리켜야 한다.
+     x-default 는 영문판으로 둔다 — ko/en 어느 쪽도 아닌 방문자에게는 영어가 낫다. -->
+{% if page.alt_url %}
+  {% if page.lang == 'en' %}
+    {% assign hl_en = page.url %}
+    {% assign hl_ko = page.alt_url %}
+  {% else %}
+    {% assign hl_ko = page.url %}
+    {% assign hl_en = page.alt_url %}
+  {% endif %}
+  <link rel="alternate" hreflang="ko" href="{{ hl_ko | absolute_url }}">
+  <link rel="alternate" hreflang="en" href="{{ hl_en | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ hl_en | absolute_url }}">
+{% endif %}

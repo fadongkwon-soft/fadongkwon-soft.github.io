@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 태양카드, TheSun, 타로
 image:
   path: /assets/img/tarot/feature_major_19_sun.jpg
   alt: 타로 카드 태양(The Sun)
+alt_url: /en/posts/tarot-major-19-sun/
 ---
 
 타로 78장 중에서 망설임 없이 "좋은 카드"라고 말할 수 있는 카드를 하나만 꼽으라면, 태양(The Sun) 아닐까요? 벌거벗은 아이가 흰 말을 타고 환하게 웃는 얼굴의 태양 아래를 달리는 그림에는 그늘이 거의 보이지 않습니다. 그런데 정말 이 카드에는 조심할 구석이 하나도 없는 걸까요?

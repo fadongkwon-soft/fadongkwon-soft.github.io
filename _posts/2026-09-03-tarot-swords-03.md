@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 소드, 마이너아르카나, 소드3, ThreeofSwor
 image:
   path: /assets/img/tarot/feature_swords_03.jpg
   alt: 타로 카드 소드 3(Three of Swords)
+alt_url: /en/posts/tarot-swords-03/
 ---
 
 믿었던 사람에게서 예상치 못한 말을 들은 날, 혹은 이미 끝난 관계를 마음속으로 정리하는 중에 카드를 뽑았다면 소드 3이 나올 확률이 유독 높습니다. 성적표를 받아 들고 충격에 빠졌을 때도 마찬가지입니다. 이런 질문에 이 카드가 나온다면, 지금 마주한 감정을 부정하지 말라는 신호로 받아들이는 편이 정확합니다.

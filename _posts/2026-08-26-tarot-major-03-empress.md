@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 여황제카드, TheEmpress,
 image:
   path: /assets/img/tarot/feature_major_03_empress.jpg
   alt: 타로 카드 여황제(The Empress)
+alt_url: /en/posts/tarot-major-03-empress/
 ---
 
 한 문장으로 요약하면, 메이저 아르카나 3번 **여황제(The Empress)**는 그동안 가꿔온 것이 마침내 풍요로운 결실로 돌아오는 카드입니다. 여사제의 고요한 기다림 다음에 놓인 이 카드는, 안으로 쌓아온 것을 이제는 밖으로 흘려보내도 될 차례라고 말해줍니다.

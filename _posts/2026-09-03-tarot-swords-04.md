@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 소드, 마이너아르카나, 소드4, FourofSword
 image:
   path: /assets/img/tarot/feature_swords_04.jpg
   alt: 타로 카드 소드 4(Four of Swords)
+alt_url: /en/posts/tarot-swords-04/
 ---
 
 소드 3에서 심장을 꿰뚫는 아픔을 그대로 마주했다면, 바로 다음 자리인 소드 4는 그 아픔 이후에 찾아오는 정지 신호입니다. 숫자 3에서 4로 넘어가는 흐름은 아픔을 겪은 뒤에는 반드시 회복의 시간이 뒤따라야 한다는 순서를 보여줍니다. 소드 수트에서 4가 안정과 정체의 자리로 읽히는 것도 같은 맥락입니다.

@@ -1,0 +1,140 @@
+<!-- The Side Bar
+     ⚠️ jekyll-theme-chirpy v7.2.4 의 _includes/sidebar.html 을 복사해 수정한 오버라이드다.
+     테마를 올릴 때 원본과 대조할 것. 원본 대비 변경점은 두 곳뿐이다.
+       (1) 탭 목록을 현재 페이지 언어로 필터링 (한국어 페이지엔 한국어 탭만, 영문엔 영문 탭만)
+       (2) .sidebar-bottom 에 한/영 언어 스위처 추가
+     스위처를 JS 주입이 아니라 실제 <a> 로 두는 이유: 크롤러가 언어판 사이를 링크로
+     따라갈 수 있고(hreflang 외 추가 신호), JS 없이도 동작한다. -->
+
+{% assign cur_lang = page.lang | default: 'ko' %}
+{% if cur_lang == 'en' %}
+  {% assign home_url = '/en/' %}
+{% else %}
+  {% assign home_url = '/' %}
+{% endif %}
+
+<aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
+  <header class="profile-wrapper">
+    <a href="{{ home_url | relative_url }}" id="avatar" class="rounded-circle">
+      {%- if site.avatar != empty and site.avatar -%}
+        {%- capture avatar_url -%}
+          {% include media-url.html src=site.avatar %}
+        {%- endcapture -%}
+        <img src="{{- avatar_url -}}" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
+      {%- endif -%}
+    </a>
+
+    <a class="site-title d-block" href="{{ home_url | relative_url }}">{{ site.title }}</a>
+    <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
+  </header>
+  <!-- .profile-wrapper -->
+
+  <nav class="flex-column flex-grow-1 w-100 ps-0">
+    <ul class="nav">
+      <!-- home -->
+      <li class="nav-item{% if page.url == home_url %}{{ " active" }}{% endif %}">
+        <a href="{{ home_url | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-home"></i>
+          <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
+        </a>
+      </li>
+      <!-- the real tabs -->
+      {% for tab in site.tabs %}
+        {% assign tab_lang = tab.lang | default: 'ko' %}
+        {% if tab_lang == 'en' and cur_lang != 'en' %}{% continue %}{% endif %}
+        {% if tab_lang != 'en' and cur_lang == 'en' %}{% continue %}{% endif %}
+
+        <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
+          <a href="{{ tab.url | relative_url }}" class="nav-link">
+            <i class="fa-fw {{ tab.icon }}"></i>
+            {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
+
+            <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <!-- 언어 스위처: 짝이 되는 번역본이 있으면 그 문서로, 없으면 해당 언어 홈으로 -->
+  {% if cur_lang == 'en' %}
+    {% assign ko_target = page.alt_url | default: '/' %}
+    {% assign en_target = page.url %}
+  {% else %}
+    {% assign ko_target = page.url %}
+    {% assign en_target = page.alt_url | default: '/en/' %}
+  {% endif %}
+  <nav class="lang-switch w-100 ps-0 pb-2" aria-label="Language">
+    <a
+      href="{{ ko_target | relative_url }}"
+      hreflang="ko"
+      lang="ko"
+      class="{% if cur_lang != 'en' %}active{% endif %}"
+      {% if cur_lang != 'en' %}aria-current="true"{% endif %}
+    >한국어</a>
+    <span class="sep" aria-hidden="true">·</span>
+    <a
+      href="{{ en_target | relative_url }}"
+      hreflang="en"
+      lang="en"
+      class="{% if cur_lang == 'en' %}active{% endif %}"
+      {% if cur_lang == 'en' %}aria-current="true"{% endif %}
+    >English</a>
+  </nav>
+
+  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
+    {% unless site.theme_mode %}
+      <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
+        <i class="fas fa-adjust"></i>
+      </button>
+
+      {% if site.data.contact.size > 0 %}
+        <span class="icon-border"></span>
+      {% endif %}
+    {% endunless %}
+
+    {% for entry in site.data.contact %}
+      {% case entry.type %}
+        {% when 'github', 'twitter' %}
+          {%- capture url -%}
+            https://{{ entry.type }}.com/{{ site[entry.type].username }}
+          {%- endcapture -%}
+        {% when 'email' %}
+          {% assign email = site.social.email | split: '@' %}
+          {%- capture url -%}
+            javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
+          {%- endcapture -%}
+        {% when 'rss' %}
+          {% assign url = '/feed.xml' | relative_url %}
+        {% else %}
+          {% assign url = entry.url %}
+      {% endcase %}
+
+      {% if url %}
+        <a
+          href="{{ url }}"
+          aria-label="{{ entry.type }}"
+          {% assign link_types = '' %}
+
+          {% unless entry.noblank %}
+            target="_blank"
+            {% assign link_types = 'noopener noreferrer' %}
+          {% endunless %}
+
+          {% if entry.type == 'mastodon' %}
+            {% assign link_types = link_types | append: ' me' | strip %}
+          {% endif %}
+
+          {% unless link_types == empty %}
+            rel="{{ link_types }}"
+          {% endunless %}
+        >
+          <i class="{{ entry.icon }}"></i>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <!-- .sidebar-bottom -->
+</aside>
+<!-- #sidebar -->

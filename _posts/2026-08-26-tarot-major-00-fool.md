@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 바보카드, TheFool, 타�
 image:
   path: /assets/img/tarot/feature_major_00_fool.jpg
   alt: 타로 카드 바보(The Fool)
+alt_url: /en/posts/tarot-major-00-fool/
 ---
 
 절벽 끝에 선 젊은 여행자가 하늘을 올려다보고 있습니다. 어깨에는 작은 보따리 하나, 손에는 흰 장미, 발밑에서는 강아지가 짖으며 따라옵니다. 한 걸음만 더 내디디면 떨어질 것 같은데도 표정에는 두려움이 없죠. 타로 덱의 맨 앞, **0번 카드 바보(The Fool)**는 이렇게 "아직 아무것도 정해지지 않은 출발점"을 그립니다.

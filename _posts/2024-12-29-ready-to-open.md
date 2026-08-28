@@ -10,6 +10,7 @@ mermaid: true
 image:
   path: /assets/img/20241229_ready-to-open/developer_header_image.png
   alt: The logo of Fadongkwon Soft
+alt_url: /en/posts/ready-to-open/
 ---
 ## 서막
 &nbsp;&nbsp; 아이 둘을 키우면서 투입되는 비용이 점점 늘어남을 어느 순간 체감하게 되었다. 딱히 물려받은 자산도 없었고, 재테크에는 영 소질이 없어서 축적해 놓은 자산도 없었다.
@@ -46,7 +47,7 @@ image:
 > To do 리스트는 계속 업데이트 할 예정이기에 별도 포스트로 분리하고<br>
 > 본 포스트에서는 더이상 업데이트를 진행하지 않을 계획입니다.
 {: .prompt-warning }
-- [x] ~~비서 채용 (ChatGPT: 29,000원/년)~~
+- [x] ~~비서 채용 (ChatGPT: 29,000원/월)~~
 - [x] ~~사업자 등록~~
 - [x] ~~도메인 구매 (12.99$/년)~~
 - [x] ~~홈페이지 만들기~~

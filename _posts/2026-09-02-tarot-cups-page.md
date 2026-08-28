@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 컵, 궁정카드, PageOfCup
 image:
   path: /assets/img/tarot/feature_cups_page.jpg
   alt: 타로 카드 컵 시종(Page of Cups)
+alt_url: /en/posts/tarot-cups-page/
 ---
 
 짝사랑하는 사람의 마음이 궁금해 카드를 뽑았는데 컵 시종이 나왔다면, 혹은 이제 막 시작한 취미나 배움의 앞날이 궁금할 때 이 카드를 만났다면 — 그 질문들에 컵 시종은 공통된 대답을 건넵니다.

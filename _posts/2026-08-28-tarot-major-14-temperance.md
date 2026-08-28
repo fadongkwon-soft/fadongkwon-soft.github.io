@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 절제카드, Temperance, �
 image:
   path: /assets/img/tarot/feature_major_14_temperance.jpg
   alt: 타로 카드 절제(Temperance)
+alt_url: /en/posts/tarot-major-14-temperance/
 ---
 
 '절제'라는 이름 때문에 이 카드를 참고 억누르는 카드로 오해하는 경우가 많습니다. 좋아하는 것을 끊어야 한다거나, 하고 싶은 것을 억지로 눌러야 한다는 식으로 말이죠. 하지만 메이저 아르카나 **14번 절제(Temperance)** 카드가 실제로 그리는 것은 금욕이 아니라 **두 가지를 능숙하게 섞어내는 균형의 기술**입니다. 억누르는 힘이 아니라 조율하는 힘이라는 점에서, 이 카드는 사실 타로에서 가장 부드러운 카드 중 하나입니다.

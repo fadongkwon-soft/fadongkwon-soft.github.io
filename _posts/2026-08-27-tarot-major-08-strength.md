@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 힘카드, Strength, 인내,
 image:
   path: /assets/img/tarot/feature_major_08_strength.jpg
   alt: 타로 카드 힘(Strength)
+alt_url: /en/posts/tarot-major-08-strength/
 ---
 
 힘 카드를 처음 보면 흔히 완력으로 맹수를 제압하는 장면을 떠올립니다. 하지만 그림을 자세히 들여다보면 여성은 사자의 입을 억지로 벌리거나 후려치고 있지 않습니다. 오히려 두 손으로 부드럽게 감싸 쥐고 있을 뿐입니다. 메이저 아르카나 8번 **힘(Strength)**이 말하는 진짜 힘은 완력이 아니라, 사나운 것을 부드럽게 다루는 능력에 가깝습니다.

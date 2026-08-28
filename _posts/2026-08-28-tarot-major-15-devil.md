@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 악마카드, TheDevil, 타�
 image:
   path: /assets/img/tarot/feature_major_15_devil.jpg
   alt: 타로 카드 악마(The Devil)
+alt_url: /en/posts/tarot-major-15-devil/
 ---
 
 **악마 카드는 무언가에 사로잡힌 상태를 보여주지만, 동시에 그 사슬이 생각보다 헐겁다는 사실도 함께 보여주는 카드입니다.** 뿔 달린 형상 아래 사슬에 묶인 두 사람의 그림 앞에서 사람들은 흔히 최악의 카드를 뽑았다고 생각하지만, 메이저 아르카나 **15번 악마(The Devil)**가 진짜 다루는 주제는 파멸이 아니라 **얽매임의 자각**입니다.

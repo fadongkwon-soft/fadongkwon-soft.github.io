@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 전차카드, TheChariot, �
 image:
   path: /assets/img/tarot/feature_major_07_chariot.jpg
   alt: 타로 카드 전차(The Chariot)
+alt_url: /en/posts/tarot-major-07-chariot/
 ---
 
 고삐도 채우지 않은 검은 스핑크스와 흰 스핑크스를 어떻게 한 방향으로 몰고 갈 수 있을까요? 메이저 아르카나 7번 **전차(The Chariot)**가 내놓는 답은 의외로 단순합니다. 물리적인 힘이 아니라, 확고한 의지와 흔들리지 않는 시선으로 다스린다는 것입니다.

@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 교황카드, TheHierophant,
 image:
   path: /assets/img/tarot/feature_major_05_hierophant.jpg
   alt: 타로 카드 교황(The Hierophant)
+alt_url: /en/posts/tarot-major-05-hierophant/
 ---
 
 메이저 아르카나는 순서 자체에 이야기가 담겨 있습니다. 5번 교황 바로 앞에는 세속의 질서를 세우는 4번 황제가, 뒤에는 선택의 갈림길인 6번 연인이 놓여 있죠. 황제가 현실의 규칙을 세우는 카드였다면, **교황(The Hierophant)**은 그 규칙에 정신적인 정당성을 더하는 카드입니다. 오랜 시간 많은 사람이 걸어 검증된 길을 가리키며, 지금은 새 길을 개척하기보다 그 길을 믿고 따라도 좋을 때라고 말해줍니다.

@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 소드, 마이너아르카나, 소드6, SixofSwords
 image:
   path: /assets/img/tarot/feature_swords_06.jpg
   alt: 타로 카드 소드 6(Six of Swords)
+alt_url: /en/posts/tarot-swords-06/
 ---
 
 거친 물살을 뒤로하고 배를 타고 떠나는 이 카드는, 도망치는 장면일까요 아니면 나아가는 장면일까요? 사공이 노를 젓고, 웅크린 여인과 아이가 뱃머리에 앉아 있으며, 배 안에는 여섯 자루의 검이 가지런히 꽂혀 있는 그림. 소드 6은 이 질문에 대한 답을 은근히 보여주는 카드입니다.

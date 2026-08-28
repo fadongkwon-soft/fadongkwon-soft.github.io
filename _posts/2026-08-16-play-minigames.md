@@ -9,11 +9,12 @@ math: true
 mermaid: true
 image:
   path: /assets/img/20260816_play-minigames/memory-card-feature.png
+alt_url: /en/posts/play-minigames/
 ---
 ## Info
-> Two new mini-games are coming to Google Play: **Reaction Challenge** and **Memory Cards**.
+> Two new mini-games are out on Google Play: **Reaction Challenge** and **Memory Cards**.
 > Both are lightweight (~2MB), fully offline, and require no login or personal data.
-> Currently in Play review — links will go live as soon as they are approved.
+> Both are also live as Toss mini apps — download links are at the bottom of this post.
 {: .prompt-info }
 
 ## 미니게임 시리즈를 시작합니다

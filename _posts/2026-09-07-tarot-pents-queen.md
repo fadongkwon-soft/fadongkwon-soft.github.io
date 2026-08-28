@@ -7,6 +7,7 @@ tags: [타로, 타로카드, 펜타클, 코트카드, 펜타클여왕, QueenOfPe
 image:
   path: /assets/img/tarot/feature_pents_queen.jpg
   alt: 타로 카드 펜타클 여왕(Queen of Pentacles)
+alt_url: /en/posts/tarot-pents-queen/
 ---
 
 "요즘 집안일도, 회사 일도 다 내가 챙겨야 안심이 된다", "아이 건강도 가계부도 내 손을 거쳐야 마음이 놓인다" — 이런 마음으로 하루하루를 살아가고 있다면, 리딩에서 펜타클 여왕(Queen of Pentacles)이 나올 가능성이 높습니다. 풍요로운 정원 한가운데 앉아 무릎 위의 동전을 마치 아이처럼 바라보는 이 여왕은, 현실적인 것들을 살뜰하게 돌보는 사람의 얼굴을 하고 있습니다.
