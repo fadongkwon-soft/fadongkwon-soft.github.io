@@ -23,6 +23,9 @@ image:
 ![소드 10(Ten of Swords) 카드](/assets/img/tarot/swords_10.webp){: w="300" }
 _소드 10(Ten of Swords) — 소드 수트 10번_
 
+![운세 타로핑 큐트 덱 - 소드 10(Ten of Swords)](/assets/img/tarot/cute/swords_10.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 상징 읽기
 
 - **열 자루의 검** — 등에 꽂힌 검은 한 자루만으로도 이미 충분히 치명적입니다. 열 자루가 꽂혀 있다는 것은 피해의 크기보다 "이미 끝났다"는 사실 자체를 강조하는 장치에 가깝습니다.

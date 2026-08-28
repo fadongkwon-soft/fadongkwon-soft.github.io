@@ -23,6 +23,9 @@ image:
 ![바보(The Fool) 카드](/assets/img/tarot/major_00_fool.webp){: w="300" }
 _바보(The Fool) — 메이저 아르카나 0번_
 
+![운세 타로핑 큐트 덱 - 바보(The Fool)](/assets/img/tarot/cute/major_00_fool.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 상징 읽기
 
 바보 카드의 상징은 하나같이 "가벼움"을 향해 있습니다.

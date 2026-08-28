@@ -23,6 +23,9 @@ image:
 ![컵 여왕(Queen of Cups) 카드](/assets/img/tarot/cups_queen.webp){: w="300" }
 _컵 여왕(Queen of Cups) — 컵 수트 코트 카드 · 여왕_
 
+![운세 타로핑 큐트 덱 - 컵 여왕(Queen of Cups)](/assets/img/tarot/cute/cups_queen.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 상징 읽기
 
 - **뚜껑이 있는 정교한 잔** — 다른 세 수트의 여왕이 손에 자기 수트의 상징을 그대로 들고 있는 것과 달리, 컵 여왕의 잔에는 뚜껑이 달려 있습니다. 감정을 느끼되 아무렇게나 흘려보내지 않고 정성껏 담아낼 줄 아는 능력을 뜻합니다.

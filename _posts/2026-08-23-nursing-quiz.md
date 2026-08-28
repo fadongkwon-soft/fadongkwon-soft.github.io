@@ -31,6 +31,4 @@ image:
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.nursing_quiz>
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/nursing-quiz/>
 
-웹 브라우저에서도 바로 풀어볼 수 있습니다: <https://yong426.github.io/nursing-quiz/>
-
 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.

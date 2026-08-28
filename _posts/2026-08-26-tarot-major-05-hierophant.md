@@ -23,6 +23,9 @@ image:
 ![교황(The Hierophant) 카드](/assets/img/tarot/major_05_hierophant.webp){: w="300" }
 _교황(The Hierophant) — 메이저 아르카나 5번_
 
+![운세 타로핑 큐트 덱 - 교황(The Hierophant)](/assets/img/tarot/cute/major_05_hierophant.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 상징 읽기
 
 - **삼중관과 세 겹 십자가** — 몸과 마음, 영혼을 아우르는 권위를 뜻합니다. 개인의 깨달음이 아니라 오랜 세월 다듬어진 제도화된 지혜를 상징하죠.

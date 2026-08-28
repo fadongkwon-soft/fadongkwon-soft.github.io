@@ -33,6 +33,9 @@ image:
 ![여사제(The High Priestess) 카드](/assets/img/tarot/major_02_high_priestess.webp){: w="300" }
 _여사제(The High Priestess) — 메이저 아르카나 2번_
 
+![운세 타로핑 큐트 덱 - 여사제(The High Priestess)](/assets/img/tarot/cute/major_02_high_priestess.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 정방향
 
 정방향의 여사제는 **말보다 관찰이 먼저인 시기**를 뜻합니다. 겉으로 드러난 정보만으로 성급히 결론짓기보다, 한 발 물러서서 흐름을 지켜볼 때 오히려 더 정확한 판단이 선다는 조언입니다. 이 카드가 강조하는 직관은 근거 없는 감이 아니라, 그동안 쌓아온 경험과 관찰이 무의식 아래에서 조용히 정리된 결과에 가깝습니다. 서두르지 않아도 답은 이미 마음 한편에 자리 잡고 있는 경우가 많습니다.

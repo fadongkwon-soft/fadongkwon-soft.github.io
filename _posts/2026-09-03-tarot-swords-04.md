@@ -24,6 +24,9 @@ image:
 ![소드 4(Four of Swords) 카드](/assets/img/tarot/swords_04.webp){: w="300" }
 _소드 4(Four of Swords) — 소드 수트 4번_
 
+![운세 타로핑 큐트 덱 - 소드 4(Four of Swords)](/assets/img/tarot/cute/swords_04.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 상징 읽기
 
 카드 속에는 기사의 석상이 두 손을 기도하듯 모은 채 누워 있습니다. 벽에는 세 자루의 검이 걸려 있고, 그 아래 누운 몸 밑으로 한 자루의 검이 더 놓여 있습니다. 머리맡 스테인드글라스에는 신성한 인물이 축복을 내리는 모습이 그려져 있습니다.

@@ -23,6 +23,9 @@ image:
 ![소드 시종(Page of Swords) 카드](/assets/img/tarot/swords_page.webp){: w="300" }
 _소드 시종(Page of Swords) — 소드 수트 코트 카드_
 
+![운세 타로핑 큐트 덱 - 소드 시종(Page of Swords)](/assets/img/tarot/cute/swords_page.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 상징 읽기
 
 - **바람이 몰아치는 언덕** — 공기 원소가 가장 노골적으로 드러나는 배경입니다. 잠시도 가만히 있지 못하는 활발한 사고를 상징합니다.

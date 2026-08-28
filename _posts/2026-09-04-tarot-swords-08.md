@@ -23,6 +23,9 @@ image:
 ![소드 8(Eight of Swords) 카드](/assets/img/tarot/swords_08.webp){: w="300" }
 _소드 8(Eight of Swords) — 소드 수트 8번_
 
+![운세 타로핑 큐트 덱 - 소드 8(Eight of Swords)](/assets/img/tarot/cute/swords_08.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 상징과 숫자
 
 - **여덟 자루의 검** — 몸을 가둔 창살이 아니라 마음을 옥죄는 여러 갈래의 부정적 생각에 가깝습니다. 검은 날카롭지만 서 있을 뿐, 실제로 여인을 찌르지는 않습니다.

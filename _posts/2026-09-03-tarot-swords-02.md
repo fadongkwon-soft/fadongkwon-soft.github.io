@@ -23,6 +23,9 @@ image:
 ![소드 2(Two of Swords) 카드](/assets/img/tarot/swords_02.webp){: w="300" }
 _소드 2(Two of Swords) — 소드 수트 2번_
 
+![운세 타로핑 큐트 덱 - 소드 2(Two of Swords)](/assets/img/tarot/cute/swords_02.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 상징과 숫자
 
 카드 속 인물은 해안가 바위에 앉아 두 팔을 엇갈려 검을 쥐고 있습니다. 눈은 천으로 가려져 있고, 등 뒤로는 초승달이 떠 있으며, 발밑의 바다는 겉보기에는 잔잔하지만 그림 아래쪽에는 날카로운 바위들이 감춰져 있습니다.

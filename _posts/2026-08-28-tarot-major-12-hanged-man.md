@@ -23,6 +23,9 @@ image:
 ![매달린 사람(The Hanged Man) 카드](/assets/img/tarot/major_12_hanged_man.webp){: w="300" }
 _매달린 사람(The Hanged Man) — 메이저 아르카나 12번_
 
+![운세 타로핑 큐트 덱 - 매달린 사람(The Hanged Man)](/assets/img/tarot/cute/major_12_hanged_man.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 상징 읽기
 
 - **T자형 나무** — 살아있는 나무로 이루어진 형틀은 이 장면이 죽음이 아니라 생명이 이어지는 자리에서 벌어지는 일임을 암시합니다.

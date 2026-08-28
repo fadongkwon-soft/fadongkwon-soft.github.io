@@ -24,6 +24,9 @@ image:
 ![소드 5(Five of Swords) 카드](/assets/img/tarot/swords_05.webp){: w="300" }
 _소드 5(Five of Swords) — 소드 수트 5번_
 
+![운세 타로핑 큐트 덱 - 소드 5(Five of Swords)](/assets/img/tarot/cute/swords_05.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 상징 읽기
 
 - **검을 그러모으는 남자의 표정** — 이겼다는 확신은 있지만 완전한 승리라 부르기 애매한 씁쓸함이 함께 배어 있습니다.

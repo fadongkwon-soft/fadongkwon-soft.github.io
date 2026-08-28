@@ -23,6 +23,9 @@ image:
 ![소드 왕(King of Swords) 카드](/assets/img/tarot/swords_king.webp){: w="300" }
 _소드 왕(King of Swords) — 소드 수트 코트 카드_
 
+![운세 타로핑 큐트 덱 - 소드 왕(King of Swords)](/assets/img/tarot/cute/swords_king.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 상징과 숫자
 
 - **정면을 응시하는 자세** — 소드 코트 중 유일하게 옆이 아닌 정면을 바라보는 인물입니다. 상황을 회피하지 않고 정면으로 마주하는 태도를 상징합니다.

@@ -21,6 +21,9 @@ image:
 ![별(The Star) 카드](/assets/img/tarot/major_17_star.webp){: w="300" }
 _별(The Star) — 메이저 아르카나 17번_
 
+![운세 타로핑 큐트 덱 - 별(The Star)](/assets/img/tarot/cute/major_17_star.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 상징 읽기
 
 - **한쪽 무릎은 물에, 한쪽 발은 땅에** — 절제 카드와 닮은 이 자세는 무의식과 현실 양쪽에 발을 딛고 회복해가는 과정을 보여줍니다.

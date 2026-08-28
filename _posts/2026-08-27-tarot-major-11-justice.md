@@ -21,6 +21,9 @@ image:
 ![정의(Justice) 카드](/assets/img/tarot/major_11_justice.webp){: w="300" }
 _정의(Justice) — 메이저 아르카나 11번_
 
+![운세 타로핑 큐트 덱 - 정의(Justice)](/assets/img/tarot/cute/major_11_justice.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 상징 읽기
 
 - **오른손의 검** — 곧게 세워 든 검은 흐릿함 없이 명확하게 가르는 판단력을 상징합니다. 어느 한쪽으로도 기울지 않고 수직으로 서 있다는 점이 핵심입니다.

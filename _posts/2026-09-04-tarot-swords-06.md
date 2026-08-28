@@ -17,6 +17,9 @@ image:
 ![소드 6(Six of Swords) 카드](/assets/img/tarot/swords_06.webp){: w="300" }
 _소드 6(Six of Swords) — 소드 수트 6번_
 
+![운세 타로핑 큐트 덱 - 소드 6(Six of Swords)](/assets/img/tarot/cute/swords_06.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 왜 이런 의미가 되었나
 
 뱃머리 쪽 물살은 잔잔하지만, 배가 떠나온 쪽 물살은 여전히 거칠게 그려져 있습니다. 이 대비가 소드 6의 핵심입니다. 폭풍이 완전히 사라진 것은 아니지만, 최소한 그 폭풍으로부터 멀어지는 방향으로 이동하고 있다는 뜻입니다.

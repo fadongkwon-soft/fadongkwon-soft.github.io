@@ -23,6 +23,9 @@ image:
 ![완드 왕(King of Wands) 카드](/assets/img/tarot/wands_king.webp){: w="300" }
 _완드 왕(King of Wands) — 완드 수트 코트 카드_
 
+![운세 타로핑 큐트 덱 - 완드 왕(King of Wands)](/assets/img/tarot/cute/wands_king.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 상징 읽기
 
 - **정면을 향한 자세** — 다른 왕 카드들과 달리 완드 왕은 몸을 숨기지 않고 정면이나 옆을 응시하며 앉아 있는 구도가 많습니다. 돌려 말하지 않고 정면으로 부딪히는 리더십을 뜻합니다.

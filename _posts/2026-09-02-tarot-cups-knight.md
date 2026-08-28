@@ -23,6 +23,9 @@ image:
 ![컵 기사(Knight of Cups) 카드](/assets/img/tarot/cups_knight.webp){: w="300" }
 _컵 기사(Knight of Cups) — 컵 수트 코트 카드 · 기사_
 
+![운세 타로핑 큐트 덱 - 컵 기사(Knight of Cups)](/assets/img/tarot/cute/cups_knight.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 상징 읽기
 
 - **차분히 걷는 백마** — 완드 기사의 질주하는 말과 달리, 컵 기사의 말은 감정에 이끌리면서도 통제를 잃지 않는 절제된 속도를 보여줍니다.

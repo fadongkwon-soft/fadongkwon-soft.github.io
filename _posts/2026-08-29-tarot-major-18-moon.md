@@ -23,6 +23,9 @@ image:
 ![달(The Moon) 카드](/assets/img/tarot/major_18_moon.webp){: w="300" }
 _달(The Moon) — 메이저 아르카나 18번_
 
+![운세 타로핑 큐트 덱 - 달(The Moon)](/assets/img/tarot/cute/major_18_moon.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 상징 읽기
 
 - **두 개의 탑** — 익숙한 세계의 경계입니다. 그 사이로 난 길을 지나야만 다음 단계로 나아갈 수 있습니다.

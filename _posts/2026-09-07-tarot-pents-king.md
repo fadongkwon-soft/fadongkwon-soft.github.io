@@ -23,6 +23,9 @@ image:
 ![펜타클 왕(King of Pentacles) 카드](/assets/img/tarot/pents_king.webp){: w="300" }
 _펜타클 왕(King of Pentacles) — 펜타클 수트 코트카드_
 
+![운세 타로핑 큐트 덱 - 펜타클 왕(King of Pentacles)](/assets/img/tarot/cute/pents_king.webp){: w="300" }
+_같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/tarot-ping/)의 큐트 덱_
+
 ## 왕좌에 새겨진 상징
 
 - **황소 머리 장식** — 황소자리(대지, 풍요, 인내)를 상징하며, 흙 원소의 우직한 힘을 대표합니다. 목표를 향해 꾸준히 밀고 나가는 뚝심을 뜻합니다.
