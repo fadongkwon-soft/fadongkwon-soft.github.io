@@ -485,9 +485,14 @@ def cmd_scaffold():
         n += 1
     print('한국어 포스트 alt_url: %d개 변경 / 전체 %d개' % (n, len(posts)))
 
-    for path, alt in [('index.html', '/en/'),
+    # ⚠️ 2026-08-29 재편 이후: 루트(/)가 영문 홈, 한국어 홈은 /ko/ 다.
+    for path, alt in [('index.html', '/ko/'),
+                      ('ko/index.html', '/'),
                       ('_tabs/tarot.md', '/en/tarot/'),
-                      ('_tabs/about.md', '/en/about/')]:
+                      ('_tabs/about.md', '/en/about/'),
+                      ('_tabs/archives.md', '/en/archives/'),
+                      ('_tabs/categories.md', '/en/categories/'),
+                      ('_tabs/tags.md', '/en/tags/')]:
         p = os.path.join(ROOT, path)
         s = io.open(p, encoding='utf-8').read()
         fm, body = split_fm(s)
