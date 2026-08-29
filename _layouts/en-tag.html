@@ -1,0 +1,32 @@
+---
+layout: page
+# 영문판 태그 상세(하위) 페이지. chirpy v7.6.0 _layouts/tag.html 을 복사해
+# page.posts(jekyll-archives 주입) 대신 site.en_posts 를 직접 거른다.
+# 스텁 문서(en/tags/<slug>/index.md)는 tools/i18n.py fixup 이 자동 생성한다.
+# ⚠️ 컬렉션은 미래 날짜 문서가 남으므로 날짜 필터 필수.
+---
+
+{% include lang.html %}
+
+{% assign posts = site.en_posts
+  | where_exp: 'p', 'p.hidden != true'
+  | where_exp: 'p', 'p.date <= site.time'
+  | where_exp: 'p', 'p.tags contains page.tag'
+  | sort: 'date' | reverse %}
+
+<div id="page-tag">
+  <h1 class="ps-lg-2">
+    <i class="fa fa-tag fa-fw text-muted"></i>
+    {{ page.tag }}
+    <span class="lead text-muted ps-2">{{ posts | size }}</span>
+  </h1>
+  <ul class="content ps-0">
+    {% for post in posts %}
+      <li class="d-flex justify-content-between px-md-3">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        <span class="dash flex-grow-1"></span>
+        {% include datetime.html date=post.date class='text-muted small text-nowrap' lang=lang %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>

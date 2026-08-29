@@ -141,7 +141,7 @@ script_includes:
           {%- endcomment -%}
           {% for category in page.categories %}
             {%- if page.lang == 'en' -%}
-              <a href="{{ site.baseurl }}/en/categories/#cat-{{ category | slugify }}">{{ category }}</a>
+              <a href="{{ site.baseurl }}/en/categories/{{ category | slugify | url_encode }}/">{{ category }}</a>
             {%- else -%}
               <a href="{{ site.baseurl }}/categories/{{ category | slugify | url_encode }}/">{{ category }}</a>
             {%- endif -%}
@@ -160,7 +160,7 @@ script_includes:
         <i class="fa fa-tags fa-fw me-1"></i>
         {% for tag in page.tags %}
           {%- if page.lang == 'en' -%}
-            {% capture tag_href %}{{ site.baseurl }}/en/tags/#tag-{{ tag | slugify }}{% endcapture %}
+            {% capture tag_href %}{{ site.baseurl }}/en/tags/{{ tag | slugify | url_encode }}/{% endcapture %}
           {%- else -%}
             {% capture tag_href %}{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/{% endcapture %}
           {%- endif -%}

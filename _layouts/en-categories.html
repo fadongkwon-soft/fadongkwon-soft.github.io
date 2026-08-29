@@ -1,62 +1,146 @@
 ---
 layout: page
-# 영문판 카테고리 아카이브. jekyll-archives 는 컬렉션(_en_posts)을 지원하지
-# 않으므로 카테고리별 하위 페이지 대신 **한 페이지 안의 앵커 섹션**으로 만든다.
-# 포스트 하단 카테고리 링크(post.html)와 앵커 id 규칙(cat-<slugify>)을 맞출 것.
-# 섹션은 첫 번째 카테고리 기준으로 묶고, 두 번째 카테고리는 항목 옆 배지로 보여준다.
+# 영문판 카테고리 목록. chirpy v7.6.0 _layouts/categories.html 의 카드/트리
+# 마크업을 그대로 옮기되 site.categories(한국어 posts 전용) 대신 site.en_posts
+# 에서 그룹을 계산하고, 링크를 /en/categories/<slug>/ 하위 페이지로 보낸다.
+# 하위 페이지 스텁은 tools/i18n.py fixup 이 자동 생성한다.
 # ⚠️ 컬렉션은 미래 날짜 문서가 남으므로 날짜 필터 필수.
 ---
 
+{% include lang.html %}
+
+{% assign HEAD_PREFIX = 'h_' %}
+{% assign LIST_PREFIX = 'l_' %}
+{% assign group_index = 0 %}
+
 {% assign pool = site.en_posts
   | where_exp: 'p', 'p.hidden != true'
-  | where_exp: 'p', 'p.date <= site.time'
-  | sort: 'date' | reverse %}
+  | where_exp: 'p', 'p.date <= site.time' %}
 
 {% assign tops = '' | split: '' %}
-{% assign subs = '' | split: '' %}
 {% for post in pool %}
   {% assign top = post.categories | first %}
-  {% if top and tops contains top %}{% else %}{% if top %}{% assign tops = tops | push: top %}{% endif %}{% endif %}
-  {% assign sub = post.categories[1] %}
-  {% if sub and subs contains sub %}{% else %}{% if sub %}{% assign subs = subs | push: sub %}{% endif %}{% endif %}
+  {% if top %}
+    {% unless tops contains top %}{% assign tops = tops | push: top %}{% endunless %}
+  {% endif %}
 {% endfor %}
 {% assign tops = tops | sort_natural %}
-{% assign subs = subs | sort_natural %}
 
-<div id="archives" class="pl-xl-3">
-  {% for c in tops %}
-    {% assign hits = pool | where_exp: 'p', 'p.categories.first == c' %}
-    <h2 id="cat-{{ c | slugify }}" class="lead d-block mt-4">
-      <i class="far fa-folder-open fa-fw text-muted me-1"></i>{{ c }}
-      <span class="text-muted small">{{ hits | size }}</span>
-    </h2>
-    <ul class="list-unstyled">
-      {% for post in hits %}
-        <li>
-          <span class="date small text-muted me-2">{{ post.date | date: '%b %d, %Y' }}</span>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          {% assign sub = post.categories[1] %}
-          {% if sub %}<span class="text-muted small ms-1">· {{ sub }}</span>{% endif %}
-        </li>
-      {% endfor %}
-    </ul>
+{% for category_name in tops %}
+  {% assign posts_of_category = pool | where_exp: 'p', 'p.categories.first == category_name' %}
+  {% assign sub_categories = '' | split: '' %}
+  {% for post in posts_of_category %}
+    {% assign second_category = post.categories[1] %}
+    {% if second_category %}
+      {% unless sub_categories contains second_category %}
+        {% assign sub_categories = sub_categories | push: second_category %}
+      {% endunless %}
+    {% endif %}
   {% endfor %}
+  {% assign sub_categories = sub_categories | sort %}
+  {% assign sub_categories_size = sub_categories | size %}
 
-  <!-- 두 번째 카테고리에도 앵커를 만들어 준다 (포스트 하단 링크가 둘 다 걸리므로) -->
-  {% for c in subs %}
-    {% if tops contains c %}{% continue %}{% endif %}
-    {% assign hits = pool | where_exp: 'p', 'p.categories contains c' %}
-    <h2 id="cat-{{ c | slugify }}" class="lead d-block mt-4">
-      <i class="far fa-folder fa-fw text-muted me-1"></i>{{ c }}
-      <span class="text-muted small">{{ hits | size }}</span>
-    </h2>
-    <ul class="list-unstyled">
-      {% for post in hits %}
-        <li>
-          <span class="date small text-muted me-2">{{ post.date | date: '%b %d, %Y' }}</span>
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
-  {% endfor %}
-</div>
+  <div class="card categories">
+    <!-- top-category -->
+    <div
+      id="{{ HEAD_PREFIX }}{{ group_index }}"
+      class="card-header d-flex justify-content-between hide-border-bottom"
+    >
+      <span class="ms-2">
+        <i class="far fa-folder{% if sub_categories_size > 0 %}-open{% endif %} fa-fw"></i>
+
+        {% capture _category_url %}/en/categories/{{ category_name | slugify | url_encode }}/{% endcapture %}
+        <a href="{{ _category_url | relative_url }}" class="mx-2">{{ category_name }}</a>
+
+        <!-- content count -->
+        {% assign top_posts_size = posts_of_category | size %}
+        <span class="text-muted small font-weight-light">
+          {% if sub_categories_size > 0 %}
+            {{ sub_categories_size }}
+            {% if sub_categories_size > 1 %}
+              {{
+                site.data.locales[lang].categories.category_measure.plural
+                | default: site.data.locales[lang].categories.category_measure
+              }}
+            {% else %}
+              {{
+                site.data.locales[lang].categories.category_measure.singular
+                | default: site.data.locales[lang].categories.category_measure
+              }}
+            {% endif -%}
+            ,
+          {% endif %}
+
+          {{ top_posts_size }}
+
+          {% if top_posts_size > 1 %}
+            {{
+              site.data.locales[lang].categories.post_measure.plural
+              | default: site.data.locales[lang].categories.post_measure
+            }}
+          {% else %}
+            {{
+              site.data.locales[lang].categories.post_measure.singular
+              | default: site.data.locales[lang].categories.post_measure
+            }}
+          {% endif %}
+        </span>
+      </span>
+
+      <!-- arrow -->
+      {% if sub_categories_size > 0 %}
+        <a
+          href="#{{ LIST_PREFIX }}{{ group_index }}"
+          data-bs-toggle="collapse"
+          aria-expanded="true"
+          aria-label="{{ HEAD_PREFIX }}{{ group_index }}-trigger"
+          class="category-trigger hide-border-bottom"
+        >
+          <i class="fas fa-fw fa-angle-down"></i>
+        </a>
+      {% else %}
+        <span data-bs-toggle="collapse" class="category-trigger hide-border-bottom disabled">
+          <i class="fas fa-fw fa-angle-right"></i>
+        </span>
+      {% endif %}
+    </div>
+    <!-- .card-header -->
+
+    <!-- Sub-categories -->
+    {% if sub_categories_size > 0 %}
+      <div id="{{ LIST_PREFIX }}{{ group_index }}" class="collapse show" aria-expanded="true">
+        <ul class="list-group">
+          {% for sub_category in sub_categories %}
+            <li class="list-group-item">
+              <i class="far fa-folder fa-fw"></i>
+
+              {% capture _sub_ctg_url %}/en/categories/{{ sub_category | slugify | url_encode }}/{% endcapture %}
+              <a href="{{ _sub_ctg_url | relative_url }}" class="mx-2">{{ sub_category }}</a>
+
+              {% assign sub_hits = pool | where_exp: 'p', 'p.categories contains sub_category' %}
+              {% assign posts_size = sub_hits | size %}
+              <span class="text-muted small font-weight-light">
+                {{ posts_size }}
+
+                {% if posts_size > 1 %}
+                  {{
+                    site.data.locales[lang].categories.post_measure.plural
+                    | default: site.data.locales[lang].categories.post_measure
+                  }}
+                {% else %}
+                  {{
+                    site.data.locales[lang].categories.post_measure.singular
+                    | default: site.data.locales[lang].categories.post_measure
+                  }}
+                {% endif %}
+              </span>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  </div>
+  <!-- .card -->
+
+  {% assign group_index = group_index | plus: 1 %}
+{% endfor %}

@@ -152,6 +152,59 @@ def en_tags_for(ko_tags, is_tarot_card):
             add(t.lower())
     return out
 
+
+def _slugify(s):
+    """Jekyll 의 기본 slugify 와 동일해야 한다(레이아웃의 `| slugify` 와 짝)."""
+    return re.sub(r'[^a-z0-9]+', '-', s.lower()).strip('-')
+
+
+def gen_archive_stubs():
+    """_en_posts 의 categories/tags 로 /en/categories/<slug>/, /en/tags/<slug>/
+    스텁 페이지를 생성·정리한다. jekyll-archives 가 컬렉션을 지원하지 않아
+    하위 페이지를 이렇게 만든다. 완전 생성물이므로 사라진 항목의 스텁은 지운다.
+    (미래 날짜 글의 항목도 미리 만든다 — 목록 필터가 공개분만 보여주므로 무해)"""
+    import shutil
+
+    cats, tags = {}, {}
+    for p in glob.glob(os.path.join(EN_DIR, '*.md')):
+        fm, _ = split_fm(io.open(p, encoding='utf-8').read())
+        for key, store in (('categories', cats), ('tags', tags)):
+            raw = fm_get(fm, key) or ''
+            for item in raw.strip('[]').split(','):
+                item = item.strip()
+                if item:
+                    store.setdefault(_slugify(item), item)
+
+    made = 0
+    for kind, store, layout, fm_key in (
+        ('categories', cats, 'en-category', 'category'),
+        ('tags', tags, 'en-tag', 'tag'),
+    ):
+        base = os.path.join(ROOT, 'en', kind)
+        os.makedirs(base, exist_ok=True)
+        # 사라진 항목의 스텁 제거
+        for d in os.listdir(base):
+            full = os.path.join(base, d)
+            if os.path.isdir(full) and d not in store:
+                shutil.rmtree(full)
+        for slug, display in sorted(store.items()):
+            d = os.path.join(base, slug)
+            os.makedirs(d, exist_ok=True)
+            stub = (
+                '---\n'
+                'layout: {layout}\n'
+                'title: {display}\n'
+                '{fm_key}: {display}\n'
+                'lang: en\n'
+                'locale: en_US\n'
+                'permalink: /en/{kind}/{slug}/\n'
+                '---\n'
+            ).format(layout=layout, display=display, fm_key=fm_key, kind=kind, slug=slug)
+            io.open(os.path.join(d, 'index.md'), 'w', encoding='utf-8', newline='\n').write(stub)
+            made += 1
+    print('archive stubs: 카테고리 %d + 태그 %d' % (len(cats), len(tags)))
+    return made
+
 # ─────────────────────────────────────────────────────────────────────────────
 # 제목 정규화
 #
@@ -515,6 +568,7 @@ def cmd_fixup():
         io.open(p, 'w', encoding='utf-8', newline='\n').write('---\n' + fm + '---\n' + body)
 
     print('fixup: %d개 처리' % len(files))
+    gen_archive_stubs()
     if head_fixed:
         print('  제목 표준화 %d개 파일:' % len(head_fixed))
         for h in head_fixed:

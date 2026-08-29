@@ -9,6 +9,12 @@
 {% assign eff_layout = page.layout %}
 {% if eff_layout == 'en-archives' %}
   {% assign eff_layout = 'archives' %}
+{% elsif eff_layout == 'en-categories' %}
+  {% assign eff_layout = 'categories' %}
+{% elsif eff_layout == 'en-category' %}
+  {% assign eff_layout = 'category' %}
+{% elsif eff_layout == 'en-tag' %}
+  {% assign eff_layout = 'tag' %}
 {% endif %}
 
 <!-- commons -->
