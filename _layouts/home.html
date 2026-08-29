@@ -6,7 +6,12 @@ layout: default
 ---
 
 <!-- 언어 공용 홈 레이아웃 (page.lang 으로 컬렉션 선택: en → _en_posts, 그 외 → _posts).
-     Chirpy 의 home 레이아웃은 jekyll-paginate 의 paginator 를 요구하는데
+     ⚠️ 파일명이 반드시 home.html(테마 home 레이아웃 오버라이드)이어야 한다 —
+     Chirpy 의 js-selector(홈 JS 번들)와 refactor-content(이미지 래핑 방식),
+     topbar(홈 판정)가 전부 `page.layout == 'home'` 문자열로 분기한다.
+     커스텀 이름(lang-home)을 썼더니 카드 이미지가 popup 앵커로 이중 래핑돼
+     중첩 <a> 가 쪼개지고 shimmer 가 잔존하는 사고가 났다(2026-08-29).
+     Chirpy 원본 home 은 jekyll-paginate 의 paginator 를 요구하는데
      paginator 는 site.posts(한국어) 만, 그것도 루트 index 에서만 페이지네이션하므로
      루트(영문)/서브(한국어) 어느 쪽에도 그대로 쓸 수 없다.
      카드 마크업은 테마 CSS(.card-wrapper/.post-preview)를 그대로 재사용하고,

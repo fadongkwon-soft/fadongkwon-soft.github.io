@@ -1,16 +1,13 @@
 <!-- JS selector for site.
   jekyll-theme-chirpy v7.6.0 의 _includes/js-selector.html 오버라이드.
   원본 대비 변경점 하나: 커스텀 레이아웃을 원본 번들에 매핑한다.
-    · lang-home    → home    (매핑 없으면 commons 만 실려 이미지 shimmer 가
-                              제거되지 않고 카드 위에 회색 그라데이션이 잔존)
-    · en-archives  → archives
+    · en-archives → archives (매핑 없으면 commons 만 실려 날짜 렌더링 JS 누락)
+  홈은 테마 home 레이아웃을 직접 오버라이드하므로 매핑이 필요 없다.
   테마 업그레이드 시 원본과 재대조할 것.
 -->
 
 {% assign eff_layout = page.layout %}
-{% if eff_layout == 'lang-home' %}
-  {% assign eff_layout = 'home' %}
-{% elsif eff_layout == 'en-archives' %}
+{% if eff_layout == 'en-archives' %}
   {% assign eff_layout = 'archives' %}
 {% endif %}
 

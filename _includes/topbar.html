@@ -1,9 +1,8 @@
 <!-- The Top Bar
   jekyll-theme-chirpy v7.6.0 의 _includes/topbar.html 오버라이드다.
-  원본 대비 변경점 두 가지.
-    (1) 홈 판정에 lang-home 레이아웃 포함 — 안 하면 홈에서 제목이 "En-home" 처럼
-        레이아웃 이름으로 새고, 브레드크럼도 홈 취급을 못 받는다.
-    (2) 브레드크럼의 홈 링크를 페이지 언어의 홈(/ 또는 /ko/)으로 보낸다.
+  원본 대비 변경점 하나.
+    · 브레드크럼의 홈 링크를 페이지 언어의 홈(/ 또는 /ko/)으로 보낸다.
+  (홈 레이아웃은 테마 home 을 직접 오버라이드하므로 별도 홈 판정이 필요 없다)
 -->
 
 {% assign cur_lang = page.lang | default: 'ko' %}
@@ -21,7 +20,7 @@
     <nav id="breadcrumb" aria-label="Breadcrumb">
       {% assign paths = page.url | split: '/' %}
 
-      {% if paths.size == 0 or page.layout == 'home' or page.layout == 'lang-home' %}
+      {% if paths.size == 0 or page.layout == 'home' %}
         <!-- index page -->
         <span>{{ site.data.locales[include.lang].tabs.home | capitalize }}</span>
 
