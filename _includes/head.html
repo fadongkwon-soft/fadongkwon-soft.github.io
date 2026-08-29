@@ -1,3 +1,10 @@
+<!-- jekyll-theme-chirpy v7.6.0 의 _includes/head.html 오버라이드다.
+  Gemfile 이 버전을 고정하고 있으니, 테마를 올릴 때 원본과 다시 대조할 것.
+  원본 대비 변경점 하나.
+    · <title> 을 페이지별 제목 없이 site.title("Fadongkwon Soft")로 고정
+      (사용자 결정, 2026-08-30). SEO 메타(og:title 등)는 {% seo title=false %}가
+      페이지별로 계속 내보내므로 브라우저 탭 표기만 바뀐다.
+-->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f7f7f7">
@@ -53,23 +60,7 @@
     <meta name="fediverse:creator" content="{{ site.social.fediverse_handle }}">
   {% endif %}
 
-  <!-- chirpy v7.6.0 head.html 오버라이드. 변경점 하나: 홈 레이아웃이라도
-       front matter 에 title 이 있으면 <title> 에 반영한다(SEO 제목 유지).
-       (한/영 홈이 home 레이아웃 오버라이드를 쓰면서 원본 조건이 제목을 지웠다) -->
-  <title>
-    {%- unless page.layout == 'home' and page.title == nil -%}
-      {%- capture title -%}
-        {%- if page.collection == 'tabs' -%}
-          {%- assign tab_key = page.title | downcase -%}
-          {{- site.data.locales[include.lang].tabs[tab_key] -}}
-        {%- else -%}
-          {{- page.title -}}
-        {%- endif -%}
-      {%- endcapture -%}
-      {{- title | append: ' | ' -}}
-    {%- endunless -%}
-    {{- site.title -}}
-  </title>
+  <title>{{- site.title -}}</title>
 
   {% include_cached favicons.html %}
 
