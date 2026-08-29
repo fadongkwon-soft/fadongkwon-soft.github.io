@@ -95,8 +95,9 @@
         try { localStorage.setItem('fdk-lang', this.getAttribute('hreflang')); } catch (e) { /* noop */ }
       });
     }
-    // PWA 를 끄면서(구버전 캐시가 개편 후 화면 깨짐·저속의 원인) 방문자에게
-    // 남아 있는 서비스워커와 캐시를 정리한다. 몇 배포 뒤 제거해도 된다.
+    /* PWA 를 끄면서(구버전 캐시가 개편 후 화면 깨짐·저속의 원인) 방문자에게
+       남아 있는 서비스워커와 캐시를 정리한다. 몇 배포 뒤 제거해도 된다.
+       ⚠️ 이 <script> 는 Chirpy HTML 압축으로 한 줄이 되므로 //-주석 금지. */
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.getRegistrations().then(function (rs) {
         rs.forEach(function (r) { r.unregister(); });
