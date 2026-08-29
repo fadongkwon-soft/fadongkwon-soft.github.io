@@ -1,7 +1,7 @@
 ---
 title: 완드 기사(Knight of Wands) 카드 의미 — 생각보다 몸이 먼저 움직일 때
 description: 완드 기사 카드가 뜻하는 돌진과 모험심의 의미, 정방향·역방향 차이와 연애·투자 등 상황별 해석을 정리했습니다
-date: 2026-08-31 10:00:00 +0900
+date: 2026-08-29 16:46:32 +0900
 categories: [Tarot, Wands]
 tags: [타로, 타로카드, 완드, 마이너아르카나, 코트카드, KnightOfWands, 완드기사]
 image:

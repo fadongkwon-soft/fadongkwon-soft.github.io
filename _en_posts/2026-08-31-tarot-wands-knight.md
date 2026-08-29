@@ -4,7 +4,7 @@ description: What the Knight of Wands means upright and reversed, why it moves s
 image:
   path: /assets/img/tarot/feature_wands_knight.jpg
   alt: Knight of Wands tarot card
-date: 2026-08-31 10:00:00 +0900
+date: 2026-08-29 16:46:32 +0900
 categories: [Tarot, Wands]
 permalink: /en/posts/tarot-wands-knight/
 alt_url: /posts/tarot-wands-knight/

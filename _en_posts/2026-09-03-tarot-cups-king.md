@@ -4,7 +4,7 @@ description: Why the King of Cups stays calm on a stormy sea, what the card mean
 image:
   path: /assets/img/tarot/feature_cups_king.jpg
   alt: The King of Cups tarot card
-date: 2026-09-03 09:20:00 +0900
+date: 2026-08-29 16:46:48 +0900
 categories: [Tarot, Cups]
 permalink: /en/posts/tarot-cups-king/
 alt_url: /posts/tarot-cups-king/

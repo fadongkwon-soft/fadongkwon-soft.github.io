@@ -1,7 +1,7 @@
 ---
 title: 펜타클 기사(Knight of Pentacles) 카드 의미 — 네 기사 중 가장 느린 걸음
 description: 타로 코트 카드 펜타클 기사가 상징하는 꾸준함과 신뢰의 의미, 직장·연애·금전 등 상황별 해석을 정리했습니다
-date: 2026-09-07 10:00:00 +0900
+date: 2026-08-29 16:47:14 +0900
 categories: [Tarot, Pentacles]
 tags: [타로, 타로카드, 펜타클, 코트카드, 펜타클기사, KnightOfPentacles]
 image:

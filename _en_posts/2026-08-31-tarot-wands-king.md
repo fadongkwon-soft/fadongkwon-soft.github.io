@@ -4,7 +4,7 @@ description: What the King of Wands means upright and reversed, the symbols behi
 image:
   path: /assets/img/tarot/feature_wands_king.jpg
   alt: King of Wands tarot card
-date: 2026-08-31 10:40:00 +0900
+date: 2026-08-29 16:46:34 +0900
 categories: [Tarot, Wands]
 permalink: /en/posts/tarot-wands-king/
 alt_url: /posts/tarot-wands-king/

@@ -1,7 +1,7 @@
 ---
 title: 소드 7(Seven of Swords) 카드 의미 — 정면돌파보다 나은 길이 있을 때
 description: 소드 7 카드가 상징하는 전략과 우회의 의미, 정방향·역방향과 직장·학업·대인관계 상황별 해석을 정리했습니다
-date: 2026-09-04 09:40:00 +0900
+date: 2026-08-29 16:46:55 +0900
 categories: [Tarot, Swords]
 tags: [타로, 타로카드, 소드, 마이너아르카나, 소드7, SevenofSwords, 타로해석]
 image:

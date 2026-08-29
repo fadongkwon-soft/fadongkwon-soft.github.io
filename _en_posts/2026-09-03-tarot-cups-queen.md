@@ -4,7 +4,7 @@ description: The symbols in the Queen of Cups, what the card means upright and r
 image:
   path: /assets/img/tarot/feature_cups_queen.jpg
   alt: The Queen of Cups tarot card
-date: 2026-09-03 09:00:00 +0900
+date: 2026-08-29 16:46:47 +0900
 categories: [Tarot, Cups]
 permalink: /en/posts/tarot-cups-queen/
 alt_url: /posts/tarot-cups-queen/

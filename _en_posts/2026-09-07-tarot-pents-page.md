@@ -4,7 +4,7 @@ description: What the Page of Pentacles means upright and reversed, the details 
 image:
   path: /assets/img/tarot/feature_pents_page.jpg
   alt: Page of Pentacles tarot card
-date: 2026-09-07 09:40:00 +0900
+date: 2026-08-29 16:47:13 +0900
 categories: [Tarot, Pentacles]
 permalink: /en/posts/tarot-pents-page/
 alt_url: /posts/tarot-pents-page/

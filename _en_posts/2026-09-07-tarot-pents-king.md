@@ -4,7 +4,7 @@ description: What the King of Pentacles means upright and reversed, the symbols 
 image:
   path: /assets/img/tarot/feature_pents_king.jpg
   alt: King of Pentacles tarot card
-date: 2026-09-07 10:40:00 +0900
+date: 2026-08-29 16:47:16 +0900
 categories: [Tarot, Pentacles]
 permalink: /en/posts/tarot-pents-king/
 alt_url: /posts/tarot-pents-king/

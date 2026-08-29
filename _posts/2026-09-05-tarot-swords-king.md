@@ -1,7 +1,7 @@
 ---
 title: 소드 왕(King of Swords) 카드 의미 — 검을 세워 원칙을 지키는 사람
 description: 타로 소드 왕 카드가 상징하는 이성적 판단과 권위, 정방향·역방향 의미와 직장·가족 상황별 해석을 정리했습니다
-date: 2026-09-05 10:00:00 +0900
+date: 2026-08-29 16:47:02 +0900
 categories: [Tarot, Swords]
 tags: [타로, 타로카드, 마이너아르카나, 소드왕, KingOfSwords, 코트카드]
 image:

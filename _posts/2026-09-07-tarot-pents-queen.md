@@ -1,7 +1,7 @@
 ---
 title: 펜타클 여왕(Queen of Pentacles) 카드 의미 — 현실을 돌보는 손길
 description: 타로 코트 카드 펜타클 여왕이 상징하는 실속과 돌봄의 의미, 가족·건강·직장 등 상황별 해석을 자세히 정리했습니다
-date: 2026-09-07 10:20:00 +0900
+date: 2026-08-29 16:47:15 +0900
 categories: [Tarot, Pentacles]
 tags: [타로, 타로카드, 펜타클, 코트카드, 펜타클여왕, QueenOfPentacles]
 image:

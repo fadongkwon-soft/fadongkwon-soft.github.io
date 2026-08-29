@@ -1,7 +1,7 @@
 ---
 title: 펜타클 왕(King of Pentacles) 카드 의미 — 78장의 마지막 자리, 흙의 완성
 description: 타로 코트 카드 펜타클 왕이 상징하는 부의 완성과 관록의 의미, 사업·가족·금전 등 상황별 해석을 정리했습니다
-date: 2026-09-07 10:40:00 +0900
+date: 2026-08-29 16:47:16 +0900
 categories: [Tarot, Pentacles]
 tags: [타로, 타로카드, 펜타클, 코트카드, 펜타클왕, KingOfPentacles, 타로카드사전]
 image:

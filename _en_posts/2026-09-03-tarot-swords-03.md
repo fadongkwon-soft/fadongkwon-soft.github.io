@@ -4,7 +4,7 @@ description: What the Three of Swords means upright and reversed, why the heartb
 image:
   path: /assets/img/tarot/feature_swords_03.jpg
   alt: The Three of Swords tarot card
-date: 2026-09-03 10:20:00 +0900
+date: 2026-08-29 16:46:51 +0900
 categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-03/
 alt_url: /posts/tarot-swords-03/

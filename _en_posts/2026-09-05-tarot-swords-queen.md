@@ -4,7 +4,7 @@ description: Why the Queen of Swords gets misread as cold, what she means uprigh
 image:
   path: /assets/img/tarot/feature_swords_queen.jpg
   alt: The Queen of Swords tarot card
-date: 2026-09-05 09:40:00 +0900
+date: 2026-08-29 16:47:01 +0900
 categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-queen/
 alt_url: /posts/tarot-swords-queen/

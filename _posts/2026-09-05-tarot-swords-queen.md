@@ -1,7 +1,7 @@
 ---
 title: 소드 여왕(Queen of Swords) 카드 의미 — 차갑다는 오해를 받는 카드
 description: 타로 소드 여왕 카드에 담긴 냉철함과 명확한 소통의 의미, 정방향·역방향 해석과 상황별 풀이를 정리했습니다
-date: 2026-09-05 09:40:00 +0900
+date: 2026-08-29 16:47:01 +0900
 categories: [Tarot, Swords]
 tags: [타로, 타로카드, 마이너아르카나, 소드여왕, QueenOfSwords, 코트카드]
 image:

@@ -4,7 +4,7 @@ description: What the Page of Cups means upright and reversed, the gentle news a
 image:
   path: /assets/img/tarot/feature_cups_page.jpg
   alt: Page of Cups tarot card
-date: 2026-09-02 10:20:00 +0900
+date: 2026-08-29 16:46:45 +0900
 categories: [Tarot, Cups]
 permalink: /en/posts/tarot-cups-page/
 alt_url: /posts/tarot-cups-page/

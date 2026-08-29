@@ -4,7 +4,7 @@ description: What the Queen of Pentacles means upright and reversed, the symbols
 image:
   path: /assets/img/tarot/feature_pents_queen.jpg
   alt: Queen of Pentacles tarot card
-date: 2026-09-07 10:20:00 +0900
+date: 2026-08-29 16:47:15 +0900
 categories: [Tarot, Pentacles]
 permalink: /en/posts/tarot-pents-queen/
 alt_url: /posts/tarot-pents-queen/

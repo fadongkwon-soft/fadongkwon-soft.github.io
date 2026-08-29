@@ -4,7 +4,7 @@ description: What the Page of Swords means upright and reversed, the sharpness n
 image:
   path: /assets/img/tarot/feature_swords_page.jpg
   alt: The Page of Swords tarot card
-date: 2026-09-05 09:00:00 +0900
+date: 2026-08-29 16:46:59 +0900
 categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-page/
 alt_url: /posts/tarot-swords-page/

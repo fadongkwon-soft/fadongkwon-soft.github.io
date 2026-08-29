@@ -4,7 +4,7 @@ description: Why the Ace of Swords reads as clarity rather than conflict, what i
 image:
   path: /assets/img/tarot/feature_swords_01.jpg
   alt: The Ace of Swords tarot card
-date: 2026-09-03 09:40:00 +0900
+date: 2026-08-29 16:46:49 +0900
 categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-01/
 alt_url: /posts/tarot-swords-01/

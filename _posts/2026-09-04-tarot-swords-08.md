@@ -1,7 +1,7 @@
 ---
 title: 소드 8(Eight of Swords) 카드 의미 — 스스로 두른 눈가리개
 description: 타로 마이너 아르카나 소드 8 카드가 그리는 자기 제한의 심리, 정방향·역방향 의미와 연애·직장·대인관계 상황별 해석을 정리했습니다
-date: 2026-09-04 10:00:00 +0900
+date: 2026-08-29 16:46:56 +0900
 categories: [Tarot, Swords]
 tags: [타로, 타로카드, 마이너아르카나, 소드8, EightOfSwords, 소드카드]
 image:

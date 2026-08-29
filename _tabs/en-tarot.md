@@ -13,7 +13,7 @@ alt_url: /tarot/
 
 A dictionary working through the meaning of all 78 tarot cards, one card at a time. Each entry covers the symbols in the picture, the upright and reversed meanings, and how the card reads in specific situations — love, career, money, health.
 
-The artwork is all drawn in-house, and the interpretations are written from scratch based on the traditional Rider–Waite imagery. Cards are published a few at a time, so the list below shows only what is out so far.
+The artwork is all drawn in-house, and the interpretations are written from scratch based on the traditional Rider–Waite imagery. All 78 cards are published, so you can jump straight to any card in the list below.
 
 > These readings are for entertainment and self-reflection. For important decisions about money, health, or legal matters, always consult a qualified professional.
 {: .prompt-warning }
@@ -28,7 +28,7 @@ The artwork is all drawn in-house, and the interpretations are written from scra
 {%- endcomment -%}
 {% assign live_en = site.en_posts | where_exp: 'p', 'p.date <= site.time' %}
 {% assign all_tarot = live_en | where_exp: 'p', 'p.categories contains "Tarot"' %}
-{% if all_tarot.size > 0 %}**Published: {{ all_tarot.size }} / 78 cards**{% endif %}
+{% if all_tarot.size > 0 %}**All {{ all_tarot.size }} cards included**{% endif %}
 
 {% assign groups = "Major Arcana|Wands|Cups|Swords|Pentacles" | split: "|" %}
 {% assign labels = "Major Arcana (22 cards)|Wands · Fire (14 cards)|Cups · Water (14 cards)|Swords · Air (14 cards)|Pentacles · Earth (14 cards)" | split: "|" %}

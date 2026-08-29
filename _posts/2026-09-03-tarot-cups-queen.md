@@ -1,7 +1,7 @@
 ---
 title: 컵 여왕(Queen of Cups) 카드 의미 — 감정을 다스리는 법을 아는 사람
 description: 타로 궁정 카드 컵 여왕이 상징하는 공감과 배려, 정서적 안정의 정방향·역방향 의미와 상황별 해석을 정리했습니다
-date: 2026-09-03 09:00:00 +0900
+date: 2026-08-29 16:46:47 +0900
 categories: [Tarot, Cups]
 tags: [타로, 타로카드, 마이너아르카나, 컵, 궁정카드, QueenOfCups]
 image:

@@ -1,7 +1,7 @@
 ---
 title: 펜타클 시종(Page of Pentacles) 카드 의미 — 흙 원소를 처음 배우는 학생
 description: 타로 코트 카드 펜타클 시종이 상징하는 배움과 실용적 시작의 의미, 학업·직장·금전 등 상황별 해석을 정리했습니다
-date: 2026-09-07 09:40:00 +0900
+date: 2026-08-29 16:47:13 +0900
 categories: [Tarot, Pentacles]
 tags: [타로, 타로카드, 펜타클, 코트카드, 펜타클시종, PageOfPentacles]
 image:

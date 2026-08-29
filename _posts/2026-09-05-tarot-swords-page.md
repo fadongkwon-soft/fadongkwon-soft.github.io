@@ -1,7 +1,7 @@
 ---
 title: 소드 시종(Page of Swords) 카드 의미 — 아직 다듬어지지 않은 예리함
 description: 타로 소드 시종 카드의 정보 수집과 관찰의 의미, 정방향·역방향 해석과 연애·직장·학업 상황별 풀이를 정리했습니다
-date: 2026-09-05 09:00:00 +0900
+date: 2026-08-29 16:46:59 +0900
 categories: [Tarot, Swords]
 tags: [타로, 타로카드, 마이너아르카나, 소드시종, PageOfSwords, 코트카드]
 image:

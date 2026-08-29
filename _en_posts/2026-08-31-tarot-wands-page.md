@@ -4,7 +4,7 @@ description: What the Page of Wands means upright and reversed, how to read a co
 image:
   path: /assets/img/tarot/feature_wands_page.jpg
   alt: Page of Wands tarot card
-date: 2026-08-31 09:40:00 +0900
+date: 2026-08-29 16:46:31 +0900
 categories: [Tarot, Wands]
 permalink: /en/posts/tarot-wands-page/
 alt_url: /posts/tarot-wands-page/

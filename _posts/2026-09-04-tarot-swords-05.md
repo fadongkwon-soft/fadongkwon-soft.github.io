@@ -1,7 +1,7 @@
 ---
 title: 소드 5(Five of Swords) 카드 의미 — 이겼는데 왜 허탈할까
 description: 소드 5 카드가 상징하는 상처뿐인 승리와 갈등의 의미, 정방향·역방향과 직장·연애·대인관계 해석을 정리했습니다
-date: 2026-09-04 09:00:00 +0900
+date: 2026-08-29 16:46:53 +0900
 categories: [Tarot, Swords]
 tags: [타로, 타로카드, 소드, 마이너아르카나, 소드5, FiveofSwords, 타로해석]
 image:

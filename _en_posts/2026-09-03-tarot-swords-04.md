@@ -4,7 +4,7 @@ description: What the Four of Swords means upright and reversed, why stopping is
 image:
   path: /assets/img/tarot/feature_swords_04.jpg
   alt: The Four of Swords tarot card
-date: 2026-09-03 10:40:00 +0900
+date: 2026-08-29 16:46:52 +0900
 categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-04/
 alt_url: /posts/tarot-swords-04/

@@ -1,7 +1,7 @@
 ---
 title: 소드 3(Three of Swords) 카드 의미 — 아파도 지나가야 하는 이유
 description: 소드 3 카드가 상징하는 상심과 아픈 진실의 의미, 정방향·역방향과 연애·가족·학업 상황별 해석을 정리했습니다
-date: 2026-09-03 10:20:00 +0900
+date: 2026-08-29 16:46:51 +0900
 categories: [Tarot, Swords]
 tags: [타로, 타로카드, 소드, 마이너아르카나, 소드3, ThreeofSwords, 타로해석]
 image:

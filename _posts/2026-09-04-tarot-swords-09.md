@@ -1,7 +1,7 @@
 ---
 title: 소드 9(Nine of Swords) 카드 의미 — 잠 못 이루는 밤의 카드
 description: 타로 소드 9 카드가 상징하는 불안과 걱정의 심리, 정방향·역방향 의미와 연애·직장·학업 상황별 해석을 정리했습니다
-date: 2026-09-04 10:20:00 +0900
+date: 2026-08-29 16:46:57 +0900
 categories: [Tarot, Swords]
 tags: [타로, 타로카드, 마이너아르카나, 소드9, NineOfSwords, 타로불안]
 image:

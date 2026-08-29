@@ -4,7 +4,7 @@ description: What the Six of Swords means upright and reversed, why moving at al
 image:
   path: /assets/img/tarot/feature_swords_06.jpg
   alt: Six of Swords tarot card
-date: 2026-09-04 09:20:00 +0900
+date: 2026-08-29 16:46:54 +0900
 categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-06/
 alt_url: /posts/tarot-swords-06/

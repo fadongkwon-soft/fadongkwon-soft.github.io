@@ -4,7 +4,7 @@ description: What the Ten of Swords means upright and reversed, why the darkest 
 image:
   path: /assets/img/tarot/feature_swords_10.jpg
   alt: Ten of Swords tarot card
-date: 2026-09-04 10:40:00 +0900
+date: 2026-08-29 16:46:58 +0900
 categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-10/
 alt_url: /posts/tarot-swords-10/

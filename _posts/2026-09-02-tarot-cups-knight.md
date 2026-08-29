@@ -1,7 +1,7 @@
 ---
 title: 컵 기사(Knight of Cups) 카드 의미 — 다가오는 것은 진심일까, 매너일까
 description: 타로 궁정 카드 컵 기사가 전하는 로맨틱한 제안과 다가오는 호의, 정방향·역방향 의미와 상황별 해석을 정리했습니다
-date: 2026-09-02 10:40:00 +0900
+date: 2026-08-29 16:46:46 +0900
 categories: [Tarot, Cups]
 tags: [타로, 타로카드, 마이너아르카나, 컵, 궁정카드, KnightOfCups]
 image:

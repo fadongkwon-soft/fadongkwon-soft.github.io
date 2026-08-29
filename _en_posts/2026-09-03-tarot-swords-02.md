@@ -4,7 +4,7 @@ description: What the Two of Swords means upright and reversed, why the blindfol
 image:
   path: /assets/img/tarot/feature_swords_02.jpg
   alt: The Two of Swords tarot card
-date: 2026-09-03 10:00:00 +0900
+date: 2026-08-29 16:46:50 +0900
 categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-02/
 alt_url: /posts/tarot-swords-02/

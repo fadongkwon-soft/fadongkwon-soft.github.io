@@ -1,7 +1,7 @@
 ---
 title: 소드 10(Ten of Swords) 카드 의미 — 바닥을 찍고 나서야 보이는 것
 description: 타로 소드 10 카드가 그리는 바닥과 종결의 의미, 정방향·역방향 해석과 회복의 신호를 상황별로 정리했습니다
-date: 2026-09-04 10:40:00 +0900
+date: 2026-08-29 16:46:58 +0900
 categories: [Tarot, Swords]
 tags: [타로, 타로카드, 마이너아르카나, 소드10, TenOfSwords, 타로해석]
 image:

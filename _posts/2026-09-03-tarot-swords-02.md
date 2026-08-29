@@ -1,7 +1,7 @@
 ---
 title: 소드 2(Two of Swords) 카드 의미 — 눈가리개를 풀 때가 왔을까
 description: 소드 2 카드가 뜻하는 결정 보류와 균형의 의미, 정방향·역방향과 연애·직장·가족 상황별 해석을 정리했습니다
-date: 2026-09-03 10:00:00 +0900
+date: 2026-08-29 16:46:50 +0900
 categories: [Tarot, Swords]
 tags: [타로, 타로카드, 소드, 마이너아르카나, 소드2, TwoofSwords, 타로해석]
 image:

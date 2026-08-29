@@ -4,7 +4,7 @@ description: What the Knight of Pentacles means upright and reversed, the symbol
 image:
   path: /assets/img/tarot/feature_pents_knight.jpg
   alt: Knight of Pentacles tarot card
-date: 2026-09-07 10:00:00 +0900
+date: 2026-08-29 16:47:14 +0900
 categories: [Tarot, Pentacles]
 permalink: /en/posts/tarot-pents-knight/
 alt_url: /posts/tarot-pents-knight/

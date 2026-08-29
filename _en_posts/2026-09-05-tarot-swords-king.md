@@ -4,7 +4,7 @@ description: What the King of Swords means upright and reversed, the authority b
 image:
   path: /assets/img/tarot/feature_swords_king.jpg
   alt: The King of Swords tarot card
-date: 2026-09-05 10:00:00 +0900
+date: 2026-08-29 16:47:02 +0900
 categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-king/
 alt_url: /posts/tarot-swords-king/

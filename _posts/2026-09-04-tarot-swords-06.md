@@ -1,7 +1,7 @@
 ---
 title: 소드 6(Six of Swords) 카드 의미 — 잔잔한 물살에 배를 띄우다
 description: 소드 6 카드가 뜻하는 이동과 회복으로의 전환 의미, 정방향·역방향과 이사·이직·연애 상황별 해석을 정리했습니다
-date: 2026-09-04 09:20:00 +0900
+date: 2026-08-29 16:46:54 +0900
 categories: [Tarot, Swords]
 tags: [타로, 타로카드, 소드, 마이너아르카나, 소드6, SixofSwords, 타로해석]
 image:

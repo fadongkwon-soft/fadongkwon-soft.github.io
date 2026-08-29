@@ -1,7 +1,7 @@
 ---
 title: 소드 기사(Knight of Swords) 카드 의미 — 생각보다 몸이 먼저 나갈 때
 description: 타로 소드 기사 카드가 상징하는 속전속결의 행동력, 정방향·역방향 의미와 연애·직장 상황별 해석을 정리했습니다
-date: 2026-09-05 09:20:00 +0900
+date: 2026-08-29 16:47:00 +0900
 categories: [Tarot, Swords]
 tags: [타로, 타로카드, 마이너아르카나, 소드기사, KnightOfSwords, 코트카드]
 image:

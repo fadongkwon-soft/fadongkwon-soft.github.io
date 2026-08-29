@@ -4,7 +4,7 @@ description: What the Knight of Cups says about a romantic offer arriving, what 
 image:
   path: /assets/img/tarot/feature_cups_knight.jpg
   alt: Knight of Cups tarot card
-date: 2026-09-02 10:40:00 +0900
+date: 2026-08-29 16:46:46 +0900
 categories: [Tarot, Cups]
 permalink: /en/posts/tarot-cups-knight/
 alt_url: /posts/tarot-cups-knight/

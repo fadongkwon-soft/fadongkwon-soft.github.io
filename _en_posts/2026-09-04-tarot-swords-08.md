@@ -4,7 +4,7 @@ description: What the Eight of Swords means upright and reversed, why the real c
 image:
   path: /assets/img/tarot/feature_swords_08.jpg
   alt: Eight of Swords tarot card
-date: 2026-09-04 10:00:00 +0900
+date: 2026-08-29 16:46:56 +0900
 categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-08/
 alt_url: /posts/tarot-swords-08/

@@ -4,7 +4,7 @@ description: What the Seven of Swords means upright and reversed, why strategy i
 image:
   path: /assets/img/tarot/feature_swords_07.jpg
   alt: Seven of Swords tarot card
-date: 2026-09-04 09:40:00 +0900
+date: 2026-08-29 16:46:55 +0900
 categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-07/
 alt_url: /posts/tarot-swords-07/

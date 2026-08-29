@@ -7,13 +7,13 @@ alt_url: /en/tarot/
 
 타로 카드 78장의 의미를 한 장씩 정리하는 사전입니다. 각 카드마다 그림에 담긴 상징, 정방향과 역방향의 의미, 그리고 연애·직장·금전·건강 등 상황별 해석을 함께 다룹니다.
 
-카드 그림은 모두 직접 제작한 것이고, 해석 역시 전통적인 라이더-웨이트 도상을 근거로 직접 작성했습니다. 매일 몇 장씩 차례로 공개하고 있어, 아래 목록은 지금까지 공개된 카드만 보여줍니다.
+카드 그림은 모두 직접 제작한 것이고, 해석 역시 전통적인 라이더-웨이트 도상을 근거로 직접 작성했습니다. 78장 전체가 공개되어 있어, 아래 목록에서 원하는 카드를 바로 찾아볼 수 있습니다.
 
 > 이곳의 해석은 오락과 자기 성찰을 위한 참고용입니다. 투자·건강·법률 등 중요한 결정은 반드시 전문가와 상의하세요.
 {: .prompt-warning }
 
 {% assign all_tarot = site.categories['Tarot'] %}
-{% if all_tarot %}**공개 진행: {{ all_tarot.size }} / 78장**{% endif %}
+{% if all_tarot %}**전체 {{ all_tarot.size }}장 수록**{% endif %}
 
 {% assign groups = "Major Arcana|Wands|Cups|Swords|Pentacles" | split: "|" %}
 {% assign labels = "메이저 아르카나 (22장)|완드 Wands · 불 (14장)|컵 Cups · 물 (14장)|소드 Swords · 공기 (14장)|펜타클 Pentacles · 흙 (14장)" | split: "|" %}
