@@ -63,3 +63,49 @@
   <link rel="alternate" hreflang="en" href="{{ hl_en | absolute_url }}">
   <link rel="alternate" hreflang="x-default" href="{{ hl_en | absolute_url }}">
 {% endif %}
+
+{%- comment -%}
+  ===== 로케일 자동 언어 선택 (2026-08-29, 사용자 결정) =====
+  기본은 영어(루트). 브라우저 언어가 한국어인 방문자만 한국어판으로 보낸다.
+  · 위의 hreflang <link> 를 그대로 읽어 상대 언어 URL 을 찾는다 — 짝이 없는
+    페이지(아카이브·태그 등)에서는 아무 것도 하지 않는다.
+  · 사이드바 스위처로 직접 고른 언어는 localStorage('fdk-lang')에 기억하고
+    이후 자동 선택보다 우선한다.
+  · 크롤러는 UA 로 걸러 리다이렉트하지 않는다 — 자동 전환을 봇에 적용하면
+    한쪽 언어가 색인에서 통째로 빠진다(hreflang 이 양쪽을 이미 안내한다).
+{%- endcomment -%}
+<script>
+  (function () {
+    try {
+      if (/bot|crawl|spider|slurp|yeti|petal|headless|lighthouse|preview/i.test(navigator.userAgent)) return;
+      var here = (document.documentElement.lang || 'en').slice(0, 2).toLowerCase() === 'ko' ? 'ko' : 'en';
+      var pref = null;
+      try { pref = localStorage.getItem('fdk-lang'); } catch (e) { /* 시크릿 모드 등 */ }
+      var nav = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+      var want = (pref === 'ko' || pref === 'en') ? pref : (nav.slice(0, 2).toLowerCase() === 'ko' ? 'ko' : 'en');
+      if (want === here) return;
+      var alt = document.querySelector('link[rel="alternate"][hreflang="' + want + '"]');
+      if (alt && alt.href && alt.href !== location.href) location.replace(alt.href);
+    } catch (e) { /* 자동 선택 실패는 치명적이지 않다 */ }
+  })();
+  document.addEventListener('DOMContentLoaded', function () {
+    var links = document.querySelectorAll('.lang-switch a[hreflang]');
+    for (var i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', function () {
+        try { localStorage.setItem('fdk-lang', this.getAttribute('hreflang')); } catch (e) { /* noop */ }
+      });
+    }
+    // PWA 를 끄면서(구버전 캐시가 개편 후 화면 깨짐·저속의 원인) 방문자에게
+    // 남아 있는 서비스워커와 캐시를 정리한다. 몇 배포 뒤 제거해도 된다.
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function (rs) {
+        rs.forEach(function (r) { r.unregister(); });
+      }).catch(function () { /* noop */ });
+    }
+    if (window.caches && caches.keys) {
+      caches.keys().then(function (keys) {
+        keys.forEach(function (k) { caches.delete(k); });
+      }).catch(function () { /* noop */ });
+    }
+  });
+</script>

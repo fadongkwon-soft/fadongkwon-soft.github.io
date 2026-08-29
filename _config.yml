@@ -143,16 +143,19 @@ assets:
     env: # [development | production]
 
 pwa:
-  enabled: true # The option for PWA feature (installable)
+  # 2026-08-29 비활성화 — 대규모 개편 직후 구버전 SW 캐시가 화면 깨짐과 저속의 원인.
+  # metadata-hook.html 의 정리 스크립트가 방문자 SW/캐시를 unregister 한다.
+  enabled: false # The option for PWA feature (installable)
   cache:
-    enabled: true # The option for PWA offline cache
+    enabled: false # The option for PWA offline cache
     # Paths defined here will be excluded from the PWA cache.
     # Usually its value is the `baseurl` of another website that
     # shares the same domain name as the current website.
     deny_paths:
       # - "/example"  # URLs match `<SITE_URL>/example/*` will not be cached by the PWA
 
-paginate: 10
+# paginate 제거(2026-08-29): 홈이 lang-home(비 paginator)으로 바뀌어 jekyll-paginate 가
+# 루트 index 를 복제한 /page2..N/ 중복 페이지만 만들게 되므로 끈다.
 
 # The base URL of your site
 baseurl: ""

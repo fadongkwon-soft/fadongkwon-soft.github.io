@@ -3,16 +3,23 @@
   Gemfile 이 버전을 고정하고 있으니, 테마를 올릴 때 원본과 다시 대조할 것.
   (7.2.4 기준으로 만들었다가 7.6.0 에서 제거된 include 를 참조해 빌드가 죽었다)
   원본 대비 변경점 두 가지.
-    (1) 탭 목록을 현재 페이지 언어로 필터링
+    (1) 메뉴는 양 언어 공통 + 라벨은 항상 영문(사용자 결정, 2026-08-29).
+        번역본이 있는 항목(홈·소개·타로 사전)만 언어별 목적지로 갈라지고,
+        아카이브·카테고리·태그·개인정보처리방침은 공용 페이지로 간다.
+        site.tabs 루프 대신 명시 목록 — 언어 필터 실수로 메뉴가 사라지는 일 방지.
     (2) 한/영 언어 스위처 추가 (JS 주입이 아니라 실제 <a> — 크롤러가 링크로
         따라갈 수 있고 JS 없이도 동작한다)
 -->
 
 {% assign cur_lang = page.lang | default: 'ko' %}
 {% if cur_lang == 'en' %}
-  {% assign home_url = '/en/' %}
-{% else %}
   {% assign home_url = '/' %}
+  {% assign about_url = '/en/about/' %}
+  {% assign tarot_url = '/en/tarot/' %}
+{% else %}
+  {% assign home_url = '/ko/' %}
+  {% assign about_url = '/about/' %}
+  {% assign tarot_url = '/tarot/' %}
 {% endif %}
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
@@ -33,25 +40,24 @@
 
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
-      <!-- home -->
-      <li class="nav-item{% if page.url == home_url %}{{ " active" }}{% endif %}">
-        <a href="{{ home_url | relative_url }}" class="nav-link">
-          <i class="fa-fw fas fa-home"></i>
-          <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
-        </a>
-      </li>
-      <!-- the real tabs -->
-      {% for tab in site.tabs %}
-        {% assign tab_lang = tab.lang | default: 'ko' %}
-        {% if tab_lang == 'en' and cur_lang != 'en' %}{% continue %}{% endif %}
-        {% if tab_lang != 'en' and cur_lang == 'en' %}{% continue %}{% endif %}
-
-        <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
-          <a href="{{ tab.url | relative_url }}" class="nav-link">
-            <i class="fa-fw {{ tab.icon }}"></i>
-            {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
-
-            <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
+      {% assign menu_items = '' | split: '' %}
+      {% capture menu_src %}
+        {{ home_url }}|fas fa-home|HOME
+        ;{{ about_url }}|fas fa-info-circle|ABOUT
+        ;{{ tarot_url }}|fas fa-star|TAROT DICTIONARY
+        ;/archives/|fas fa-archive|ARCHIVES
+        ;/categories/|fas fa-stream|CATEGORIES
+        ;/tags/|fas fa-tags|TAGS
+        ;/privacy/|fas fa-user-shield|PRIVACY
+      {% endcapture %}
+      {% assign menu_items = menu_src | strip | split: ';' %}
+      {% for item in menu_items %}
+        {% assign parts = item | strip | split: '|' %}
+        {% assign item_url = parts[0] | strip %}
+        <li class="nav-item{% if page.url == item_url %}{{ " active" }}{% endif %}">
+          <a href="{{ item_url | relative_url }}" class="nav-link">
+            <i class="fa-fw {{ parts[1] | strip }}"></i>
+            <span>{{ parts[2] | strip }}</span>
           </a>
         </li>
         <!-- .nav-item -->
@@ -61,11 +67,11 @@
 
   <!-- 언어 스위처: 짝이 되는 번역본이 있으면 그 문서로, 없으면 해당 언어 홈으로 -->
   {% if cur_lang == 'en' %}
-    {% assign ko_target = page.alt_url | default: '/' %}
+    {% assign ko_target = page.alt_url | default: '/ko/' %}
     {% assign en_target = page.url %}
   {% else %}
     {% assign ko_target = page.url %}
-    {% assign en_target = page.alt_url | default: '/en/' %}
+    {% assign en_target = page.alt_url | default: '/' %}
   {% endif %}
   <nav class="lang-switch w-100 ps-0 pb-2" aria-label="Language">
     <a

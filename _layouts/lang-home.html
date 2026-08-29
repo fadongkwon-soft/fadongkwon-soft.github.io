@@ -5,21 +5,28 @@
 layout: default
 ---
 
-<!-- 영문판 홈. Chirpy 의 home 레이아웃은 jekyll-paginate 의 paginator 를 요구하는데
-     paginator 는 site.posts(한국어) 만 페이지네이션하므로 그대로 쓸 수 없다.
+<!-- 언어 공용 홈 레이아웃 (page.lang 으로 컬렉션 선택: en → _en_posts, 그 외 → _posts).
+     Chirpy 의 home 레이아웃은 jekyll-paginate 의 paginator 를 요구하는데
+     paginator 는 site.posts(한국어) 만, 그것도 루트 index 에서만 페이지네이션하므로
+     루트(영문)/서브(한국어) 어느 쪽에도 그대로 쓸 수 없다.
      카드 마크업은 테마 CSS(.card-wrapper/.post-preview)를 그대로 재사용하고,
      테마 include 의존성은 일부러 없앴다 — description 은 front matter 에서 직접 읽는다.
-     타로 사전 78장은 목록이 너무 길어져 별도 허브(/en/tarot/)로 보낸다. -->
+     타로 사전 78장은 목록이 너무 길어져 별도 허브(/tarot/, /en/tarot/)로 보낸다. -->
 
 {%- comment -%}
   ⚠️ 컬렉션은 `_posts` 와 달리 미래 날짜 문서가 site.en_posts 에 그대로 남는다.
   (Jekyll 4.3: PostReader#read_publishable 은 읽을 때 걸러내지만,
    Collection#read_document 는 `published:` 만 보고 future 는 write? 단계에서만 본다)
   따라서 목록에서 날짜로 직접 걸러야 한다 — 안 그러면 아직 생성되지 않은 페이지를
-  링크해 htmlproofer 가 빌드를 실패시킨다.
+  링크해 htmlproofer 가 빌드를 실패시킨다. site.posts 에는 이 필터가 무해하다.
   영문 글의 date 는 한국어 원문과 동일하게 두므로 양쪽이 같은 날 함께 공개된다.
 {%- endcomment -%}
-{% assign feature_posts = site.en_posts
+{% if page.lang == 'en' %}
+  {% assign post_pool = site.en_posts %}
+{% else %}
+  {% assign post_pool = site.posts %}
+{% endif %}
+{% assign feature_posts = post_pool
   | where_exp: 'item', 'item.hidden != true'
   | where_exp: 'item', 'item.date <= site.time'
   | sort: 'date' | reverse %}
