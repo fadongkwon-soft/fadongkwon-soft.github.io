@@ -8,6 +8,7 @@ date: 2026-08-16 01:00:00 +0900
 categories: [Products, Game]
 permalink: /en/posts/play-minigames/
 alt_url: /posts/play-minigames/
+tags: [game, android, minigame, reaction speed, memory, reaction, vite, typescript, solo developer]
 ---
 ## Info
 > Two new mini-games are out on Google Play: **Reaction Challenge** and **Memory Cards**.

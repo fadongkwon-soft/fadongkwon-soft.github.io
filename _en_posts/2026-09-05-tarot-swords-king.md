@@ -9,6 +9,7 @@ categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-king/
 alt_url: /posts/tarot-swords-king/
 card_name: King of Swords
+tags: [tarot, tarot card meanings, minor arcana, court cards]
 ---
 
 The King of Swords is no longer a card about someone swinging a blade. It draws someone holding the blade upright to keep a principle. Seated in the last chair of the Swords court, this figure looks straight ahead and holds the throne without a flicker of movement, and that stillness is exactly the finished authority the card describes.

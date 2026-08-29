@@ -9,6 +9,7 @@ categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-01/
 alt_url: /posts/tarot-swords-01/
 card_name: Ace of Swords
+tags: [tarot, tarot card meanings, swords, minor arcana]
 ---
 
 The suit of Swords tends to get taken as sharp and frightening on sight. A suit covered in blades must be announcing conflict and injury, the reasoning goes. Yet if you had to name the one card standing furthest from that misreading, it would be **the Ace of Swords**. Across all 56 cards of the Minor Arcana it reads as one of the few genuinely positive ones, and the reason is that what it draws is not a wound but the moment the fog lifts.

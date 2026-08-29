@@ -9,6 +9,7 @@ categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-knight/
 alt_url: /posts/tarot-swords-knight/
 card_name: Knight of Swords
+tags: [tarot, tarot card meanings, minor arcana, court cards]
 ---
 
 If your body is already out the door before the thinking is finished, could the card you just drew be the Knight of Swords? The fastest-moving card in the whole Swords court draws **the moment a decision becomes an action** through a knight charging at full speed with his sword pointed forward.

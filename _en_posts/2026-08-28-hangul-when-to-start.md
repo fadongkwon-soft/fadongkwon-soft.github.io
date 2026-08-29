@@ -5,6 +5,7 @@ date: 2026-08-28 20:00:00 +0900
 categories: [Learning, Hangul]
 permalink: /en/posts/hangul-when-to-start/
 alt_url: /posts/hangul-when-to-start/
+tags: [hangul, early education, literacy, school readiness, parenting]
 ---
 
 There is no correct answer to "at what age should I start teaching Hangul." But there is a far more reliable measure than age: **whether the child has started paying attention to letters**. Two five-year-olds can be in completely different places. One points at a shop sign and asks "what does that say?" The other is still only responding to the pictures.

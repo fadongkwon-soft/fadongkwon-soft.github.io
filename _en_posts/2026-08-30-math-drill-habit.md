@@ -5,6 +5,7 @@ date: 2026-08-30 20:00:00 +0900
 categories: [Learning, Math]
 permalink: /en/posts/math-drill-habit/
 alt_url: /posts/math-drill-habit/
+tags: [elementary math, arithmetic practice, math, study habits, early elementary, parenting, arithmetic]
 ---
 
 You have probably watched a child sit in front of an open workbook for thirty minutes and not get through half a page. It feels like more time should mean more skill, but with arithmetic in the early elementary years it usually does not work that way. Time spent sitting has a surprisingly weak relationship with calculation accuracy. **Whether it happened every day** has a clear one.

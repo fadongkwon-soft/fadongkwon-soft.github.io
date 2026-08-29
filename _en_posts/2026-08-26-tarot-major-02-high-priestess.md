@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-02-high-priestess/
 alt_url: /posts/tarot-major-02-high-priestess/
 card_name: The High Priestess
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 The High Priestess is often mistaken for "the prophet's card, the one that sees everything in advance." The mysterious atmosphere invites that reading, but the power this card actually describes is not the ability to know the future ahead of time. It is much closer to **the discipline of not rushing what has yet to surface**. Major Arcana 2, **The High Priestess**, is the card that holds the answer and still keeps quiet until the time is right.

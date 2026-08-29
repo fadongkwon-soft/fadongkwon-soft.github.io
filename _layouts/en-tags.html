@@ -1,0 +1,52 @@
+---
+layout: page
+# 영문판 태그 아카이브. jekyll-archives 는 컬렉션(_en_posts)을 지원하지 않으므로
+# 태그별 하위 페이지 대신 **한 페이지 안의 앵커 섹션**으로 만든다.
+# 포스트 하단 태그 링크(post.html)와 앵커 id 규칙(tag-<slugify>)을 맞출 것 —
+# htmlproofer 가 내부 해시까지 검사한다.
+# ⚠️ 컬렉션은 미래 날짜 문서가 남으므로 날짜 필터 필수.
+---
+
+{% assign pool = site.en_posts
+  | where_exp: 'p', 'p.hidden != true'
+  | where_exp: 'p', 'p.date <= site.time'
+  | sort: 'date' | reverse %}
+
+{% assign all_tags = '' | split: '' %}
+{% for post in pool %}
+  {% for t in post.tags %}
+    {% assign all_tags = all_tags | push: t %}
+  {% endfor %}
+{% endfor %}
+{% assign uniq_tags = all_tags | uniq | sort_natural %}
+
+<!-- 태그 구름: 같은 페이지의 섹션으로 점프 -->
+<div id="tags" class="d-flex flex-wrap mx-xl-2 mb-4">
+  {% for t in uniq_tags %}
+    {% assign hits = pool | where_exp: 'p', 'p.tags contains t' %}
+    <div>
+      <a class="tag" href="#tag-{{ t | slugify }}">
+        {{ t -}}
+        <span class="text-muted">{{ hits | size }}</span>
+      </a>
+    </div>
+  {% endfor %}
+</div>
+
+<!-- 태그별 글 목록 -->
+<div id="archives" class="pl-xl-3">
+  {% for t in uniq_tags %}
+    {% assign hits = pool | where_exp: 'p', 'p.tags contains t' %}
+    <h2 id="tag-{{ t | slugify }}" class="lead d-block mt-4">
+      <i class="fa fa-tag fa-fw text-muted me-1"></i>{{ t }}
+    </h2>
+    <ul class="list-unstyled">
+      {% for post in hits %}
+        <li>
+          <span class="date small text-muted me-2">{{ post.date | date: '%b %d, %Y' }}</span>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>

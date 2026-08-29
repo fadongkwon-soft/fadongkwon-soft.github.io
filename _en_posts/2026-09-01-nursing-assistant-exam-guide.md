@@ -5,6 +5,7 @@ date: 2026-09-01 20:00:00 +0900
 categories: [Learning, Certification]
 permalink: /en/posts/nursing-assistant-exam-guide/
 alt_url: /posts/nursing-assistant-exam-guide/
+tags: [nursing assistant, national exam, certification, exam info]
 ---
 
 Search for how to become a nursing assistant (간호조무사) in Korea and you get a mix of academy ads and outdated pages, which makes it hard to see the actual order of steps. This post lays out that order, from eligibility through the exam to the license itself.

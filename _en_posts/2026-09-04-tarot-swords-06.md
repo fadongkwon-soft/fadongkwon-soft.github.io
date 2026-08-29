@@ -9,6 +9,7 @@ categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-06/
 alt_url: /posts/tarot-swords-06/
 card_name: Six of Swords
+tags: [tarot, tarot card meanings, swords, minor arcana]
 ---
 
 A boat pulls away with rough water behind it — is this a picture of running away, or of moving forward? A ferryman works the pole, a hunched woman and a child sit at the bow, and six swords stand upright and neatly arranged inside the hull. The Six of Swords quietly answers that question.

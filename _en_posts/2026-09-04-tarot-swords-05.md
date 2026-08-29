@@ -9,6 +9,7 @@ categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-05/
 alt_url: /posts/tarot-swords-05/
 card_name: Five of Swords
+tags: [tarot, tarot card meanings, swords, minor arcana]
 ---
 
 Under a clouded sky, a man gathers up the swords left on the ground, a thin smile on his face. Two figures are already walking off into the distance with their shoulders slumped, and behind them the sea churns. It is unmistakably the face of someone who won the fight, and yet what has settled on it is bitterness rather than relief. The Five of Swords draws exactly this — **a fight that leaves you with nothing even when you win**.

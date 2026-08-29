@@ -8,6 +8,7 @@ date: 2024-12-29 15:39:00 +0900
 categories: [Blogging, Episode]
 permalink: /en/posts/ready-to-open/
 alt_url: /posts/ready-to-open/
+tags: [app launch, developer, app development, solo developer, business registration, play store, app store, apple, financial freedom, digital assets]
 ---
 ## Prologue
 &nbsp;&nbsp; Raising two kids, at some point I simply felt the money going out month after month. I inherited nothing to speak of, and I have no talent at all for investing, so there was nothing put aside either.

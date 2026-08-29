@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-04-emperor/
 alt_url: /posts/tarot-major-04-emperor/
 card_name: The Emperor
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 "Should I push this project through to the end myself?" "Isn't it time I set a clear standard in this relationship?" Suppose you drew a card holding a question like that, and the Emperor came up. Major Arcana 4, **The Emperor**, answers with unshakable principle and responsibility rather than instinct or an improvised call.

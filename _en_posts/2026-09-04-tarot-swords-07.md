@@ -9,6 +9,7 @@ categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-07/
 alt_url: /posts/tarot-swords-07/
 card_name: Seven of Swords
+tags: [tarot, tarot card meanings, swords, minor arcana]
 ---
 
 When the Seven of Swords turns up, the first words that come to mind are usually theft or betrayal. Fair enough — the picture shows someone slipping out of a camp with stolen swords. But reading it only as the thief's card is seeing half of it. The original sense of the Seven of Swords sits much closer to the moment you choose a **strategic detour** over a head-on contest.

@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-07-chariot/
 alt_url: /posts/tarot-major-07-chariot/
 card_name: The Chariot
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 How do you drive a black sphinx and a white sphinx in the same direction when neither one is bridled? The answer Major Arcana 7, **the Chariot**, offers is unexpectedly plain. Not with physical force, but with a settled will and a gaze that does not waver.

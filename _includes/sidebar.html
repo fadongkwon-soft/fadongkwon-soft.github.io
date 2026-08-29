@@ -17,11 +17,15 @@
   {% assign about_url = '/en/about/' %}
   {% assign tarot_url = '/en/tarot/' %}
   {% assign archives_url = '/en/archives/' %}
+  {% assign categories_url = '/en/categories/' %}
+  {% assign tags_url = '/en/tags/' %}
 {% else %}
   {% assign home_url = '/ko/' %}
   {% assign about_url = '/about/' %}
   {% assign tarot_url = '/tarot/' %}
   {% assign archives_url = '/archives/' %}
+  {% assign categories_url = '/categories/' %}
+  {% assign tags_url = '/tags/' %}
 {% endif %}
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
@@ -48,8 +52,8 @@
         ;{{ about_url }}|fas fa-info-circle|ABOUT
         ;{{ tarot_url }}|fas fa-star|TAROT DICTIONARY
         ;{{ archives_url }}|fas fa-archive|ARCHIVES
-        ;/categories/|fas fa-stream|CATEGORIES
-        ;/tags/|fas fa-tags|TAGS
+        ;{{ categories_url }}|fas fa-stream|CATEGORIES
+        ;{{ tags_url }}|fas fa-tags|TAGS
         ;/privacy/|fas fa-user-shield|PRIVACY
       {% endcapture %}
       {% assign menu_items = menu_src | strip | split: ';' %}

@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-05-hierophant/
 alt_url: /posts/tarot-major-05-hierophant/
 card_name: The Hierophant
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 The Major Arcana carries a story in its ordering alone. Right before card 5, the Hierophant, stands card 4, the Emperor, who builds worldly order; right after comes card 6, the Lovers, and the fork of choice. If the Emperor was the card that sets the rules of the real world, **The Hierophant** is the card that adds spiritual legitimacy to those rules. It points at a path many people have walked and proven over a long time, and says that for now it is fine to trust that path and follow it rather than cutting a new one.

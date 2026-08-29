@@ -8,6 +8,7 @@ date: 2026-08-06 15:00:00 +0900
 categories: [Products, App]
 permalink: /en/posts/saju-lotto/
 alt_url: /posts/saju-lotto/
+tags: [app, android, kotlin, compose, lotto, lottery, saju]
 ---
 ## Info
 > Enter your birth date and time (solar or lunar), and Saju Lotto deterministically draws

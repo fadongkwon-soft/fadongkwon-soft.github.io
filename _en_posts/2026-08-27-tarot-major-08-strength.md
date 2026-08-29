@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-08-strength/
 alt_url: /posts/tarot-major-08-strength/
 card_name: Strength
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 The first time you see the Strength card, you tend to picture a beast being overpowered. But look closely at the picture and the woman is not forcing the lion's jaws apart or striking it. She is simply holding it, gently, with both hands. The real power Major Arcana 8, **Strength**, describes is not muscle at all — it is closer to the ability to handle something fierce with a soft touch.

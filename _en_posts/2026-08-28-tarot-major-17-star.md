@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-17-star/
 alt_url: /posts/tarot-major-17-star/
 card_name: The Star
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 Follow the order of the Major Arcana and card 17, the Star, comes right after card 16, the Tower. That is no accident. The first thing to settle on the ground the Tower brought down, the ruins where only rubble is left, is starlight. The urgent run of lightning, collapse and falling finally goes quiet when it reaches this card. **Card 17, The Star**, is the card that arrives after the storm has passed.

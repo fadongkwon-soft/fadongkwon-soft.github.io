@@ -1,0 +1,62 @@
+---
+layout: page
+# 영문판 카테고리 아카이브. jekyll-archives 는 컬렉션(_en_posts)을 지원하지
+# 않으므로 카테고리별 하위 페이지 대신 **한 페이지 안의 앵커 섹션**으로 만든다.
+# 포스트 하단 카테고리 링크(post.html)와 앵커 id 규칙(cat-<slugify>)을 맞출 것.
+# 섹션은 첫 번째 카테고리 기준으로 묶고, 두 번째 카테고리는 항목 옆 배지로 보여준다.
+# ⚠️ 컬렉션은 미래 날짜 문서가 남으므로 날짜 필터 필수.
+---
+
+{% assign pool = site.en_posts
+  | where_exp: 'p', 'p.hidden != true'
+  | where_exp: 'p', 'p.date <= site.time'
+  | sort: 'date' | reverse %}
+
+{% assign tops = '' | split: '' %}
+{% assign subs = '' | split: '' %}
+{% for post in pool %}
+  {% assign top = post.categories | first %}
+  {% if top and tops contains top %}{% else %}{% if top %}{% assign tops = tops | push: top %}{% endif %}{% endif %}
+  {% assign sub = post.categories[1] %}
+  {% if sub and subs contains sub %}{% else %}{% if sub %}{% assign subs = subs | push: sub %}{% endif %}{% endif %}
+{% endfor %}
+{% assign tops = tops | sort_natural %}
+{% assign subs = subs | sort_natural %}
+
+<div id="archives" class="pl-xl-3">
+  {% for c in tops %}
+    {% assign hits = pool | where_exp: 'p', 'p.categories.first == c' %}
+    <h2 id="cat-{{ c | slugify }}" class="lead d-block mt-4">
+      <i class="far fa-folder-open fa-fw text-muted me-1"></i>{{ c }}
+      <span class="text-muted small">{{ hits | size }}</span>
+    </h2>
+    <ul class="list-unstyled">
+      {% for post in hits %}
+        <li>
+          <span class="date small text-muted me-2">{{ post.date | date: '%b %d, %Y' }}</span>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          {% assign sub = post.categories[1] %}
+          {% if sub %}<span class="text-muted small ms-1">· {{ sub }}</span>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+
+  <!-- 두 번째 카테고리에도 앵커를 만들어 준다 (포스트 하단 링크가 둘 다 걸리므로) -->
+  {% for c in subs %}
+    {% if tops contains c %}{% continue %}{% endif %}
+    {% assign hits = pool | where_exp: 'p', 'p.categories contains c' %}
+    <h2 id="cat-{{ c | slugify }}" class="lead d-block mt-4">
+      <i class="far fa-folder fa-fw text-muted me-1"></i>{{ c }}
+      <span class="text-muted small">{{ hits | size }}</span>
+    </h2>
+    <ul class="list-unstyled">
+      {% for post in hits %}
+        <li>
+          <span class="date small text-muted me-2">{{ post.date | date: '%b %d, %Y' }}</span>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+</div>

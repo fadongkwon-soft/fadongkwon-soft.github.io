@@ -9,6 +9,7 @@ categories: [Tarot, Cups]
 permalink: /en/posts/tarot-cups-page/
 alt_url: /posts/tarot-cups-page/
 card_name: Page of Cups
+tags: [tarot, tarot card meanings, minor arcana, cups, court cards]
 ---
 
 You drew a card wondering how the person you have a crush on feels, and the Page of Cups came up. Or you met this card while wondering where a hobby or a course you have only just started is heading. To both of those questions the Page of Cups hands over the same answer.

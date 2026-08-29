@@ -8,6 +8,7 @@ date: 2026-08-24 09:00:00 +0900
 categories: [Products, Game]
 permalink: /en/posts/hangul-monsters-toss/
 alt_url: /posts/hangul-monsters-toss/
+tags: [game, toss, apps in toss, mini app, education, hangul, early education, monsters, solo developer]
 ---
 ## Info
 > **Hangul Monsters** is now live on Apps in Toss. Open it instantly inside the Toss app —

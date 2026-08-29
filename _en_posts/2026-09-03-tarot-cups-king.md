@@ -9,6 +9,7 @@ categories: [Tarot, Cups]
 permalink: /en/posts/tarot-cups-king/
 alt_url: /posts/tarot-cups-king/
 card_name: King of Cups
+tags: [tarot, tarot card meanings, minor arcana, cups, court cards]
 ---
 
 How does someone sit on a throne rocking in the middle of a swelling sea and still wear a face that calm? **The King of Cups** is the card that holds the answer.

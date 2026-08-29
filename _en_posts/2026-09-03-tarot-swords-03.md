@@ -9,6 +9,7 @@ categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-03/
 alt_url: /posts/tarot-swords-03/
 card_name: Three of Swords
+tags: [tarot, tarot card meanings, swords, minor arcana]
 ---
 
 On the day you hear something you never expected from someone you trusted, or while you are quietly closing the book on a relationship that has already ended, the odds of drawing the Three of Swords run unusually high. The same goes for the shock of a report card in your hand. When this card answers a question like that, the accurate way to take it is as a signal not to deny what you are feeling.

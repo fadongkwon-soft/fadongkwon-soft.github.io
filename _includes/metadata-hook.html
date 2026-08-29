@@ -43,6 +43,26 @@
     color: var(--sidebar-muted-color, #8e8e8e);
     opacity: 0.6;
   }
+
+  /* 본문 이미지 좌측 정렬 — Chirpy 기본(중앙)이 본문 좌측 정렬 텍스트와 어긋나
+     깨져 보인다는 피드백(2026-08-29). 명시적 정렬 클래스(.left/.right)는 존중. */
+  .content p > img:not(.left):not(.right),
+  .content a.img-link,
+  .content .preview-img:not(.left):not(.right) {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+  .content a.img-link {
+    display: block;
+    text-align: left;
+  }
+  /* 이미지 캡션(em)도 이미지를 따라 좌측으로 */
+  .content p > img:not(.left):not(.right) + em,
+  .content a.img-link + em,
+  .content .popup + em {
+    display: block;
+    text-align: left !important;
+  }
 </style>
 
 <!-- ===== 다국어(한/영) hreflang =====

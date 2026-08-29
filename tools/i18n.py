@@ -47,6 +47,112 @@ ANCHOR_MAP = [
 REQUIRED_EN_KEYS = ('title', 'description', 'date', 'categories', 'permalink', 'alt_url')
 
 # ─────────────────────────────────────────────────────────────────────────────
+# 영문 태그 생성 (/en/tags/ 페이지용)
+#
+# 한국어 태그는 250여 종에 1회성 롱테일(카드별 태그 등)이 대부분이라 전부
+# 번역하지 않는다. 타로 카드 글은 구조화 태그(tarot + 수트)로 대체하고,
+# 그 외 글은 아래 용어집에 있는 것만 옮긴다(없으면 버림 — 영문 태그 공간을
+# 검색 가치 있는 소수로 유지). ASCII 태그는 소문자로 정규화해 통과시킨다.
+TAROT_SUIT_TAGS = {
+    '메이저아르카나': 'major arcana',
+    '마이너아르카나': 'minor arcana',
+    '완드': 'wands',
+    '컵': 'cups',
+    '소드': 'swords',
+    '펜타클': 'pentacles',
+    '코트카드': 'court cards',
+    '궁정카드': 'court cards',
+}
+TAG_GLOSSARY = {
+    '타로': 'tarot',
+    '타로카드': 'tarot card',
+    '타로카드사전': 'tarot card meanings',
+    '타로해석': 'tarot reading',
+    '운세': 'fortune telling',
+    '오늘의운세': 'daily fortune',
+    '1인개발자': 'solo developer',
+    '개발자': 'developer',
+    '개발일지': 'dev log',
+    '사이드프로젝트': 'side project',
+    '직장인부업': 'side hustle',
+    '앱출시': 'app launch',
+    '앱개발': 'app development',
+    '앱인토스': 'apps in toss',
+    'Apps in Toss': 'apps in toss',
+    '토스': 'toss',
+    '미니앱': 'mini app',
+    '미니게임': 'minigame',
+    '사업자': 'business registration',
+    'Play Store': 'play store',
+    'PlayStore': 'play store',
+    '플레이스토어': 'play store',
+    'App Store': 'app store',
+    '앱스토어': 'app store',
+    '애플': 'apple',
+    '경제적 자유': 'financial freedom',
+    '디지털 자산': 'digital assets',
+    '할 일': 'todo',
+    '유아교육': 'early education',
+    '자녀교육': 'parenting',
+    '초등입학준비': 'school readiness',
+    '초등저학년': 'early elementary',
+    '학습습관': 'study habits',
+    '문해력': 'literacy',
+    '한글': 'hangul',
+    '한글공부': 'hangul',
+    '한글떼기': 'hangul',
+    '몬스터': 'monsters',
+    '수학': 'math',
+    '수학공부': 'math',
+    '수학공부법': 'math',
+    '초등수학': 'elementary math',
+    '사칙연산': 'arithmetic',
+    '연산연습': 'arithmetic practice',
+    '간호조무사': 'nursing assistant',
+    '간호조무사시험': 'nursing assistant',
+    '간호조무사자격증': 'nursing assistant',
+    '국가시험': 'national exam',
+    '국시원': 'national exam',
+    '시험정보': 'exam info',
+    '자격증': 'certification',
+    '문제은행': 'question bank',
+    '모의고사': 'mock exam',
+    '수험': 'exam prep',
+    '사주로또': 'saju lotto',
+    '주스 스피너': 'juice spinner',
+    '병 돌리기': 'spin the bottle',
+    '반응속도': 'reaction speed',
+    '기억력': 'memory',
+    '귀여운앱': 'cute app',
+    '인내': 'patience',
+    'Flutter': 'flutter',
+    'Flutter Web': 'flutter web',
+}
+
+
+def en_tags_for(ko_tags, is_tarot_card):
+    """한국어 태그 목록 → 영문 태그 목록 (순서 유지, 중복 제거)."""
+    out = []
+
+    def add(t):
+        if t and t not in out:
+            out.append(t)
+
+    if is_tarot_card:
+        add('tarot')
+        add('tarot card meanings')
+        for t in ko_tags:
+            add(TAROT_SUIT_TAGS.get(t))
+        return out
+
+    for t in ko_tags:
+        if t in TAG_GLOSSARY:
+            add(TAG_GLOSSARY[t])
+        elif all(ord(ch) < 128 for ch in t):
+            add(t.lower())
+    return out
+
+# ─────────────────────────────────────────────────────────────────────────────
 # 제목 정규화
 #
 # 한국어 타로 78장은 여러 세션에 걸쳐 쓰이면서 섹션 제목이 심하게 드리프트했다
@@ -365,8 +471,15 @@ def cmd_fixup():
         fm = fm_set(fm, 'categories', fm_get(kfm, 'categories'))
         fm = fm_set(fm, 'permalink', '/en/posts/' + slug + '/')
         fm = fm_set(fm, 'alt_url', '/posts/' + slug + '/')
-        # 태그는 영문 아카이브 페이지가 없어 링크가 404 나므로 넣지 않는다
+        # 태그는 한국어 원문 태그를 용어집으로 옮겨 영문 태그로 넣는다
+        # (/en/tags/ 인페이지 아카이브가 앵커로 받는다 — 별도 태그 페이지 없음).
         fm = re.sub(r'^tags:[ \t]*.*$\n?', '', fm, flags=re.M)
+        ko_tags_raw = fm_get(kfm, 'tags') or ''
+        ko_tags = [t.strip() for t in ko_tags_raw.strip('[]').split(',') if t.strip()]
+        is_tarot_card = bool(card_name(fm_get(kfm, 'title')))
+        en_tags = en_tags_for(ko_tags, is_tarot_card)
+        if en_tags:
+            fm = fm.rstrip('\n') + '\ntags: [' + ', '.join(en_tags) + ']\n'
         # 대표 이미지가 없으면 한국어와 같은 파일을 쓴다
         if 'image:' not in fm:
             blk = fm_block(kfm, 'image')

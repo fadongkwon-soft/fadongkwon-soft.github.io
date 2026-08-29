@@ -9,6 +9,7 @@ categories: [Tarot, Wands]
 permalink: /en/posts/tarot-wands-knight/
 alt_url: /posts/tarot-wands-knight/
 card_name: Knight of Wands
+tags: [tarot, tarot card meanings, wands, minor arcana, court cards]
 ---
 
 The Knight of Wands is already spurring the horse forward before the thought has finished forming — the card with the most sheer speed in the whole Wands suit.

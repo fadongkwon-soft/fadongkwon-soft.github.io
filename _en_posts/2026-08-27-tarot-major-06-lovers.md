@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-06-lovers/
 alt_url: /posts/tarot-major-06-lovers/
 card_name: The Lovers
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 If you had to name the single most welcome card in a love reading, plenty of people would say **the Lovers**. The name alone promises romance. But study tarot for a while and you run into the card's second face: the Lovers is a card of love and, at the same moment, a card of **the big choices in a life**. If it turns up on a question that has nothing to do with romance, there is a good chance a fork in the road is already in front of you.

@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-10-wheel/
 alt_url: /posts/tarot-major-10-wheel/
 card_name: Wheel of Fortune
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 "Everything I try lately keeps grinding — when does this run of bad luck break?" "Something that was going well has suddenly changed direction. Should I get on now?" If you are holding a question like that in a reading and you meet card 10, **the Wheel of Fortune**, the card tells you one thing before it answers you. The wheel does not know how to stop. Whether you are on the way up or the way down right now, the next notch is already turning.

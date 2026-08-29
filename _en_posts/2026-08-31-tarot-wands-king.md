@@ -9,6 +9,7 @@ categories: [Tarot, Wands]
 permalink: /en/posts/tarot-wands-king/
 alt_url: /posts/tarot-wands-king/
 card_name: King of Wands
+tags: [tarot, tarot card meanings, wands, minor arcana]
 ---
 
 Four figures appear in the Wands suit — the Page, the Knight, the Queen and the King. Set them side by side and a single story of growth comes into view. The Page is the beginner touching the spark for the first time, the Knight is the doer who takes that spark and runs without weighing anything, and the Queen is the mature figure who knows how to govern a burning passion from within. **The King of Wands** stands at the very end of that line, mastery fully settled into the body, out in front of an organization and its people. Among all the Minor Arcana court cards, this is the seat that stands for the most outwardly complete leadership.

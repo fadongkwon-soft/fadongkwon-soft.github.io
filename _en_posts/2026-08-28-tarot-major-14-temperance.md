@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-14-temperance/
 alt_url: /posts/tarot-major-14-temperance/
 card_name: Temperance
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 Because of its name, Temperance is often mistaken for a card about holding back and suppressing — as if you had to quit what you love or force down what you want. What Major Arcana card 14, **Temperance**, actually pictures is not abstinence but **the skill of blending two things well**. It is a card about tuning rather than restraining, which makes it one of the gentlest cards in the deck.

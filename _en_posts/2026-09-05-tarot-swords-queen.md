@@ -9,6 +9,7 @@ categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-queen/
 alt_url: /posts/tarot-swords-queen/
 card_name: Queen of Swords
+tags: [tarot, tarot card meanings, minor arcana, court cards]
 ---
 
 Older tarot handbooks sometimes introduce the Queen of Swords as a cold, unfeeling woman, or even as someone divorced or widowed. What the card actually draws, though, is not a person without emotion but a person who has already passed through pain and come out of it with clarity. **Honesty** sits closer to the essence of this card than coldness does.

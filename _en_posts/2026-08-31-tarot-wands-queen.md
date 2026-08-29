@@ -9,6 +9,7 @@ categories: [Tarot, Wands]
 permalink: /en/posts/tarot-wands-queen/
 alt_url: /posts/tarot-wands-queen/
 card_name: Queen of Wands
+tags: [tarot, tarot card meanings, wands, minor arcana, court cards]
 ---
 
 Some people walk into a gathering and become its center without trying, and their confidence brightens everyone standing nearby. When a reading is asked who that person is, the card that turns up is very often the Queen of Wands.

@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-00-fool/
 alt_url: /posts/tarot-major-00-fool/
 card_name: The Fool
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 A young traveler stands at the very edge of a cliff, chin tilted up toward the sky. One small bundle on a stick over the shoulder, a white rose in hand, a little dog barking along at the heels. One more step and the fall is certain, yet there is no fear anywhere in that face. First in the deck, **card 0, The Fool**, draws exactly this — a starting point where nothing has been decided yet.

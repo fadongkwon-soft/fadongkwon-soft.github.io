@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-11-justice/
 alt_url: /posts/tarot-major-11-justice/
 card_name: Justice
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 Every deck maker put Justice in a slightly different seat. In the older French Marseille tradition, Justice sat at 8 and Strength at 11, but in the Rider-Waite deck most widely used today the two swapped places, leaving **Justice at 11 and Strength at 8**. The reordering is said to have been made so that position 11 would line up with Libra, the scales, in the astrological correspondence table — and the fact that a single card's number has a backstory like that suits Justice rather well, since it was always the card about clean, exact standards.

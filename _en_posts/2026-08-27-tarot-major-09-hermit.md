@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-09-hermit/
 alt_url: /posts/tarot-major-09-hermit/
 card_name: The Hermit
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 Compressed into a single sentence, Major Arcana 9, **the Hermit**, is the card of leaving the crowd behind and lighting your own lantern to see the path. Where the Chariot races toward its goal and Strength soothes a wild instinct, the Hermit stands in the place where you stop for a while and ask whether that whole journey has been heading the right way.

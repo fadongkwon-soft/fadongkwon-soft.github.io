@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-21-world/
 alt_url: /posts/tarot-major-21-world/
 card_name: The World
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 The World sits at the place where the twenty-two card journey that set out from 0, the Fool, finally comes all the way around and closes. Carrying the last number of the Major Arcana as it does, this card turning up reads as a sign that one story — large or small — has entered its closing stretch.

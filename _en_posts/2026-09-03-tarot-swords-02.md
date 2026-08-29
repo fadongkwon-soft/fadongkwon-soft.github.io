@@ -9,6 +9,7 @@ categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-02/
 alt_url: /posts/tarot-swords-02/
 card_name: Two of Swords
+tags: [tarot, tarot card meanings, swords, minor arcana]
 ---
 
 In one sentence, the Two of Swords draws **the moment you are holding both weights of a scale at once and can reach for neither side**. That is also why the blindfolded figure with two swords crossed is one of the most widely recognized images in the suit.

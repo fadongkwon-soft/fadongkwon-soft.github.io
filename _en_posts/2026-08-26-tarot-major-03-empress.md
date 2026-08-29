@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-03-empress/
 alt_url: /posts/tarot-major-03-empress/
 card_name: The Empress
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 In one sentence, Major Arcana 3, **The Empress**, is the card where everything you have been tending finally comes back as abundant fruit. Placed right after the High Priestess and her quiet waiting, this card says it is now your turn to let what you gathered inward flow back out.

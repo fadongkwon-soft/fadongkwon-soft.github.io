@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-13-death/
 alt_url: /posts/tarot-major-13-death/
 card_name: Death
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 Most people's faces tighten when this card turns up. **Card 13, Death** — the skeleton knight, the card that shows up in every ominous scene in films and dramas. Among tarot readers, though, Death is known as the most misunderstood card in the deck. What it actually talks about is not dying but **an ending, and the new current that starts in the space it leaves behind**.

@@ -7,6 +7,7 @@ date: 2026-08-28 22:30:00 +0900
 categories: [Products, App]
 permalink: /en/posts/tarot-fortune/
 alt_url: /posts/tarot-fortune/
+tags: [app, android, tarot, tarot card, fortune telling, daily fortune, solo developer]
 ---
 ## Info
 > **Tarot Fortune** is a one-card tarot reading app: pick a theme, draw a card and

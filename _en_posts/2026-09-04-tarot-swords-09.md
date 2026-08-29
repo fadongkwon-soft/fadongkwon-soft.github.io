@@ -9,6 +9,7 @@ categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-09/
 alt_url: /posts/tarot-swords-09/
 card_name: Nine of Swords
+tags: [tarot, tarot card meanings, minor arcana]
 ---
 
 The night when "what if it goes wrong" keeps pulling the next thought behind it and sleep will not come even with your eyes shut — if that is the question you are holding, the card you just drew is very likely the Nine of Swords. This card draws not an event that has happened, but the moment when imagining something that has not happened yet presses down on the mind.

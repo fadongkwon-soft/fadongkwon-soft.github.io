@@ -9,6 +9,7 @@ categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-08/
 alt_url: /posts/tarot-swords-08/
 card_name: Eight of Swords
+tags: [tarot, tarot card meanings, minor arcana]
 ---
 
 The Eight of Swords draws the moment you are not actually trapped but believe you are. In the Rider-Waite deck the woman stands ringed by eight swords, blindfolded and loosely bound — yet look closely and the gap between two of the swords is wide enough for a person to walk straight through. The ground underfoot is mud, and far off on a hill there stands a castle. It is not that no safe place exists; it is only that you cannot see it while the blindfold is on.

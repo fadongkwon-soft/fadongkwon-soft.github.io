@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-18-moon/
 alt_url: /posts/tarot-major-18-moon/
 card_name: The Moon
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 A narrow path winds between two towers, and above it hangs a moon with a human face, spilling light down in slow drops. A crayfish crawls out of the pool beside the road, and a dog and a wolf stand side by side, both baying up at the moon. Nothing in the picture is sharp; every shape wavers and blurs under the moonlight. Major Arcana **18, The Moon**, draws exactly this — a night road you cannot be sure of.

@@ -8,6 +8,7 @@ date: 2026-08-23 18:00:00 +0900
 categories: [Products, Game]
 permalink: /en/posts/hangul-monsters/
 alt_url: /posts/hangul-monsters/
+tags: [game, android, education, hangul, early education, monsters, solo developer]
 ---
 ## Info
 > **Hangul Monsters** is a Korean-learning game for kids: listen to native-quality voice

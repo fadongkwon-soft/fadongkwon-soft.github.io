@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-12-hanged-man/
 alt_url: /posts/tarot-major-12-hanged-man/
 card_name: The Hanged Man
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 A man hangs upside down, one ankle tied to a branch. His arms are folded behind his back and his legs cross into the shape of a number 4, yet his face shows no pain at all. If anything, he looks comfortable. A soft light even glows around his head. Major Arcana card 12, **The Hanged Man**, draws exactly this moment — someone looking at the world while suspended upside down.

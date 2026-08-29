@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-19-sun/
 alt_url: /posts/tarot-major-19-sun/
 card_name: The Sun
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 If you had to pick one card out of the 78 that you could call a "good card" without hesitating, wouldn't it be the Sun? A naked child rides a white horse under a sun with a broad, laughing face, and there is barely a shadow anywhere in the picture. But is there really nothing in this card worth watching out for?

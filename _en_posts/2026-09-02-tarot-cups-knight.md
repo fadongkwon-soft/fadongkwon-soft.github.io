@@ -9,6 +9,7 @@ categories: [Tarot, Cups]
 permalink: /en/posts/tarot-cups-knight/
 alt_url: /posts/tarot-cups-knight/
 card_name: Knight of Cups
+tags: [tarot, tarot card meanings, minor arcana, cups, court cards]
 ---
 
 Among the sixteen court cards the Knight always stands between the Page and the Queen — finished with learning, not yet arrived at full maturity. Of the four Knights, the Knight of Cups is the seat where the element of water runs over most romantically, and he wears the face of a young man who has begun to move on feeling.

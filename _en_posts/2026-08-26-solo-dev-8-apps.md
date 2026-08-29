@@ -8,6 +8,7 @@ date: 2026-08-26 20:00:00 +0900
 categories: [Blogging, Episode]
 permalink: /en/posts/solo-dev-8-apps/
 alt_url: /posts/solo-dev-8-apps/
+tags: [solo developer, app development, app launch, side project, dev log, play store, apps in toss, side hustle]
 ---
 
 It has been a year and a half since I wrote about [the road to my first app release](/en/posts/ready-to-open/). Back then, getting even one app onto a store was unknown territory, and my goal was "one app every two weeks." Today there are eight apps on the stores. That is nowhere near the pace I aimed for, but along the way I learned things I could not have imagined at the start.

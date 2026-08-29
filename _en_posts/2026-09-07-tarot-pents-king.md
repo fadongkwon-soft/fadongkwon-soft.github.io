@@ -9,6 +9,7 @@ categories: [Tarot, Pentacles]
 permalink: /en/posts/tarot-pents-king/
 alt_url: /posts/tarot-pents-king/
 card_name: King of Pentacles
+tags: [tarot, tarot card meanings, pentacles, court cards]
 ---
 
 The 78 tarot cards are usually split into 22 Major Arcana and 56 Minor Arcana; the Minor Arcana divides again into the four suits of Wands, Cups, Swords and Pentacles, and each suit runs fourteen cards from Ace to King. Follow that order all the way to the end and the last seat you reach is the **King of Pentacles**. A place arrived at by setting out from the Ace's one small seed, stacking up the material world from 2 through 10, and passing through the Page's learning, the Knight's execution and the Queen's care. Which is why this figure, seated on a lavish throne covered in grapevines and bulls' heads, carries more meaning than simply "the card about having money."

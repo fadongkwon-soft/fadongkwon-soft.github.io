@@ -9,6 +9,7 @@ categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-10/
 alt_url: /posts/tarot-swords-10/
 card_name: Ten of Swords
+tags: [tarot, tarot card meanings, minor arcana]
 ---
 
 The journey of Air that began with the Ace of Swords adds one number at a time and passes in turn through judgment, conflict, stalling and dread. If the Nine of Swords was the last night of sitting through it without knowing the outcome, the Ten of Swords is the seat where that outcome has finally arrived. It is the complete closing of a phase that can no longer be put off.

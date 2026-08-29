@@ -8,6 +8,7 @@ date: 2026-08-25 21:00:00 +0900
 categories: [Products, Game]
 permalink: /en/posts/math-monsters/
 alt_url: /posts/math-monsters/
+tags: [game, android, education, math, early education, monsters, solo developer]
 ---
 ## Info
 > **Math Monsters** is a math-practice game for kids: solve addition, subtraction,

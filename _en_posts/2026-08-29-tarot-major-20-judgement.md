@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-20-judgement/
 alt_url: /posts/tarot-major-20-judgement/
 card_name: Judgement
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 Hear the name "Judgement" for the first time and it is easy to picture the Last Judgment — a courtroom calling sins to account. Plenty of people do stiffen a little when they turn this card over. But what card 20 of the Rider-Waite deck draws is not punishment. It is a call. The figures rising from their graves in answer to the trumpet are not caught in the moment of being sentenced; they are much closer to the moment of opening their eyes again.

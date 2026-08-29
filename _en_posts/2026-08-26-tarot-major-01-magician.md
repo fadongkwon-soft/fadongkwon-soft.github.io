@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-01-magician/
 alt_url: /posts/tarot-major-01-magician/
 card_name: The Magician
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 Can one hand change the world? Major Arcana 1, **The Magician**, answers that question with "the materials you need are already in your hands." Where card 0, the Fool, was potential itself with nothing decided, the Magician draws the moment that potential is picked up for the first time and shaped into something real.

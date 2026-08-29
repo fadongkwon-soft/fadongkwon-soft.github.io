@@ -9,6 +9,7 @@ categories: [Tarot, Pentacles]
 permalink: /en/posts/tarot-pents-knight/
 alt_url: /posts/tarot-pents-knight/
 card_name: Knight of Pentacles
+tags: [tarot, tarot card meanings, pentacles, court cards]
 ---
 
 The Knight of Pentacles is the slowest of the four knights, and the one who goes all the way to the end. While the Knight of Wands gallops flat out, the Knight of Cups glides along unhurried on his swan and the Knight of Swords charges like a storm, the Knight of Pentacles keeps his black horse at a standstill and gazes quietly at the single coin in his hand. He looks stopped, but that is in fact this knight's method. In terms of court-card maturity, the Knight is the stage of finishing the Page's learning and going out into the world to carry things out — and what makes the Knight of Pentacles distinctive is that he interprets carrying things out as something never to be rushed.

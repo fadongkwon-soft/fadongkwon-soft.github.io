@@ -7,6 +7,7 @@ date: 2026-08-28 22:40:00 +0900
 categories: [Products, App]
 permalink: /en/posts/tarot-ping/
 alt_url: /posts/tarot-ping/
+tags: [app, android, tarot, tarot card, fortune telling, cute app, solo developer]
 ---
 ## Info
 > **Tarot Ping** is the cute-deck edition of our tarot reading app: the same 78 cards ×

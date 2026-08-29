@@ -9,6 +9,7 @@ categories: [Tarot, Cups]
 permalink: /en/posts/tarot-cups-queen/
 alt_url: /posts/tarot-cups-queen/
 card_name: Queen of Cups
+tags: [tarot, tarot card meanings, minor arcana, cups, court cards]
 ---
 
 A woman sits on a throne at the water's edge, an ornately worked cup held still in both hands. Her eyes are on what is inside it, but her attention seems to reach past the waves to what someone else is feeling. **The Queen of Cups** is a portrait of a person who knows how to handle emotion.

@@ -9,6 +9,7 @@ categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-04/
 alt_url: /posts/tarot-swords-04/
 card_name: Four of Swords
+tags: [tarot, tarot card meanings, swords, minor arcana]
 ---
 
 If the Three of Swords had you face the pain running straight through the heart, the Four of Swords in the very next seat is the stop signal that follows it. The move from 3 to 4 lays out the order plainly: once the pain has been lived through, a stretch of recovery has to come after it. The same logic is why 4 reads as the seat of stability and stillness in the suit of Swords.

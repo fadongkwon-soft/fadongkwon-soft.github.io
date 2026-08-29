@@ -134,15 +134,14 @@ script_includes:
         <div class="post-meta">
           <i class="far fa-folder-open fa-fw me-1"></i>
           {%- comment -%}
-            영문 포스트에서는 카테고리를 링크가 아니라 평문으로 낸다.
-            `/categories/<name>/` 아카이브는 jekyll-archives 가 site.posts(한국어)에서만
-            만들기 때문에, 링크로 두면 영문 독자가 한국어 목록 페이지로 떨어진다.
-            카테고리 값 자체는 영문 타로 허브(/en/tarot/)와 영문 홈의 분류에 쓰이므로
-            front matter 에서 빼지 않고 유지한다.
+            영문 포스트의 카테고리/태그는 인페이지 아카이브(/en/categories/,
+            /en/tags/)의 앵커로 보낸다 — jekyll-archives 는 site.posts(한국어)
+            에서만 하위 페이지를 만들기 때문. 앵커 id 규칙(cat-/tag- + slugify)은
+            en-categories/en-tags 레이아웃과 맞춰져 있고 htmlproofer 가 검증한다.
           {%- endcomment -%}
           {% for category in page.categories %}
             {%- if page.lang == 'en' -%}
-              {{ category }}
+              <a href="{{ site.baseurl }}/en/categories/#cat-{{ category | slugify }}">{{ category }}</a>
             {%- else -%}
               <a href="{{ site.baseurl }}/categories/{{ category | slugify | url_encode }}/">{{ category }}</a>
             {%- endif -%}
@@ -160,10 +159,12 @@ script_includes:
       <div class="post-tags">
         <i class="fa fa-tags fa-fw me-1"></i>
         {% for tag in page.tags %}
-          <a
-            href="{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/"
-            class="post-tag no-text-decoration"
-          >
+          {%- if page.lang == 'en' -%}
+            {% capture tag_href %}{{ site.baseurl }}/en/tags/#tag-{{ tag | slugify }}{% endcapture %}
+          {%- else -%}
+            {% capture tag_href %}{{ site.baseurl }}/tags/{{ tag | slugify | url_encode }}/{% endcapture %}
+          {%- endif -%}
+          <a href="{{ tag_href }}" class="post-tag no-text-decoration">
             {{- tag -}}
           </a>
         {% endfor %}

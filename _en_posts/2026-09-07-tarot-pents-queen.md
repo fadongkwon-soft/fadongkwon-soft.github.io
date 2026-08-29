@@ -9,6 +9,7 @@ categories: [Tarot, Pentacles]
 permalink: /en/posts/tarot-pents-queen/
 alt_url: /posts/tarot-pents-queen/
 card_name: Queen of Pentacles
+tags: [tarot, tarot card meanings, pentacles, court cards]
 ---
 
 "Lately I only feel settled if the housework and the work at the office both go through me." "I only relax once my child's health and the household budget have passed through my own hands." If that is the frame of mind you are living in day to day, there is a good chance the Queen of Pentacles turns up in your reading. Seated in the middle of a rich garden, looking at the coin on her lap the way you would look at a child, this queen wears the face of someone who tends practical things attentively.

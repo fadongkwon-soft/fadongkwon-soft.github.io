@@ -9,6 +9,7 @@ categories: [Tarot, Swords]
 permalink: /en/posts/tarot-swords-page/
 alt_url: /posts/tarot-swords-page/
 card_name: Page of Swords
+tags: [tarot, tarot card meanings, minor arcana, court cards]
 ---
 
 On a hill where the wind is driving hard, a figure with a still-young face grips a sword upright in both hands and glances over one shoulder. Hair and clothing whip in every direction, and behind, clouds and flocks of birds scatter untidily across the sky. Placed in the youngest seat of the Swords court, **the Page of Swords** draws exactly this — a sharpness not yet fully learned.

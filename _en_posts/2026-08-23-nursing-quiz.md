@@ -8,6 +8,7 @@ date: 2026-08-23 18:30:00 +0900
 categories: [Products, App]
 permalink: /en/posts/nursing-quiz/
 alt_url: /posts/nursing-quiz/
+tags: [app, android, nursing assistant, national exam, question bank, mock exam, exam prep, solo developer]
 ---
 ## Info
 > **Nursing Assistant Mock Exam** is a mock-exam app for the Korean nursing assistant license:

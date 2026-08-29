@@ -8,6 +8,7 @@ date: 2025-03-15 22:48:00 +0900
 categories: [Products, Game]
 permalink: /en/posts/juice-spinner/
 alt_url: /posts/juice-spinner/
+tags: [app, android, ios, flutter, game, spin, bottle]
 ---
 ## Info
 > Up to 12 players can join in, picking freely from 9 kinds of fruit, and take their turn on the juice roulette.

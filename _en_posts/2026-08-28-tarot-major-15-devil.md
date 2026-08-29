@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-15-devil/
 alt_url: /posts/tarot-major-15-devil/
 card_name: The Devil
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 **The Devil shows you a state of being held by something, and at the same time it shows you that the chain is looser than you thought.** Looking at two people chained beneath a horned figure, people usually assume they have drawn the worst card in the deck. The real subject of Major Arcana card 15, **The Devil**, is not ruin but **noticing what has you bound**.

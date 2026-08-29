@@ -9,6 +9,7 @@ categories: [Tarot, Pentacles]
 permalink: /en/posts/tarot-pents-page/
 alt_url: /posts/tarot-pents-page/
 card_name: Page of Pentacles
+tags: [tarot, tarot card meanings, pentacles, court cards]
 ---
 
 People meeting the court cards for the first time often assume that a Page points to an actually young person. In tarot, though, a Page marks a stage in how someone approaches an element, not an age. The Page of Pentacles is no exception. Standing in the middle of a green field, studying a single coin held on an open palm, this figure fits anyone at all — whatever their age — who has only just begun taking practical things seriously.

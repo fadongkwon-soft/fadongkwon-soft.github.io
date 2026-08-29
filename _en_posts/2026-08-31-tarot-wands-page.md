@@ -9,6 +9,7 @@ categories: [Tarot, Wands]
 permalink: /en/posts/tarot-wands-page/
 alt_url: /posts/tarot-wands-page/
 card_name: Page of Wands
+tags: [tarot, tarot card meanings, wands, minor arcana, court cards]
 ---
 
 One of the most common misreadings when you first learn tarot is assuming that a court card always points to an actual person. Sometimes it does, but the Page of Wands is closer to a card about the youngest curiosity inside us — the attitude of wanting to try anything, clumsy hands and all.

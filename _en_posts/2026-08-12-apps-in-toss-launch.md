@@ -8,6 +8,7 @@ date: 2026-08-12 21:30:00 +0900
 categories: [Blogging, Episode]
 permalink: /en/posts/apps-in-toss-launch/
 alt_url: /posts/apps-in-toss-launch/
+tags: [apps in toss, toss, mini app, saju lotto, juice spinner, spin the bottle, flutter, flutter web, solo developer]
 ---
 ## Info
 > Our three apps — **Saju Lotto**, **Juice Spinner**, and **Spin the Bottle** — are now

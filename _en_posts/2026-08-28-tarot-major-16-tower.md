@@ -9,6 +9,7 @@ categories: [Tarot, Major Arcana]
 permalink: /en/posts/tarot-major-16-tower/
 alt_url: /posts/tarot-major-16-tower/
 card_name: The Tower
+tags: [tarot, tarot card meanings, major arcana]
 ---
 
 "A contract I trusted fell apart overnight — why now, of all times?" "I thought I was holding up fine, and suddenly it feels like everything caved in." If the card drawn in a moment like that is Major Arcana card 16, **The Tower**, it is worth looking past the shock to the message underneath. The Tower is not the card that tears things down; it draws **the moment something that could no longer hold finally gives way**.
