@@ -16,10 +16,12 @@
   {% assign home_url = '/' %}
   {% assign about_url = '/en/about/' %}
   {% assign tarot_url = '/en/tarot/' %}
+  {% assign archives_url = '/en/archives/' %}
 {% else %}
   {% assign home_url = '/ko/' %}
   {% assign about_url = '/about/' %}
   {% assign tarot_url = '/tarot/' %}
+  {% assign archives_url = '/archives/' %}
 {% endif %}
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
@@ -45,7 +47,7 @@
         {{ home_url }}|fas fa-home|HOME
         ;{{ about_url }}|fas fa-info-circle|ABOUT
         ;{{ tarot_url }}|fas fa-star|TAROT DICTIONARY
-        ;/archives/|fas fa-archive|ARCHIVES
+        ;{{ archives_url }}|fas fa-archive|ARCHIVES
         ;/categories/|fas fa-stream|CATEGORIES
         ;/tags/|fas fa-tags|TAGS
         ;/privacy/|fas fa-user-shield|PRIVACY

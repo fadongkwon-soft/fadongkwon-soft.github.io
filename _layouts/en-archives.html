@@ -1,0 +1,43 @@
+---
+layout: page
+# 영문판 아카이브. chirpy v7.6.0 _layouts/archives.html 을 복사해
+# site.posts(한국어) 대신 site.en_posts 를 쓴다.
+# ⚠️ 컬렉션은 미래 날짜 문서가 docs 에 남으므로 날짜 필터가 필수
+#    (안 걸면 미공개 글을 링크해 htmlproofer 가 빌드를 죽인다).
+---
+
+{% include lang.html %}
+
+{% assign df_strftime_m = site.data.locales[lang].df.archives.strftime | default: '/ %m' %}
+{% assign df_dayjs_m = site.data.locales[lang].df.archives.dayjs | default: '/ MM' %}
+
+{% assign en_live = site.en_posts
+  | where_exp: 'p', 'p.hidden != true'
+  | where_exp: 'p', 'p.date <= site.time'
+  | sort: 'date' | reverse %}
+
+<div id="archives" class="pl-xl-3">
+  {% for post in en_live %}
+    {% assign cur_year = post.date | date: '%Y' %}
+
+    {% if cur_year != last_year %}
+      {% unless forloop.first %}</ul>{% endunless %}
+
+      <time class="year lead d-block">{{ cur_year }}</time>
+      {{ '<ul class="list-unstyled">' }}
+
+      {% assign last_year = cur_year %}
+    {% endif %}
+
+    <li>
+      {% assign ts = post.date | date: '%s' %}
+      <span class="date day" data-ts="{{ ts }}" data-df="DD">{{ post.date | date: '%d' }}</span>
+      <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
+        {{ post.date | date: df_strftime_m }}
+      </span>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+
+    {% if forloop.last %}</ul>{% endif %}
+  {% endfor %}
+</div>
