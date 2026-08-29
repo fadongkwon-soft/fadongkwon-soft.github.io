@@ -26,7 +26,10 @@
     font-size: 0.82rem;
     line-height: 1.2;
     white-space: nowrap;
-    margin-left: 0.5rem;
+    /* topbar 가 justify-content-between 이라 그냥 두면 가운데에 뜬다 —
+       좌측 여백을 전부 흡수해 검색 영역 바로 왼쪽에 붙인다 */
+    margin-left: auto;
+    margin-right: 0.75rem;
   }
   #topbar .lang-switch a {
     color: var(--text-muted-color, #8e8e8e);
