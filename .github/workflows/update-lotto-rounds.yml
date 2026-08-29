@@ -1,0 +1,60 @@
+name: "Update lotto rounds CSV"
+
+# 사주로또 미니앱이 런타임에 받아가는 로또 6/45 당첨 번호 CSV(/kr645_rounds.csv)를
+# 매주 자동 갱신한다. 데이터 출처는 동행복권 공식 데이터의 GitHub Pages 미러
+# (smok95.github.io/lotto — 무인증, 회차별 JSON).
+#
+# 실제 사이트 공개 시점: GITHUB_TOKEN 푸시는 pages-deploy의 push 트리거를 깨우지
+# 못하므로(액션 재귀 방지), 이 커밋은 pages-deploy의 일일 예약 빌드(12:00 UTC =
+# 21:00 KST)에 실려 일요일 저녁에 공개된다. 앱은 회차별 미러 폴백도 갖고 있어
+# 공개가 하루 늦어도 기능이 멈추지 않는다.
+on:
+  schedule:
+    # 일요일 08:00 KST (토요일 20:45 KST 추첨 다음 날 아침)
+    - cron: "0 23 * * 6"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "lotto-rounds"
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch new rounds from mirror
+        id: fetch
+        run: |
+          set -euo pipefail
+          FILE=kr645_rounds.csv
+          last=$(tail -n 1 "$FILE" | cut -d, -f1)
+          next=$((last + 1))
+          added=0
+          while :; do
+            json=$(curl -sf --max-time 15 "https://smok95.github.io/lotto/results/${next}.json") || break
+            line=$(echo "$json" | jq -r --argjson no "$next" '
+              select(.draw_no == $no and (.numbers | length) == 6)
+              | [.draw_no, .numbers[], .bonus_no, (.date | split("T")[0])]
+              | map(tostring) | join(",")')
+            [ -n "$line" ] || break
+            echo "$line" >> "$FILE"
+            echo "appended round $next: $line"
+            added=$((added + 1))
+            next=$((next + 1))
+          done
+          echo "added=$added" >> "$GITHUB_OUTPUT"
+
+      - name: Commit and push
+        if: steps.fetch.outputs.added != '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add kr645_rounds.csv
+          git commit -m "chore: 로또 당첨 번호 자동 갱신 (+${{ steps.fetch.outputs.added }}회차)"
+          git push
