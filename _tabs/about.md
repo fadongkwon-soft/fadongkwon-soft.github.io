@@ -35,7 +35,7 @@ alt_url: /en/about/
 - **학습** — [한글 몬스터](/posts/hangul-monsters/), [수학 몬스터](/posts/math-monsters/)
 - **시험 대비** — [간호조무사 모의고사](/posts/nursing-quiz/)
 - **게임·모임** — [반응속도 챌린지 · 기억력 카드](/posts/play-minigames/), [병 돌리기](/posts/spin-the-bottle/), [주스 스피너](/posts/juice-spinner/)
-- **운세 콘텐츠** — [사주로또](/posts/saju-lotto/)
+- **운세 콘텐츠** — [타로 운세](/posts/tarot-fortune/), [운세 타로핑](/posts/tarot-ping/), [사주로또](/posts/saju-lotto/)
 - **플랫폼** — [앱인토스 미니앱 출시 소식](/posts/apps-in-toss-launch/)
 
 ## 문의
