@@ -67,6 +67,34 @@
       {% endif %}
     </div>
 
+    <!-- 한/영 언어 스위처 (2026-08-30 사이드바→우상단 이동, 사용자 요청).
+         JS 주입이 아니라 실제 <a> — 크롤러가 따라갈 수 있고 JS 없이도 동작한다.
+         모바일 검색이 열리면 metadata-hook 의 스크립트가 잠시 숨긴다. -->
+    {% if cur_lang == 'en' %}
+      {% assign ko_target = page.alt_url | default: '/ko/' %}
+      {% assign en_target = page.url %}
+    {% else %}
+      {% assign ko_target = page.url %}
+      {% assign en_target = page.alt_url | default: '/' %}
+    {% endif %}
+    <nav class="lang-switch flex-shrink-0" aria-label="Language">
+      <a
+        href="{{ ko_target | relative_url }}"
+        hreflang="ko"
+        lang="ko"
+        class="{% if cur_lang != 'en' %}active{% endif %}"
+        {% if cur_lang != 'en' %}aria-current="true"{% endif %}
+      >한국어</a>
+      <span class="sep" aria-hidden="true">·</span>
+      <a
+        href="{{ en_target | relative_url }}"
+        hreflang="en"
+        lang="en"
+        class="{% if cur_lang == 'en' %}active{% endif %}"
+        {% if cur_lang == 'en' %}aria-current="true"{% endif %}
+      >English</a>
+    </nav>
+
     <button type="button" id="search-trigger" class="btn btn-link" aria-label="Search">
       <i class="fas fa-search fa-fw"></i>
     </button>

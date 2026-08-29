@@ -13,34 +13,36 @@
     이 사이트 tagline 은 네 줄이라 3~4번째 줄이 내비 메뉴 위로 넘쳤다. 박스를
     늘려주면 내비는 normal flow 라 같이 내려간다. 이 훅이 테마 스타일시트보다
     먼저 나오기 때문에 !important 가 필요하다.
-  · .lang-switch — sidebar.html 오버라이드의 한/영 스위처. 사이드바 하단 아이콘 줄
-    바로 위에 놓이며, 현재 언어는 강조하고 다른 언어는 흐리게 둔다.
+  · .lang-switch — topbar.html 오버라이드의 한/영 스위처(우상단, 2026-08-30 이동).
+    현재 언어는 강조하고 다른 언어는 흐리게 둔다. 모바일에서 검색이 열리면 아래
+    스크립트가 잠시 숨긴다(Chirpy 검색 JS 는 자기가 아는 요소만 숨기기 때문).
 {%- endcomment -%}
 <style>
   #sidebar .site-subtitle {
     height: auto !important;
   }
 
-  #sidebar .lang-switch {
-    text-align: center;
+  #topbar .lang-switch {
     font-size: 0.82rem;
     line-height: 1.2;
+    white-space: nowrap;
+    margin-left: 0.5rem;
   }
-  #sidebar .lang-switch a {
-    color: var(--sidebar-muted-color, #8e8e8e);
+  #topbar .lang-switch a {
+    color: var(--text-muted-color, #8e8e8e);
     text-decoration: none;
     padding: 0.15rem 0.3rem;
     border-radius: 0.35rem;
   }
-  #sidebar .lang-switch a:hover {
-    color: var(--sidebar-active-color, #fff);
+  #topbar .lang-switch a:hover {
+    color: var(--heading-color, inherit);
   }
-  #sidebar .lang-switch a.active {
-    color: var(--sidebar-active-color, #fff);
+  #topbar .lang-switch a.active {
+    color: var(--heading-color, inherit);
     font-weight: 700;
   }
-  #sidebar .lang-switch .sep {
-    color: var(--sidebar-muted-color, #8e8e8e);
+  #topbar .lang-switch .sep {
+    color: var(--text-muted-color, #8e8e8e);
     opacity: 0.6;
   }
 
@@ -64,6 +66,20 @@
     text-align: left !important;
   }
 </style>
+
+<!-- 모바일 검색 오버레이가 열릴 때 언어 스위처를 잠시 숨긴다.
+     Chirpy 검색 JS 는 breadcrumb/타이틀 등 자기가 아는 요소만 숨기므로
+     우리가 추가한 스위처는 직접 토글해야 검색창이 눌리지 않는다. -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var ls = document.querySelector('#topbar .lang-switch');
+    if (!ls) return;
+    var trigger = document.getElementById('search-trigger');
+    var cancel = document.getElementById('search-cancel');
+    if (trigger) trigger.addEventListener('click', function () { ls.classList.add('d-none'); });
+    if (cancel) cancel.addEventListener('click', function () { ls.classList.remove('d-none'); });
+  });
+</script>
 
 <!-- ===== 다국어(한/영) hreflang =====
      각 문서는 front matter 에 상대 언어판 경로를 `alt_url` 로 들고 있다.

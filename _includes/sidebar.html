@@ -7,8 +7,7 @@
         번역본이 있는 항목(홈·소개·타로 사전)만 언어별 목적지로 갈라지고,
         아카이브·카테고리·태그·개인정보처리방침은 공용 페이지로 간다.
         site.tabs 루프 대신 명시 목록 — 언어 필터 실수로 메뉴가 사라지는 일 방지.
-    (2) 한/영 언어 스위처 추가 (JS 주입이 아니라 실제 <a> — 크롤러가 링크로
-        따라갈 수 있고 JS 없이도 동작한다)
+    (2) 한/영 언어 스위처는 topbar.html 우상단으로 이동함(2026-08-30).
 -->
 
 {% assign cur_lang = page.lang | default: 'ko' %}
@@ -71,31 +70,7 @@
     </ul>
   </nav>
 
-  <!-- 언어 스위처: 짝이 되는 번역본이 있으면 그 문서로, 없으면 해당 언어 홈으로 -->
-  {% if cur_lang == 'en' %}
-    {% assign ko_target = page.alt_url | default: '/ko/' %}
-    {% assign en_target = page.url %}
-  {% else %}
-    {% assign ko_target = page.url %}
-    {% assign en_target = page.alt_url | default: '/' %}
-  {% endif %}
-  <nav class="lang-switch w-100 ps-0 pb-2" aria-label="Language">
-    <a
-      href="{{ ko_target | relative_url }}"
-      hreflang="ko"
-      lang="ko"
-      class="{% if cur_lang != 'en' %}active{% endif %}"
-      {% if cur_lang != 'en' %}aria-current="true"{% endif %}
-    >한국어</a>
-    <span class="sep" aria-hidden="true">·</span>
-    <a
-      href="{{ en_target | relative_url }}"
-      hreflang="en"
-      lang="en"
-      class="{% if cur_lang == 'en' %}active{% endif %}"
-      {% if cur_lang == 'en' %}aria-current="true"{% endif %}
-    >English</a>
-  </nav>
+  <!-- 한/영 언어 스위처는 topbar.html(우상단)로 이동함(2026-08-30) -->
 
   <div class="sidebar-bottom d-flex flex-wrap align-items-center w-100">
     {% unless site.theme_mode == 'light' or site.theme_mode == 'dark' %}
