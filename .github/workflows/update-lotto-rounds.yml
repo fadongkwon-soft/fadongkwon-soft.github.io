@@ -30,25 +30,7 @@ jobs:
 
       - name: Fetch new rounds from mirror
         id: fetch
-        run: |
-          set -euo pipefail
-          FILE=kr645_rounds.csv
-          last=$(tail -n 1 "$FILE" | cut -d, -f1)
-          next=$((last + 1))
-          added=0
-          while :; do
-            json=$(curl -sf --max-time 15 "https://smok95.github.io/lotto/results/${next}.json") || break
-            line=$(echo "$json" | jq -r --argjson no "$next" '
-              select(.draw_no == $no and (.numbers | length) == 6)
-              | [.draw_no, .numbers[], .bonus_no, (.date | split("T")[0])]
-              | map(tostring) | join(",")')
-            [ -n "$line" ] || break
-            echo "$line" >> "$FILE"
-            echo "appended round $next: $line"
-            added=$((added + 1))
-            next=$((next + 1))
-          done
-          echo "added=$added" >> "$GITHUB_OUTPUT"
+        run: python3 tools/update_lotto_rounds.py kr645_rounds.csv
 
       - name: Commit and push
         if: steps.fetch.outputs.added != '0'
