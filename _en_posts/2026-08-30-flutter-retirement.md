@@ -1,7 +1,7 @@
 ---
 title: Retiring Flutter — What I Learned Rewriting Three Apps for the Web
 description: Why Flutter web kept fighting me inside mini-app platforms, and what I kept and dropped while rewriting a spinner game, a bottle game, and a fortune-lotto app in plain TypeScript
-date: 2026-08-30 20:00:00 +0900
+date: 2026-08-30 00:30:00 +0900
 categories: [Blogging, Episode]
 tags: [flutter, mini apps, web apps, refactoring, solo developer, devlog, TypeScript]
 permalink: /en/posts/flutter-retirement/

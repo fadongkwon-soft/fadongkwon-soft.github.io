@@ -1,7 +1,7 @@
 ---
 title: Flutter를 은퇴시켰습니다 — 앱 3개를 웹으로 다시 쓰며 배운 것
 description: 미니앱 환경에서 Flutter 웹이 왜 계속 발목을 잡았는지, 그리고 주스 스피너·병 돌리기·사주로또를 순수 웹으로 재작성하면서 지킨 것과 버린 것을 정리했습니다
-date: 2026-08-30 20:00:00 +0900
+date: 2026-08-30 00:30:00 +0900
 categories: [Blogging, Episode]
 tags: [flutter, 미니앱, 앱인토스, 웹앱, 리팩터링, 1인개발자, 개발일지, TypeScript]
 alt_url: /en/posts/flutter-retirement/
