@@ -33,6 +33,8 @@ There are no ads, and there is no sign-up or login — you can start playing rig
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.math_monsters>
-- The Apps in Toss (Toss mini app) edition is under review — I'll add the link to this post once it is live.
+- Apps in Toss: <https://fadongkwon.com/toss/math-monsters/> — open it on your phone and it connects straight into the Toss app.
+
+The backstory — how my eldest quitting Kumon led to Dad building his own practice tool — is in [The Day We Quit Kumon, Dad Started Building a Math Game](/en/posts/kumon-to-math-monsters/).
 
 I post updates here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).

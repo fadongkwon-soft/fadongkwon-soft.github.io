@@ -31,6 +31,8 @@ alt_url: /en/posts/math-monsters/
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.math_monsters>
-- 앱인토스(토스 미니앱) 버전은 심사 중입니다 — 출시되면 이 글에 링크를 추가할게요.
+- 앱인토스: <https://fadongkwon.com/toss/math-monsters/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.
+
+이 앱이 만들어진 뒷이야기 — 첫째가 구몬을 그만둔 뒤 아빠가 직접 연습 도구를 만들게 된 사연은 [구몬을 그만둔 날, 아빠는 수학 게임을 만들기 시작했다](/posts/kumon-to-math-monsters/)에 적어뒀습니다.
 
 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.
