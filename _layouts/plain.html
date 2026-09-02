@@ -1,0 +1,23 @@
+<!doctype html>
+<!-- 아동 앱(한글·수학 몬스터) 스토어 링크 전용 독립 레이아웃.
+     Chirpy 사이드바·프로모·타로 내비를 전혀 포함하지 않는다 — Google Play Families
+     정책은 아동 앱의 1차 메타데이터 링크가 아동 부적합 콘텐츠(타로·복권·음주 게임)에
+     닿으면 거절한다(2026-09-01 수학 몬스터 vc10 거절). 이 페이지들에서 사이트 홈으로
+     가는 링크를 넣지 말 것. -->
+<html lang="{{ page.lang | default: 'ko' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | Fadongkwon Soft</title>
+  <meta name="description" content="{{ page.description | default: page.title }}">
+  <style>
+    body{margin:0;background:#fafafa;color:#222;font-family:-apple-system,"Segoe UI","Noto Sans KR",sans-serif;line-height:1.7}
+    main{max-width:720px;margin:0 auto;padding:40px 20px 60px}
+    h1{font-size:1.7rem;margin:0 0 .4rem}h2{font-size:1.15rem;margin:2rem 0 .5rem;padding-top:1.5rem;border-top:1px solid #e5e5e5}
+    .app{display:flex;gap:16px;align-items:center;background:#fff;border:1px solid #e5e5e5;border-radius:14px;padding:16px;margin:12px 0}
+    .app img{width:64px;height:64px;border-radius:14px}.app b{display:block;font-size:1.05rem}.app small{color:#666}
+    a{color:#1a56c9}footer{margin-top:3rem;color:#777;font-size:.85rem}
+  </style>
+</head>
+<body><main>{{ content }}</main></body>
+</html>
