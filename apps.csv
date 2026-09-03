@@ -9,14 +9,14 @@ hangul-monsters,한글 몬스터,몬스터를 잡으며 배우는 한글!,🗣�
 nursing-quiz,간호조무사 모의고사,국가시험 대비 2400+ 문항 문제은행,🩺,com.fadongkwon.nursing_quiz,intoss://nursing-quiz,1,1,Nursing Exam Bank,Korean nursing exam question bank,https://fadongkwon.com/app-icons/nursing-quiz.png,,교육;시험;자격증;문제은행,50,0
 tarot,타로 운세,카드 한 장으로 보는 오늘의 흐름,🔮,com.fadongkwon.tarot,intoss://fadong-tarot,1,1,Tarot Fortune,Your daily flow in a single card,https://fadongkwon.com/app-icons/tarot.png,,운세;타로;카드;콘텐츠;재미,921,0
 tarot-ping,운세 타로핑,귀여운 카드로 보는 오늘의 운세,🩷,com.fadongkwon.tarot_ping,intoss://fadong-tarot-ping,1,1,Tarot Ping,Your day in one cute card,https://fadongkwon.com/app-icons/tarot-ping.png,,운세;타로;카드;콘텐츠;재미,916,0
-sudoku,스도쿠,매일 만나는 오늘의 스도쿠,9️⃣,com.fadongkwon.sudoku,intoss://sudoku-daily,0,1,Sudoku,Your daily sudoku workout,https://fadongkwon.com/app-icons/sudoku.png,,게임;퍼즐;두뇌;숫자;데일리,718,1
-nonogram,노노그램,숫자 힌트로 그림을 밝히는 퍼즐,🧩,com.fadongkwon.nonogram,intoss://nonogram-daily,0,1,Nonogram,Reveal pixel art with number clues,https://fadongkwon.com/app-icons/nonogram.png,,게임;퍼즐;두뇌;그림;데일리,723,1
-lights-off,불끄기 퍼즐,모든 불을 꺼라! 두뇌 토글 퍼즐,💡,com.fadongkwon.lights_off,intoss://lights-off,0,1,All Lights Off,Turn off every light!,https://fadongkwon.com/app-icons/lights-off.png,,게임;퍼즐;두뇌;캐주얼;데일리,563,1
-hangul-word,단어 맞추기,여섯 자모로 한글 단어 추리!,📝,com.fadongkwon.hangul_word,intoss://hangul-word,0,1,Hangul Word Guess,Guess the Korean word in six jamo,https://fadongkwon.com/app-icons/hangul-word.png,,게임;퍼즐;단어;한글;데일리,534,1
-tap-bird,탭 버드,탭해서 장애물 사이를 날아라!,🐤,com.fadongkwon.tap_bird,intoss://tap-bird,0,1,Tap Bird,Tap to fly through the gaps!,https://fadongkwon.com/app-icons/tap-bird.png,,게임;캐주얼;아케이드;순발력;반응속도;기록도전,394,1
+sudoku,스도쿠,매일 만나는 오늘의 스도쿠,9️⃣,com.fadongkwon.sudoku,intoss://sudoku-daily,1,1,Sudoku,Your daily sudoku workout,https://fadongkwon.com/app-icons/sudoku.png,,게임;퍼즐;두뇌;숫자;데일리,718,1
+nonogram,노노그램,숫자 힌트로 그림을 밝히는 퍼즐,🧩,com.fadongkwon.nonogram,intoss://nonogram-daily,1,1,Nonogram,Reveal pixel art with number clues,https://fadongkwon.com/app-icons/nonogram.png,,게임;퍼즐;두뇌;그림;데일리,723,1
+lights-off,불끄기 퍼즐,모든 불을 꺼라! 두뇌 토글 퍼즐,💡,com.fadongkwon.lights_off,intoss://lights-off,1,1,All Lights Off,Turn off every light!,https://fadongkwon.com/app-icons/lights-off.png,,게임;퍼즐;두뇌;캐주얼;데일리,563,1
+hangul-word,단어 맞추기,여섯 자모로 한글 단어 추리!,📝,com.fadongkwon.hangul_word,intoss://hangul-word,1,1,Hangul Word Guess,Guess the Korean word in six jamo,https://fadongkwon.com/app-icons/hangul-word.png,,게임;퍼즐;단어;한글;데일리,534,1
+tap-bird,탭 버드,탭해서 장애물 사이를 날아라!,🐤,com.fadongkwon.tap_bird,intoss://tap-bird,1,1,Tap Bird,Tap to fly through the gaps!,https://fadongkwon.com/app-icons/tap-bird.png,,게임;캐주얼;아케이드;순발력;반응속도;기록도전,394,1
 sky-jump,하늘 점프,발판을 밟고 무한히 높이!,🚀,com.fadongkwon.sky_jump,intoss://sky-jump,0,0,Sky Jump,Bounce higher and higher!,https://fadongkwon.com/app-icons/sky-jump.png,,게임;캐주얼;아케이드;점프;기록도전,398,1
 solitaire,솔리테어,클래식 카드 게임의 정석,♠️,com.fadongkwon.solitaire,intoss://solitaire-classic,0,0,Solitaire,The timeless classic card game,https://fadongkwon.com/app-icons/solitaire.png,,게임;카드;클래식;퍼즐;시간때우기,844,0
-number-tap,순발력 숫자판,숫자를 순서대로 빠르게 탭!,🔢,com.fadongkwon.number_tap,intoss://number-tap-rush,0,1,Number Rush,Tap the numbers in order - fast!,https://fadongkwon.com/app-icons/number-tap.png,,게임;캐주얼;순발력;반응속도;기록도전,389,1
+number-tap,순발력 숫자판,숫자를 순서대로 빠르게 탭!,🔢,com.fadongkwon.number_tap,intoss://number-tap-rush,1,1,Number Rush,Tap the numbers in order - fast!,https://fadongkwon.com/app-icons/number-tap.png,,게임;캐주얼;순발력;반응속도;기록도전,389,1
 game-2048,2048,숫자를 합쳐 2048을 만들어라!,🔢,com.fadongkwon.game_2048,intoss://game-2048,0,0,2048,Merge the tiles to reach 2048!,https://fadongkwon.com/app-icons/game-2048.png,,게임;퍼즐;두뇌;캐주얼;데일리,568,1
 slide-puzzle,숫자 퍼즐,타일을 밀어 순서대로 맞추기,🧩,com.fadongkwon.slide_puzzle,intoss://slide-puzzle,0,0,Number Slide,Slide the tiles into order!,https://fadongkwon.com/app-icons/slide-puzzle.png,,게임;퍼즐;두뇌;클래식;데일리,810,1
 minesweeper,지뢰찾기,숫자 힌트로 지뢰를 피해라,💣,com.fadongkwon.minesweeper,intoss://minesweeper,0,0,Minesweeper,Clear the field without hitting a mine,https://fadongkwon.com/app-icons/minesweeper.png,,게임;퍼즐;두뇌;클래식;데일리,815,1
