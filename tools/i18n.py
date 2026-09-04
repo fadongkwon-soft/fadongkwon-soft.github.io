@@ -205,6 +205,52 @@ def gen_archive_stubs():
     print('archive stubs: 카테고리 %d + 태그 %d' % (len(cats), len(tags)))
     return made
 
+HOME_PER_PAGE = 10
+
+
+def gen_home_stubs():
+    """홈 피드 페이지네이션 스텁: /page/N/ (영문 루트) · /ko/page/N/ (한국어).
+    홈(home.html)은 paginator 없이 Liquid 로 직접 슬라이스하므로 2쪽 이후 URL 은
+    이 스텁이 만들어 준다. 쪽수 = 공개된(오늘 이하) 비타로·비hidden 글 수 / 10.
+    영문 글 date 는 한국어와 동일하므로 한 번만 세어 양 언어에 같은 쪽수를 적용한다.
+    글이 늘어 쪽수가 바뀌면 fixup 을 다시 돌리면 된다(사라진 쪽은 삭제)."""
+    import shutil, datetime, math
+    today = datetime.date.today().isoformat()
+    n = 0
+    for p in glob.glob(os.path.join(KO_DIR, '*.md')):
+        base = os.path.basename(p)
+        if base[:10] > today:
+            continue
+        fm, _ = split_fm(io.open(p, encoding='utf-8').read())
+        cats = fm_get(fm, 'categories') or ''
+        if 'Tarot' in cats or (fm_get(fm, 'hidden') or '').strip() == 'true':
+            continue
+        n += 1
+    pages = max(1, int(math.ceil(n / float(HOME_PER_PAGE))))
+    made = 0
+    for lang, base_dir, prefix, extra in (
+        ('en', os.path.join(ROOT, 'page'), '/page/', 'locale: en_US' + chr(10) + 'alt_url: /ko/' + chr(10)),
+        ('ko', os.path.join(ROOT, 'ko', 'page'), '/ko/page/', 'alt_url: /' + chr(10)),
+    ):
+        os.makedirs(base_dir, exist_ok=True)
+        for d in os.listdir(base_dir):
+            full = os.path.join(base_dir, d)
+            if os.path.isdir(full) and (not d.isdigit() or int(d) > pages or int(d) < 2):
+                shutil.rmtree(full)
+        for i in range(2, pages + 1):
+            d = os.path.join(base_dir, str(i))
+            os.makedirs(d, exist_ok=True)
+            title = 'Apps, Tarot Meanings and Solo Dev Notes' if lang == 'en' else '앱, 타로 사전, 1인 개발 기록'
+            stub = chr(10).join([
+                '---', 'layout: home', 'lang: ' + lang, extra.rstrip(chr(10)), 'pnum: %d' % i,
+                'permalink: %s%d/' % (prefix, i), 'title: ' + title, 'sitemap: false', '---', '',
+            ])
+            io.open(os.path.join(d, 'index.html'), 'w', encoding='utf-8', newline='\n').write(stub)
+            made += 1
+    print('home stubs: 글 %d개 → %d쪽 (스텁 %d개)' % (n, pages, made))
+    return made
+
+
 # ─────────────────────────────────────────────────────────────────────────────
 # 제목 정규화
 #
@@ -574,6 +620,7 @@ def cmd_fixup():
 
     print('fixup: %d개 처리' % len(files))
     gen_archive_stubs()
+    gen_home_stubs()
     if head_fixed:
         print('  제목 표준화 %d개 파일:' % len(head_fixed))
         for h in head_fixed:

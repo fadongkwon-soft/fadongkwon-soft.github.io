@@ -36,12 +36,36 @@ layout: default
   | where_exp: 'item', 'item.date <= site.time'
   | sort: 'date' | reverse %}
 
+{%- comment -%}
+  페이지네이션(2026-09-04): paginator 플러그인 없이 Liquid 로 직접 슬라이스한다.
+  타로 사전은 피드에서 빼므로 먼저 걸러낸 뒤 10개씩 자른다. 2쪽 이후 URL(/page/N/,
+  /ko/page/N/)은 tools/i18n.py fixup 의 gen_home_stubs 가 만드는 스텁(pnum: N)이다 —
+  글이 늘어 쪽수가 바뀌면 fixup 을 다시 돌려야 한다.
+{%- endcomment -%}
+{% assign feed = '' | split: '' %}
+{% for post in feature_posts %}
+  {% unless post.categories contains 'Tarot' %}
+    {% assign feed = feed | push: post %}
+  {% endunless %}
+{% endfor %}
+{% assign per_page = 10 %}
+{% assign pnum = page.pnum | default: 1 %}
+{% assign total_pages = feed.size | plus: per_page | minus: 1 | divided_by: per_page %}
+{% if total_pages < 1 %}{% assign total_pages = 1 %}{% endif %}
+{% assign offset = pnum | minus: 1 | times: per_page %}
+{% assign page_posts = feed | slice: offset, per_page %}
+{% if page.lang == 'en' %}
+  {% assign home_base = '/' %}
+{% else %}
+  {% assign home_base = '/ko/' %}
+{% endif %}
+
 <div class="px-1">
   {{ content }}
 </div>
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
-  {% for post in feature_posts %}
+  {% for post in page_posts %}
     {% unless post.categories contains 'Tarot' %}
       <article class="card-wrapper card">
         <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
@@ -97,3 +121,79 @@ layout: default
   {% endfor %}
 </div>
 <!-- #post-list -->
+
+{% if total_pages > 1 %}
+  {%- comment -%} Chirpy post-paginator.html 마크업 복제(paginator 객체 대신 pnum/total_pages) {%- endcomment -%}
+  <nav aria-label="Page Navigation">
+    <ul class="pagination align-items-center mt-4 mb-0">
+      {% if pnum > 1 %}
+        {% assign prev_n = pnum | minus: 1 %}
+        {% if prev_n == 1 %}
+          {% assign prev_url = home_base %}
+        {% else %}
+          {% assign prev_url = home_base | append: 'page/' | append: prev_n | append: '/' %}
+        {% endif %}
+      {% else %}
+        {% assign prev_url = '#' %}
+      {% endif %}
+      <li class="page-item {% if pnum == 1 %}disabled{% endif %}">
+        <a class="page-link" href="{{ prev_url | relative_url }}" aria-label="previous-page">
+          <i class="fas fa-angle-left"></i>
+        </a>
+      </li>
+
+      {% assign left_ellipsis = false %}
+      {% assign right_ellipsis = false %}
+      {% for i in (1..total_pages) %}
+        {% assign pre = pnum | minus: 1 %}
+        {% assign next = pnum | plus: 1 %}
+        {% assign pre_less = pre | minus: 1 %}
+        {% assign show = false %}
+        {% if pnum == 1 %}
+          {% if i <= 3 or i == total_pages %}{% assign show = true %}{% endif %}
+        {% elsif pnum == total_pages %}
+          {% if i == 1 or i >= pre_less %}{% assign show = true %}{% endif %}
+        {% else %}
+          {% if i == 1 or i == total_pages %}{% assign show = true %}
+          {% elsif i >= pre and i <= next %}{% assign show = true %}{% endif %}
+        {% endif %}
+
+        {% if show %}
+          {% if i == 1 %}
+            {% assign i_url = home_base %}
+          {% else %}
+            {% assign i_url = home_base | append: 'page/' | append: i | append: '/' %}
+          {% endif %}
+          <li class="page-item {% if i == pnum %} active{% endif %}">
+            <a class="page-link" href="{{ i_url | relative_url }}">{{- i -}}</a>
+          </li>
+        {% else %}
+          {% if i < pre and left_ellipsis == false %}
+            <li class="page-item disabled"><span class="page-link">...</span></li>
+            {% assign left_ellipsis = true %}
+          {% elsif i > next and right_ellipsis == false %}
+            <li class="page-item disabled"><span class="page-link">...</span></li>
+            {% assign right_ellipsis = true %}
+          {% endif %}
+        {% endif %}
+      {% endfor %}
+
+      <li class="page-index align-middle">
+        <span>{{ pnum }}</span>
+        <span class="text-muted">/ {{ total_pages }}</span>
+      </li>
+
+      {% if pnum < total_pages %}
+        {% assign next_n = pnum | plus: 1 %}
+        {% assign next_url = home_base | append: 'page/' | append: next_n | append: '/' %}
+      {% else %}
+        {% assign next_url = '#' %}
+      {% endif %}
+      <li class="page-item {% if pnum >= total_pages %}disabled{% endif %}">
+        <a class="page-link" href="{{ next_url | relative_url }}" aria-label="next-page">
+          <i class="fas fa-angle-right"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+{% endif %}
