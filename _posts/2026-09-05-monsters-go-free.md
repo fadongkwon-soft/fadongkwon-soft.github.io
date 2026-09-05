@@ -43,6 +43,8 @@ alt_url: /en/posts/monsters-go-free/
 
 ## Download
 
+설치 없이 [브라우저에서 바로 해볼 수도 있습니다](/play/). 한글 몬스터와 수학 몬스터 모두 웹에서 그대로 동작합니다.
+
 - 한글 몬스터: [Google Play](https://play.google.com/store/apps/details?id=com.fadongkwon.hangul_monsters) · [앱인토스](https://fadongkwon.com/toss/hangul-monsters/)
 - 수학 몬스터: [Google Play](https://play.google.com/store/apps/details?id=com.fadongkwon.math_monsters) · [앱인토스](https://fadongkwon.com/toss/math-monsters/)
 

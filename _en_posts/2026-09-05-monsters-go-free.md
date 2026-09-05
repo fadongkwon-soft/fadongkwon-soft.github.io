@@ -45,6 +45,8 @@ Everything unlocks in the latest update. If your store does not show it yet, ple
 
 ## Download
 
+You can also [play both games right in your browser](/play/), no install needed.
+
 - Hangul Monsters: [Google Play](https://play.google.com/store/apps/details?id=com.fadongkwon.hangul_monsters) · [Apps in Toss](https://fadongkwon.com/toss/hangul-monsters/)
 - Math Monsters: [Google Play](https://play.google.com/store/apps/details?id=com.fadongkwon.math_monsters) · [Apps in Toss](https://fadongkwon.com/toss/math-monsters/)
 

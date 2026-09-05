@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#101116" />
+    <title>한글 몬스터</title>
+    <script type="module" crossorigin src="./assets/index-DKDpsHn-.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-DukO-vuR.css">
+  </head>
+  <body>
+    <div id="app">
+      <section class="screen active" data-screen="home">
+        <h1 class="title" id="title">👾 한글 몬스터</h1>
+        <p class="dim" id="tagline">또박또박 말해서 몬스터를 잡아라!</p>
+        <div class="mode-list" id="mode-list"></div>
+        <div class="promo" id="promo"></div>
+      </section>
+
+      <section class="screen" data-screen="setup">
+        <h2 id="pick-title">글자 고르기</h2>
+        <div class="pick-tools">
+          <button class="btn small secondary" id="btn-pick-all">전체</button>
+          <button class="btn small secondary" id="btn-pick-range">범위 선택</button>
+        </div>
+        <p class="dim small" id="pick-hint"></p>
+        <div class="pick-label dim" id="pick-label1" hidden>ㄱㄴㄷ</div>
+        <div class="chips" id="chips"></div>
+        <div class="pick-label dim" id="pick-label2" hidden>ㅏㅑㅓ</div>
+        <div class="chips" id="chips2" hidden></div>
+        <button class="btn" id="btn-setup-start">시작하기</button>
+        <button class="btn secondary" id="btn-setup-back">돌아가기</button>
+      </section>
+
+      <section class="screen" data-screen="game">
+        <div class="hud">
+          <span id="hud-time">0.0</span>
+          <!-- 나가기는 답/듣기 버튼과 멀리(우상단) 둬서 오탭을 막는다 -->
+          <button class="btn small secondary" id="btn-quit">나가기</button>
+        </div>
+        <div class="catchbar" id="catchbar"></div>
+        <div class="monster" id="monster"></div>
+        <div class="target" id="target"></div>
+        <p class="status" id="status"></p>
+        <div class="answers" id="choices" hidden></div>
+        <div class="speech-fallback" id="fallback" hidden>
+          <input id="fallback-input" type="text" autocomplete="off" />
+          <button class="btn small" id="btn-fallback-ok">OK</button>
+        </div>
+        <button class="btn mic" id="btn-mic">🎤</button>
+        <div class="game-tools">
+          <button class="btn secondary" id="btn-listen">🔈</button>
+          <button class="btn small secondary" id="btn-prev">이전 문제</button>
+          <button class="btn small secondary" id="btn-skip">건너뛰기</button>
+        </div>
+      </section>
+
+      <section class="screen" data-screen="result">
+        <h2 id="result-title"></h2>
+        <div class="catchbar big-catch" id="result-monsters"></div>
+        <div class="card">
+          <div class="row"><span class="dim" id="label-caught">잡은 몬스터</span><span class="big" id="clear-caught"></span></div>
+          <div class="row"><span class="dim" id="label-time">걸린 시간</span><span id="clear-time"></span></div>
+        </div>
+        <button class="btn" id="btn-retry">다시하기</button>
+        <button class="btn secondary" id="btn-share">📤 자랑하기</button>
+        <button class="btn secondary" id="btn-home">처음으로</button>
+      </section>
+    </div>
+  </body>
+</html>
