@@ -16,6 +16,9 @@ tags: [game, android, education, math, early education, monsters, solo developer
 > (easy) are free; other operations unlock via one-time in-app purchase. No ads.
 {: .prompt-info }
 
+> **Update (2026-09-05)**: every in-app purchase has been removed and all modes are now free. The story is in [Why we went free](/en/posts/monsters-go-free/).
+{: .prompt-tip }
+
 ## Learning Math by Catching Monsters
 A learning game where **every problem a child solves catches one more monster**.
 Answering quickly and accurately leaves a better record behind, which is usually reason enough
@@ -24,7 +27,7 @@ for a child to go back and try again.
 - 👾 **Four operations** — addition · subtraction · multiplication · division
 - 🎚️ **Three difficulty levels** — easy · normal · hard
 - 🏆 **Saved records** — a best score per operation and difficulty, so progress is easy to see
-- 🆓 Addition and subtraction on easy are free; the rest unlock with a per-operation in-app purchase
+- 🆓 Every operation and difficulty is free (at launch only easy addition and subtraction were free; everything went free on 2026-09-05)
 
 There are no ads, and there is no sign-up or login — you can start playing right away.
 

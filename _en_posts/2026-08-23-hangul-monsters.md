@@ -16,6 +16,9 @@ tags: [game, android, education, hangul, early education, monsters, solo develop
 > (consonants, vowels, Ga-na-da), premium word packs via one-time in-app purchase. No ads.
 {: .prompt-info }
 
+> **Update (2026-09-05)**: every in-app purchase has been removed and all modes are now free. The story is in [Why we went free](/en/posts/monsters-go-free/).
+{: .prompt-tip }
+
 ## Learning Hangul by Catching Monsters
 This is a learning game where a child gets comfortable with Hangul by **listening** to a sound
 and **saying** it back. Every correct answer catches one more monster, and that small reward is
@@ -24,8 +27,8 @@ enough to keep a child playing another round on their own.
 - 🦉 **Consonants and vowels** — hear a sound and pick the matching letter, like ㄱ (g) or ㅏ (a) (free)
 - 🐙 **Consonant names** — learn what each letter is called: 기역 (giyeok), 니은 (nieun), 디귿 (digeut) (free)
 - 👾 **Ga-na-da syllables** — consonant × vowel syllables such as 가 (ga) and 나 (na), with a selectable range (free)
-- 🦖🐲🧟🦑 **Four word packs** — no final consonant, with a final consonant (받침), compound vowels, double consonants (in-app purchase)
-- 🐢 **Sentence reading** — read the sentence clearly into the microphone and it is scored automatically (in-app purchase)
+- 🦖🐲🧟🦑 **Four word packs** — no final consonant, with a final consonant (받침), compound vowels, double consonants (free since 2026-09-05)
+- 🐢 **Sentence reading** — read the sentence clearly into the microphone and it is scored automatically (free since 2026-09-05)
 
 Every question is spoken by a **native-quality neural voice**, and the question bank holds
 around 480 words and 240 sentences, so each round of 20 questions is drawn fresh at random.
