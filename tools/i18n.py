@@ -538,7 +538,8 @@ def cmd_scaffold():
                       ('_tabs/about.md', '/en/about/'),
                       ('_tabs/archives.md', '/en/archives/'),
                       ('_tabs/categories.md', '/en/categories/'),
-                      ('_tabs/tags.md', '/en/tags/')]:
+                      ('_tabs/tags.md', '/en/tags/'),
+                      ('play/index.md', '/en/play/')]:
         p = os.path.join(ROOT, path)
         s = io.open(p, encoding='utf-8').read()
         fm, body = split_fm(s)
@@ -637,7 +638,7 @@ def cmd_fixup():
 def known_urls(ko, files):
     urls = set(['/', '/en/', '/tarot/', '/en/tarot/', '/about/', '/en/about/',
                 '/privacy/', '/archives/', '/categories/', '/tags/',
-                '/kids/', '/kids/privacy/', '/play/', '/play/hangul-monsters/', '/play/math-monsters/'])
+                '/kids/', '/kids/privacy/', '/play/', '/en/play/', '/play/hangul-monsters/', '/play/math-monsters/'])
     for slug in ko:
         urls.add('/posts/' + slug + '/')
     for p in files:
