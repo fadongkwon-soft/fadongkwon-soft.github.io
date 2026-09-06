@@ -14,17 +14,17 @@ nonogram,노노그램,숫자 힌트로 그림을 밝히는 퍼즐,🧩,com.fadon
 lights-off,불끄기 퍼즐,모든 불을 꺼라! 두뇌 토글 퍼즐,💡,com.fadongkwon.lights_off,intoss://lights-off,1,1,All Lights Off,Turn off every light!,https://fadongkwon.com/app-icons/lights-off.png,,게임;퍼즐;두뇌;캐주얼;데일리,563,1
 hangul-word,단어 맞추기,여섯 자모로 한글 단어 추리!,📝,com.fadongkwon.hangul_word,intoss://hangul-word,1,1,Hangul Word Guess,Guess the Korean word in six jamo,https://fadongkwon.com/app-icons/hangul-word.png,,게임;퍼즐;단어;한글;데일리,534,1
 tap-bird,탭 버드,탭해서 장애물 사이를 날아라!,🐤,com.fadongkwon.tap_bird,intoss://tap-bird,1,1,Tap Bird,Tap to fly through the gaps!,https://fadongkwon.com/app-icons/tap-bird.png,,게임;캐주얼;아케이드;순발력;반응속도;기록도전,394,1
-sky-jump,하늘 점프,발판을 밟고 무한히 높이!,🚀,com.fadongkwon.sky_jump,intoss://sky-jump,0,0,Sky Jump,Bounce higher and higher!,https://fadongkwon.com/app-icons/sky-jump.png,,게임;캐주얼;아케이드;점프;기록도전,398,1
-solitaire,솔리테어,클래식 카드 게임의 정석,♠️,com.fadongkwon.solitaire,intoss://solitaire-classic,0,0,Solitaire,The timeless classic card game,https://fadongkwon.com/app-icons/solitaire.png,,게임;카드;클래식;퍼즐;시간때우기,844,0
+sky-jump,하늘 점프,발판을 밟고 무한히 높이!,🚀,com.fadongkwon.sky_jump,intoss://sky-jump,1,0,Sky Jump,Bounce higher and higher!,https://fadongkwon.com/app-icons/sky-jump.png,,게임;캐주얼;아케이드;점프;기록도전,398,1
+solitaire,솔리테어,클래식 카드 게임의 정석,♠️,com.fadongkwon.solitaire,intoss://solitaire-classic,1,0,Solitaire,The timeless classic card game,https://fadongkwon.com/app-icons/solitaire.png,,게임;카드;클래식;퍼즐;시간때우기,844,0
 number-tap,순발력 숫자판,숫자를 순서대로 빠르게 탭!,🔢,com.fadongkwon.number_tap,intoss://number-tap-rush,1,1,Number Rush,Tap the numbers in order - fast!,https://fadongkwon.com/app-icons/number-tap.png,,게임;캐주얼;순발력;반응속도;기록도전,389,1
-game-2048,2048,숫자를 합쳐 2048을 만들어라!,🔢,com.fadongkwon.game_2048,intoss://game-2048,0,0,2048,Merge the tiles to reach 2048!,https://fadongkwon.com/app-icons/game-2048.png,,게임;퍼즐;두뇌;캐주얼;데일리,568,1
-slide-puzzle,숫자 퍼즐,타일을 밀어 순서대로 맞추기,🧩,com.fadongkwon.slide_puzzle,intoss://slide-puzzle,0,0,Number Slide,Slide the tiles into order!,https://fadongkwon.com/app-icons/slide-puzzle.png,,게임;퍼즐;두뇌;클래식;데일리,810,1
-minesweeper,지뢰찾기,숫자 힌트로 지뢰를 피해라,💣,com.fadongkwon.minesweeper,intoss://minesweeper,0,0,Minesweeper,Clear the field without hitting a mine,https://fadongkwon.com/app-icons/minesweeper.png,,게임;퍼즐;두뇌;클래식;데일리,815,1
-snake,뱀 게임,먹이를 먹고 길어지는 클래식,🐍,com.fadongkwon.snake,intoss://snake,0,0,Snake,Eat and grow without biting yourself!,https://fadongkwon.com/app-icons/snake.png,950,게임;아케이드;클래식;순발력;기록도전,645,1
-breakout,벽돌깨기,공을 튕겨 벽돌을 모두 깨라,🧱,com.fadongkwon.breakout,intoss://breakout,0,0,Brick Breaker,Bounce the ball and clear the bricks,https://fadongkwon.com/app-icons/breakout.png,,게임;아케이드;클래식;순발력;기록도전,640,1
-pixel-pong,픽셀 탁구,AI 또는 친구와 1:1 탁구 대결,🏓,com.fadongkwon.pixel_pong,intoss://pixel-pong,0,0,Pixel Pong,1v1 table tennis vs AI or a friend,https://fadongkwon.com/app-icons/pixel-pong.png,,게임;아케이드;클래식;대전;2인,781,1
-tower-stack,타워 쌓기,타이밍 맞춰 블록을 높이 쌓자,🏗️,com.fadongkwon.tower_stack,intoss://tower-stack,0,0,Tower Stack,Tap in time and stack it high!,https://fadongkwon.com/app-icons/tower-stack.png,,게임;아케이드;순발력;캐주얼;기록도전,456,1
-gomoku,오목,다섯 알을 먼저 이어라,⚫,com.fadongkwon.gomoku,intoss://gomoku,0,0,Gomoku,Connect five to win,https://fadongkwon.com/app-icons/gomoku.png,,게임;보드;클래식;대전;두뇌,752,1
+game-2048,2048,숫자를 합쳐 2048을 만들어라!,🔢,com.fadongkwon.game_2048,intoss://game-2048,1,0,2048,Merge the tiles to reach 2048!,https://fadongkwon.com/app-icons/game-2048.png,,게임;퍼즐;두뇌;캐주얼;데일리,568,1
+slide-puzzle,숫자 퍼즐,타일을 밀어 순서대로 맞추기,🧩,com.fadongkwon.slide_puzzle,intoss://slide-puzzle-15,1,0,Number Slide,Slide the tiles into order!,https://fadongkwon.com/app-icons/slide-puzzle.png,,게임;퍼즐;두뇌;클래식;데일리,810,1
+minesweeper,지뢰찾기,숫자 힌트로 지뢰를 피해라,💣,com.fadongkwon.minesweeper,intoss://minesweeper-classic,1,0,Minesweeper,Clear the field without hitting a mine,https://fadongkwon.com/app-icons/minesweeper.png,,게임;퍼즐;두뇌;클래식;데일리,815,1
+snake,뱀 게임,먹이를 먹고 길어지는 클래식,🐍,com.fadongkwon.snake,intoss://snake-classic,1,0,Snake,Eat and grow without biting yourself!,https://fadongkwon.com/app-icons/snake.png,950,게임;아케이드;클래식;순발력;기록도전,645,1
+breakout,벽돌깨기,공을 튕겨 벽돌을 모두 깨라,🧱,com.fadongkwon.breakout,intoss://breakout,1,0,Brick Breaker,Bounce the ball and clear the bricks,https://fadongkwon.com/app-icons/breakout.png,,게임;아케이드;클래식;순발력;기록도전,640,1
+pixel-pong,픽셀 탁구,AI 또는 친구와 1:1 탁구 대결,🏓,com.fadongkwon.pixel_pong,intoss://pixel-pong,1,0,Pixel Pong,1v1 table tennis vs AI or a friend,https://fadongkwon.com/app-icons/pixel-pong.png,,게임;아케이드;클래식;대전;2인,781,1
+tower-stack,타워 쌓기,타이밍 맞춰 블록을 높이 쌓자,🏗️,com.fadongkwon.tower_stack,intoss://tower-stack-game,1,0,Tower Stack,Tap in time and stack it high!,https://fadongkwon.com/app-icons/tower-stack.png,,게임;아케이드;순발력;캐주얼;기록도전,456,1
+gomoku,오목,다섯 알을 먼저 이어라,⚫,com.fadongkwon.gomoku,intoss://gomoku,1,0,Gomoku,Connect five to win,https://fadongkwon.com/app-icons/gomoku.png,,게임;보드;클래식;대전;두뇌,752,1
 rock-paper-scissors,가위바위보,AI와 친구와 즐기는 가위바위보,✌️,com.fadongkwon.rock_paper_scissors,intoss://rock-paper-scissors,0,0,Rock Paper Scissors,Classic hand game vs AI or a friend,https://fadongkwon.com/app-icons/rock-paper-scissors.png,,게임;캐주얼;대전;2인;순발력,427,1
 whack-a-mole,두더지 잡기,튀어나오는 두더지를 재빨리 탭!,🐹,com.fadongkwon.whack_a_mole,intoss://whack-a-mole,0,0,Mole Tap,Tap the moles before they hide!,https://fadongkwon.com/app-icons/whack-a-mole.png,,게임;캐주얼;순발력;아케이드;기록도전,461,1
 sequence-memory,순서 기억,불빛 순서를 기억해 따라 누르기,🎵,com.fadongkwon.sequence_memory,intoss://sequence-memory,0,0,Sequence Memory,Remember and repeat the pattern,https://fadongkwon.com/app-icons/sequence-memory.png,,게임;두뇌;기억력;캐주얼;데일리,355,1
