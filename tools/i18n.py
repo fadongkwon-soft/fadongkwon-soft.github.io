@@ -127,6 +127,8 @@ TAG_GLOSSARY = {
     '인내': 'patience',
     'Flutter': 'flutter',
     'Flutter Web': 'flutter web',
+    '푸시알림': 'push notification',
+    '스마트메시지': 'smart message',
 }
 
 
