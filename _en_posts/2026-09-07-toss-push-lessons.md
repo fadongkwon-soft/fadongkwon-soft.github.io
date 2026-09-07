@@ -1,7 +1,7 @@
 ---
 title: Apps in Toss Functional Push — Three Weeks of Mistakes, Written Down
 description: Everything that went wrong while adding free scheduled push (smart messages) to Apps in Toss mini apps. How consent forms relate to templates, the AI-review wording rules, and the biggest mistake of all — the app never asked anyone for consent
-date: 2026-09-07 23:50:00 +0900
+date: 2026-09-07 23:45:00 +0900
 categories: [Blogging, Episode]
 permalink: /en/posts/toss-push-lessons/
 alt_url: /posts/toss-push-lessons/
