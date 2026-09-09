@@ -44,6 +44,38 @@ def canon_link(u):
     return u
 
 
+def check_front_matter_yaml():
+    """front matter 가 YAML 로 파싱되는지 확인한다.
+
+    문법 오류가 나면 Jekyll 은 **빌드를 실패시키지 않고** 경고만 남기고 그 문서의
+    data 를 비운다. 결과가 조용해서 알아채기 어렵다 — 제목·permalink 가 사라져
+    기본 컬렉션 URL(/en_posts/....html)로 나가고, date 가 없으니 예약 글이
+    즉시 공개된다. 2026-09-10 실제로 description 안의 ': '(콜론+공백) 때문에
+    영문 글 한 편이 이렇게 나갔다.
+
+    가장 흔한 원인은 인용부호 없는 값 안의 ': ' 이다. 그런 값은 큰따옴표로 감싼다.
+    """
+    try:
+        import yaml
+    except ImportError:
+        return ['(PyYAML 이 없어 front matter YAML 검사를 건너뜀 — pip install pyyaml)']
+
+    out = []
+    for d in ('_posts', '_en_posts'):
+        for p in sorted(glob.glob(os.path.join(ROOT, d, '*.md'))):
+            s = io.open(p, encoding='utf-8').read()
+            m = FM_RE.match(s)
+            if not m:
+                out.append('%s/%s: front matter 없음' % (d, os.path.basename(p)))
+                continue
+            try:
+                yaml.safe_load(m.group(1))
+            except Exception as e:
+                out.append('%s/%s: front matter YAML 오류 — %s'
+                           % (d, os.path.basename(p), str(e).replace('\n', ' ')[:150]))
+    return out
+
+
 def tag_slug(t):
     """Jekyll slugify(기본 모드)와 같게: 소문자 + 영숫자 아닌 구간을 하이픈으로."""
     return re.sub(r'[^a-z0-9]+', '-', t.strip().lower()).strip('-')
@@ -144,7 +176,8 @@ def main():
                 problems.append('%s: %s 누락' % (base, key))
 
         # 예약 게시가 한쪽만 먼저 나가지 않도록 date 가 같아야 한다.
-        # (미래 날짜 컬렉션 문서는 _plugins/future-collection-docs.rb 가 붙잡아 둔다)
+        # (미래 날짜 컬렉션 문서는 Jekyll 이 write 단계에서 걸러 파일을 내보내지 않고,
+        #  site.en_posts 를 쓰는 목록은 각자 date <= site.time 으로 거른다)
         kd = re.search(r'^date:[ \t]*(.*)$', kfm, re.M)
         ed = re.search(r'^date:[ \t]*(.*)$', efm, re.M)
         if kd and ed and kd.group(1).strip() != ed.group(1).strip():
@@ -153,6 +186,7 @@ def main():
         if re.search(r'[가-힣]', re.sub(r'^\s+alt:.*$', '', efm, flags=re.M)):
             problems.append('%s: front matter 에 한글 잔존' % base)
 
+    problems.extend(check_front_matter_yaml())
     problems.extend(check_en_tag_pages())
 
     print('대조 %d개' % checked)

@@ -1,6 +1,6 @@
 ---
 title: Why a 100dvh Container Still Scrolls — The targetSdk 35+ Edge-to-Edge Trap
-description: Fifteen apps reported the same thing at once: the screen shifts a few pixels up and down. The cause was the edge-to-edge layout that targetSdk 35 and above enforces. The body takes padding equal to the safe-area insets, and a container inside it set to 100dvh counts those insets a second time, overflowing the document. The diagnosis and the one-line fix
+description: "Fifteen apps reported the same thing at once: the screen shifts a few pixels up and down. The cause was the edge-to-edge layout that targetSdk 35 and above enforces. The body takes padding equal to the safe-area insets, and a container inside it set to 100dvh counts those insets a second time, overflowing the document. The diagnosis and the one-line fix"
 date: 2026-09-15 20:00:00 +0900
 categories: [Blogging, Episode]
 permalink: /en/posts/edge-to-edge-scroll/
