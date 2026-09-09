@@ -142,6 +142,14 @@ def main():
             m = re.search(r'^' + key + r':[ \t]*(.*)$', efm, re.M)
             if not m or not m.group(1).strip():
                 problems.append('%s: %s 누락' % (base, key))
+
+        # 예약 게시가 한쪽만 먼저 나가지 않도록 date 가 같아야 한다.
+        # (미래 날짜 컬렉션 문서는 _plugins/future-collection-docs.rb 가 붙잡아 둔다)
+        kd = re.search(r'^date:[ \t]*(.*)$', kfm, re.M)
+        ed = re.search(r'^date:[ \t]*(.*)$', efm, re.M)
+        if kd and ed and kd.group(1).strip() != ed.group(1).strip():
+            problems.append('%s: date 불일치 ko=%s en=%s (예약 게시가 어긋난다)'
+                            % (base, kd.group(1).strip(), ed.group(1).strip()))
         if re.search(r'[가-힣]', re.sub(r'^\s+alt:.*$', '', efm, flags=re.M)):
             problems.append('%s: front matter 에 한글 잔존' % base)
 
