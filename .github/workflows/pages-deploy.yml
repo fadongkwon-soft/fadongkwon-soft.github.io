@@ -58,9 +58,19 @@ jobs:
 
       - name: Test site
         run: |
-          bundle exec htmlproofer _site \
+          set -o pipefail
+          # 실패 사유를 annotation 으로도 올린다 — 로그 본문은 인증이 필요해서
+          # 실패 원인을 밖에서 확인할 수 없었고(주석에는 exit code 만 남는다),
+          # 그 때문에 원인을 추측으로 좁히다 빌드를 두 번 더 태웠다(2026-09-10).
+          if ! bundle exec htmlproofer _site \
             \-\-disable-external \
-            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/"
+            \-\-ignore-urls "/^http:\/\/127.0.0.1/,/^http:\/\/0.0.0.0/,/^http:\/\/localhost/" \
+            2>&1 | tee htmlproofer.log; then
+            grep -E "linking to|does not exist|internal|failure" htmlproofer.log \
+              | head -n 30 \
+              | while IFS= read -r line; do printf '::error::%s\n' "$line"; done
+            exit 1
+          fi
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
