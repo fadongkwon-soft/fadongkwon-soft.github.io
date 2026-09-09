@@ -215,14 +215,17 @@ def gen_home_stubs():
     홈(home.html)은 paginator 없이 Liquid 로 직접 슬라이스하므로 2쪽 이후 URL 은
     이 스텁이 만들어 준다. 쪽수 = 공개된(오늘 이하) 비타로·비hidden 글 수 / 10.
     영문 글 date 는 한국어와 동일하므로 한 번만 세어 양 언어에 같은 쪽수를 적용한다.
-    글이 늘어 쪽수가 바뀌면 fixup 을 다시 돌리면 된다(사라진 쪽은 삭제)."""
-    import shutil, datetime, math
-    today = datetime.date.today().isoformat()
+    글이 늘어 쪽수가 바뀌면 fixup 을 다시 돌리면 된다(사라진 쪽은 삭제).
+
+    ⚠️ 예약 게시분(미래 날짜)도 함께 센다. 공개된 글만 세면, 예약 글이 공개되는 날
+    피드가 한 쪽 늘어나 home.html 이 아직 없는 /page/N/ 을 링크하고 그날 cron 빌드가
+    htmlproofer 에서 죽는다. 스텁을 미리 만들어 두면 링크될 때 이미 존재한다
+    (아직 안 쓰이는 쪽은 아무도 링크하지 않는 빈 페이지로 남을 뿐이다).
+    2026-09-10 실제로 이걸로 빌드가 세 번 실패했다 — 예약 4편이 30개→34개로 만들어
+    4쪽이 됐는데 스텁은 3쪽까지만 있었다."""
+    import shutil, math
     n = 0
     for p in glob.glob(os.path.join(KO_DIR, '*.md')):
-        base = os.path.basename(p)
-        if base[:10] > today:
-            continue
         fm, _ = split_fm(io.open(p, encoding='utf-8').read())
         cats = fm_get(fm, 'categories') or ''
         if 'Tarot' in cats or (fm_get(fm, 'hidden') or '').strip() == 'true':
