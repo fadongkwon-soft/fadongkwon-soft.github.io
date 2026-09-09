@@ -127,5 +127,29 @@
     {% endfor %}
   {% endif %}
 
+  <!-- 사이트를 떠나는 링크 표시 (_plugins/external-links.rb 가 붙이는 마크업) -->
+  <style>
+    /* 눈으로 보는 화살표 — aria-hidden 이라 낭독기는 읽지 않는다 */
+    .ext-mark {
+      margin-left: 0.12em;
+      font-size: 0.78em;
+      line-height: 1;
+      vertical-align: 0.28em;
+      opacity: 0.6;
+    }
+    /* 화면에서만 숨고 낭독기는 읽는 안내 문구 */
+    .ext-sr {
+      position: absolute !important;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
+
   {% include metadata-hook.html %}
 </head>
