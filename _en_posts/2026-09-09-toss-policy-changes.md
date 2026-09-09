@@ -158,7 +158,7 @@ My own schedule ended up like this:
 
 1. **This week**: compare all six non-game apps against the launch guide. Verify duplicate back buttons and close-button behavior on a real device.
 2. **Week of September 14**: submit reviews early for any app needing fixes. Not waiting for the 30th.
-3. **September 21**: attend the webinar. My advance questions will be about the selection criteria for the boosting program and how ad abuse is judged.
+3. **After September 21**: I have registered for the webinar, but the time does not work for me, so I plan to watch the recording — everyone who registers gets it, Q&A included. The first things I will look for are the selection criteria for the boosting program and how ad abuse is judged.
 4. **Before October 31**: save the promotional smart-message performance data.
 5. **Functional push**: wire it into the apps that still lack it. Once promotional push closes, this is the only free re-engagement channel.
 
@@ -166,7 +166,7 @@ My own schedule ended up like this:
 
 Reading this purely as "the rules got stricter" leaves value on the table. Closing the path where money buys push traffic also means **there is more room for a well-made app to be rewarded with exposure.** For a solo developer with no ad budget, that may well be the favorable direction. Of course, the definition of "well-made" gets published on September 21, and that is where it will be decided.
 
-After the webinar I will write up the actual contents of the boosting program and the exposure criteria. By then I can work from published standards rather than guesses.
+Once I have gone through the webinar recording I will write up the actual contents of the boosting program and the exposure criteria. By then I can work from published standards rather than guesses.
 
 My apps are on [Google Play and Apps in Toss](/en/posts/apps-in-toss-launch/), and some can be [played right in the browser](/en/play/). Updates go out here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
 
