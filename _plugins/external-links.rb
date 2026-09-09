@@ -31,7 +31,14 @@ module FadongExternalLinks
   def self.leaves_site?(url)
     u = url.to_s.strip
     m = ABS_URL.match(u)
-    return !SELF_HOSTS.include?(m[1].downcase.split(':').first) unless m.nil?
+    unless m.nil?
+      return true unless SELF_HOSTS.include?(m[1].downcase.split(':').first)
+
+      # 자기 사이트를 절대 주소로 쓴 링크 — 경로만 떼어 내부 규칙을 그대로 적용한다.
+      # (https://fadongkwon.com/toss/x/ 와 /toss/x/ 가 다르게 처리되던 것을 맞춤)
+      u = u[m.end(0)..-1].to_s
+      u = '/' if u.empty?
+    end
 
     u.start_with?('/toss/')
   end
