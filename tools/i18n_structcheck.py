@@ -44,6 +44,34 @@ def canon_link(u):
     return u
 
 
+def tag_slug(t):
+    """Jekyll slugify(기본 모드)와 같게: 소문자 + 영숫자 아닌 구간을 하이픈으로."""
+    return re.sub(r'[^a-z0-9]+', '-', t.strip().lower()).strip('-')
+
+
+def check_en_tag_pages():
+    """영문 포스트의 tags 마다 en/tags/<slug>/index.md 가 있어야 한다.
+
+    jekyll-archives 는 한국어 포스트(/tags/:name/)만 만들고 영문 태그 페이지는
+    수동 파일이다. 새 영문 태그를 쓰면서 페이지를 안 만들면 포스트가 없는 URL 로
+    링크해 **htmlproofer(Test site) 가 죽는다** — 실제로 2026-09-09 이걸로 실패했다.
+    """
+    have = set(os.path.basename(os.path.dirname(p))
+               for p in glob.glob(os.path.join(ROOT, 'en', 'tags', '*', 'index.md')))
+    missing = {}
+    for p in sorted(glob.glob(os.path.join(ROOT, '_en_posts', '*.md'))):
+        s = io.open(p, encoding='utf-8').read()
+        m = re.search(r'^tags:[ \t]*\[(.*?)\][ \t]*$', s[:4000], re.M | re.S)
+        if not m:
+            continue
+        for t in m.group(1).split(','):
+            t = t.strip()
+            if t and tag_slug(t) not in have:
+                missing.setdefault(tag_slug(t), (t, os.path.basename(p)))
+    return ['영문 태그 페이지 없음: en/tags/%s/index.md (태그 "%s", %s)' % (k, v[0], v[1])
+            for k, v in sorted(missing.items())]
+
+
 def canon_liquid(t):
     """fixup 이 바꾼 영문 배너 include 를 한국어 원문 형태로 되돌린다."""
     return t.replace('tarot-app-banner-en.html', 'tarot-app-banner.html')
@@ -116,6 +144,8 @@ def main():
                 problems.append('%s: %s 누락' % (base, key))
         if re.search(r'[가-힣]', re.sub(r'^\s+alt:.*$', '', efm, flags=re.M)):
             problems.append('%s: front matter 에 한글 잔존' % base)
+
+    problems.extend(check_en_tag_pages())
 
     print('대조 %d개' % checked)
     if problems:
