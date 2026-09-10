@@ -21,6 +21,7 @@
   {% assign about_url = '/about/' %}
   {% assign tarot_url = '/tarot/' %}
   {% assign play_url = '/play/' %}
+  {% assign apps_url = '/apps/' %}
   {% assign archives_url = '/archives/' %}
   {% assign categories_url = '/categories/' %}
   {% assign tags_url = '/tags/' %}
@@ -30,6 +31,7 @@
   {% assign about_url = '/ko/about/' %}
   {% assign tarot_url = '/ko/tarot/' %}
   {% assign play_url = '/ko/play/' %}
+  {% assign apps_url = '/ko/apps/' %}
   {% assign archives_url = '/ko/archives/' %}
   {% assign categories_url = '/ko/categories/' %}
   {% assign tags_url = '/ko/tags/' %}
@@ -59,6 +61,8 @@
     운세 타로핑 두 앱의 근거 자료이고 전체 글의 63%(78/124)로 가는 유일한 상시 입구다
     (홈 피드는 Tarot 를 제외한다). 빼면 그 63%가 고립되므로 PLAY 옆에 묶었다.
     라벨도 TAROT 로 줄였다 — 목록에서 유일한 두 단어라 길이가 튀었다.
+    APPS(/apps/ · /ko/apps/)는 2026-09-11 추가 — 앱 목록이 apps.csv 에서 자동 생성되면서
+    About 안의 하드코딩 목록을 대체했고, 그러면서 정식 목적지가 됐다. 순서는 PLAY·APPS·TAROT.
     아이콘은 fa-star → fa-clone → **fa-wand-magic-sparkles**. star 는 즐겨찾기로,
     clone 은 복사·중복으로 읽혔다. 후보 9개를 실제 사이드바 스타일로 렌더해 비교한 결과
     지팡이+반짝임이 "운세·점술"을 가장 바로 전달했다(book-open·swatchbook 이 차선).
@@ -100,6 +104,12 @@
         <a href="{{ play_url | relative_url }}" class="nav-link">
           <i class="fa-fw fas fa-gamepad"></i>
           <span>PLAY</span>
+        </a>
+      </li>
+      <li class="nav-item{% if page.url == apps_url %}{{ " active" }}{% endif %}">
+        <a href="{{ apps_url | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-mobile-screen"></i>
+          <span>APPS</span>
         </a>
       </li>
       <li class="nav-item{% if page.url == tarot_url %}{{ " active" }}{% endif %}">
