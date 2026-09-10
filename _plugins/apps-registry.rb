@@ -43,6 +43,11 @@ Jekyll::Hooks.register :site, :after_init do |site|
   site.data['apps'] = live
   site.data['apps_all'] = rows
   site.data['apps_count'] = live.length
+  # 플랫폼별 출시 현황도 그대로 넘긴다. 목록에서 걸러 내지 않고 **칸마다 상태를 보여준다** —
+  # 한쪽만 라이브인 앱이 실제로 있다(2026-09-11: 신규 3종은 Play 라이브·토스 심사 대기).
+  site.data['apps_play_count'] = rows.count { |h| h['on_play'] }
+  site.data['apps_toss_count'] = rows.count { |h| h['on_toss'] }
 
-  Jekyll.logger.info 'apps-registry:', "apps.csv 에서 #{live.length}개(전체 #{rows.length}개) 적재"
+  Jekyll.logger.info 'apps-registry:',
+                     "apps.csv 적재: 라이브 #{live.length} / Play #{site.data['apps_play_count']} "                      "/ 토스 #{site.data['apps_toss_count']} (전체 #{rows.length})"
 end

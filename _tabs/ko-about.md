@@ -54,7 +54,7 @@ Fadongkwon의 **F**는 게임에서 그 기술을 쓸 때의 조이스틱 조작
 
 앱이 계속 늘어나기 때문에 목록은 따로 두었고, **모든 앱이 함께 쓰는 레지스트리에서 자동으로 갱신됩니다.**
 
-> 전체 목록은 **[만든 앱](/ko/apps/)**에 있습니다. 지금 {{ site.data.apps_count }}개가 라이브입니다.
+> 전체 목록은 **[만든 앱](/ko/apps/)**에 있습니다. 지금 앱 {{ site.data.apps_count }}개 — Google Play {{ site.data.apps_play_count }}개, 앱인토스 {{ site.data.apps_toss_count }}개가 라이브입니다.
 {: .prompt-tip }
 
 브라우저에서 바로 해볼 수 있는 것들은 [PLAY](/ko/play/)에 모아 두었습니다.

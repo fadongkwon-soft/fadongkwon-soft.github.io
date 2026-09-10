@@ -54,7 +54,7 @@ Learning apps built for my own kids, party apps for gatherings, exam question ba
 
 The list keeps growing, so it lives on its own page and **updates itself from the registry every app shares.**
 
-> The full list is at **[Apps](/apps/)**. {{ site.data.apps_count }} are live right now.
+> The full list is at **[Apps](/apps/)**. {{ site.data.apps_count }} apps right now — {{ site.data.apps_play_count }} live on Google Play, {{ site.data.apps_toss_count }} on Apps in Toss.
 {: .prompt-tip }
 
 The ones you can try straight in a browser are collected on [PLAY](/play/).
