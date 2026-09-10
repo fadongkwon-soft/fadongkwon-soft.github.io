@@ -206,10 +206,15 @@ def migrate_dirs(apply):
             shutil.move(ko_play_src, ko_play_dst)
 
     # 2) 영문 트리를 루트로
+    #    ⚠️ 전환 후 en/tags·en/categories 에는 **리다이렉트 스텁 index.html** 만 남는다.
+    #    가드 없이 재실행하면 그 스텁을 tags/index.html 로 옮겨 목록 페이지를 덮어쓴다.
+    #    전환 전 상태는 하위 디렉터리(en/tags/<slug>/)가 있다는 것으로 구분한다.
     for src, dst in [('en/tags', 'tags'), ('en/categories', 'categories'),
                      ('en/play/index.md', 'play/index.md')]:
         s, d = os.path.join(ROOT, src), os.path.join(ROOT, dst)
         if not os.path.exists(s):
+            continue
+        if os.path.isdir(s) and not any(os.path.isdir(os.path.join(s, x)) for x in os.listdir(s)):
             continue
         done.append(src + ' -> ' + dst)
         if apply:
@@ -292,10 +297,28 @@ def gen_en_redirect_stubs(apply):
 
     본문이 있는 페이지만 만든다 — /en/tags/<slug>/ 같은 목록 페이지는 고유 내용이
     없어 색인 가치가 없으므로 제외한다(수도 127개로 많다).
+
+    ⚠️ **예약 글(미래 날짜)은 스텁을 만들지 않는다.** 그 글은 /en/... 에도 공개된 적이
+    없어서 보존할 옛 주소가 애초에 없고, 스텁이 링크하는 새 주소가 아직 생성되지 않아
+    **htmlproofer 가 빌드를 죽인다**(2026-09-11 실제로 이걸로 실패, 예약 14편 x 링크 2개).
     """
+    import datetime
+    now = datetime.datetime.now()
+
+    def is_future(path):
+        fm, _ = split_fm(read(path))
+        v = fm_get(fm, 'date') or ''
+        m = re.match(r'(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2}))?', v)
+        if not m:
+            return False
+        return datetime.datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)),
+                                 int(m.group(4) or 0), int(m.group(5) or 0)) > now
+
     made = []
     pairs = []
     for p in sorted(glob.glob(os.path.join(EN_DIR, '*.md'))):
+        if is_future(p):
+            continue
         slug = slug_of(p)
         pairs.append(('/en/posts/' + slug + '/', '/posts/' + slug + '/'))
     for name in ('about', 'tarot', 'play', 'archives', 'categories', 'tags', 'privacy'):
