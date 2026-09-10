@@ -45,33 +45,79 @@
   </header>
   <!-- .profile-wrapper -->
 
+  {%- comment -%}
+    2026-09-11: 평평한 8줄을 두 그룹 + 하단 상용구로 나눴다.
+    8개가 같은 무게로 나열되니 성격이 다른 세 가지(만든 것 / 글 찾는 도구 / 상용구)가
+    전부 "이것저것"으로 읽혔다. 특히 타로 사전이 잡화처럼 보였는데, 실은 타로 운세·
+    운세 타로핑 두 앱의 근거 자료이고 전체 글의 63%(78/124)로 가는 유일한 상시 입구다.
+    빼면 그 63%가 고립되므로, 빼는 대신 PLAY 옆(MADE)에 묶어 관계가 보이게 했다.
+    라벨도 TAROT 로 줄였다 — 목록에서 유일한 두 단어라 길이가 튀었다.
+    아이콘은 fa-star(즐겨찾기로 읽힘) → fa-clone(겹친 카드).
+    그룹마다 <ul> 을 따로 두고 aria-label 로 이름을 붙인다(낭독기 그룹 인식).
+    Chirpy CSS 는 `#sidebar ul li.nav-item` 이라 <ul> 이 여러 개여도 그대로 먹는다.
+    ⚠️ nav-item 의 좌우 패딩은 브레이크포인트마다 다르다(1.5rem / 2.75rem) — 게다가
+       선택자가 `#sidebar ul li.nav-item` 이라 **ul 안의 li 여야 패딩이 붙는다.**
+       그래서 그룹 라벨과 하단 상용구도 ul>li 안에 넣어 패딩을 물려받게 했다
+       (처음엔 <p>·<div> 로 뒀는데 선택자에 안 걸려 좌측 정렬이 어긋났다).
+       라벨 li 는 role="presentation" 으로 목록 항목 수에서 빼 둔다.
+  {%- endcomment -%}
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
-      {% assign menu_items = '' | split: '' %}
-      {% capture menu_src %}
-        {{ home_url }}|fas fa-home|HOME
-        ;{{ about_url }}|fas fa-info-circle|ABOUT
-        ;{{ tarot_url }}|fas fa-star|TAROT DICTIONARY
-        ;{{ play_url }}|fas fa-gamepad|PLAY
-        ;{{ archives_url }}|fas fa-archive|ARCHIVES
-        ;{{ categories_url }}|fas fa-stream|CATEGORIES
-        ;{{ tags_url }}|fas fa-tags|TAGS
-        ;/privacy/|fas fa-user-shield|PRIVACY
-      {% endcapture %}
-      {% assign menu_items = menu_src | strip | split: ';' %}
-      {% for item in menu_items %}
-        {% assign parts = item | strip | split: '|' %}
-        {% assign item_url = parts[0] | strip %}
-        <li class="nav-item{% if page.url == item_url %}{{ " active" }}{% endif %}">
-          <a href="{{ item_url | relative_url }}" class="nav-link">
-            <i class="fa-fw {{ parts[1] | strip }}"></i>
-            <span>{{ parts[2] | strip }}</span>
-          </a>
-        </li>
-        <!-- .nav-item -->
-      {% endfor %}
+      <li class="nav-item{% if page.url == home_url %}{{ " active" }}{% endif %}">
+        <a href="{{ home_url | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-home"></i>
+          <span>HOME</span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="nav" aria-label="MADE">
+      <li class="nav-item nav-group-label" role="presentation">MADE</li>
+      <li class="nav-item{% if page.url == play_url %}{{ " active" }}{% endif %}">
+        <a href="{{ play_url | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-gamepad"></i>
+          <span>PLAY</span>
+        </a>
+      </li>
+      <li class="nav-item{% if page.url == tarot_url %}{{ " active" }}{% endif %}">
+        <a href="{{ tarot_url | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-clone"></i>
+          <span>TAROT</span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="nav" aria-label="BROWSE">
+      <li class="nav-item nav-group-label" role="presentation">BROWSE</li>
+      <li class="nav-item{% if page.url == archives_url %}{{ " active" }}{% endif %}">
+        <a href="{{ archives_url | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-archive"></i>
+          <span>ARCHIVES</span>
+        </a>
+      </li>
+      <li class="nav-item{% if page.url == categories_url %}{{ " active" }}{% endif %}">
+        <a href="{{ categories_url | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-stream"></i>
+          <span>CATEGORIES</span>
+        </a>
+      </li>
+      <li class="nav-item{% if page.url == tags_url %}{{ " active" }}{% endif %}">
+        <a href="{{ tags_url | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-tags"></i>
+          <span>TAGS</span>
+        </a>
+      </li>
     </ul>
   </nav>
+
+  <!-- 상용구는 메뉴에서 내려 작은 한 줄로 둔다(ABOUT·PRIVACY) -->
+  <ul class="nav w-100">
+    <li class="nav-item sidebar-meta">
+      <a href="{{ about_url | relative_url }}"{% if page.url == about_url %} class="active"{% endif %}>about</a>
+      <span aria-hidden="true">·</span>
+      <a href="/privacy/"{% if page.url == '/privacy/' %} class="active"{% endif %}>privacy</a>
+    </li>
+  </ul>
 
   <!-- 한/영 언어 스위처는 topbar.html(우상단)로 이동함(2026-08-30) -->
 
