@@ -143,6 +143,12 @@
           브레이크포인트마다 좌우가 자동으로 들여쓰기된다.
        선택자를 ul li 까지 쓰는 이유: 테마의 `#sidebar ul li.nav-item{opacity:.9}` 가
        더 구체적이어서 클래스만 쓰면 opacity 계열이 안 먹는다. */
+    /* 행 높이: 테마 기본 0.6rem 은 8줄에서 헐렁하다(사용자 요청, 2026-09-11).
+       선택자는 테마와 똑같이 쓰고 이 style 블록이 테마 CSS 뒤에 오는 것으로 이긴다. */
+    #sidebar ul li.nav-item a.nav-link {
+      padding-top: 0.45rem;
+      padding-bottom: 0.45rem;
+    }
     #sidebar ul li.nav-sep {
       margin: 0.45rem 0;
       opacity: 1;
@@ -150,11 +156,33 @@
     /* ⚠️ --sidebar-border-color 는 쓰지 않는다 — 라이트에서 #efefef 인데 사이드바
        배경이 #f6f8fa 라 밝기 차이가 8밖에 안 나서 선이 안 보인다.
        --text-muted-color(라이트 #757575 / 다크 #868686)를 낮은 불투명도로 쓰면
-       테마 분기 없이 양쪽에서 확실히 보인다(밝기 차 8 → 약 52). */
+       테마 분기 없이 양쪽에서 보인다.
+       불투명도 조절 기록: 0.4 는 너무 진했다(밝기 차 라이트 52) → 0.22
+       (라이트 약 29 / 다크 약 23). 원래 값 8 은 안 보였으니 그 중간을 잡은 것. */
     #sidebar ul li.nav-sep > span {
       display: block;
       border-top: 1px solid var(--text-muted-color);
-      opacity: 0.4;
+      opacity: 0.22;
+    }
+    /* 하단 아이콘 줄에 privacy 를 넣으면 6개(테마 토글 + 링크 5개)가 되어
+       260px 폭에서 두 줄로 넘어간다. 데스크톱 실사용 폭은 200px(패딩 44+16)인데
+       기존 배치 합계가 이미 241px 이었다. 버튼 크기(1.75rem)는 그대로 두고 폭을 만든다.
+         ① 오른쪽 패딩 제거 → 실사용 216px (왼쪽 44px 는 그대로 — 위 메뉴와 시작선 유지)
+         ② 토글과 링크 사이 장식 구분선 제거 (약 22px 회수)
+         ③ 아이콘 간격 1rem -> 0.5rem, 토글 뒤에도 같은 간격
+       합계 208px / 216px — 8px 여유. 선택자는 테마와 동일하게 쓰고 뒤에 와서 이긴다.
+       ⚠️ 여유 없이 딱 맞추면(200/200) 폰트·확대 배율에 따라 다시 줄바꿈된다. */
+    #sidebar .sidebar-bottom {
+      padding-right: 0;
+    }
+    #sidebar .sidebar-bottom .icon-border {
+      display: none;
+    }
+    #sidebar .sidebar-bottom .btn-group {
+      margin-right: 0.5rem;
+    }
+    #sidebar .sidebar-bottom > a:not(:last-child) {
+      margin-right: 0.5rem;
     }
     /* 화면에서만 숨고 낭독기는 읽는 안내 문구 */
     .ext-sr {
