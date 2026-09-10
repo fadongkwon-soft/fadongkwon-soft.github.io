@@ -147,30 +147,14 @@
       margin: 0.45rem 0;
       opacity: 1;
     }
+    /* ⚠️ --sidebar-border-color 는 쓰지 않는다 — 라이트에서 #efefef 인데 사이드바
+       배경이 #f6f8fa 라 밝기 차이가 8밖에 안 나서 선이 안 보인다.
+       --text-muted-color(라이트 #757575 / 다크 #868686)를 낮은 불투명도로 쓰면
+       테마 분기 없이 양쪽에서 확실히 보인다(밝기 차 8 → 약 52). */
     #sidebar ul li.nav-sep > span {
       display: block;
-      border-top: 1px solid var(--sidebar-border-color);
-    }
-    /* 하단 상용구 한 줄 */
-    #sidebar ul li.sidebar-meta {
-      margin: 0.6rem 0 0.1rem;
-      font-size: 0.75rem;
-      letter-spacing: 0.03em;
-      color: var(--text-muted-color);
-    }
-    #sidebar .sidebar-meta a {
-      color: var(--text-muted-color);
-      opacity: 0.7;
-      text-decoration: none;
-    }
-    #sidebar .sidebar-meta a:hover,
-    #sidebar .sidebar-meta a.active {
-      color: var(--sidebar-active-color);
-      opacity: 1;
-    }
-    #sidebar .sidebar-meta span {
-      margin: 0 0.3em;
-      opacity: 0.45;
+      border-top: 1px solid var(--text-muted-color);
+      opacity: 0.4;
     }
     /* 화면에서만 숨고 낭독기는 읽는 안내 문구 */
     .ext-sr {
