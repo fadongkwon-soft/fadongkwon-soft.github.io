@@ -52,7 +52,9 @@
     운세 타로핑 두 앱의 근거 자료이고 전체 글의 63%(78/124)로 가는 유일한 상시 입구다
     (홈 피드는 Tarot 를 제외한다). 빼면 그 63%가 고립되므로 PLAY 옆에 묶었다.
     라벨도 TAROT 로 줄였다 — 목록에서 유일한 두 단어라 길이가 튀었다.
-    아이콘은 fa-star(즐겨찾기로 읽힘) → fa-clone(겹친 카드).
+    아이콘은 fa-star → fa-clone → **fa-wand-magic-sparkles**. star 는 즐겨찾기로,
+    clone 은 복사·중복으로 읽혔다. 후보 9개를 실제 사이드바 스타일로 렌더해 비교한 결과
+    지팡이+반짝임이 "운세·점술"을 가장 바로 전달했다(book-open·swatchbook 이 차선).
 
     묶음은 **글자 라벨 없이 얇은 구분선으로만** 표시한다(사용자 결정, 2026-09-11).
     처음엔 MADE / BROWSE 라벨을 넣었는데 ①단어가 어색하고 ②라벨의 상하 여백이
@@ -95,7 +97,7 @@
       </li>
       <li class="nav-item{% if page.url == tarot_url %}{{ " active" }}{% endif %}">
         <a href="{{ tarot_url | relative_url }}" class="nav-link">
-          <i class="fa-fw fas fa-clone"></i>
+          <i class="fa-fw fas fa-wand-magic-sparkles"></i>
           <span>TAROT</span>
         </a>
       </li>
