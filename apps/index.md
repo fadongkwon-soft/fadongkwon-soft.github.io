@@ -41,4 +41,7 @@ Learning and exam prep, party picks, and fortune-telling content.
 | {% if a.icon_path != '' %}![{{ a.name_en | default: a.name }}]({{ a.icon_path }}){: width="40" height="40" .normal}{% else %}{{ a.emoji }}{% endif %} | **{{ a.name_en | default: a.name }}**<br>{{ a.tagline_en | default: a.tagline }} | {{ a.released }} | {% if a.on_play %}[Install](https://play.google.com/store/apps/details?id={{ a.play_package }}){% else %}*in review*{% endif %} | {% if a.on_toss and a.toss_landing %}[Open]({{ a.toss_landing }}){% elsif a.on_toss %}live{% else %}*in review*{% endif %} |
 {% endfor %}
 
+> **Spin the Bottle** and **Juice Spinner** look like games but are registered as non-games in the stores. When I started out, releasing a game in Korea involved a much heavier process, so I avoided the game category. Later releases go to Play as games first — which earns the rating automatically — and then on to Apps in Toss.
+{: .prompt-info }
+
 Some of these also run straight in a browser — see [PLAY](/play/). For the story behind each one, the [dev log](/archives/) has the details.

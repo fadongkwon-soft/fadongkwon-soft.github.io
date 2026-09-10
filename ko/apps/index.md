@@ -3,7 +3,7 @@
 #    head 의 CSS 도 없어서 접근성용 숨김 텍스트가 그대로 보이고 표도 무포맷이 된다.
 #    HTTP 200 이라 아무 검사도 못 잡는다(2026-09-11 실제로 겪음).
 layout: page
-title: 만든 앱
+title: APPS — 만든 앱
 description: 파동권소프트 앱 전체와 Google Play·앱인토스 각각의 출시 현황입니다. 공용 레지스트리에서 자동으로 만들어지므로 항상 최신입니다.
 alt_url: /apps/
 permalink: /ko/apps/
@@ -38,5 +38,8 @@ permalink: /ko/apps/
 {% for a in site.data.apps_others -%}
 | {% if a.icon_path != '' %}![{{ a.name }}]({{ a.icon_path }}){: width="40" height="40" .normal}{% else %}{{ a.emoji }}{% endif %} | **{{ a.name }}**<br>{{ a.tagline }} | {{ a.released }} | {% if a.on_play %}[설치](https://play.google.com/store/apps/details?id={{ a.play_package }}){% else %}*심사 중*{% endif %} | {% if a.on_toss and a.toss_landing %}[열기]({{ a.toss_landing }}){% elsif a.on_toss %}출시됨{% else %}*심사 중*{% endif %} |
 {% endfor %}
+
+> **병 돌리기**와 **주스 스피너**는 게임처럼 보이지만 스토어에는 비게임으로 등록돼 있습니다. 앱을 만들기 시작한 초기에는 국내에서 게임 출시 절차가 훨씬 까다로웠던 탓에 게임 카테고리를 피해 냈습니다. 이후 게임들은 Play에 게임 카테고리로 먼저 내서 등급을 자동으로 받고 앱인토스에 올리는 방식으로 바꿨습니다.
+{: .prompt-info }
 
 이 중 일부는 브라우저에서 바로 해볼 수 있습니다 — [PLAY](/ko/play/)에 있습니다. 각 앱을 만들며 겪은 이야기는 [개발 기록](/ko/archives/)에 적어 두었습니다.
