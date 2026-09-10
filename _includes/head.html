@@ -139,7 +139,9 @@
     }
     /* 사이드바 그룹 라벨(MADE / BROWSE) — 좌우 패딩은 .nav-item 에서 물려받는다.
        테마가 브레이크포인트마다 2.75rem / 1.5rem 로 바꾸므로 여기서 박으면 어긋난다. */
-    #sidebar .nav-group-label {
+    /* 선택자를 ul li 까지 쓰는 이유: 테마의 `#sidebar ul li.nav-item{opacity:.9}` 가
+       더 구체적이어서, 클래스만 쓰면 opacity 가 안 먹는다. */
+    #sidebar ul li.nav-group-label {
       margin: 1.15rem 0 0.15rem;
       font-size: 0.68rem;
       font-weight: 700;
@@ -148,7 +150,7 @@
       opacity: 0.65;
     }
     /* 하단 상용구 한 줄 */
-    #sidebar .sidebar-meta {
+    #sidebar ul li.sidebar-meta {
       margin: 0.85rem 0 0.1rem;
       font-size: 0.72rem;
       letter-spacing: 0.03em;
