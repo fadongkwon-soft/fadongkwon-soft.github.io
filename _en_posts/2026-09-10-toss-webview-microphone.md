@@ -8,7 +8,7 @@ alt_url: /posts/toss-webview-microphone/
 image:
   path: /assets/img/20260910_toss-mic/cover.png
   alt: A microphone permission prompt inside a WebView
-tags: [apps in toss, solo developer, dev log]
+tags: [apps in toss, webview, speech recognition, hangul monsters, android, solo developer, dev log]
 ---
 
 [Hangul Monsters](/en/posts/hangul-monsters/) has a **listening** mode, where you hear a sound and pick the right letter, and a **speaking** mode, where you read into the microphone. On the Apps in Toss build, the speaking mode was simply absent. No mic button, and the sentence-reading mode missing from the list.

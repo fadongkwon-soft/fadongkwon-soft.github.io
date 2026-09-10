@@ -83,7 +83,7 @@ Things I wrote down so this does not repeat.
 
 **Watch for zero impressions.** I already have a ledger that shows per-app impressions daily, so a released app sitting at zero impressions should be impossible to miss. Configuration that fails silently is caught by metrics, not by memory.
 
-**Look at the ad slot on a real device right after launch.** Checking only that features work is the direct cause here. Confirming a banner is where a banner should be takes ten seconds. Missing [a vertical-scroll bug across fifteen apps for weeks](/posts/toss-policy-changes/) came from the same laziness.
+**Look at the ad slot on a real device right after launch.** Checking only that features work is the direct cause here. Confirming a banner is where a banner should be takes ten seconds. Missing [a vertical-scroll bug across fifteen apps for weeks](/en/posts/toss-policy-changes/) came from the same laziness.
 
 **Accept the cost of shipping many apps at once.** Shared code genuinely makes development faster. But the console work you do by hand scales honestly with the number of apps. That, I now know, is the real bottleneck of this approach.
 

@@ -129,6 +129,46 @@ TAG_GLOSSARY = {
     'Flutter Web': 'flutter web',
     '푸시알림': 'push notification',
     '스마트메시지': 'smart message',
+    '스마트발송': 'smart message',
+    # 플랫폼·개발
+    '안드로이드': 'android',
+    '웹뷰': 'webview',
+    '자바스크립트': 'javascript',
+    '캔버스': 'canvas',
+    '포인터이벤트': 'pointer events',
+    '디버깅': 'debugging',
+    '음성인식': 'speech recognition',
+    '한글몬스터': 'hangul monsters',
+    # 정책·수익
+    '정책변화': 'policy update',
+    '인앱광고': 'in-app ads',
+    '사업자등록': 'business registration',
+    '수익화': 'monetization',
+    '수익공개': 'revenue report',
+    '애드몹': 'admob',
+    '무효트래픽': 'invalid traffic',
+    '광고정책': 'ad policy',
+    # 게임 장르·개별 게임
+    '퍼즐': 'puzzle',
+    '숫자퍼즐': 'number puzzle',
+    '논리퍼즐': 'logic puzzle',
+    '보드게임': 'board game',
+    '카드게임': 'card game',
+    '아케이드': 'arcade',
+    '클래식게임': 'classic game',
+    '2인게임': 'two player',
+    '점프게임': 'endless jumper',
+    '순발력': 'timing game',
+    '지뢰찾기': 'minesweeper',
+    '솔리테어': 'solitaire',
+    '클론다이크': 'klondike',
+    '벽돌깨기': 'brick breaker',
+    '오목': 'gomoku',
+    '뱀게임': 'snake',
+    '15퍼즐': '15 puzzle',
+    '픽셀탁구': 'pixel pong',
+    '타워쌓기': 'tower stack',
+    '하늘점프': 'sky jump',
 }
 
 
@@ -581,13 +621,21 @@ def cmd_fixup():
         fm = fm_set(fm, 'categories', fm_get(kfm, 'categories'))
         fm = fm_set(fm, 'permalink', '/en/posts/' + slug + '/')
         fm = fm_set(fm, 'alt_url', '/posts/' + slug + '/')
-        # 태그는 한국어 원문 태그를 용어집으로 옮겨 영문 태그로 넣는다
-        # (/en/tags/ 인페이지 아카이브가 앵커로 받는다 — 별도 태그 페이지 없음).
+        # 태그: 영문 글에 이미 태그가 있으면 **그대로 둔다.**
+        # 없을 때만 한국어 원문 태그를 용어집으로 옮겨 채운다.
+        # ⚠️ 예전에는 무조건 용어집 결과로 덮어썼는데, 용어집에 없는 한국어 태그는
+        # 조용히 버려지므로 **사람이 골라 넣은 영문 태그가 통째로 사라졌다**
+        # (2026-09-10: 예약 글 16편에서 android·webview·in-app ads·puzzle 등이 날아갔다.
+        # structcheck 는 태그를 비교하지 않고 빌드도 성공하므로 아무도 모른다).
+        # 스텁은 gen_archive_stubs 가 영문 글의 실제 태그로 만들므로 보존해도 안전하다.
+        fm_en_tags_raw = fm_get(fm, 'tags') or ''
         fm = re.sub(r'^tags:[ \t]*.*$\n?', '', fm, flags=re.M)
         ko_tags_raw = fm_get(kfm, 'tags') or ''
         ko_tags = [t.strip() for t in ko_tags_raw.strip('[]').split(',') if t.strip()]
         is_tarot_card = bool(card_name(fm_get(kfm, 'title')))
-        en_tags = en_tags_for(ko_tags, is_tarot_card)
+        en_tags = [t.strip() for t in fm_en_tags_raw.strip('[]').split(',') if t.strip()]
+        if not en_tags:
+            en_tags = en_tags_for(ko_tags, is_tarot_card)
         if en_tags:
             fm = fm.rstrip('\n') + '\ntags: [' + ', '.join(en_tags) + ']\n'
         # 대표 이미지가 없으면 한국어와 같은 파일을 쓴다
