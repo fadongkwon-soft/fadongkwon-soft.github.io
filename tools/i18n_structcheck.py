@@ -85,6 +85,27 @@ def tag_slug(t):
     return re.sub(r'[^a-z0-9]+', '-', t.strip().lower()).strip('-')
 
 
+def check_tab_titles():
+    """_tabs/*.md 는 모두 명시 title 을 가져야 한다.
+
+    없으면 Chirpy 가 **파일명에서 제목을 유도**한다. 파일명 규칙(2026-09-11)에 따라
+    한국어 파일이 `ko-` 접두를 갖게 되면서 h1 이 "Ko About" 처럼 나갔다.
+    HTTP 200 이고 링크도 정상이라 htmlproofer 는 통과한다 — 조용한 사고다.
+    """
+    out = []
+    for p in sorted(glob.glob(os.path.join(ROOT, '_tabs', '*.md'))):
+        s = io.open(p, encoding='utf-8').read()
+        try:
+            fm, _ = split_fm(s.replace(chr(13) + chr(10), chr(10)))
+        except ValueError as e:
+            out.append('%s: %s' % (os.path.basename(p), e))
+            continue
+        if not re.search(r'^title:[ \t]*\S', fm, re.M):
+            out.append('%s: title 없음 (Chirpy 가 파일명에서 제목을 유도한다)'
+                       % os.path.basename(p))
+    return out
+
+
 def check_en_tag_pages():
     """영문 포스트의 tags 마다 tags/<slug>/index.md 가 있어야 한다.
 
@@ -199,6 +220,7 @@ def main():
 
     problems.extend(check_front_matter_yaml())
     problems.extend(check_en_tag_pages())
+    problems += check_tab_titles()
 
     print('대조 %d개' % checked)
     if problems:
