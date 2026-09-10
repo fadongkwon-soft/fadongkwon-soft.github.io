@@ -112,11 +112,29 @@
     이후 자동 선택보다 우선한다.
   · 크롤러는 UA 로 걸러 리다이렉트하지 않는다 — 자동 전환을 봇에 적용하면
     한쪽 언어가 색인에서 통째로 빠진다(hreflang 이 양쪽을 이미 안내한다).
+  · **사이트 내부에서 눌러 들어온 URL 은 그대로 존중한다**(2026-09-11 추가).
+    referrer 가 우리 오리진이면 방문자가 그 URL 을 직접 골랐다는 뜻이므로
+    자동 선택을 적용하지 않는다. 자동 선택은 외부 유입·직접 입력 등
+    "첫 진입" 에만 쓴다.
+    이유: 스위처로 한 번 영어를 고르면 fdk-lang='en' 이 남고, 그 뒤로 한국어
+    페이지를 누를 때마다 영어로 되돌려졌다. 화면에서는 페이지가 한 번 그려진
+    뒤 다른 URL 로 넘어가므로 **번쩍하고 흔들리는 것처럼 보인다.**
+    한/영을 오가며 테스트하면 사이드바를 누를 때마다 이 현상이 났다.
+    (want === here 인 경우는 원래도 그냥 통과했다 — 문제는 그 반대 경우였다)
 {%- endcomment -%}
 <script>
   (function () {
     try {
       if (/bot|crawl|spider|slurp|yeti|petal|headless|lighthouse|preview/i.test(navigator.userAgent)) return;
+      /* 사이트 안에서 링크를 눌러 온 경우엔 그 URL 이 방문자의 선택이다 —
+         자동 언어 선택은 외부 유입·직접 입력 같은 첫 진입에만 적용한다.
+         referrer 를 못 읽는 환경(빈 문자열)은 외부 유입으로 보고 기존 동작을 유지한다.
+         ⚠️ 이 <script> 는 Chirpy HTML 압축으로 한 줄이 되므로 //-주석 금지. */
+      var fromUs = false;
+      try {
+        fromUs = !!document.referrer && new URL(document.referrer).origin === location.origin;
+      } catch (e) { fromUs = false; }
+      if (fromUs) return;
       var here = (document.documentElement.lang || 'en').slice(0, 2).toLowerCase() === 'ko' ? 'ko' : 'en';
       var pref = null;
       try { pref = localStorage.getItem('fdk-lang'); } catch (e) { /* 시크릿 모드 등 */ }
