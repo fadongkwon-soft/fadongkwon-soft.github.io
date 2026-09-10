@@ -1,17 +1,17 @@
-<!-- 한국어 카테고리 트리.
-  jekyll-theme-chirpy v7.6.0 의 _layouts/categories.html 오버라이드다.
-  Gemfile 이 버전을 고정하고 있으니, 테마를 올릴 때 원본과 다시 대조할 것.
-  원본 대비 변경점: 링크 접두어를 한국어 규칙(/ko/ 접두)으로 바꾼 두 곳뿐.
-
-  왜 필요한가 — tags.html 과 같은 이유(URL 규칙 2026-09-11: 영어 = /*, 한국어 = /ko/*).
-  카테고리는 이름이 영어값(Blogging 등)이라 접두어 없는 주소가 **영문 스텁으로 우연히
-  존재**해서 htmlproofer 가 잡지 못한다 — 즉 404 없이 조용히 다른 언어 페이지로 새는
-  쪽이라 태그보다 더 위험하다. 영문판은 _layouts/en-categories.html 이 담당한다.
--->
 ---
 layout: page
-# All the Categories of posts
+# 한국어 카테고리 트리. jekyll-theme-chirpy v7.6.0 _layouts/categories.html 오버라이드다.
+# Gemfile 이 버전을 고정하고 있으니, 테마를 올릴 때 원본과 다시 대조할 것.
+# 원본 대비 변경점: 링크 접두어를 한국어 규칙(/ko/ 접두)으로 바꾼 두 곳뿐.
+#
+# 왜 필요한가 — tags.html 과 같은 이유(URL 규칙 2026-09-11).
+# 카테고리는 이름이 영어값(Blogging 등)이라 접두어 없는 주소가 **영문 스텁으로 우연히
+# 존재**해서 htmlproofer 가 잡지 못한다 — 404 없이 조용히 다른 언어로 새는 쪽이라
+# 태그보다 위험했다. 영문판은 _layouts/en-categories.html 이 담당한다.
+#
+# ⚠️ 이 주석은 반드시 front matter 안에 둘 것(tags.html 의 경고 참조).
 ---
+
 
 {% include lang.html %}
 

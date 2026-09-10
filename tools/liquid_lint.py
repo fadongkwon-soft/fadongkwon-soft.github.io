@@ -122,6 +122,18 @@ def check(path, theme=frozenset()):
         if not re.match(r'^---\n.*?\n---\n', text, re.S):
             out.append('%s: front matter 가 닫히지 않았다' % rel)
 
+    # front matter 는 **파일의 첫 줄**이어야 한다.
+    # 위에 주석 한 줄이라도 있으면 Jekyll 이 front matter 없는 파일로 보고
+    # layout 상속이 끊긴다 — 페이지가 사이트 껍데기(head·사이드바) 없이 나가는데
+    # HTTP 200 이라 htmlproofer 도 통과한다. 2026-09-11 _layouts/tags.html 을
+    # HTML 주석으로 시작하게 만들어 /ko/tags/ 가 통째로 깨진 채 배포됐다.
+    # (BOM 함정과 같은 부류 — 원인은 다르지만 증상과 조용함이 똑같다)
+    if not text.startswith('---'):
+        head = text[:4000]
+        stripped = re.sub(r'<!--.*?-->', '', head, flags=re.S).lstrip()
+        if stripped.startswith('---'):
+            out.append('%s: front matter 앞에 내용이 있다 (layout 상속이 끊긴다)' % rel)
+
     # HTML 주석은 Liquid 를 가리지 못한다. `<!-- {% include x %} -->` 도 그대로 실행된다.
     # 2026-08-29: search-loader.html 주석에 "이렇게 불린다"는 설명으로 자기 자신을
     # include 하는 태그를 적었다가 무한 재귀로 jekyll build 가 죽었다.
