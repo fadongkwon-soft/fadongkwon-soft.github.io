@@ -61,6 +61,8 @@ Fadongkwon의 **F**는 게임에서 그 기술을 쓸 때의 조이스틱 조작
 
 ## 문의
 
-앱 오류 신고, 기능 제안, 협업 문의는 인스타그램 [@fadongkwon.soft](https://www.instagram.com/fadongkwon.soft/) 메시지로 받고 있습니다. 앱에서 발견한 버그는 어떤 기기에서 어떤 상황이었는지 함께 알려주시면 훨씬 빨리 고칠 수 있습니다.
+앱 오류 신고, 기능 제안, 협업 문의는 **이메일 [admin@fadongkwon.com](mailto:admin@fadongkwon.com)** 으로 받습니다. 앱에서 발견한 버그는 어떤 기기에서 어떤 상황이었는지 함께 알려주시면 훨씬 빨리 고칠 수 있습니다.
+
+새 앱 소식은 인스타그램 [@fadongkwon.soft](https://www.instagram.com/fadongkwon.soft/)에도 올리지만, **문의는 이메일이 확실합니다** — 인스타 메시지는 확인이 늦을 수 있습니다.
 
 개인정보 처리에 관한 내용은 [개인정보처리방침](/ko/privacy/)에 정리해 두었습니다. 이 사이트와 앱은 광고 수익으로 운영됩니다.

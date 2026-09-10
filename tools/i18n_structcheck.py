@@ -87,6 +87,48 @@ def tag_slug(t):
     return re.sub(r'[^a-z0-9]+', '-', t.strip().lower()).strip('-')
 
 
+def check_page_layouts():
+    """permalink 을 가진 페이지에 layout 선언이 있어야 한다.
+
+    layout 을 아예 빼면 Jekyll 이 파일을 그대로 내보낸다 — head(CSS)도 사이드바도 없다.
+    HTTP 200 이고 링크도 정상이라 htmlproofer 가 통과하므로 아무도 못 잡는다.
+    2026-09-11 /apps/ · /ko/apps/ 가 그렇게 나가서 접근성용 숨김 텍스트가 본문에 보였다.
+
+    `layout: none`(토스 랜딩)이나 `layout: null`(sitemap·리다이렉트 스텁)은 **명시한 선택**
+    이므로 통과시킨다 — 문제는 키가 아예 없는 경우다.
+
+    ⚠️ 컬렉션(_posts·_en_posts·_tabs)은 제외한다. _config.yml 의 defaults 가 layout 을
+       주기 때문에 파일에서 생략하는 것이 정상이다(이걸 빼먹어 6건이 오탐으로 잡혔다).
+       독립 페이지(루트·하위 디렉터리)만 검사한다.
+    """
+    out = []
+    skip_dirs = {'.git', '_site', 'node_modules', 'assets',
+                 '_posts', '_en_posts', '_tabs',
+                 '.jekyll-cache', 'vendor', '.preview-tmp'}
+    for root, dirs, files in os.walk(ROOT):
+        dirs[:] = [d for d in dirs if d not in skip_dirs]
+        for fn in files:
+            if os.path.splitext(fn)[1].lower() not in ('.md', '.html'):
+                continue
+            p = os.path.join(root, fn)
+            try:
+                s = io.open(p, encoding='utf-8').read().replace(chr(13) + chr(10), chr(10))
+            except Exception:
+                continue
+            if not s.startswith('---' + chr(10)):
+                continue
+            try:
+                fm, _ = split_fm(s)
+            except ValueError:
+                continue
+            if not re.search(r'^permalink:', fm, re.M):
+                continue
+            if not re.search(r'^layout:', fm, re.M):
+                rel = os.path.relpath(p, ROOT).replace(os.sep, '/')
+                out.append('%s: layout 선언 없음 (사이트 껍데기 없이 배포된다)' % rel)
+    return out
+
+
 def check_tab_titles():
     """_tabs/*.md 는 모두 명시 title 을 가져야 한다.
 
@@ -223,6 +265,7 @@ def main():
     problems.extend(check_front_matter_yaml())
     problems.extend(check_en_tag_pages())
     problems += check_tab_titles()
+    problems += check_page_layouts()
 
     print('대조 %d개' % checked)
     if problems:

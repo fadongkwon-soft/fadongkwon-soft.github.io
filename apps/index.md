@@ -1,4 +1,8 @@
 ---
+# ⚠️ layout 을 빼면 페이지가 **사이트 껍데기 없이** 나간다 —
+#    head 의 CSS 도 없어서 접근성용 숨김 텍스트가 그대로 보이고 표도 무포맷이 된다.
+#    HTTP 200 이라 아무 검사도 못 잡는다(2026-09-11 실제로 겪음).
+layout: page
 title: Apps
 description: Every Fadongkwon Soft app with its live status on Google Play and Apps in Toss — generated from the shared registry, so it is never out of date.
 lang: en

@@ -61,6 +61,8 @@ The ones you can try straight in a browser are collected on [PLAY](/play/).
 
 ## Contact
 
-Bug reports, feature suggestions and collaboration enquiries all go through Instagram DM at [@fadongkwon.soft](https://www.instagram.com/fadongkwon.soft/). For bugs, telling me which device and what you were doing gets it fixed far faster.
+Bug reports, feature suggestions and collaboration enquiries go to **[admin@fadongkwon.com](mailto:admin@fadongkwon.com)**. For bugs, telling me which device and what you were doing gets it fixed far faster.
+
+New releases are also posted on Instagram [@fadongkwon.soft](https://www.instagram.com/fadongkwon.soft/), but **email is the reliable channel for enquiries** — Instagram DMs can sit unseen for a while.
 
 How personal data is handled is documented in the [privacy policy](/privacy/). This site and the apps are funded by advertising.

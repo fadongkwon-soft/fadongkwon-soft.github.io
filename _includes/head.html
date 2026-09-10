@@ -184,8 +184,12 @@
     #sidebar .sidebar-bottom > a:not(:last-child) {
       margin-right: 0.5rem;
     }
-    /* 화면에서만 숨고 낭독기는 읽는 안내 문구 */
+    /* 화면에서만 숨고 낭독기는 읽는 안내 문구.
+       user-select: none 은 낭독기에 영향이 없고, 본문을 복사할 때
+       "(새 창에서 열림)" 이 같이 붙어 오는 것을 막는다(사용자 제보 2026-09-11). */
     .ext-sr {
+      -webkit-user-select: none;
+      user-select: none;
       position: absolute !important;
       width: 1px;
       height: 1px;
