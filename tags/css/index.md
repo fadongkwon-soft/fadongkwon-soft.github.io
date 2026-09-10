@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: css
 tag: css
 lang: en

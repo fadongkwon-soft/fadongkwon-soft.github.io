@@ -1,11 +1,13 @@
 ---
 layout: compress
 swcache: true
-permalink: /assets/js/data/search-en.json
+permalink: /assets/js/data/search.json
 ---
 
 {%- comment -%}
-  영문판 사이트 검색 인덱스. 테마 기본 assets/js/data/search.json 은 site.posts
+  영문판 사이트 검색 인덱스(파일명 규칙 2026-09-11: 영어 = 무표식).
+  젬의 같은 경로 파일을 덮어쓴다. 한국어는 search-ko.json(젬 원본 복사).
+  젬 기본 인덱스는 site.posts
   만 훑기 때문에 영문 컬렉션이 검색되지 않았다.
   컬렉션은 미래 날짜 문서가 docs 에 남으므로 date 로 걸러야 한다(아직 생성되지
   않은 페이지가 검색결과에 나오면 404 로 이어진다).

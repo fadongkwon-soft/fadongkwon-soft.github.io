@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: cute app
 tag: cute app
 lang: en

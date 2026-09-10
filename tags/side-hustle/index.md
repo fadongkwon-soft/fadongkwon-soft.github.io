@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: side hustle
 tag: side hustle
 lang: en

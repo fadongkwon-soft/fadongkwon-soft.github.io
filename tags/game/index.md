@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: game
 tag: game
 lang: en

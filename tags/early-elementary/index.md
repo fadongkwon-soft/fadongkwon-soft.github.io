@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: early elementary
 tag: early elementary
 lang: en

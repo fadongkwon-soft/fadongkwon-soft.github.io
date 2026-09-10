@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: app development
 tag: app development
 lang: en

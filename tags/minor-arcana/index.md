@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: minor arcana
 tag: minor arcana
 lang: en

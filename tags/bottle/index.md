@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: bottle
 tag: bottle
 lang: en

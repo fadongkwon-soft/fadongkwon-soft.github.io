@@ -1,5 +1,5 @@
 ---
-layout: en-category
+layout: category
 title: Swords
 category: Swords
 lang: en

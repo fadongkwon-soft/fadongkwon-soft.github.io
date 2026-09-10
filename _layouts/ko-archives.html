@@ -1,0 +1,40 @@
+---
+layout: page
+# The Archives of posts.
+# 한국어판. 파일명 규칙(2026-09-11): 영어 = 무표식, 한국어 = ko- 표식.
+# jekyll-theme-chirpy v7.6.0 원본을 그대로 복사한 것이다(내용 변경 없음).
+# 왜 복사했나 — 무표식 이름은 영문판이 가져갔다. 테마 원본을 그대로 쓰면
+# 이름이 규칙과 반대가 되므로, 같은 내용을 ko- 이름으로 둔다.
+# 테마를 올릴 때 원본과 재대조할 것(내용이 같아야 한다).
+---
+
+{% include lang.html %}
+
+{% assign df_strftime_m = site.data.locales[lang].df.archives.strftime | default: '/ %m' %}
+{% assign df_dayjs_m = site.data.locales[lang].df.archives.dayjs | default: '/ MM' %}
+
+<div id="archives" class="pl-xl-3">
+  {% for post in site.posts %}
+    {% assign cur_year = post.date | date: '%Y' %}
+
+    {% if cur_year != last_year %}
+      {% unless forloop.first %}</ul>{% endunless %}
+
+      <time class="year lead d-block">{{ cur_year }}</time>
+      {{ '<ul class="list-unstyled">' }}
+
+      {% assign last_year = cur_year %}
+    {% endif %}
+
+    <li>
+      {% assign ts = post.date | date: '%s' %}
+      <span class="date day" data-ts="{{ ts }}" data-df="DD">{{ post.date | date: '%d' }}</span>
+      <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
+        {{ post.date | date: df_strftime_m }}
+      </span>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    </li>
+
+    {% if forloop.last %}</ul>{% endif %}
+  {% endfor %}
+</div>

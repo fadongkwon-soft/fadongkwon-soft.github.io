@@ -7,7 +7,9 @@
   (7.2.4 기준으로 만들었다가 7.6.0 에서 제거된 include 를 참조해 빌드가 죽었다)
   원본 대비 변경점은 json 경로 한 줄뿐 — 페이지 언어에 따라 인덱스를 갈라 쓴다.
   테마 기본 인덱스(assets/js/data/search.json)는 site.posts 만 훑어서 영문
-  컬렉션이 검색되지 않았다. 영문은 assets/js/data/search-en.json 을 쓴다.
+  컬렉션이 검색되지 않았다.
+  파일명 규칙(2026-09-11: 영어 = 무표식, 한국어 = ko- 표식)에 따라
+  영문은 assets/js/data/search.json(젬 것을 덮어씀), 한국어는 search-ko.json(젬 원본 복사).
 
   분기는 include.lang 으로 한다. default.html 이 include_cached 로 부르고
   include_cached 는 파라미터 조합을 캐시 키로 쓰기 때문이다.
@@ -17,9 +19,9 @@
 -->
 
 {% if include.lang == 'en' %}
-  {% assign search_json = '/assets/js/data/search-en.json' %}
-{% else %}
   {% assign search_json = '/assets/js/data/search.json' %}
+{% else %}
+  {% assign search_json = '/assets/js/data/search-ko.json' %}
 {% endif %}
 
 {% capture result_elem %}

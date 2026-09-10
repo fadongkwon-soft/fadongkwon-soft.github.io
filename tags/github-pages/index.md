@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: github pages
 tag: github pages
 lang: en

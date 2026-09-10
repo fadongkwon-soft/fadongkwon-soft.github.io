@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: side project
 tag: side project
 lang: en

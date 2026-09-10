@@ -1,5 +1,5 @@
 ---
-layout: en-category
+layout: category
 title: Cups
 category: Cups
 lang: en

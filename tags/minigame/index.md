@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: minigame
 tag: minigame
 lang: en

@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: toss
 tag: toss
 lang: en

@@ -1,0 +1,23 @@
+---
+layout: compress
+swcache: true
+permalink: /assets/js/data/search-ko.json
+# 한국어 검색 인덱스. jekyll-theme-chirpy v7.6.0 assets/js/data/search.json 원본을
+# 그대로 복사하고 permalink 만 붙였다(젬 것은 /assets/js/data/search.json 을 쓰는데
+# 파일명 규칙(2026-09-11)에 따라 그 이름은 영문판이 가진다).
+# 테마를 올릴 때 원본과 재대조할 것.
+---
+
+[
+  {% for post in site.posts %}
+  {
+    "title": {{ post.title | jsonify }},
+    "url": {{ post.url | relative_url | jsonify }},
+    "categories": {{ post.categories | join: ', ' | jsonify }},
+    "tags": {{ post.tags | join: ', ' | jsonify }},
+    "date": {{ post.date | jsonify }},
+    {% capture content -%}{% include post-summary.html full_text=true %}{%- endcapture -%}
+    "content": {{ content | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+]

@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: push notification
 tag: push notification
 lang: en

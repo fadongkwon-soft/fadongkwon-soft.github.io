@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: speech recognition
 tag: speech recognition
 lang: en

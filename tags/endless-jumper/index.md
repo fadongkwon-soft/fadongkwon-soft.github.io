@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: endless jumper
 tag: endless jumper
 lang: en

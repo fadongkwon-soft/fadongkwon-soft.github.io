@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: app launch
 tag: app launch
 lang: en

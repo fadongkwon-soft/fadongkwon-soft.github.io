@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: in-app ads
 tag: in-app ads
 lang: en

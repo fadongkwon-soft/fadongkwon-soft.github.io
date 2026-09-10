@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: sliding puzzle
 tag: sliding puzzle
 lang: en

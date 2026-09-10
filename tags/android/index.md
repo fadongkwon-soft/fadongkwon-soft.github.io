@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: android
 tag: android
 lang: en

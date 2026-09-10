@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: logic puzzle
 tag: logic puzzle
 lang: en

@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: daily fortune
 tag: daily fortune
 lang: en

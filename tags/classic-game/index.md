@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: classic game
 tag: classic game
 lang: en

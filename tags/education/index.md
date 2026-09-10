@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: education
 tag: education
 lang: en

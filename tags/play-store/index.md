@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: play store
 tag: play store
 lang: en

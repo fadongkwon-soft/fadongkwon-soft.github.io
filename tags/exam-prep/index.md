@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: exam prep
 tag: exam prep
 lang: en

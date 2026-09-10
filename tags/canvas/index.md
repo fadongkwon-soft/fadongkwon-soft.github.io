@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: canvas
 tag: canvas
 lang: en

@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: monsters
 tag: monsters
 lang: en

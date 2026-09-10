@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: digital assets
 tag: digital assets
 lang: en

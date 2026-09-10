@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: card game
 tag: card game
 lang: en

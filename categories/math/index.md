@@ -1,5 +1,5 @@
 ---
-layout: en-category
+layout: category
 title: Math
 category: Math
 lang: en

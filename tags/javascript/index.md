@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: javascript
 tag: javascript
 lang: en

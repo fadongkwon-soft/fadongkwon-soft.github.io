@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: i18n
 tag: i18n
 lang: en

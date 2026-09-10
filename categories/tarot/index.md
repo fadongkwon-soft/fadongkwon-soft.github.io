@@ -1,5 +1,5 @@
 ---
-layout: en-category
+layout: category
 title: Tarot
 category: Tarot
 lang: en

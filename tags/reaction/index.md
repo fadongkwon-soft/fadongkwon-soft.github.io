@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: reaction
 tag: reaction
 lang: en

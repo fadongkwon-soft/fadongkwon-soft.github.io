@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: fortune telling
 tag: fortune telling
 lang: en

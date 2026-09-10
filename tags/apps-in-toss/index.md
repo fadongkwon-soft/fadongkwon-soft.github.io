@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: apps in toss
 tag: apps in toss
 lang: en

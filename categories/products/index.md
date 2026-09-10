@@ -1,5 +1,5 @@
 ---
-layout: en-category
+layout: category
 title: Products
 category: Products
 lang: en

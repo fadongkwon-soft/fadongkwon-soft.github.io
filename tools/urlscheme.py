@@ -41,18 +41,24 @@
     _includes/privacy-body.md            영문 (/privacy/)
     _includes/privacy-body-ko.md         한국어 (/ko/privacy/)
 
-**예외 — 이름을 테마·젬이 정하는 것들.** 규칙 위반이 아니라 프레임워크 제약이다.
+**레이아웃·검색 인덱스도 같은 규칙**(2026-09-11 전면 전환, 예외 없음)
 
-    _layouts/tags.html         테마 오버라이드는 **이름이 테마와 같아야** 성립한다.
-    _layouts/categories.html   한국어 탭이 테마 레이아웃(layout: tags)을 쓰므로
-                               이 이름은 한국어가 가진다.
-    _layouts/en-*.html         우리가 새로 만든 영문 전용 레이아웃(site.en_posts 를
-                               읽는다). 테마에 대응물이 없어 접두어로 구분한다.
-    assets/js/data/search.json 젬이 생성하는 한국어 인덱스. 영문은 search-en.json.
+    영문(무표식)                한국어(ko-)
+    _layouts/tags.html          _layouts/ko-tags.html
+    _layouts/categories.html    _layouts/ko-categories.html
+    _layouts/archives.html      _layouts/ko-archives.html
+    _layouts/tag.html           _layouts/ko-tag.html        (jekyll-archives 가 쓴다)
+    _layouts/category.html      _layouts/ko-category.html   (jekyll-archives 가 쓴다)
+    assets/js/data/search.json  assets/js/data/search-ko.json
 
-이 넷을 무표식/ko- 로 뒤집으려면 테마 레이아웃 3개(archives·tag·category)를 복사해
-`ko-` 로 두고 jekyll-archives 설정까지 바꿔야 한다. 오버라이드가 3개 늘어 테마 업그레이드
-때마다 재대조할 파일만 많아지고 기능 이득은 없다 — 그래서 하지 않았다.
+한국어 쪽 5개는 **테마 원본을 복사한 것**이다(ko-archives/ko-tag/ko-category 는 내용 무변경,
+ko-tags/ko-categories 는 링크 접두어만 /ko/ 로). 무표식 이름은 영문 전용 레이아웃이
+가져갔고, 그 파일들이 테마 원본을 덮어쓰지만 아무도 테마 버전을 쓰지 않는다.
+`_config.yml` 의 jekyll-archives `layouts` 는 `ko-tag`/`ko-category` 를 가리킨다.
+`_includes/js-selector.html` 은 **한국어(ko-*)만** 테마 번들 키로 매핑한다(영문은 이름이 같아 불필요).
+
+⚠️ 테마를 올릴 때 재대조할 파일이 5개 늘었다. 그 비용을 알고 택한 것이다 —
+   이름이 규칙과 반대인 상태가 더 비싸다고 판단했다(사용자 결정, 2026-09-11).
 
 ## 스토어에 등록된 URL
 

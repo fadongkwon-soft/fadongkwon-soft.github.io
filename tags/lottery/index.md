@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: lottery
 tag: lottery
 lang: en

@@ -1,5 +1,5 @@
 ---
-layout: en-category
+layout: category
 title: App
 category: App
 lang: en

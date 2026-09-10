@@ -1,7 +1,7 @@
 ---
 title: Tags
 description: All English posts grouped by tag.
-layout: en-tags
+layout: tags
 icon: fas fa-tags
 order: 5
 lang: en

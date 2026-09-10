@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: business registration
 tag: business registration
 lang: en

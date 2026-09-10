@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: parenting
 tag: parenting
 lang: en

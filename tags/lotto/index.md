@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: lotto
 tag: lotto
 lang: en

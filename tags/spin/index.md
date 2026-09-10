@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: spin
 tag: spin
 lang: en

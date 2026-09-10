@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: board game
 tag: board game
 lang: en

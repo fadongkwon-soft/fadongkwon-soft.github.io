@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: swords
 tag: swords
 lang: en

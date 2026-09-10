@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: wordle
 tag: wordle
 lang: en

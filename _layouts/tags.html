@@ -1,34 +1,30 @@
 ---
 layout: page
-# 한국어 태그 구름. jekyll-theme-chirpy v7.6.0 _layouts/tags.html 오버라이드다.
-# Gemfile 이 버전을 고정하고 있으니, 테마를 올릴 때 원본과 다시 대조할 것.
-# 원본 대비 변경점: 링크 접두어 `/tags/` -> `/ko/tags/` 한 곳뿐.
-#
-# 왜 필요한가 — URL 규칙(2026-09-11: 영어 = /*, 한국어 = /ko/*)에 따라 jekyll-archives 가
-# 한국어 태그를 /ko/tags/:name/ 로 만드는데, 테마 원본은 접두어를 하드코딩해
-# /tags/<한글>/ 로 링크한다. 그 자리는 영문 태그 스텁 공간이라 존재하지 않고
-# **htmlproofer 가 283건으로 빌드를 죽인다**(2026-09-11 실제 실패).
-# 영문판은 _layouts/en-tags.html 이 담당한다.
-#
-# ⚠️ 이 주석은 **반드시 front matter 안**에 둔다. 위에 HTML 주석으로 올렸다가
-#    front matter 가 파일 첫 줄이 아니게 되어 레이아웃 상속이 끊겼고,
-#    /ko/tags/ 가 사이트 껍데기 없이 나갔다(2026-09-11). BOM 함정과 같은 부류다.
+# 영문판 태그 목록. chirpy v7.6.0 _layouts/tags.html 과 같은 태그 구름이되,
+# site.tags(한국어 posts 전용) 대신 site.en_posts 에서 집계하고
+# /tags/<slug>/ 하위 페이지로 링크한다(스텁은 tools/i18n.py fixup 이 생성).
+# ⚠️ 컬렉션은 미래 날짜 문서가 남으므로 날짜 필터 필수.
 ---
 
+{% assign pool = site.en_posts
+  | where_exp: 'p', 'p.hidden != true'
+  | where_exp: 'p', 'p.date <= site.time' %}
+
+{% assign all_tags = '' | split: '' %}
+{% for post in pool %}
+  {% for t in post.tags %}
+    {% assign all_tags = all_tags | push: t %}
+  {% endfor %}
+{% endfor %}
+{% assign uniq_tags = all_tags | uniq | sort_natural %}
 
 <div id="tags" class="d-flex flex-wrap mx-xl-2">
-  {% assign tags = '' | split: '' %}
-  {% for t in site.tags %}
-    {% assign tags = tags | push: t[0] %}
-  {% endfor %}
-
-  {% assign sorted_tags = tags | sort_natural %}
-
-  {% for t in sorted_tags %}
+  {% for t in uniq_tags %}
+    {% assign hits = pool | where_exp: 'p', 'p.tags contains t' %}
     <div>
-      <a class="tag" href="{{ t | slugify | url_encode | prepend: '/ko/tags/' | append: '/' | relative_url }}">
+      <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
         {{ t -}}
-        <span class="text-muted">{{ site.tags[t].size }}</span>
+        <span class="text-muted">{{ hits | size }}</span>
       </a>
     </div>
   {% endfor %}

@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: compose
 tag: compose
 lang: en

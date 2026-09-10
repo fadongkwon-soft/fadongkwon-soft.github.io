@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: math
 tag: math
 lang: en

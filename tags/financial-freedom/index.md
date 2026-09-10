@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: financial freedom
 tag: financial freedom
 lang: en

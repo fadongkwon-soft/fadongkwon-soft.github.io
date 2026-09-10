@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: flutter
 tag: flutter
 lang: en

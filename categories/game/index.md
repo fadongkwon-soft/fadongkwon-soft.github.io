@@ -1,5 +1,5 @@
 ---
-layout: en-category
+layout: category
 title: Game
 category: Game
 lang: en

@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: developer
 tag: developer
 lang: en

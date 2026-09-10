@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: reaction speed
 tag: reaction speed
 lang: en

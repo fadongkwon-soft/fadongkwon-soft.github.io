@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: elementary math
 tag: elementary math
 lang: en

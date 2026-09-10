@@ -1,5 +1,5 @@
 ---
-layout: archives
+layout: ko-archives
 icon: fas fa-archive
 order: 3
 alt_url: /archives/

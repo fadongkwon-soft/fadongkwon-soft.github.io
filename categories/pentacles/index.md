@@ -1,5 +1,5 @@
 ---
-layout: en-category
+layout: category
 title: Pentacles
 category: Pentacles
 lang: en

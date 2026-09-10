@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: timing game
 tag: timing game
 lang: en

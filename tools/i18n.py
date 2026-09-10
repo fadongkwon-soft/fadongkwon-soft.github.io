@@ -224,8 +224,8 @@ def gen_archive_stubs():
 
     made = 0
     for kind, store, layout, fm_key in (
-        ('categories', cats, 'en-category', 'category'),
-        ('tags', tags, 'en-tag', 'tag'),
+        ('categories', cats, 'category', 'category'),
+        ('tags', tags, 'tag', 'tag'),
     ):
         base = os.path.join(ROOT, kind)
         os.makedirs(base, exist_ok=True)

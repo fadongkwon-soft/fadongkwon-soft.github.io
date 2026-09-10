@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: school readiness
 tag: school readiness
 lang: en

@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: certification
 tag: certification
 lang: en

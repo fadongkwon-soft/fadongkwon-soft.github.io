@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: study habits
 tag: study habits
 lang: en

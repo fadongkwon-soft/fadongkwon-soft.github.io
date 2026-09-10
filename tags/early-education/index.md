@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: early education
 tag: early education
 lang: en

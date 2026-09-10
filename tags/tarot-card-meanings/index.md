@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: tarot card meanings
 tag: tarot card meanings
 lang: en

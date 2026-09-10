@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: arcade
 tag: arcade
 lang: en

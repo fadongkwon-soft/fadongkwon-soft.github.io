@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: memory
 tag: memory
 lang: en

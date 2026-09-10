@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: admob
 tag: admob
 lang: en

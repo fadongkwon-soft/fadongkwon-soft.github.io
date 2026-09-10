@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: spin the bottle
 tag: spin the bottle
 lang: en

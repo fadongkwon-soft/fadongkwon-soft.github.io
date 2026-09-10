@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: hangul monsters
 tag: hangul monsters
 lang: en

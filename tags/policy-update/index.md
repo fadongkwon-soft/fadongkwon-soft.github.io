@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: policy update
 tag: policy update
 lang: en

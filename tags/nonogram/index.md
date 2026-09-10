@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: nonogram
 tag: nonogram
 lang: en

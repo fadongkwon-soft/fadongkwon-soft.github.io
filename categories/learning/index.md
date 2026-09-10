@@ -1,5 +1,5 @@
 ---
-layout: en-category
+layout: category
 title: Learning
 category: Learning
 lang: en

@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: lights out
 tag: lights out
 lang: en

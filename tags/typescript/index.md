@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: typescript
 tag: typescript
 lang: en

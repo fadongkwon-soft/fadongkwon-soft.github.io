@@ -1,0 +1,37 @@
+---
+layout: page
+# 한국어 태그 구름. jekyll-theme-chirpy v7.6.0 _layouts/tags.html 을 복사해
+# 링크 접두어만 `/tags/` -> `/ko/tags/` 로 바꿨다.
+# 파일명 규칙(2026-09-11): 영어 = 무표식, 한국어 = ko- 표식 — 무표식 tags.html 은 영문판이다.
+# 그래서 이 파일은 더 이상 "테마 오버라이드"가 아니라 독립 레이아웃이다.
+# Gemfile 이 버전을 고정하고 있으니, 테마를 올릴 때 원본과 다시 대조할 것.
+#
+# 왜 필요한가 — URL 규칙(2026-09-11: 영어 = /*, 한국어 = /ko/*)에 따라 jekyll-archives 가
+# 한국어 태그를 /ko/tags/:name/ 로 만드는데, 테마 원본은 접두어를 하드코딩해
+# /tags/<한글>/ 로 링크한다. 그 자리는 영문 태그 스텁 공간이라 존재하지 않고
+# **htmlproofer 가 283건으로 빌드를 죽인다**(2026-09-11 실제 실패).
+# 영문판은 _layouts/en-tags.html 이 담당한다.
+#
+# ⚠️ 이 주석은 **반드시 front matter 안**에 둔다. 위에 HTML 주석으로 올렸다가
+#    front matter 가 파일 첫 줄이 아니게 되어 레이아웃 상속이 끊겼고,
+#    /ko/tags/ 가 사이트 껍데기 없이 나갔다(2026-09-11). BOM 함정과 같은 부류다.
+---
+
+
+<div id="tags" class="d-flex flex-wrap mx-xl-2">
+  {% assign tags = '' | split: '' %}
+  {% for t in site.tags %}
+    {% assign tags = tags | push: t[0] %}
+  {% endfor %}
+
+  {% assign sorted_tags = tags | sort_natural %}
+
+  {% for t in sorted_tags %}
+    <div>
+      <a class="tag" href="{{ t | slugify | url_encode | prepend: '/ko/tags/' | append: '/' | relative_url }}">
+        {{ t -}}
+        <span class="text-muted">{{ site.tags[t].size }}</span>
+      </a>
+    </div>
+  {% endfor %}
+</div>

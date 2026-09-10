@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: invalid traffic
 tag: invalid traffic
 lang: en

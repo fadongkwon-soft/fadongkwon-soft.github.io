@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: kotlin
 tag: kotlin
 lang: en

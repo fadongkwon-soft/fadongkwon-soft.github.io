@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: pointer events
 tag: pointer events
 lang: en

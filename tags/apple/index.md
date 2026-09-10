@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: apple
 tag: apple
 lang: en

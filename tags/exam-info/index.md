@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: exam info
 tag: exam info
 lang: en

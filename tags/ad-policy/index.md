@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: ad policy
 tag: ad policy
 lang: en

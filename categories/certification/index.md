@@ -1,5 +1,5 @@
 ---
-layout: en-category
+layout: category
 title: Certification
 category: Certification
 lang: en

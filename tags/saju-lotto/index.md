@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: saju lotto
 tag: saju lotto
 lang: en

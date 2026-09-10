@@ -1,5 +1,5 @@
 ---
-layout: en-category
+layout: category
 title: Hangul
 category: Hangul
 lang: en

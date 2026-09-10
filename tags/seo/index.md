@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: seo
 tag: seo
 lang: en

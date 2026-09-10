@@ -137,7 +137,7 @@ script_includes:
             영문 포스트의 카테고리/태그는 인페이지 아카이브(/categories/,
             /tags/)의 앵커로 보낸다 — jekyll-archives 는 site.posts(한국어)
             에서만 하위 페이지를 만들기 때문. 앵커 id 규칙(cat-/tag- + slugify)은
-            en-categories/en-tags 레이아웃과 맞춰져 있고 htmlproofer 가 검증한다.
+            categories/tags 레이아웃(영문판)과 맞춰져 있고 htmlproofer 가 검증한다.
           {%- endcomment -%}
           {% for category in page.categories %}
             {%- if page.lang == 'en' -%}

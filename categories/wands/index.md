@@ -1,5 +1,5 @@
 ---
-layout: en-category
+layout: category
 title: Wands
 category: Wands
 lang: en

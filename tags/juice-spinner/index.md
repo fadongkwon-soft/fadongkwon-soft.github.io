@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: juice spinner
 tag: juice spinner
 lang: en

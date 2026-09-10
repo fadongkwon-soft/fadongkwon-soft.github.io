@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: question bank
 tag: question bank
 lang: en

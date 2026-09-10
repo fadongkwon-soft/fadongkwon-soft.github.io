@@ -1,5 +1,5 @@
 ---
-layout: en-category
+layout: category
 title: Episode
 category: Episode
 lang: en

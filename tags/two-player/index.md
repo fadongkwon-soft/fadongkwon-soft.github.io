@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: two player
 tag: two player
 lang: en

@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: arithmetic practice
 tag: arithmetic practice
 lang: en

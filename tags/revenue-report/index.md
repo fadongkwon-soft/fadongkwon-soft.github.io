@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: revenue report
 tag: revenue report
 lang: en

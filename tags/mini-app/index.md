@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: mini app
 tag: mini app
 lang: en

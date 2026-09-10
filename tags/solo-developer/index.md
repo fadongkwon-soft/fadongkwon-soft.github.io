@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: solo developer
 tag: solo developer
 lang: en

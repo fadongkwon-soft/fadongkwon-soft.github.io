@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: sudoku
 tag: sudoku
 lang: en

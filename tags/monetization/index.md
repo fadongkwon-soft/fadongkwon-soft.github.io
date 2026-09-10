@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: monetization
 tag: monetization
 lang: en

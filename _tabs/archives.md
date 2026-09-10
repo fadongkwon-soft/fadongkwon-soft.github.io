@@ -1,7 +1,7 @@
 ---
 title: Archives
 description: All English posts by date.
-layout: en-archives
+layout: archives
 icon: fas fa-archive
 order: 3
 lang: en

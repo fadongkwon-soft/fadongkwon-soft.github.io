@@ -1,5 +1,5 @@
 ---
-layout: en-category
+layout: category
 title: Major Arcana
 category: Major Arcana
 lang: en

@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: brain training
 tag: brain training
 lang: en

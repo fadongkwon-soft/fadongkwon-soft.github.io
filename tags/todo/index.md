@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: todo
 tag: todo
 lang: en

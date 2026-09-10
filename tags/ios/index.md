@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: ios
 tag: ios
 lang: en

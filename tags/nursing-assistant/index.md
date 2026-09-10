@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: nursing assistant
 tag: nursing assistant
 lang: en

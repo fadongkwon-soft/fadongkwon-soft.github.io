@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: court cards
 tag: court cards
 lang: en

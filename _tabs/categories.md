@@ -1,7 +1,7 @@
 ---
 title: Categories
 description: All English posts grouped by category.
-layout: en-categories
+layout: categories
 icon: fas fa-stream
 order: 4
 lang: en

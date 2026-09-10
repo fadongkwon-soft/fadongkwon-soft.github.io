@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: ecpm
 tag: ecpm
 lang: en

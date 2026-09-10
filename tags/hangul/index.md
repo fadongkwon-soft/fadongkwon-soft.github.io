@@ -1,5 +1,5 @@
 ---
-layout: en-tag
+layout: tag
 title: hangul
 tag: hangul
 lang: en
