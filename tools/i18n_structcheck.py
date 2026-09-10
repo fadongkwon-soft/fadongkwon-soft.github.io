@@ -39,6 +39,8 @@ def canon_link(u):
         return '/tarot/'
     if u == '/en/about/':
         return '/about/'
+    if u == '/en/privacy/':
+        return '/privacy/'
     if u == '/en/play/':
         return '/play/'
     return u
