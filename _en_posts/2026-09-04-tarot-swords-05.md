@@ -80,4 +80,4 @@ If you drew this card today, start by setting down the need to win the argument 
 - [King of Cups](/posts/tarot-cups-king/) — unlike the sharp-edged contest of pride in the Five of Swords, the King of Cups shows the maturity of handling emotion and responding calmly.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

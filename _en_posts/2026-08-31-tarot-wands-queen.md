@@ -55,4 +55,4 @@ A. It is not asking you to reduce the confidence itself. Reading it as a signal 
 - [King of Wands](/posts/tarot-wands-king/) — when the Queen's inner confidence is completed as outward authority and responsibility, it is the stage of the King of Wands.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

@@ -1,49 +1,54 @@
 ---
-# the default layout is 'page'
+title: About
+description: >-
+  A solo developer building small learning apps, quiz banks and tarot content after work —
+  and writing down what shipping them alone actually taught me.
 icon: fas fa-info-circle
 order: 1
-alt_url: /about/
-permalink: /ko/about/
+lang: en
+locale: en_US
+permalink: /about/
+alt_url: /ko/about/
 ---
 
 ![Fadongkwon Soft](/assets/img/about/Logo_w_text_3.png){: width="350" .normal}
 
-## 운영자 소개
+## Who runs this
 
-안녕하세요. **파동권소프트(Fadongkwon Soft)**를 운영하는 1인 개발자입니다.
+Hello. I'm the solo developer behind **Fadongkwon Soft**.
 
-본업은 소프트웨어 개발자이고, 아이 둘을 키우는 아빠입니다. 2024년 말부터 퇴근 후 시간과 주말을 이용해 혼자 앱을 만들어 출시하고 있습니다. 기획부터 개발, 디자인, 스토어 등록, 이 블로그 운영까지 전부 직접 하고 있습니다.
+Software development is my day job, and I'm a father of two. Since late 2024 I've been building and shipping apps by myself, using evenings after work and weekends. Planning, development, design, store submissions, and this blog — all of it is mine.
 
-시작한 계기는 특별하지 않습니다. 아이를 키우며 늘어나는 비용을 보다가, 시간을 들여 쌓아둘 수 있는 자산을 만들고 싶었습니다. 그래서 하나씩 만들어 출시하고, 그 과정에서 배운 것을 이 블로그에 기록하고 있습니다. 지금까지의 시행착오는 [직장인 1인 개발, 앱 8개를 출시하며 배운 것들](/ko/posts/solo-dev-8-apps/)에 정리해 두었습니다.
+There was nothing dramatic behind starting. Watching the costs of raising children climb, I wanted to build something that would accumulate value over time instead of just spending hours. So I ship them one at a time and record what I learn along the way. The mistakes so far are collected in [What I learned shipping 8 apps as a solo developer with a day job](/posts/solo-dev-8-apps/).
 
-## 이 사이트에서 다루는 것
+## What's here
 
-이 사이트는 앱 소개 페이지이자 기록용 블로그입니다. 크게 세 가지를 다룹니다.
+This site is both a home for the apps and a working notebook. Three things, mainly.
 
-**1. 타로 카드 의미 사전**
-타로 카드 78장의 의미를 한 장씩 정리하고 있습니다. 카드 그림은 직접 제작했고, 해석 역시 전통적인 라이더-웨이트 도상을 근거로 직접 작성했습니다. 전체 목록은 [타로 사전](/ko/tarot/)에서 보실 수 있습니다.
+**1. A tarot card meaning dictionary**
+I'm working through the meaning of all 78 tarot cards, one at a time. The artwork is drawn in-house, and the interpretations are written from scratch based on the traditional Rider–Waite imagery. The full list is at [Tarot Dictionary](/tarot/).
 
-**2. 학습과 시험 정보**
-아이의 한글·연산 학습을 도우며 정리한 내용과, 자격시험 준비에 필요한 제도·공부법 정보를 씁니다. 앱을 만들며 실제로 자료를 찾아본 주제들이라, 같은 것을 찾는 분께 도움이 될 만한 것들을 골라 정리합니다.
+**2. Learning and exam material**
+Notes gathered while helping my own children with Korean literacy and arithmetic, plus material on certification exams — systems, schedules, study methods. These are topics I actually had to research to build the apps, so I write up the parts likely to help someone looking for the same thing.
 
-**3. 개발 기록**
-앱을 만들고 출시하며 겪은 일을 씁니다. 스토어 심사에서 막힌 지점, 플랫폼별 정책 차이, 여러 앱을 혼자 유지하는 방법 같은 것들입니다. 국내 자료가 적은 주제일수록 자세히 적으려 합니다.
+**3. Development records**
+What happens when you build and ship apps: where store reviews rejected me, how platform policies differ, and how one person keeps a dozen apps alive. The thinner the existing material on a topic, the more detail I try to give.
 
-## 만든 앱
+## The apps
 
-아이를 위해 만든 학습 앱, 모임에서 쓰는 복불복 앱, 시험 대비 문제은행, 운세 콘텐츠 앱을 만들고 있습니다. Google Play와 앱인토스(토스 미니앱)에 올라가 있습니다.
+Learning apps built for my own kids, party apps for gatherings, exam question banks, and fortune-telling content. They're on Google Play and Apps in Toss (Toss mini apps).
 
-- **학습** — [한글 몬스터](/ko/posts/hangul-monsters/), [수학 몬스터](/ko/posts/math-monsters/)
-- **시험 대비** — [간호조무사 모의고사](/ko/posts/nursing-quiz/)
-- **게임·모임** — [반응속도 챌린지 · 기억력 카드](/ko/posts/play-minigames/), [병 돌리기](/ko/posts/spin-the-bottle/), [주스 스피너](/ko/posts/juice-spinner/)
-- **운세 콘텐츠** — [타로 운세](/ko/posts/tarot-fortune/), [운세 타로핑](/ko/posts/tarot-ping/), [사주로또](/ko/posts/saju-lotto/)
-- **플랫폼** — [앱인토스 미니앱 출시 소식](/ko/posts/apps-in-toss-launch/)
+- **Learning** — [Hangul Monsters](/posts/hangul-monsters/), [Math Monsters](/posts/math-monsters/)
+- **Exam prep** — [Nursing Assistant Mock Exam](/posts/nursing-quiz/)
+- **Games & parties** — [Reaction Challenge · Memory Cards](/posts/play-minigames/), [Spin the Bottle](/posts/spin-the-bottle/), [Juice Spinner](/posts/juice-spinner/)
+- **Fortune content** — [Tarot Fortune](/posts/tarot-fortune/), [Tarot Ping](/posts/tarot-ping/), [Saju Lotto](/posts/saju-lotto/)
+- **Platform** — [Launching on Apps in Toss](/posts/apps-in-toss-launch/)
 
-## 문의
+## Contact
 
-앱 오류 신고, 기능 제안, 협업 문의는 인스타그램 [@fadongkwon.soft](https://www.instagram.com/fadongkwon.soft/) 메시지로 받고 있습니다. 앱에서 발견한 버그는 어떤 기기에서 어떤 상황이었는지 함께 알려주시면 훨씬 빨리 고칠 수 있습니다.
+Bug reports, feature suggestions and collaboration enquiries all go through Instagram DM at [@fadongkwon.soft](https://www.instagram.com/fadongkwon.soft/). For bugs, telling me which device and what you were doing gets it fixed far faster.
 
-개인정보 처리에 관한 내용은 [개인정보처리방침](/ko/privacy/)에 정리해 두었습니다. 이 사이트와 앱은 광고 수익으로 운영됩니다.
+How personal data is handled is documented in the [privacy policy](/privacy/) (Korean). This site and the apps are funded by advertising.
 
 - - -
 

@@ -63,4 +63,4 @@ The Four of Swords reads quite differently depending on the cards set around it.
 - [Six of Cups](/posts/tarot-cups-06/) — unlike the still rest of the Four of Swords, the Six of Cups draws an emotional rest that finds its comfort inside warm memories.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

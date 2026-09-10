@@ -63,4 +63,4 @@ A. It is closer to a delay or a change of order than a collapse. It does not mea
 - [The Chariot](/posts/tarot-major-07-chariot/) — if the Chariot sets the direction by will, the Wheel is the card where circumstances outside your will set it. Read against each other, the character of each card comes out more sharply.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

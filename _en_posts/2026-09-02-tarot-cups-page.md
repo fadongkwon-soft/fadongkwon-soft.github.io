@@ -53,4 +53,4 @@ A. If the Ace of Cups is the moment feeling itself first wells up, the Page is t
 - [Knight of Cups](/posts/tarot-cups-knight/) — the Page's clumsy signal matures at the next rank into an offer made outright.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

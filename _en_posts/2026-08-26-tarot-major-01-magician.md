@@ -61,4 +61,4 @@ A. Tarot is a tool for showing what is open to you rather than declaring what a 
 - [The High Priestess](/posts/tarot-major-02-high-priestess/) — if the Magician is the power turned outward, the High Priestess is the wisdom stored inward. They are often cited as a contrasting pair.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

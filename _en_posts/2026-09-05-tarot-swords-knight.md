@@ -61,4 +61,4 @@ Where the Page is the stage of observing information and learning from it, the K
 - [King of Swords](/posts/tarot-swords-king/) — the finished stage, where the Knight's speed has been refined into principle and experience.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

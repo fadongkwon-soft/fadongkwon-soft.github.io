@@ -66,4 +66,4 @@ It means you are standing at a crossroads that matters. The advice this card giv
 
 Worth noting too, card 15, **the Devil**, is a mirror of the Lovers in composition. The same two figures, bound this time by obsession and restraint instead of a union they chose.
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

@@ -57,4 +57,4 @@ When other cards land in the same spread, the weight of the Ten of Swords shifts
 - [Ten of Cups](/posts/tarot-cups-10/) — the same number 10, but in the Cups suit it draws the exact opposite, a brimming happiness. Set beside the Ten of Swords, the contrast between the two suits stands out sharply.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

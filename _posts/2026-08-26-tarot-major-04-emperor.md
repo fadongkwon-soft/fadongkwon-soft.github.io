@@ -55,4 +55,4 @@ A. 특정 인물을 가리키기보다 나 자신의 태도나 상황 전반의 
 - [교황(The Hierophant)](/ko/posts/tarot-major-05-hierophant/) — 황제가 세속의 질서를 다스린다면, 교황은 정신적·전통적 질서를 대표합니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

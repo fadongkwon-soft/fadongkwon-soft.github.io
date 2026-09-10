@@ -59,4 +59,4 @@ Everything the Empress has to say converges on one thing. **Send back out what y
 - [The Emperor](/posts/tarot-major-04-emperor/) — the card of structure and order, the pair to the Empress's soft abundance.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

@@ -63,4 +63,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [은둔자(The Hermit)](/ko/posts/tarot-major-09-hermit/) — 은둔자의 작은 등불과 별의 빛나는 별빛은 모두 어둠 속에서 길을 밝히는 상징이라는 점에서 닮아 있습니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

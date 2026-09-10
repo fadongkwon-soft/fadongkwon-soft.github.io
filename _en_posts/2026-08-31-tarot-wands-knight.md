@@ -54,4 +54,4 @@ What the Knight of Wands advises is not to stop but to check the direction once,
 - [Queen of Wands](/posts/tarot-wands-queen/) — when the Knight's speed ripens into settled confidence, it becomes the stage of the Queen of Wands.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

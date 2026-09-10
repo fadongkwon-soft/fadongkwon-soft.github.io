@@ -67,4 +67,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [펜타클 에이스(Ace of Pentacles)](/ko/posts/tarot-pents-01/) — 소드 여왕의 명료한 판단이 펜타클 에이스의 현실적 기회와 만나면 실속 있는 결정으로 이어지기 쉽습니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

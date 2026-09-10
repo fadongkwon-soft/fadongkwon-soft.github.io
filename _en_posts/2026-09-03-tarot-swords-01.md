@@ -80,4 +80,4 @@ The reason the suit of Swords holds so many difficult pictures is that what it h
 - [Queen of Cups](/posts/tarot-cups-queen/) — where the Ace of Swords finds the answer through reason, the Queen of Cups finds it through feeling and intuition. Two different routes to a judgment, worth setting against each other.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

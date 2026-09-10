@@ -65,4 +65,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [힘(Strength)](/ko/posts/tarot-major-08-strength/) — 마르세유 전통에서 정의와 자리를 맞바꿨던 카드. 부드러운 용기와 냉정한 기준이라는 대비로 함께 보면 좋습니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

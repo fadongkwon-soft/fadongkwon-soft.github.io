@@ -61,4 +61,4 @@ A. 무산이라기보다 지연이나 순서 변경에 가깝습니다. 탑 카�
 - [전차(The Chariot)](/ko/posts/tarot-major-07-chariot/) — 전차가 의지로 방향을 정하는 카드라면, 수레바퀴는 의지 밖에서 상황이 방향을 정하는 카드입니다. 대비해서 보면 각 카드의 성격이 더 뚜렷해집니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

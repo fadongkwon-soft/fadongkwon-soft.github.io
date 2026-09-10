@@ -71,4 +71,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [태양(The Sun)](/ko/posts/tarot-major-19-sun/) — 달 바로 다음 카드. 안개 속 밤이 지나면 모든 것이 선명해지는 태양의 낮이 옵니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

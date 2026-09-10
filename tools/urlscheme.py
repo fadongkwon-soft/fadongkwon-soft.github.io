@@ -29,6 +29,31 @@
     /kids/*         아동용 앱 안내
     /assets/*       정적 파일
 
+## 파일명 규칙 (2026-09-11, URL 규칙과 같은 방향)
+
+**영어 = 무표식(기본), 한국어 = `ko-` 표식.** URL 규칙이 영어를 루트로 뒀는데 파일명이
+거꾸로면(`_tabs/en-privacy.md` 가 루트 `/privacy/` 를 서빙) 다음 세션이 반드시 헷갈린다.
+
+    _tabs/about.md            -> /about/        (영어)
+    _tabs/ko-about.md         -> /ko/about/     (한국어)
+    _includes/tarot-app-banner.html      영문 글이 쓴다
+    _includes/tarot-app-banner-ko.html   한국어 글이 쓴다
+    _includes/privacy-body.md            영문 (/privacy/)
+    _includes/privacy-body-ko.md         한국어 (/ko/privacy/)
+
+**예외 — 이름을 테마·젬이 정하는 것들.** 규칙 위반이 아니라 프레임워크 제약이다.
+
+    _layouts/tags.html         테마 오버라이드는 **이름이 테마와 같아야** 성립한다.
+    _layouts/categories.html   한국어 탭이 테마 레이아웃(layout: tags)을 쓰므로
+                               이 이름은 한국어가 가진다.
+    _layouts/en-*.html         우리가 새로 만든 영문 전용 레이아웃(site.en_posts 를
+                               읽는다). 테마에 대응물이 없어 접두어로 구분한다.
+    assets/js/data/search.json 젬이 생성하는 한국어 인덱스. 영문은 search-en.json.
+
+이 넷을 무표식/ko- 로 뒤집으려면 테마 레이아웃 3개(archives·tag·category)를 복사해
+`ko-` 로 두고 jekyll-archives 설정까지 바꿔야 한다. 오버라이드가 3개 늘어 테마 업그레이드
+때마다 재대조할 파일만 많아지고 기능 이득은 없다 — 그래서 하지 않았다.
+
 ## 스토어에 등록된 URL
 
 `/privacy/` 는 Play·토스 콘솔에 개인정보처리방침으로 등록돼 있다. 이 전환에서도
@@ -150,13 +175,14 @@ def migrate_en_posts(apply):
 
 
 # 탭: (파일명, 영문인가, URL 이름)
+# 파일명 규칙(2026-09-11): **영어 = 무표식(기본), 한국어 = ko- 표식** — URL 규칙과 같은 방향.
 TABS = [
-    ('about.md', False, 'about'), ('en-about.md', True, 'about'),
-    ('tarot.md', False, 'tarot'), ('en-tarot.md', True, 'tarot'),
-    ('archives.md', False, 'archives'), ('en-archives.md', True, 'archives'),
-    ('categories.md', False, 'categories'), ('en-categories.md', True, 'categories'),
-    ('tags.md', False, 'tags'), ('en-tags.md', True, 'tags'),
-    ('privacy.md', False, 'privacy'), ('en-privacy.md', True, 'privacy'),
+    ('ko-about.md', False, 'about'), ('about.md', True, 'about'),
+    ('ko-tarot.md', False, 'tarot'), ('tarot.md', True, 'tarot'),
+    ('ko-archives.md', False, 'archives'), ('archives.md', True, 'archives'),
+    ('ko-categories.md', False, 'categories'), ('categories.md', True, 'categories'),
+    ('ko-tags.md', False, 'tags'), ('tags.md', True, 'tags'),
+    ('ko-privacy.md', False, 'privacy'), ('privacy.md', True, 'privacy'),
 ]
 
 

@@ -59,4 +59,4 @@ What the Hermit offers comes down to one line. **Before you look for the answer 
 - [Wheel of Fortune](/posts/tarot-major-10-wheel/) — once the solitary sorting-out is finished, a new turning point arrives with the Wheel of Fortune.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

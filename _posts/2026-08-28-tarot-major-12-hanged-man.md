@@ -71,4 +71,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [죽음(Death)](/ko/posts/tarot-major-13-death/) — 매달린 사람 바로 다음 카드. 충분히 멈춰 바라보았다면, 이제는 매듭짓고 나아갈 차례입니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

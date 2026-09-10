@@ -70,4 +70,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [은둔자(The Hermit)](/ko/posts/tarot-major-09-hermit/) — 바깥의 사자를 다독인 다음에는, 은둔자처럼 홀로 자신을 들여다볼 차례가 옵니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

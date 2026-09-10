@@ -78,4 +78,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [컵 여왕(Queen of Cups)](/ko/posts/tarot-cups-queen/) — 소드 에이스가 이성으로 답을 찾는 카드라면, 컵 여왕은 감정과 직관으로 답을 찾는 카드입니다. 판단의 두 가지 다른 방식을 대비해서 보면 좋습니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

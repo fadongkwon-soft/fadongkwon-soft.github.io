@@ -61,4 +61,4 @@ A. 둘 다 큰 변화를 뜻하지만 결이 다릅니다. 죽음은 스스로 �
 - [별(The Star)](/ko/posts/tarot-major-17-star/) — 탑 바로 다음 카드. 무너진 자리에는 별이 그리는 회복과 희망이 뒤따릅니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

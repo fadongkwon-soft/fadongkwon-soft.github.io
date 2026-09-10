@@ -56,4 +56,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [완드 에이스(Ace of Wands)](/ko/posts/tarot-wands-01/) — 메이저 아르카나가 세계에서 한 바퀴를 다 돌고 나면, 카드덱은 다시 마이너 아르카나의 첫 장인 완드 에이스로 돌아가 새로운 불씨를 지핍니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

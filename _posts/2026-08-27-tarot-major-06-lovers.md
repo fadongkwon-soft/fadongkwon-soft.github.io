@@ -64,4 +64,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 참고로 15번 **악마(The Devil)**는 연인 카드와 구도가 닮은 거울 카드입니다. 같은 두 사람이 자발적 결합 대신 집착과 속박으로 묶여 있는 모습이죠.
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

@@ -70,4 +70,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [소드 에이스(Ace of Swords)](/ko/posts/tarot-swords-01/) — 감정으로 헤아리는 컵 여왕과 달리, 소드 에이스는 명료한 사고로 상황을 꿰뚫어 봅니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

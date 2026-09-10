@@ -53,4 +53,4 @@ A. 자신감 자체를 줄이라는 뜻은 아닙니다. 그 자신감이 남과
 - [완드 왕(King of Wands)](/ko/posts/tarot-wands-king/) — 여왕의 내면적 자신감이 외적인 권위와 책임으로 완성되면 완드 왕의 단계입니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

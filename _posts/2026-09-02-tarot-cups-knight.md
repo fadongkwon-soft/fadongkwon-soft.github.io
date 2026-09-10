@@ -55,4 +55,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [완드 기사(Knight of Wands)](/ko/posts/tarot-wands-knight/) — 같은 기사라도 완드는 저돌적인 행동파, 컵은 다정한 낭만파로 결이 다릅니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

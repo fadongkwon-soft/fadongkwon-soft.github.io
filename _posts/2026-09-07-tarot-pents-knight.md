@@ -58,4 +58,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [펜타클 여왕(Queen of Pentacles)](/ko/posts/tarot-pents-queen/) — 기사의 우직한 실행이 안으로 무르익어 성숙해지면, 여왕의 여유로운 돌봄으로 이어집니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

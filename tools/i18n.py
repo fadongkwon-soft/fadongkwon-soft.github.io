@@ -38,7 +38,8 @@ LINK_MAP = [
     (re.compile(r'\(/ko/play/'), r'(/play/'),
     (re.compile(r'\(/ko/privacy/'), r'(/privacy/'),
 ]
-INCLUDE_MAP = [('tarot-app-banner.html', 'tarot-app-banner-en.html')]
+# 번역본이 쓸 include 이름. 파일명 규칙(2026-09-11): 영어 = 무표식, 한국어 = ko- 표식.
+INCLUDE_MAP = [('tarot-app-banner-ko.html', 'tarot-app-banner.html')]
 
 # 앵커 텍스트 통일. 78장이 같은 허브를 가리키는데 배치마다 표기가 갈렸다
 # (`Tarot card meanings - all 78 cards` / 대문자형 / `78 tarot card meanings dictionary` 등).
@@ -583,12 +584,12 @@ def cmd_scaffold():
     # ⚠️ 2026-08-29 재편 이후: 루트(/)가 영문 홈, 한국어 홈은 /ko/ 다.
     for path, alt in [('index.html', '/ko/'),
                       ('ko/index.html', '/'),
-                      ('_tabs/tarot.md', '/tarot/'),
-                      ('_tabs/about.md', '/about/'),
-                      ('_tabs/archives.md', '/archives/'),
-                      ('_tabs/categories.md', '/categories/'),
-                      ('_tabs/tags.md', '/tags/'),
-                      ('_tabs/privacy.md', '/privacy/'),
+                      ('_tabs/ko-tarot.md', '/tarot/'),
+                      ('_tabs/ko-about.md', '/about/'),
+                      ('_tabs/ko-archives.md', '/archives/'),
+                      ('_tabs/ko-categories.md', '/categories/'),
+                      ('_tabs/ko-tags.md', '/tags/'),
+                      ('_tabs/ko-privacy.md', '/privacy/'),
                       ('ko/play/index.md', '/play/')]:
         p = os.path.join(ROOT, path)
         s = io.open(p, encoding='utf-8').read()
@@ -756,8 +757,10 @@ def cmd_verify():
         if hangul:
             warnings.append('%s(en): 본문 한글 %d개 - %s'
                             % (base, len(hangul), ' '.join(hangul[:6])))
-        if 'tarot-app-banner.html' in body:
-            problems.append(base + '(en): 한국어 배너 include 가 남아 있음')
+        # 파일명 규칙(2026-09-11): 영어 = 무표식, 한국어 = ko- 표식.
+        # 영문 글에 한국어 배너(-ko)가 남아 있으면 번역 단계에서 안 바뀐 것이다.
+        if 'tarot-app-banner-ko.html' in body:
+            problems.append(base + '(en): 한국어 배너 include(-ko) 가 남아 있음')
         check_links(body, base + '(en)')
 
     missing = sorted(set(ko) - set(os.path.basename(p)[:-3][11:] for p in files))

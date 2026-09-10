@@ -59,4 +59,4 @@ A. There is no need to conclude that. The card says less about someone's underly
 - [Two of Swords](/posts/tarot-swords-02/) — where the King of Cups has integrated feeling skillfully, the Two of Swords cannot face it and puts the decision off.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

@@ -57,4 +57,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [황제(The Emperor)](/ko/posts/tarot-major-04-emperor/) — 여황제의 부드러운 풍요와 짝을 이루는, 체계와 질서의 카드입니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

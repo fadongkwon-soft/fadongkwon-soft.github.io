@@ -51,4 +51,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [펜타클 왕(King of Pentacles)](/ko/posts/tarot-pents-king/) — 여왕의 내적 돌봄과 짝을 이루는 카드로, 같은 성숙이 바깥을 향한 권위와 책임으로 확장된 모습입니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

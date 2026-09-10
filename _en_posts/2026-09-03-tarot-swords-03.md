@@ -59,4 +59,4 @@ It is more accurate to read it as recovery in progress than as something finishe
 - [Five of Cups](/posts/tarot-cups-05/) — the same loss, but the Three of Swords is the wound of a truth taken in by the head, while the Five of Cups is closer to sadness felt in the chest.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

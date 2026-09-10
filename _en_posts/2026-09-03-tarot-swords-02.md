@@ -66,4 +66,4 @@ The advice the Two of Swords offers is simple. **Wait for perfect information an
 - [Seven of Cups](/posts/tarot-cups-07/) — both stall a decision, but the Two of Swords hesitates while weighing the options rationally, and the Seven of Cups loses its way among too many fantasies.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

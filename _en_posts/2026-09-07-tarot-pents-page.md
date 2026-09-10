@@ -72,4 +72,4 @@ If the Ace of Pentacles is a seed not yet planted, the Page of Pentacles is the 
 - [Knight of Pentacles](/posts/tarot-pents-knight/) — the next stage of maturity, past learning and into steady execution.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

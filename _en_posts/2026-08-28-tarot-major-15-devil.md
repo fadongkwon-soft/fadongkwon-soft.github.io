@@ -54,4 +54,4 @@ The question the Devil really asks is not "what is bad" but "what am I putting a
 - [Temperance](/posts/tarot-major-14-temperance/) — the card right before the Devil. The moment balance breaks, Temperance turns into the Devil.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

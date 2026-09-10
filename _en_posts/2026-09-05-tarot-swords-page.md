@@ -73,4 +73,4 @@ Today is a good day to fill with observation and questions rather than conclusio
 - [Two of Pentacles](/posts/tarot-pents-02/) — the Page of Swords' information gathering meeting the Two of Pentacles' practical sense of balance is a real help to careful judgment.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

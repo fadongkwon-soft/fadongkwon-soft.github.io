@@ -64,4 +64,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [여사제(The High Priestess)](/ko/posts/tarot-major-02-high-priestess/) — 같은 지혜라도 여사제는 개인의 직관, 교황은 제도화된 가르침이라는 점에서 대비됩니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

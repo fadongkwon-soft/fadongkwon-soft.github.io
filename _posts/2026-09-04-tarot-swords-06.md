@@ -66,4 +66,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [컵 시종(Page of Cups)](/ko/posts/tarot-cups-page/) — 소드 6이 힘든 곳을 벗어나는 이동이라면, 컵 시종은 그 이후에 다시 열리는 순수한 마음의 시작을 그립니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

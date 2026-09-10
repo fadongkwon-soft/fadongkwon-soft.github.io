@@ -73,4 +73,4 @@ Today is a good day to stop for a moment and look differently rather than force 
 - [Death](/posts/tarot-major-13-death/) — the card right after the Hanged Man. Once you have looked long enough, it is time to close things out and move on.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

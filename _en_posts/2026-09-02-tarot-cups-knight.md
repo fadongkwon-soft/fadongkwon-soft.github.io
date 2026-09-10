@@ -57,4 +57,4 @@ The Knight of Cups is a card whose impression shifts a great deal with the cards
 - [Knight of Wands](/posts/tarot-wands-knight/) — the same rank, a different grain. Wands is the headlong doer, Cups the warm romantic.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

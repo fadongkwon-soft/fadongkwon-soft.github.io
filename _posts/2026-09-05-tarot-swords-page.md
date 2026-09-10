@@ -71,4 +71,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [펜타클 2(Two of Pentacles)](/ko/posts/tarot-pents-02/) — 소드 시종의 정보 수집과 펜타클 2의 현실적 균형 감각이 만나면 신중한 판단에 큰 도움이 됩니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

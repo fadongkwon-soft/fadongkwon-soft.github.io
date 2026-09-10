@@ -78,4 +78,4 @@ The reason the Seven of Swords gets misread so often is that the distance betwee
 - [Knight of Cups](/posts/tarot-cups-knight/) — unlike the Knight of Cups, who charges straight in on feeling, the Seven of Swords takes a detour calculated with the head.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

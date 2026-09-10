@@ -67,4 +67,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [악마(The Devil)](/ko/posts/tarot-major-15-devil/) — 절제 바로 다음 카드. 균형이 무너져 한쪽으로 완전히 쏠리면 악마 카드의 얽매임으로 이어집니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

@@ -63,4 +63,4 @@ A. Both mean big change, but the texture differs. Death is closer to a clean-up 
 - [The Star](/posts/tarot-major-17-star/) — the card right after the Tower. Where things fell, the recovery and hope the Star draws follow.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

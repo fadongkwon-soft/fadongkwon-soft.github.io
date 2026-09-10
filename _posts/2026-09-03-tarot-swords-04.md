@@ -61,4 +61,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [컵 6(Six of Cups)](/ko/posts/tarot-cups-06/) — 소드 4의 정적인 휴식과 달리, 컵 6은 따뜻한 추억 속에서 위안을 얻는 정서적 쉼을 그립니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

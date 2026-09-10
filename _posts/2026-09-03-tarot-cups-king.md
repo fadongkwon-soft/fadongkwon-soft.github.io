@@ -57,4 +57,4 @@ A. 그렇게 단정할 필요는 없습니다. 이 카드는 그 사람의 본�
 - [소드 2(Two of Swords)](/ko/posts/tarot-swords-02/) — 컵 왕이 감정을 능숙하게 통합한 상태라면, 소드 2는 감정을 마주하지 못해 판단을 미루는 상태입니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

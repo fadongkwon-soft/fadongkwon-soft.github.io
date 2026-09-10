@@ -79,4 +79,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 메이저 아르카나 21번 **세계(The World)**는 바보가 떠난 여정의 종착지입니다. 0번과 21번은 타로 여정의 처음과 끝으로 짝을 이루죠.
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

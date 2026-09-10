@@ -73,4 +73,4 @@ It is more accurate to read it as a signal that you are not quite ready to leave
 - [Page of Cups](/posts/tarot-cups-page/) — if the Six of Swords is the passage out of a hard place, the Page of Cups draws the pure new opening of the heart that follows it.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

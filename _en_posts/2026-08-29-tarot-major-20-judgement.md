@@ -74,4 +74,4 @@ There is one more place where Judgement is easy to misread — taking the card a
 - [The World](/posts/tarot-major-21-world/) — the card right after Judgement. Once the answer has been given, a cycle can finally close all the way.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

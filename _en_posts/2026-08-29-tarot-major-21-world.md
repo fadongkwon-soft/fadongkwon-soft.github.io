@@ -58,4 +58,4 @@ The advice the World card gives across every situation is this: the closer you a
 - [Ace of Wands](/posts/tarot-wands-01/) — once the Major Arcana has come full circle in the World, the deck returns to the first card of the Minor Arcana, the Ace of Wands, and lights a new spark.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

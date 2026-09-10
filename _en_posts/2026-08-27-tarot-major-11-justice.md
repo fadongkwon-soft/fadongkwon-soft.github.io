@@ -67,4 +67,4 @@ When **the Wheel of Fortune** appears next to Justice, the reading narrows from 
 - [Strength](/posts/tarot-major-08-strength/) — the card that swapped places with Justice in the Marseille tradition. Worth reading together for the contrast between gentle courage and a cool standard.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

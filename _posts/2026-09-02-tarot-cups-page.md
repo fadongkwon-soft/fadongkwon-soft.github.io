@@ -51,4 +51,4 @@ A. 컵 에이스가 감정 그 자체가 처음 샘솟는 순간이라면, 컵 �
 - [컵 기사(Knight of Cups)](/ko/posts/tarot-cups-knight/) — 시종의 서툰 신호가 다음 단계에서는 적극적인 제안으로 성숙합니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

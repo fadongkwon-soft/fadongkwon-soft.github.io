@@ -68,4 +68,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [세계(The World)](/ko/posts/tarot-major-21-world/) — 심판 바로 다음 카드. 응답을 마치고 나면 비로소 하나의 사이클이 완전히 닫힙니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

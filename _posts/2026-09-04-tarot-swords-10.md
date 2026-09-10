@@ -55,4 +55,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [컵 10(Ten of Cups)](/ko/posts/tarot-cups-10/) — 같은 숫자 10이지만 컵 수트에서는 정반대로 충만한 행복을 그립니다. 소드 10과 나란히 놓고 보면 두 수트의 대비가 뚜렷해집니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

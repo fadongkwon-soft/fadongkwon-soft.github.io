@@ -72,4 +72,4 @@ Read court cards as stages of maturity and the Page can look like the lowest sea
 - [Knight of Wands](/posts/tarot-wands-knight/) — when the Page's curiosity turns into action, it becomes the next stage, the Knight of Wands.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

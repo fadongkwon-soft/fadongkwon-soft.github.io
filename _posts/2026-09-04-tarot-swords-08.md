@@ -57,4 +57,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [소드 9(Nine of Swords)](/ko/posts/tarot-swords-09/) — 눈가리개를 걷어내지 못한 채 시간이 더 흐르면 소드 9의 불안으로 이어지기 쉽습니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

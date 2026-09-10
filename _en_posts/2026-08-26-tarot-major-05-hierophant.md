@@ -66,4 +66,4 @@ The Hierophant is also a card whose meaning splits sharply depending on what it 
 - [The High Priestess](/posts/tarot-major-02-high-priestess/) — the same wisdom, contrasted: the High Priestess as personal intuition, the Hierophant as institutionalized teaching.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

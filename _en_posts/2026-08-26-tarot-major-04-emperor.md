@@ -57,4 +57,4 @@ A. More often it means your own attitude or a general rigidity in the situation 
 - [The Hierophant](/posts/tarot-major-05-hierophant/) — if the Emperor governs worldly order, the Hierophant represents spiritual and traditional order.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

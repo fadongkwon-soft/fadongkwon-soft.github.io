@@ -55,4 +55,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [소드 기사(Knight of Swords)](/ko/posts/tarot-swords-knight/) — 왕이 지나온 과거의 자리로, 원칙보다 속도가 앞서던 시기를 보여줍니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

@@ -62,4 +62,4 @@ If the Queen of Wands appears beside the King of Wands, outward decisiveness and
 - [Queen of Wands](/posts/tarot-wands-queen/) — the same fiery authority splits two ways, the Queen governing within, the King deciding outward.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

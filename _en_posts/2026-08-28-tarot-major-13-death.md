@@ -73,4 +73,4 @@ People say there are no bad cards in tarot, and that is especially true of Death
 - [The Hanged Man](/posts/tarot-major-12-hanged-man/) — the card right before Death. When the time for stopping and looking is over, the time for tying things off arrives.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

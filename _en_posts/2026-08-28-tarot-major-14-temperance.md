@@ -69,4 +69,4 @@ Temperance is not a showy card. It draws no dramatic event and no intense emotio
 - [The Devil](/posts/tarot-major-15-devil/) — the card right after Temperance. When balance breaks and everything tips to one side, it leads into the entanglement of the Devil.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

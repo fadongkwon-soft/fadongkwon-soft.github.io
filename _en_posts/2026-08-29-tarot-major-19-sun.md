@@ -64,4 +64,4 @@ A reversal does not announce misfortune. The strength of the light is unchanged;
 
 The cards that follow, 20 **Judgement** and 21 **The World**, are the ones that finish off what the Sun lit up. After the brightness, decision and completion are waiting.
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

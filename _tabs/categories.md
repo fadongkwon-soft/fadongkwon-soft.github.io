@@ -1,7 +1,11 @@
 ---
-layout: categories
+title: Categories
+description: All English posts grouped by category.
+layout: en-categories
 icon: fas fa-stream
 order: 4
-alt_url: /categories/
-permalink: /ko/categories/
+lang: en
+locale: en_US
+permalink: /categories/
+alt_url: /ko/categories/
 ---

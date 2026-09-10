@@ -72,4 +72,4 @@ What sets Strength apart from other cards about overcoming is that it never trie
 - [The Hermit](/posts/tarot-major-09-hermit/) — after soothing the lion outside, it becomes time to look inward alone, the way the Hermit does.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

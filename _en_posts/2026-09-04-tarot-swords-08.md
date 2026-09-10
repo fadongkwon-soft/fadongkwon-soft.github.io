@@ -59,4 +59,4 @@ What the Eight of Swords asks for is not a grand escape but a very small check: 
 - [Nine of Swords](/posts/tarot-swords-09/) — if more time passes with the blindfold still on, it leads easily into the anxiety of the Nine of Swords.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

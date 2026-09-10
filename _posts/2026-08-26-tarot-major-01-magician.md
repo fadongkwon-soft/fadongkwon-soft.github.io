@@ -59,4 +59,4 @@ A. 타로는 특정 인물의 속마음을 단정하기보다 나에게 열려 �
 - [여사제(The High Priestess)](/ko/posts/tarot-major-02-high-priestess/) — 마법사가 밖으로 드러내는 힘이라면, 여사제는 안으로 쌓아두는 지혜입니다. 대조되는 짝으로 자주 언급됩니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

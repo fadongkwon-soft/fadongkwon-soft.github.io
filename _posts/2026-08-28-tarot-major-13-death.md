@@ -71,4 +71,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [매달린 사람(The Hanged Man)](/ko/posts/tarot-major-12-hanged-man/) — 죽음 바로 앞 카드. 멈춰서 바라보는 시간이 끝나면 매듭짓는 시간이 옵니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

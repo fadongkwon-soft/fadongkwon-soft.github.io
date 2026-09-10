@@ -60,4 +60,4 @@ Do not measure your pace against anyone else's. What the Knight of Pentacles pro
 - [Queen of Pentacles](/posts/tarot-pents-queen/) — when the knight's dogged execution ripens inward and matures, it leads on to the queen's unhurried care.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

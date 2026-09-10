@@ -1,48 +1,62 @@
 ---
-title: 타로 사전
+title: Tarot Dictionary
+description: >-
+  The meaning of all 78 tarot cards — upright and reversed, plus readings for love,
+  career, money and health. Original artwork and interpretations from the Rider–Waite imagery.
 icon: fas fa-star
 order: 2
-alt_url: /tarot/
-permalink: /ko/tarot/
+lang: en
+locale: en_US
+permalink: /tarot/
+alt_url: /ko/tarot/
 ---
 
-타로 카드 78장의 의미를 한 장씩 정리하는 사전입니다. 각 카드마다 그림에 담긴 상징, 정방향과 역방향의 의미, 그리고 연애·직장·금전·건강 등 상황별 해석을 함께 다룹니다.
+A dictionary working through the meaning of all 78 tarot cards, one card at a time. Each entry covers the symbols in the picture, the upright and reversed meanings, and how the card reads in specific situations — love, career, money, health.
 
-카드 그림은 모두 직접 제작한 것이고, 해석 역시 전통적인 라이더-웨이트 도상을 근거로 직접 작성했습니다. 78장 전체가 공개되어 있어, 아래 목록에서 원하는 카드를 바로 찾아볼 수 있습니다.
+The artwork is all drawn in-house, and the interpretations are written from scratch based on the traditional Rider–Waite imagery. All 78 cards are published, so you can jump straight to any card in the list below.
 
-> 이곳의 해석은 오락과 자기 성찰을 위한 참고용입니다. 투자·건강·법률 등 중요한 결정은 반드시 전문가와 상의하세요.
+> These readings are for entertainment and self-reflection. For important decisions about money, health, or legal matters, always consult a qualified professional.
 {: .prompt-warning }
 
-{% assign all_tarot = site.categories['Tarot'] %}
-{% if all_tarot %}**전체 {{ all_tarot.size }}장 수록**{% endif %}
+{%- comment -%}
+  ⚠️ 컬렉션은 `_posts` 와 달리 미래 날짜 문서가 site.en_posts 에 그대로 남는다.
+  (Jekyll 4.3: PostReader#read_publishable 은 읽을 때 걸러내지만,
+   Collection#read_document 는 `published:` 만 보고 future 는 write? 단계에서만 본다)
+  따라서 목록에서 날짜로 직접 걸러야 한다 — 안 그러면 아직 생성되지 않은 페이지를
+  링크해 htmlproofer 가 빌드를 실패시킨다.
+  영문 글의 date 는 한국어 원문과 동일하게 두므로 양쪽이 같은 날 함께 공개된다.
+{%- endcomment -%}
+{% assign live_en = site.en_posts | where_exp: 'p', 'p.date <= site.time' %}
+{% assign all_tarot = live_en | where_exp: 'p', 'p.categories contains "Tarot"' %}
+{% if all_tarot.size > 0 %}**All {{ all_tarot.size }} cards included**{% endif %}
 
 {% assign groups = "Major Arcana|Wands|Cups|Swords|Pentacles" | split: "|" %}
-{% assign labels = "메이저 아르카나 (22장)|완드 Wands · 불 (14장)|컵 Cups · 물 (14장)|소드 Swords · 공기 (14장)|펜타클 Pentacles · 흙 (14장)" | split: "|" %}
-{% assign notes = "인생의 큰 흐름과 전환점을 다루는 22장입니다. 바보(0번)에서 시작해 세계(21번)로 끝나는 하나의 여정으로 읽습니다.|열정과 의지, 행동과 확장을 다룹니다. 일을 벌이고 밀어붙이는 힘에 관한 수트입니다.|감정과 관계, 사랑과 직관을 다룹니다. 마음속에서 일어나는 일에 관한 수트입니다.|생각과 판단, 소통과 갈등을 다룹니다. 머리로 정리해야 할 문제에 관한 수트입니다.|현실과 물질, 금전과 노동의 결실을 다룹니다. 손에 잡히는 결과에 관한 수트입니다." | split: "|" %}
+{% assign labels = "Major Arcana (22 cards)|Wands · Fire (14 cards)|Cups · Water (14 cards)|Swords · Air (14 cards)|Pentacles · Earth (14 cards)" | split: "|" %}
+{% assign notes = "The 22 cards that deal with the large movements and turning points of a life. Read as a single journey from The Fool (0) to The World (21).|Passion and will, action and expansion. The suit of starting things and pushing them forward.|Emotion and relationship, love and intuition. The suit of what happens inside the heart.|Thought and judgement, communication and conflict. The suit of problems you have to think through.|The material world — money, work, and the results you can hold in your hand." | split: "|" %}
 
 {% for g in groups %}
 {% assign gi = forloop.index0 %}
-{% assign group_posts = site.categories[g] %}
-{% if group_posts %}
+{% assign group_posts = live_en | where_exp: 'p', 'p.categories contains g' %}
+{% if group_posts.size > 0 %}
 {% assign items = group_posts | sort: 'date' %}
 ## {{ labels[gi] }}
 
 {{ notes[gi] }}
 
 {% for p in items %}
-{% assign nm = p.title | split: ' 카드 의미' | first %}
+{% assign nm = p.card_name | default: p.title %}
 {% assign sub = p.title | split: '— ' | last %}
 - [{{ nm }}]({{ p.url }}){% if sub != p.title %} — {{ sub }}{% endif %}
 {% endfor %}
 {% endif %}
 {% endfor %}
 
-## 타로를 처음 본다면
+## New to tarot?
 
-78장은 크게 두 묶음으로 나뉩니다. **메이저 아르카나** 22장은 인생의 큰 국면을 다루고, **마이너 아르카나** 56장은 일상의 구체적인 상황을 다룹니다. 마이너는 다시 네 개의 수트로 나뉘는데, 각 수트가 담당하는 영역이 다릅니다. 완드는 하고 싶은 일, 컵은 느끼는 마음, 소드는 생각과 판단, 펜타클은 손에 잡히는 현실입니다.
+The 78 cards split into two groups. The **22 Major Arcana** deal with the big phases of a life; the **56 Minor Arcana** deal with concrete, everyday situations. The Minors divide again into four suits, and each suit owns a different territory: Wands is what you want to do, Cups is what you feel, Swords is what you think and judge, Pentacles is what you can actually touch.
 
-같은 질문에 완드가 나오는 것과 펜타클이 나오는 것은 답의 차원이 다릅니다. "이직해도 될까?"라는 질문에 완드가 나오면 열의와 추진력을 묻는 것이고, 펜타클이 나오면 조건과 안정성을 묻는 것이죠. 카드 하나하나의 뜻을 외우기보다 수트가 어느 영역을 가리키는지 먼저 익히면 훨씬 빨리 읽힙니다.
+Drawing Wands for a question is a different kind of answer than drawing Pentacles. Ask "should I change jobs?" and a Wands card is asking about your drive and appetite; a Pentacles card is asking about terms and stability. Rather than memorising 78 individual meanings, learn which territory each suit points at first — the cards get much easier to read.
 
-숫자도 함께 봅니다. 에이스는 씨앗, 2는 균형과 선택, 3은 성장, 4는 안정, 5는 갈등, 6은 회복, 7은 시험, 8은 숙련, 9는 성취 직전, 10은 완성 또는 과잉입니다. 여기에 수트의 영역을 겹치면 대략의 의미가 나옵니다. 예를 들어 펜타클 5는 "현실·물질 영역의 결핍"이 됩니다.
+Numbers matter too. Ace is the seed, 2 is balance and choice, 3 is growth, 4 is stability, 5 is conflict, 6 is recovery, 7 is testing, 8 is mastery, 9 is just before completion, 10 is completion or excess. Overlay the number on the suit's territory and you get a rough meaning: Five of Pentacles becomes "lack in the material world."
 
 {% include tarot-app-banner.html %}

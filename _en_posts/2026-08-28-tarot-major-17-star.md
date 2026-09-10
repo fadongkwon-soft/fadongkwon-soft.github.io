@@ -65,4 +65,4 @@ If the **Tower** appears next to the Star, you can read it with confidence as a 
 - [The Hermit](/posts/tarot-major-09-hermit/) — the Hermit's small lantern and the Star's shining light are alike in that both are symbols of lighting the way through darkness.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

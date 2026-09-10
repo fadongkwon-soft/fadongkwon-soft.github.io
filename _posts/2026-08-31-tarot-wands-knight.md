@@ -52,4 +52,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [완드 여왕(Queen of Wands)](/ko/posts/tarot-wands-queen/) — 기사의 속도가 안정된 자신감으로 무르익으면 완드 여왕의 단계가 됩니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

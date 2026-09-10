@@ -74,4 +74,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [컵 왕(King of Cups)](/ko/posts/tarot-cups-king/) — 소드 5의 날 선 자존심 다툼과 달리, 컵 왕은 감정을 다스리며 침착하게 대응하는 성숙함을 보여줍니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

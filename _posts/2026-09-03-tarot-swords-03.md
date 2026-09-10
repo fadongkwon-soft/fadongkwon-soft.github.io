@@ -57,4 +57,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [컵 5(Five of Cups)](/ko/posts/tarot-cups-05/) — 같은 상실이라도 소드 3은 머리로 받아들이는 진실의 상처이고, 컵 5는 가슴으로 느끼는 슬픔에 가깝습니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

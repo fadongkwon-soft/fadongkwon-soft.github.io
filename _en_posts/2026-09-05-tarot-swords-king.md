@@ -57,4 +57,4 @@ The authority the King of Swords holds does not come from raising his voice. It 
 - [Knight of Swords](/posts/tarot-swords-knight/) — the seat in the King's past, showing the period when speed still ran ahead of principle.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

@@ -111,7 +111,9 @@ def check_en_tag_pages():
 
 def canon_liquid(t):
     """fixup 이 바꾼 영문 배너 include 를 한국어 원문 형태로 되돌린다."""
-    return t.replace('tarot-app-banner-en.html', 'tarot-app-banner.html')
+    # 파일명 규칙(2026-09-11): 영어 = 무표식, 한국어 = ko- 표식.
+    # 비교 기준은 한국어 원문 형태(-ko)로 맞춘다.
+    return t.replace('tarot-app-banner.html', 'tarot-app-banner-ko.html')
 
 
 def profile(body):

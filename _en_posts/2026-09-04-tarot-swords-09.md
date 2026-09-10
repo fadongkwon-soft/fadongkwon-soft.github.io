@@ -55,4 +55,4 @@ It is more accurate to say the worry returns to a realistic size than that it va
 - [Ten of Swords](/posts/tarot-swords-10/) — the next seat, where the anxiety of the Nine of Swords is tied off as an actual event.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

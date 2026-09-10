@@ -74,4 +74,4 @@ People new to tarot readings often find the High Priestess frustrating. Other ca
 - [The Empress](/posts/tarot-major-03-empress/) — the card immediately after. The wisdom that faced inward emerges in the Empress as abundant fruit.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

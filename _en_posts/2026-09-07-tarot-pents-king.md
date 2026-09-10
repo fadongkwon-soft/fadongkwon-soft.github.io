@@ -66,4 +66,4 @@ The grain of that "completion" changes with whichever card the King of Pentacles
 
 From the Ace's single coin to the throne, the Pentacles suit turns out to have been a journey asking not what you have but how you handle what you have. That this card sits in the last seat of the 78 looks, then, less like coincidence than like a fitting ending.
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

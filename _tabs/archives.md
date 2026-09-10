@@ -1,7 +1,11 @@
 ---
-layout: archives
+title: Archives
+description: All English posts by date.
+layout: en-archives
 icon: fas fa-archive
 order: 3
-alt_url: /archives/
-permalink: /ko/archives/
+lang: en
+locale: en_US
+permalink: /archives/
+alt_url: /ko/archives/
 ---

@@ -69,4 +69,4 @@ The butterfly ornament on the throne is worth remembering. A butterfly only gets
 - [Ace of Pentacles](/posts/tarot-pents-01/) — the Queen of Swords' clear judgment meeting the Ace of Pentacles' practical opportunity tends to lead to a decision with real substance.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

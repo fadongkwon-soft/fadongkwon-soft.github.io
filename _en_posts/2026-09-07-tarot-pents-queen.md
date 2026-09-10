@@ -53,4 +53,4 @@ Where the woman in the Nine of Pentacles is quietly enjoying a harvest of her ow
 - [King of Pentacles](/posts/tarot-pents-king/) — the card that pairs with the queen's inward care, the same maturity widened out into outward authority and responsibility.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

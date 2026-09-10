@@ -77,4 +77,4 @@ Today is a good day to watch things drift along blurry for a while instead of st
 - [The Sun](/posts/tarot-major-19-sun/) — the card right after the Moon. Once the foggy night passes, the daylight of the Sun makes everything sharp.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

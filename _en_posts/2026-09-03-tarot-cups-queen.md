@@ -76,4 +76,4 @@ Today is a good day to listen a little more closely to the people around you. It
 - [Ace of Swords](/posts/tarot-swords-01/) — where the Queen of Cups reads a situation through feeling, the Ace of Swords cuts through it with clear thought.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

@@ -60,4 +60,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 - [완드 여왕(Queen of Wands)](/ko/posts/tarot-wands-queen/) — 같은 불의 권위라도 여왕은 내면의 다스림, 왕은 외부를 향한 결단으로 갈립니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

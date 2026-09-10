@@ -85,4 +85,4 @@ Today is a good day to set off somewhere new with a light step. Try only the "fi
 
 Major Arcana 21, **The World**, is where the journey the Fool set out on arrives. Cards 0 and 21 pair up as the first and last stops of the tarot journey.
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

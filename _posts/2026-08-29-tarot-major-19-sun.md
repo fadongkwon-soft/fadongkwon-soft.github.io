@@ -62,4 +62,4 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 이어지는 20번 **심판(Judgement)**과 21번 **세계(The World)**는 태양이 비춘 성취를 마무리 짓는 카드들입니다. 밝음 다음에는 결단과 완성이 기다리고 있습니다.
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}

@@ -61,4 +61,4 @@ A. The heart of this card is not speed itself but whether the direction is clear
 - [Strength](/posts/tarot-major-08-strength/) — both are about mastery, but the Chariot is drive aimed outward and Strength is gentle patience aimed inward.
 - [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
-{% include tarot-app-banner-en.html %}
+{% include tarot-app-banner.html %}

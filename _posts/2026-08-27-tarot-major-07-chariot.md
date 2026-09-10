@@ -59,4 +59,4 @@ A. 이 카드의 핵심은 속도 자체가 아니라 방향이 분명한가에 
 - [힘(Strength)](/ko/posts/tarot-major-08-strength/) — 같은 '다스림'이라도 전차는 바깥을 향한 추진력, 힘은 안을 향한 부드러운 인내입니다.
 - [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
-{% include tarot-app-banner.html %}
+{% include tarot-app-banner-ko.html %}
