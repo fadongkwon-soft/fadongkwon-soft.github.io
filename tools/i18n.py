@@ -174,6 +174,11 @@ TAG_GLOSSARY = {
     '픽셀탁구': 'pixel pong',
     '타워쌓기': 'tower stack',
     '하늘점프': 'sky jump',
+    # 사이트·도구
+    '홈페이지': 'website',
+    '자동화': 'automation',
+    '로케일': 'localization',
+    'URL설계': 'url design',
 }
 
 
@@ -590,7 +595,8 @@ def cmd_scaffold():
                       ('_tabs/ko-categories.md', '/categories/'),
                       ('_tabs/ko-tags.md', '/tags/'),
                       ('_tabs/ko-privacy.md', '/privacy/'),
-                      ('ko/play/index.md', '/play/')]:
+                      ('ko/play/index.md', '/play/'),
+                      ('ko/apps/index.md', '/apps/')]:
         p = os.path.join(ROOT, path)
         s = io.open(p, encoding='utf-8').read()
         fm, body = split_fm(s)
@@ -702,6 +708,7 @@ def known_urls(ko, files):
                 '/privacy/', '/ko/privacy/',
                 '/archives/', '/ko/archives/', '/categories/', '/ko/categories/',
                 '/tags/', '/ko/tags/', '/play/', '/ko/play/',
+                '/apps/', '/ko/apps/',
                 '/kids/', '/kids/privacy/',
                 '/play/hangul-monsters/', '/play/math-monsters/'])
     for slug in ko:

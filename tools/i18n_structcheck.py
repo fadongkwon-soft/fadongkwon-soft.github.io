@@ -45,6 +45,8 @@ def canon_link(u):
         return '/ko/privacy/'
     if u == '/play/':
         return '/ko/play/'
+    if u == '/apps/':
+        return '/ko/apps/'
     return u
 
 
