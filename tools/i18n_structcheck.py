@@ -141,7 +141,11 @@ def main():
             problems.append('%s: BOM 있음 (front matter 가 죽는다)' % base)
         try:
             kfm, kb = split_fm(io.open(kop, encoding='utf-8').read())
-            efm, eb = split_fm(raw_en.decode('utf-8'))
+            # 본문은 텍스트 모드로 다시 읽는다 — 개행이 정규화된다.
+            # raw_en(바이트)은 BOM 검사 전용이다. core.autocrlf=true 인 이 저장소는
+            # git 이 만진 파일이 CRLF 로 바뀌는데, 바이트를 그대로 디코드하면
+            # front matter 정규식이 안 맞아 멀쩡한 글이 "front matter 없음"으로 잡힌다.
+            efm, eb = split_fm(io.open(enp, encoding='utf-8').read())
         except ValueError as e:
             problems.append('%s: %s' % (base, e))
             continue
