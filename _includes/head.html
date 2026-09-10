@@ -137,6 +137,25 @@
       vertical-align: 0.28em;
       opacity: 0.6;
     }
+    /* 홈 intro (index.html / ko/index.html 에만 있는 두 문단).
+       ⚠️ 한글에 italic 을 쓰지 않는다 — 한글 폰트에 진짜 이탤릭 자형이 없어서
+       브라우저가 기계적으로 밀어 기울인 가짜 이탤릭이 나온다(원래 fst-italic 이었음).
+       구분선은 .intro-body 에 붙인다 — /page/N/ 스텁은 content 가 비어 있으므로
+       래퍼에 걸면 2쪽부터 실선만 덩그러니 남는다. */
+    .intro-lead {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      color: var(--heading-color);
+      margin-bottom: 0.9rem;
+    }
+    .intro-body {
+      max-width: 40rem;
+      line-height: 1.9;
+      color: var(--text-muted-color);
+      padding-bottom: 1.7rem;
+      border-bottom: 1px solid var(--main-border-color);
+      margin-bottom: 1.8rem;
+    }
     /* 화면에서만 숨고 낭독기는 읽는 안내 문구 */
     .ext-sr {
       position: absolute !important;
