@@ -17,7 +17,10 @@
 #   pos 는 유사도 1차원 좌표(가까운 값 = 비슷한 앱)라 정렬에 쓰면 같은 계열이 붙는다.
 require 'csv'
 
-Jekyll::Hooks.register :site, :after_init do |site|
+# ⚠️ 훅은 반드시 :post_read 다. :after_init 에 넣으면 그 뒤 Jekyll 이 _data 를 읽으면서
+#    site.data 를 **통째로 새 해시로 교체**해 여기서 넣은 키가 사라진다.
+#    빌드는 성공하고 페이지도 200 이지만 목록이 빈 채로 나간다(2026-09-11 실제로 겪음).
+Jekyll::Hooks.register :site, :post_read do |site|
   path = File.join(site.source, 'apps.csv')
   next unless File.exist?(path)
 
@@ -47,6 +50,10 @@ Jekyll::Hooks.register :site, :after_init do |site|
   # 한쪽만 라이브인 앱이 실제로 있다(2026-09-11: 신규 3종은 Play 라이브·토스 심사 대기).
   site.data['apps_play_count'] = rows.count { |h| h['on_play'] }
   site.data['apps_toss_count'] = rows.count { |h| h['on_toss'] }
+
+  # 빈 목록이 조용히 배포되는 것을 막는다. apps.csv 가 있는데 한 개도 못 읽었다면
+  # 컬럼 이름이나 훅 시점이 깨진 것이므로 빌드를 세운다(페이지는 200 이라 아무도 못 잡는다).
+  raise "apps-registry: apps.csv 를 읽었는데 라이브 앱이 0개다 (컬럼·훅 시점 확인)" if live.empty?
 
   Jekyll.logger.info 'apps-registry:',
                      "apps.csv 적재: 라이브 #{live.length} / Play #{site.data['apps_play_count']} "                      "/ 토스 #{site.data['apps_toss_count']} (전체 #{rows.length})"
