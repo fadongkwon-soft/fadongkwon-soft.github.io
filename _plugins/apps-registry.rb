@@ -39,11 +39,22 @@ Jekyll::Hooks.register :site, :post_read do |site|
     h['toss_landing'] = File.exist?(landing) ? "/toss/#{h['id']}/" : nil
     # 아이콘은 CSV 가 절대 URL(앱이 실행 중에 받아가므로) — 사이트에서는 상대 경로로 쓴다.
     h['icon_path'] = h['icon'].to_s.sub(%r{\Ahttps?://[^/]+}, '')
+    # 게임/비게임은 tags 의 '게임' 유무로 갈린다(현재 게임 21 / 비게임 8).
+    h['is_game'] = h['tag_list'].include?('게임')
+    # 출시일. registry/apps.csv 의 released 컬럼이 근거다(비면 정렬 맨 뒤).
+    h['released'] = h['released'].to_s.strip
+    h['released_key'] = h['released'].empty? ? '0000-00-00' : h['released']
     h
   end
 
-  live = rows.select { |h| h['live'] }.sort_by { |h| h['sort'] }
+  # 출시 역순(최신 먼저). 같은 날 출시가 많아 2차 키로 pos(유사도 좌표)를 써서
+  # 같은 계열이 붙어 나오게 한다.
+  live = rows.select { |h| h['live'] }
+             .sort_by { |h| [h['released_key'], -h['sort']] }
+             .reverse
   site.data['apps'] = live
+  site.data['apps_games'] = live.select { |h| h['is_game'] }
+  site.data['apps_others'] = live.reject { |h| h['is_game'] }
   site.data['apps_all'] = rows
   site.data['apps_count'] = live.length
   # 플랫폼별 출시 현황도 그대로 넘긴다. 목록에서 걸러 내지 않고 **칸마다 상태를 보여준다** —

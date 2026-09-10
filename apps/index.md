@@ -21,12 +21,24 @@ alt_url: /ko/apps/
 
 Everything below is generated from the registry every app shares, so it updates itself when a new app goes live — there is no hand-written list to forget. The two store columns track each platform separately, because an app can be live on one and still in review on the other.
 
-**{{ site.data.apps_count }} apps** — {{ site.data.apps_play_count }} live on Google Play, {{ site.data.apps_toss_count }} on Apps in Toss.
+**{{ site.data.apps_count }} apps** — {{ site.data.apps_play_count }} live on Google Play, {{ site.data.apps_toss_count }} on Apps in Toss. Newest first.
 
-| | App | Google Play | Apps in Toss |
-| --- | --- | --- | --- |
-{% for a in site.data.apps -%}
-| {% if a.icon_path != '' %}![{{ a.name_en | default: a.name }}]({{ a.icon_path }}){: width="40" height="40" .normal}{% else %}{{ a.emoji }}{% endif %} | **{{ a.name_en | default: a.name }}**<br>{{ a.tagline_en | default: a.tagline }} | {% if a.on_play %}[Install](https://play.google.com/store/apps/details?id={{ a.play_package }}){% else %}*in review*{% endif %} | {% if a.on_toss and a.toss_landing %}[Open]({{ a.toss_landing }}){% elsif a.on_toss %}live{% else %}*in review*{% endif %} |
+## Games — {{ site.data.apps_games | size }}
+
+| | App | Released | Google Play | Apps in Toss |
+| --- | --- | --- | --- | --- |
+{% for a in site.data.apps_games -%}
+| {% if a.icon_path != '' %}![{{ a.name_en | default: a.name }}]({{ a.icon_path }}){: width="40" height="40" .normal}{% else %}{{ a.emoji }}{% endif %} | **{{ a.name_en | default: a.name }}**<br>{{ a.tagline_en | default: a.tagline }} | {{ a.released }} | {% if a.on_play %}[Install](https://play.google.com/store/apps/details?id={{ a.play_package }}){% else %}*in review*{% endif %} | {% if a.on_toss and a.toss_landing %}[Open]({{ a.toss_landing }}){% elsif a.on_toss %}live{% else %}*in review*{% endif %} |
+{% endfor %}
+
+## Everything else — {{ site.data.apps_others | size }}
+
+Learning and exam prep, party picks, and fortune-telling content.
+
+| | App | Released | Google Play | Apps in Toss |
+| --- | --- | --- | --- | --- |
+{% for a in site.data.apps_others -%}
+| {% if a.icon_path != '' %}![{{ a.name_en | default: a.name }}]({{ a.icon_path }}){: width="40" height="40" .normal}{% else %}{{ a.emoji }}{% endif %} | **{{ a.name_en | default: a.name }}**<br>{{ a.tagline_en | default: a.tagline }} | {{ a.released }} | {% if a.on_play %}[Install](https://play.google.com/store/apps/details?id={{ a.play_package }}){% else %}*in review*{% endif %} | {% if a.on_toss and a.toss_landing %}[Open]({{ a.toss_landing }}){% elsif a.on_toss %}live{% else %}*in review*{% endif %} |
 {% endfor %}
 
 Some of these also run straight in a browser — see [PLAY](/play/). For the story behind each one, the [dev log](/archives/) has the details.

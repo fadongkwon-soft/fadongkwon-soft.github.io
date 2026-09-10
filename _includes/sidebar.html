@@ -62,7 +62,7 @@
     (홈 피드는 Tarot 를 제외한다). 빼면 그 63%가 고립되므로 PLAY 옆에 묶었다.
     라벨도 TAROT 로 줄였다 — 목록에서 유일한 두 단어라 길이가 튀었다.
     APPS(/apps/ · /ko/apps/)는 2026-09-11 추가 — 앱 목록이 apps.csv 에서 자동 생성되면서
-    About 안의 하드코딩 목록을 대체했고, 그러면서 정식 목적지가 됐다. 순서는 PLAY·APPS·TAROT.
+    About 안의 하드코딩 목록을 대체했고, 그러면서 정식 목적지가 됐다. 순서는 APPS·PLAY·TAROT (사용자 결정 2026-09-11).
     아이콘은 fa-star → fa-clone → **fa-wand-magic-sparkles**. star 는 즐겨찾기로,
     clone 은 복사·중복으로 읽혔다. 후보 9개를 실제 사이드바 스타일로 렌더해 비교한 결과
     지팡이+반짝임이 "운세·점술"을 가장 바로 전달했다(book-open·swatchbook 이 차선).
@@ -100,16 +100,16 @@
 
       <li class="nav-item nav-sep" role="presentation"><span></span></li>
 
-      <li class="nav-item{% if page.url == play_url %}{{ " active" }}{% endif %}">
-        <a href="{{ play_url | relative_url }}" class="nav-link">
-          <i class="fa-fw fas fa-gamepad"></i>
-          <span>PLAY</span>
-        </a>
-      </li>
       <li class="nav-item{% if page.url == apps_url %}{{ " active" }}{% endif %}">
         <a href="{{ apps_url | relative_url }}" class="nav-link">
           <i class="fa-fw fas fa-mobile-screen"></i>
           <span>APPS</span>
+        </a>
+      </li>
+      <li class="nav-item{% if page.url == play_url %}{{ " active" }}{% endif %}">
+        <a href="{{ play_url | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-gamepad"></i>
+          <span>PLAY</span>
         </a>
       </li>
       <li class="nav-item{% if page.url == tarot_url %}{{ " active" }}{% endif %}">
