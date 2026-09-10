@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 악마카드, TheDevil, 타�
 image:
   path: /assets/img/tarot/feature_major_15_devil.jpg
   alt: 타로 카드 악마(The Devil)
-alt_url: /en/posts/tarot-major-15-devil/
+alt_url: /posts/tarot-major-15-devil/
 ---
 
 **악마 카드는 무언가에 사로잡힌 상태를 보여주지만, 동시에 그 사슬이 생각보다 헐겁다는 사실도 함께 보여주는 카드입니다.** 뿔 달린 형상 아래 사슬에 묶인 두 사람의 그림 앞에서 사람들은 흔히 최악의 카드를 뽑았다고 생각하지만, 메이저 아르카나 **15번 악마(The Devil)**가 진짜 다루는 주제는 파멸이 아니라 **얽매임의 자각**입니다.
@@ -48,8 +48,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [연인(The Lovers)](/posts/tarot-major-06-lovers/) — 같은 두 사람의 구도지만, 연인은 자유로운 선택을, 악마는 그 선택이 굳어버린 집착을 보여줍니다.
-- [절제(Temperance)](/posts/tarot-major-14-temperance/) — 악마 바로 앞 카드. 균형이 무너지는 순간 절제에서 악마로 넘어갑니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [연인(The Lovers)](/ko/posts/tarot-major-06-lovers/) — 같은 두 사람의 구도지만, 연인은 자유로운 선택을, 악마는 그 선택이 굳어버린 집착을 보여줍니다.
+- [절제(Temperance)](/ko/posts/tarot-major-14-temperance/) — 악마 바로 앞 카드. 균형이 무너지는 순간 절제에서 악마로 넘어갑니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

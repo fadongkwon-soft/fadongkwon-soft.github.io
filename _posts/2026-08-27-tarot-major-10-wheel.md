@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 운명의수레바퀴카드,
 image:
   path: /assets/img/tarot/feature_major_10_wheel.jpg
   alt: 타로 카드 운명의 수레바퀴(Wheel of Fortune)
-alt_url: /en/posts/tarot-major-10-wheel/
+alt_url: /posts/tarot-major-10-wheel/
 ---
 
 "요즘 하는 일마다 자꾸 삐걱거리는데 이 흐름이 언제 풀릴까요", "잘 되던 일이 갑자기 방향을 트는데 지금 올라타야 할까요" — 리딩 도중 이런 질문을 손에 쥐고 있을 때 **10번 운명의 수레바퀴(Wheel of Fortune)** 카드를 만난다면, 카드는 질문의 답보다 먼저 한 가지 사실을 알려줍니다. 바퀴는 멈추는 법이 없다는 것. 지금이 상승 구간이든 하강 구간이든, 다음 칸은 이미 돌아가는 중입니다.
@@ -57,8 +57,8 @@ A. 무산이라기보다 지연이나 순서 변경에 가깝습니다. 탑 카�
 
 ## 함께 보면 좋은 카드
 
-- [은둔자(The Hermit)](/posts/tarot-major-09-hermit/) — 수레바퀴 바로 앞 카드. 바깥의 흐름이 바뀌기 전, 혼자 등불을 들고 안을 들여다보는 시간입니다.
-- [전차(The Chariot)](/posts/tarot-major-07-chariot/) — 전차가 의지로 방향을 정하는 카드라면, 수레바퀴는 의지 밖에서 상황이 방향을 정하는 카드입니다. 대비해서 보면 각 카드의 성격이 더 뚜렷해집니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [은둔자(The Hermit)](/ko/posts/tarot-major-09-hermit/) — 수레바퀴 바로 앞 카드. 바깥의 흐름이 바뀌기 전, 혼자 등불을 들고 안을 들여다보는 시간입니다.
+- [전차(The Chariot)](/ko/posts/tarot-major-07-chariot/) — 전차가 의지로 방향을 정하는 카드라면, 수레바퀴는 의지 밖에서 상황이 방향을 정하는 카드입니다. 대비해서 보면 각 카드의 성격이 더 뚜렷해집니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

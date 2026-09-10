@@ -6,12 +6,12 @@ categories: [Blogging, Episode]
 tags: [앱인토스, 푸시알림, 스마트메시지, 미니게임, 1인개발자, 개발일지, TypeScript]
 image:
   path: /assets/img/20260907_toss-push/cover.png
-alt_url: /en/posts/toss-push-lessons/
+alt_url: /posts/toss-push-lessons/
 ---
 
 앱인토스 미니앱에는 서버 없이도 쓸 수 있는 **기능성 정기 푸시**가 있습니다. "매일 저녁 8시에 오늘의 퍼즐이 준비됐어요" 같은 알림을 토스가 대신 보내 주고, 광고성이 아니라 무료입니다. 재방문을 만들기에 이보다 싼 수단이 없어서 8월 중순부터 앱마다 붙이고 있었는데, 3주 동안 꽤 여러 번 넘어졌습니다. 오늘 마지막(이라고 믿는) 사고를 하나 더 고치면서, 처음부터 알았으면 한 번에 끝났을 것들을 정리해 둡니다.
 
-대상은 [주스 스피너](/posts/juice-spinner/)·[병 돌리기](/posts/spin-the-bottle/) 같은 모임 앱부터 [스도쿠](/posts/sudoku/)·[탭 버드](/posts/tap-bird/) 등 미니게임 18종까지입니다.
+대상은 [주스 스피너](/ko/posts/juice-spinner/)·[병 돌리기](/ko/posts/spin-the-bottle/) 같은 모임 앱부터 [스도쿠](/ko/posts/sudoku/)·[탭 버드](/ko/posts/tap-bird/) 등 미니게임 18종까지입니다.
 
 ## 구조부터: 동의문과 템플릿은 다른 물건이다
 

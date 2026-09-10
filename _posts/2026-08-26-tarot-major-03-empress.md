@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 여황제카드, TheEmpress,
 image:
   path: /assets/img/tarot/feature_major_03_empress.jpg
   alt: 타로 카드 여황제(The Empress)
-alt_url: /en/posts/tarot-major-03-empress/
+alt_url: /posts/tarot-major-03-empress/
 ---
 
 한 문장으로 요약하면, 메이저 아르카나 3번 **여황제(The Empress)**는 그동안 가꿔온 것이 마침내 풍요로운 결실로 돌아오는 카드입니다. 여사제의 고요한 기다림 다음에 놓인 이 카드는, 안으로 쌓아온 것을 이제는 밖으로 흘려보내도 될 차례라고 말해줍니다.
@@ -53,8 +53,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [여사제(The High Priestess)](/posts/tarot-major-02-high-priestess/) — 안으로 쌓던 지혜가 여황제에 이르러 밖으로 드러나는 결실이 됩니다.
-- [황제(The Emperor)](/posts/tarot-major-04-emperor/) — 여황제의 부드러운 풍요와 짝을 이루는, 체계와 질서의 카드입니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [여사제(The High Priestess)](/ko/posts/tarot-major-02-high-priestess/) — 안으로 쌓던 지혜가 여황제에 이르러 밖으로 드러나는 결실이 됩니다.
+- [황제(The Emperor)](/ko/posts/tarot-major-04-emperor/) — 여황제의 부드러운 풍요와 짝을 이루는, 체계와 질서의 카드입니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

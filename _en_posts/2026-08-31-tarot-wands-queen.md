@@ -6,8 +6,8 @@ image:
   alt: Queen of Wands tarot card
 date: 2026-08-29 16:46:33 +0900
 categories: [Tarot, Wands]
-permalink: /en/posts/tarot-wands-queen/
-alt_url: /posts/tarot-wands-queen/
+permalink: /posts/tarot-wands-queen/
+alt_url: /ko/posts/tarot-wands-queen/
 card_name: Queen of Wands
 tags: [tarot, tarot card meanings, wands, minor arcana, court cards]
 ---
@@ -51,8 +51,8 @@ A. It is not asking you to reduce the confidence itself. Reading it as a signal 
 
 ## Cards to read alongside
 
-- [Knight of Wands](/en/posts/tarot-wands-knight/) — when the Knight's headlong drive ripens inward, it becomes the ease of the Queen of Wands.
-- [King of Wands](/en/posts/tarot-wands-king/) — when the Queen's inner confidence is completed as outward authority and responsibility, it is the stage of the King of Wands.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Knight of Wands](/posts/tarot-wands-knight/) — when the Knight's headlong drive ripens inward, it becomes the ease of the Queen of Wands.
+- [King of Wands](/posts/tarot-wands-king/) — when the Queen's inner confidence is completed as outward authority and responsibility, it is the stage of the King of Wands.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

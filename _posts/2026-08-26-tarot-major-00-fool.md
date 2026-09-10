@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 바보카드, TheFool, 타�
 image:
   path: /assets/img/tarot/feature_major_00_fool.jpg
   alt: 타로 카드 바보(The Fool)
-alt_url: /en/posts/tarot-major-00-fool/
+alt_url: /posts/tarot-major-00-fool/
 ---
 
 절벽 끝에 선 젊은 여행자가 하늘을 올려다보고 있습니다. 어깨에는 작은 보따리 하나, 손에는 흰 장미, 발밑에서는 강아지가 짖으며 따라옵니다. 한 걸음만 더 내디디면 떨어질 것 같은데도 표정에는 두려움이 없죠. 타로 덱의 맨 앞, **0번 카드 바보(The Fool)**는 이렇게 "아직 아무것도 정해지지 않은 출발점"을 그립니다.
@@ -73,9 +73,9 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [마법사(The Magician)](/posts/tarot-major-01-magician/) — 바보가 "출발"이라면 마법사는 "실행". 가능성이 재능으로 바뀌는 다음 단계입니다.
-- [여사제(The High Priestess)](/posts/tarot-major-02-high-priestess/) — 바보가 밖으로 뛰어나가는 카드라면, 여사제는 안으로 파고드는 카드. 같은 시작 앞에서 정반대의 태도를 보여줍니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [마법사(The Magician)](/ko/posts/tarot-major-01-magician/) — 바보가 "출발"이라면 마법사는 "실행". 가능성이 재능으로 바뀌는 다음 단계입니다.
+- [여사제(The High Priestess)](/ko/posts/tarot-major-02-high-priestess/) — 바보가 밖으로 뛰어나가는 카드라면, 여사제는 안으로 파고드는 카드. 같은 시작 앞에서 정반대의 태도를 보여줍니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 메이저 아르카나 21번 **세계(The World)**는 바보가 떠난 여정의 종착지입니다. 0번과 21번은 타로 여정의 처음과 끝으로 짝을 이루죠.
 

@@ -7,8 +7,8 @@ icon: fas fa-star
 order: 2
 lang: en
 locale: en_US
-permalink: /en/tarot/
-alt_url: /tarot/
+permalink: /tarot/
+alt_url: /ko/tarot/
 ---
 
 A dictionary working through the meaning of all 78 tarot cards, one card at a time. Each entry covers the symbols in the picture, the upright and reversed meanings, and how the card reads in specific situations — love, career, money, health.

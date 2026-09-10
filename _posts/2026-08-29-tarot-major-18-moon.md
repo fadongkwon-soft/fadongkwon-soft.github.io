@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 달카드, TheMoon, 타로�
 image:
   path: /assets/img/tarot/feature_major_18_moon.jpg
   alt: 타로 카드 달(The Moon)
-alt_url: /en/posts/tarot-major-18-moon/
+alt_url: /posts/tarot-major-18-moon/
 ---
 
 두 개의 탑 사이로 좁은 길이 구불구불 이어지고, 그 위로 사람 얼굴을 한 달이 빛을 뚝뚝 흘리며 떠 있습니다. 길 옆 웅덩이에서는 가재 한 마리가 기어 나오고, 개 한 마리와 늑대 한 마리가 나란히 달을 향해 짖고 있습니다. 뚜렷한 것은 하나도 없고, 모든 형체가 달빛 아래 흐릿하게 일렁입니다. 메이저 아르카나 **18번 달(The Moon)**은 이렇게 확신할 수 없는 밤길을 그리는 카드입니다.
@@ -67,8 +67,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [별(The Star)](/posts/tarot-major-17-star/) — 달 바로 앞 카드. 맑던 별빛이 구름에 가려지면 달의 흐릿한 밤으로 이어집니다.
-- [태양(The Sun)](/posts/tarot-major-19-sun/) — 달 바로 다음 카드. 안개 속 밤이 지나면 모든 것이 선명해지는 태양의 낮이 옵니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [별(The Star)](/ko/posts/tarot-major-17-star/) — 달 바로 앞 카드. 맑던 별빛이 구름에 가려지면 달의 흐릿한 밤으로 이어집니다.
+- [태양(The Sun)](/ko/posts/tarot-major-19-sun/) — 달 바로 다음 카드. 안개 속 밤이 지나면 모든 것이 선명해지는 태양의 낮이 옵니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

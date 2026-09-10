@@ -6,8 +6,8 @@ image:
   alt: The Empress tarot card
 date: 2026-08-26 10:00:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-03-empress/
-alt_url: /posts/tarot-major-03-empress/
+permalink: /posts/tarot-major-03-empress/
+alt_url: /ko/posts/tarot-major-03-empress/
 card_name: The Empress
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -55,8 +55,8 @@ Everything the Empress has to say converges on one thing. **Send back out what y
 
 ## Cards to read alongside
 
-- [The High Priestess](/en/posts/tarot-major-02-high-priestess/) — the wisdom gathered inward becomes, by the Empress, fruit that shows on the outside.
-- [The Emperor](/en/posts/tarot-major-04-emperor/) — the card of structure and order, the pair to the Empress's soft abundance.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The High Priestess](/posts/tarot-major-02-high-priestess/) — the wisdom gathered inward becomes, by the Empress, fruit that shows on the outside.
+- [The Emperor](/posts/tarot-major-04-emperor/) — the card of structure and order, the pair to the Empress's soft abundance.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

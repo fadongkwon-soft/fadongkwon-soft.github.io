@@ -6,8 +6,8 @@ image:
   alt: The High Priestess tarot card
 date: 2026-08-26 09:40:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-02-high-priestess/
-alt_url: /posts/tarot-major-02-high-priestess/
+permalink: /posts/tarot-major-02-high-priestess/
+alt_url: /ko/posts/tarot-major-02-high-priestess/
 card_name: The High Priestess
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -70,8 +70,8 @@ People new to tarot readings often find the High Priestess frustrating. Other ca
 
 ## Cards to read alongside
 
-- [The Magician](/en/posts/tarot-major-01-magician/) — the Magician's power turned outward and the High Priestess's intuition stored inward are a pair that reflect each other.
-- [The Empress](/en/posts/tarot-major-03-empress/) — the card immediately after. The wisdom that faced inward emerges in the Empress as abundant fruit.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Magician](/posts/tarot-major-01-magician/) — the Magician's power turned outward and the High Priestess's intuition stored inward are a pair that reflect each other.
+- [The Empress](/posts/tarot-major-03-empress/) — the card immediately after. The wisdom that faced inward emerges in the Empress as abundant fruit.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

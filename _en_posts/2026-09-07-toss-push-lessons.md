@@ -3,8 +3,8 @@ title: Apps in Toss Functional Push — Three Weeks of Mistakes, Written Down
 description: Everything that went wrong while adding free scheduled push (smart messages) to Apps in Toss mini apps. How consent forms relate to templates, the AI-review wording rules, and the biggest mistake of all — the app never asked anyone for consent
 date: 2026-09-07 23:45:00 +0900
 categories: [Blogging, Episode]
-permalink: /en/posts/toss-push-lessons/
-alt_url: /posts/toss-push-lessons/
+permalink: /posts/toss-push-lessons/
+alt_url: /ko/posts/toss-push-lessons/
 image:
   path: /assets/img/20260907_toss-push/cover.png
   alt: Push notification consent sheet illustration
@@ -13,7 +13,7 @@ tags: [apps in toss, push notification, smart message, minigame, solo developer,
 
 Apps in Toss mini apps get a **functional scheduled push** that needs no server of your own. Toss sends "Tonight at 8, your new puzzle is ready" on your behalf, and because it is functional rather than promotional, it is free. There is no cheaper way to bring players back, so I have been wiring it into every app since mid-August, and I fell over quite a few times in three weeks. Today I fixed what I believe is the last of it, so here is everything I wish I had known on day one.
 
-The apps involved range from party apps like [Juice Spinner](/en/posts/juice-spinner/) and [Spin the Bottle](/en/posts/spin-the-bottle/) to 18 mini games such as [Sudoku](/en/posts/sudoku/) and [Tap Bird](/en/posts/tap-bird/).
+The apps involved range from party apps like [Juice Spinner](/posts/juice-spinner/) and [Spin the Bottle](/posts/spin-the-bottle/) to 18 mini games such as [Sudoku](/posts/sudoku/) and [Tap Bird](/posts/tap-bird/).
 
 ## Structure first: consent forms and templates are different things
 

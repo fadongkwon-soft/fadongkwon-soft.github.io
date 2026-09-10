@@ -6,8 +6,8 @@ image:
   alt: King of Pentacles tarot card
 date: 2026-08-29 16:47:16 +0900
 categories: [Tarot, Pentacles]
-permalink: /en/posts/tarot-pents-king/
-alt_url: /posts/tarot-pents-king/
+permalink: /posts/tarot-pents-king/
+alt_url: /ko/posts/tarot-pents-king/
 card_name: King of Pentacles
 tags: [tarot, tarot card meanings, pentacles, court cards]
 ---
@@ -60,9 +60,9 @@ The grain of that "completion" changes with whichever card the King of Pentacles
 
 ## Cards to read alongside
 
-- [Queen of Pentacles](/en/posts/tarot-pents-queen/) — if the queen is care ripened inward, the king is that same thing widened out into outward responsibility and authority. The pair in which the maturing of the earth element is completed.
-- [King of Swords](/en/posts/tarot-swords-king/) — kings both, but where the King of Swords governs by principle and logic, the King of Pentacles governs by results and real things. Compare the four kings and the difference in how each element expresses authority comes out sharply.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Queen of Pentacles](/posts/tarot-pents-queen/) — if the queen is care ripened inward, the king is that same thing widened out into outward responsibility and authority. The pair in which the maturing of the earth element is completed.
+- [King of Swords](/posts/tarot-swords-king/) — kings both, but where the King of Swords governs by principle and logic, the King of Pentacles governs by results and real things. Compare the four kings and the difference in how each element expresses authority comes out sharply.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 From the Ace's single coin to the throne, the Pentacles suit turns out to have been a journey asking not what you have but how you handle what you have. That this card sits in the last seat of the 78 looks, then, less like coincidence than like a fitting ending.
 

@@ -7,7 +7,7 @@ tags: [game, android, 단어맞추기, 한글워들, 워들, 단어퀴즈, 한�
 pin: false
 image:
   path: /assets/img/20260904_hangul-word/feature.png
-alt_url: /en/posts/hangul-word/
+alt_url: /posts/hangul-word/
 ---
 ## Info
 > **Hangul Word Guess** is a daily Korean word puzzle in the Wordle style: guess the
@@ -40,13 +40,13 @@ alt_url: /en/posts/hangul-word/
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.hangul_word>
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/hangul-word/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.
 
-한글을 처음 배우는 아이에게는 듣고 맞히며 배우는 [한글 몬스터](/posts/hangul-monsters/)가 더 잘 맞습니다.
+한글을 처음 배우는 아이에게는 듣고 맞히며 배우는 [한글 몬스터](/ko/posts/hangul-monsters/)가 더 잘 맞습니다.
 
 ## 함께 출시된 퍼즐·캐주얼 게임
-- [스도쿠](/posts/sudoku/) — 매일 만나는 오늘의 스도쿠
-- [노노그램](/posts/nonogram/) — 숫자 힌트로 그림을 밝히는 퍼즐
-- [불끄기 퍼즐](/posts/lights-off/) — 모든 불을 끄는 두뇌 토글 퍼즐
-- [탭 버드](/posts/tap-bird/) — 탭해서 장애물 사이를 날아라
-- [순발력 숫자판](/posts/number-tap/) — 1부터 25까지 순서대로 빠르게 탭
+- [스도쿠](/ko/posts/sudoku/) — 매일 만나는 오늘의 스도쿠
+- [노노그램](/ko/posts/nonogram/) — 숫자 힌트로 그림을 밝히는 퍼즐
+- [불끄기 퍼즐](/ko/posts/lights-off/) — 모든 불을 끄는 두뇌 토글 퍼즐
+- [탭 버드](/ko/posts/tap-bird/) — 탭해서 장애물 사이를 날아라
+- [순발력 숫자판](/ko/posts/number-tap/) — 1부터 25까지 순서대로 빠르게 탭
 
 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.

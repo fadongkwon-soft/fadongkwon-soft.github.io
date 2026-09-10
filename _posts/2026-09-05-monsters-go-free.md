@@ -6,10 +6,10 @@ categories: [Blogging, Episode]
 tags: [한글몬스터, 수학몬스터, 유아교육, 무료앱, 인앱결제, 1인개발자, 개발일지, education]
 image:
   path: /assets/img/20260905_monsters-free/cover.png
-alt_url: /en/posts/monsters-go-free/
+alt_url: /posts/monsters-go-free/
 ---
 
-[한글 몬스터](/posts/hangul-monsters/)와 [수학 몬스터](/posts/math-monsters/)에 있던 **유료 상품을 전부 없앴습니다.** 두 앱의 모든 모드가 이제 무료입니다. Google Play와 앱인토스 양쪽 모두 같습니다.
+[한글 몬스터](/ko/posts/hangul-monsters/)와 [수학 몬스터](/ko/posts/math-monsters/)에 있던 **유료 상품을 전부 없앴습니다.** 두 앱의 모든 모드가 이제 무료입니다. Google Play와 앱인토스 양쪽 모두 같습니다.
 
 ## 원래는 이렇게 팔고 있었습니다
 
@@ -28,7 +28,7 @@ alt_url: /en/posts/monsters-go-free/
 
 ## 그래서 없앴습니다
 
-이 앱은 처음부터 교육용으로 만든 앱입니다. 첫째가 학습지를 그만둔 뒤 아빠가 직접 연습 도구를 만들기 시작한 것이 [수학 몬스터의 시작](/posts/kumon-to-math-monsters/)이었고, 한글 몬스터도 같은 마음에서 나왔습니다. 어린 아이들이 부담 없이 반복해서 쓰는 것이 목적인데, 그 목적 앞에 결제창이 서 있는 구조가 스스로도 이상하게 느껴졌습니다.
+이 앱은 처음부터 교육용으로 만든 앱입니다. 첫째가 학습지를 그만둔 뒤 아빠가 직접 연습 도구를 만들기 시작한 것이 [수학 몬스터의 시작](/ko/posts/kumon-to-math-monsters/)이었고, 한글 몬스터도 같은 마음에서 나왔습니다. 어린 아이들이 부담 없이 반복해서 쓰는 것이 목적인데, 그 목적 앞에 결제창이 서 있는 구조가 스스로도 이상하게 느껴졌습니다.
 
 팔리지 않는 상품을 유료로 붙들고 있는 것보다, 누구든 편하게 열어서 아이와 같이 해 보는 쪽이 이 앱이 만들어진 이유에 훨씬 가깝습니다. 그래서 두 앱의 결제 기능을 코드에서 완전히 걷어냈습니다. 결제 라이브러리와 결제 권한까지 함께 빠졌으니, 앱 안에서 돈을 낼 방법 자체가 없습니다.
 
@@ -43,7 +43,7 @@ alt_url: /en/posts/monsters-go-free/
 
 ## Download
 
-설치 없이 [브라우저에서 바로 해볼 수도 있습니다](/play/). 한글 몬스터와 수학 몬스터 모두 웹에서 그대로 동작합니다.
+설치 없이 [브라우저에서 바로 해볼 수도 있습니다](/ko/play/). 한글 몬스터와 수학 몬스터 모두 웹에서 그대로 동작합니다.
 
 - 한글 몬스터: [Google Play](https://play.google.com/store/apps/details?id=com.fadongkwon.hangul_monsters) · [앱인토스](https://fadongkwon.com/toss/hangul-monsters/)
 - 수학 몬스터: [Google Play](https://play.google.com/store/apps/details?id=com.fadongkwon.math_monsters) · [앱인토스](https://fadongkwon.com/toss/math-monsters/)

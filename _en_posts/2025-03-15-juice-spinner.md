@@ -6,8 +6,8 @@ image:
   alt: Juice Spinner app icon
 date: 2025-03-15 22:48:00 +0900
 categories: [Products, Game]
-permalink: /en/posts/juice-spinner/
-alt_url: /posts/juice-spinner/
+permalink: /posts/juice-spinner/
+alt_url: /ko/posts/juice-spinner/
 tags: [app, android, ios, flutter, game, spin, bottle]
 ---
 ## Info

@@ -6,8 +6,8 @@ image:
   alt: King of Wands tarot card
 date: 2026-08-29 16:46:34 +0900
 categories: [Tarot, Wands]
-permalink: /en/posts/tarot-wands-king/
-alt_url: /posts/tarot-wands-king/
+permalink: /posts/tarot-wands-king/
+alt_url: /ko/posts/tarot-wands-king/
 card_name: King of Wands
 tags: [tarot, tarot card meanings, wands, minor arcana]
 ---
@@ -58,8 +58,8 @@ If the Queen of Wands appears beside the King of Wands, outward decisiveness and
 
 ## Cards to read alongside
 
-- [Ace of Wands](/en/posts/tarot-wands-01/) — the first spark, freshly lit. The thick staff in the King of Wands' grip is what that single seed grew into.
-- [Queen of Wands](/en/posts/tarot-wands-queen/) — the same fiery authority splits two ways, the Queen governing within, the King deciding outward.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Ace of Wands](/posts/tarot-wands-01/) — the first spark, freshly lit. The thick staff in the King of Wands' grip is what that single seed grew into.
+- [Queen of Wands](/posts/tarot-wands-queen/) — the same fiery authority splits two ways, the Queen governing within, the King deciding outward.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

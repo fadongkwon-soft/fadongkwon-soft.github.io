@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 소드여왕, QueenOfSwords,
 image:
   path: /assets/img/tarot/feature_swords_queen.jpg
   alt: 타로 카드 소드 여왕(Queen of Swords)
-alt_url: /en/posts/tarot-swords-queen/
+alt_url: /posts/tarot-swords-queen/
 ---
 
 오래된 타로 해설서에서는 소드 여왕을 "차갑고 냉정한 여성", 심지어 "이혼했거나 사별한 사람"으로 소개하는 경우가 있습니다. 하지만 이 카드가 실제로 그리는 것은 감정이 없는 사람이 아니라, 아픔을 이미 통과하고 그 자리에서 명료함을 얻은 사람입니다. 차가움이 아니라 **정직함**이 이 카드의 본질에 더 가깝습니다.
@@ -63,8 +63,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [소드 왕(King of Swords)](/posts/tarot-swords-king/) — 소드 여왕과 짝을 이루는 코트 카드로, 같은 원칙을 외적인 권위로 표현합니다.
-- [펜타클 에이스(Ace of Pentacles)](/posts/tarot-pents-01/) — 소드 여왕의 명료한 판단이 펜타클 에이스의 현실적 기회와 만나면 실속 있는 결정으로 이어지기 쉽습니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [소드 왕(King of Swords)](/ko/posts/tarot-swords-king/) — 소드 여왕과 짝을 이루는 코트 카드로, 같은 원칙을 외적인 권위로 표현합니다.
+- [펜타클 에이스(Ace of Pentacles)](/ko/posts/tarot-pents-01/) — 소드 여왕의 명료한 판단이 펜타클 에이스의 현실적 기회와 만나면 실속 있는 결정으로 이어지기 쉽습니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

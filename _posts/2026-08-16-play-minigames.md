@@ -9,7 +9,7 @@ math: true
 mermaid: true
 image:
   path: /assets/img/20260816_play-minigames/memory-card-feature.png
-alt_url: /en/posts/play-minigames/
+alt_url: /posts/play-minigames/
 ---
 ## Info
 > Two new mini-games are out on Google Play: **Reaction Challenge** and **Memory Cards**.

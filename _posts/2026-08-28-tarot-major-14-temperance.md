@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 절제카드, Temperance, �
 image:
   path: /assets/img/tarot/feature_major_14_temperance.jpg
   alt: 타로 카드 절제(Temperance)
-alt_url: /en/posts/tarot-major-14-temperance/
+alt_url: /posts/tarot-major-14-temperance/
 ---
 
 '절제'라는 이름 때문에 이 카드를 참고 억누르는 카드로 오해하는 경우가 많습니다. 좋아하는 것을 끊어야 한다거나, 하고 싶은 것을 억지로 눌러야 한다는 식으로 말이죠. 하지만 메이저 아르카나 **14번 절제(Temperance)** 카드가 실제로 그리는 것은 금욕이 아니라 **두 가지를 능숙하게 섞어내는 균형의 기술**입니다. 억누르는 힘이 아니라 조율하는 힘이라는 점에서, 이 카드는 사실 타로에서 가장 부드러운 카드 중 하나입니다.
@@ -63,8 +63,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [매달린 사람(The Hanged Man)](/posts/tarot-major-12-hanged-man/) — 매달린 사람의 멈춤과 관점 전환을 거친 뒤에야 절제의 균형이 가능해집니다.
-- [악마(The Devil)](/posts/tarot-major-15-devil/) — 절제 바로 다음 카드. 균형이 무너져 한쪽으로 완전히 쏠리면 악마 카드의 얽매임으로 이어집니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [매달린 사람(The Hanged Man)](/ko/posts/tarot-major-12-hanged-man/) — 매달린 사람의 멈춤과 관점 전환을 거친 뒤에야 절제의 균형이 가능해집니다.
+- [악마(The Devil)](/ko/posts/tarot-major-15-devil/) — 절제 바로 다음 카드. 균형이 무너져 한쪽으로 완전히 쏠리면 악마 카드의 얽매임으로 이어집니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 완드, 마이너아르카나, 코트카드, PageOf
 image:
   path: /assets/img/tarot/feature_wands_page.jpg
   alt: 타로 카드 완드 시종(Page of Wands)
-alt_url: /en/posts/tarot-wands-page/
+alt_url: /posts/tarot-wands-page/
 ---
 
 타로를 처음 배울 때 흔히 하는 오해 중 하나는, 코트 카드가 나오면 반드시 '실제 인물'을 가리킨다고 생각하는 것입니다. 물론 그렇게 읽을 때도 있지만, 완드 시종은 그보다 우리 안에 있는 가장 어린 호기심의 태도, 아직 서툴지만 뭐든 해보고 싶은 마음 그 자체를 보여주는 카드에 가깝습니다.
@@ -62,8 +62,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [완드 10(Ten of Wands)](/posts/tarot-wands-10/) — 무거운 짐을 다 내려놓은 자리에서 완드 시종의 가벼운 호기심이 새로 시작됩니다.
-- [완드 기사(Knight of Wands)](/posts/tarot-wands-knight/) — 시종의 호기심이 행동으로 바뀌면 다음 단계인 완드 기사가 됩니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [완드 10(Ten of Wands)](/ko/posts/tarot-wands-10/) — 무거운 짐을 다 내려놓은 자리에서 완드 시종의 가벼운 호기심이 새로 시작됩니다.
+- [완드 기사(Knight of Wands)](/ko/posts/tarot-wands-knight/) — 시종의 호기심이 행동으로 바뀌면 다음 단계인 완드 기사가 됩니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

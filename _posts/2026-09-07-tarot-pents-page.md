@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 펜타클, 코트카드, 펜타클시종, PageOfPen
 image:
   path: /assets/img/tarot/feature_pents_page.jpg
   alt: 타로 카드 펜타클 시종(Page of Pentacles)
-alt_url: /en/posts/tarot-pents-page/
+alt_url: /posts/tarot-pents-page/
 ---
 
 코트 카드를 처음 접하면 흔히 '시종은 실제로 어린 사람을 가리킨다'고 오해하기 쉽습니다. 하지만 타로에서 시종은 나이가 아니라 그 원소를 대하는 태도의 단계를 뜻합니다. 펜타클 시종(Page of Pentacles) 역시 마찬가지입니다. 초록빛 들판 한가운데 서서 손바닥 위 동전 하나를 골똘히 들여다보는 이 인물은, 몇 살이든 상관없이 '현실적인 것을 이제 막 진지하게 배우기 시작한 사람'이라면 누구나 해당됩니다.
@@ -62,8 +62,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [펜타클 에이스(Ace of Pentacles)](/posts/tarot-pents-01/) — 아직 심지 않은 씨앗(에이스)과 그 씨앗을 배우기 시작한 사람(시종)의 관계로 이어집니다.
-- [펜타클 기사(Knight of Pentacles)](/posts/tarot-pents-knight/) — 배움의 단계를 지나 실전에서 꾸준히 실행하는 다음 성숙 단계입니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [펜타클 에이스(Ace of Pentacles)](/ko/posts/tarot-pents-01/) — 아직 심지 않은 씨앗(에이스)과 그 씨앗을 배우기 시작한 사람(시종)의 관계로 이어집니다.
+- [펜타클 기사(Knight of Pentacles)](/ko/posts/tarot-pents-knight/) — 배움의 단계를 지나 실전에서 꾸준히 실행하는 다음 성숙 단계입니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

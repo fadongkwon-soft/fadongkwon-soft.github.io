@@ -6,8 +6,8 @@ image:
   alt: Number Rush feature graphic
 date: 2026-09-04 22:20:00 +0900
 categories: [Products, Game]
-permalink: /en/posts/number-tap/
-alt_url: /posts/number-tap/
+permalink: /posts/number-tap/
+alt_url: /ko/posts/number-tap/
 tags: [game, android, reaction speed, brain training, solo developer]
 ---
 ## Info
@@ -40,12 +40,12 @@ It works fully offline with no sign-up or login, and supports 9 languages.
 - Apps in Toss: <https://fadongkwon.com/toss/number-tap/> — open it on your phone and it connects straight into the Toss app.
 
 ## Released Alongside
-- [Sudoku](/en/posts/sudoku/) — a clean daily sudoku
-- [Nonogram](/en/posts/nonogram/) — reveal pixel art with number clues
-- [All Lights Off](/en/posts/lights-off/) — the classic toggle puzzle
-- [Hangul Word Guess](/en/posts/hangul-word/) — guess the Korean word in six jamo
-- [Tap Bird](/en/posts/tap-bird/) — tap to fly through the gaps
+- [Sudoku](/posts/sudoku/) — a clean daily sudoku
+- [Nonogram](/posts/nonogram/) — reveal pixel art with number clues
+- [All Lights Off](/posts/lights-off/) — the classic toggle puzzle
+- [Hangul Word Guess](/posts/hangul-word/) — guess the Korean word in six jamo
+- [Tap Bird](/posts/tap-bird/) — tap to fly through the gaps
 
-If you want to measure pure reaction time, compare it with [Reaction Challenge](/en/posts/play-minigames/).
+If you want to measure pure reaction time, compare it with [Reaction Challenge](/posts/play-minigames/).
 
 I post updates here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).

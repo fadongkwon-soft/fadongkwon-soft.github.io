@@ -7,7 +7,7 @@ tags: [game, android, education, 수학, 수학공부, 유아교육, math, 몬�
 pin: false
 image:
   path: /assets/img/20260825_math-monsters/feature.png
-alt_url: /en/posts/math-monsters/
+alt_url: /posts/math-monsters/
 ---
 ## Info
 > **Math Monsters** is a math-practice game for kids: solve addition, subtraction,
@@ -15,7 +15,7 @@ alt_url: /en/posts/math-monsters/
 > (easy) are free; other operations unlock via one-time in-app purchase. No ads.
 {: .prompt-info }
 
-> **2026-09-05 업데이트**: 인앱 구매를 전부 없애고 모든 모드를 무료로 열었습니다. 자세한 이야기는 [유료 상품을 없앤 이유](/posts/monsters-go-free/)에 적었습니다.
+> **2026-09-05 업데이트**: 인앱 구매를 전부 없애고 모든 모드를 무료로 열었습니다. 자세한 이야기는 [유료 상품을 없앤 이유](/ko/posts/monsters-go-free/)에 적었습니다.
 {: .prompt-tip }
 
 ## 몬스터를 잡으며 배우는 수학
@@ -36,6 +36,6 @@ alt_url: /en/posts/math-monsters/
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.math_monsters>
 - 앱인토스: <https://fadongkwon.com/toss/math-monsters/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.
 
-이 앱이 만들어진 뒷이야기 — 첫째가 구몬을 그만둔 뒤 아빠가 직접 연습 도구를 만들게 된 사연은 [구몬을 그만둔 날, 아빠는 수학 게임을 만들기 시작했다](/posts/kumon-to-math-monsters/)에 적어뒀습니다.
+이 앱이 만들어진 뒷이야기 — 첫째가 구몬을 그만둔 뒤 아빠가 직접 연습 도구를 만들게 된 사연은 [구몬을 그만둔 날, 아빠는 수학 게임을 만들기 시작했다](/ko/posts/kumon-to-math-monsters/)에 적어뒀습니다.
 
 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.

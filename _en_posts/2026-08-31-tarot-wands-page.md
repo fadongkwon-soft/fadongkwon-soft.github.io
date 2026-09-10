@@ -6,8 +6,8 @@ image:
   alt: Page of Wands tarot card
 date: 2026-08-29 16:46:31 +0900
 categories: [Tarot, Wands]
-permalink: /en/posts/tarot-wands-page/
-alt_url: /posts/tarot-wands-page/
+permalink: /posts/tarot-wands-page/
+alt_url: /ko/posts/tarot-wands-page/
 card_name: Page of Wands
 tags: [tarot, tarot card meanings, wands, minor arcana, court cards]
 ---
@@ -68,8 +68,8 @@ Read court cards as stages of maturity and the Page can look like the lowest sea
 
 ## Cards to read alongside
 
-- [Ten of Wands](/en/posts/tarot-wands-10/) — from the place where the heavy load has been fully set down, the light curiosity of the Page of Wands begins again.
-- [Knight of Wands](/en/posts/tarot-wands-knight/) — when the Page's curiosity turns into action, it becomes the next stage, the Knight of Wands.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Ten of Wands](/posts/tarot-wands-10/) — from the place where the heavy load has been fully set down, the light curiosity of the Page of Wands begins again.
+- [Knight of Wands](/posts/tarot-wands-knight/) — when the Page's curiosity turns into action, it becomes the next stage, the Knight of Wands.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

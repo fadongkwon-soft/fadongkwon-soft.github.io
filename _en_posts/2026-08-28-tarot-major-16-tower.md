@@ -6,8 +6,8 @@ image:
   alt: The Tower tarot card
 date: 2026-08-28 10:20:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-16-tower/
-alt_url: /posts/tarot-major-16-tower/
+permalink: /posts/tarot-major-16-tower/
+alt_url: /ko/posts/tarot-major-16-tower/
 card_name: The Tower
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -59,8 +59,8 @@ A. Both mean big change, but the texture differs. Death is closer to a clean-up 
 
 ## Cards to read alongside
 
-- [The Devil](/en/posts/tarot-major-15-devil/) — the card right before the Tower. The bind the Devil made cannot hold for long, and it collapses at the Tower.
-- [The Star](/en/posts/tarot-major-17-star/) — the card right after the Tower. Where things fell, the recovery and hope the Star draws follow.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Devil](/posts/tarot-major-15-devil/) — the card right before the Tower. The bind the Devil made cannot hold for long, and it collapses at the Tower.
+- [The Star](/posts/tarot-major-17-star/) — the card right after the Tower. Where things fell, the recovery and hope the Star draws follow.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

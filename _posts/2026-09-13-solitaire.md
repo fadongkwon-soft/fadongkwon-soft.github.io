@@ -7,7 +7,7 @@ tags: [game, android, 솔리테어, 카드게임, 클론다이크, 1인개발자
 pin: false
 image:
   path: /assets/img/20260913_solitaire/feature.png
-alt_url: /en/posts/solitaire/
+alt_url: /posts/solitaire/
 ---
 ## Info
 > **Solitaire** is classic Klondike: the rules you already know, plus auto-collect, undo, a daily deal and auto-save. Works offline, no sign-up. 9 languages.
@@ -36,9 +36,9 @@ alt_url: /en/posts/solitaire/
 ## 함께 나온 게임
 9월 8일에 10종을 함께 출시했고, 하루에 하나씩 소개하고 있습니다. 지금까지 올린 글입니다.
 
-- [2048](/posts/game-2048/) — 숫자를 합쳐 2048 타일을 만드는 퍼즐
-- [지뢰찾기](/posts/minesweeper/) — 숫자를 읽고 지뢰를 피하는 논리 퍼즐
+- [2048](/ko/posts/game-2048/) — 숫자를 합쳐 2048 타일을 만드는 퍼즐
+- [지뢰찾기](/ko/posts/minesweeper/) — 숫자를 읽고 지뢰를 피하는 논리 퍼즐
 
-먼저 나온 6종의 이야기는 [미니게임 6종 동시 출시 회고](/posts/six-games-retrospective/)에 정리해 두었습니다.
+먼저 나온 6종의 이야기는 [미니게임 6종 동시 출시 회고](/ko/posts/six-games-retrospective/)에 정리해 두었습니다.
 
 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.

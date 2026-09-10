@@ -6,8 +6,8 @@ image:
   alt: The logo of Fadongkwon Soft
 date: 2024-12-29 15:39:00 +0900
 categories: [Blogging, Episode]
-permalink: /en/posts/ready-to-open/
-alt_url: /posts/ready-to-open/
+permalink: /posts/ready-to-open/
+alt_url: /ko/posts/ready-to-open/
 tags: [app launch, developer, app development, solo developer, business registration, play store, app store, apple, financial freedom, digital assets]
 ---
 ## Prologue

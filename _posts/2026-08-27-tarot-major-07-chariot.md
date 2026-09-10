@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 전차카드, TheChariot, �
 image:
   path: /assets/img/tarot/feature_major_07_chariot.jpg
   alt: 타로 카드 전차(The Chariot)
-alt_url: /en/posts/tarot-major-07-chariot/
+alt_url: /posts/tarot-major-07-chariot/
 ---
 
 고삐도 채우지 않은 검은 스핑크스와 흰 스핑크스를 어떻게 한 방향으로 몰고 갈 수 있을까요? 메이저 아르카나 7번 **전차(The Chariot)**가 내놓는 답은 의외로 단순합니다. 물리적인 힘이 아니라, 확고한 의지와 흔들리지 않는 시선으로 다스린다는 것입니다.
@@ -55,8 +55,8 @@ A. 이 카드의 핵심은 속도 자체가 아니라 방향이 분명한가에 
 
 ## 함께 보면 좋은 카드
 
-- [연인(The Lovers)](/posts/tarot-major-06-lovers/) — 연인 카드에서 이루어진 선택이, 전차에 이르러 실제 행동으로 옮겨집니다.
-- [힘(Strength)](/posts/tarot-major-08-strength/) — 같은 '다스림'이라도 전차는 바깥을 향한 추진력, 힘은 안을 향한 부드러운 인내입니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [연인(The Lovers)](/ko/posts/tarot-major-06-lovers/) — 연인 카드에서 이루어진 선택이, 전차에 이르러 실제 행동으로 옮겨집니다.
+- [힘(Strength)](/ko/posts/tarot-major-08-strength/) — 같은 '다스림'이라도 전차는 바깥을 향한 추진력, 힘은 안을 향한 부드러운 인내입니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

@@ -7,7 +7,7 @@ tags: [app, android, 타로, 타로카드, 운세, 귀여운앱, tarot, 1인개�
 pin: false
 image:
   path: /assets/img/20260828_tarot-ping/feature.png
-alt_url: /en/posts/tarot-ping/
+alt_url: /posts/tarot-ping/
 ---
 ## Info
 > **Tarot Ping** is the cute-deck edition of our tarot reading app: the same 78 cards ×
@@ -16,7 +16,7 @@ alt_url: /en/posts/tarot-ping/
 {: .prompt-info }
 
 ## 같은 타로, 귀여운 얼굴
-[타로 운세](/posts/tarot-fortune/)와 같은 **1,872개의 해석**을 그대로 담되,
+[타로 운세](/ko/posts/tarot-fortune/)와 같은 **1,872개의 해석**을 그대로 담되,
 카드 78장을 전부 **파스텔 마스코트 캐릭터**로 새로 그린 두 번째 덱입니다.
 죽음·탑처럼 무섭게 느껴질 수 있는 카드도 부담 없이 귀엽게 만날 수 있어,
 타로가 처음이거나 가볍게 즐기고 싶은 분께 어울립니다.
@@ -27,7 +27,7 @@ alt_url: /en/posts/tarot-ping/
 - 🌏 **9개 언어** 지원
 - 🚫 현재 버전은 **광고가 없습니다**
 
-카드 한 장 한 장의 뜻이 궁금하다면 [타로 카드 78장 의미 사전](/tarot/)에서
+카드 한 장 한 장의 뜻이 궁금하다면 [타로 카드 78장 의미 사전](/ko/tarot/)에서
 큐트 덱 그림과 함께 상세 풀이를 읽을 수 있어요.
 
 ![운세 타로핑 홈](/assets/img/20260828_tarot-ping/shot-home.png){: w="360" }
@@ -37,7 +37,7 @@ alt_url: /en/posts/tarot-ping/
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.tarot_ping>
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/tarot-ping/>
 
-클래식한 일러스트 덱이 취향이라면 [타로 운세](/posts/tarot-fortune/)를 선택하세요.
+클래식한 일러스트 덱이 취향이라면 [타로 운세](/ko/posts/tarot-fortune/)를 선택하세요.
 
 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.
 

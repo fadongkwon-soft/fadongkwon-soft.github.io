@@ -6,8 +6,8 @@ image:
   alt: Tower Stack feature graphic
 date: 2026-09-19 09:00:00 +0900
 categories: [Products, Game]
-permalink: /en/posts/tower-stack/
-alt_url: /posts/tower-stack/
+permalink: /posts/tower-stack/
+alt_url: /ko/posts/tower-stack/
 tags: [game, android, arcade, timing game, solo developer]
 ---
 ## Info
@@ -37,15 +37,15 @@ It works fully offline with no sign-up or login, and supports 9 languages.
 ## Released Alongside
 Ten games launched together on September 8, and I am introducing one a day. Published so far:
 
-- [2048](/en/posts/game-2048/) — Slide and Merge Your Way to the 2048 Tile
-- [Minesweeper](/en/posts/minesweeper/) — Read the Numbers, Avoid the Mines
-- [Solitaire](/en/posts/solitaire/) — The Klondike You Already Know
-- [Brick Breaker](/en/posts/breakout/) — Bounce, Break, Repeat
-- [Gomoku](/en/posts/gomoku/) — First to Five in a Row
-- [Snake](/en/posts/snake/) — Eat, Grow, Try Not to Bite Yourself
-- [Number Slide](/en/posts/slide-puzzle/) — The 15 Puzzle, With Pictures
-- [Pixel Pong](/en/posts/pixel-pong/) — One-on-One Against the AI or a Friend
+- [2048](/posts/game-2048/) — Slide and Merge Your Way to the 2048 Tile
+- [Minesweeper](/posts/minesweeper/) — Read the Numbers, Avoid the Mines
+- [Solitaire](/posts/solitaire/) — The Klondike You Already Know
+- [Brick Breaker](/posts/breakout/) — Bounce, Break, Repeat
+- [Gomoku](/posts/gomoku/) — First to Five in a Row
+- [Snake](/posts/snake/) — Eat, Grow, Try Not to Bite Yourself
+- [Number Slide](/posts/slide-puzzle/) — The 15 Puzzle, With Pictures
+- [Pixel Pong](/posts/pixel-pong/) — One-on-One Against the AI or a Friend
 
-The story behind the previous six is in [Shipping Six Mini Games at Once](/en/posts/six-games-retrospective/).
+The story behind the previous six is in [Shipping Six Mini Games at Once](/posts/six-games-retrospective/).
 
 I post updates here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).

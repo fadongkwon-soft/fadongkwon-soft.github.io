@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 컵, 궁정카드, KnightOfC
 image:
   path: /assets/img/tarot/feature_cups_knight.jpg
   alt: 타로 카드 컵 기사(Knight of Cups)
-alt_url: /en/posts/tarot-cups-knight/
+alt_url: /posts/tarot-cups-knight/
 ---
 
 궁정 카드 열여섯 장 안에서 기사는 언제나 시종과 여왕 사이, 배움을 마치고 아직 완숙에는 이르지 못한 자리에 놓입니다. 네 명의 기사 중에서도 컵 기사는 물의 원소가 가장 낭만적으로 흘러넘치는 자리이며, 감정을 실어 움직이기 시작한 청년의 얼굴을 하고 있습니다.
@@ -51,8 +51,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [컵 시종(Page of Cups)](/posts/tarot-cups-page/) — 시종의 서툰 호감이 기사에 이르러 적극적인 제안으로 성숙합니다.
-- [완드 기사(Knight of Wands)](/posts/tarot-wands-knight/) — 같은 기사라도 완드는 저돌적인 행동파, 컵은 다정한 낭만파로 결이 다릅니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [컵 시종(Page of Cups)](/ko/posts/tarot-cups-page/) — 시종의 서툰 호감이 기사에 이르러 적극적인 제안으로 성숙합니다.
+- [완드 기사(Knight of Wands)](/ko/posts/tarot-wands-knight/) — 같은 기사라도 완드는 저돌적인 행동파, 컵은 다정한 낭만파로 결이 다릅니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

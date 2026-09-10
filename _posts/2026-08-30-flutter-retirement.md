@@ -4,7 +4,7 @@ description: 미니앱 환경에서 Flutter 웹이 왜 계속 발목을 잡았�
 date: 2026-08-30 00:30:00 +0900
 categories: [Blogging, Episode]
 tags: [flutter, 미니앱, 앱인토스, 웹앱, 리팩터링, 1인개발자, 개발일지, TypeScript]
-alt_url: /en/posts/flutter-retirement/
+alt_url: /posts/flutter-retirement/
 ---
 
 오늘 `flutter_project` 폴더를 아카이브로 옮겼습니다. 2년 가까이 앱들의 출발점이었던

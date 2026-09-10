@@ -6,8 +6,8 @@ image:
   alt: Six of Swords tarot card
 date: 2026-08-29 16:46:54 +0900
 categories: [Tarot, Swords]
-permalink: /en/posts/tarot-swords-06/
-alt_url: /posts/tarot-swords-06/
+permalink: /posts/tarot-swords-06/
+alt_url: /ko/posts/tarot-swords-06/
 card_name: Six of Swords
 tags: [tarot, tarot card meanings, swords, minor arcana]
 ---
@@ -69,8 +69,8 @@ It is more accurate to read it as a signal that you are not quite ready to leave
 
 ## Cards to read alongside
 
-- [Five of Swords](/en/posts/tarot-swords-05/) — the card of draining conflict that sits immediately before this one, and the move away from that fight connects naturally to it.
-- [Page of Cups](/en/posts/tarot-cups-page/) — if the Six of Swords is the passage out of a hard place, the Page of Cups draws the pure new opening of the heart that follows it.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Five of Swords](/posts/tarot-swords-05/) — the card of draining conflict that sits immediately before this one, and the move away from that fight connects naturally to it.
+- [Page of Cups](/posts/tarot-cups-page/) — if the Six of Swords is the passage out of a hard place, the Page of Cups draws the pure new opening of the heart that follows it.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

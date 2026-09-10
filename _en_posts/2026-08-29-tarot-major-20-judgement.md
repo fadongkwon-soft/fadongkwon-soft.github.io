@@ -6,8 +6,8 @@ image:
   alt: The Judgement tarot card
 date: 2026-08-29 09:40:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-20-judgement/
-alt_url: /posts/tarot-major-20-judgement/
+permalink: /posts/tarot-major-20-judgement/
+alt_url: /ko/posts/tarot-major-20-judgement/
 card_name: Judgement
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -70,8 +70,8 @@ There is one more place where Judgement is easy to misread — taking the card a
 
 ## Cards to read alongside
 
-- [The Sun](/en/posts/tarot-major-19-sun/) — the card right before Judgement. The Sun brings something brightly into view, and Judgement asks what you intend to do about it.
-- [The World](/en/posts/tarot-major-21-world/) — the card right after Judgement. Once the answer has been given, a cycle can finally close all the way.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Sun](/posts/tarot-major-19-sun/) — the card right before Judgement. The Sun brings something brightly into view, and Judgement asks what you intend to do about it.
+- [The World](/posts/tarot-major-21-world/) — the card right after Judgement. Once the answer has been given, a cycle can finally close all the way.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

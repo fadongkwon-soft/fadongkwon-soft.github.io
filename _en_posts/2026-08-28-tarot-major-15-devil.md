@@ -6,8 +6,8 @@ image:
   alt: The Devil tarot card
 date: 2026-08-28 10:00:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-15-devil/
-alt_url: /posts/tarot-major-15-devil/
+permalink: /posts/tarot-major-15-devil/
+alt_url: /ko/posts/tarot-major-15-devil/
 card_name: The Devil
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -50,8 +50,8 @@ The question the Devil really asks is not "what is bad" but "what am I putting a
 
 ## Cards to read alongside
 
-- [The Lovers](/en/posts/tarot-major-06-lovers/) — the same composition of two people, but the Lovers shows a free choice while the Devil shows that choice hardened into obsession.
-- [Temperance](/en/posts/tarot-major-14-temperance/) — the card right before the Devil. The moment balance breaks, Temperance turns into the Devil.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Lovers](/posts/tarot-major-06-lovers/) — the same composition of two people, but the Lovers shows a free choice while the Devil shows that choice hardened into obsession.
+- [Temperance](/posts/tarot-major-14-temperance/) — the card right before the Devil. The moment balance breaks, Temperance turns into the Devil.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

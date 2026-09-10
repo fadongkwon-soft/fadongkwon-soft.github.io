@@ -6,8 +6,8 @@ image:
   alt: Nursing Assistant Mock Exam feature graphic
 date: 2026-08-23 18:30:00 +0900
 categories: [Products, App]
-permalink: /en/posts/nursing-quiz/
-alt_url: /posts/nursing-quiz/
+permalink: /posts/nursing-quiz/
+alt_url: /ko/posts/nursing-quiz/
 tags: [app, android, nursing assistant, national exam, question bank, mock exam, exam prep, solo developer]
 ---
 ## Info

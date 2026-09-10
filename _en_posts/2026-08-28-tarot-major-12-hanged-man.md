@@ -6,8 +6,8 @@ image:
   alt: The Hanged Man tarot card
 date: 2026-08-28 09:00:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-12-hanged-man/
-alt_url: /posts/tarot-major-12-hanged-man/
+permalink: /posts/tarot-major-12-hanged-man/
+alt_url: /ko/posts/tarot-major-12-hanged-man/
 card_name: The Hanged Man
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -69,8 +69,8 @@ Today is a good day to stop for a moment and look differently rather than force 
 
 ## Cards to read alongside
 
-- [The Hermit](/en/posts/tarot-major-09-hermit/) — if the Hermit stops walking by his own choice to look inward, the Hanged Man is held still by circumstance and finds insight there.
-- [Death](/en/posts/tarot-major-13-death/) — the card right after the Hanged Man. Once you have looked long enough, it is time to close things out and move on.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Hermit](/posts/tarot-major-09-hermit/) — if the Hermit stops walking by his own choice to look inward, the Hanged Man is held still by circumstance and finds insight there.
+- [Death](/posts/tarot-major-13-death/) — the card right after the Hanged Man. Once you have looked long enough, it is time to close things out and move on.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

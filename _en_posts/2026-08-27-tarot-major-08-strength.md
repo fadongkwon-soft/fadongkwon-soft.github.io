@@ -6,8 +6,8 @@ image:
   alt: Strength tarot card
 date: 2026-08-27 09:40:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-08-strength/
-alt_url: /posts/tarot-major-08-strength/
+permalink: /posts/tarot-major-08-strength/
+alt_url: /ko/posts/tarot-major-08-strength/
 card_name: Strength
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -68,8 +68,8 @@ What sets Strength apart from other cards about overcoming is that it never trie
 
 ## Cards to read alongside
 
-- [The Chariot](/en/posts/tarot-major-07-chariot/) — both are about mastery, but the Chariot is drive aimed outward and Strength is gentle patience aimed inward.
-- [The Hermit](/en/posts/tarot-major-09-hermit/) — after soothing the lion outside, it becomes time to look inward alone, the way the Hermit does.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Chariot](/posts/tarot-major-07-chariot/) — both are about mastery, but the Chariot is drive aimed outward and Strength is gentle patience aimed inward.
+- [The Hermit](/posts/tarot-major-09-hermit/) — after soothing the lion outside, it becomes time to look inward alone, the way the Hermit does.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

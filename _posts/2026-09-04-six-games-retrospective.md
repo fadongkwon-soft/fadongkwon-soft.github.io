@@ -6,12 +6,12 @@ categories: [Blogging, Episode]
 tags: [미니게임, 앱인토스, 구글플레이, 1인개발자, 개발일지, 회고, 퍼즐게임, TypeScript]
 image:
   path: /assets/img/20260904_six-games/cover.png
-alt_url: /en/posts/six-games-retrospective/
+alt_url: /posts/six-games-retrospective/
 ---
 
-오늘 [스도쿠](/posts/sudoku/)·[노노그램](/posts/nonogram/)·[불끄기 퍼즐](/posts/lights-off/)·[단어 맞추기](/posts/hangul-word/)·[탭 버드](/posts/tap-bird/)·[순발력 숫자판](/posts/number-tap/) 여섯 개의 출시 글을 한꺼번에 올렸습니다.
+오늘 [스도쿠](/ko/posts/sudoku/)·[노노그램](/ko/posts/nonogram/)·[불끄기 퍼즐](/ko/posts/lights-off/)·[단어 맞추기](/ko/posts/hangul-word/)·[탭 버드](/ko/posts/tap-bird/)·[순발력 숫자판](/ko/posts/number-tap/) 여섯 개의 출시 글을 한꺼번에 올렸습니다.
 8월 30일 밤에 첫 게임의 코드를 쓰기 시작해 9월 3일 앱인토스 라이브, 9월 4일 Google Play 라이브까지 — **닷새 동안 게임 여섯 개**가 두 스토어에 올라갔습니다.
-지난달 [8개 앱을 혼자 만들며 배운 것](/posts/solo-dev-8-apps/)에서 "다음은 배치로 간다"고 적었는데, 그 배치를 실제로 돌린 기록입니다.
+지난달 [8개 앱을 혼자 만들며 배운 것](/ko/posts/solo-dev-8-apps/)에서 "다음은 배치로 간다"고 적었는데, 그 배치를 실제로 돌린 기록입니다.
 
 ## 왜 여섯 개를 한 번에
 

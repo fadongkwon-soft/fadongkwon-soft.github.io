@@ -3,15 +3,15 @@ title: "The Code Said \"Not Supported\" — It Had Been Working All Along"
 description: "The Apps in Toss build of Hangul Monsters hid its speech mode entirely and ran listening-only, because the code hardcoded available:false on the belief that the Toss WebView had no speech recognition. The question that unravelled it: if it works in a browser, why not in Toss, which is also a web app? Measuring it showed recognition had been there the whole time. A story about one unverified assumption cutting a feature in half"
 date: 2026-09-10 23:28:00 +0900
 categories: [Blogging, Episode]
-permalink: /en/posts/toss-webview-microphone/
-alt_url: /posts/toss-webview-microphone/
+permalink: /posts/toss-webview-microphone/
+alt_url: /ko/posts/toss-webview-microphone/
 image:
   path: /assets/img/20260910_toss-mic/cover.png
   alt: A microphone permission prompt inside a WebView
 tags: [apps in toss, webview, speech recognition, hangul monsters, android, solo developer, dev log]
 ---
 
-[Hangul Monsters](/en/posts/hangul-monsters/) has a **listening** mode, where you hear a sound and pick the right letter, and a **speaking** mode, where you read into the microphone. On the Apps in Toss build, the speaking mode was simply absent. No mic button, and the sentence-reading mode missing from the list.
+[Hangul Monsters](/posts/hangul-monsters/) has a **listening** mode, where you hear a sound and pick the right letter, and a **speaking** mode, where you read into the microphone. On the Apps in Toss build, the speaking mode was simply absent. No mic button, and the sentence-reading mode missing from the list.
 
 The reason was written into the code:
 
@@ -27,7 +27,7 @@ Believing the Toss WebView had no Web Speech API, it returned `false` without ev
 
 ## The question that started it
 
-It works in a browser. Open Hangul Monsters from the [play-in-your-browser page](/en/play/) and it asks for microphone permission, and the speaking mode works fine.
+It works in a browser. Open Hangul Monsters from the [play-in-your-browser page](/play/) and it asks for microphone permission, and the speaking mode works fine.
 
 Which makes no sense. **A Toss mini app is a web app too.** The same bundle, the same code, running in a WebView inside the Toss app. If it works in a browser, why not in Toss?
 
@@ -107,4 +107,4 @@ The case where the Toss app denies the request is handled too: `denied` comes ba
 
 **Asking "but why not?" one more time is the cheapest debugging there is.** This started from noticing I could not explain why something that works in a browser fails in Toss. All I did was refuse to skip past the part that made no sense. The measurement itself took five minutes.
 
-Hangul Monsters is on [Google Play and Apps in Toss](/en/posts/apps-in-toss-launch/), and you can [play it in a browser](/en/play/). Both monster apps are [completely free](/en/posts/monsters-go-free/). Updates go out here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
+Hangul Monsters is on [Google Play and Apps in Toss](/posts/apps-in-toss-launch/), and you can [play it in a browser](/play/). Both monster apps are [completely free](/posts/monsters-go-free/). Updates go out here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).

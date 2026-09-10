@@ -6,8 +6,8 @@ image:
   alt: Page of Pentacles tarot card
 date: 2026-08-29 16:47:13 +0900
 categories: [Tarot, Pentacles]
-permalink: /en/posts/tarot-pents-page/
-alt_url: /posts/tarot-pents-page/
+permalink: /posts/tarot-pents-page/
+alt_url: /ko/posts/tarot-pents-page/
 card_name: Page of Pentacles
 tags: [tarot, tarot card meanings, pentacles, court cards]
 ---
@@ -68,8 +68,8 @@ If the Ace of Pentacles is a seed not yet planted, the Page of Pentacles is the 
 
 ## Cards to read alongside
 
-- [Ace of Pentacles](/en/posts/tarot-pents-01/) — the seed not yet planted (the Ace) and the person who has begun learning it (the Page) connect here.
-- [Knight of Pentacles](/en/posts/tarot-pents-knight/) — the next stage of maturity, past learning and into steady execution.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Ace of Pentacles](/posts/tarot-pents-01/) — the seed not yet planted (the Ace) and the person who has begun learning it (the Page) connect here.
+- [Knight of Pentacles](/posts/tarot-pents-knight/) — the next stage of maturity, past learning and into steady execution.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

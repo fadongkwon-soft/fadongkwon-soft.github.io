@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 소드, 마이너아르카나, 소드3, ThreeofSwor
 image:
   path: /assets/img/tarot/feature_swords_03.jpg
   alt: 타로 카드 소드 3(Three of Swords)
-alt_url: /en/posts/tarot-swords-03/
+alt_url: /posts/tarot-swords-03/
 ---
 
 믿었던 사람에게서 예상치 못한 말을 들은 날, 혹은 이미 끝난 관계를 마음속으로 정리하는 중에 카드를 뽑았다면 소드 3이 나올 확률이 유독 높습니다. 성적표를 받아 들고 충격에 빠졌을 때도 마찬가지입니다. 이런 질문에 이 카드가 나온다면, 지금 마주한 감정을 부정하지 말라는 신호로 받아들이는 편이 정확합니다.
@@ -53,8 +53,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [소드 4(Four of Swords)](/posts/tarot-swords-04/) — 상심을 마주한 다음에는 반드시 쉼이 필요합니다. 소드 3과 4는 아픔과 회복이 짝을 이루는 흐름입니다.
-- [컵 5(Five of Cups)](/posts/tarot-cups-05/) — 같은 상실이라도 소드 3은 머리로 받아들이는 진실의 상처이고, 컵 5는 가슴으로 느끼는 슬픔에 가깝습니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [소드 4(Four of Swords)](/ko/posts/tarot-swords-04/) — 상심을 마주한 다음에는 반드시 쉼이 필요합니다. 소드 3과 4는 아픔과 회복이 짝을 이루는 흐름입니다.
+- [컵 5(Five of Cups)](/ko/posts/tarot-cups-05/) — 같은 상실이라도 소드 3은 머리로 받아들이는 진실의 상처이고, 컵 5는 가슴으로 느끼는 슬픔에 가깝습니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

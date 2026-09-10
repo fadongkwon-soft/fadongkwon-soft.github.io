@@ -5,7 +5,7 @@ date: 2026-08-29 16:30:00 +0900
 categories: [Blogging, Episode]
 tags: [jekyll, chirpy, i18n, SEO, github pages, 블로그, 다국어, 1인개발자]
 pin: false
-alt_url: /en/posts/bilingual-blog-i18n/
+alt_url: /posts/bilingual-blog-i18n/
 ---
 ## Info
 > How I turned a Korean-only Jekyll (Chirpy) blog into a bilingual site — English by
@@ -27,7 +27,7 @@ alt_url: /en/posts/bilingual-blog-i18n/
 키워드 밀도가 반으로 떨어지고, `<title>`과 `<html lang>`이 하나뿐이라 영문 검색어용
 제목을 쓸 수 없습니다.
 
-정답은 **언어별 URL 분리 + 상호 hreflang**입니다. 한국어는 기존 URL(`/posts/…`)을
+정답은 **언어별 URL 분리 + 상호 hreflang**입니다. 한국어는 기존 URL(`/ko/posts/…`)을
 그대로 두고, 영문판을 `/en/posts/…`에 두고, 두 문서가 서로를 `<link rel="alternate"
 hreflang>`으로 가리키게 했습니다. 기존에 색인된 한국어 URL을 하나도 깨지 않는 게 핵심입니다.
 
@@ -91,7 +91,7 @@ hreflang>`으로 가리키게 했습니다. 기존에 색인된 한국어 URL을
 
 ## 7. jekyll-archives는 컬렉션을 모른다
 
-카테고리/태그별 페이지(`/categories/앱/` 같은)는 jekyll-archives가 `site.posts`에서만
+카테고리/태그별 페이지(`/ko/categories/앱/` 같은)는 jekyll-archives가 `site.posts`에서만
 만들어 줍니다. 영문 컬렉션은 대상이 아니죠. 처음엔 한 페이지에 전부 나열하는 식으로
 때웠다가 "이상하다"는 피드백을 받고, 결국 **번역 파이프라인이 카테고리·태그별 스텁
 페이지를 자동 생성**하도록 바꿨습니다(현재 카테고리 15 + 태그 72). 새 태그가 생기면
@@ -112,7 +112,7 @@ hreflang>`으로 가리키게 했습니다. 기존에 색인된 한국어 URL을
 
 이틀간의 개편으로 지금 이 블로그는:
 
-- 영문이 기본(루트 `/`), 한국어는 `/ko/`와 기존 `/posts/…` URL 그대로
+- 영문이 기본(루트 `/`), 한국어는 `/ko/`와 기존 `/ko/posts/…` URL 그대로
 - 브라우저 언어에 따라 자동 선택, 수동 선택은 기억
 - 글 95편 × 2개 언어, hreflang 완비, 예약 게시는 두 언어 동시 공개
 

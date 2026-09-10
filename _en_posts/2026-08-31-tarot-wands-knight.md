@@ -6,8 +6,8 @@ image:
   alt: Knight of Wands tarot card
 date: 2026-08-29 16:46:32 +0900
 categories: [Tarot, Wands]
-permalink: /en/posts/tarot-wands-knight/
-alt_url: /posts/tarot-wands-knight/
+permalink: /posts/tarot-wands-knight/
+alt_url: /ko/posts/tarot-wands-knight/
 card_name: Knight of Wands
 tags: [tarot, tarot card meanings, wands, minor arcana, court cards]
 ---
@@ -50,8 +50,8 @@ What the Knight of Wands advises is not to stop but to check the direction once,
 
 ## Cards to read alongside
 
-- [Page of Wands](/en/posts/tarot-wands-page/) — the Knight's charge is the Page's curiosity taken to the next stage.
-- [Queen of Wands](/en/posts/tarot-wands-queen/) — when the Knight's speed ripens into settled confidence, it becomes the stage of the Queen of Wands.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Page of Wands](/posts/tarot-wands-page/) — the Knight's charge is the Page's curiosity taken to the next stage.
+- [Queen of Wands](/posts/tarot-wands-queen/) — when the Knight's speed ripens into settled confidence, it becomes the stage of the Queen of Wands.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

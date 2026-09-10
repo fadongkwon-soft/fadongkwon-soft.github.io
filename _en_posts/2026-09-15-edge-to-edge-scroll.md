@@ -3,8 +3,8 @@ title: Why a 100dvh Container Still Scrolls — The targetSdk 35+ Edge-to-Edge T
 description: "Fifteen apps reported the same thing at once: the screen shifts a few pixels up and down. The cause was the edge-to-edge layout that targetSdk 35 and above enforces. The body takes padding equal to the safe-area insets, and a container inside it set to 100dvh counts those insets a second time, overflowing the document. The diagnosis and the one-line fix"
 date: 2026-09-15 20:00:00 +0900
 categories: [Blogging, Episode]
-permalink: /en/posts/edge-to-edge-scroll/
-alt_url: /posts/edge-to-edge-scroll/
+permalink: /posts/edge-to-edge-scroll/
+alt_url: /ko/posts/edge-to-edge-scroll/
 image:
   path: /assets/img/20260915_edge-to-edge/cover.png
   alt: Diagram of safe-area insets being counted twice in a 100dvh layout
@@ -101,4 +101,4 @@ To avoid the same trap:
 
 That last point stings the most. I checked that features worked and moved on, and the bug sat in fifteen apps for weeks.
 
-My apps are on [Google Play and Apps in Toss](/en/posts/apps-in-toss-launch/), and some can be [played right in the browser](/en/play/). Updates go out here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
+My apps are on [Google Play and Apps in Toss](/posts/apps-in-toss-launch/), and some can be [played right in the browser](/play/). Updates go out here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).

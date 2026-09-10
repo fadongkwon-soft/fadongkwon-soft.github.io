@@ -6,8 +6,8 @@ image:
   alt: The Fool tarot card
 date: 2026-08-26 09:00:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-00-fool/
-alt_url: /posts/tarot-major-00-fool/
+permalink: /posts/tarot-major-00-fool/
+alt_url: /ko/posts/tarot-major-00-fool/
 card_name: The Fool
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -79,9 +79,9 @@ Today is a good day to set off somewhere new with a light step. Try only the "fi
 
 ## Cards to read alongside
 
-- [The Magician](/en/posts/tarot-major-01-magician/) — if the Fool is "setting off," the Magician is "doing it." The next step, where potential turns into skill.
-- [The High Priestess](/en/posts/tarot-major-02-high-priestess/) — the Fool runs outward, the High Priestess digs inward. Two opposite attitudes standing at the same beginning.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Magician](/posts/tarot-major-01-magician/) — if the Fool is "setting off," the Magician is "doing it." The next step, where potential turns into skill.
+- [The High Priestess](/posts/tarot-major-02-high-priestess/) — the Fool runs outward, the High Priestess digs inward. Two opposite attitudes standing at the same beginning.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 Major Arcana 21, **The World**, is where the journey the Fool set out on arrives. Cards 0 and 21 pair up as the first and last stops of the tarot journey.
 

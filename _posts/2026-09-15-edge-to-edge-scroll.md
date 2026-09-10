@@ -6,7 +6,7 @@ categories: [Blogging, Episode]
 tags: [안드로이드, 웹뷰, CSS, 앱인토스, 미니게임, 개발일지]
 image:
   path: /assets/img/20260915_edge-to-edge/cover.png
-alt_url: /en/posts/edge-to-edge-scroll/
+alt_url: /posts/edge-to-edge-scroll/
 ---
 
 미니게임을 폰에서 확인하다가 이상한 걸 발견했습니다. 게임 화면을 손가락으로 문지르면 화면 전체가 위아래로 몇 픽셀씩 밀립니다. 스크롤이 생길 이유가 없는 화면입니다. 전체 화면을 꽉 채우는 게임이고, 컨테이너 높이를 `100dvh`로 잡아 뒀으니까요.
@@ -99,4 +99,4 @@ body 위 패딩 + 100dvh + body 아래 패딩
 
 마지막 항목이 이번에 제일 아쉬웠던 부분입니다. 기능이 동작하는지만 확인하고 넘어갔더니, 몇 주 동안 15개 앱에 남아 있었습니다.
 
-만든 앱들은 [Google Play와 앱인토스](/posts/apps-in-toss-launch/)에 있고, 일부는 [브라우저에서 바로](/play/) 해볼 수 있습니다. 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.
+만든 앱들은 [Google Play와 앱인토스](/ko/posts/apps-in-toss-launch/)에 있고, 일부는 [브라우저에서 바로](/ko/play/) 해볼 수 있습니다. 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.

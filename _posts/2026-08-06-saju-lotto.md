@@ -9,7 +9,7 @@ math: true
 mermaid: true
 image:
   path: /assets/img/20260806_saju-lotto/icon.png
-alt_url: /en/posts/saju-lotto/
+alt_url: /posts/saju-lotto/
 ---
 ## Info
 > Enter your birth date and time (solar or lunar), and Saju Lotto deterministically draws
@@ -36,4 +36,4 @@ alt_url: /en/posts/saju-lotto/
 {: .prompt-tip }
 
 ## 관련 콘텐츠
-운세 쪽 콘텐츠로 [타로 카드 78장 의미 사전](/tarot/)도 정리하고 있습니다. 카드마다 그림에 담긴 상징과 정방향·역방향 의미, 상황별 해석을 한 장씩 다룹니다.
+운세 쪽 콘텐츠로 [타로 카드 78장 의미 사전](/ko/tarot/)도 정리하고 있습니다. 카드마다 그림에 담긴 상징과 정방향·역방향 의미, 상황별 해석을 한 장씩 다룹니다.

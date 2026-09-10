@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 소드8, EightOfSwords, 소�
 image:
   path: /assets/img/tarot/feature_swords_08.jpg
   alt: 타로 카드 소드 8(Eight of Swords)
-alt_url: /en/posts/tarot-swords-08/
+alt_url: /posts/tarot-swords-08/
 ---
 
 소드 8은 실제로 갇힌 것이 아니라 스스로 갇혔다고 믿는 순간을 그린 카드입니다. 라이더-웨이트 덱 속 여인은 여덟 자루의 검에 둘러싸인 채 눈이 가려지고 몸이 헐겁게 묶여 있지만, 자세히 들여다보면 검과 검 사이에는 사람 하나가 충분히 빠져나갈 틈이 남아 있습니다. 발밑은 진창이고 저 멀리 언덕 위에는 성 하나가 서 있죠. 안전한 곳이 아예 없는 게 아니라, 눈을 가린 채로는 그곳이 보이지 않을 뿐입니다.
@@ -53,8 +53,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [소드 7(Seven of Swords)](/posts/tarot-swords-07/) — 판단의 피로가 쌓이는 카드로, 소드 8이 그리는 정체 상태의 바로 앞 단계입니다.
-- [소드 9(Nine of Swords)](/posts/tarot-swords-09/) — 눈가리개를 걷어내지 못한 채 시간이 더 흐르면 소드 9의 불안으로 이어지기 쉽습니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [소드 7(Seven of Swords)](/ko/posts/tarot-swords-07/) — 판단의 피로가 쌓이는 카드로, 소드 8이 그리는 정체 상태의 바로 앞 단계입니다.
+- [소드 9(Nine of Swords)](/ko/posts/tarot-swords-09/) — 눈가리개를 걷어내지 못한 채 시간이 더 흐르면 소드 9의 불안으로 이어지기 쉽습니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

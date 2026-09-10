@@ -6,8 +6,8 @@ image:
   alt: The Emperor tarot card
 date: 2026-08-26 10:20:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-04-emperor/
-alt_url: /posts/tarot-major-04-emperor/
+permalink: /posts/tarot-major-04-emperor/
+alt_url: /ko/posts/tarot-major-04-emperor/
 card_name: The Emperor
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -53,8 +53,8 @@ A. More often it means your own attitude or a general rigidity in the situation 
 
 ## Cards to read alongside
 
-- [The Empress](/en/posts/tarot-major-03-empress/) — the Empress of soft abundance and the Emperor of firm order are a pair that complete each other.
-- [The Hierophant](/en/posts/tarot-major-05-hierophant/) — if the Emperor governs worldly order, the Hierophant represents spiritual and traditional order.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Empress](/posts/tarot-major-03-empress/) — the Empress of soft abundance and the Emperor of firm order are a pair that complete each other.
+- [The Hierophant](/posts/tarot-major-05-hierophant/) — if the Emperor governs worldly order, the Hierophant represents spiritual and traditional order.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

@@ -6,8 +6,8 @@ image:
   alt: The Three of Swords tarot card
 date: 2026-08-29 16:46:51 +0900
 categories: [Tarot, Swords]
-permalink: /en/posts/tarot-swords-03/
-alt_url: /posts/tarot-swords-03/
+permalink: /posts/tarot-swords-03/
+alt_url: /ko/posts/tarot-swords-03/
 card_name: Three of Swords
 tags: [tarot, tarot card meanings, swords, minor arcana]
 ---
@@ -55,8 +55,8 @@ It is more accurate to read it as recovery in progress than as something finishe
 
 ## Cards to read alongside
 
-- [Four of Swords](/en/posts/tarot-swords-04/) — once you have faced the heartbreak, rest is not optional. The Three and Four of Swords pair up as pain and recovery.
-- [Five of Cups](/en/posts/tarot-cups-05/) — the same loss, but the Three of Swords is the wound of a truth taken in by the head, while the Five of Cups is closer to sadness felt in the chest.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Four of Swords](/posts/tarot-swords-04/) — once you have faced the heartbreak, rest is not optional. The Three and Four of Swords pair up as pain and recovery.
+- [Five of Cups](/posts/tarot-cups-05/) — the same loss, but the Three of Swords is the wound of a truth taken in by the head, while the Five of Cups is closer to sadness felt in the chest.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

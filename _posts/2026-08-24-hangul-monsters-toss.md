@@ -7,7 +7,7 @@ tags: [game, toss, 앱인토스, 미니앱, education, 한글, 한글공부, 유
 pin: false
 image:
   path: /assets/img/20260823_hangul-monsters/feature.png
-alt_url: /en/posts/hangul-monsters-toss/
+alt_url: /posts/hangul-monsters-toss/
 ---
 ## Info
 > **Hangul Monsters** is now live on Apps in Toss. Open it instantly inside the Toss app —
@@ -15,11 +15,11 @@ alt_url: /en/posts/hangul-monsters-toss/
 > neural voices; premium word packs unlock with a one-time purchase.
 {: .prompt-info }
 
-> **2026-09-05 업데이트**: 인앱 구매를 전부 없애고 모든 모드를 무료로 열었습니다. 자세한 이야기는 [유료 상품을 없앤 이유](/posts/monsters-go-free/)에 적었습니다.
+> **2026-09-05 업데이트**: 인앱 구매를 전부 없애고 모든 모드를 무료로 열었습니다. 자세한 이야기는 [유료 상품을 없앤 이유](/ko/posts/monsters-go-free/)에 적었습니다.
 {: .prompt-tip }
 
 ## 토스 앱에서 설치 없이 바로
-[한글 몬스터](/posts/hangul-monsters/)의 **앱인토스(토스 미니앱) 버전**이 출시됐습니다.
+[한글 몬스터](/ko/posts/hangul-monsters/)의 **앱인토스(토스 미니앱) 버전**이 출시됐습니다.
 토스 앱만 있으면 설치 없이 바로 실행되니, 아이 폰에 앱을 따로 깔아주기 번거로웠던 분들께 딱 맞아요.
 
 토스 버전은 **듣기 학습에 집중**했습니다. 모든 문제가 원어민 수준의 신경망 음성으로 출제되고,

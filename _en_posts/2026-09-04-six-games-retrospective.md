@@ -3,17 +3,17 @@ title: Shipping Six Mini Games at Once — A Five-Day Retrospective
 description: Sudoku, Nonogram, All Lights Off, Hangul Word Guess, Tap Bird and Number Rush went live on Google Play and Apps in Toss within five days. Why one shared spec, the one-pass registration order, and the mistakes I actually made
 date: 2026-09-04 23:50:00 +0900
 categories: [Blogging, Episode]
-permalink: /en/posts/six-games-retrospective/
-alt_url: /posts/six-games-retrospective/
+permalink: /posts/six-games-retrospective/
+alt_url: /ko/posts/six-games-retrospective/
 image:
   path: /assets/img/20260904_six-games/cover.png
   alt: Six game icons
 tags: [minigame, apps in toss, solo developer, dev log, typescript]
 ---
 
-Today I published six launch posts at once: [Sudoku](/en/posts/sudoku/), [Nonogram](/en/posts/nonogram/), [All Lights Off](/en/posts/lights-off/), [Hangul Word Guess](/en/posts/hangul-word/), [Tap Bird](/en/posts/tap-bird/) and [Number Rush](/en/posts/number-tap/).
+Today I published six launch posts at once: [Sudoku](/posts/sudoku/), [Nonogram](/posts/nonogram/), [All Lights Off](/posts/lights-off/), [Hangul Word Guess](/posts/hangul-word/), [Tap Bird](/posts/tap-bird/) and [Number Rush](/posts/number-tap/).
 The first line of code was written on the night of August 30; Apps in Toss went live on September 3 and Google Play on September 4. **Six games in five days**, on two stores.
-Last month, in [What I Learned Building 8 Apps Alone](/en/posts/solo-dev-8-apps/), I wrote that the next round would be "a batch." This is the record of actually running that batch.
+Last month, in [What I Learned Building 8 Apps Alone](/posts/solo-dev-8-apps/), I wrote that the next round would be "a batch." This is the record of actually running that batch.
 
 ## Why six at once
 

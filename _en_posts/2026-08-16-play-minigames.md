@@ -6,8 +6,8 @@ image:
   alt: Memory Cards mini-game
 date: 2026-08-16 01:00:00 +0900
 categories: [Products, Game]
-permalink: /en/posts/play-minigames/
-alt_url: /posts/play-minigames/
+permalink: /posts/play-minigames/
+alt_url: /ko/posts/play-minigames/
 tags: [game, android, minigame, reaction speed, memory, reaction, vite, typescript, solo developer]
 ---
 ## Info

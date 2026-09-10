@@ -6,8 +6,8 @@ image:
   alt: Spin the Bottle app icon
 date: 2024-12-29 22:38:00 +0900
 categories: [Products, Game]
-permalink: /en/posts/spin-the-bottle/
-alt_url: /posts/spin-the-bottle/
+permalink: /posts/spin-the-bottle/
+alt_url: /ko/posts/spin-the-bottle/
 tags: [app, android, ios, flutter, game, spin, bottle]
 ---
 ## Info

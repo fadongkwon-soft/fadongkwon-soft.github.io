@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 완드, 마이너아르카나, 코트카드, Knight
 image:
   path: /assets/img/tarot/feature_wands_knight.jpg
   alt: 타로 카드 완드 기사(Knight of Wands)
-alt_url: /en/posts/tarot-wands-knight/
+alt_url: /posts/tarot-wands-knight/
 ---
 
 완드 기사는 생각이 채 끝나기도 전에 이미 말을 몰아 달려나가는, 완드 수트에서 가장 속도감 넘치는 카드입니다.
@@ -48,8 +48,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [완드 시종(Page of Wands)](/posts/tarot-wands-page/) — 기사의 돌진은 시종의 호기심이 다음 단계로 나아간 모습입니다.
-- [완드 여왕(Queen of Wands)](/posts/tarot-wands-queen/) — 기사의 속도가 안정된 자신감으로 무르익으면 완드 여왕의 단계가 됩니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [완드 시종(Page of Wands)](/ko/posts/tarot-wands-page/) — 기사의 돌진은 시종의 호기심이 다음 단계로 나아간 모습입니다.
+- [완드 여왕(Queen of Wands)](/ko/posts/tarot-wands-queen/) — 기사의 속도가 안정된 자신감으로 무르익으면 완드 여왕의 단계가 됩니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

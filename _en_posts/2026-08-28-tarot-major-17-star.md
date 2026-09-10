@@ -6,8 +6,8 @@ image:
   alt: The Star tarot card
 date: 2026-08-28 10:40:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-17-star/
-alt_url: /posts/tarot-major-17-star/
+permalink: /posts/tarot-major-17-star/
+alt_url: /ko/posts/tarot-major-17-star/
 card_name: The Star
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -61,8 +61,8 @@ If the **Tower** appears next to the Star, you can read it with confidence as a 
 
 ## Cards to read alongside
 
-- [The Tower](/en/posts/tarot-major-16-tower/) — the card right before the Star. It leads into the recovery that comes after a collapse.
-- [The Hermit](/en/posts/tarot-major-09-hermit/) — the Hermit's small lantern and the Star's shining light are alike in that both are symbols of lighting the way through darkness.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Tower](/posts/tarot-major-16-tower/) — the card right before the Star. It leads into the recovery that comes after a collapse.
+- [The Hermit](/posts/tarot-major-09-hermit/) — the Hermit's small lantern and the Star's shining light are alike in that both are symbols of lighting the way through darkness.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

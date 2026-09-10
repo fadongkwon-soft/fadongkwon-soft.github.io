@@ -3,8 +3,8 @@ title: Apps in Toss Policy Changes for September and October — A Partner's Che
 description: Apps in Toss announced major changes across four separate notices since late August. Promotional smart-message push ends October 1, a full compliance review of every non-game mini app starts September 30, ad abuse stays permanently enforceable, a boosting program is unveiled on September 21, and business registration is now deferred. Here is what to do and by when, from someone running 26 mini apps
 date: 2026-09-09 22:40:00 +0900
 categories: [Blogging, Episode]
-permalink: /en/posts/toss-policy-changes/
-alt_url: /posts/toss-policy-changes/
+permalink: /posts/toss-policy-changes/
+alt_url: /ko/posts/toss-policy-changes/
 image:
   path: /assets/img/20260909_toss-policy/cover.png
   alt: Calendar of Apps in Toss policy deadlines for September and October 2026
@@ -37,7 +37,7 @@ The schedule breaks into three parts:
 - **Viewing send performance data: through October 31**
 - **Functional push, alerts, and consent forms: unchanged**
 
-The notice states plainly that once the viewing window closes, the performance data cannot be retrieved again. If your workspace ever ran promotional sends, download the numbers before October 31. I ran one promotional campaign in late August for [Tarot Fortune](/en/posts/tarot-fortune/) and [Tarot Ping](/en/posts/tarot-ping/), and those results disappear then too.
+The notice states plainly that once the viewing window closes, the performance data cannot be retrieved again. If your workspace ever ran promotional sends, download the numbers before October 31. I ran one promotional campaign in late August for [Tarot Fortune](/posts/tarot-fortune/) and [Tarot Ping](/posts/tarot-ping/), and those results disappear then too.
 
 ### Why they are closing it
 
@@ -53,7 +53,7 @@ One footnote: the fee waiver for promotional smart messages had been **extended 
 
 This part matters. Only the promotional side closes; **functional push, alerts, and consent forms stay exactly as they are.** Scheduled notifications like "Tonight at 8, your new puzzle is ready" remain free to use.
 
-I have functional 8 p.m. Monday-through-Saturday alerts wired into my mini games, and nothing there changes. I wrote up [everything that went wrong](/en/posts/toss-push-lessons/) while adding them. With promotional push closing, now is the moment to wire in functional push if you have not — it is the only free re-engagement channel left.
+I have functional 8 p.m. Monday-through-Saturday alerts wired into my mini games, and nothing there changes. I wrote up [everything that went wrong](/posts/toss-push-lessons/) while adding them. With promotional push closing, now is the moment to wire in functional push if you have not — it is the only free re-engagement channel left.
 
 ## 2. Full compliance review of non-game mini apps (September 30, about one month)
 
@@ -101,7 +101,7 @@ So there is no path to asking "is our app okay?" and getting an answer. The only
 
 ### Games are not in scope this time
 
-Of my 26 apps, the 20 classified as games are not part of this audit. The six non-game ones are: two party-roulette apps, [Saju Lotto](/en/posts/saju-lotto/), [the nursing assistant exam bank](/en/posts/nursing-quiz/), and the two tarot apps. That said, games have their own launch guide, so being out of scope this round is not an exemption.
+Of my 26 apps, the 20 classified as games are not part of this audit. The six non-game ones are: two party-roulette apps, [Saju Lotto](/posts/saju-lotto/), [the nursing assistant exam bank](/posts/nursing-quiz/), and the two tarot apps. That said, games have their own launch guide, so being out of scope this round is not an exemption.
 
 ## 3. Ad abuse is separate from the audit
 
@@ -168,7 +168,7 @@ Reading this purely as "the rules got stricter" leaves value on the table. Closi
 
 Once I have gone through the webinar recording I will write up the actual contents of the boosting program and the exposure criteria. By then I can work from published standards rather than guesses.
 
-My apps are on [Google Play and Apps in Toss](/en/posts/apps-in-toss-launch/), and some can be [played right in the browser](/en/play/). Updates go out here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
+My apps are on [Google Play and Apps in Toss](/posts/apps-in-toss-launch/), and some can be [played right in the browser](/play/). Updates go out here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
 
 > This post summarizes Apps in Toss console notices as of September 9, 2026. Policies can change, so check the original notices in the console before acting on anything here.
 {: .prompt-info }

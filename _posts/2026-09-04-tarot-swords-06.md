@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 소드, 마이너아르카나, 소드6, SixofSwords
 image:
   path: /assets/img/tarot/feature_swords_06.jpg
   alt: 타로 카드 소드 6(Six of Swords)
-alt_url: /en/posts/tarot-swords-06/
+alt_url: /posts/tarot-swords-06/
 ---
 
 거친 물살을 뒤로하고 배를 타고 떠나는 이 카드는, 도망치는 장면일까요 아니면 나아가는 장면일까요? 사공이 노를 젓고, 웅크린 여인과 아이가 뱃머리에 앉아 있으며, 배 안에는 여섯 자루의 검이 가지런히 꽂혀 있는 그림. 소드 6은 이 질문에 대한 답을 은근히 보여주는 카드입니다.
@@ -62,8 +62,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [소드 5(Five of Swords)](/posts/tarot-swords-05/) — 소모적인 갈등의 카드 바로 다음에 이어지는 카드로, 다툼을 뒤로하고 자리를 옮기는 흐름이 자연스럽게 연결됩니다.
-- [컵 시종(Page of Cups)](/posts/tarot-cups-page/) — 소드 6이 힘든 곳을 벗어나는 이동이라면, 컵 시종은 그 이후에 다시 열리는 순수한 마음의 시작을 그립니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [소드 5(Five of Swords)](/ko/posts/tarot-swords-05/) — 소모적인 갈등의 카드 바로 다음에 이어지는 카드로, 다툼을 뒤로하고 자리를 옮기는 흐름이 자연스럽게 연결됩니다.
+- [컵 시종(Page of Cups)](/ko/posts/tarot-cups-page/) — 소드 6이 힘든 곳을 벗어나는 이동이라면, 컵 시종은 그 이후에 다시 열리는 순수한 마음의 시작을 그립니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

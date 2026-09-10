@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 소드9, NineOfSwords, 타�
 image:
   path: /assets/img/tarot/feature_swords_09.jpg
   alt: 타로 카드 소드 9(Nine of Swords)
-alt_url: /en/posts/tarot-swords-09/
+alt_url: /posts/tarot-swords-09/
 ---
 
 "혹시 잘못되면 어떡하지"라는 생각이 꼬리를 물어 눈을 감아도 잠이 오지 않는 밤 — 이런 질문을 품고 있다면 지금 뽑은 카드가 소드 9(Nine of Swords)일 가능성이 큽니다. 이 카드는 실제로 벌어진 사건이 아니라, 아직 벌어지지 않은 일에 대한 상상이 마음을 짓누르는 순간을 그립니다.
@@ -49,8 +49,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [소드 8(Eight of Swords)](/posts/tarot-swords-08/) — 스스로 만든 한계가 풀리지 않은 채 이어지면 소드 9의 밤으로 넘어가기 쉽습니다.
-- [소드 10(Ten of Swords)](/posts/tarot-swords-10/) — 소드 9의 불안이 실제 사건으로 매듭지어지는 다음 자리입니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [소드 8(Eight of Swords)](/ko/posts/tarot-swords-08/) — 스스로 만든 한계가 풀리지 않은 채 이어지면 소드 9의 밤으로 넘어가기 쉽습니다.
+- [소드 10(Ten of Swords)](/ko/posts/tarot-swords-10/) — 소드 9의 불안이 실제 사건으로 매듭지어지는 다음 자리입니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

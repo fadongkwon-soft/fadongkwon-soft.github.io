@@ -9,7 +9,9 @@ sitemap: false
     <meta charset="utf-8">
     <title>Redirecting…</title>
     <!-- 영문 홈이 /en/ 에서 루트(/)로 승격되면서 남긴 리다이렉트 스텁.
-         /en/posts/... 같은 하위 경로는 그대로 유효하다. -->
+         2026-09-11 URL 체계 전환(영어 = /*, 한국어 = /ko/*) 이후 /en/ 하위 경로는
+         전부 사라졌고, tools/urlscheme.py 가 만든 meta-refresh 스텁이 새 주소로 보낸다.
+         (/en/posts/<slug>/ → /posts/<slug>/ 등. 몇 달 뒤 en/ 를 통째로 지워도 된다) -->
     <link rel="canonical" href="{{ '/' | absolute_url }}">
     <meta http-equiv="refresh" content="0; url=/">
     <meta name="robots" content="noindex">

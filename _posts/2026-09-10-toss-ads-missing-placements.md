@@ -6,7 +6,7 @@ categories: [Blogging, Episode]
 tags: [앱인토스, 인앱광고, 미니앱, 수익화, 1인개발자, 개발일지]
 image:
   path: /assets/img/20260910_missing-placements/cover.png
-alt_url: /en/posts/toss-ads-missing-placements/
+alt_url: /posts/toss-ads-missing-placements/
 ---
 
 9월 8일에 미니게임 10종을 앱인토스에 출시했습니다. 2048, 벽돌깨기, 픽셀 탁구, 오목, 하늘 점프, 솔리테어, 숫자 퍼즐, 지뢰찾기, 뱀 게임, 타워 쌓기입니다.
@@ -81,7 +81,7 @@ alt_url: /en/posts/toss-ads-missing-placements/
 
 **노출 0을 감시합니다.** 매일 앱별 노출을 보는 장부가 이미 있으니, 출시된 앱 중 노출이 0인 것이 있으면 눈에 걸리게 해 두려고 합니다. 조용히 실패하는 설정은 사람 기억이 아니라 지표로만 잡힙니다.
 
-**출시 직후 실기기에서 광고 영역을 봅니다.** 기능이 동작하는지만 확인하고 넘어간 게 이번의 직접적인 원인입니다. 배너가 있어야 할 자리에 배너가 있는지 눈으로 보는 데는 10초면 됩니다. [며칠 전 세로 스크롤 버그](/posts/toss-policy-changes/)를 15개 앱에서 몇 주 동안 못 본 것도 같은 종류의 게으름이었습니다.
+**출시 직후 실기기에서 광고 영역을 봅니다.** 기능이 동작하는지만 확인하고 넘어간 게 이번의 직접적인 원인입니다. 배너가 있어야 할 자리에 배너가 있는지 눈으로 보는 데는 10초면 됩니다. [며칠 전 세로 스크롤 버그](/ko/posts/toss-policy-changes/)를 15개 앱에서 몇 주 동안 못 본 것도 같은 종류의 게으름이었습니다.
 
 **앱을 여러 개 동시에 내는 것의 비용을 인정합니다.** 공용 코드로 만들면 개발은 확실히 빨라집니다. 그런데 앱마다 손으로 해야 하는 콘솔 작업은 개수만큼 정직하게 늘어납니다. 그 부분이 이 방식의 실제 병목이라는 걸 이번에 알았습니다.
 
@@ -91,6 +91,6 @@ alt_url: /en/posts/toss-ads-missing-placements/
 
 그래도 이 사고가 나쁘게만 남지는 않을 것 같습니다. 수익을 앱별로 쌓아 보는 장부를 만들지 않았다면 지금도 몰랐을 겁니다. 숫자를 눈에 보이게 해 두는 일이 왜 필요한지 이번에 값을 치르고 배웠습니다.
 
-10종 각각의 소개는 내일부터 하루에 하나씩 올릴 예정입니다. 먼저 나온 6종의 이야기는 [미니게임 6종 동시 출시 회고](/posts/six-games-retrospective/)에 정리해 두었습니다.
+10종 각각의 소개는 내일부터 하루에 하나씩 올릴 예정입니다. 먼저 나온 6종의 이야기는 [미니게임 6종 동시 출시 회고](/ko/posts/six-games-retrospective/)에 정리해 두었습니다.
 
-만든 앱들은 [Google Play와 앱인토스](/posts/apps-in-toss-launch/)에 있고, 일부는 [브라우저에서 바로](/play/) 해볼 수 있습니다. 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.
+만든 앱들은 [Google Play와 앱인토스](/ko/posts/apps-in-toss-launch/)에 있고, 일부는 [브라우저에서 바로](/ko/play/) 해볼 수 있습니다. 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.

@@ -6,7 +6,7 @@ categories: [Blogging, Episode]
 tags: [자바스크립트, 캔버스, 포인터이벤트, 디버깅, 미니게임, 개발일지]
 image:
   path: /assets/img/20260918_transition-traps/cover.png
-alt_url: /en/posts/screen-transition-traps/
+alt_url: /posts/screen-transition-traps/
 ---
 
 같은 주에 성격이 전혀 다른 버그 두 개를 잡았는데, 원인을 파고들어 보니 자리가 같았습니다. **화면이 전환되는 그 한순간**입니다.
@@ -151,4 +151,4 @@ solvedBanner.addEventListener('pointerdown', completeFromTap);
 
 **추측을 세 번 이상 반복하지 않는다.** 같은 곳을 세 번 고쳐서 안 되면 전제가 틀렸다는 신호입니다. 벽돌깨기는 속도를 직접 측정한 순간 5분 만에 끝났습니다. 그 전까지 며칠을 썼습니다.
 
-두 게임은 [브라우저에서 바로](/play/) 할 수 있는 목록에는 아직 없지만, [Google Play와 앱인토스](/posts/apps-in-toss-launch/)에서 받을 수 있습니다. 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.
+두 게임은 [브라우저에서 바로](/ko/play/) 할 수 있는 목록에는 아직 없지만, [Google Play와 앱인토스](/ko/posts/apps-in-toss-launch/)에서 받을 수 있습니다. 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.

@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 여사제카드, HighPrieste
 image:
   path: /assets/img/tarot/feature_major_02_high_priestess.jpg
   alt: 타로 카드 여사제(The High Priestess)
-alt_url: /en/posts/tarot-major-02-high-priestess/
+alt_url: /posts/tarot-major-02-high-priestess/
 ---
 
 여사제 카드를 두고 "모든 것을 미리 꿰뚫어 보는 예언자의 카드"라고 오해하는 경우가 많습니다. 신비로운 분위기 때문에 생기는 착각이지만, 실제 이 카드가 말하는 힘은 미래를 앞서 아는 능력이 아니라 **아직 드러나지 않은 것을 함부로 재촉하지 않는 태도**에 가깝습니다. 메이저 아르카나 2번 **여사제(The High Priestess)**는 답을 갖고 있으면서도 때가 될 때까지 말을 아끼는 카드입니다.
@@ -68,8 +68,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [마법사(The Magician)](/posts/tarot-major-01-magician/) — 밖으로 드러내는 마법사의 실행력과, 안으로 쌓아두는 여사제의 직관은 서로를 비추는 짝입니다.
-- [여황제(The Empress)](/posts/tarot-major-03-empress/) — 여사제 바로 다음 카드. 안으로 향했던 지혜가 여황제에 이르러 풍요로운 결실로 드러납니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [마법사(The Magician)](/ko/posts/tarot-major-01-magician/) — 밖으로 드러내는 마법사의 실행력과, 안으로 쌓아두는 여사제의 직관은 서로를 비추는 짝입니다.
+- [여황제(The Empress)](/ko/posts/tarot-major-03-empress/) — 여사제 바로 다음 카드. 안으로 향했던 지혜가 여황제에 이르러 풍요로운 결실로 드러납니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

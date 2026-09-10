@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 컵, 궁정카드, QueenOfCu
 image:
   path: /assets/img/tarot/feature_cups_queen.jpg
   alt: 타로 카드 컵 여왕(Queen of Cups)
-alt_url: /en/posts/tarot-cups-queen/
+alt_url: /posts/tarot-cups-queen/
 ---
 
 바닷가 왕좌에 앉아 정교하게 장식된 잔을 두 손으로 가만히 감싸 쥔 여인이 있습니다. 시선은 잔 속을 향해 있지만, 마음은 파도 너머 누군가의 감정에까지 가닿아 있는 듯합니다. **컵 여왕(Queen of Cups)**은 이렇게 감정을 다스리는 법을 아는 사람의 초상입니다.
@@ -66,8 +66,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [컵 왕(King of Cups)](/posts/tarot-cups-king/) — 같은 정서적 성숙이라도 여왕은 내면의 돌봄으로, 왕은 외적인 책임으로 발휘됩니다.
-- [소드 에이스(Ace of Swords)](/posts/tarot-swords-01/) — 감정으로 헤아리는 컵 여왕과 달리, 소드 에이스는 명료한 사고로 상황을 꿰뚫어 봅니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [컵 왕(King of Cups)](/ko/posts/tarot-cups-king/) — 같은 정서적 성숙이라도 여왕은 내면의 돌봄으로, 왕은 외적인 책임으로 발휘됩니다.
+- [소드 에이스(Ace of Swords)](/ko/posts/tarot-swords-01/) — 감정으로 헤아리는 컵 여왕과 달리, 소드 에이스는 명료한 사고로 상황을 꿰뚫어 봅니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

@@ -6,8 +6,8 @@ image:
   alt: Knight of Cups tarot card
 date: 2026-08-29 16:46:46 +0900
 categories: [Tarot, Cups]
-permalink: /en/posts/tarot-cups-knight/
-alt_url: /posts/tarot-cups-knight/
+permalink: /posts/tarot-cups-knight/
+alt_url: /ko/posts/tarot-cups-knight/
 card_name: Knight of Cups
 tags: [tarot, tarot card meanings, minor arcana, cups, court cards]
 ---
@@ -53,8 +53,8 @@ The Knight of Cups is a card whose impression shifts a great deal with the cards
 
 ## Cards to read alongside
 
-- [Page of Cups](/en/posts/tarot-cups-page/) — the Page's clumsy fondness matures by the Knight into an offer made outright.
-- [Knight of Wands](/en/posts/tarot-wands-knight/) — the same rank, a different grain. Wands is the headlong doer, Cups the warm romantic.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Page of Cups](/posts/tarot-cups-page/) — the Page's clumsy fondness matures by the Knight into an offer made outright.
+- [Knight of Wands](/posts/tarot-wands-knight/) — the same rank, a different grain. Wands is the headlong doer, Cups the warm romantic.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

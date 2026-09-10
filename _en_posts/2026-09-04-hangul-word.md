@@ -6,8 +6,8 @@ image:
   alt: Hangul Word Guess feature graphic
 date: 2026-09-04 22:00:00 +0900
 categories: [Products, Game]
-permalink: /en/posts/hangul-word/
-alt_url: /posts/hangul-word/
+permalink: /posts/hangul-word/
+alt_url: /ko/posts/hangul-word/
 tags: [game, android, hangul, wordle, solo developer]
 ---
 ## Info
@@ -42,13 +42,13 @@ It works fully offline with no sign-up or login.
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.hangul_word>
 - Apps in Toss: <https://fadongkwon.com/toss/hangul-word/> — open it on your phone and it connects straight into the Toss app.
 
-For children just starting to learn Hangul, the listen-and-pick game [Hangul Monsters](/en/posts/hangul-monsters/) is a better fit.
+For children just starting to learn Hangul, the listen-and-pick game [Hangul Monsters](/posts/hangul-monsters/) is a better fit.
 
 ## Released Alongside
-- [Sudoku](/en/posts/sudoku/) — a clean daily sudoku
-- [Nonogram](/en/posts/nonogram/) — reveal pixel art with number clues
-- [All Lights Off](/en/posts/lights-off/) — the classic toggle puzzle
-- [Tap Bird](/en/posts/tap-bird/) — tap to fly through the gaps
-- [Number Rush](/en/posts/number-tap/) — tap 1 to 25 in order, fast
+- [Sudoku](/posts/sudoku/) — a clean daily sudoku
+- [Nonogram](/posts/nonogram/) — reveal pixel art with number clues
+- [All Lights Off](/posts/lights-off/) — the classic toggle puzzle
+- [Tap Bird](/posts/tap-bird/) — tap to fly through the gaps
+- [Number Rush](/posts/number-tap/) — tap 1 to 25 in order, fast
 
 I post updates here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).

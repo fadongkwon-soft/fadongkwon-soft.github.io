@@ -6,8 +6,8 @@ image:
   alt: Page of Cups tarot card
 date: 2026-08-29 16:46:45 +0900
 categories: [Tarot, Cups]
-permalink: /en/posts/tarot-cups-page/
-alt_url: /posts/tarot-cups-page/
+permalink: /posts/tarot-cups-page/
+alt_url: /ko/posts/tarot-cups-page/
 card_name: Page of Cups
 tags: [tarot, tarot card meanings, minor arcana, cups, court cards]
 ---
@@ -49,8 +49,8 @@ A. If the Ace of Cups is the moment feeling itself first wells up, the Page is t
 
 ## Cards to read alongside
 
-- [Ace of Cups](/en/posts/tarot-cups-01/) — the seed card where feeling first wells up, the source of the signal the Page carries.
-- [Knight of Cups](/en/posts/tarot-cups-knight/) — the Page's clumsy signal matures at the next rank into an offer made outright.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Ace of Cups](/posts/tarot-cups-01/) — the seed card where feeling first wells up, the source of the signal the Page carries.
+- [Knight of Cups](/posts/tarot-cups-knight/) — the Page's clumsy signal matures at the next rank into an offer made outright.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

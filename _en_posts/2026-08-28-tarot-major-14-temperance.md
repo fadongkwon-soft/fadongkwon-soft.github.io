@@ -6,8 +6,8 @@ image:
   alt: Temperance tarot card
 date: 2026-08-28 09:40:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-14-temperance/
-alt_url: /posts/tarot-major-14-temperance/
+permalink: /posts/tarot-major-14-temperance/
+alt_url: /ko/posts/tarot-major-14-temperance/
 card_name: Temperance
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -65,8 +65,8 @@ Temperance is not a showy card. It draws no dramatic event and no intense emotio
 
 ## Cards to read alongside
 
-- [The Hanged Man](/en/posts/tarot-major-12-hanged-man/) — the balance of Temperance only becomes possible after you have passed through the Hanged Man's pause and shift in view.
-- [The Devil](/en/posts/tarot-major-15-devil/) — the card right after Temperance. When balance breaks and everything tips to one side, it leads into the entanglement of the Devil.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Hanged Man](/posts/tarot-major-12-hanged-man/) — the balance of Temperance only becomes possible after you have passed through the Hanged Man's pause and shift in view.
+- [The Devil](/posts/tarot-major-15-devil/) — the card right after Temperance. When balance breaks and everything tips to one side, it leads into the entanglement of the Devil.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

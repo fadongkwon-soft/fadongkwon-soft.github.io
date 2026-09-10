@@ -6,8 +6,8 @@ image:
   alt: Death tarot card
 date: 2026-08-28 09:20:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-13-death/
-alt_url: /posts/tarot-major-13-death/
+permalink: /posts/tarot-major-13-death/
+alt_url: /ko/posts/tarot-major-13-death/
 card_name: Death
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -69,8 +69,8 @@ People say there are no bad cards in tarot, and that is especially true of Death
 
 ## Cards to read alongside
 
-- [The Tower](/en/posts/tarot-major-16-tower/) — both mean big change, but the Tower is a shock that collapses suddenly from outside, while Death is a transition that has ripened inside and is now closed out.
-- [The Hanged Man](/en/posts/tarot-major-12-hanged-man/) — the card right before Death. When the time for stopping and looking is over, the time for tying things off arrives.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Tower](/posts/tarot-major-16-tower/) — both mean big change, but the Tower is a shock that collapses suddenly from outside, while Death is a transition that has ripened inside and is now closed out.
+- [The Hanged Man](/posts/tarot-major-12-hanged-man/) — the card right before Death. When the time for stopping and looking is over, the time for tying things off arrives.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

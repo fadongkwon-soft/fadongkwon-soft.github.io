@@ -3,8 +3,8 @@ title: When to Start Teaching Hangul — Readiness Signs and Two Methods
 description: The readiness signs that tell you a child is ready to learn Hangul, and how the whole-word and letter-based methods actually differ.
 date: 2026-08-28 20:00:00 +0900
 categories: [Learning, Hangul]
-permalink: /en/posts/hangul-when-to-start/
-alt_url: /posts/hangul-when-to-start/
+permalink: /posts/hangul-when-to-start/
+alt_url: /ko/posts/hangul-when-to-start/
 tags: [hangul, early education, literacy, school readiness, parenting]
 ---
 
@@ -78,5 +78,5 @@ In the next post I will cover stage one — learning the consonants and vowels a
 
 ---
 
-> I built **[Hangul Monsters](/en/posts/hangul-monsters/)**, an app that practices Hangul by having the child listen to a sound and pick the letter. Because it is listen-and-choose, it works even at a stage where writing is still too hard.
+> I built **[Hangul Monsters](/posts/hangul-monsters/)**, an app that practices Hangul by having the child listen to a sound and pick the letter. Because it is listen-and-choose, it works even at a stage where writing is still too hard.
 {: .prompt-tip }

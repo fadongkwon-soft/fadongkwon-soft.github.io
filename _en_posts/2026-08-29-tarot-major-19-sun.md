@@ -6,8 +6,8 @@ image:
   alt: The Sun tarot card
 date: 2026-08-29 09:20:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-19-sun/
-alt_url: /posts/tarot-major-19-sun/
+permalink: /posts/tarot-major-19-sun/
+alt_url: /ko/posts/tarot-major-19-sun/
 card_name: The Sun
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -58,9 +58,9 @@ A reversal does not announce misfortune. The strength of the light is unchanged;
 
 ## Cards to read alongside
 
-- [The Star](/en/posts/tarot-major-17-star/) — two places before the Sun. If the Star is the "hope" you hold in the dark, the Sun is that hope turned into "certainty" and lit up.
-- [The Moon](/en/posts/tarot-major-18-moon/) — the card right before the Sun. Once the Moon's fog and unease lift, the clarity of the Sun arrives.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Star](/posts/tarot-major-17-star/) — two places before the Sun. If the Star is the "hope" you hold in the dark, the Sun is that hope turned into "certainty" and lit up.
+- [The Moon](/posts/tarot-major-18-moon/) — the card right before the Sun. Once the Moon's fog and unease lift, the clarity of the Sun arrives.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 The cards that follow, 20 **Judgement** and 21 **The World**, are the ones that finish off what the Sun lit up. After the brightness, decision and completion are waiting.
 

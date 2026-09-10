@@ -4,7 +4,7 @@ description: 간호조무사 국가시험 응시 자격, 교육 이수 시간, �
 date: 2026-09-01 20:00:00 +0900
 categories: [Learning, Certification]
 tags: [간호조무사, 간호조무사시험, 국가시험, 자격증, 간호조무사자격증, 국시원, 시험정보]
-alt_url: /en/posts/nursing-assistant-exam-guide/
+alt_url: /posts/nursing-assistant-exam-guide/
 ---
 
 간호조무사가 되려면 무엇부터 해야 하는지 검색해 보면, 학원 광고와 오래된 정보가 섞여 있어 정작 순서가 잘 보이지 않습니다. 이 글에서는 자격 요건부터 시험, 자격증 발급까지의 흐름을 순서대로 정리했습니다.
@@ -102,5 +102,5 @@ alt_url: /en/posts/nursing-assistant-exam-guide/
 
 ---
 
-> 문제를 많이 풀어보고 싶다면 **[간호조무사 모의고사](/posts/nursing-quiz/)** 앱을 만들어 두었습니다. 과목별 문제은행과 오답 노트, 최근에 본 문제를 피해서 출제하는 기능이 있습니다.
+> 문제를 많이 풀어보고 싶다면 **[간호조무사 모의고사](/ko/posts/nursing-quiz/)** 앱을 만들어 두었습니다. 과목별 문제은행과 오답 노트, 최근에 본 문제를 피해서 출제하는 기능이 있습니다.
 {: .prompt-tip }

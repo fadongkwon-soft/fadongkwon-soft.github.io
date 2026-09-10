@@ -6,8 +6,8 @@ image:
   alt: The Two of Swords tarot card
 date: 2026-08-29 16:46:50 +0900
 categories: [Tarot, Swords]
-permalink: /en/posts/tarot-swords-02/
-alt_url: /posts/tarot-swords-02/
+permalink: /posts/tarot-swords-02/
+alt_url: /ko/posts/tarot-swords-02/
 card_name: Two of Swords
 tags: [tarot, tarot card meanings, swords, minor arcana]
 ---
@@ -62,8 +62,8 @@ The advice the Two of Swords offers is simple. **Wait for perfect information an
 
 ## Cards to read alongside
 
-- [Ace of Swords](/en/posts/tarot-swords-01/) — set the ace's clarity beside the two's hesitation and it becomes much easier to see where judgment starts to cloud.
-- [Seven of Cups](/en/posts/tarot-cups-07/) — both stall a decision, but the Two of Swords hesitates while weighing the options rationally, and the Seven of Cups loses its way among too many fantasies.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Ace of Swords](/posts/tarot-swords-01/) — set the ace's clarity beside the two's hesitation and it becomes much easier to see where judgment starts to cloud.
+- [Seven of Cups](/posts/tarot-cups-07/) — both stall a decision, but the Two of Swords hesitates while weighing the options rationally, and the Seven of Cups loses its way among too many fantasies.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

@@ -6,8 +6,8 @@ image:
   alt: The Moon tarot card
 date: 2026-08-29 09:00:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-18-moon/
-alt_url: /posts/tarot-major-18-moon/
+permalink: /posts/tarot-major-18-moon/
+alt_url: /ko/posts/tarot-major-18-moon/
 card_name: The Moon
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -73,8 +73,8 @@ Today is a good day to watch things drift along blurry for a while instead of st
 
 ## Cards to read alongside
 
-- [The Star](/en/posts/tarot-major-17-star/) — the card just before the Moon. When clear starlight gets covered by cloud, the blurry night of the Moon follows.
-- [The Sun](/en/posts/tarot-major-19-sun/) — the card right after the Moon. Once the foggy night passes, the daylight of the Sun makes everything sharp.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Star](/posts/tarot-major-17-star/) — the card just before the Moon. When clear starlight gets covered by cloud, the blurry night of the Moon follows.
+- [The Sun](/posts/tarot-major-19-sun/) — the card right after the Moon. Once the foggy night passes, the daylight of the Sun makes everything sharp.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

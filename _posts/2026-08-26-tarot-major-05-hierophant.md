@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 교황카드, TheHierophant,
 image:
   path: /assets/img/tarot/feature_major_05_hierophant.jpg
   alt: 타로 카드 교황(The Hierophant)
-alt_url: /en/posts/tarot-major-05-hierophant/
+alt_url: /posts/tarot-major-05-hierophant/
 ---
 
 메이저 아르카나는 순서 자체에 이야기가 담겨 있습니다. 5번 교황 바로 앞에는 세속의 질서를 세우는 4번 황제가, 뒤에는 선택의 갈림길인 6번 연인이 놓여 있죠. 황제가 현실의 규칙을 세우는 카드였다면, **교황(The Hierophant)**은 그 규칙에 정신적인 정당성을 더하는 카드입니다. 오랜 시간 많은 사람이 걸어 검증된 길을 가리키며, 지금은 새 길을 개척하기보다 그 길을 믿고 따라도 좋을 때라고 말해줍니다.
@@ -60,8 +60,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [황제(The Emperor)](/posts/tarot-major-04-emperor/) — 세속의 질서를 세우는 황제와, 그 질서에 정신적 권위를 더하는 교황은 나란히 놓인 짝입니다.
-- [여사제(The High Priestess)](/posts/tarot-major-02-high-priestess/) — 같은 지혜라도 여사제는 개인의 직관, 교황은 제도화된 가르침이라는 점에서 대비됩니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [황제(The Emperor)](/ko/posts/tarot-major-04-emperor/) — 세속의 질서를 세우는 황제와, 그 질서에 정신적 권위를 더하는 교황은 나란히 놓인 짝입니다.
+- [여사제(The High Priestess)](/ko/posts/tarot-major-02-high-priestess/) — 같은 지혜라도 여사제는 개인의 직관, 교황은 제도화된 가르침이라는 점에서 대비됩니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

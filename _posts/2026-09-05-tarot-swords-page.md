@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 소드시종, PageOfSwords, 
 image:
   path: /assets/img/tarot/feature_swords_page.jpg
   alt: 타로 카드 소드 시종(Page of Swords)
-alt_url: /en/posts/tarot-swords-page/
+alt_url: /posts/tarot-swords-page/
 ---
 
 바람이 세차게 부는 언덕 위, 아직 앳된 얼굴의 인물이 검을 양손으로 곧게 세워 쥔 채 어깨 너머를 살피고 있습니다. 머리카락과 옷자락은 사방으로 휘날리고, 등 뒤 하늘에는 구름과 새 떼가 어지럽게 흩어져 있습니다. 소드 코트에서 가장 어린 자리에 놓인 **소드 시종(Page of Swords)**은 이렇게 "아직 다 배우지 못한 예리함"을 그리는 카드입니다.
@@ -67,8 +67,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [소드 기사(Knight of Swords)](/posts/tarot-swords-knight/) — 시종이 모은 정보를 실제 행동으로 옮기는 다음 성장 단계입니다.
-- [펜타클 2(Two of Pentacles)](/posts/tarot-pents-02/) — 소드 시종의 정보 수집과 펜타클 2의 현실적 균형 감각이 만나면 신중한 판단에 큰 도움이 됩니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [소드 기사(Knight of Swords)](/ko/posts/tarot-swords-knight/) — 시종이 모은 정보를 실제 행동으로 옮기는 다음 성장 단계입니다.
+- [펜타클 2(Two of Pentacles)](/ko/posts/tarot-pents-02/) — 소드 시종의 정보 수집과 펜타클 2의 현실적 균형 감각이 만나면 신중한 판단에 큰 도움이 됩니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

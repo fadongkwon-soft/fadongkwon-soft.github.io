@@ -5,8 +5,8 @@ image:
   path: /assets/img/20260828_tarot/feature.png
 date: 2026-08-28 22:30:00 +0900
 categories: [Products, App]
-permalink: /en/posts/tarot-fortune/
-alt_url: /posts/tarot-fortune/
+permalink: /posts/tarot-fortune/
+alt_url: /ko/posts/tarot-fortune/
 tags: [app, android, tarot, tarot card, fortune telling, daily fortune, solo developer]
 ---
 ## Info
@@ -27,7 +27,7 @@ all of which I wrote and reviewed myself.
 - 🌏 **9 languages** — Korean, English, Japanese, Chinese and more, with every reading translated
 - 🔁 Recently drawn cards are held back for a while, so each draw brings something new
 
-The readings come from the same world as the [Tarot Card Meanings — All 78 Cards](/en/tarot/)
+The readings come from the same world as the [Tarot Card Meanings — All 78 Cards](/tarot/)
 on this blog, so when a card makes you curious you can go read the deeper version there.
 
 ![Tarot Fortune home screen](/assets/img/20260828_tarot/shot-home.png){: w="360" }
@@ -35,7 +35,7 @@ on this blog, so when a card makes you curious you can go read the deeper versio
 
 {% include embed/youtube.html id='5XZL0_UAn-M' %}
 
-If cute art is more your thing, [Tarot Ping](/en/posts/tarot-ping/) carries the same
+If cute art is more your thing, [Tarot Ping](/posts/tarot-ping/) carries the same
 readings in a pastel mascot deck.
 
 ## Download

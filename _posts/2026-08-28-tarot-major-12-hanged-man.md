@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 매달린사람카드, TheHa
 image:
   path: /assets/img/tarot/feature_major_12_hanged_man.jpg
   alt: 타로 카드 매달린 사람(The Hanged Man)
-alt_url: /en/posts/tarot-major-12-hanged-man/
+alt_url: /posts/tarot-major-12-hanged-man/
 ---
 
 발목 하나가 나뭇가지에 묶인 채 거꾸로 매달린 남자가 있습니다. 팔은 등 뒤로 접혀 있고 다리는 숫자 4 모양으로 교차되어 있는데, 이상하게도 표정은 고통스럽지 않습니다. 오히려 편안해 보이기까지 하죠. 머리 주변에는 은은한 빛까지 감돌고 있습니다. 메이저 아르카나 **12번 매달린 사람(The Hanged Man)**은 이렇게 거꾸로 매달린 채로 무언가를 바라보는 순간을 그립니다.
@@ -67,8 +67,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [은둔자(The Hermit)](/posts/tarot-major-09-hermit/) — 은둔자가 스스로 걸음을 멈추고 안을 들여다보는 카드라면, 매달린 사람은 상황에 의해 멈춰진 채로 통찰을 얻는 카드입니다.
-- [죽음(Death)](/posts/tarot-major-13-death/) — 매달린 사람 바로 다음 카드. 충분히 멈춰 바라보았다면, 이제는 매듭짓고 나아갈 차례입니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [은둔자(The Hermit)](/ko/posts/tarot-major-09-hermit/) — 은둔자가 스스로 걸음을 멈추고 안을 들여다보는 카드라면, 매달린 사람은 상황에 의해 멈춰진 채로 통찰을 얻는 카드입니다.
+- [죽음(Death)](/ko/posts/tarot-major-13-death/) — 매달린 사람 바로 다음 카드. 충분히 멈춰 바라보았다면, 이제는 매듭짓고 나아갈 차례입니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

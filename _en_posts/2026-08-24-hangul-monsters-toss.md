@@ -6,8 +6,8 @@ image:
   alt: Hangul Monsters feature graphic
 date: 2026-08-24 09:00:00 +0900
 categories: [Products, Game]
-permalink: /en/posts/hangul-monsters-toss/
-alt_url: /posts/hangul-monsters-toss/
+permalink: /posts/hangul-monsters-toss/
+alt_url: /ko/posts/hangul-monsters-toss/
 tags: [game, toss, apps in toss, mini app, education, hangul, early education, monsters, solo developer]
 ---
 ## Info
@@ -16,11 +16,11 @@ tags: [game, toss, apps in toss, mini app, education, hangul, early education, m
 > neural voices; premium word packs unlock with a one-time purchase.
 {: .prompt-info }
 
-> **Update (2026-09-05)**: every in-app purchase has been removed and all modes are now free. The story is in [Why we went free](/en/posts/monsters-go-free/).
+> **Update (2026-09-05)**: every in-app purchase has been removed and all modes are now free. The story is in [Why we went free](/posts/monsters-go-free/).
 {: .prompt-tip }
 
 ## Straight From the Toss App, No Install
-The **Apps in Toss (Toss mini app) edition** of [Hangul Monsters](/en/posts/hangul-monsters/) is out.
+The **Apps in Toss (Toss mini app) edition** of [Hangul Monsters](/posts/hangul-monsters/) is out.
 If you have the Toss app, it opens and runs immediately — handy if installing yet another app on
 a child's phone has been more trouble than it is worth.
 

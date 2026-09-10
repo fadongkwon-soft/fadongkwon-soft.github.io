@@ -6,8 +6,8 @@ image:
   alt: The Lovers tarot card
 date: 2026-08-27 09:00:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-06-lovers/
-alt_url: /posts/tarot-major-06-lovers/
+permalink: /posts/tarot-major-06-lovers/
+alt_url: /ko/posts/tarot-major-06-lovers/
 card_name: The Lovers
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -60,9 +60,9 @@ It means you are standing at a crossroads that matters. The advice this card giv
 
 ## Cards to read alongside
 
-- [The Fool](/en/posts/tarot-major-00-fool/) — the thrill of setting out. If the Lovers is the choice, the Fool is the possibility that comes before choosing.
-- [The Hierophant](/en/posts/tarot-major-05-hierophant/) — the card right before this one. Where the Hierophant is union backed by tested custom, the Lovers is union led by the heart. Comparing the two in a marriage reading is genuinely interesting.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Fool](/posts/tarot-major-00-fool/) — the thrill of setting out. If the Lovers is the choice, the Fool is the possibility that comes before choosing.
+- [The Hierophant](/posts/tarot-major-05-hierophant/) — the card right before this one. Where the Hierophant is union backed by tested custom, the Lovers is union led by the heart. Comparing the two in a marriage reading is genuinely interesting.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 Worth noting too, card 15, **the Devil**, is a mirror of the Lovers in composition. The same two figures, bound this time by obsession and restraint instead of a union they chose.
 

@@ -3,8 +3,8 @@ title: 14 Mini Apps, 13,365 KRW in Four Weeks — My Full Ad Revenue Numbers
 description: Every in-app ad number from 14 mini apps on Apps in Toss, broken down by day and by app. 13,365 KRW over 27 days, 2,073 impressions, 6.45 KRW per impression. Why eCPM varies twentyfold between apps, why the impression leader is not the revenue leader, and what actually happened when I doubled the number of apps
 date: 2026-09-12 20:00:00 +0900
 categories: [Blogging, Episode]
-permalink: /en/posts/toss-ad-revenue-first-month/
-alt_url: /posts/toss-ad-revenue-first-month/
+permalink: /posts/toss-ad-revenue-first-month/
+alt_url: /ko/posts/toss-ad-revenue-first-month/
 image:
   path: /assets/img/20260912_toss-revenue/cover.png
   alt: Ad revenue chart for 14 mini apps over four weeks
@@ -115,13 +115,13 @@ One thing I learned doing this: **ad figures get revised over several days.** Th
 
 A little over ten thousand won a month. I am not going to pretend this supports anyone.
 
-It does have a designated purpose, though. Recently I [removed every paid item from Hangul Monsters and Math Monsters and opened them up for free](/en/posts/monsters-go-free/). A payment sheet standing in front of a kids' learning app felt wrong to me, so the billing code is gone — and those two apps carry no ads either. In that post I said their running costs would be covered by ad revenue from the other apps. This 13,365 KRW is the money holding up that promise, and at this scale it covers it comfortably.
+It does have a designated purpose, though. Recently I [removed every paid item from Hangul Monsters and Math Monsters and opened them up for free](/posts/monsters-go-free/). A payment sheet standing in front of a kids' learning app felt wrong to me, so the billing code is gone — and those two apps carry no ads either. In that post I said their running costs would be covered by ad revenue from the other apps. This 13,365 KRW is the money holding up that promise, and at this scale it covers it comfortably.
 
-Also, [Apps in Toss is closing the path where you buy traffic with promotional push, starting in October](/en/posts/toss-policy-changes/). Exposure will instead go to apps that clear a quality bar. Given what point 4 showed about the ceiling on simply adding more apps, spending the next month on the quality of each app rather than on the count looks like the right call.
+Also, [Apps in Toss is closing the path where you buy traffic with promotional push, starting in October](/posts/toss-policy-changes/). Exposure will instead go to apps that clear a quality bar. Given what point 4 showed about the ceiling on simply adding more apps, spending the next month on the quality of each app rather than on the count looks like the right call.
 
 I will publish the same breakdown again next month. By then the count will have grown to 26, and the effect of the policy change should be visible in the same table.
 
-My apps are on [Google Play and Apps in Toss](/en/posts/apps-in-toss-launch/), and some can be [played right in the browser](/en/play/). Updates go out here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
+My apps are on [Google Play and Apps in Toss](/posts/apps-in-toss-launch/), and some can be [played right in the browser](/play/). Updates go out here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
 
 > The amounts above are the estimated earnings the console reports and may differ from actual settlement. The minimum payout for Apps in Toss in-app ads is 5,000 KRW.
 {: .prompt-tip }

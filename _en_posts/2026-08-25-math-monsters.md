@@ -6,8 +6,8 @@ image:
   alt: Math Monsters feature graphic
 date: 2026-08-25 21:00:00 +0900
 categories: [Products, Game]
-permalink: /en/posts/math-monsters/
-alt_url: /posts/math-monsters/
+permalink: /posts/math-monsters/
+alt_url: /ko/posts/math-monsters/
 tags: [game, android, education, math, early education, monsters, solo developer]
 ---
 ## Info
@@ -16,7 +16,7 @@ tags: [game, android, education, math, early education, monsters, solo developer
 > (easy) are free; other operations unlock via one-time in-app purchase. No ads.
 {: .prompt-info }
 
-> **Update (2026-09-05)**: every in-app purchase has been removed and all modes are now free. The story is in [Why we went free](/en/posts/monsters-go-free/).
+> **Update (2026-09-05)**: every in-app purchase has been removed and all modes are now free. The story is in [Why we went free](/posts/monsters-go-free/).
 {: .prompt-tip }
 
 ## Learning Math by Catching Monsters
@@ -38,6 +38,6 @@ There are no ads, and there is no sign-up or login — you can start playing rig
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.math_monsters>
 - Apps in Toss: <https://fadongkwon.com/toss/math-monsters/> — open it on your phone and it connects straight into the Toss app.
 
-The backstory — how my eldest quitting Kumon led to Dad building his own practice tool — is in [The Day We Quit Kumon, Dad Started Building a Math Game](/en/posts/kumon-to-math-monsters/).
+The backstory — how my eldest quitting Kumon led to Dad building his own practice tool — is in [The Day We Quit Kumon, Dad Started Building a Math Game](/posts/kumon-to-math-monsters/).
 
 I post updates here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).

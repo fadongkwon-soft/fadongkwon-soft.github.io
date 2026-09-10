@@ -6,8 +6,8 @@ image:
   alt: All Lights Off feature graphic
 date: 2026-09-04 21:50:00 +0900
 categories: [Products, Game]
-permalink: /en/posts/lights-off/
-alt_url: /posts/lights-off/
+permalink: /posts/lights-off/
+alt_url: /ko/posts/lights-off/
 tags: [game, android, lights out, solo developer]
 ---
 ## Info
@@ -42,10 +42,10 @@ It works fully offline with no sign-up or login, and supports 9 languages.
 - Apps in Toss: <https://fadongkwon.com/toss/lights-off/> — open it on your phone and it connects straight into the Toss app.
 
 ## Released Alongside
-- [Sudoku](/en/posts/sudoku/) — a clean daily sudoku
-- [Nonogram](/en/posts/nonogram/) — reveal pixel art with number clues
-- [Hangul Word Guess](/en/posts/hangul-word/) — guess the Korean word in six jamo
-- [Tap Bird](/en/posts/tap-bird/) — tap to fly through the gaps
-- [Number Rush](/en/posts/number-tap/) — tap 1 to 25 in order, fast
+- [Sudoku](/posts/sudoku/) — a clean daily sudoku
+- [Nonogram](/posts/nonogram/) — reveal pixel art with number clues
+- [Hangul Word Guess](/posts/hangul-word/) — guess the Korean word in six jamo
+- [Tap Bird](/posts/tap-bird/) — tap to fly through the gaps
+- [Number Rush](/posts/number-tap/) — tap 1 to 25 in order, fast
 
 I post updates here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).

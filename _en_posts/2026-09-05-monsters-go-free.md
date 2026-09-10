@@ -6,12 +6,12 @@ image:
   alt: Hangul Monsters and Math Monsters are now free
 date: 2026-09-05 17:00:00 +0900
 categories: [Blogging, Episode]
-permalink: /en/posts/monsters-go-free/
-alt_url: /posts/monsters-go-free/
+permalink: /posts/monsters-go-free/
+alt_url: /ko/posts/monsters-go-free/
 tags: [early education, solo developer, dev log, education]
 ---
 
-We have **removed every paid item** from [Hangul Monsters](/en/posts/hangul-monsters/) and [Math Monsters](/en/posts/math-monsters/). Every mode in both apps is now free, on Google Play and on Apps in Toss alike.
+We have **removed every paid item** from [Hangul Monsters](/posts/hangul-monsters/) and [Math Monsters](/posts/math-monsters/). Every mode in both apps is now free, on Google Play and on Apps in Toss alike.
 
 ## How they were sold
 
@@ -30,7 +30,7 @@ More than the number itself, I thought about the situation behind it. The person
 
 ## So we took it out
 
-These apps were built as educational tools from day one. Math Monsters started when my eldest quit a worksheet program and I began building a practice tool myself, a story I told in [The Day We Quit Kumon](/en/posts/kumon-to-math-monsters/). Hangul Monsters came from the same place. The whole point is that young children can repeat the exercises freely, and a payment sheet standing in front of that point felt wrong even to me.
+These apps were built as educational tools from day one. Math Monsters started when my eldest quit a worksheet program and I began building a practice tool myself, a story I told in [The Day We Quit Kumon](/posts/kumon-to-math-monsters/). Hangul Monsters came from the same place. The whole point is that young children can repeat the exercises freely, and a payment sheet standing in front of that point felt wrong even to me.
 
 Rather than clinging to a paid product that nobody buys, letting anyone open the app and try it with their child is much closer to the reason the apps exist. So the purchase code is gone entirely. The billing library and the billing permission went with it, which means there is no way to spend money inside the apps at all.
 

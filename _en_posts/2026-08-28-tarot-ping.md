@@ -5,8 +5,8 @@ image:
   path: /assets/img/20260828_tarot-ping/feature.png
 date: 2026-08-28 22:40:00 +0900
 categories: [Products, App]
-permalink: /en/posts/tarot-ping/
-alt_url: /posts/tarot-ping/
+permalink: /posts/tarot-ping/
+alt_url: /ko/posts/tarot-ping/
 tags: [app, android, tarot, tarot card, fortune telling, cute app, solo developer]
 ---
 ## Info
@@ -16,7 +16,7 @@ tags: [app, android, tarot, tarot card, fortune telling, cute app, solo develope
 {: .prompt-info }
 
 ## Same tarot, a friendlier face
-This is our second deck. It keeps all **1,872 readings** from [Tarot Fortune](/en/posts/tarot-fortune/)
+This is our second deck. It keeps all **1,872 readings** from [Tarot Fortune](/posts/tarot-fortune/)
 exactly as they are, but all 78 cards have been redrawn as **pastel mascot characters**.
 Cards that can feel intimidating — Death, the Tower — are easier to sit with when they
 look like this, which makes the deck a good fit if you are new to tarot or just want to
@@ -28,7 +28,7 @@ keep things light.
 - 🌏 **9 languages** supported
 - 🚫 The current version has **no ads**
 
-If you want to know what each card means on its own, the [Tarot Card Meanings — All 78 Cards](/en/tarot/)
+If you want to know what each card means on its own, the [Tarot Card Meanings — All 78 Cards](/tarot/)
 has the full write-ups alongside the cute deck artwork.
 
 ![Tarot Ping home screen](/assets/img/20260828_tarot-ping/shot-home.png){: w="360" }
@@ -38,7 +38,7 @@ has the full write-ups alongside the cute deck artwork.
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.tarot_ping>
 - Apps in Toss (Toss mini app): <https://fadongkwon.com/toss/tarot-ping/>
 
-If you prefer a classic illustrated deck, go with [Tarot Fortune](/en/posts/tarot-fortune/) instead.
+If you prefer a classic illustrated deck, go with [Tarot Fortune](/posts/tarot-fortune/) instead.
 
 Updates go out here on the blog and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
 

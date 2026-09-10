@@ -7,7 +7,7 @@ tags: [app, android, 타로, 타로카드, 운세, 오늘의운세, tarot, 1인�
 pin: false
 image:
   path: /assets/img/20260828_tarot/feature.png
-alt_url: /en/posts/tarot-fortune/
+alt_url: /posts/tarot-fortune/
 ---
 ## Info
 > **Tarot Fortune** is a one-card tarot reading app: pick a theme, draw a card and
@@ -26,7 +26,7 @@ alt_url: /en/posts/tarot-fortune/
 - 🌏 **9개 언어** — 한국어·영어·일본어·중국어 등, 해석문까지 전부 번역
 - 🔁 최근에 나온 카드는 잠시 피해서 출제 — 뽑을 때마다 새로운 카드
 
-이 블로그의 [타로 카드 78장 의미 사전](/tarot/)과 같은 세계관의 해석을 쓰기 때문에,
+이 블로그의 [타로 카드 78장 의미 사전](/ko/tarot/)과 같은 세계관의 해석을 쓰기 때문에,
 카드가 궁금해지면 사전에서 더 깊은 풀이를 읽을 수 있습니다.
 
 ![타로 운세 홈](/assets/img/20260828_tarot/shot-home.png){: w="360" }
@@ -35,7 +35,7 @@ alt_url: /en/posts/tarot-fortune/
 {% include embed/youtube.html id='5XZL0_UAn-M' %}
 
 귀여운 그림이 취향이라면, 같은 해석을 파스텔 마스코트 덱으로 담은
-[운세 타로핑](/posts/tarot-ping/)도 있습니다.
+[운세 타로핑](/ko/posts/tarot-ping/)도 있습니다.
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.tarot>

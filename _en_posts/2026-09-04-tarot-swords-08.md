@@ -6,8 +6,8 @@ image:
   alt: Eight of Swords tarot card
 date: 2026-08-29 16:46:56 +0900
 categories: [Tarot, Swords]
-permalink: /en/posts/tarot-swords-08/
-alt_url: /posts/tarot-swords-08/
+permalink: /posts/tarot-swords-08/
+alt_url: /ko/posts/tarot-swords-08/
 card_name: Eight of Swords
 tags: [tarot, tarot card meanings, minor arcana]
 ---
@@ -55,8 +55,8 @@ What the Eight of Swords asks for is not a grand escape but a very small check: 
 
 ## Cards to read alongside
 
-- [Seven of Swords](/en/posts/tarot-swords-07/) — the card where the fatigue of judgment piles up, the step immediately before the stalled state the Eight of Swords draws.
-- [Nine of Swords](/en/posts/tarot-swords-09/) — if more time passes with the blindfold still on, it leads easily into the anxiety of the Nine of Swords.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Seven of Swords](/posts/tarot-swords-07/) — the card where the fatigue of judgment piles up, the step immediately before the stalled state the Eight of Swords draws.
+- [Nine of Swords](/posts/tarot-swords-09/) — if more time passes with the blindfold still on, it leads easily into the anxiety of the Nine of Swords.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

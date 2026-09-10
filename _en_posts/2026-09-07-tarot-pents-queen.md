@@ -6,8 +6,8 @@ image:
   alt: Queen of Pentacles tarot card
 date: 2026-08-29 16:47:15 +0900
 categories: [Tarot, Pentacles]
-permalink: /en/posts/tarot-pents-queen/
-alt_url: /posts/tarot-pents-queen/
+permalink: /posts/tarot-pents-queen/
+alt_url: /ko/posts/tarot-pents-queen/
 card_name: Queen of Pentacles
 tags: [tarot, tarot card meanings, pentacles, court cards]
 ---
@@ -49,8 +49,8 @@ Where the woman in the Nine of Pentacles is quietly enjoying a harvest of her ow
 
 ## Cards to read alongside
 
-- [Knight of Pentacles](/en/posts/tarot-pents-knight/) — when the knight of dogged execution ripens inward, it leads on to the queen with room enough to care.
-- [King of Pentacles](/en/posts/tarot-pents-king/) — the card that pairs with the queen's inward care, the same maturity widened out into outward authority and responsibility.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Knight of Pentacles](/posts/tarot-pents-knight/) — when the knight of dogged execution ripens inward, it leads on to the queen with room enough to care.
+- [King of Pentacles](/posts/tarot-pents-king/) — the card that pairs with the queen's inward care, the same maturity widened out into outward authority and responsibility.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

@@ -6,18 +6,18 @@ image:
   alt: Icons of the eight apps I have shipped so far
 date: 2026-08-26 20:00:00 +0900
 categories: [Blogging, Episode]
-permalink: /en/posts/solo-dev-8-apps/
-alt_url: /posts/solo-dev-8-apps/
+permalink: /posts/solo-dev-8-apps/
+alt_url: /ko/posts/solo-dev-8-apps/
 tags: [solo developer, app development, app launch, side project, dev log, play store, apps in toss, side hustle]
 ---
 
-It has been a year and a half since I wrote about [the road to my first app release](/en/posts/ready-to-open/). Back then, getting even one app onto a store was unknown territory, and my goal was "one app every two weeks." Today there are eight apps on the stores. That is nowhere near the pace I aimed for, but along the way I learned things I could not have imagined at the start.
+It has been a year and a half since I wrote about [the road to my first app release](/posts/ready-to-open/). Back then, getting even one app onto a store was unknown territory, and my goal was "one app every two weeks." Today there are eight apps on the stores. That is nowhere near the pace I aimed for, but along the way I learned things I could not have imagined at the start.
 
 This is not a success story. Revenue is still barely keeping up with running costs. What it is, instead, is a record of how different "building an app" turns out to be from "shipping an app and keeping it alive."
 
 ## Releasing takes longer than building
 
-This is the prediction I got most wrong. My first app, [Spin the Bottle](/en/posts/spin-the-bottle/), was a working app three hours after I sat down to write it. Getting that app onto a store took a few weeks. Here is what sat in between.
+This is the prediction I got most wrong. My first app, [Spin the Bottle](/posts/spin-the-bottle/), was a working app three hours after I sat down to write it. Getting that app onto a store took a few weeks. Here is what sat in between.
 
 - Developer account registration and business information verification
 - App icon, feature graphic, and screenshots in several required sizes
@@ -31,7 +31,7 @@ The lesson here is simple. If you have ten ideas and start all ten, you will shi
 
 ## What blocks a review is usually not your code
 
-The rejection that stung most was the first review of [Reaction Challenge](/en/posts/play-minigames/). The stated reason was an invalid privacy policy. There was nothing wrong with the app's code. The problem was on my website. A GitHub Pages misconfiguration had left the privacy policy page returning a 404, and the reviewer opened the link and rejected the app.
+The rejection that stung most was the first review of [Reaction Challenge](/posts/play-minigames/). The stated reason was an invalid privacy policy. There was nothing wrong with the app's code. The problem was on my website. A GitHub Pages misconfiguration had left the privacy policy page returning a 404, and the reviewer opened the link and rejected the app.
 
 App review does not look only at the app. It looks at your developer account details, the web pages you link to, and your store copy. Things outside the app are what block the app. That is where my habit of opening every URL I put in a store listing myself, in a private window, came from.
 
@@ -45,15 +45,15 @@ So a strategy of adding more apps carries a hidden cost. What each new app adds 
 
 ## Not betting everything on one platform
 
-The best decision I made this year was putting apps on [Apps in Toss](/en/posts/apps-in-toss-launch/). It is a mini app platform that runs inside the Toss app with no install, and I could publish nearly the same web-based code as it was. Meeting people through store search and being surfaced inside an app where people are already gathered are completely different kinds of traffic.
+The best decision I made this year was putting apps on [Apps in Toss](/posts/apps-in-toss-launch/). It is a mini app platform that runs inside the Toss app with no install, and I could publish nearly the same web-based code as it was. Meeting people through store search and being surfaced inside an app where people are already gathered are completely different kinds of traffic.
 
 Every platform has its own review criteria and policies, of course, and that means more things to keep track of. But if you stake everything on a single store algorithm, the day that algorithm changes there is nothing you can do. Adding a second channel is less about doubling your reach than about securing a floor of traffic that will not vanish.
 
 ## The apps my kids use are the ones that stay
 
-The apps that were the most fun to build, and that I still keep coming back to, are the ones I made for my children. [Hangul Monsters](/en/posts/hangul-monsters/) came out of watching my child work through learning Hangul, the Korean alphabet, and [Math Monsters](/en/posts/math-monsters/) out of watching my oldest get bored with arithmetic drills. When the actual user is sitting next to you, feedback is immediate. Several bugs got fixed because I heard "this button doesn't work."
+The apps that were the most fun to build, and that I still keep coming back to, are the ones I made for my children. [Hangul Monsters](/posts/hangul-monsters/) came out of watching my child work through learning Hangul, the Korean alphabet, and [Math Monsters](/posts/math-monsters/) out of watching my oldest get bored with arithmetic drills. When the actual user is sitting next to you, feedback is immediate. Several bugs got fixed because I heard "this button doesn't work."
 
-The apps I built from an idea alone, by contrast, I rarely touched again after release. If you cannot picture the face of the person using it, you cannot picture what to fix either. When I built [Nursing Assistant Mock Exam](/en/posts/nursing-quiz/), an app for Korea's nursing assistant licensing exam, I settled the question count and the wrong-answer review structure by picturing someone actually studying for the test, and the features I chose that way still had obvious reasons behind them when I came back to them later.
+The apps I built from an idea alone, by contrast, I rarely touched again after release. If you cannot picture the face of the person using it, you cannot picture what to fix either. When I built [Nursing Assistant Mock Exam](/posts/nursing-quiz/), an app for Korea's nursing assistant licensing exam, I settled the question count and the wrong-answer review structure by picturing someone actually studying for the test, and the features I chose that way still had obvious reasons behind them when I came back to them later.
 
 ## What's next
 
@@ -63,4 +63,4 @@ In the next post I will walk through publishing an app on Apps in Toss, from reg
 
 ---
 
-The apps I have shipped so far are written up in their own posts — [three Play mini games](/en/posts/play-minigames/), [Saju Lotto](/en/posts/saju-lotto/), [Juice Spinner](/en/posts/juice-spinner/), and the rest. News goes out on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
+The apps I have shipped so far are written up in their own posts — [three Play mini games](/posts/play-minigames/), [Saju Lotto](/posts/saju-lotto/), [Juice Spinner](/posts/juice-spinner/), and the rest. News goes out on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).

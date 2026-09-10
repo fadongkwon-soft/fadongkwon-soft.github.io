@@ -7,7 +7,7 @@ tags: [game, android, education, 한글, 한글공부, 유아교육, hangul, 몬
 pin: false
 image:
   path: /assets/img/20260823_hangul-monsters/feature.png
-alt_url: /en/posts/hangul-monsters/
+alt_url: /posts/hangul-monsters/
 ---
 ## Info
 > **Hangul Monsters** is a Korean-learning game for kids: listen to native-quality voice
@@ -15,7 +15,7 @@ alt_url: /en/posts/hangul-monsters/
 > (consonants, vowels, Ga-na-da), premium word packs via one-time in-app purchase. No ads.
 {: .prompt-info }
 
-> **2026-09-05 업데이트**: 인앱 구매를 전부 없애고 모든 모드를 무료로 열었습니다. 자세한 이야기는 [유료 상품을 없앤 이유](/posts/monsters-go-free/)에 적었습니다.
+> **2026-09-05 업데이트**: 인앱 구매를 전부 없애고 모든 모드를 무료로 열었습니다. 자세한 이야기는 [유료 상품을 없앤 이유](/ko/posts/monsters-go-free/)에 적었습니다.
 {: .prompt-tip }
 
 ## 몬스터를 잡으며 배우는 한글

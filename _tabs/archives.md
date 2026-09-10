@@ -2,5 +2,6 @@
 layout: archives
 icon: fas fa-archive
 order: 3
-alt_url: /en/archives/
+alt_url: /archives/
+permalink: /ko/archives/
 ---

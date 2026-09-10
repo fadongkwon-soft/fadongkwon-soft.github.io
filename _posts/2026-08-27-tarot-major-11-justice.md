@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 정의카드, Justice, 타�
 image:
   path: /assets/img/tarot/feature_major_11_justice.jpg
   alt: 타로 카드 정의(Justice)
-alt_url: /en/posts/tarot-major-11-justice/
+alt_url: /posts/tarot-major-11-justice/
 ---
 
 타로 덱을 만든 사람마다 정의 카드가 놓인 자리는 조금씩 달랐습니다. 프랑스 마르세유 전통 덱에서는 정의가 8번, 힘이 11번에 놓였지만, 오늘날 가장 널리 쓰이는 라이더-웨이트 덱에서는 두 카드의 자리가 뒤바뀌어 **정의가 11번, 힘이 8번**으로 자리 잡았습니다. 점성술 대응표에서 11번 자리가 저울자리(천칭자리)와 맞아떨어지도록 순서를 조정한 결과라고 하는데, 카드 한 장의 번호에 이런 사연이 있다는 사실은 정의 카드가 애초에 '딱 떨어지는 기준'을 다루는 카드라는 점과도 잘 어울립니다.
@@ -61,8 +61,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [운명의 수레바퀴(Wheel of Fortune)](/posts/tarot-major-10-wheel/) — 정의 바로 앞 카드. 수레바퀴가 돌린 흐름이 정의에서 정산됩니다.
-- [힘(Strength)](/posts/tarot-major-08-strength/) — 마르세유 전통에서 정의와 자리를 맞바꿨던 카드. 부드러운 용기와 냉정한 기준이라는 대비로 함께 보면 좋습니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [운명의 수레바퀴(Wheel of Fortune)](/ko/posts/tarot-major-10-wheel/) — 정의 바로 앞 카드. 수레바퀴가 돌린 흐름이 정의에서 정산됩니다.
+- [힘(Strength)](/ko/posts/tarot-major-08-strength/) — 마르세유 전통에서 정의와 자리를 맞바꿨던 카드. 부드러운 용기와 냉정한 기준이라는 대비로 함께 보면 좋습니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 황제카드, TheEmperor, �
 image:
   path: /assets/img/tarot/feature_major_04_emperor.jpg
   alt: 타로 카드 황제(The Emperor)
-alt_url: /en/posts/tarot-major-04-emperor/
+alt_url: /posts/tarot-major-04-emperor/
 ---
 
 "이 프로젝트를 내가 끝까지 밀어붙여도 될까", "이 관계에서 이제는 기준을 확실히 정해야 하지 않을까" — 이런 질문을 품고 카드를 뽑았는데 황제가 나왔다면 어떨까요. 메이저 아르카나 4번 **황제(The Emperor)**는 감이나 즉흥적인 판단 대신, 흔들림 없는 원칙과 책임감으로 답을 내놓는 카드입니다.
@@ -51,8 +51,8 @@ A. 특정 인물을 가리키기보다 나 자신의 태도나 상황 전반의 
 
 ## 함께 보면 좋은 카드
 
-- [여황제(The Empress)](/posts/tarot-major-03-empress/) — 부드러운 풍요의 여황제와 단단한 질서의 황제는 서로를 보완하는 짝입니다.
-- [교황(The Hierophant)](/posts/tarot-major-05-hierophant/) — 황제가 세속의 질서를 다스린다면, 교황은 정신적·전통적 질서를 대표합니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [여황제(The Empress)](/ko/posts/tarot-major-03-empress/) — 부드러운 풍요의 여황제와 단단한 질서의 황제는 서로를 보완하는 짝입니다.
+- [교황(The Hierophant)](/ko/posts/tarot-major-05-hierophant/) — 황제가 세속의 질서를 다스린다면, 교황은 정신적·전통적 질서를 대표합니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

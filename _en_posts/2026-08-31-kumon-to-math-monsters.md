@@ -6,8 +6,8 @@ categories: [Blogging, Episode]
 image:
   path: /assets/img/20260825_math-monsters/feature.png
   alt: Math Monsters feature graphic
-permalink: /en/posts/kumon-to-math-monsters/
-alt_url: /posts/kumon-to-math-monsters/
+permalink: /posts/kumon-to-math-monsters/
+alt_url: /ko/posts/kumon-to-math-monsters/
 tags: [solo developer, app development, elementary math, arithmetic practice, parenting, side project, math]
 ---
 
@@ -31,7 +31,7 @@ That is also when I added the conceit of catching one monster for every correct 
 
 ## From a Personal App to a Released One
 
-After we had used it that way for a while, it occurred to me that there was no reason this structure should only work in our house. I swapped my son's photos for monster art, organized the math into four operations — addition, subtraction, multiplication, division — across three difficulty levels, and released it as [Math Monsters](/en/posts/math-monsters/).
+After we had used it that way for a while, it occurred to me that there was no reason this structure should only work in our house. I swapped my son's photos for monster art, organized the math into four operations — addition, subtraction, multiplication, division — across three difficulty levels, and released it as [Math Monsters](/posts/math-monsters/).
 
 I kept two principles while building it. One: **no ads** — the moment an ad interrupts a child's screen, it is finished as a practice tool. Two: **the basics stay free** — addition and subtraction on easy are open to everyone, and the other operations unlock only if and when you need them.
 
@@ -40,8 +40,8 @@ I kept two principles while building it. One: **no ads** — the moment an ad in
 
 ## It Was Never Worksheets vs. Apps
 
-To head off a misunderstanding: the conclusion of this story is not "apps instead of Kumon." Plenty of children thrive on worksheets, and an app forced on a child turns into debt just the same. The essence is **daily, short, and the child coming back on their own** — in our house that shape just happened to be a game. Why arithmetic practice works better in short daily doses is a separate post: [Why 10 Minutes a Day Beats 30 in Elementary Arithmetic](/en/posts/math-drill-habit/).
+To head off a misunderstanding: the conclusion of this story is not "apps instead of Kumon." Plenty of children thrive on worksheets, and an app forced on a child turns into debt just the same. The essence is **daily, short, and the child coming back on their own** — in our house that shape just happened to be a game. Why arithmetic practice works better in short daily doses is a separate post: [Why 10 Minutes a Day Beats 30 in Elementary Arithmetic](/posts/math-drill-habit/).
 
 My eldest still brags now and then that he was this app's "original monster." Though he is a little sad his photo is no longer the icon.
 
-Other stories from shipping apps after work are in [What I Learned Releasing 8 Apps as a Solo Developer](/en/posts/solo-dev-8-apps/). I post updates here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
+Other stories from shipping apps after work are in [What I Learned Releasing 8 Apps as a Solo Developer](/posts/solo-dev-8-apps/). I post updates here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).

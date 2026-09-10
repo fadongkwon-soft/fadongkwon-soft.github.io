@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 죽음카드, Death, 타로�
 image:
   path: /assets/img/tarot/feature_major_13_death.jpg
   alt: 타로 카드 죽음(Death)
-alt_url: /en/posts/tarot-major-13-death/
+alt_url: /posts/tarot-major-13-death/
 ---
 
 타로를 뽑다가 이 카드가 나오면 대부분 표정이 굳습니다. 해골 기사가 그려진 **13번 죽음(Death)** 카드 — 영화나 드라마에서 불길한 장면마다 등장하는 바로 그 카드죠. 그런데 타로 리더들 사이에서 죽음 카드는 "가장 오해받는 카드"로 통합니다. 이 카드가 실제로 말하는 것은 죽음이 아니라 **끝맺음, 그리고 그 자리에서 시작되는 새로운 흐름**이기 때문입니다.
@@ -67,8 +67,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [탑(The Tower)](/posts/tarot-major-16-tower/) — 같은 '큰 변화'라도 탑은 외부에서 갑자기 무너지는 충격, 죽음은 안에서 무르익어 매듭짓는 전환입니다.
-- [매달린 사람(The Hanged Man)](/posts/tarot-major-12-hanged-man/) — 죽음 바로 앞 카드. 멈춰서 바라보는 시간이 끝나면 매듭짓는 시간이 옵니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [탑(The Tower)](/ko/posts/tarot-major-16-tower/) — 같은 '큰 변화'라도 탑은 외부에서 갑자기 무너지는 충격, 죽음은 안에서 무르익어 매듭짓는 전환입니다.
+- [매달린 사람(The Hanged Man)](/ko/posts/tarot-major-12-hanged-man/) — 죽음 바로 앞 카드. 멈춰서 바라보는 시간이 끝나면 매듭짓는 시간이 옵니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

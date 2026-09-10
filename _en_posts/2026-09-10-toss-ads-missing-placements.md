@@ -3,8 +3,8 @@ title: I Shipped Ten Mini Games With No Ads — The Apps Were Done, the Ad Slots
 description: "On September 8 I launched ten mini games on Apps in Toss, and every one of them shipped with an empty ad slot because I never created the ad placements in the console. Nothing errored, so it took two days to notice. How I found a configuration gap that fails silently, and why fixing it in the console is not the end of it"
 date: 2026-09-10 01:06:00 +0900
 categories: [Blogging, Episode]
-permalink: /en/posts/toss-ads-missing-placements/
-alt_url: /posts/toss-ads-missing-placements/
+permalink: /posts/toss-ads-missing-placements/
+alt_url: /ko/posts/toss-ads-missing-placements/
 image:
   path: /assets/img/20260910_missing-placements/cover.png
   alt: An empty ad slot where a banner should be
@@ -83,7 +83,7 @@ Things I wrote down so this does not repeat.
 
 **Watch for zero impressions.** I already have a ledger that shows per-app impressions daily, so a released app sitting at zero impressions should be impossible to miss. Configuration that fails silently is caught by metrics, not by memory.
 
-**Look at the ad slot on a real device right after launch.** Checking only that features work is the direct cause here. Confirming a banner is where a banner should be takes ten seconds. Missing [a vertical-scroll bug across fifteen apps for weeks](/en/posts/toss-policy-changes/) came from the same laziness.
+**Look at the ad slot on a real device right after launch.** Checking only that features work is the direct cause here. Confirming a banner is where a banner should be takes ten seconds. Missing [a vertical-scroll bug across fifteen apps for weeks](/posts/toss-policy-changes/) came from the same laziness.
 
 **Accept the cost of shipping many apps at once.** Shared code genuinely makes development faster. But the console work you do by hand scales honestly with the number of apps. That, I now know, is the real bottleneck of this approach.
 
@@ -93,6 +93,6 @@ I built the thing and never flipped the switch. The apps were finished and the c
 
 Still, I do not think this lands entirely badly. Without building a ledger that stacks revenue per app, I would not know yet. This is what I paid to learn why making numbers visible matters.
 
-Introductions to all ten go up one a day starting tomorrow. The story behind the previous six is in [Shipping Six Mini Games at Once](/en/posts/six-games-retrospective/).
+Introductions to all ten go up one a day starting tomorrow. The story behind the previous six is in [Shipping Six Mini Games at Once](/posts/six-games-retrospective/).
 
-My apps are on [Google Play and Apps in Toss](/en/posts/apps-in-toss-launch/), and some can be [played right in the browser](/en/play/). Updates go out here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
+My apps are on [Google Play and Apps in Toss](/posts/apps-in-toss-launch/), and some can be [played right in the browser](/play/). Updates go out here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).

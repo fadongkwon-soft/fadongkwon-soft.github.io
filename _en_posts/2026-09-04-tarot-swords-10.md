@@ -6,8 +6,8 @@ image:
   alt: Ten of Swords tarot card
 date: 2026-08-29 16:46:58 +0900
 categories: [Tarot, Swords]
-permalink: /en/posts/tarot-swords-10/
-alt_url: /posts/tarot-swords-10/
+permalink: /posts/tarot-swords-10/
+alt_url: /ko/posts/tarot-swords-10/
 card_name: Ten of Swords
 tags: [tarot, tarot card meanings, minor arcana]
 ---
@@ -53,8 +53,8 @@ When other cards land in the same spread, the weight of the Ten of Swords shifts
 
 ## Cards to read alongside
 
-- [Nine of Swords](/en/posts/tarot-swords-09/) — the anxiety of enduring without knowing the outcome is what gets wound up as an actual event in the Ten of Swords.
-- [Ten of Cups](/en/posts/tarot-cups-10/) — the same number 10, but in the Cups suit it draws the exact opposite, a brimming happiness. Set beside the Ten of Swords, the contrast between the two suits stands out sharply.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Nine of Swords](/posts/tarot-swords-09/) — the anxiety of enduring without knowing the outcome is what gets wound up as an actual event in the Ten of Swords.
+- [Ten of Cups](/posts/tarot-cups-10/) — the same number 10, but in the Cups suit it draws the exact opposite, a brimming happiness. Set beside the Ten of Swords, the contrast between the two suits stands out sharply.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

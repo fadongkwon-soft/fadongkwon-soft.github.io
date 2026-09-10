@@ -1,8 +1,0 @@
----
-layout: en-tag
-title: ecpm
-tag: ecpm
-lang: en
-locale: en_US
-permalink: /en/tags/ecpm/
----

@@ -7,8 +7,8 @@ icon: fas fa-info-circle
 order: 1
 lang: en
 locale: en_US
-permalink: /en/about/
-alt_url: /about/
+permalink: /about/
+alt_url: /ko/about/
 ---
 
 ![Fadongkwon Soft](/assets/img/about/Logo_w_text_3.png){: width="350" .normal}
@@ -19,14 +19,14 @@ Hello. I'm the solo developer behind **Fadongkwon Soft**.
 
 Software development is my day job, and I'm a father of two. Since late 2024 I've been building and shipping apps by myself, using evenings after work and weekends. Planning, development, design, store submissions, and this blog — all of it is mine.
 
-There was nothing dramatic behind starting. Watching the costs of raising children climb, I wanted to build something that would accumulate value over time instead of just spending hours. So I ship them one at a time and record what I learn along the way. The mistakes so far are collected in [What I learned shipping 8 apps as a solo developer with a day job](/en/posts/solo-dev-8-apps/).
+There was nothing dramatic behind starting. Watching the costs of raising children climb, I wanted to build something that would accumulate value over time instead of just spending hours. So I ship them one at a time and record what I learn along the way. The mistakes so far are collected in [What I learned shipping 8 apps as a solo developer with a day job](/posts/solo-dev-8-apps/).
 
 ## What's here
 
 This site is both a home for the apps and a working notebook. Three things, mainly.
 
 **1. A tarot card meaning dictionary**
-I'm working through the meaning of all 78 tarot cards, one at a time. The artwork is drawn in-house, and the interpretations are written from scratch based on the traditional Rider–Waite imagery. The full list is at [Tarot Dictionary](/en/tarot/).
+I'm working through the meaning of all 78 tarot cards, one at a time. The artwork is drawn in-house, and the interpretations are written from scratch based on the traditional Rider–Waite imagery. The full list is at [Tarot Dictionary](/tarot/).
 
 **2. Learning and exam material**
 Notes gathered while helping my own children with Korean literacy and arithmetic, plus material on certification exams — systems, schedules, study methods. These are topics I actually had to research to build the apps, so I write up the parts likely to help someone looking for the same thing.
@@ -38,11 +38,11 @@ What happens when you build and ship apps: where store reviews rejected me, how 
 
 Learning apps built for my own kids, party apps for gatherings, exam question banks, and fortune-telling content. They're on Google Play and Apps in Toss (Toss mini apps).
 
-- **Learning** — [Hangul Monsters](/en/posts/hangul-monsters/), [Math Monsters](/en/posts/math-monsters/)
-- **Exam prep** — [Nursing Assistant Mock Exam](/en/posts/nursing-quiz/)
-- **Games & parties** — [Reaction Challenge · Memory Cards](/en/posts/play-minigames/), [Spin the Bottle](/en/posts/spin-the-bottle/), [Juice Spinner](/en/posts/juice-spinner/)
-- **Fortune content** — [Tarot Fortune](/en/posts/tarot-fortune/), [Tarot Ping](/en/posts/tarot-ping/), [Saju Lotto](/en/posts/saju-lotto/)
-- **Platform** — [Launching on Apps in Toss](/en/posts/apps-in-toss-launch/)
+- **Learning** — [Hangul Monsters](/posts/hangul-monsters/), [Math Monsters](/posts/math-monsters/)
+- **Exam prep** — [Nursing Assistant Mock Exam](/posts/nursing-quiz/)
+- **Games & parties** — [Reaction Challenge · Memory Cards](/posts/play-minigames/), [Spin the Bottle](/posts/spin-the-bottle/), [Juice Spinner](/posts/juice-spinner/)
+- **Fortune content** — [Tarot Fortune](/posts/tarot-fortune/), [Tarot Ping](/posts/tarot-ping/), [Saju Lotto](/posts/saju-lotto/)
+- **Platform** — [Launching on Apps in Toss](/posts/apps-in-toss-launch/)
 
 ## Contact
 

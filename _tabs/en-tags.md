@@ -6,6 +6,6 @@ icon: fas fa-tags
 order: 5
 lang: en
 locale: en_US
-permalink: /en/tags/
-alt_url: /tags/
+permalink: /tags/
+alt_url: /ko/tags/
 ---

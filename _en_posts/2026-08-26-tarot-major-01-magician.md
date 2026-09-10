@@ -6,8 +6,8 @@ image:
   alt: The Magician tarot card
 date: 2026-08-26 09:20:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-01-magician/
-alt_url: /posts/tarot-major-01-magician/
+permalink: /posts/tarot-major-01-magician/
+alt_url: /ko/posts/tarot-major-01-magician/
 card_name: The Magician
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -57,8 +57,8 @@ A. Tarot is a tool for showing what is open to you rather than declaring what a 
 
 ## Cards to read alongside
 
-- [The Fool](/en/posts/tarot-major-00-fool/) — the card immediately before the Magician. Potential at the stage before it has taken any shape.
-- [The High Priestess](/en/posts/tarot-major-02-high-priestess/) — if the Magician is the power turned outward, the High Priestess is the wisdom stored inward. They are often cited as a contrasting pair.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Fool](/posts/tarot-major-00-fool/) — the card immediately before the Magician. Potential at the stage before it has taken any shape.
+- [The High Priestess](/posts/tarot-major-02-high-priestess/) — if the Magician is the power turned outward, the High Priestess is the wisdom stored inward. They are often cited as a contrasting pair.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

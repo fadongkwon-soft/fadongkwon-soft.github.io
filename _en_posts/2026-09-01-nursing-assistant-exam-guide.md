@@ -3,8 +3,8 @@ title: How to Become a Nursing Assistant in Korea — Requirements and Exam
 description: Eligibility for the Korean nursing assistant national exam, the required training hours, the exam subjects and passing marks, and the annual schedule.
 date: 2026-09-01 20:00:00 +0900
 categories: [Learning, Certification]
-permalink: /en/posts/nursing-assistant-exam-guide/
-alt_url: /posts/nursing-assistant-exam-guide/
+permalink: /posts/nursing-assistant-exam-guide/
+alt_url: /ko/posts/nursing-assistant-exam-guide/
 tags: [nursing assistant, national exam, certification, exam info]
 ---
 
@@ -103,5 +103,5 @@ In the next post I'll go into what each subject actually covers, and which units
 
 ---
 
-> If you want to work through a lot of practice questions, I built a **[Nursing Assistant Mock Exam](/en/posts/nursing-quiz/)** app. It has a question bank organized by subject, a wrong-answer review, and a mode that avoids serving questions you saw recently.
+> If you want to work through a lot of practice questions, I built a **[Nursing Assistant Mock Exam](/posts/nursing-quiz/)** app. It has a question bank organized by subject, a wrong-answer review, and a mode that avoids serving questions you saw recently.
 {: .prompt-tip }

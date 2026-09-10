@@ -3,8 +3,8 @@ title: 8 Traps I Hit Making This Blog Bilingual (Jekyll + Chirpy)
 description: Turning a Korean-only Jekyll blog into English-first with automatic locale selection — scheduled-post pitfalls, theme override contracts, a zombie service worker, and running batch translation for 95 posts
 date: 2026-08-29 16:30:00 +0900
 categories: [Blogging, Episode]
-permalink: /en/posts/bilingual-blog-i18n/
-alt_url: /posts/bilingual-blog-i18n/
+permalink: /posts/bilingual-blog-i18n/
+alt_url: /ko/posts/bilingual-blog-i18n/
 tags: [jekyll, chirpy, i18n, seo, github pages, solo developer]
 ---
 ## Info
@@ -30,7 +30,7 @@ so you can never write a title tuned for English queries.
 
 The right answer is **separate URLs per language plus reciprocal hreflang**. Korean
 posts kept their original URLs (`/posts/…`), English versions went under
-`/en/posts/…`, and each document points at its twin with
+`/posts/…`, and each document points at its twin with
 `<link rel="alternate" hreflang>`. Not breaking a single indexed Korean URL was the
 non-negotiable constraint.
 

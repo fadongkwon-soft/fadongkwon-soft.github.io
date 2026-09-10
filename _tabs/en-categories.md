@@ -6,6 +6,6 @@ icon: fas fa-stream
 order: 4
 lang: en
 locale: en_US
-permalink: /en/categories/
-alt_url: /categories/
+permalink: /categories/
+alt_url: /ko/categories/
 ---

@@ -10,7 +10,7 @@ mermaid: true
 image:
   path: /assets/img/20241229_ready-to-open/developer_header_image.png
   alt: The logo of Fadongkwon Soft
-alt_url: /en/posts/ready-to-open/
+alt_url: /posts/ready-to-open/
 ---
 ## 서막
 &nbsp;&nbsp; 아이 둘을 키우면서 투입되는 비용이 점점 늘어남을 어느 순간 체감하게 되었다. 딱히 물려받은 자산도 없었고, 재테크에는 영 소질이 없어서 축적해 놓은 자산도 없었다.

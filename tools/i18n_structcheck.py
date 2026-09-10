@@ -33,16 +33,18 @@ def canon_link(u):
     fixup 전(번역 직후)과 후(정규화 완료) 어느 상태에서도 같은 결과가 나와야
     이 검사를 파이프라인 양쪽에서 쓸 수 있다.
     """
-    if u.startswith('/en/posts/'):
-        return '/posts/' + u[len('/en/posts/'):]
-    if u == '/en/tarot/':
-        return '/tarot/'
-    if u == '/en/about/':
-        return '/about/'
-    if u == '/en/privacy/':
-        return '/privacy/'
-    if u == '/en/play/':
-        return '/play/'
+    # URL 규칙(2026-09-11): 영어 = /*, 한국어 = /ko/*  (근거: tools/urlscheme.py)
+    # 비교 기준은 **한국어 원문 형태**(/ko/*)로 맞춘다.
+    if u.startswith('/posts/'):
+        return '/ko/posts/' + u[len('/posts/'):]
+    if u == '/tarot/':
+        return '/ko/tarot/'
+    if u == '/about/':
+        return '/ko/about/'
+    if u == '/privacy/':
+        return '/ko/privacy/'
+    if u == '/play/':
+        return '/ko/play/'
     return u
 
 
@@ -84,14 +86,15 @@ def tag_slug(t):
 
 
 def check_en_tag_pages():
-    """영문 포스트의 tags 마다 en/tags/<slug>/index.md 가 있어야 한다.
+    """영문 포스트의 tags 마다 tags/<slug>/index.md 가 있어야 한다.
 
-    jekyll-archives 는 한국어 포스트(/tags/:name/)만 만들고 영문 태그 페이지는
+    URL 규칙(2026-09-11): 영어 = /*, 한국어 = /ko/*  (근거: tools/urlscheme.py)
+    jekyll-archives 는 한국어 포스트(/ko/tags/:name/)만 만들고 영문 태그 페이지는
     수동 파일이다. 새 영문 태그를 쓰면서 페이지를 안 만들면 포스트가 없는 URL 로
     링크해 **htmlproofer(Test site) 가 죽는다** — 실제로 2026-09-09 이걸로 실패했다.
     """
     have = set(os.path.basename(os.path.dirname(p))
-               for p in glob.glob(os.path.join(ROOT, 'en', 'tags', '*', 'index.md')))
+               for p in glob.glob(os.path.join(ROOT, 'tags', '*', 'index.md')))
     missing = {}
     for p in sorted(glob.glob(os.path.join(ROOT, '_en_posts', '*.md'))):
         s = io.open(p, encoding='utf-8').read()

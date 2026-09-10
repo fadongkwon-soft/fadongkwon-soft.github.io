@@ -6,8 +6,8 @@ image:
   alt: Hangul Monsters feature graphic
 date: 2026-08-23 18:00:00 +0900
 categories: [Products, Game]
-permalink: /en/posts/hangul-monsters/
-alt_url: /posts/hangul-monsters/
+permalink: /posts/hangul-monsters/
+alt_url: /ko/posts/hangul-monsters/
 tags: [game, android, education, hangul, early education, monsters, solo developer]
 ---
 ## Info
@@ -16,7 +16,7 @@ tags: [game, android, education, hangul, early education, monsters, solo develop
 > (consonants, vowels, Ga-na-da), premium word packs via one-time in-app purchase. No ads.
 {: .prompt-info }
 
-> **Update (2026-09-05)**: every in-app purchase has been removed and all modes are now free. The story is in [Why we went free](/en/posts/monsters-go-free/).
+> **Update (2026-09-05)**: every in-app purchase has been removed and all modes are now free. The story is in [Why we went free](/posts/monsters-go-free/).
 {: .prompt-tip }
 
 ## Learning Hangul by Catching Monsters

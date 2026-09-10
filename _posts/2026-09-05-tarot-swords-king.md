@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 소드왕, KingOfSwords, 코
 image:
   path: /assets/img/tarot/feature_swords_king.jpg
   alt: 타로 카드 소드 왕(King of Swords)
-alt_url: /en/posts/tarot-swords-king/
+alt_url: /posts/tarot-swords-king/
 ---
 
 소드 왕은 더 이상 검을 휘두르는 사람이 아니라, 검을 세워 원칙을 지키는 사람을 그리는 카드입니다. 소드 코트의 마지막 자리에 앉은 이 인물은 정면을 응시한 채 미동도 없이 옥좌를 지키고 있는데, 그 고요함이야말로 이 카드가 말하는 완성된 권위의 모습입니다.
@@ -51,8 +51,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [소드 여왕(Queen of Swords)](/posts/tarot-swords-queen/) — 소드 왕과 짝을 이루는 카드로, 같은 명료함을 내면의 돌봄으로 풀어냅니다.
-- [소드 기사(Knight of Swords)](/posts/tarot-swords-knight/) — 왕이 지나온 과거의 자리로, 원칙보다 속도가 앞서던 시기를 보여줍니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [소드 여왕(Queen of Swords)](/ko/posts/tarot-swords-queen/) — 소드 왕과 짝을 이루는 카드로, 같은 명료함을 내면의 돌봄으로 풀어냅니다.
+- [소드 기사(Knight of Swords)](/ko/posts/tarot-swords-knight/) — 왕이 지나온 과거의 자리로, 원칙보다 속도가 앞서던 시기를 보여줍니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

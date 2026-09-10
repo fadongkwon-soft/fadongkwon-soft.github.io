@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 탑카드, TheTower, 타로�
 image:
   path: /assets/img/tarot/feature_major_16_tower.jpg
   alt: 타로 카드 탑(The Tower)
-alt_url: /en/posts/tarot-major-16-tower/
+alt_url: /posts/tarot-major-16-tower/
 ---
 
 "믿고 있던 계약이 하루아침에 깨졌는데 왜 하필 지금일까요", "잘 버티고 있다고 생각했는데 갑자기 다 무너진 기분이에요" — 이런 상황에서 뽑힌 카드가 메이저 아르카나 **16번 탑(The Tower)**이라면, 놀라움 뒤에 숨은 메시지를 먼저 짚어볼 필요가 있습니다. 탑은 무너뜨리는 카드가 아니라, **더는 버틸 수 없었던 것이 마침내 무너지는 순간**을 그리는 카드이기 때문입니다.
@@ -57,8 +57,8 @@ A. 둘 다 큰 변화를 뜻하지만 결이 다릅니다. 죽음은 스스로 �
 
 ## 함께 보면 좋은 카드
 
-- [악마(The Devil)](/posts/tarot-major-15-devil/) — 탑 바로 앞 카드. 악마가 만든 얽매임이 오래 버티지 못하고 탑에서 무너집니다.
-- [별(The Star)](/posts/tarot-major-17-star/) — 탑 바로 다음 카드. 무너진 자리에는 별이 그리는 회복과 희망이 뒤따릅니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [악마(The Devil)](/ko/posts/tarot-major-15-devil/) — 탑 바로 앞 카드. 악마가 만든 얽매임이 오래 버티지 못하고 탑에서 무너집니다.
+- [별(The Star)](/ko/posts/tarot-major-17-star/) — 탑 바로 다음 카드. 무너진 자리에는 별이 그리는 회복과 희망이 뒤따릅니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

@@ -3,8 +3,8 @@ title: Two Bugs Hiding in the Instant a Screen Changes — A Speed Divided by No
 description: The real reason the brick-breaker ball crawled was that I measured a hidden element and got a height of 1px. In the slide puzzle, the same finger motion that placed the last tile also pressed the banner that had just appeared, skipping the completion screen entirely. Both bugs lived in the instant a screen changes, and in both cases my own defensive code hid the cause
 date: 2026-09-18 20:00:00 +0900
 categories: [Blogging, Episode]
-permalink: /en/posts/screen-transition-traps/
-alt_url: /posts/screen-transition-traps/
+permalink: /posts/screen-transition-traps/
+alt_url: /ko/posts/screen-transition-traps/
 image:
   path: /assets/img/20260918_transition-traps/cover.png
   alt: Diagram of a screen transition with a mis-measured canvas and a leftover click event
@@ -153,4 +153,4 @@ Three things worth keeping:
 
 **Do not repeat a guess more than three times.** Three fixes in the same place with no change is a signal that the premise is wrong. The brick breaker took five minutes once I measured the speed directly. Before that, it took days.
 
-Both games are on [Google Play and Apps in Toss](/en/posts/apps-in-toss-launch/), though not yet in the [play-in-your-browser](/en/play/) list. Updates go out here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
+Both games are on [Google Play and Apps in Toss](/posts/apps-in-toss-launch/), though not yet in the [play-in-your-browser](/play/) list. Updates go out here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).

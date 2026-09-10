@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 완드, 마이너아르카나, WandsKing, 리더십
 image:
   path: /assets/img/tarot/feature_wands_king.jpg
   alt: 타로 카드 완드 왕(King of Wands)
-alt_url: /en/posts/tarot-wands-king/
+alt_url: /posts/tarot-wands-king/
 ---
 
 완드 수트에는 시종, 기사, 여왕, 왕이라는 네 명의 인물이 등장합니다. 이 넷을 나란히 놓고 보면 하나의 성장 서사가 보입니다. 시종은 불씨를 처음 만져보는 초심자이고, 기사는 그 불씨를 들고 앞뒤 재지 않고 달려 나가는 행동가이며, 여왕은 타오르는 열정을 자기 안에서 다스릴 줄 아는 성숙한 인물입니다. **완드 왕(King of Wands)**은 이 흐름의 맨 끝, 다스림이 완전히 몸에 밴 채 조직과 사람들 앞에 나선 인물입니다. 마이너 아르카나 코트 카드 중에서도 가장 외적으로 완성된 리더십을 상징하는 자리입니다.
@@ -56,8 +56,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [완드 에이스(Ace of Wands)](/posts/tarot-wands-01/) — 막 피어난 첫 불씨. 완드 왕이 쥔 무성한 지팡이는 이 한 알의 씨앗이 자란 결과입니다.
-- [완드 여왕(Queen of Wands)](/posts/tarot-wands-queen/) — 같은 불의 권위라도 여왕은 내면의 다스림, 왕은 외부를 향한 결단으로 갈립니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [완드 에이스(Ace of Wands)](/ko/posts/tarot-wands-01/) — 막 피어난 첫 불씨. 완드 왕이 쥔 무성한 지팡이는 이 한 알의 씨앗이 자란 결과입니다.
+- [완드 여왕(Queen of Wands)](/ko/posts/tarot-wands-queen/) — 같은 불의 권위라도 여왕은 내면의 다스림, 왕은 외부를 향한 결단으로 갈립니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

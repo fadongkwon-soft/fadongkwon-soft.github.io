@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 세계카드, TheWorld, 타�
 image:
   path: /assets/img/tarot/feature_major_21_world.jpg
   alt: 타로 카드 세계(The World)
-alt_url: /en/posts/tarot-major-21-world/
+alt_url: /posts/tarot-major-21-world/
 ---
 
 세계(The World)는 0번 바보에서 시작한 스물두 장의 여정이 마침내 한 바퀴를 완전히 돌아 닫히는 자리에 놓인 카드입니다. 메이저 아르카나의 마지막 번호를 달고 있는 만큼, 이 카드가 나왔다는 것은 크든 작든 하나의 이야기가 마무리 국면에 들어섰다는 뜻으로 읽힙니다.
@@ -52,8 +52,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [심판(Judgement)](/posts/tarot-major-20-judgement/) — 세계 바로 앞 카드. 심판에서 응답을 마친 이야기가 세계에서 완전히 매듭지어집니다.
-- [완드 에이스(Ace of Wands)](/posts/tarot-wands-01/) — 메이저 아르카나가 세계에서 한 바퀴를 다 돌고 나면, 카드덱은 다시 마이너 아르카나의 첫 장인 완드 에이스로 돌아가 새로운 불씨를 지핍니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [심판(Judgement)](/ko/posts/tarot-major-20-judgement/) — 세계 바로 앞 카드. 심판에서 응답을 마친 이야기가 세계에서 완전히 매듭지어집니다.
+- [완드 에이스(Ace of Wands)](/ko/posts/tarot-wands-01/) — 메이저 아르카나가 세계에서 한 바퀴를 다 돌고 나면, 카드덱은 다시 마이너 아르카나의 첫 장인 완드 에이스로 돌아가 새로운 불씨를 지핍니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

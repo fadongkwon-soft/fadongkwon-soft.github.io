@@ -3,7 +3,9 @@
 
 설계 요약
   - 한국어 원문은 `_posts/` 에 그대로 두고 URL(/posts/<slug>/)을 바꾸지 않는다.
-  - 영문판은 컬렉션 `_en_posts/` 에 두고 /en/posts/<slug>/ 로 낸다.
+  - 영문판은 컬렉션 `_en_posts/` 에 두고 /posts/<slug>/ 로 낸다.
+  - **URL 규칙(2026-09-11): 영어 = `/*`, 한국어 = `/ko/*`.** 근거는 tools/urlscheme.py.
+    전환 전에는 홈만 규칙이 반대였다(루트=영어, 나머지 루트=한국어).
   - 두 문서는 서로의 경로를 front matter `alt_url` 로 들고, metadata-hook 이
     그걸로 hreflang(ko/en/x-default)을 만든다. Liquid 로 짝을 탐색하면
     문서 수의 제곱만큼 반복이 생겨서 생성 시점에 박아 넣는다.
@@ -30,24 +32,26 @@ FM_RE = re.compile(r'^---\n(.*?\n)---\n', re.S)
 # 번역본에서 한국어판을 가리키는 링크는 영문판으로 돌린다.
 # /toss/* 는 토스 딥링크 랜딩(언어 중립)이므로 건드리지 않는다.
 LINK_MAP = [
-    (re.compile(r'\(/posts/([a-z0-9-]+)/'), r'(/en/posts/\1/'),
-    (re.compile(r'\(/tarot/'), r'(/en/tarot/'),
-    (re.compile(r'\(/about/'), r'(/en/about/'),
+    (re.compile(r'\(/ko/posts/([a-z0-9-]+)/'), r'(/posts/\1/'),
+    (re.compile(r'\(/ko/tarot/'), r'(/tarot/'),
+    (re.compile(r'\(/ko/about/'), r'(/about/'),
+    (re.compile(r'\(/ko/play/'), r'(/play/'),
+    (re.compile(r'\(/ko/privacy/'), r'(/privacy/'),
 ]
 INCLUDE_MAP = [('tarot-app-banner.html', 'tarot-app-banner-en.html')]
 
 # 앵커 텍스트 통일. 78장이 같은 허브를 가리키는데 배치마다 표기가 갈렸다
 # (`Tarot card meanings - all 78 cards` / 대문자형 / `78 tarot card meanings dictionary` 등).
 # 같은 대상에 같은 앵커 텍스트를 쓰는 편이 검색엔진에도 독자에게도 낫다.
-# href 재작성보다 먼저 돌려야 한다(아래 LINK_MAP 이 /tarot/ 를 /en/tarot/ 로 바꾸므로).
+# href 재작성보다 먼저 돌려야 한다(아래 LINK_MAP 이 /ko/tarot/ 를 /tarot/ 로 바꾸므로).
 ANCHOR_MAP = [
-    (re.compile(r'\[[^\]]*\]\(/tarot/\)'), '[Tarot Card Meanings — All 78 Cards](/tarot/)'),
+    (re.compile(r'\[[^\]]*\]\(/ko/tarot/\)'), '[Tarot Card Meanings — All 78 Cards](/ko/tarot/)'),
 ]
 
 REQUIRED_EN_KEYS = ('title', 'description', 'date', 'categories', 'permalink', 'alt_url')
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 영문 태그 생성 (/en/tags/ 페이지용)
+# 영문 태그 생성 (/tags/ 페이지용)
 #
 # 한국어 태그는 250여 종에 1회성 롱테일(카드별 태그 등)이 대부분이라 전부
 # 번역하지 않는다. 타로 카드 글은 구조화 태그(tarot + 수트)로 대체하고,
@@ -201,7 +205,7 @@ def _slugify(s):
 
 
 def gen_archive_stubs():
-    """_en_posts 의 categories/tags 로 /en/categories/<slug>/, /en/tags/<slug>/
+    """_en_posts 의 categories/tags 로 /categories/<slug>/, /tags/<slug>/
     스텁 페이지를 생성·정리한다. jekyll-archives 가 컬렉션을 지원하지 않아
     하위 페이지를 이렇게 만든다. 완전 생성물이므로 사라진 항목의 스텁은 지운다.
     (미래 날짜 글의 항목도 미리 만든다 — 목록 필터가 공개분만 보여주므로 무해)"""
@@ -222,7 +226,7 @@ def gen_archive_stubs():
         ('categories', cats, 'en-category', 'category'),
         ('tags', tags, 'en-tag', 'tag'),
     ):
-        base = os.path.join(ROOT, 'en', kind)
+        base = os.path.join(ROOT, kind)
         os.makedirs(base, exist_ok=True)
         # 사라진 항목의 스텁 제거
         for d in os.listdir(base):
@@ -239,7 +243,7 @@ def gen_archive_stubs():
                 '{fm_key}: {display}\n'
                 'lang: en\n'
                 'locale: en_US\n'
-                'permalink: /en/{kind}/{slug}/\n'
+                'permalink: /{kind}/{slug}/\n'
                 '---\n'
             ).format(layout=layout, display=display, fm_key=fm_key, kind=kind, slug=slug)
             io.open(os.path.join(d, 'index.md'), 'w', encoding='utf-8', newline='\n').write(stub)
@@ -568,7 +572,7 @@ def cmd_scaffold():
     for r in posts:
         s = io.open(r['path'], encoding='utf-8').read()
         fm, body = split_fm(s)
-        want = '/en/posts/' + r['slug'] + '/'
+        want = '/posts/' + r['slug'] + '/'
         if fm_get(fm, 'alt_url') == want:
             continue
         fm = fm_set(fm, 'alt_url', want)
@@ -579,12 +583,13 @@ def cmd_scaffold():
     # ⚠️ 2026-08-29 재편 이후: 루트(/)가 영문 홈, 한국어 홈은 /ko/ 다.
     for path, alt in [('index.html', '/ko/'),
                       ('ko/index.html', '/'),
-                      ('_tabs/tarot.md', '/en/tarot/'),
-                      ('_tabs/about.md', '/en/about/'),
-                      ('_tabs/archives.md', '/en/archives/'),
-                      ('_tabs/categories.md', '/en/categories/'),
-                      ('_tabs/tags.md', '/en/tags/'),
-                      ('play/index.md', '/en/play/')]:
+                      ('_tabs/tarot.md', '/tarot/'),
+                      ('_tabs/about.md', '/about/'),
+                      ('_tabs/archives.md', '/archives/'),
+                      ('_tabs/categories.md', '/categories/'),
+                      ('_tabs/tags.md', '/tags/'),
+                      ('_tabs/privacy.md', '/privacy/'),
+                      ('ko/play/index.md', '/play/')]:
         p = os.path.join(ROOT, path)
         s = io.open(p, encoding='utf-8').read()
         fm, body = split_fm(s)
@@ -619,8 +624,8 @@ def cmd_fixup():
         # 기계적 항목은 한국어 원문 기준으로 덮어쓴다 (번역 단계 실수를 차단)
         fm = fm_set(fm, 'date', fm_get(kfm, 'date'))
         fm = fm_set(fm, 'categories', fm_get(kfm, 'categories'))
-        fm = fm_set(fm, 'permalink', '/en/posts/' + slug + '/')
-        fm = fm_set(fm, 'alt_url', '/posts/' + slug + '/')
+        fm = fm_set(fm, 'permalink', '/posts/' + slug + '/')
+        fm = fm_set(fm, 'alt_url', '/ko/posts/' + slug + '/')
         # 태그: 영문 글에 이미 태그가 있으면 **그대로 둔다.**
         # 없을 때만 한국어 원문 태그를 용어집으로 옮겨 채운다.
         # ⚠️ 예전에는 무조건 용어집 결과로 덮어썼는데, 용어집에 없는 한국어 태그는
@@ -689,13 +694,19 @@ def cmd_fixup():
 
 
 def known_urls(ko, files):
-    urls = set(['/', '/en/', '/tarot/', '/en/tarot/', '/about/', '/en/about/',
-                '/privacy/', '/en/privacy/', '/archives/', '/categories/', '/tags/',
-                '/kids/', '/kids/privacy/', '/play/', '/en/play/', '/play/hangul-monsters/', '/play/math-monsters/'])
+    # URL 규칙: 영어 = /*, 한국어 = /ko/*  (tools/urlscheme.py)
+    # /play/<게임>/ · /toss/* · /kids/* · /assets/* 는 언어 중립이라 접두가 없다.
+    urls = set(['/', '/ko/', '/en/',
+                '/tarot/', '/ko/tarot/', '/about/', '/ko/about/',
+                '/privacy/', '/ko/privacy/',
+                '/archives/', '/ko/archives/', '/categories/', '/ko/categories/',
+                '/tags/', '/ko/tags/', '/play/', '/ko/play/',
+                '/kids/', '/kids/privacy/',
+                '/play/hangul-monsters/', '/play/math-monsters/'])
     for slug in ko:
-        urls.add('/posts/' + slug + '/')
+        urls.add('/ko/posts/' + slug + '/')
     for p in files:
-        urls.add('/en/posts/' + os.path.basename(p)[:-3][11:] + '/')
+        urls.add('/posts/' + os.path.basename(p)[:-3][11:] + '/')
     for p in glob.glob(os.path.join(ROOT, 'toss', '*.html')):
         urls.add('/toss/' + os.path.basename(p)[:-5] + '/')
     return urls
@@ -718,7 +729,7 @@ def cmd_verify():
 
     for r in ko_posts():
         fm, body = split_fm(io.open(r['path'], encoding='utf-8').read())
-        if fm_get(fm, 'alt_url') != '/en/posts/' + r['slug'] + '/':
+        if fm_get(fm, 'alt_url') != '/posts/' + r['slug'] + '/':
             problems.append(r['base'] + ': alt_url 누락/불일치')
         check_links(body, r['base'])
 
@@ -729,7 +740,7 @@ def cmd_verify():
         for k in REQUIRED_EN_KEYS:
             if not fm_get(fm, k):
                 problems.append(base + '(en): ' + k + ' 누락')
-        if fm_get(fm, 'alt_url') != '/posts/' + slug + '/':
+        if fm_get(fm, 'alt_url') != '/ko/posts/' + slug + '/':
             problems.append(base + '(en): alt_url 불일치')
         if slug in ko:
             kfm, _ = split_fm(io.open(ko[slug]['path'], encoding='utf-8').read())

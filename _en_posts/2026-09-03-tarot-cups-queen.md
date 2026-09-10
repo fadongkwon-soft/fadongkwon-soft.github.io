@@ -6,8 +6,8 @@ image:
   alt: The Queen of Cups tarot card
 date: 2026-08-29 16:46:47 +0900
 categories: [Tarot, Cups]
-permalink: /en/posts/tarot-cups-queen/
-alt_url: /posts/tarot-cups-queen/
+permalink: /posts/tarot-cups-queen/
+alt_url: /ko/posts/tarot-cups-queen/
 card_name: Queen of Cups
 tags: [tarot, tarot card meanings, minor arcana, cups, court cards]
 ---
@@ -72,8 +72,8 @@ Today is a good day to listen a little more closely to the people around you. It
 
 ## Cards to read alongside
 
-- [King of Cups](/en/posts/tarot-cups-king/) — the same emotional maturity, exercised as inward care by the Queen and as outward responsibility by the King.
-- [Ace of Swords](/en/posts/tarot-swords-01/) — where the Queen of Cups reads a situation through feeling, the Ace of Swords cuts through it with clear thought.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [King of Cups](/posts/tarot-cups-king/) — the same emotional maturity, exercised as inward care by the Queen and as outward responsibility by the King.
+- [Ace of Swords](/posts/tarot-swords-01/) — where the Queen of Cups reads a situation through feeling, the Ace of Swords cuts through it with clear thought.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

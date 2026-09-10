@@ -6,8 +6,8 @@ image:
   alt: Knight of Pentacles tarot card
 date: 2026-08-29 16:47:14 +0900
 categories: [Tarot, Pentacles]
-permalink: /en/posts/tarot-pents-knight/
-alt_url: /posts/tarot-pents-knight/
+permalink: /posts/tarot-pents-knight/
+alt_url: /ko/posts/tarot-pents-knight/
 card_name: Knight of Pentacles
 tags: [tarot, tarot card meanings, pentacles, court cards]
 ---
@@ -56,8 +56,8 @@ Do not measure your pace against anyone else's. What the Knight of Pentacles pro
 
 ## Cards to read alongside
 
-- [Page of Pentacles](/en/posts/tarot-pents-page/) — past the Page's stage of learning comes the Knight's stage of actually putting that learning into practice.
-- [Queen of Pentacles](/en/posts/tarot-pents-queen/) — when the knight's dogged execution ripens inward and matures, it leads on to the queen's unhurried care.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Page of Pentacles](/posts/tarot-pents-page/) — past the Page's stage of learning comes the Knight's stage of actually putting that learning into practice.
+- [Queen of Pentacles](/posts/tarot-pents-queen/) — when the knight's dogged execution ripens inward and matures, it leads on to the queen's unhurried care.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

@@ -6,8 +6,8 @@ image:
   alt: The Knight of Swords tarot card
 date: 2026-08-29 16:47:00 +0900
 categories: [Tarot, Swords]
-permalink: /en/posts/tarot-swords-knight/
-alt_url: /posts/tarot-swords-knight/
+permalink: /posts/tarot-swords-knight/
+alt_url: /ko/posts/tarot-swords-knight/
 card_name: Knight of Swords
 tags: [tarot, tarot card meanings, minor arcana, court cards]
 ---
@@ -57,8 +57,8 @@ Where the Page is the stage of observing information and learning from it, the K
 
 ## Cards to read alongside
 
-- [Page of Swords](/en/posts/tarot-swords-page/) — the stage the Knight came through, the period still resting in observation and learning.
-- [King of Swords](/en/posts/tarot-swords-king/) — the finished stage, where the Knight's speed has been refined into principle and experience.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Page of Swords](/posts/tarot-swords-page/) — the stage the Knight came through, the period still resting in observation and learning.
+- [King of Swords](/posts/tarot-swords-king/) — the finished stage, where the Knight's speed has been refined into principle and experience.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

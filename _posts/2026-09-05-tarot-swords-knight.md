@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 소드기사, KnightOfSwords
 image:
   path: /assets/img/tarot/feature_swords_knight.jpg
   alt: 타로 카드 소드 기사(Knight of Swords)
-alt_url: /en/posts/tarot-swords-knight/
+alt_url: /posts/tarot-swords-knight/
 ---
 
 생각을 다 정리하기도 전에 몸이 먼저 튀어 나가고 있다면, 지금 뽑은 카드는 소드 기사(Knight of Swords)가 아닐까요? 소드 코트 중에서도 가장 빠른 속도로 움직이는 이 카드는, 검을 앞으로 겨눈 채 전속력으로 질주하는 기사의 모습을 통해 "결심이 곧 행동이 되는 순간"을 그립니다.
@@ -55,8 +55,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [소드 시종(Page of Swords)](/posts/tarot-swords-page/) — 기사가 지나온 이전 단계로, 관찰과 배움에 머물러 있던 시기입니다.
-- [소드 왕(King of Swords)](/posts/tarot-swords-king/) — 기사의 속도가 원칙과 노련함으로 다듬어진 완성 단계입니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [소드 시종(Page of Swords)](/ko/posts/tarot-swords-page/) — 기사가 지나온 이전 단계로, 관찰과 배움에 머물러 있던 시기입니다.
+- [소드 왕(King of Swords)](/ko/posts/tarot-swords-king/) — 기사의 속도가 원칙과 노련함으로 다듬어진 완성 단계입니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

@@ -6,8 +6,8 @@ image:
   alt: The World tarot card
 date: 2026-08-29 10:00:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-21-world/
-alt_url: /posts/tarot-major-21-world/
+permalink: /posts/tarot-major-21-world/
+alt_url: /ko/posts/tarot-major-21-world/
 card_name: The World
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -54,8 +54,8 @@ The advice the World card gives across every situation is this: the closer you a
 
 ## Cards to read alongside
 
-- [Judgement](/en/posts/tarot-major-20-judgement/) — the card right before the World. The story that finished answering in Judgement is tied off completely in the World.
-- [Ace of Wands](/en/posts/tarot-wands-01/) — once the Major Arcana has come full circle in the World, the deck returns to the first card of the Minor Arcana, the Ace of Wands, and lights a new spark.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Judgement](/posts/tarot-major-20-judgement/) — the card right before the World. The story that finished answering in Judgement is tied off completely in the World.
+- [Ace of Wands](/posts/tarot-wands-01/) — once the Major Arcana has come full circle in the World, the deck returns to the first card of the Minor Arcana, the Ace of Wands, and lights a new spark.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

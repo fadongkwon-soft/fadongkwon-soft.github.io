@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 별카드, TheStar, 타로�
 image:
   path: /assets/img/tarot/feature_major_17_star.jpg
   alt: 타로 카드 별(The Star)
-alt_url: /en/posts/tarot-major-17-star/
+alt_url: /posts/tarot-major-17-star/
 ---
 
 메이저 아르카나의 순서를 쭉 살펴보면 16번 탑 다음에 17번 별이 옵니다. 우연이 아닙니다. 탑이 무너뜨린 자리, 잔해만 남은 폐허 위에 가장 먼저 내려앉는 것이 바로 별빛입니다. 벼락과 붕괴, 추락으로 이어지던 급박한 흐름이 별 카드에 이르러 처음으로 잠잠해집니다. **17번 별(The Star)**은 이렇게 폭풍이 지나간 뒤에 찾아오는 카드입니다.
@@ -59,8 +59,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [탑(The Tower)](/posts/tarot-major-16-tower/) — 별 바로 앞 카드. 무너짐 뒤에 오는 회복이라는 흐름으로 이어집니다.
-- [은둔자(The Hermit)](/posts/tarot-major-09-hermit/) — 은둔자의 작은 등불과 별의 빛나는 별빛은 모두 어둠 속에서 길을 밝히는 상징이라는 점에서 닮아 있습니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [탑(The Tower)](/ko/posts/tarot-major-16-tower/) — 별 바로 앞 카드. 무너짐 뒤에 오는 회복이라는 흐름으로 이어집니다.
+- [은둔자(The Hermit)](/ko/posts/tarot-major-09-hermit/) — 은둔자의 작은 등불과 별의 빛나는 별빛은 모두 어둠 속에서 길을 밝히는 상징이라는 점에서 닮아 있습니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

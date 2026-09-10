@@ -6,8 +6,8 @@ image:
   alt: The Queen of Swords tarot card
 date: 2026-08-29 16:47:01 +0900
 categories: [Tarot, Swords]
-permalink: /en/posts/tarot-swords-queen/
-alt_url: /posts/tarot-swords-queen/
+permalink: /posts/tarot-swords-queen/
+alt_url: /ko/posts/tarot-swords-queen/
 card_name: Queen of Swords
 tags: [tarot, tarot card meanings, minor arcana, court cards]
 ---
@@ -65,8 +65,8 @@ The butterfly ornament on the throne is worth remembering. A butterfly only gets
 
 ## Cards to read alongside
 
-- [King of Swords](/en/posts/tarot-swords-king/) — the court card that pairs with the Queen of Swords, expressing the same principles as outward authority.
-- [Ace of Pentacles](/en/posts/tarot-pents-01/) — the Queen of Swords' clear judgment meeting the Ace of Pentacles' practical opportunity tends to lead to a decision with real substance.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [King of Swords](/posts/tarot-swords-king/) — the court card that pairs with the Queen of Swords, expressing the same principles as outward authority.
+- [Ace of Pentacles](/posts/tarot-pents-01/) — the Queen of Swords' clear judgment meeting the Ace of Pentacles' practical opportunity tends to lead to a decision with real substance.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

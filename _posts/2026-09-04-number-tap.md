@@ -7,7 +7,7 @@ tags: [game, android, 순발력, 숫자게임, 집중력게임, 반응속도, �
 pin: false
 image:
   path: /assets/img/20260904_number-tap/feature.png
-alt_url: /en/posts/number-tap/
+alt_url: /posts/number-tap/
 ---
 ## Info
 > **Number Rush** is a reflex and focus challenge: numbers 1 to 25 are scattered on a
@@ -39,12 +39,12 @@ alt_url: /en/posts/number-tap/
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/number-tap/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.
 
 ## 함께 출시된 퍼즐·캐주얼 게임
-- [스도쿠](/posts/sudoku/) — 매일 만나는 오늘의 스도쿠
-- [노노그램](/posts/nonogram/) — 숫자 힌트로 그림을 밝히는 퍼즐
-- [불끄기 퍼즐](/posts/lights-off/) — 모든 불을 끄는 두뇌 토글 퍼즐
-- [단어 맞추기](/posts/hangul-word/) — 여섯 자모로 한글 단어 추리
-- [탭 버드](/posts/tap-bird/) — 탭해서 장애물 사이를 날아라
+- [스도쿠](/ko/posts/sudoku/) — 매일 만나는 오늘의 스도쿠
+- [노노그램](/ko/posts/nonogram/) — 숫자 힌트로 그림을 밝히는 퍼즐
+- [불끄기 퍼즐](/ko/posts/lights-off/) — 모든 불을 끄는 두뇌 토글 퍼즐
+- [단어 맞추기](/ko/posts/hangul-word/) — 여섯 자모로 한글 단어 추리
+- [탭 버드](/ko/posts/tap-bird/) — 탭해서 장애물 사이를 날아라
 
-순수 반응속도만 재고 싶다면 [반응속도 챌린지](/posts/play-minigames/)와 비교해보세요.
+순수 반응속도만 재고 싶다면 [반응속도 챌린지](/ko/posts/play-minigames/)와 비교해보세요.
 
 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.

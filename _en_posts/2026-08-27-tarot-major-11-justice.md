@@ -6,8 +6,8 @@ image:
   alt: Justice tarot card
 date: 2026-08-27 10:40:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-11-justice/
-alt_url: /posts/tarot-major-11-justice/
+permalink: /posts/tarot-major-11-justice/
+alt_url: /ko/posts/tarot-major-11-justice/
 card_name: Justice
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -63,8 +63,8 @@ When **the Wheel of Fortune** appears next to Justice, the reading narrows from 
 
 ## Cards to read alongside
 
-- [Wheel of Fortune](/en/posts/tarot-major-10-wheel/) — the card right before Justice. The current the Wheel set spinning gets settled up in Justice.
-- [Strength](/en/posts/tarot-major-08-strength/) — the card that swapped places with Justice in the Marseille tradition. Worth reading together for the contrast between gentle courage and a cool standard.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Wheel of Fortune](/posts/tarot-major-10-wheel/) — the card right before Justice. The current the Wheel set spinning gets settled up in Justice.
+- [Strength](/posts/tarot-major-08-strength/) — the card that swapped places with Justice in the Marseille tradition. Worth reading together for the contrast between gentle courage and a cool standard.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

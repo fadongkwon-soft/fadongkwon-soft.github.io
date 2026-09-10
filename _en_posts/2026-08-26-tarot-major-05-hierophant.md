@@ -6,8 +6,8 @@ image:
   alt: The Hierophant tarot card
 date: 2026-08-26 10:40:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-05-hierophant/
-alt_url: /posts/tarot-major-05-hierophant/
+permalink: /posts/tarot-major-05-hierophant/
+alt_url: /ko/posts/tarot-major-05-hierophant/
 card_name: The Hierophant
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -62,8 +62,8 @@ The Hierophant is also a card whose meaning splits sharply depending on what it 
 
 ## Cards to read alongside
 
-- [The Emperor](/en/posts/tarot-major-04-emperor/) — the Emperor, who builds worldly order, and the Hierophant, who adds spiritual authority to that order, are a pair set side by side.
-- [The High Priestess](/en/posts/tarot-major-02-high-priestess/) — the same wisdom, contrasted: the High Priestess as personal intuition, the Hierophant as institutionalized teaching.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Emperor](/posts/tarot-major-04-emperor/) — the Emperor, who builds worldly order, and the Hierophant, who adds spiritual authority to that order, are a pair set side by side.
+- [The High Priestess](/posts/tarot-major-02-high-priestess/) — the same wisdom, contrasted: the High Priestess as personal intuition, the Hierophant as institutionalized teaching.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

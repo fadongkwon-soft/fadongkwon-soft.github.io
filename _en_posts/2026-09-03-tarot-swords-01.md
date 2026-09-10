@@ -6,8 +6,8 @@ image:
   alt: The Ace of Swords tarot card
 date: 2026-08-29 16:46:49 +0900
 categories: [Tarot, Swords]
-permalink: /en/posts/tarot-swords-01/
-alt_url: /posts/tarot-swords-01/
+permalink: /posts/tarot-swords-01/
+alt_url: /ko/posts/tarot-swords-01/
 card_name: Ace of Swords
 tags: [tarot, tarot card meanings, swords, minor arcana]
 ---
@@ -76,8 +76,8 @@ The reason the suit of Swords holds so many difficult pictures is that what it h
 
 ## Cards to read alongside
 
-- [Two of Swords](/en/posts/tarot-swords-02/) — the certainty won at the ace turns into hesitation over a decision in the next card. Clarity and indecision sit side by side inside the same suit.
-- [Queen of Cups](/en/posts/tarot-cups-queen/) — where the Ace of Swords finds the answer through reason, the Queen of Cups finds it through feeling and intuition. Two different routes to a judgment, worth setting against each other.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Two of Swords](/posts/tarot-swords-02/) — the certainty won at the ace turns into hesitation over a decision in the next card. Clarity and indecision sit side by side inside the same suit.
+- [Queen of Cups](/posts/tarot-cups-queen/) — where the Ace of Swords finds the answer through reason, the Queen of Cups finds it through feeling and intuition. Two different routes to a judgment, worth setting against each other.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

@@ -6,8 +6,8 @@ image:
   alt: Nine of Swords tarot card
 date: 2026-08-29 16:46:57 +0900
 categories: [Tarot, Swords]
-permalink: /en/posts/tarot-swords-09/
-alt_url: /posts/tarot-swords-09/
+permalink: /posts/tarot-swords-09/
+alt_url: /ko/posts/tarot-swords-09/
 card_name: Nine of Swords
 tags: [tarot, tarot card meanings, minor arcana]
 ---
@@ -51,8 +51,8 @@ It is more accurate to say the worry returns to a realistic size than that it va
 
 ## Cards to read alongside
 
-- [Eight of Swords](/en/posts/tarot-swords-08/) — when a self-made limit goes unresolved and carries on, it passes easily into the night of the Nine of Swords.
-- [Ten of Swords](/en/posts/tarot-swords-10/) — the next seat, where the anxiety of the Nine of Swords is tied off as an actual event.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Eight of Swords](/posts/tarot-swords-08/) — when a self-made limit goes unresolved and carries on, it passes easily into the night of the Nine of Swords.
+- [Ten of Swords](/posts/tarot-swords-10/) — the next seat, where the anxiety of the Nine of Swords is tied off as an actual event.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

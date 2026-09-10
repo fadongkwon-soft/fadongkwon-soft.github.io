@@ -6,8 +6,8 @@ image:
   alt: The King of Swords tarot card
 date: 2026-08-29 16:47:02 +0900
 categories: [Tarot, Swords]
-permalink: /en/posts/tarot-swords-king/
-alt_url: /posts/tarot-swords-king/
+permalink: /posts/tarot-swords-king/
+alt_url: /ko/posts/tarot-swords-king/
 card_name: King of Swords
 tags: [tarot, tarot card meanings, minor arcana, court cards]
 ---
@@ -53,8 +53,8 @@ The authority the King of Swords holds does not come from raising his voice. It 
 
 ## Cards to read alongside
 
-- [Queen of Swords](/en/posts/tarot-swords-queen/) — the card that pairs with the King of Swords, working the same clarity out as inner care.
-- [Knight of Swords](/en/posts/tarot-swords-knight/) — the seat in the King's past, showing the period when speed still ran ahead of principle.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Queen of Swords](/posts/tarot-swords-queen/) — the card that pairs with the King of Swords, working the same clarity out as inner care.
+- [Knight of Swords](/posts/tarot-swords-knight/) — the seat in the King's past, showing the period when speed still ran ahead of principle.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

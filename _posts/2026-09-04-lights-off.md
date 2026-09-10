@@ -7,7 +7,7 @@ tags: [game, android, 불끄기, 퍼즐, 두뇌게임, 캐주얼게임, lights o
 pin: false
 image:
   path: /assets/img/20260904_lights-off/feature.png
-alt_url: /en/posts/lights-off/
+alt_url: /posts/lights-off/
 ---
 ## Info
 > **All Lights Off** is a classic toggle puzzle: tap a light and its four neighbors
@@ -39,10 +39,10 @@ alt_url: /en/posts/lights-off/
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/lights-off/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.
 
 ## 함께 출시된 퍼즐·캐주얼 게임
-- [스도쿠](/posts/sudoku/) — 매일 만나는 오늘의 스도쿠
-- [노노그램](/posts/nonogram/) — 숫자 힌트로 그림을 밝히는 퍼즐
-- [단어 맞추기](/posts/hangul-word/) — 여섯 자모로 한글 단어 추리
-- [탭 버드](/posts/tap-bird/) — 탭해서 장애물 사이를 날아라
-- [순발력 숫자판](/posts/number-tap/) — 1부터 25까지 순서대로 빠르게 탭
+- [스도쿠](/ko/posts/sudoku/) — 매일 만나는 오늘의 스도쿠
+- [노노그램](/ko/posts/nonogram/) — 숫자 힌트로 그림을 밝히는 퍼즐
+- [단어 맞추기](/ko/posts/hangul-word/) — 여섯 자모로 한글 단어 추리
+- [탭 버드](/ko/posts/tap-bird/) — 탭해서 장애물 사이를 날아라
+- [순발력 숫자판](/ko/posts/number-tap/) — 1부터 25까지 순서대로 빠르게 탭
 
 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.

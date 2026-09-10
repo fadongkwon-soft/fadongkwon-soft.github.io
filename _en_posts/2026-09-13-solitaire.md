@@ -6,8 +6,8 @@ image:
   alt: Solitaire feature graphic
 date: 2026-09-13 09:00:00 +0900
 categories: [Products, Game]
-permalink: /en/posts/solitaire/
-alt_url: /posts/solitaire/
+permalink: /posts/solitaire/
+alt_url: /ko/posts/solitaire/
 tags: [game, android, card game, solitaire, solo developer]
 ---
 ## Info
@@ -37,9 +37,9 @@ It works fully offline with no sign-up or login, and supports 9 languages.
 ## Released Alongside
 Ten games launched together on September 8, and I am introducing one a day. Published so far:
 
-- [2048](/en/posts/game-2048/) — Slide and Merge Your Way to the 2048 Tile
-- [Minesweeper](/en/posts/minesweeper/) — Read the Numbers, Avoid the Mines
+- [2048](/posts/game-2048/) — Slide and Merge Your Way to the 2048 Tile
+- [Minesweeper](/posts/minesweeper/) — Read the Numbers, Avoid the Mines
 
-The story behind the previous six is in [Shipping Six Mini Games at Once](/en/posts/six-games-retrospective/).
+The story behind the previous six is in [Shipping Six Mini Games at Once](/posts/six-games-retrospective/).
 
 I post updates here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).

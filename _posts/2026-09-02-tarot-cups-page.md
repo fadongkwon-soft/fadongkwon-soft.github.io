@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 컵, 궁정카드, PageOfCup
 image:
   path: /assets/img/tarot/feature_cups_page.jpg
   alt: 타로 카드 컵 시종(Page of Cups)
-alt_url: /en/posts/tarot-cups-page/
+alt_url: /posts/tarot-cups-page/
 ---
 
 짝사랑하는 사람의 마음이 궁금해 카드를 뽑았는데 컵 시종이 나왔다면, 혹은 이제 막 시작한 취미나 배움의 앞날이 궁금할 때 이 카드를 만났다면 — 그 질문들에 컵 시종은 공통된 대답을 건넵니다.
@@ -47,8 +47,8 @@ A. 컵 에이스가 감정 그 자체가 처음 샘솟는 순간이라면, 컵 �
 
 ## 함께 보면 좋은 카드
 
-- [컵 에이스(Ace of Cups)](/posts/tarot-cups-01/) — 감정이 처음 샘솟는 씨앗의 카드로, 시종이 전하는 신호의 근원입니다.
-- [컵 기사(Knight of Cups)](/posts/tarot-cups-knight/) — 시종의 서툰 신호가 다음 단계에서는 적극적인 제안으로 성숙합니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [컵 에이스(Ace of Cups)](/ko/posts/tarot-cups-01/) — 감정이 처음 샘솟는 씨앗의 카드로, 시종이 전하는 신호의 근원입니다.
+- [컵 기사(Knight of Cups)](/ko/posts/tarot-cups-knight/) — 시종의 서툰 신호가 다음 단계에서는 적극적인 제안으로 성숙합니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

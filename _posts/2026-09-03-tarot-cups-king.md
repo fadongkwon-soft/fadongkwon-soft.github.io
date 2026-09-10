@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 컵, 궁정카드, KingOfCup
 image:
   path: /assets/img/tarot/feature_cups_king.jpg
   alt: 타로 카드 컵 왕(King of Cups)
-alt_url: /en/posts/tarot-cups-king/
+alt_url: /posts/tarot-cups-king/
 ---
 
 파도가 넘실대는 바다 한가운데, 흔들리는 왕좌 위에 앉아 있으면서도 어떻게 저토록 평온한 표정을 지을 수 있을까요? **컵 왕(King of Cups)**이 그 답을 쥐고 있는 카드입니다.
@@ -53,8 +53,8 @@ A. 그렇게 단정할 필요는 없습니다. 이 카드는 그 사람의 본�
 
 ## 함께 보면 좋은 카드
 
-- [컵 여왕(Queen of Cups)](/posts/tarot-cups-queen/) — 같은 정서적 성숙이 여왕에게서는 돌봄으로, 왕에게서는 책임으로 드러납니다.
-- [소드 2(Two of Swords)](/posts/tarot-swords-02/) — 컵 왕이 감정을 능숙하게 통합한 상태라면, 소드 2는 감정을 마주하지 못해 판단을 미루는 상태입니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [컵 여왕(Queen of Cups)](/ko/posts/tarot-cups-queen/) — 같은 정서적 성숙이 여왕에게서는 돌봄으로, 왕에게서는 책임으로 드러납니다.
+- [소드 2(Two of Swords)](/ko/posts/tarot-swords-02/) — 컵 왕이 감정을 능숙하게 통합한 상태라면, 소드 2는 감정을 마주하지 못해 판단을 미루는 상태입니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

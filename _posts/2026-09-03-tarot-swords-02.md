@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 소드, 마이너아르카나, 소드2, TwoofSwords
 image:
   path: /assets/img/tarot/feature_swords_02.jpg
   alt: 타로 카드 소드 2(Two of Swords)
-alt_url: /en/posts/tarot-swords-02/
+alt_url: /posts/tarot-swords-02/
 ---
 
 한 문장으로 요약하면, 소드 2는 **두 개의 저울추를 동시에 들고 있어 어느 쪽으로도 손을 뻗지 못하는 순간**을 그린 카드입니다. 눈을 가린 채 두 자루의 검을 엇갈려 든 인물이 이 수트에서 가장 널리 알려진 이미지 중 하나로 꼽히는 이유도 여기에 있습니다.
@@ -60,8 +60,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [소드 에이스(Ace of Swords)](/posts/tarot-swords-01/) — 에이스의 명료함과 2의 망설임을 나란히 놓고 보면, 판단이 흐려지는 지점이 어디인지가 더 선명하게 보입니다.
-- [컵 7(Seven of Cups)](/posts/tarot-cups-07/) — 같은 '결정 장애'라도 소드 2는 이성적으로 저울질하는 망설임이고, 컵 7은 너무 많은 환상 속에서 길을 잃는 망설임입니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [소드 에이스(Ace of Swords)](/ko/posts/tarot-swords-01/) — 에이스의 명료함과 2의 망설임을 나란히 놓고 보면, 판단이 흐려지는 지점이 어디인지가 더 선명하게 보입니다.
+- [컵 7(Seven of Cups)](/ko/posts/tarot-cups-07/) — 같은 '결정 장애'라도 소드 2는 이성적으로 저울질하는 망설임이고, 컵 7은 너무 많은 환상 속에서 길을 잃는 망설임입니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

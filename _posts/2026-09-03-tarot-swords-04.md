@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 소드, 마이너아르카나, 소드4, FourofSword
 image:
   path: /assets/img/tarot/feature_swords_04.jpg
   alt: 타로 카드 소드 4(Four of Swords)
-alt_url: /en/posts/tarot-swords-04/
+alt_url: /posts/tarot-swords-04/
 ---
 
 소드 3에서 심장을 꿰뚫는 아픔을 그대로 마주했다면, 바로 다음 자리인 소드 4는 그 아픔 이후에 찾아오는 정지 신호입니다. 숫자 3에서 4로 넘어가는 흐름은 아픔을 겪은 뒤에는 반드시 회복의 시간이 뒤따라야 한다는 순서를 보여줍니다. 소드 수트에서 4가 안정과 정체의 자리로 읽히는 것도 같은 맥락입니다.
@@ -57,8 +57,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [소드 3(Three of Swords)](/posts/tarot-swords-03/) — 아픔을 마주한 바로 다음에 놓이는 카드로, 상심 이후 회복의 흐름을 함께 읽으면 좋습니다.
-- [컵 6(Six of Cups)](/posts/tarot-cups-06/) — 소드 4의 정적인 휴식과 달리, 컵 6은 따뜻한 추억 속에서 위안을 얻는 정서적 쉼을 그립니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [소드 3(Three of Swords)](/ko/posts/tarot-swords-03/) — 아픔을 마주한 바로 다음에 놓이는 카드로, 상심 이후 회복의 흐름을 함께 읽으면 좋습니다.
+- [컵 6(Six of Cups)](/ko/posts/tarot-cups-06/) — 소드 4의 정적인 휴식과 달리, 컵 6은 따뜻한 추억 속에서 위안을 얻는 정서적 쉼을 그립니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

@@ -6,7 +6,7 @@ categories: [Blogging, Episode]
 tags: [애드몹, 무효트래픽, 광고정책, 안드로이드, 1인개발자, 개발일지]
 image:
   path: /assets/img/20260925_invalid-traffic/cover.png
-alt_url: /en/posts/invalid-traffic-suspension/
+alt_url: /posts/invalid-traffic-suspension/
 ---
 
 8월 26일, 광고 게시자 계정이 정지됐습니다. 사유는 **무효 트래픽**이고 기간은 **29일**입니다. 어제로 그 29일이 지났습니다.
@@ -103,13 +103,13 @@ Play의 테스터 이메일 목록을 전부 비웠고, 가족 폰의 사이드�
 
 ## 남은 이야기
 
-같은 시기에 앱인토스 쪽에서도 광고 어뷰징 정책이 강화됐습니다. [9월 정책 정리 글](/posts/toss-policy-changes/)에 적었듯이 "비정상적으로 늘어난 광고 노출이 정상적으로 운영하는 미니앱의 기회와 수익을 줄여왔다"는 것이 플랫폼의 문제 인식입니다. 제 사고는 규모가 작고 악의도 없었지만, 그 문장이 가리키는 방향에 제가 있었다는 것은 부정할 수 없습니다.
+같은 시기에 앱인토스 쪽에서도 광고 어뷰징 정책이 강화됐습니다. [9월 정책 정리 글](/ko/posts/toss-policy-changes/)에 적었듯이 "비정상적으로 늘어난 광고 노출이 정상적으로 운영하는 미니앱의 기회와 수익을 줄여왔다"는 것이 플랫폼의 문제 인식입니다. 제 사고는 규모가 작고 악의도 없었지만, 그 문장이 가리키는 방향에 제가 있었다는 것은 부정할 수 없습니다.
 
-한 달간 Play 쪽 수익이 0이 되면서 [앱인토스 광고 수익만 공개](/posts/toss-ad-revenue-first-month/)하게 된 것도 이 사고 때문입니다. 그쪽 숫자는 다음 공개 때 함께 넣겠습니다.
+한 달간 Play 쪽 수익이 0이 되면서 [앱인토스 광고 수익만 공개](/ko/posts/toss-ad-revenue-first-month/)하게 된 것도 이 사고 때문입니다. 그쪽 숫자는 다음 공개 때 함께 넣겠습니다.
 
 광고를 붙일 때 가장 먼저 해야 하는 일이 광고를 예쁘게 배치하는 것이 아니라 **내 기기에서 나가는 요청을 차단하는 것**이라는 걸, 한 달을 잃고 배웠습니다.
 
-만든 앱들은 [Google Play와 앱인토스](/posts/apps-in-toss-launch/)에 있고, 일부는 [브라우저에서 바로](/play/) 해볼 수 있습니다. 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.
+만든 앱들은 [Google Play와 앱인토스](/ko/posts/apps-in-toss-launch/)에 있고, 일부는 [브라우저에서 바로](/ko/play/) 해볼 수 있습니다. 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.
 
 > 이 글은 제 계정에서 실제로 일어난 일과 그에 대한 제 추정을 정리한 것입니다. 무효 트래픽 판정의 정확한 근거는 플랫폼이 공개하지 않으므로, 같은 증상의 원인이 늘 같다고 볼 수는 없습니다.
 {: .prompt-info }

@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 힘카드, Strength, 인내,
 image:
   path: /assets/img/tarot/feature_major_08_strength.jpg
   alt: 타로 카드 힘(Strength)
-alt_url: /en/posts/tarot-major-08-strength/
+alt_url: /posts/tarot-major-08-strength/
 ---
 
 힘 카드를 처음 보면 흔히 완력으로 맹수를 제압하는 장면을 떠올립니다. 하지만 그림을 자세히 들여다보면 여성은 사자의 입을 억지로 벌리거나 후려치고 있지 않습니다. 오히려 두 손으로 부드럽게 감싸 쥐고 있을 뿐입니다. 메이저 아르카나 8번 **힘(Strength)**이 말하는 진짜 힘은 완력이 아니라, 사나운 것을 부드럽게 다루는 능력에 가깝습니다.
@@ -66,8 +66,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [전차(The Chariot)](/posts/tarot-major-07-chariot/) — 같은 '다스림'이라도 전차는 바깥을 향한 추진력, 힘은 안을 향한 부드러운 인내입니다.
-- [은둔자(The Hermit)](/posts/tarot-major-09-hermit/) — 바깥의 사자를 다독인 다음에는, 은둔자처럼 홀로 자신을 들여다볼 차례가 옵니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [전차(The Chariot)](/ko/posts/tarot-major-07-chariot/) — 같은 '다스림'이라도 전차는 바깥을 향한 추진력, 힘은 안을 향한 부드러운 인내입니다.
+- [은둔자(The Hermit)](/ko/posts/tarot-major-09-hermit/) — 바깥의 사자를 다독인 다음에는, 은둔자처럼 홀로 자신을 들여다볼 차례가 옵니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

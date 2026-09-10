@@ -6,8 +6,8 @@ image:
   alt: Wheel of Fortune tarot card
 date: 2026-08-27 10:20:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-10-wheel/
-alt_url: /posts/tarot-major-10-wheel/
+permalink: /posts/tarot-major-10-wheel/
+alt_url: /ko/posts/tarot-major-10-wheel/
 card_name: Wheel of Fortune
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -59,8 +59,8 @@ A. It is closer to a delay or a change of order than a collapse. It does not mea
 
 ## Cards to read alongside
 
-- [The Hermit](/en/posts/tarot-major-09-hermit/) — the card right before the Wheel. Before the current outside changes, this is the time to hold a lantern alone and look inward.
-- [The Chariot](/en/posts/tarot-major-07-chariot/) — if the Chariot sets the direction by will, the Wheel is the card where circumstances outside your will set it. Read against each other, the character of each card comes out more sharply.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Hermit](/posts/tarot-major-09-hermit/) — the card right before the Wheel. Before the current outside changes, this is the time to hold a lantern alone and look inward.
+- [The Chariot](/posts/tarot-major-07-chariot/) — if the Chariot sets the direction by will, the Wheel is the card where circumstances outside your will set it. Read against each other, the character of each card comes out more sharply.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

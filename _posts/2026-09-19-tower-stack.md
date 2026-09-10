@@ -7,7 +7,7 @@ tags: [game, android, 타워쌓기, 아케이드, 순발력, 1인개발자]
 pin: false
 image:
   path: /assets/img/20260919_tower-stack/feature.png
-alt_url: /en/posts/tower-stack/
+alt_url: /posts/tower-stack/
 ---
 ## Info
 > **Tower Stack** is a timing game: every tap drops a floor, and missing shaves the block down. Power-ups you can switch off, separate records for height and score, and a stop button that banks your run. Works offline, no sign-up. 9 languages.
@@ -36,15 +36,15 @@ alt_url: /en/posts/tower-stack/
 ## 함께 나온 게임
 9월 8일에 10종을 함께 출시했고, 하루에 하나씩 소개하고 있습니다. 지금까지 올린 글입니다.
 
-- [2048](/posts/game-2048/) — 숫자를 합쳐 2048 타일을 만드는 퍼즐
-- [지뢰찾기](/posts/minesweeper/) — 숫자를 읽고 지뢰를 피하는 논리 퍼즐
-- [솔리테어](/posts/solitaire/) — 윈도우에서 하던 그 클론다이크
-- [벽돌깨기](/posts/breakout/) — 공을 튕겨 벽돌을 모두 깨는 아케이드
-- [오목](/posts/gomoku/) — 다섯 알을 먼저 잇는 사람이 이깁니다
-- [뱀 게임](/posts/snake/) — 먹이를 먹고 길어지는 클래식
-- [숫자 퍼즐](/posts/slide-puzzle/) — 타일을 밀어 순서대로 맞추는 15퍼즐
-- [픽셀 탁구](/posts/pixel-pong/) — AI 또는 친구와 1:1 탁구 대결
+- [2048](/ko/posts/game-2048/) — 숫자를 합쳐 2048 타일을 만드는 퍼즐
+- [지뢰찾기](/ko/posts/minesweeper/) — 숫자를 읽고 지뢰를 피하는 논리 퍼즐
+- [솔리테어](/ko/posts/solitaire/) — 윈도우에서 하던 그 클론다이크
+- [벽돌깨기](/ko/posts/breakout/) — 공을 튕겨 벽돌을 모두 깨는 아케이드
+- [오목](/ko/posts/gomoku/) — 다섯 알을 먼저 잇는 사람이 이깁니다
+- [뱀 게임](/ko/posts/snake/) — 먹이를 먹고 길어지는 클래식
+- [숫자 퍼즐](/ko/posts/slide-puzzle/) — 타일을 밀어 순서대로 맞추는 15퍼즐
+- [픽셀 탁구](/ko/posts/pixel-pong/) — AI 또는 친구와 1:1 탁구 대결
 
-먼저 나온 6종의 이야기는 [미니게임 6종 동시 출시 회고](/posts/six-games-retrospective/)에 정리해 두었습니다.
+먼저 나온 6종의 이야기는 [미니게임 6종 동시 출시 회고](/ko/posts/six-games-retrospective/)에 정리해 두었습니다.
 
 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.

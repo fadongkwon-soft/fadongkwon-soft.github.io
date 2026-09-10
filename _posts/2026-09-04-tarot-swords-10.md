@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 마이너아르카나, 소드10, TenOfSwords, 타�
 image:
   path: /assets/img/tarot/feature_swords_10.jpg
   alt: 타로 카드 소드 10(Ten of Swords)
-alt_url: /en/posts/tarot-swords-10/
+alt_url: /posts/tarot-swords-10/
 ---
 
 소드 에이스에서 시작한 공기의 여정은 숫자를 하나씩 더해가며 판단과 갈등, 정체와 불안을 차례로 지나옵니다. 소드 9가 아직 결과를 모른 채 견디는 마지막 밤이었다면, 소드 10은 그 결과가 마침내 눈앞에 도착한 자리입니다. 더는 미룰 수 없는 국면의 완전한 매듭이죠.
@@ -51,8 +51,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [소드 9(Nine of Swords)](/posts/tarot-swords-09/) — 결과를 모른 채 견디던 불안이 소드 10에서 실제 사건으로 마무리됩니다.
-- [컵 10(Ten of Cups)](/posts/tarot-cups-10/) — 같은 숫자 10이지만 컵 수트에서는 정반대로 충만한 행복을 그립니다. 소드 10과 나란히 놓고 보면 두 수트의 대비가 뚜렷해집니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [소드 9(Nine of Swords)](/ko/posts/tarot-swords-09/) — 결과를 모른 채 견디던 불안이 소드 10에서 실제 사건으로 마무리됩니다.
+- [컵 10(Ten of Cups)](/ko/posts/tarot-cups-10/) — 같은 숫자 10이지만 컵 수트에서는 정반대로 충만한 행복을 그립니다. 소드 10과 나란히 놓고 보면 두 수트의 대비가 뚜렷해집니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

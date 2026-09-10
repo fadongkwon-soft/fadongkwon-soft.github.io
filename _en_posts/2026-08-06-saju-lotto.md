@@ -6,8 +6,8 @@ image:
   alt: Saju Lotto app icon
 date: 2026-08-06 15:00:00 +0900
 categories: [Products, App]
-permalink: /en/posts/saju-lotto/
-alt_url: /posts/saju-lotto/
+permalink: /posts/saju-lotto/
+alt_url: /ko/posts/saju-lotto/
 tags: [app, android, kotlin, compose, lotto, lottery, saju]
 ---
 ## Info
@@ -35,4 +35,4 @@ tags: [app, android, kotlin, compose, lotto, lottery, saju]
 {: .prompt-tip }
 
 ## Related reading
-On the fortune-telling side I am also building a [Tarot Card Meanings — All 78 Cards](/en/tarot/). Each card gets its own page covering the symbols in the picture, the upright and reversed meanings, and readings by situation.
+On the fortune-telling side I am also building a [Tarot Card Meanings — All 78 Cards](/tarot/). Each card gets its own page covering the symbols in the picture, the upright and reversed meanings, and readings by situation.

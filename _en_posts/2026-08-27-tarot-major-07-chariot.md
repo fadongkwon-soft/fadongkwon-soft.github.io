@@ -6,8 +6,8 @@ image:
   alt: The Chariot tarot card
 date: 2026-08-27 09:20:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-07-chariot/
-alt_url: /posts/tarot-major-07-chariot/
+permalink: /posts/tarot-major-07-chariot/
+alt_url: /ko/posts/tarot-major-07-chariot/
 card_name: The Chariot
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -57,8 +57,8 @@ A. The heart of this card is not speed itself but whether the direction is clear
 
 ## Cards to read alongside
 
-- [The Lovers](/en/posts/tarot-major-06-lovers/) — the choice made in the Lovers is what gets carried into real action by the time you reach the Chariot.
-- [Strength](/en/posts/tarot-major-08-strength/) — both are about mastery, but the Chariot is drive aimed outward and Strength is gentle patience aimed inward.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [The Lovers](/posts/tarot-major-06-lovers/) — the choice made in the Lovers is what gets carried into real action by the time you reach the Chariot.
+- [Strength](/posts/tarot-major-08-strength/) — both are about mastery, but the Chariot is drive aimed outward and Strength is gentle patience aimed inward.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

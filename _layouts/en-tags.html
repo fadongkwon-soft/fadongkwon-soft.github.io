@@ -2,7 +2,7 @@
 layout: page
 # 영문판 태그 목록. chirpy v7.6.0 _layouts/tags.html 과 같은 태그 구름이되,
 # site.tags(한국어 posts 전용) 대신 site.en_posts 에서 집계하고
-# /en/tags/<slug>/ 하위 페이지로 링크한다(스텁은 tools/i18n.py fixup 이 생성).
+# /tags/<slug>/ 하위 페이지로 링크한다(스텁은 tools/i18n.py fixup 이 생성).
 # ⚠️ 컬렉션은 미래 날짜 문서가 남으므로 날짜 필터 필수.
 ---
 
@@ -22,7 +22,7 @@ layout: page
   {% for t in uniq_tags %}
     {% assign hits = pool | where_exp: 'p', 'p.tags contains t' %}
     <div>
-      <a class="tag" href="{{ t | slugify | url_encode | prepend: '/en/tags/' | append: '/' | relative_url }}">
+      <a class="tag" href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
         {{ t -}}
         <span class="text-muted">{{ hits | size }}</span>
       </a>

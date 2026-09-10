@@ -6,8 +6,8 @@ image:
   alt: Seven of Swords tarot card
 date: 2026-08-29 16:46:55 +0900
 categories: [Tarot, Swords]
-permalink: /en/posts/tarot-swords-07/
-alt_url: /posts/tarot-swords-07/
+permalink: /posts/tarot-swords-07/
+alt_url: /ko/posts/tarot-swords-07/
 card_name: Seven of Swords
 tags: [tarot, tarot card meanings, swords, minor arcana]
 ---
@@ -74,8 +74,8 @@ The reason the Seven of Swords gets misread so often is that the distance betwee
 
 ## Cards to read alongside
 
-- [Eight of Swords](/en/posts/tarot-swords-08/) — if the Seven of Swords is a detour you chose yourself, the Eight of Swords is the card of perception, of believing there is no choice and caging yourself.
-- [Knight of Cups](/en/posts/tarot-cups-knight/) — unlike the Knight of Cups, who charges straight in on feeling, the Seven of Swords takes a detour calculated with the head.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Eight of Swords](/posts/tarot-swords-08/) — if the Seven of Swords is a detour you chose yourself, the Eight of Swords is the card of perception, of believing there is no choice and caging yourself.
+- [Knight of Cups](/posts/tarot-cups-knight/) — unlike the Knight of Cups, who charges straight in on feeling, the Seven of Swords takes a detour calculated with the head.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

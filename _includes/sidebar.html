@@ -10,18 +10,14 @@
     (2) 한/영 언어 스위처는 topbar.html 우상단으로 이동함(2026-08-30).
 -->
 
+{%- comment -%}
+  URL 규칙(2026-09-11): **영어 = `/*`, 한국어 = `/ko/*`** — 근거는 tools/urlscheme.py.
+  전환 전에는 홈만 규칙이 반대여서(루트=영어, 나머지 루트=한국어) 혼란스러웠다.
+  `/play/<게임>/` 은 언어 중립이라 접두를 붙이지 않는다(게임이 브라우저 언어를 따른다).
+{%- endcomment -%}
 {% assign cur_lang = page.lang | default: 'ko' %}
 {% if cur_lang == 'en' %}
   {% assign home_url = '/' %}
-  {% assign about_url = '/en/about/' %}
-  {% assign tarot_url = '/en/tarot/' %}
-  {% assign play_url = '/en/play/' %}
-  {% assign archives_url = '/en/archives/' %}
-  {% assign categories_url = '/en/categories/' %}
-  {% assign tags_url = '/en/tags/' %}
-  {% assign privacy_url = '/en/privacy/' %}
-{% else %}
-  {% assign home_url = '/ko/' %}
   {% assign about_url = '/about/' %}
   {% assign tarot_url = '/tarot/' %}
   {% assign play_url = '/play/' %}
@@ -29,6 +25,15 @@
   {% assign categories_url = '/categories/' %}
   {% assign tags_url = '/tags/' %}
   {% assign privacy_url = '/privacy/' %}
+{% else %}
+  {% assign home_url = '/ko/' %}
+  {% assign about_url = '/ko/about/' %}
+  {% assign tarot_url = '/ko/tarot/' %}
+  {% assign play_url = '/ko/play/' %}
+  {% assign archives_url = '/ko/archives/' %}
+  {% assign categories_url = '/ko/categories/' %}
+  {% assign tags_url = '/ko/tags/' %}
+  {% assign privacy_url = '/ko/privacy/' %}
 {% endif %}
 
 <aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
@@ -236,7 +241,7 @@
       메뉴에 두면 상용구가 한 줄을 차지하고, 하단에 작은 글자 링크로 떼면 혼자
       떨어져 나와 어색했다. 이 줄은 이미 유틸리티 아이콘 줄이라 겉돌지 않는다.
       _data/contact.yml 이 아니라 여기 직접 적는다 — 연락 수단이 아니기 때문이다.
-      ⚠️ 목적지는 언어별로 갈라야 한다. 영문판(/en/privacy/)이 없던 동안 영어
+      ⚠️ 목적지는 언어별로 갈라야 한다. 영문 privacy 페이지가 없던 동안 영어
          방문자가 한국어 페이지로 넘어가면서 사이드바 전체가 한국어 URL 로 바뀌고,
          그 페이지엔 alt_url 이 없어 스위처도 안 떠서 되돌아올 길이 없었다(2026-09-11).
       같은 탭에서 열어야 하므로 target 을 붙이지 않는다.

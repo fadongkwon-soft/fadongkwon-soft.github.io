@@ -6,8 +6,8 @@ image:
   alt: The King of Cups tarot card
 date: 2026-08-29 16:46:48 +0900
 categories: [Tarot, Cups]
-permalink: /en/posts/tarot-cups-king/
-alt_url: /posts/tarot-cups-king/
+permalink: /posts/tarot-cups-king/
+alt_url: /ko/posts/tarot-cups-king/
 card_name: King of Cups
 tags: [tarot, tarot card meanings, minor arcana, cups, court cards]
 ---
@@ -55,8 +55,8 @@ A. There is no need to conclude that. The card says less about someone's underly
 
 ## Cards to read alongside
 
-- [Queen of Cups](/en/posts/tarot-cups-queen/) — the same emotional maturity, showing up as care in the Queen and as responsibility in the King.
-- [Two of Swords](/en/posts/tarot-swords-02/) — where the King of Cups has integrated feeling skillfully, the Two of Swords cannot face it and puts the decision off.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Queen of Cups](/posts/tarot-cups-queen/) — the same emotional maturity, showing up as care in the Queen and as responsibility in the King.
+- [Two of Swords](/posts/tarot-swords-02/) — where the King of Cups has integrated feeling skillfully, the Two of Swords cannot face it and puts the decision off.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

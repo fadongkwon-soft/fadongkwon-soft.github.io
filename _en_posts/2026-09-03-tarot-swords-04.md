@@ -6,8 +6,8 @@ image:
   alt: The Four of Swords tarot card
 date: 2026-08-29 16:46:52 +0900
 categories: [Tarot, Swords]
-permalink: /en/posts/tarot-swords-04/
-alt_url: /posts/tarot-swords-04/
+permalink: /posts/tarot-swords-04/
+alt_url: /ko/posts/tarot-swords-04/
 card_name: Four of Swords
 tags: [tarot, tarot card meanings, swords, minor arcana]
 ---
@@ -59,8 +59,8 @@ The Four of Swords reads quite differently depending on the cards set around it.
 
 ## Cards to read alongside
 
-- [Three of Swords](/en/posts/tarot-swords-03/) — the card that sits immediately before, the one where the pain gets faced. Worth reading together as the arc from heartbreak into recovery.
-- [Six of Cups](/en/posts/tarot-cups-06/) — unlike the still rest of the Four of Swords, the Six of Cups draws an emotional rest that finds its comfort inside warm memories.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Three of Swords](/posts/tarot-swords-03/) — the card that sits immediately before, the one where the pain gets faced. Worth reading together as the arc from heartbreak into recovery.
+- [Six of Cups](/posts/tarot-cups-06/) — unlike the still rest of the Four of Swords, the Six of Cups draws an emotional rest that finds its comfort inside warm memories.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

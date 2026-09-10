@@ -6,8 +6,8 @@ image:
   alt: The Hermit tarot card
 date: 2026-08-27 10:00:00 +0900
 categories: [Tarot, Major Arcana]
-permalink: /en/posts/tarot-major-09-hermit/
-alt_url: /posts/tarot-major-09-hermit/
+permalink: /posts/tarot-major-09-hermit/
+alt_url: /ko/posts/tarot-major-09-hermit/
 card_name: The Hermit
 tags: [tarot, tarot card meanings, major arcana]
 ---
@@ -55,8 +55,8 @@ What the Hermit offers comes down to one line. **Before you look for the answer 
 
 ## Cards to read alongside
 
-- [Strength](/en/posts/tarot-major-08-strength/) — after soothing the lion outside, the Hermit's turn is to look at himself.
-- [Wheel of Fortune](/en/posts/tarot-major-10-wheel/) — once the solitary sorting-out is finished, a new turning point arrives with the Wheel of Fortune.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Strength](/posts/tarot-major-08-strength/) — after soothing the lion outside, the Hermit's turn is to look at himself.
+- [Wheel of Fortune](/posts/tarot-major-10-wheel/) — once the solitary sorting-out is finished, a new turning point arrives with the Wheel of Fortune.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

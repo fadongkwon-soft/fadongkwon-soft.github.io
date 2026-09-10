@@ -6,10 +6,11 @@
   원본 대비 변경점: 영문 페이지에서는 카테고리 목록을 보여준다.
 
   왜 필요한가 — site.tags 는 site.posts(한국어)에서만 만들어지므로 원본을 그대로 두면
-  영문 페이지 우측 패널에 한국어 태그가 뜨고 `/tags/<한글>/` 로 링크된다.
+  영문 페이지 우측 패널에 한국어 태그가 뜨고 `/ko/tags/<한글>/` 로 링크된다.
   영문 포스트에는 태그를 달지 않았다(영문 태그 아카이브 페이지가 없어 링크가 404 난다).
   대신 카테고리는 원문과 같은 영어 값이고 jekyll-archives 가 만든
-  `/categories/<name>/` 페이지가 실제로 존재하므로 그것을 쓴다.
+  `/categories/<name>/`(영문) 페이지가 실제로 존재하므로 그것을 쓴다.
+  URL 규칙(2026-09-11): 영어 = /*, 한국어 = /ko/* — tools/urlscheme.py 참조.
 -->
 
 {% assign MAX = 10 %}
@@ -79,7 +80,7 @@
       <h2 class="panel-heading">{{- site.data.locales[include.lang].panel.trending_tags -}}</h2>
       <div class="d-flex flex-wrap mt-3 mb-1 me-3">
         {% for tag_name in trending_tags %}
-          {% assign url = tag_name | slugify | url_encode | prepend: '/tags/' | append: '/' %}
+          {% assign url = tag_name | slugify | url_encode | prepend: '/ko/tags/' | append: '/' %}
           <a class="post-tag btn btn-outline-primary" href="{{ url | relative_url }}">{{ tag_name }}</a>
         {% endfor %}
       </div>

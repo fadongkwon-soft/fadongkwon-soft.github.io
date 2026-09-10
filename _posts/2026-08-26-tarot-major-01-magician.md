@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 메이저아르카나, 마법사카드, TheMagician
 image:
   path: /assets/img/tarot/feature_major_01_magician.jpg
   alt: 타로 카드 마법사(The Magician)
-alt_url: /en/posts/tarot-major-01-magician/
+alt_url: /posts/tarot-major-01-magician/
 ---
 
 손 하나로 세상을 바꿀 수 있을까요? 타로 메이저 아르카나 1번 **마법사(The Magician)**는 이 물음에 "필요한 재료는 이미 당신 손 안에 있다"고 답하는 카드입니다. 0번 바보가 아무것도 정해지지 않은 가능성 그 자체였다면, 마법사는 그 가능성을 처음으로 손에 쥐고 실제로 무언가를 빚어내는 순간을 그립니다.
@@ -55,8 +55,8 @@ A. 타로는 특정 인물의 속마음을 단정하기보다 나에게 열려 �
 
 ## 함께 보면 좋은 카드
 
-- [바보(The Fool)](/posts/tarot-major-00-fool/) — 마법사 바로 앞 카드. 가능성이 아직 형태를 갖추기 전 단계입니다.
-- [여사제(The High Priestess)](/posts/tarot-major-02-high-priestess/) — 마법사가 밖으로 드러내는 힘이라면, 여사제는 안으로 쌓아두는 지혜입니다. 대조되는 짝으로 자주 언급됩니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [바보(The Fool)](/ko/posts/tarot-major-00-fool/) — 마법사 바로 앞 카드. 가능성이 아직 형태를 갖추기 전 단계입니다.
+- [여사제(The High Priestess)](/ko/posts/tarot-major-02-high-priestess/) — 마법사가 밖으로 드러내는 힘이라면, 여사제는 안으로 쌓아두는 지혜입니다. 대조되는 짝으로 자주 언급됩니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

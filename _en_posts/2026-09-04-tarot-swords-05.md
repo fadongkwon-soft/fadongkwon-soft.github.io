@@ -6,8 +6,8 @@ image:
   alt: Five of Swords tarot card
 date: 2026-08-29 16:46:53 +0900
 categories: [Tarot, Swords]
-permalink: /en/posts/tarot-swords-05/
-alt_url: /posts/tarot-swords-05/
+permalink: /posts/tarot-swords-05/
+alt_url: /ko/posts/tarot-swords-05/
 card_name: Five of Swords
 tags: [tarot, tarot card meanings, swords, minor arcana]
 ---
@@ -76,8 +76,8 @@ If you drew this card today, start by setting down the need to win the argument 
 
 ## Cards to read alongside
 
-- [Six of Swords](/en/posts/tarot-swords-06/) — after a draining conflict, the card that follows naturally is the one about leaving that place for calmer water.
-- [King of Cups](/en/posts/tarot-cups-king/) — unlike the sharp-edged contest of pride in the Five of Swords, the King of Cups shows the maturity of handling emotion and responding calmly.
-- [Tarot Card Meanings — All 78 Cards](/en/tarot/) — the full card list
+- [Six of Swords](/posts/tarot-swords-06/) — after a draining conflict, the card that follows naturally is the one about leaving that place for calmer water.
+- [King of Cups](/posts/tarot-cups-king/) — unlike the sharp-edged contest of pride in the Five of Swords, the King of Cups shows the maturity of handling emotion and responding calmly.
+- [Tarot Card Meanings — All 78 Cards](/tarot/) — the full card list
 
 {% include tarot-app-banner-en.html %}

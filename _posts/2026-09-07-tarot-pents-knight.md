@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 펜타클, 코트카드, 펜타클기사, KnightOfP
 image:
   path: /assets/img/tarot/feature_pents_knight.jpg
   alt: 타로 카드 펜타클 기사(Knight of Pentacles)
-alt_url: /en/posts/tarot-pents-knight/
+alt_url: /posts/tarot-pents-knight/
 ---
 
 펜타클 기사는 네 기사 중 가장 느리지만, 가장 끝까지 가는 기사입니다. 완드 기사가 전속력으로 질주하고 컵 기사가 백조를 타고 유유히 나아가며 소드 기사가 폭풍처럼 돌진할 때, 펜타클 기사는 검은 말을 세워둔 채 손에 쥔 동전 하나를 가만히 응시합니다. 멈춰 있는 것처럼 보이지만 실은 그것이 이 기사의 방식입니다. 코트 카드의 성숙도로 보면 기사는 시종의 배움을 마치고 세상에 나가 직접 실행하는 단계인데, 펜타클 기사는 그 실행을 서두르지 않는 쪽으로 풀어낸다는 점이 독특합니다.
@@ -54,8 +54,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [펜타클 시종(Page of Pentacles)](/posts/tarot-pents-page/) — 배움의 단계인 시종을 지나면, 그 배움을 실제로 실행에 옮기는 기사의 단계가 이어집니다.
-- [펜타클 여왕(Queen of Pentacles)](/posts/tarot-pents-queen/) — 기사의 우직한 실행이 안으로 무르익어 성숙해지면, 여왕의 여유로운 돌봄으로 이어집니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [펜타클 시종(Page of Pentacles)](/ko/posts/tarot-pents-page/) — 배움의 단계인 시종을 지나면, 그 배움을 실제로 실행에 옮기는 기사의 단계가 이어집니다.
+- [펜타클 여왕(Queen of Pentacles)](/ko/posts/tarot-pents-queen/) — 기사의 우직한 실행이 안으로 무르익어 성숙해지면, 여왕의 여유로운 돌봄으로 이어집니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

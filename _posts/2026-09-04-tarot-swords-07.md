@@ -7,7 +7,7 @@ tags: [타로, 타로카드, 소드, 마이너아르카나, 소드7, SevenofSwor
 image:
   path: /assets/img/tarot/feature_swords_07.jpg
   alt: 타로 카드 소드 7(Seven of Swords)
-alt_url: /en/posts/tarot-swords-07/
+alt_url: /posts/tarot-swords-07/
 ---
 
 소드 7이 나오면 '도둑질'이나 '배신'부터 떠올리는 경우가 많습니다. 진영에서 몰래 검을 훔쳐 달아나는 그림이니 그럴 만도 합니다. 하지만 이 카드를 훔친 자의 카드로만 읽으면 절반밖에 보지 못한 셈입니다. 소드 7의 본래 의미는 정면 승부 대신 **전략적인 우회**를 택하는 순간에 훨씬 가깝기 때문입니다.
@@ -67,8 +67,8 @@ _같은 카드를 귀여운 파스텔 그림으로 — [운세 타로핑](/toss/
 
 ## 함께 보면 좋은 카드
 
-- [소드 8(Eight of Swords)](/posts/tarot-swords-08/) — 소드 7이 스스로 선택한 우회로라면, 소드 8은 선택지가 없다고 믿으며 스스로를 가두는 인식의 카드입니다.
-- [컵 기사(Knight of Cups)](/posts/tarot-cups-knight/) — 감정을 앞세워 정면으로 돌진하는 컵 기사와 달리, 소드 7은 이성적으로 계산된 우회를 택합니다.
-- [타로 카드 78장 의미 사전](/tarot/) — 전체 카드 목록
+- [소드 8(Eight of Swords)](/ko/posts/tarot-swords-08/) — 소드 7이 스스로 선택한 우회로라면, 소드 8은 선택지가 없다고 믿으며 스스로를 가두는 인식의 카드입니다.
+- [컵 기사(Knight of Cups)](/ko/posts/tarot-cups-knight/) — 감정을 앞세워 정면으로 돌진하는 컵 기사와 달리, 소드 7은 이성적으로 계산된 우회를 택합니다.
+- [타로 카드 78장 의미 사전](/ko/tarot/) — 전체 카드 목록
 
 {% include tarot-app-banner.html %}

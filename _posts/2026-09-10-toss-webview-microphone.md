@@ -6,10 +6,10 @@ categories: [Blogging, Episode]
 tags: [앱인토스, 웹뷰, 음성인식, 한글몬스터, 안드로이드, 1인개발자, 개발일지]
 image:
   path: /assets/img/20260910_toss-mic/cover.png
-alt_url: /en/posts/toss-webview-microphone/
+alt_url: /posts/toss-webview-microphone/
 ---
 
-[한글 몬스터](/posts/hangul-monsters/)에는 소리를 듣고 글자를 고르는 **듣기** 모드와, 마이크에 소리 내어 읽는 **말하기** 모드가 있습니다. 그런데 앱인토스에 올린 토스판에서는 말하기 모드가 아예 보이지 않았습니다. 마이크 버튼도 없고, 문장 읽기 모드는 목록에서 빠져 있었습니다.
+[한글 몬스터](/ko/posts/hangul-monsters/)에는 소리를 듣고 글자를 고르는 **듣기** 모드와, 마이크에 소리 내어 읽는 **말하기** 모드가 있습니다. 그런데 앱인토스에 올린 토스판에서는 말하기 모드가 아예 보이지 않았습니다. 마이크 버튼도 없고, 문장 읽기 모드는 목록에서 빠져 있었습니다.
 
 이유는 코드에 이렇게 적혀 있었습니다.
 
@@ -25,7 +25,7 @@ function createTossSpeech(): Speech {
 
 ## 의문은 여기서 시작됐습니다
 
-브라우저에서는 됩니다. [브라우저에서 바로 하는 PLAY 페이지](/play/)에서 한글 몬스터를 열면 마이크 권한을 묻고 말하기 모드가 정상 동작합니다.
+브라우저에서는 됩니다. [브라우저에서 바로 하는 PLAY 페이지](/ko/play/)에서 한글 몬스터를 열면 마이크 권한을 묻고 말하기 모드가 정상 동작합니다.
 
 그러면 이상합니다. **토스 미니앱도 웹앱입니다.** 같은 번들, 같은 코드가 토스 앱 안의 웹뷰에서 돌아갑니다. 브라우저에서 되는 것이 왜 토스에서는 안 되나요?
 
@@ -105,4 +105,4 @@ const kListenOnlyBuild = !speech.available();
 
 **"왜 안 되지?"를 한 번 더 물어보는 게 가장 값싼 디버깅입니다.** 이번 일은 브라우저에서 되는 것이 토스에서 안 되는 이유를 설명할 수 없다는 데서 출발했습니다. 설명이 안 되는 지점을 그냥 넘기지 않은 것이 전부였습니다. 측정 자체는 5분이 걸렸습니다.
 
-한글 몬스터는 [Google Play와 앱인토스](/posts/apps-in-toss-launch/)에서 받을 수 있고, [브라우저에서 바로](/play/) 해볼 수도 있습니다. 두 몬스터 앱은 [모든 모드가 무료](/posts/monsters-go-free/)입니다. 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.
+한글 몬스터는 [Google Play와 앱인토스](/ko/posts/apps-in-toss-launch/)에서 받을 수 있고, [브라우저에서 바로](/ko/play/) 해볼 수도 있습니다. 두 몬스터 앱은 [모든 모드가 무료](/ko/posts/monsters-go-free/)입니다. 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.
