@@ -46,20 +46,26 @@
   <!-- .profile-wrapper -->
 
   {%- comment -%}
-    2026-09-11: 평평한 8줄을 두 그룹 + 하단 상용구로 나눴다.
-    8개가 같은 무게로 나열되니 성격이 다른 세 가지(만든 것 / 글 찾는 도구 / 상용구)가
+    2026-09-11: 평평한 8줄을 세 묶음으로 나눴다.
+    8개가 같은 무게로 나열되니 성격이 다른 것들(들어오는 문 / 만든 것 / 글 찾는 도구)이
     전부 "이것저것"으로 읽혔다. 특히 타로 사전이 잡화처럼 보였는데, 실은 타로 운세·
-    운세 타로핑 두 앱의 근거 자료이고 전체 글의 63%(78/124)로 가는 유일한 상시 입구다.
-    빼면 그 63%가 고립되므로, 빼는 대신 PLAY 옆(MADE)에 묶어 관계가 보이게 했다.
+    운세 타로핑 두 앱의 근거 자료이고 전체 글의 63%(78/124)로 가는 유일한 상시 입구다
+    (홈 피드는 Tarot 를 제외한다). 빼면 그 63%가 고립되므로 PLAY 옆에 묶었다.
     라벨도 TAROT 로 줄였다 — 목록에서 유일한 두 단어라 길이가 튀었다.
     아이콘은 fa-star(즐겨찾기로 읽힘) → fa-clone(겹친 카드).
-    그룹마다 <ul> 을 따로 두고 aria-label 로 이름을 붙인다(낭독기 그룹 인식).
-    Chirpy CSS 는 `#sidebar ul li.nav-item` 이라 <ul> 이 여러 개여도 그대로 먹는다.
+
+    묶음은 **글자 라벨 없이 얇은 구분선으로만** 표시한다(사용자 결정, 2026-09-11).
+    처음엔 MADE / BROWSE 라벨을 넣었는데 ①단어가 어색하고 ②라벨의 상하 여백이
+    간격을 넓혀 놨다. 선 하나로 같은 구분이 되고 세로 길이도 줄어든다.
+    ABOUT 은 방문자가 봐야 하는 항목이라 하단 작은 줄에서 정식 메뉴로 되돌렸다
+    (원래 order 1 자리). 하단에는 진짜 상용구인 privacy 만 남긴다.
+
     ⚠️ nav-item 의 좌우 패딩은 브레이크포인트마다 다르다(1.5rem / 2.75rem) — 게다가
        선택자가 `#sidebar ul li.nav-item` 이라 **ul 안의 li 여야 패딩이 붙는다.**
-       그래서 그룹 라벨과 하단 상용구도 ul>li 안에 넣어 패딩을 물려받게 했다
+       그래서 구분선·하단 줄도 ul>li 안에 넣어 패딩을 물려받게 했다
        (처음엔 <p>·<div> 로 뒀는데 선택자에 안 걸려 좌측 정렬이 어긋났다).
-       라벨 li 는 role="presentation" 으로 목록 항목 수에서 빼 둔다.
+       구분선은 li 에 border 를 주면 패딩까지 덮어 사이드바 폭 전체로 그어진다 →
+       li 안의 <span>(콘텐츠 박스)에 border-top 을 줘야 좌우가 자동으로 들여쓰기된다.
   {%- endcomment -%}
   <nav class="flex-column flex-grow-1 w-100 ps-0">
     <ul class="nav">
@@ -69,10 +75,15 @@
           <span>HOME</span>
         </a>
       </li>
-    </ul>
+      <li class="nav-item{% if page.url == about_url %}{{ " active" }}{% endif %}">
+        <a href="{{ about_url | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-info-circle"></i>
+          <span>ABOUT</span>
+        </a>
+      </li>
 
-    <ul class="nav" aria-label="MADE">
-      <li class="nav-item nav-group-label" role="presentation">MADE</li>
+      <li class="nav-item nav-sep" role="presentation"><span></span></li>
+
       <li class="nav-item{% if page.url == play_url %}{{ " active" }}{% endif %}">
         <a href="{{ play_url | relative_url }}" class="nav-link">
           <i class="fa-fw fas fa-gamepad"></i>
@@ -85,10 +96,9 @@
           <span>TAROT</span>
         </a>
       </li>
-    </ul>
 
-    <ul class="nav" aria-label="BROWSE">
-      <li class="nav-item nav-group-label" role="presentation">BROWSE</li>
+      <li class="nav-item nav-sep" role="presentation"><span></span></li>
+
       <li class="nav-item{% if page.url == archives_url %}{{ " active" }}{% endif %}">
         <a href="{{ archives_url | relative_url }}" class="nav-link">
           <i class="fa-fw fas fa-archive"></i>
@@ -110,11 +120,9 @@
     </ul>
   </nav>
 
-  <!-- 상용구는 메뉴에서 내려 작은 한 줄로 둔다(ABOUT·PRIVACY) -->
+  <!-- 진짜 상용구만 하단에 (ABOUT 은 위 메뉴로 되돌렸다) -->
   <ul class="nav w-100">
     <li class="nav-item sidebar-meta">
-      <a href="{{ about_url | relative_url }}"{% if page.url == about_url %} class="active"{% endif %}>about</a>
-      <span aria-hidden="true">·</span>
       <a href="/privacy/"{% if page.url == '/privacy/' %} class="active"{% endif %}>privacy</a>
     </li>
   </ul>

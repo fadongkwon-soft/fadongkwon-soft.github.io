@@ -137,22 +137,24 @@
       vertical-align: 0.28em;
       opacity: 0.6;
     }
-    /* 사이드바 그룹 라벨(MADE / BROWSE) — 좌우 패딩은 .nav-item 에서 물려받는다.
-       테마가 브레이크포인트마다 2.75rem / 1.5rem 로 바꾸므로 여기서 박으면 어긋난다. */
-    /* 선택자를 ul li 까지 쓰는 이유: 테마의 `#sidebar ul li.nav-item{opacity:.9}` 가
-       더 구체적이어서, 클래스만 쓰면 opacity 가 안 먹는다. */
-    #sidebar ul li.nav-group-label {
-      margin: 1.15rem 0 0.15rem;
-      font-size: 0.68rem;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      color: var(--text-muted-color);
-      opacity: 0.65;
+    /* 사이드바 묶음 구분선.
+       ⚠️ li 에 border-top 을 주면 테마의 좌우 패딩(1.5~2.75rem)까지 덮어서 선이
+          사이드바 폭 전체로 그어진다. li 안의 <span> = 콘텐츠 박스에 그어야
+          브레이크포인트마다 좌우가 자동으로 들여쓰기된다.
+       선택자를 ul li 까지 쓰는 이유: 테마의 `#sidebar ul li.nav-item{opacity:.9}` 가
+       더 구체적이어서 클래스만 쓰면 opacity 계열이 안 먹는다. */
+    #sidebar ul li.nav-sep {
+      margin: 0.45rem 0;
+      opacity: 1;
+    }
+    #sidebar ul li.nav-sep > span {
+      display: block;
+      border-top: 1px solid var(--sidebar-border-color);
     }
     /* 하단 상용구 한 줄 */
     #sidebar ul li.sidebar-meta {
-      margin: 0.85rem 0 0.1rem;
-      font-size: 0.72rem;
+      margin: 0.6rem 0 0.1rem;
+      font-size: 0.75rem;
       letter-spacing: 0.03em;
       color: var(--text-muted-color);
     }
