@@ -130,36 +130,19 @@
          자동 언어 선택은 외부 유입·직접 입력 같은 첫 진입에만 적용한다.
          referrer 를 못 읽는 환경(빈 문자열)은 외부 유입으로 보고 기존 동작을 유지한다.
          ⚠️ 이 <script> 는 Chirpy HTML 압축으로 한 줄이 되므로 //-주석 금지. */
-      /* 예외: 옛 /en/* 주소의 리다이렉트 스텁에서 넘어온 경우.
-         referrer 는 우리 오리진이지만 **방문자가 고른 URL 이 아니다** — 죽은 주소를
-         거쳐 들어온 첫 진입이다. 그런 스텁이 ?locale=auto 를 실어 보내면 자동선택을
-         다시 켠다. 인스타 카드 QR 이 /en/tarot/ 를 담고 있어서 한국어 사용자가
-         영문 허브에 갇혔다(2026-09-11 실측). 판단은 그대로다 — 직접 고른 언어
-         (fdk-lang)가 여전히 최우선이라 이 예외가 사람의 선택을 덮지 않는다.
-         ⚠️ 이 <script> 는 Chirpy HTML 압축으로 한 줄이 되므로 //-주석 금지. */
-      var forced = /[?&]locale=auto(&|$)/.test(location.search);
-      var stripParam = function () {
-        if (!forced || !window.history || !history.replaceState) return;
-        try {
-          var u = new URL(location.href);
-          u.searchParams.delete('locale');
-          history.replaceState(null, '', u.pathname + u.search + u.hash);
-        } catch (e) { /* noop */ }
-      };
       var fromUs = false;
       try {
         fromUs = !!document.referrer && new URL(document.referrer).origin === location.origin;
       } catch (e) { fromUs = false; }
-      if (fromUs && !forced) return;
+      if (fromUs) return;
       var here = (document.documentElement.lang || 'en').slice(0, 2).toLowerCase() === 'ko' ? 'ko' : 'en';
       var pref = null;
       try { pref = localStorage.getItem('fdk-lang'); } catch (e) { /* 시크릿 모드 등 */ }
       var nav = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
       var want = (pref === 'ko' || pref === 'en') ? pref : (nav.slice(0, 2).toLowerCase() === 'ko' ? 'ko' : 'en');
-      if (want === here) { stripParam(); return; }
+      if (want === here) return;
       var alt = document.querySelector('link[rel="alternate"][hreflang="' + want + '"]');
-      if (alt && alt.href && alt.href !== location.href) { location.replace(alt.href); return; }
-      stripParam();
+      if (alt && alt.href && alt.href !== location.href) location.replace(alt.href);
     } catch (e) { /* 자동 선택 실패는 치명적이지 않다 */ }
   })();
   document.addEventListener('DOMContentLoaded', function () {

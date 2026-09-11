@@ -325,7 +325,7 @@ redirect_to: {new}
 <title>Redirecting…</title>
 <link rel="canonical" href="{new}">
 <meta name="robots" content="noindex">
-<meta http-equiv="refresh" content="0; url={refresh}">
+<meta http-equiv="refresh" content="0; url={new}">
 </head><body>
 <!-- 2026-08-29~09-11 사이에만 존재했던 영문 주소(/en/*)를 새 주소로 보낸다.
      tools/urlscheme.py 가 생성한다.{note} -->
@@ -334,24 +334,19 @@ redirect_to: {new}
 """
 
 
-# 이 스텁들은 새 주소로 보낼 때 `?locale=auto` 를 같이 실어 보낸다.
-#
-# 스텁을 거치면 referrer 가 우리 오리진이 되고, 로케일 자동선택은 그것을
-# "방문자가 사이트 안에서 직접 고른 URL" 로 보고 물러선다. 그런데 스텁 진입은
-# 사람의 선택이 아니라 **죽은 주소를 거친 첫 진입**이다.
-# /en/tarot/ 는 인스타그램 타로 사전 카드의 QR 이 담고 있는 값이라(카드는 이미
-# 게시돼 QR 을 바꿀 수 없다) 한국어 사용자가 폰으로 찍으면 영문 허브에 갇혔다.
-#
-# 나머지 스텁에는 붙이지 않는다 — 옛 `/en/posts/...` 를 저장해 둔 사람은 그 주소로
-# **영어를 고른 것**이므로 영어로 두는 편이 맞다. 구분 기준이 이것이다:
-# 사람이 주소를 보고 골랐는가(그대로 존중), 인쇄물·QR 이 대신 골랐는가(자동선택).
-LOCALE_AUTO_STUBS = {'/en/tarot/'}
-
 # 지우면 안 되는 스텁. 나머지 /en/* 스텁은 몇 달 뒤 통째로 지워도 되지만
 # 여기 있는 주소는 **인쇄물·이미지에 박혀 있어** 우리가 회수할 수 없다.
 PERMANENT_STUBS = {
-    '/en/tarot/': '인스타그램 타로 사전 카드(2026-08-29 게시)의 QR 이 이 주소를 담고 있다',
+    '/en/tarot/': '인스타그램 타로 사전 카드(2026-08-29 게시)의 **English QR** 이 이 주소를 담고 있다',
 }
+
+# ⚠️ 한때 이 스텁에 `?locale=auto` 를 붙여 로케일 자동선택을 다시 켜려 했다가 되돌렸다.
+#    그 카드에는 QR 이 **두 개**다 — 한국어(/tarot/)와 English(/en/tarot/). QR 하나만
+#    디코드하고 "한국어 사용자가 영문에 갇힌다" 고 오진했던 것이다. 한국어 사용자는
+#    왼쪽 QR 을 찍으면 된다. 자동선택을 켜면 **English 라고 적힌 QR 을 찍은 한국어
+#    브라우저 사용자를 한국어로 끌고 가서** 오히려 명시적 선택을 덮는다.
+#    스텁을 거친 이동은 referrer 가 우리 오리진이라 자동선택이 꺼지는데, 그 동작이
+#    이 카드에는 정확히 맞다. 손대지 말 것.
 
 DEFAULT_NOTE = ' 몇 달 뒤 통째로 지워도 된다.'
 
@@ -405,10 +400,9 @@ def gen_en_redirect_stubs(apply):
         f = os.path.join(d, 'index.html')
         # canonical 과 눈에 보이는 <a> 는 파라미터 없는 주소를 쓴다 —
         # 색인·JS 꺼진 방문자에게 쿼리가 새어 나갈 이유가 없다.
-        refresh = new + ('?locale=auto' if old in LOCALE_AUTO_STUBS else '')
         why = PERMANENT_STUBS.get(old)
         note = (PERMANENT_NOTE.format(why=why)) if why else DEFAULT_NOTE
-        content = STUB.format(old=old, new=new, refresh=refresh, note=note)
+        content = STUB.format(old=old, new=new, note=note)
         if not os.path.exists(f) or read(f) != content:
             made.append(old)
             if apply:
