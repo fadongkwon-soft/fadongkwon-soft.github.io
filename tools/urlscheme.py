@@ -328,7 +328,7 @@ redirect_to: {new}
 <meta http-equiv="refresh" content="0; url={refresh}">
 </head><body>
 <!-- 2026-08-29~09-11 사이에만 존재했던 영문 주소(/en/*)를 새 주소로 보낸다.
-     tools/urlscheme.py 가 생성한다. 몇 달 뒤 통째로 지워도 된다. -->
+     tools/urlscheme.py 가 생성한다.{note} -->
 <p>Redirecting to <a href="{new}">{new}</a>…</p>
 </body></html>
 """
@@ -346,6 +346,18 @@ redirect_to: {new}
 # **영어를 고른 것**이므로 영어로 두는 편이 맞다. 구분 기준이 이것이다:
 # 사람이 주소를 보고 골랐는가(그대로 존중), 인쇄물·QR 이 대신 골랐는가(자동선택).
 LOCALE_AUTO_STUBS = {'/en/tarot/'}
+
+# 지우면 안 되는 스텁. 나머지 /en/* 스텁은 몇 달 뒤 통째로 지워도 되지만
+# 여기 있는 주소는 **인쇄물·이미지에 박혀 있어** 우리가 회수할 수 없다.
+PERMANENT_STUBS = {
+    '/en/tarot/': '인스타그램 타로 사전 카드(2026-08-29 게시)의 QR 이 이 주소를 담고 있다',
+}
+
+DEFAULT_NOTE = ' 몇 달 뒤 통째로 지워도 된다.'
+
+PERMANENT_NOTE = """
+     ⚠️ **이 스텁은 지우지 말 것.** {why}
+        게시된 이미지라 QR 을 고칠 수 없다 — 지우면 그날부터 404 다."""
 
 
 def gen_en_redirect_stubs(apply):
@@ -394,7 +406,9 @@ def gen_en_redirect_stubs(apply):
         # canonical 과 눈에 보이는 <a> 는 파라미터 없는 주소를 쓴다 —
         # 색인·JS 꺼진 방문자에게 쿼리가 새어 나갈 이유가 없다.
         refresh = new + ('?locale=auto' if old in LOCALE_AUTO_STUBS else '')
-        content = STUB.format(old=old, new=new, refresh=refresh)
+        why = PERMANENT_STUBS.get(old)
+        note = (PERMANENT_NOTE.format(why=why)) if why else DEFAULT_NOTE
+        content = STUB.format(old=old, new=new, refresh=refresh, note=note)
         if not os.path.exists(f) or read(f) != content:
             made.append(old)
             if apply:
