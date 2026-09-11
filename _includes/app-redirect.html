@@ -17,6 +17,9 @@
      ⚠️ 이 페이지들은 `layout: none` 이라 **head 가 없다** — 사이트 CSS 가 하나도 안 실린다.
         그래서 필요한 스타일을 여기 직접 넣는다. 특히 `.ext-sr`(외부 링크 안내 숨김 문구)이
         없으면 "(새 창에서 열림)" 이 본문에 그대로 보인다.
+        external-links.rb 는 이 페이지를 건드리지 않으므로(랜딩 제외) 외부 링크 표시는
+        아래 toss.im 처럼 손으로 단다. 토스↔Play 상호 링크는 사이트 안 이동이라
+        일부러 같은 탭으로 둔다.
      ⚠️ 배경과 글자색은 **항상 같이** 정의한다. 다크 분기에서 글자색만 바꿨다가
         배경이 브라우저 기본 흰색으로 남아 글씨가 거의 안 보였다.
 
@@ -137,8 +140,11 @@
   <a class="tl-btn {{ page.store | default: 'toss' }} i18n-en" href="{{ target_en }}">{{ btn_en }}</a>
   {%- if page.store != 'play' %}
     <p class="tl-note">
-      <span class="i18n-ko">버튼이 동작하지 않으면 휴대폰에 <a href="https://toss.im" style="color:#3182f6;">토스 앱</a>을 설치한 뒤 다시 열어주세요.</span>
-      <span class="i18n-en">If the button does nothing, install the <a href="https://toss.im" style="color:#3182f6;">Toss app</a> on your phone and open this page again.</span>
+      <!-- toss.im 은 진짜 외부 링크라 새 탭으로 연다. 이 페이지는 external-links.rb 의
+           대상이 아니므로(랜딩은 제외) 표시를 손으로 단다 — ↗ 는 눈으로, ext-sr 는
+           낭독기로. 새 창을 미리 알리지 않으면 WCAG 3.2.5 지적 대상이다. -->
+      <span class="i18n-ko">버튼이 동작하지 않으면 휴대폰에 <a href="https://toss.im" style="color:#3182f6;" target="_blank" rel="noopener">토스 앱<span class="ext-mark" aria-hidden="true">↗</span><span class="ext-sr"> (새 창에서 열림)</span></a>을 설치한 뒤 다시 열어주세요.</span>
+      <span class="i18n-en">If the button does nothing, install the <a href="https://toss.im" style="color:#3182f6;" target="_blank" rel="noopener">Toss app<span class="ext-mark" aria-hidden="true">↗</span><span class="ext-sr"> (opens in a new tab)</span></a> on your phone and open this page again.</span>
     </p>
   {%- endif %}
 

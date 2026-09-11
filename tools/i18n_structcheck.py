@@ -266,8 +266,32 @@ def check_en_tag_pages():
             t = t.strip()
             if t and tag_slug(t) not in have:
                 missing.setdefault(tag_slug(t), (t, os.path.basename(p)))
-    return ['영문 태그 페이지 없음: en/tags/%s/index.md (태그 "%s", %s)' % (k, v[0], v[1])
+    return ['영문 태그 페이지 없음: tags/%s/index.md (태그 "%s", %s)' % (k, v[0], v[1])
             for k, v in sorted(missing.items())]
+
+
+def check_en_category_pages():
+    """영문 포스트의 categories 마다 categories/<slug>/index.md 가 있어야 한다.
+
+    태그(check_en_tag_pages)와 완전히 같은 함정인데 **카테고리는 검사하지 않고 있었다.**
+    지금까지 안 터진 건 쓰는 카테고리가 적어서 우연히 다 있었기 때문이다.
+    카테고리는 글마다 1~2개뿐이라 새 카테고리를 만드는 일이 드물고, 그래서 오히려
+    한 번 빠뜨리면 그 글이 공개되는 날에야 htmlproofer 가 죽는다.
+    """
+    have = set(os.path.basename(os.path.dirname(p))
+               for p in glob.glob(os.path.join(ROOT, 'categories', '*', 'index.md')))
+    missing = {}
+    for p in sorted(glob.glob(os.path.join(ROOT, '_en_posts', '*.md'))):
+        s = io.open(p, encoding='utf-8').read()
+        m = re.search(r'^categories:[ 	]*\[(.*?)\][ 	]*$', s[:4000], re.M | re.S)
+        if not m:
+            continue
+        for c in m.group(1).split(','):
+            c = c.strip().strip('\'"')
+            if c and tag_slug(c) not in have:
+                missing.setdefault(tag_slug(c), (c, os.path.basename(p)))
+    return ['영문 카테고리 페이지 없음: categories/%s/index.md (카테고리 "%s", %s)'
+            % (k, v[0], v[1]) for k, v in sorted(missing.items())]
 
 
 def canon_liquid(t):
@@ -364,6 +388,7 @@ def main():
     problems += check_page_layouts()
     problems += check_front_matter_types()
     problems += check_lang_declared()
+    problems += check_en_category_pages()
 
     print('대조 %d개' % checked)
     if problems:

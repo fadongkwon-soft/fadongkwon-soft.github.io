@@ -14,6 +14,7 @@ htmlproofer(`Test site` 단계)는 **아직 생성되지 않은 페이지로의 
   3. 예약 글끼리의 링크는 공개 순서가 맞는가 (먼저 나오는 글이 나중 글을 링크하면 실패)
   4. permalink/alt_url 이 URL 규칙(영어 = /*, 한국어 = /ko/*)을 지키는가
   5. 홈 페이지네이션 스텁이 예약분 공개 후 쪽수까지 준비돼 있는가
+  6. 본문·커버 이미지가 실재하는가 (예약 글은 htmlproofer 가 공개일까지 못 본다)
 
 usage: python tools/check_scheduled.py
 """
@@ -56,8 +57,17 @@ def parse_date(v):
     return datetime.datetime(y, mo, d, hh, mm)
 
 
+def collect_images(fm, body):
+    """본문의 ![](/...) 와 front matter 의 커버(image: path:)를 모은다."""
+    out = [m.group(1) for m in re.finditer(r'!\[[^\]]*\]\((/[^)\s]+)', body)]
+    m = re.search(r'^image:\s*\n\s*path:\s*(\S+)', fm, re.M)
+    if m:
+        out.append(m.group(1).strip('\'"'))
+    return out
+
+
 def collect():
-    """[{slug, lang, path, date, url, alt, links[]}] 를 만든다."""
+    """[{slug, lang, path, date, url, alt, links[], images[]}] 를 만든다."""
     out = []
     for lang, d in (('ko', '_posts'), ('en', '_en_posts')):
         for p in sorted(glob.glob(os.path.join(ROOT, d, '*.md'))):
@@ -74,7 +84,31 @@ def collect():
                 cats=fm_get(fm, 'categories') or '',
                 links=[m.group(1).split('#')[0]
                        for m in re.finditer(r'\]\((/[^)\s]*)\)', body)],
+                images=collect_images(fm, body),
             ))
+    return out
+
+
+def check_images(docs, now):
+    """본문과 커버(front matter image.path)가 가리키는 파일이 실제로 있는지 본다.
+
+    htmlproofer 는 **빌드된 사이트**만 본다. 예약 글은 공개 시각 전에는 생성되지
+    않으므로, 커버 이미지 경로를 잘못 적어도 올리는 날에는 아무 신호가 없고
+    공개되는 날 cron 빌드가 죽는다 — `check_front_matter_types` 가 잡은 2048 태그와
+    정확히 같은 모양의 함정이다(올릴 땐 멀쩡, 며칠 뒤 새벽에 실패).
+
+    이미 공개된 글은 지금 빌드가 통과하고 있다는 것이 곧 증거라 참고로만 알린다.
+    """
+    out = []
+    for d in docs:
+        for u in d['images']:
+            f = os.path.join(ROOT, u.split('?')[0].lstrip('/').replace('/', os.sep))
+            if os.path.exists(f):
+                continue
+            future = d['date'] and d['date'] > now
+            msg = '%s(%s): 이미지 없음 %s' % (d['base'], d['lang'], u)
+            out.append(msg + (' — %s 공개일에 빌드가 죽는다' % d['date'].strftime('%m-%d %H:%M')
+                              if future else ' (이미 공개된 글)'))
     return out
 
 
@@ -134,6 +168,9 @@ def main():
             if not os.path.exists(f):
                 problems.append('홈 스텁 없음: %s%d/ (예약분 공개일에 404 링크 -> 빌드 실패)' % (prefix, i))
     notes.append('홈 피드 비타로 글 %d개 -> %d쪽 (양 언어 스텁 확인)' % (n, pages))
+
+    # 6) 이미지 실재 — 예약 글은 htmlproofer 가 공개일 전까지 못 본다
+    problems += check_images(docs, now)
 
     # 예약 현황
     sched = sorted([d for d in docs if d['date'] and d['date'] > now and d['lang'] == 'ko'],
