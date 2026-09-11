@@ -130,19 +130,37 @@
          자동 언어 선택은 외부 유입·직접 입력 같은 첫 진입에만 적용한다.
          referrer 를 못 읽는 환경(빈 문자열)은 외부 유입으로 보고 기존 동작을 유지한다.
          ⚠️ 이 <script> 는 Chirpy HTML 압축으로 한 줄이 되므로 //-주석 금지. */
+      /* ?lang=ko|en 은 "이 방문자는 언어를 이미 골랐다" 는 뜻이다 — 자동 추측보다 앞선다.
+         앱 설치 랜딩(app-redirect.html)이 쓰는 것과 같은 파라미터·같은 의미다.
+         쓰는 곳: 한국어/English QR 을 나란히 주는 인쇄물(인스타 타로 사전 카드).
+         그런 QR 은 **라벨이 곧 약속**이라 브라우저 언어로 덮으면 안 된다 —
+         'English' 를 찍은 한국어 브라우저 사용자가 한국어로 끌려가면 라벨이 거짓말이 된다.
+         판정이 끝나면 replaceState 로 지워 주소창·공유 주소에 남지 않게 한다. */
+      var m = /[?&]lang=(ko|en)(&|$)/.exec(location.search);
+      var forced = m && m[1];
+      var strip = function () {
+        if (!forced || !window.history || !history.replaceState) return;
+        try {
+          var u = new URL(location.href);
+          u.searchParams.delete('lang');
+          history.replaceState(null, '', u.pathname + u.search + u.hash);
+        } catch (e) { /* noop */ }
+      };
       var fromUs = false;
       try {
         fromUs = !!document.referrer && new URL(document.referrer).origin === location.origin;
       } catch (e) { fromUs = false; }
-      if (fromUs) return;
+      if (fromUs && !forced) return;
       var here = (document.documentElement.lang || 'en').slice(0, 2).toLowerCase() === 'ko' ? 'ko' : 'en';
       var pref = null;
       try { pref = localStorage.getItem('fdk-lang'); } catch (e) { /* 시크릿 모드 등 */ }
       var nav = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
-      var want = (pref === 'ko' || pref === 'en') ? pref : (nav.slice(0, 2).toLowerCase() === 'ko' ? 'ko' : 'en');
-      if (want === here) return;
+      var want = forced ||
+                 ((pref === 'ko' || pref === 'en') ? pref : (nav.slice(0, 2).toLowerCase() === 'ko' ? 'ko' : 'en'));
+      if (want === here) { strip(); return; }
       var alt = document.querySelector('link[rel="alternate"][hreflang="' + want + '"]');
-      if (alt && alt.href && alt.href !== location.href) location.replace(alt.href);
+      if (alt && alt.href && alt.href !== location.href) { location.replace(alt.href); return; }
+      strip();
     } catch (e) { /* 자동 선택 실패는 치명적이지 않다 */ }
   })();
   document.addEventListener('DOMContentLoaded', function () {
