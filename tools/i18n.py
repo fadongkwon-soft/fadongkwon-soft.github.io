@@ -717,6 +717,8 @@ def known_urls(ko, files):
         urls.add('/posts/' + os.path.basename(p)[:-3][11:] + '/')
     for p in glob.glob(os.path.join(ROOT, 'toss', '*.html')):
         urls.add('/toss/' + os.path.basename(p)[:-5] + '/')
+    for p in glob.glob(os.path.join(ROOT, 'play-store', '*.html')):
+        urls.add('/play-store/' + os.path.basename(p)[:-5] + '/')
     return urls
 
 

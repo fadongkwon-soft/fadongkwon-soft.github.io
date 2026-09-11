@@ -26,7 +26,7 @@ permalink: /ko/apps/
 | | 앱 | 출시 | Google Play | 앱인토스 |
 | --- | --- | --- | --- | --- |
 {% for a in site.data.apps_games -%}
-| {% if a.icon_path != '' %}![{{ a.name }}]({{ a.icon_path }}){: width="40" height="40" .normal}{% else %}{{ a.emoji }}{% endif %} | **{{ a.name }}**<br>{{ a.tagline }} | {{ a.released }} | {% if a.on_play %}[설치](https://play.google.com/store/apps/details?id={{ a.play_package }}){% else %}*심사 중*{% endif %} | {% if a.on_toss and a.toss_landing %}[열기]({{ a.toss_landing }}){% elsif a.on_toss %}출시됨{% else %}*심사 중*{% endif %} |
+| {% if a.icon_path != '' %}![{{ a.name }}]({{ a.icon_path }}){: width="40" height="40" .normal}{% else %}{{ a.emoji }}{% endif %} | **{{ a.name }}**<br>{{ a.tagline }} | {{ a.released }} | {% if a.on_play and a.play_landing %}[설치]({{ a.play_landing }}){% elsif a.on_play %}[설치](https://play.google.com/store/apps/details?id={{ a.play_package }}){% else %}*심사 중*{% endif %} | {% if a.on_toss and a.toss_landing %}[열기]({{ a.toss_landing }}){% elsif a.on_toss %}출시됨{% else %}*심사 중*{% endif %} |
 {% endfor %}
 
 ## 그 외 {{ site.data.apps_others | size }}개
@@ -36,7 +36,7 @@ permalink: /ko/apps/
 | | 앱 | 출시 | Google Play | 앱인토스 |
 | --- | --- | --- | --- | --- |
 {% for a in site.data.apps_others -%}
-| {% if a.icon_path != '' %}![{{ a.name }}]({{ a.icon_path }}){: width="40" height="40" .normal}{% else %}{{ a.emoji }}{% endif %} | **{{ a.name }}**<br>{{ a.tagline }} | {{ a.released }} | {% if a.on_play %}[설치](https://play.google.com/store/apps/details?id={{ a.play_package }}){% else %}*심사 중*{% endif %} | {% if a.on_toss and a.toss_landing %}[열기]({{ a.toss_landing }}){% elsif a.on_toss %}출시됨{% else %}*심사 중*{% endif %} |
+| {% if a.icon_path != '' %}![{{ a.name }}]({{ a.icon_path }}){: width="40" height="40" .normal}{% else %}{{ a.emoji }}{% endif %} | **{{ a.name }}**<br>{{ a.tagline }} | {{ a.released }} | {% if a.on_play and a.play_landing %}[설치]({{ a.play_landing }}){% elsif a.on_play %}[설치](https://play.google.com/store/apps/details?id={{ a.play_package }}){% else %}*심사 중*{% endif %} | {% if a.on_toss and a.toss_landing %}[열기]({{ a.toss_landing }}){% elsif a.on_toss %}출시됨{% else %}*심사 중*{% endif %} |
 {% endfor %}
 
 > **병 돌리기**와 **주스 스피너**는 게임처럼 보이지만 스토어에는 비게임으로 등록돼 있습니다. 앱을 만들기 시작한 초기에는 국내에서 게임 출시 절차가 훨씬 까다로웠던 탓에 게임 카테고리를 피해 냈습니다. 이후 게임들은 Play에 게임 카테고리로 먼저 내서 등급을 자동으로 받고 앱인토스에 올리는 방식으로 바꿨습니다.

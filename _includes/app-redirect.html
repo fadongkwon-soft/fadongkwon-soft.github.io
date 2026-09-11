@@ -1,0 +1,118 @@
+<!-- 앱 설치/실행 중간 랜딩 공용 조각 (토스·Google Play 공통).
+     사용: 페이지 front matter 에 `store: toss` 또는 `store: play`, `app_name`, 그리고
+           토스면 `toss_scheme`. 앱 정보(패키지·아이콘)는 apps.csv 에서 id 로 찾는다.
+
+     왜 Play 쪽도 랜딩을 두는가 — 토스 랜딩에 Play QR 을 같이 놓으니 기대와 어긋났다.
+     '앱인토스 열기'로 들어왔는데 Play QR 이 보이는 상황. 플랫폼마다 같은 모양의
+     랜딩을 두면 양쪽 경험이 같아진다(사용자 결정, 2026-09-11).
+
+     ⚠️ 이 페이지들은 `layout: none` 이라 **head 가 없다** — 사이트 CSS 가 하나도 안 실린다.
+        그래서 필요한 스타일을 여기 직접 넣는다. 특히 `.ext-sr`(외부 링크 안내 숨김 문구)이
+        없으면 "(새 창에서 열림)" 이 본문에 그대로 보인다.
+     ⚠️ 배경과 글자색은 **항상 같이** 정의한다. 다크 분기에서 글자색만 바꿨다가
+        배경이 브라우저 기본 흰색으로 남아 글씨가 거의 안 보였다.
+
+     QR 은 tools/make_app_qr.py 가 만든다(디코드 검증 포함).
+       토스 QR = 이 랜딩 URL (intoss:// 를 직접 담으면 기본 카메라가 못 여는 경우가 있다)
+       Play QR = 스토어 URL (https 라 카메라가 바로 연다) -->
+
+{%- assign landing_id = page.permalink | remove: '/toss/' | remove: '/play-store/' | remove: '/' -%}
+{%- assign app = site.data.apps_all | where: 'id', landing_id | first -%}
+{%- unless app -%}
+  {%- assign app = site.data.apps_all | where: 'toss_scheme', page.toss_scheme | first -%}
+{%- endunless -%}
+
+{%- if page.store == 'play' -%}
+  {%- assign target = 'https://play.google.com/store/apps/details?id=' | append: app.play_package -%}
+  {%- assign lead = 'Google Play로 이동 중입니다…' -%}
+  {%- assign btn = 'Google Play에서 설치' -%}
+  {%- assign qr_src = '/assets/img/play-qr/' | append: app.id | append: '.png' -%}
+  {%- assign qr_label = 'Google Play에서 설치' -%}
+  {%- assign other_label = '앱인토스에서 열기' -%}
+  {%- assign other_url = app.toss_landing -%}
+{%- else -%}
+  {%- assign target = page.toss_scheme -%}
+  {%- assign lead = '토스 앱에서 미니앱을 여는 중입니다…' -%}
+  {%- assign btn = '토스에서 열기' -%}
+  {%- assign qr_src = '/assets/img/toss-qr/' | append: landing_id | append: '.png' -%}
+  {%- assign qr_label = '토스에서 열기' -%}
+  {%- if app and app.on_play -%}
+    {%- assign other_label = 'Google Play에서 설치' -%}
+    {%- assign other_url = '/play-store/' | append: app.id | append: '/' -%}
+  {%- endif -%}
+{%- endif -%}
+
+<style>
+  .ext-mark { margin-left: .12em; font-size: .78em; line-height: 1; vertical-align: .28em; opacity: .6; }
+  .ext-sr {
+    -webkit-user-select: none; user-select: none;
+    position: absolute !important; width: 1px; height: 1px;
+    padding: 0; margin: -1px; overflow: hidden;
+    clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
+  }
+  html, body { margin: 0; background: #fff; }
+  .tl-wrap {
+    max-width: 460px; margin: 7vh auto; padding: 2rem 1.5rem 2.5rem; text-align: center;
+    font-family: 'Pretendard Variable', Pretendard, -apple-system, 'Noto Sans KR', sans-serif;
+    color: #1b1b1e;
+  }
+  .tl-wrap h1 { font-size: 1.5rem; margin: 0 0 .6rem; }
+  .tl-lead { color: #888; margin: 0 0 1.6rem; }
+  .tl-btn {
+    display: inline-block; color: #fff; text-decoration: none;
+    font-weight: 700; padding: .9rem 2rem; border-radius: 14px;
+  }
+  .tl-btn.toss { background: #3182f6; }
+  .tl-btn.play { background: #01875f; }
+  .tl-note { color: #888; font-size: .85rem; margin-top: 1.4rem; line-height: 1.6; }
+  .tl-qr { margin-top: 2.2rem; border-top: 1px solid #e5e7eb; padding-top: 1.6rem; }
+  .tl-qr-title { font-size: .9rem; font-weight: 700; color: #555; margin: 0 0 1rem; }
+  .tl-qr-item { width: 170px; margin: 0 auto; }
+  .tl-qr-item img {
+    width: 170px; height: 170px; display: block; border: 1px solid #e5e7eb; border-radius: 10px;
+  }
+  .tl-qr-item span { display: block; font-size: .8rem; color: #666; margin-top: .5rem; }
+  .tl-other { margin-top: 1.8rem; font-size: .85rem; }
+  .tl-other a { color: #3182f6; }
+  @media (prefers-color-scheme: dark) {
+    html, body { background: #1b1b1e; }
+    .tl-wrap { color: #e8e8ea; }
+    .tl-lead, .tl-note { color: #9aa0a6; }
+    .tl-qr { border-top-color: #333; }
+    .tl-qr-title { color: #bbb; }
+    .tl-qr-item span { color: #aaa; }
+    .tl-qr-item img { border-color: #333; background: #fff; }
+  }
+</style>
+
+<div class="tl-wrap">
+  <h1>{{ page.app_name }}</h1>
+  <p class="tl-lead">{{ lead }}</p>
+  <a id="open-app" class="tl-btn {{ page.store | default: 'toss' }}" href="{{ target }}">{{ btn }}</a>
+  {%- if page.store != 'play' %}
+    <p class="tl-note">
+      버튼이 동작하지 않으면 휴대폰에 <a href="https://toss.im" style="color:#3182f6;">토스 앱</a>을 설치한 뒤 다시 열어주세요.
+    </p>
+  {%- endif %}
+
+  <div class="tl-qr">
+    <p class="tl-qr-title">PC에서 보고 계신가요? 휴대폰으로 QR을 찍어주세요</p>
+    <div class="tl-qr-item">
+      <img src="{{ qr_src | relative_url }}" alt="{{ page.app_name }} {{ qr_label }} QR"
+           width="170" height="170" loading="lazy">
+      <span>{{ qr_label }}</span>
+    </div>
+  </div>
+
+  {%- if other_url %}
+    <p class="tl-other"><a href="{{ other_url | relative_url }}">{{ other_label }}</a></p>
+  {%- endif %}
+</div>
+
+<script>
+  /* 모바일이면 진입 즉시 이동 (실패해도 위 버튼과 QR 이 그대로 남는다).
+     ⚠️ //-주석 금지 — 압축이 한 줄로 만들면 뒤 코드를 삼킨다. */
+  if (/Android|iPhone|iPad/i.test(navigator.userAgent)) {
+    setTimeout(function () { window.location.href = '{{ target }}'; }, 300);
+  }
+</script>

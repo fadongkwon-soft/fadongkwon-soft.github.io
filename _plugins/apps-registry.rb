@@ -37,6 +37,9 @@ Jekyll::Hooks.register :site, :post_read do |site|
     # (없는 앱에 링크하면 htmlproofer 가 빌드를 죽인다 — saju-lotto 가 실제로 없다)
     landing = File.join(site.source, 'toss', "#{h['id']}.html")
     h['toss_landing'] = File.exist?(landing) ? "/toss/#{h['id']}/" : nil
+    # Play 도 같은 모양의 중간 랜딩을 둔다(tools/gen_store_landings.py 가 생성).
+    play_landing = File.join(site.source, 'play-store', "#{h['id']}.html")
+    h['play_landing'] = File.exist?(play_landing) ? "/play-store/#{h['id']}/" : nil
     # 아이콘은 CSV 가 절대 URL(앱이 실행 중에 받아가므로) — 사이트에서는 상대 경로로 쓴다.
     h['icon_path'] = h['icon'].to_s.sub(%r{\Ahttps?://[^/]+}, '')
     # 게임/비게임은 tags 의 '게임' 유무로 갈린다(현재 게임 21 / 비게임 8).
