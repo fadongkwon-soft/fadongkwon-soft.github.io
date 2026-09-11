@@ -147,6 +147,16 @@ def slug_of(path):
 
 
 # ─────────────────────────────────────────────────────────────────────────────
+# 본문을 절대 건드리면 안 되는 글.
+#
+# 이 전환 자체를 설명하는 글은 본문에 **옛 주소를 일부러** 적어 둔다
+# ("이전: /en/tarot/ → 이후: /tarot/" 같은 비교 표). 링크가 아니라 예시다.
+# 그런데 이 스크립트가 보기에는 고쳐야 할 옛 주소와 구별이 안 되므로, 다시 돌리면
+# 비교 표의 양쪽이 똑같아져 **글이 뜻을 잃는다.** front matter(permalink·alt_url)는
+# 그대로 정규화한다 — 위험한 것은 본문뿐이다.
+BODY_FROZEN_SLUGS = {'site-url-scheme'}
+
+
 def migrate_posts(apply):
     changed = []
     for p in sorted(glob.glob(os.path.join(KO_DIR, '*.md'))):
@@ -154,7 +164,7 @@ def migrate_posts(apply):
         fm, body = split_fm(s)
         slug = slug_of(p)
         new_fm = fm_set(fm, 'alt_url', '/posts/' + slug + '/')
-        new_body = ko_body(body)
+        new_body = body if slug in BODY_FROZEN_SLUGS else ko_body(body)
         new = '---\n' + new_fm + '---\n' + new_body
         if new != s.replace('\r\n', '\n'):
             changed.append(os.path.relpath(p, ROOT))
@@ -171,7 +181,7 @@ def migrate_en_posts(apply):
         slug = slug_of(p)
         new_fm = fm_set(fm, 'permalink', '/posts/' + slug + '/')
         new_fm = fm_set(new_fm, 'alt_url', '/ko/posts/' + slug + '/')
-        new_body = en_body(body)
+        new_body = body if slug in BODY_FROZEN_SLUGS else en_body(body)
         new = '---\n' + new_fm + '---\n' + new_body
         if new != s.replace('\r\n', '\n'):
             changed.append(os.path.relpath(p, ROOT))
@@ -315,7 +325,7 @@ redirect_to: {new}
 <title>Redirecting…</title>
 <link rel="canonical" href="{new}">
 <meta name="robots" content="noindex">
-<meta http-equiv="refresh" content="0; url={new}">
+<meta http-equiv="refresh" content="0; url={refresh}">
 </head><body>
 <!-- 2026-08-29~09-11 사이에만 존재했던 영문 주소(/en/*)를 새 주소로 보낸다.
      tools/urlscheme.py 가 생성한다. 몇 달 뒤 통째로 지워도 된다. -->
@@ -324,32 +334,53 @@ redirect_to: {new}
 """
 
 
+# 이 스텁들은 새 주소로 보낼 때 `?locale=auto` 를 같이 실어 보낸다.
+#
+# 스텁을 거치면 referrer 가 우리 오리진이 되고, 로케일 자동선택은 그것을
+# "방문자가 사이트 안에서 직접 고른 URL" 로 보고 물러선다. 그런데 스텁 진입은
+# 사람의 선택이 아니라 **죽은 주소를 거친 첫 진입**이다.
+# /en/tarot/ 는 인스타그램 타로 사전 카드의 QR 이 담고 있는 값이라(카드는 이미
+# 게시돼 QR 을 바꿀 수 없다) 한국어 사용자가 폰으로 찍으면 영문 허브에 갇혔다.
+#
+# 나머지 스텁에는 붙이지 않는다 — 옛 `/en/posts/...` 를 저장해 둔 사람은 그 주소로
+# **영어를 고른 것**이므로 영어로 두는 편이 맞다. 구분 기준이 이것이다:
+# 사람이 주소를 보고 골랐는가(그대로 존중), 인쇄물·QR 이 대신 골랐는가(자동선택).
+LOCALE_AUTO_STUBS = {'/en/tarot/'}
+
+
 def gen_en_redirect_stubs(apply):
     """옛 영문 주소(/en/*)가 404 가 되지 않게 meta-refresh 스텁을 만든다.
 
     본문이 있는 페이지만 만든다 — /en/tags/<slug>/ 같은 목록 페이지는 고유 내용이
     없어 색인 가치가 없으므로 제외한다(수도 127개로 많다).
 
-    ⚠️ **예약 글(미래 날짜)은 스텁을 만들지 않는다.** 그 글은 /en/... 에도 공개된 적이
-    없어서 보존할 옛 주소가 애초에 없고, 스텁이 링크하는 새 주소가 아직 생성되지 않아
-    **htmlproofer 가 빌드를 죽인다**(2026-09-11 실제로 이걸로 실패, 예약 14편 x 링크 2개).
+    ⚠️ **전환일(2026-09-11) 이후에 공개되는 글은 스텁을 만들지 않는다.** 그 글은
+    /en/... 에 공개된 적이 없어서 보존할 옛 주소가 애초에 없다. 아직 미래 날짜라면
+    스텁이 링크하는 새 주소가 생성되지 않아 **htmlproofer 가 빌드를 죽이기까지 한다**
+    (2026-09-11 실제로 이걸로 실패, 예약 14편 x 링크 2개).
+
+    처음엔 기준을 "미래 날짜인가"로 뒀는데, 그러면 예약 글이 공개될 때마다 **없던
+    주소의 스텁을 만들자고** 한다(9/11 당일 game-2048 이 공개되며 실제로 그랬다).
+    도구가 늘 할 일을 들고 있으면 사람이 그 보고를 무시하게 된다 — 기준은 날짜가
+    아니라 **그 주소가 실재한 적이 있는가**여야 한다.
     """
     import datetime
-    now = datetime.datetime.now()
+    # /en/* 주소가 살아 있던 마지막 순간. 이 뒤에 공개된 글에는 옛 주소가 없다.
+    CUTOVER = datetime.datetime(2026, 9, 11)
 
-    def is_future(path):
+    def never_had_en_url(path):
         fm, _ = split_fm(read(path))
         v = fm_get(fm, 'date') or ''
         m = re.match(r'(\d{4})-(\d{2})-(\d{2})(?:[ T](\d{2}):(\d{2}))?', v)
         if not m:
             return False
         return datetime.datetime(int(m.group(1)), int(m.group(2)), int(m.group(3)),
-                                 int(m.group(4) or 0), int(m.group(5) or 0)) > now
+                                 int(m.group(4) or 0), int(m.group(5) or 0)) >= CUTOVER
 
     made = []
     pairs = []
     for p in sorted(glob.glob(os.path.join(EN_DIR, '*.md'))):
-        if is_future(p):
+        if never_had_en_url(p):
             continue
         slug = slug_of(p)
         pairs.append(('/en/posts/' + slug + '/', '/posts/' + slug + '/'))
@@ -360,7 +391,10 @@ def gen_en_redirect_stubs(apply):
         rel = old.strip('/').split('/')
         d = os.path.join(ROOT, *rel)
         f = os.path.join(d, 'index.html')
-        content = STUB.format(old=old, new=new)
+        # canonical 과 눈에 보이는 <a> 는 파라미터 없는 주소를 쓴다 —
+        # 색인·JS 꺼진 방문자에게 쿼리가 새어 나갈 이유가 없다.
+        refresh = new + ('?locale=auto' if old in LOCALE_AUTO_STUBS else '')
+        content = STUB.format(old=old, new=new, refresh=refresh)
         if not os.path.exists(f) or read(f) != content:
             made.append(old)
             if apply:
