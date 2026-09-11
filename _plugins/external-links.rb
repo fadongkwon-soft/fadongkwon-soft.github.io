@@ -5,8 +5,18 @@
 #
 # 대상
 #   - 외부 호스트 링크: play.google.com, instagram.com, toss.im, developers-... 등
-#   - /toss/<id>/ 리다이렉트 페이지: 우리 주소지만 곧바로 앱인토스로 나가는 페이지다
-#     (https://fadongkwon.com/toss/... 처럼 절대 주소로 쓴 것도 같게 본다)
+#   - /toss/<id>/, /play-store/<id>/ 설치 랜딩: 우리 주소지만 곧바로 스토어/앱으로
+#     나가는 페이지다 (https://fadongkwon.com/toss/... 처럼 절대 주소로 쓴 것도 같게 본다)
+#     ⚠️ Play 랜딩을 나중에 만들면서 여기 등록을 빠뜨려, 앱인토스는 새 탭인데 Play 만
+#        같은 탭으로 전환됐다(사용자 제보 2026-09-11). 랜딩을 새로 만들면 여기도 추가할 것.
+#
+# 랜딩 링크에는 문서 언어를 ?lang= 으로 실어 보낸다.
+#   랜딩(/toss/, /play-store/)은 언어 중립 주소다 — 인스타 QR·스토어에 박혀 있어서
+#   /ko/ 를 붙이거나 영문판 주소를 따로 만들 수 없다. 그래서 한 페이지가 양쪽 언어를
+#   모두 담고 파라미터로 고른다(_includes/app-redirect.html).
+#   영어 글에서 눌렀는데 한국어 랜딩이 뜨던 문제를 여기서 막는다(사용자 제보 2026-09-11).
+#   한국어 글에도 ?lang=ko 를 명시한다 — 한 번 영어로 바꾼 적이 있으면 localStorage 에
+#   'en' 이 남아 한국어 글에서 눌러도 영문 랜딩이 뜬다.
 #
 # 대상이 아닌 것 (일부러 그대로 둔다)
 #   - 사이트 내부 링크. 같은 사이트 안의 이동은 이탈이 아니라 추가 페이지뷰이고,
@@ -29,6 +39,7 @@
 
 module FadongExternalLinks
   SELF_HOSTS = ['fadongkwon.com', 'www.fadongkwon.com'].freeze
+  LANDING_PREFIXES = ['/toss/', '/play-store/'].freeze
 
   A_ELEMENT = %r{<a\s([^>]*?)>(.*?)</a>}im
   HREF = /href\s*=\s*("|')(.*?)\1/i
@@ -53,7 +64,29 @@ module FadongExternalLinks
       u = '/' if u.empty?
     end
 
-    u.start_with?('/toss/')
+    landing?(u)
+  end
+
+  # 랜딩 주소면 문서 언어를 ?lang= 으로 붙여 돌려준다. 아니면 그대로.
+  def self.with_lang(url, lang)
+    u = url.to_s.strip
+    path = u
+    m = ABS_URL.match(u)
+    unless m.nil?
+      return u unless SELF_HOSTS.include?(m[1].downcase.split(':').first)
+
+      path = u[m.end(0)..-1].to_s
+    end
+    return u unless landing?(path)
+    return u if u =~ /[?&]lang=/
+
+    # #앵커가 있으면 그 **앞에** 넣는다. 뒤에 붙이면 브라우저가 쿼리로 읽지 않는다.
+    head, sep, frag = u.partition('#')
+    "#{head}#{head.include?('?') ? '&' : '?'}lang=#{lang}#{sep}#{frag}"
+  end
+
+  def self.landing?(path)
+    LANDING_PREFIXES.any? { |prefix| path.to_s.start_with?(prefix) }
   end
 
   # 여는 태그의 속성에 target·rel 을 채운다. 이미 target 이 있으면 그대로 둔다.
@@ -72,6 +105,15 @@ module FadongExternalLinks
     "#{attrs.rstrip} target=\"_blank\""
   end
 
+  # 여는 태그의 href 를 언어 파라미터가 붙은 주소로 갈아끼운다.
+  def self.with_lang_href(attrs, href_match, lang)
+    fixed = with_lang(href_match[2], lang)
+    return attrs if fixed == href_match[2]
+
+    q = href_match[1]
+    attrs[0, href_match.begin(0)].to_s + "href=#{q}#{fixed}#{q}" + attrs[href_match.end(0)..-1].to_s
+  end
+
   def self.apply(html, lang)
     hint = HINTS[lang] || HINTS['ko']
 
@@ -84,6 +126,7 @@ module FadongExternalLinks
         element
       else
         mark = inner =~ HAS_IMG ? '' : MARK # 이미지 링크 뒤에는 화살표를 붙이지 않는다
+        attrs = with_lang_href(attrs, href, lang)
         "<a #{with_new_tab(attrs)}>#{inner}#{mark}<span class=\"ext-sr\">#{hint}</span></a>"
       end
     end
@@ -95,7 +138,15 @@ Jekyll::Hooks.register [:posts, :pages, :documents], :post_convert do |doc|
   next unless doc.content.is_a?(String)
   next if doc.respond_to?(:output_ext) && doc.output_ext != '.html'
 
-  english = doc.data['lang'].to_s.downcase.start_with?('en') ||
-            doc.url.to_s.start_with?('/en/')
+  # 랜딩 페이지 자신은 건드리지 않는다. 여기 링크는 손으로 다 통제하고 있고,
+  # 토스↔Play 상호 링크는 사이트 안 이동이라 새 탭으로 띄울 이유가 없다.
+  next if FadongExternalLinks.landing?(doc.url.to_s)
+
+  # 언어 판별은 front matter 의 lang 하나만 본다. 영어판은 전부 lang: en 을 선언한다
+  # (_en_posts 는 _config.yml defaults 가, 탭·페이지는 각 파일이).
+  # 예전엔 URL 이 /en/ 으로 시작하는지도 같이 봤는데, 2026-09-11 URL 전환으로
+  # 영어가 루트(/*)로 옮겨가면서 그 조건은 죽은 코드가 됐다 — 지우고 lang 만 믿는다.
+  # i18n_structcheck.py 의 check_lang_declared 가 선언 누락을 막는다.
+  english = doc.data['lang'].to_s.downcase.start_with?('en')
   doc.content = FadongExternalLinks.apply(doc.content, english ? 'en' : 'ko')
 end

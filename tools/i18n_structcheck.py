@@ -176,6 +176,55 @@ def check_page_layouts():
     return out
 
 
+def check_lang_declared():
+    """영어판 페이지는 front matter 에 `lang: en` 을 반드시 선언해야 한다.
+
+    URL 규칙(2026-09-11)상 영어가 루트(/*), 한국어가 /ko/* 다. 그래서 **주소만 보고는**
+    영어판인지 알 수 없다 — 언어를 아는 방법은 lang 선언뿐이다.
+    _plugins/external-links.rb 가 이 값으로 랜딩 링크에 ?lang= 을 실어 보내므로,
+    선언이 빠지면 영어 페이지에서 누른 설치 링크가 한국어 랜딩으로 간다
+    (사용자 제보 2026-09-11). 눈에 보이는 오류가 없어 htmlproofer 도 못 잡는다.
+
+    판정: /ko/ 로 시작하지 않는 permalink 를 가졌고, 같은 이름의 한국어 짝이 있는 페이지.
+    (짝이 없는 언어 중립 페이지 — 랜딩·sitemap·리다이렉트 스텁 — 는 대상이 아니다)
+    """
+    out = []
+    pages = {}
+    skip_dirs = {'.git', '_site', 'node_modules', 'assets', '_posts', '_en_posts',
+                 '.jekyll-cache', 'vendor', '.preview-tmp', 'toss', 'play-store'}
+    for root, dirs, files in os.walk(ROOT):
+        dirs[:] = [d for d in dirs if d not in skip_dirs]
+        for fn in files:
+            if os.path.splitext(fn)[1].lower() not in ('.md', '.html'):
+                continue
+            p = os.path.join(root, fn)
+            try:
+                s = io.open(p, encoding='utf-8').read().replace(chr(13) + chr(10), chr(10))
+            except Exception:
+                continue
+            if not s.startswith('---' + chr(10)):
+                continue
+            try:
+                fm, _ = split_fm(s)
+            except ValueError:
+                continue
+            m = re.search(r'^permalink:[ 	]*(\S+)', fm, re.M)
+            if not m:
+                continue
+            url = m.group(1).strip('\'"')
+            pages[url] = (os.path.relpath(p, ROOT).replace(os.sep, '/'),
+                          bool(re.search(r'^lang:[ 	]*en', fm, re.M)))
+
+    for url, (rel, has_lang) in sorted(pages.items()):
+        if url.startswith('/ko/') or has_lang:
+            continue
+        if ('/ko' + url) not in pages:
+            continue  # 한국어 짝이 없다 = 언어 중립 페이지
+        out.append('%s: lang: en 선언 없음 (영어 페이지가 한국어로 취급돼 '
+                   '설치 링크가 한국어 랜딩으로 간다)' % rel)
+    return out
+
+
 def check_tab_titles():
     """_tabs/*.md 는 모두 명시 title 을 가져야 한다.
 
@@ -314,6 +363,7 @@ def main():
     problems += check_tab_titles()
     problems += check_page_layouts()
     problems += check_front_matter_types()
+    problems += check_lang_declared()
 
     print('대조 %d개' % checked)
     if problems:
