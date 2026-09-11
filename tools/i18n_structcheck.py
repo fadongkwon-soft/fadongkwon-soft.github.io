@@ -87,6 +87,53 @@ def tag_slug(t):
     return re.sub(r'[^a-z0-9]+', '-', t.strip().lower()).strip('-')
 
 
+def check_front_matter_types():
+    """tags/categories 항목과 app_name 이 **문자열로** 파싱되어야 한다.
+
+    YAML 은 따옴표 없는 `2048` 을 정수로 읽는다. Jekyll 의 slugify 는 문자열만 받으므로
+    그런 태그를 가진 글이 **공개되는 순간** 빌드가 통째로 죽는다
+    (undefined method `gsub' for an instance of Integer).
+    예약 글이면 공개 시각이 지난 뒤의 빌드부터 죽기 때문에, 올릴 때는 멀쩡하고
+    며칠 뒤 새벽 cron 이 죽는 형태로 나타난다 — 사람이 잡을 수 없다.
+    2026-09-11 실제로 이걸로 그날 예약분이 배포되지 못했다.
+
+    처방: 숫자로만 된 값은 따옴표로 감쌀 것. tags: [..., '2048', ...]
+    """
+    try:
+        import yaml
+    except ImportError:
+        return []
+
+    out = []
+    targets = []
+    for d in ('_posts', '_en_posts', '_tabs'):
+        targets += sorted(glob.glob(os.path.join(ROOT, d, '*.md')))
+    for d in ('toss', 'play-store'):
+        targets += sorted(glob.glob(os.path.join(ROOT, d, '*.html')))
+
+    for p in targets:
+        s = io.open(p, encoding='utf-8').read().replace(chr(13) + chr(10), chr(10))
+        if not s.startswith('---' + chr(10)):
+            continue
+        try:
+            fm, _ = split_fm(s)
+            data = yaml.safe_load(fm) or {}
+        except Exception:
+            continue  # YAML 파싱 자체는 check_front_matter_yaml 이 본다
+        rel = os.path.relpath(p, ROOT).replace(os.sep, '/')
+        for key in ('tags', 'categories'):
+            for v in (data.get(key) or []):
+                if not isinstance(v, str):
+                    out.append("%s: %s 의 %r 가 %s 로 파싱된다 — 따옴표로 감쌀 것"
+                               % (rel, key, v, type(v).__name__))
+        for key in ('app_name', 'title'):
+            v = data.get(key)
+            if v is not None and not isinstance(v, str):
+                out.append("%s: %s 의 %r 가 %s 로 파싱된다 — 따옴표로 감쌀 것"
+                           % (rel, key, v, type(v).__name__))
+    return out
+
+
 def check_page_layouts():
     """permalink 을 가진 페이지에 layout 선언이 있어야 한다.
 
@@ -266,6 +313,7 @@ def main():
     problems.extend(check_en_tag_pages())
     problems += check_tab_titles()
     problems += check_page_layouts()
+    problems += check_front_matter_types()
 
     print('대조 %d개' % checked)
     if problems:

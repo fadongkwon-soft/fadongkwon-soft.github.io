@@ -29,7 +29,7 @@ TPL = """---
 layout: none
 permalink: /play-store/{id}/
 store: play
-app_name: {name}
+app_name: '{name}'
 ---
 {{% include app-redirect.html %}}
 """
@@ -44,7 +44,9 @@ def main():
 
     want = {}
     for r in live:
-        want[r['id']] = TPL.format(id=r['id'], name=r['name'])
+        # ⚠️ app_name 은 반드시 따옴표로. 숫자만 있는 이름('2048')이 YAML 에서
+        #    정수로 파싱되면 Jekyll 의 slugify 가 터져 빌드가 죽는다(2026-09-11 실제 사고).
+        want[r['id']] = TPL.format(id=r['id'], name=r['name'].replace("'", "''"))
 
     wrote, same, removed = [], [], []
     for aid, body in want.items():
