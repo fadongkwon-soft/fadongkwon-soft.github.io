@@ -1,3 +1,10 @@
+<!-- ⚠️ 이 meta 가 **가장 먼저** 나와야 한다(파서가 head 로 올려 준다).
+     이 페이지들은 layout: none 이라 head 가 없어서 viewport 선언도 없었다 →
+     폰에서 레이아웃 뷰포트가 980px 로 잡혀 글씨가 3분의 1 크기로 찌그러졌다.
+     하필 이 페이지의 주 진입로가 **인스타 QR(= 폰으로 스캔)** 이다.
+     토스가 안 깔려 자동 이동이 실패했을 때 보게 되는 화면이라 더 중요하다. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!-- 앱 설치/실행 중간 랜딩 공용 조각 (토스·Google Play 공통, 한/영 겸용).
      사용: 페이지 front matter 에 `store: toss` 또는 `store: play`, `app_name`, 그리고
            토스면 `toss_scheme`. 앱 정보(패키지·아이콘·영문명)는 apps.csv 에서 id 로 찾는다.
