@@ -8,8 +8,18 @@
     />
     <meta name="theme-color" content="#101116" />
     <title>수학 몬스터</title>
-    <script type="module" crossorigin src="./assets/index-Dbunw8fd.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BoiEBOi3.css">
+    <!-- 홈 화면 아이콘(아이패드 Safari 웹클립). 사이트 play/ 페이지로 서빙될 때 아이콘·제목 메타가 없어 Safari 가
+         스크린샷으로 대충 만들었다(2026-09-12). 파일은 public/ 에 있고 tools/make_play_page_icons.py 가 만든다.
+         상대 경로(./) — fadongkwon.com/play/<game>/ 아래 서빙되기 때문. Play·토스 래퍼(WebView)에는 무해. -->
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="수학 몬스터" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <script type="module" crossorigin src="./assets/index-DjUOuJwJ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-yKxSMtnC.css">
   </head>
   <body>
     <div id="app">
@@ -19,7 +29,9 @@
         <h1 class="title" id="title">👾 수학 몬스터</h1>
         <p class="dim" id="tagline">문제를 풀어 몬스터를 잡아라!<br />10마리 최단 시간 도전</p>
         <div class="mode-list" id="op-list"></div>
-        <button class="btn secondary" id="btn-records">🏅 기록</button>
+        <div class="home-links">
+          <button class="btn secondary" id="btn-records">🏅 기록</button>
+        </div>
         <div class="promo" id="promo"></div>
       </section>
 
@@ -58,6 +70,6 @@
         <button class="btn secondary" id="btn-result-records">🏅 기록</button>
         <button class="btn secondary" id="btn-home">처음으로</button>
       </section>
-    </div>
+    </div>
   </body>
 </html>
