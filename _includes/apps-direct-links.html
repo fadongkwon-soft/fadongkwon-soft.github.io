@@ -1,0 +1,28 @@
+<script>
+  /* APPS 표의 설치/열기 링크는 기본으로 랜딩(/play-store/<id>/, /toss/<id>/)을 가리킨다 —
+     PC 에서는 QR 과 양쪽 스토어 안내가 있는 랜딩이 맞다. 휴대폰·태블릿은 랜딩을 거칠
+     이유가 없으니(랜딩도 300ms 뒤 자동 이동만 한다) 진입 시 href 를 목적지로 바꿔 둔다
+     (사용자 요청 2026-09-13). 앵커에는 빌드 시 data-direct(Play 스토어 URL 또는 intoss://
+     스킴)가 실려 있다. JS 가 꺼져 있으면 랜딩으로 가므로 기능은 잃지 않는다.
+     ⚠️ //-주석 금지 — 압축이 한 줄로 만들면 뒤 코드를 삼킨다. */
+  (function () {
+    var ua = navigator.userAgent;
+    var mobile = /Android|iPhone|iPad|iPod|Mobile|Tablet/i.test(ua) ||
+      (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1); /* iPadOS 13+ 는 Mac 으로 위장한다 */
+    if (!mobile) { return; }
+    var lang = document.documentElement.lang === 'en' ? 'en' : 'ko';
+    var links = document.querySelectorAll('a[data-direct]');
+    for (var i = 0; i < links.length; i++) {
+      var a = links[i];
+      var to = a.getAttribute('data-direct');
+      if (!to) { continue; }
+      if (to.indexOf('play.google.com') === 0 || to.indexOf('https://play.google.com') === 0) {
+        to += (to.indexOf('?') >= 0 ? '&' : '?') + 'hl=' + lang;
+      } else {
+        /* intoss:// 같은 커스텀 스킴은 새 탭으로 열면 빈 탭만 남는다 — 같은 탭에서 연다 */
+        a.removeAttribute('target');
+      }
+      a.setAttribute('href', to);
+    }
+  })();
+</script>
