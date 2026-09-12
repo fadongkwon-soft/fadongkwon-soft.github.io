@@ -20,7 +20,7 @@ number-tap,순발력 숫자판,숫자를 순서대로 빠르게 탭!,🔢,com.fa
 game-2048,2048,숫자를 합쳐 2048을 만들어라!,🔢,com.fadongkwon.game_2048,intoss://game-2048,1,1,2048,Merge the tiles to reach 2048!,https://fadongkwon.com/app-icons/game-2048.png,,게임;퍼즐;두뇌;캐주얼;데일리,568,1,2026-09-08
 slide-puzzle,숫자 퍼즐,타일을 밀어 순서대로 맞추기,🧩,com.fadongkwon.slide_puzzle,intoss://slide-puzzle-15,1,1,Number Slide,Slide the tiles into order!,https://fadongkwon.com/app-icons/slide-puzzle.png,,게임;퍼즐;두뇌;클래식;데일리,810,1,2026-09-08
 minesweeper,지뢰찾기,숫자 힌트로 지뢰를 피해라,💣,com.fadongkwon.minesweeper,intoss://minesweeper-classic,1,1,Minesweeper,Clear the field without hitting a mine,https://fadongkwon.com/app-icons/minesweeper.png,,게임;퍼즐;두뇌;클래식;데일리,815,1,2026-09-08
-snake,뱀 게임,먹이를 먹고 길어지는 클래식,🐍,com.fadongkwon.snake,intoss://snake-classic,1,1,Snake,Eat and grow without biting yourself!,https://fadongkwon.com/app-icons/snake.png,950,게임;아케이드;클래식;순발력;기록도전,645,1,2026-09-08
+snake,뱀 게임,먹이를 먹고 길어지는 클래식,🐍,com.fadongkwon.snake,intoss://snake-classic,1,1,Snake,Eat and grow without biting yourself!,https://fadongkwon.com/app-icons/snake.png,,게임;아케이드;클래식;순발력;기록도전,645,1,2026-09-08
 breakout,벽돌깨기,공을 튕겨 벽돌을 모두 깨라,🧱,com.fadongkwon.breakout,intoss://breakout,1,1,Brick Breaker,Bounce the ball and clear the bricks,https://fadongkwon.com/app-icons/breakout.png,,게임;아케이드;클래식;순발력;기록도전,640,1,2026-09-08
 pixel-pong,픽셀 탁구,AI 또는 친구와 1:1 탁구 대결,🏓,com.fadongkwon.pixel_pong,intoss://pixel-pong,1,1,Pixel Pong,1v1 table tennis vs AI or a friend,https://fadongkwon.com/app-icons/pixel-pong.png,,게임;아케이드;클래식;대전;2인,781,1,2026-09-08
 tower-stack,타워 쌓기,타이밍 맞춰 블록을 높이 쌓자,🏗️,com.fadongkwon.tower_stack,intoss://tower-stack-game,1,1,Tower Stack,Tap in time and stack it high!,https://fadongkwon.com/app-icons/tower-stack.png,,게임;아케이드;순발력;캐주얼;기록도전,456,1,2026-09-08
