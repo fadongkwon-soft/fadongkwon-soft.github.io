@@ -17,7 +17,7 @@ alt_url: /ko/about/
 
 Hello. I'm the solo developer behind **Fadongkwon Soft**.
 
-Software development is my day job, and I'm a father of two. Since late 2024 I've been building and shipping apps by myself, using evenings after work and weekends. Planning, development, design, store submissions, and this blog — all of it is mine.
+I'm a Data Scientist by day, and I'm a father of two. Since late 2024 I've been building and shipping apps by myself, using evenings after work and weekends. Planning, development, design, store submissions, and this blog — all of it is mine.
 
 There was nothing dramatic behind starting. Watching the costs of raising children climb, I wanted to build something that would accumulate value over time instead of just spending hours. So I ship them one at a time and record what I learn along the way.
 
