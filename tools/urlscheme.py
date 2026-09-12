@@ -24,10 +24,23 @@
     /tags/<slug>/ /categories/<slug>/ /ko/tags/:name/ /ko/categories/:name/
 
 **언어 중립(양쪽이 함께 링크하며 접두를 붙이지 않는다)**
-    /play/<게임>/   게임 자체가 브라우저 언어를 따른다
-    /toss/<앱>/     토스 딥링크 랜딩
-    /kids/*         아동용 앱 안내
-    /assets/*       정적 파일
+    /play/<게임>/        게임 자체가 브라우저 언어를 따른다
+    /toss/<앱>/          토스 딥링크 랜딩
+    /play-store/<앱>/    Google Play 설치 랜딩 (tools/gen_store_landings.py 가 생성)
+    /kids/*              아동용 앱 안내
+    /assets/*            정적 파일
+
+**이 리포가 만들지 않는데 같은 도메인에 있는 경로 (2026-09-12)**
+    /korean-history-quiz/   한국사 기본 기출 퀴즈
+    /nursing-quiz/          간호조무사 모의 문제은행
+    /nursing-past-quiz/     간호조무사 기출 풀기 (비공개 링크 체제)
+
+fadongkwon-soft 계정의 **별도 리포**(같은 이름)가 gh-pages 브랜치로 서빙하는 프로젝트 Pages 다.
+사용자 사이트에 커스텀 도메인이 걸려 있으면 그 계정의 모든 프로젝트 Pages 가 같은 도메인
+아래 경로로 나온다(2026-09-12 프로브 리포로 실측). 예전 주소 yong426.github.io/<repo>/ 에서
+옮겨 온 것이다. 이 리포에서 같은 이름의 디렉터리·permalink 를 만들면 **충돌**하므로 금지.
+htmlproofer 는 이 리포의 빌드 산출물만 보므로 이 경로들을 링크해도 검사하지 않는다 —
+링크할 때는 curl 로 200 을 직접 확인할 것.
 
 ## 파일명 규칙 (2026-09-11, URL 규칙과 같은 방향)
 
