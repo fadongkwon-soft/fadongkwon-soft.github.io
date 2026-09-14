@@ -31,7 +31,7 @@ The lesson here is simple. If you have ten ideas and start all ten, you will shi
 
 ## What blocks a review is usually not your code
 
-The rejection that stung most was the first review of [Reaction Challenge](/posts/play-minigames/). The stated reason was an invalid privacy policy. There was nothing wrong with the app's code. The problem was on my website. A GitHub Pages misconfiguration had left the privacy policy page returning a 404, and the reviewer opened the link and rejected the app.
+The rejection that stung most was the first review of [Reaction Challenge](/posts/reaction/). The stated reason was an invalid privacy policy. There was nothing wrong with the app's code. The problem was on my website. A GitHub Pages misconfiguration had left the privacy policy page returning a 404, and the reviewer opened the link and rejected the app.
 
 App review does not look only at the app. It looks at your developer account details, the web pages you link to, and your store copy. Things outside the app are what block the app. That is where my habit of opening every URL I put in a store listing myself, in a private window, came from.
 
@@ -63,4 +63,4 @@ In the next post I will walk through publishing an app on Apps in Toss, from reg
 
 ---
 
-The apps I have shipped so far are written up in their own posts — [three Play mini games](/posts/play-minigames/), [Saju Lotto](/posts/saju-lotto/), [Juice Spinner](/posts/juice-spinner/), and the rest. News goes out on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
+The apps I have shipped so far are written up in their own posts — [Reaction Challenge](/posts/reaction/), [Memory Cards](/posts/memory-card/), [Saju Lotto](/posts/saju-lotto/), [Juice Spinner](/posts/juice-spinner/), and the rest. News goes out on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).

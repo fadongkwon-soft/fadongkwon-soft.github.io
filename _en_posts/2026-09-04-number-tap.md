@@ -46,6 +46,6 @@ It works fully offline with no sign-up or login, and supports 9 languages.
 - [Hangul Word Guess](/posts/hangul-word/) — guess the Korean word in six jamo
 - [Tap Bird](/posts/tap-bird/) — tap to fly through the gaps
 
-If you want to measure pure reaction time, compare it with [Reaction Challenge](/posts/play-minigames/).
+If you want to measure pure reaction time, compare it with [Reaction Challenge](/posts/reaction/).
 
 I post updates here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).

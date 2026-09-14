@@ -2,9 +2,9 @@
 title: Memory Cards — Match the Pairs, Against the Clock
 description: Flip and match across three sizes of 6, 8 or 10 pairs, with your time and flip count tracked together and a TOP 10 board, now on Google Play and Apps in Toss
 image:
-  path: /assets/img/20260914_memory-card/feature.png
+  path: /assets/img/20260816_memory-card/feature.png
   alt: Memory Cards feature graphic
-date: 2026-09-14 12:10:00 +0900
+date: 2026-08-16 01:05:00 +0900
 categories: [Products, Game]
 permalink: /posts/memory-card/
 alt_url: /ko/posts/memory-card/
@@ -28,15 +28,18 @@ Because the whole game runs on concentration, there are no ads inside a round.
 
 It works fully offline with no sign-up or login.
 
-![Memory Cards home screen](/assets/img/20260914_memory-card/shot-home.png){: w="360" }
-![Gameplay screen](/assets/img/20260914_memory-card/shot-play.png){: w="360" }
+![Memory Cards home screen](/assets/img/20260816_memory-card/shot-home.png){: w="360" }
+![Gameplay screen](/assets/img/20260816_memory-card/shot-play.png){: w="360" }
+
+## Gameplay Video
+{% include embed/youtube.html id='NTpypkCBVxc' %}
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.memory_card>
 - Apps in Toss: <https://fadongkwon.com/toss/memory-card/> — open it on your phone and it connects straight into the Toss app.
 
 ## Released Alongside
-This is one of the first two mini games, published on 16 August 2026 together with [Reaction Challenge](/posts/reaction/). Back then both were covered in a single post, [Two Mini Games](/posts/play-minigames/); this one is split out to match how every app gets its own post now.
+[Reaction Challenge](/posts/reaction/) went out the same day. These two were where I first tried building in web technology and publishing to Google Play and Apps in Toss at the same time.
 
 After these, mini games started shipping in batches. That story is in [Shipping Six Mini Games at Once](/posts/six-games-retrospective/).
 

@@ -45,6 +45,6 @@ alt_url: /posts/number-tap/
 - [단어 맞추기](/ko/posts/hangul-word/) — 여섯 자모로 한글 단어 추리
 - [탭 버드](/ko/posts/tap-bird/) — 탭해서 장애물 사이를 날아라
 
-순수 반응속도만 재고 싶다면 [반응속도 챌린지](/ko/posts/play-minigames/)와 비교해보세요.
+순수 반응속도만 재고 싶다면 [반응속도 챌린지](/ko/posts/reaction/)와 비교해보세요.
 
 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.

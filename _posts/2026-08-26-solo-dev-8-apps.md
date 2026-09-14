@@ -30,7 +30,7 @@ alt_url: /posts/solo-dev-8-apps/
 
 ## 심사에서 막히는 건 대개 코드 문제가 아니다
 
-가장 아팠던 반려는 [반응속도 챌린지](/ko/posts/play-minigames/)의 첫 심사였습니다. 사유는 "잘못된 개인정보처리방침". 앱 코드에는 아무 문제가 없었습니다. 원인은 홈페이지 쪽이었습니다. GitHub Pages 설정이 어긋나 개인정보처리방침 페이지가 404를 내고 있었고, 심사자는 링크를 열어보고 반려한 것이었습니다.
+가장 아팠던 반려는 [반응속도 챌린지](/ko/posts/reaction/)의 첫 심사였습니다. 사유는 "잘못된 개인정보처리방침". 앱 코드에는 아무 문제가 없었습니다. 원인은 홈페이지 쪽이었습니다. GitHub Pages 설정이 어긋나 개인정보처리방침 페이지가 404를 내고 있었고, 심사자는 링크를 열어보고 반려한 것이었습니다.
 
 앱 심사는 앱만 보지 않습니다. 개발자 계정 정보, 연결된 웹페이지, 스토어 문구까지 함께 봅니다. 앱 밖에 있는 것들이 앱을 막습니다. 출시 전에 스토어에 적어 넣은 모든 URL을 시크릿 창으로 직접 열어보는 습관이 생긴 계기였습니다.
 
@@ -62,4 +62,4 @@ alt_url: /posts/solo-dev-8-apps/
 
 ---
 
-지금까지 출시한 앱은 [Play 미니게임 3종](/ko/posts/play-minigames/), [사주로또](/ko/posts/saju-lotto/), [주스 스피너](/ko/posts/juice-spinner/) 등 각 소개 글에 정리해 두었습니다. 소식은 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.
+지금까지 출시한 앱은 [반응속도 챌린지](/ko/posts/reaction/), [기억력 카드](/ko/posts/memory-card/), [사주로또](/ko/posts/saju-lotto/), [주스 스피너](/ko/posts/juice-spinner/) 등 각 소개 글에 정리해 두었습니다. 소식은 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.
