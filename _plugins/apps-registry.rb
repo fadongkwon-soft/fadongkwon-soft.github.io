@@ -20,9 +20,32 @@ require 'csv'
 # ⚠️ 훅은 반드시 :post_read 다. :after_init 에 넣으면 그 뒤 Jekyll 이 _data 를 읽으면서
 #    site.data 를 **통째로 새 해시로 교체**해 여기서 넣은 키가 사라진다.
 #    빌드는 성공하고 페이지도 200 이지만 목록이 빈 채로 나간다(2026-09-11 실제로 겪음).
+# 앱 id 와 소개 글 슬러그가 다른 경우만 여기 적는다. 나머지는 id 로 자동으로 맞는다.
+#   반응속도(reaction)·기억력 카드(memory-card)는 단독 소개 글이 없다
+#   (2026-09-04 '미니게임 6종 동시 출시 회고'가 대신 다룬다). 링크를 걸고 싶으면
+#   'six-games-retrospective' 를 넣으면 되지만, 그 글은 앱 소개가 아니라 회고다.
+APP_POST_SLUG = {
+  'tarot' => 'tarot-fortune'
+}.freeze
+
+# 슬러그 → URL 표. **아직 공개되지 않은 예약 글은 뺀다** — 생성되지 않은 페이지로
+# 링크하면 htmlproofer 가 빌드를 죽인다(tools/check_scheduled.py 가 감시하는 바로 그 사고).
+def build_post_index(docs, site)
+  index = {}
+  docs.each do |doc|
+    next if !site.config['future'] && doc.date && doc.date > site.time
+    slug = File.basename(doc.relative_path, '.*').sub(/\A\d{4}-\d{2}-\d{2}-/, '')
+    index[slug] = doc.url
+  end
+  index
+end
+
 Jekyll::Hooks.register :site, :post_read do |site|
   path = File.join(site.source, 'apps.csv')
   next unless File.exist?(path)
+
+  ko_posts = build_post_index(site.posts.docs, site)
+  en_posts = build_post_index(site.collections['en_posts']&.docs || [], site)
 
   rows = CSV.read(path, headers: true, encoding: 'bom|utf-8').map do |r|
     h = r.to_h
@@ -47,6 +70,10 @@ Jekyll::Hooks.register :site, :post_read do |site|
     # 출시일. registry/apps.csv 의 released 컬럼이 근거다(비면 정렬 맨 뒤).
     h['released'] = h['released'].to_s.strip
     h['released_key'] = h['released'].empty? ? '0000-00-00' : h['released']
+    # 소개 글 링크. 글이 없거나 아직 예약 상태면 nil 이라 템플릿이 링크를 만들지 않는다.
+    slug = APP_POST_SLUG.fetch(h['id'], h['id'])
+    h['post_ko'] = ko_posts[slug]
+    h['post_en'] = en_posts[slug]
     h
   end
 
@@ -69,6 +96,8 @@ Jekyll::Hooks.register :site, :post_read do |site|
   # 컬럼 이름이나 훅 시점이 깨진 것이므로 빌드를 세운다(페이지는 200 이라 아무도 못 잡는다).
   raise "apps-registry: apps.csv 를 읽었는데 라이브 앱이 0개다 (컬럼·훅 시점 확인)" if live.empty?
 
+  linked = live.count { |h| h['post_ko'] }
+  Jekyll.logger.info 'apps-registry:', "소개 글 연결: #{linked}/#{live.length}"
   Jekyll.logger.info 'apps-registry:',
                      "apps.csv 적재: 라이브 #{live.length} / Play #{site.data['apps_play_count']} "                      "/ 토스 #{site.data['apps_toss_count']} (전체 #{rows.length})"
 end
