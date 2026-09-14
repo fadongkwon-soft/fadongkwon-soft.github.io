@@ -33,6 +33,9 @@ alt_url: /posts/tarot-ping/
 ![운세 타로핑 홈](/assets/img/20260828_tarot-ping/shot-home.png){: w="360" }
 ![결과 화면](/assets/img/20260828_tarot-ping/shot-result.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='u9zFaebYOyA' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.tarot_ping>
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/tarot-ping/>

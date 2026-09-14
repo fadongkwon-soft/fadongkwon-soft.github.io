@@ -34,6 +34,9 @@ has the full write-ups alongside the cute deck artwork.
 ![Tarot Ping home screen](/assets/img/20260828_tarot-ping/shot-home.png){: w="360" }
 ![Result screen](/assets/img/20260828_tarot-ping/shot-result.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='u9zFaebYOyA' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.tarot_ping>
 - Apps in Toss (Toss mini app): <https://fadongkwon.com/toss/tarot-ping/>

@@ -32,6 +32,9 @@ alt_url: /posts/math-monsters/
 ![수학 몬스터 홈](/assets/img/20260825_math-monsters/shot-home.png){: w="360" }
 ![플레이 화면](/assets/img/20260825_math-monsters/shot-play.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='wYHK44e5dpk' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.math_monsters>
 - 앱인토스: <https://fadongkwon.com/toss/math-monsters/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.

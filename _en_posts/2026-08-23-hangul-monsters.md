@@ -37,6 +37,9 @@ There are no ads.
 ![Hangul Monsters home screen](/assets/img/20260823_hangul-monsters/shot-home.png){: w="360" }
 ![Ga-na-da listening mode](/assets/img/20260823_hangul-monsters/shot-play.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='8c4po9L3OB4' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.hangul_monsters>
 - Apps in Toss (Toss mini app): <https://fadongkwon.com/toss/hangul-monsters/> — it runs right inside the Toss app, with nothing to install.

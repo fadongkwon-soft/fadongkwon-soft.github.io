@@ -34,6 +34,9 @@ There are no ads, and there is no sign-up or login — you can start playing rig
 ![Math Monsters home screen](/assets/img/20260825_math-monsters/shot-home.png){: w="360" }
 ![Gameplay screen](/assets/img/20260825_math-monsters/shot-play.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='wYHK44e5dpk' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.math_monsters>
 - Apps in Toss: <https://fadongkwon.com/toss/math-monsters/> — open it on your phone and it connects straight into the Toss app.
