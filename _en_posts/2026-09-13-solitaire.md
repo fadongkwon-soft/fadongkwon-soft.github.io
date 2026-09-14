@@ -30,6 +30,9 @@ It works fully offline with no sign-up or login, and supports 9 languages.
 ![Solitaire home screen](/assets/img/20260913_solitaire/shot-home.png){: w="360" }
 ![Gameplay screen](/assets/img/20260913_solitaire/shot-play.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='PZrfdcy5Uwc' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.solitaire>
 - Apps in Toss: <https://fadongkwon.com/toss/solitaire/> — open it on your phone and it connects straight into the Toss app.

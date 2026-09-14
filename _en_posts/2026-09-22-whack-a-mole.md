@@ -33,6 +33,9 @@ It works fully offline with no sign-up or login, and supports 9 languages.
 ![Mole Tap home screen](/assets/img/20260922_whack-a-mole/shot-home.png){: w="360" }
 ![Gameplay screen](/assets/img/20260922_whack-a-mole/shot-play.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='Jd7vIV57gJ4' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.whack_a_mole>
 - Apps in Toss: <https://fadongkwon.com/toss/whack-a-mole/> — open it on your phone and it connects straight into the Toss app.

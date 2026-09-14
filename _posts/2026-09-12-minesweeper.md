@@ -29,6 +29,9 @@ alt_url: /posts/minesweeper/
 ![지뢰찾기 홈](/assets/img/20260912_minesweeper/shot-home.png){: w="360" }
 ![플레이 화면](/assets/img/20260912_minesweeper/shot-play.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='7Al02I3HlQQ' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.minesweeper>
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/minesweeper/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.

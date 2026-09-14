@@ -29,6 +29,9 @@ alt_url: /posts/sequence-memory/
 ![순서 기억 홈 화면](/assets/img/20260923_sequence-memory/shot-home.png){: w="360" }
 ![플레이 화면](/assets/img/20260923_sequence-memory/shot-play.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='8SESsx_QpLg' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.sequence_memory>
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/sequence-memory/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.

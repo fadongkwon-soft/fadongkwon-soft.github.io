@@ -47,6 +47,11 @@ def canon_link(u):
         return '/ko/play/'
     if u == '/apps/':
         return '/ko/apps/'
+    # 아카이브·카테고리·태그도 /ko/ 짝이 있다(2026-09-13 URL 규칙 표). 빠져 있어서
+    # 한국어 글이 /ko/archives/ 를, 영문 짝이 /archives/ 를 가리키면 불일치로 잡혔다.
+    for base in ('/archives/', '/categories/', '/tags/'):
+        if u == base:
+            return '/ko' + base
     return u
 
 

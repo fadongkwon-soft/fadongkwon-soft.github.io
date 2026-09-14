@@ -29,6 +29,9 @@ alt_url: /posts/tower-stack/
 ![타워 쌓기 홈](/assets/img/20260919_tower-stack/shot-home.png){: w="360" }
 ![플레이 화면](/assets/img/20260919_tower-stack/shot-play.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='HmtoHuMSD3k' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.tower_stack>
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/tower-stack/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.

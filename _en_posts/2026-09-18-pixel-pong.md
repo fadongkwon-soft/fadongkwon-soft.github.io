@@ -30,6 +30,9 @@ It works fully offline with no sign-up or login, and supports 9 languages.
 ![Pixel Pong home screen](/assets/img/20260918_pixel-pong/shot-home.png){: w="360" }
 ![Gameplay screen](/assets/img/20260918_pixel-pong/shot-play.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='tuQpDFslnWQ' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.pixel_pong>
 - Apps in Toss: <https://fadongkwon.com/toss/pixel-pong/> — open it on your phone and it connects straight into the Toss app.

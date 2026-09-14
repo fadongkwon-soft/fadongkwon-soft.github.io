@@ -29,6 +29,9 @@ alt_url: /posts/pixel-pong/
 ![픽셀 탁구 홈](/assets/img/20260918_pixel-pong/shot-home.png){: w="360" }
 ![플레이 화면](/assets/img/20260918_pixel-pong/shot-play.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='tuQpDFslnWQ' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.pixel_pong>
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/pixel-pong/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.

@@ -30,6 +30,9 @@ It works fully offline with no sign-up or login, and supports 9 languages.
 ![Number Slide home screen](/assets/img/20260917_slide-puzzle/shot-home.png){: w="360" }
 ![Gameplay screen](/assets/img/20260917_slide-puzzle/shot-play.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='oeoNzj4hZVI' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.slide_puzzle>
 - Apps in Toss: <https://fadongkwon.com/toss/slide-puzzle/> — open it on your phone and it connects straight into the Toss app.

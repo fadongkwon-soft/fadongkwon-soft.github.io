@@ -33,6 +33,9 @@ alt_url: /posts/rock-paper-scissors/
 ![가위바위보 홈 화면](/assets/img/20260921_rock-paper-scissors/shot-home.png){: w="360" }
 ![대결 화면](/assets/img/20260921_rock-paper-scissors/shot-play.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='z0Zf7I5pq7k' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.rock_paper_scissors>
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/rock-paper-scissors/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.

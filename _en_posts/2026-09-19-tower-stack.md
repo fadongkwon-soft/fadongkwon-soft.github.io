@@ -30,6 +30,9 @@ It works fully offline with no sign-up or login, and supports 9 languages.
 ![Tower Stack home screen](/assets/img/20260919_tower-stack/shot-home.png){: w="360" }
 ![Gameplay screen](/assets/img/20260919_tower-stack/shot-play.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='HmtoHuMSD3k' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.tower_stack>
 - Apps in Toss: <https://fadongkwon.com/toss/tower-stack/> — open it on your phone and it connects straight into the Toss app.

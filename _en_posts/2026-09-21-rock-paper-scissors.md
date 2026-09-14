@@ -34,6 +34,9 @@ It works fully offline with no sign-up or login, and supports 9 languages.
 ![Rock Paper Scissors home screen](/assets/img/20260921_rock-paper-scissors/shot-home.png){: w="360" }
 ![Match screen](/assets/img/20260921_rock-paper-scissors/shot-play.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='z0Zf7I5pq7k' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.rock_paper_scissors>
 - Apps in Toss: <https://fadongkwon.com/toss/rock-paper-scissors/> — open it on your phone and it connects straight into the Toss app.
