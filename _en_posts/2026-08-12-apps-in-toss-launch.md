@@ -5,7 +5,7 @@ image:
   path: /assets/img/20260812_apps-in-toss/icon.png
   alt: Apps in Toss launch
 date: 2026-08-12 21:30:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Platform]
 permalink: /posts/apps-in-toss-launch/
 alt_url: /ko/posts/apps-in-toss-launch/
 tags: [apps in toss, toss, mini app, saju lotto, juice spinner, spin the bottle, flutter, flutter web, solo developer]

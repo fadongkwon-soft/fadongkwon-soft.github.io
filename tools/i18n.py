@@ -234,10 +234,18 @@ def gen_archive_stubs():
     ):
         base = os.path.join(ROOT, kind)
         os.makedirs(base, exist_ok=True)
-        # 사라진 항목의 스텁 제거
+        # 사라진 항목의 스텁 제거. 단 **은퇴한 분류의 리다이렉트 스텁은 남긴다** —
+        # 이미 색인된 주소(예: 분류를 개편하며 없어진 /categories/episode/)가 404 를
+        # 내면 안 되므로, index.* 안에 redirect_to 가 있으면 건너뛴다(2026-09-15).
         for d in os.listdir(base):
             full = os.path.join(base, d)
-            if os.path.isdir(full) and d not in store:
+            if not os.path.isdir(full) or d in store:
+                continue
+            keep = any(
+                'redirect_to' in io.open(os.path.join(full, f), encoding='utf-8').read()
+                for f in os.listdir(full) if f.startswith('index.')
+            )
+            if not keep:
                 shutil.rmtree(full)
         for slug, display in sorted(store.items()):
             d = os.path.join(base, slug)

@@ -2,7 +2,7 @@
 title: 앱 27개 수익을 매일 손으로 확인하다가, 장부를 만들었습니다
 description: 앱인토스 콘솔에는 여러 앱을 한 화면에서 비교하는 모아보기가 없습니다. 수익과 후기를 한 곳에 모으는 스크립트와 파일 하나짜리 대시보드를 만든 과정, 그리고 매일 도는 자동화가 왜 아직 반쪽인지 정리했습니다
 date: 2026-09-15 20:30:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Automation]
 tags: [광고, 수익, 앱인토스, 구글플레이, 1인개발자, 개발일지, 자동화]
 pin: false
 image:

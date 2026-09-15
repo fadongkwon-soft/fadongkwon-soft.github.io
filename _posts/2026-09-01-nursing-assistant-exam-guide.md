@@ -2,7 +2,7 @@
 title: 간호조무사 되는 법 — 자격 요건부터 시험까지 한눈에
 description: 간호조무사 국가시험 응시 자격, 교육 이수 시간, 시험 과목과 합격 기준, 연간 시행 일정을 정리했습니다
 date: 2026-09-01 20:00:00 +0900
-categories: [Learning, Certification]
+categories: [Guides]
 tags: [간호조무사, 간호조무사시험, 국가시험, 자격증, 간호조무사자격증, 국시원, 시험정보]
 alt_url: /posts/nursing-assistant-exam-guide/
 ---

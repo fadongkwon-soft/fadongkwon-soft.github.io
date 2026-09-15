@@ -2,7 +2,7 @@
 title: "Why the Consent Sheet Never Appeared — I Wrote the Rule Down and Never Applied It to the Existing Apps"
 description: "Five days ago I called it my last mistake. I was wrong. The console showed approved, active and delivered every day, while the number of people receiving anything stayed at zero. If the group code and the template code differ by a single character the consent sheet never opens, and recording a failed request as asked burns that device forever"
 date: 2026-09-12 11:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Troubleshooting]
 permalink: /posts/push-consent-root-cause/
 alt_url: /ko/posts/push-consent-root-cause/
 image:

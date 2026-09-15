@@ -2,7 +2,7 @@
 title: 100dvh로 잡은 화면에 세로 스크롤이 생긴 이유 — targetSdk 35+ edge-to-edge 함정
 description: 앱 15개에서 한꺼번에 "화면이 조금 위아래로 흔들린다"는 제보를 받았습니다. 원인은 targetSdk 35 이상에서 강제되는 edge-to-edge였습니다. body가 safe-area 인셋만큼 패딩을 먹는데 그 안의 컨테이너를 100dvh로 잡으면 인셋이 두 번 계산돼 문서가 넘칩니다. 진단 과정과 한 줄 처방
 date: 2026-09-15 20:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Troubleshooting]
 tags: [안드로이드, 웹뷰, CSS, 앱인토스, 미니게임, 개발일지]
 image:
   path: /assets/img/20260915_edge-to-edge/cover.png

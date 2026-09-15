@@ -2,7 +2,7 @@
 title: The Sound Was Only Late on iPad — Four Steps That All Waited for the Play Button
 description: Hangul Monsters took noticeably long to read a word aloud. Android and desktop were fine; only Safari on iPad was slow. The cause was a single line. Every time the app spoke, it created a brand-new audio element, which meant everything from element creation to decoding happened only after the play button was pressed
 date: 2026-09-15 22:30:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Troubleshooting]
 permalink: /posts/audio-latency-ios/
 alt_url: /ko/posts/audio-latency-ios/
 image:

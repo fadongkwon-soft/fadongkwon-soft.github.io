@@ -2,7 +2,7 @@
 title: 첫 앱 출시까지의 여정
 description: 이 속도로 목표한 바를 이룰 수 있을 것인가...
 date: 2024-12-29 15:39:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Retrospective]
 tags: [앱출시, 개발자, 앱개발, 1인개발자, 사업자, Play Store, App Store, 플레이스토어, 앱스토어, 애플, 경제적 자유, 디지털 자산]
 pin: false
 math: true

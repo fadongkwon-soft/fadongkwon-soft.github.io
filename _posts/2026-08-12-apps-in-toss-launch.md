@@ -2,7 +2,7 @@
 title: 앱인토스에 3개 앱 출시 (Apps in Toss Launch)
 description: 사주로또, 주스 스피너, 병 돌리기를 토스 미니앱으로 만나보세요
 date: 2026-08-12 21:30:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Platform]
 tags: [앱인토스, Apps in Toss, 토스, 미니앱, 사주로또, 주스 스피너, 병 돌리기, Flutter, Flutter Web, 1인개발자]
 pin: false
 math: true

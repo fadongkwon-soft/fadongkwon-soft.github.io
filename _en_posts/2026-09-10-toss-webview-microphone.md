@@ -2,7 +2,7 @@
 title: "The Code Said \"Not Supported\" — It Had Been Working All Along"
 description: "The Apps in Toss build of Hangul Monsters hid its speech mode entirely and ran listening-only, because the code hardcoded available:false on the belief that the Toss WebView had no speech recognition. The question that unravelled it: if it works in a browser, why not in Toss, which is also a web app? Measuring it showed recognition had been there the whole time. A story about one unverified assumption cutting a feature in half"
 date: 2026-09-10 23:28:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Troubleshooting]
 permalink: /posts/toss-webview-microphone/
 alt_url: /ko/posts/toss-webview-microphone/
 image:

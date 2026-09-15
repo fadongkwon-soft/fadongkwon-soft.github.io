@@ -2,7 +2,7 @@
 title: 무효 트래픽으로 광고 계정이 29일 정지됐습니다 — 범인은 제 개발용 폰이었습니다
 description: 8월 26일 광고 게시자 계정이 무효 트래픽으로 29일 정지됐습니다. 이의신청 창구도 없었습니다. 전 코드베이스를 감사해 찾은 원인은 악의적 클릭이 아니라, 실제 광고 ID가 들어간 빌드를 개발용 폰에 깔고 계속 실행한 것이었습니다. 원인 규명 과정, 코드 네 곳에 넣은 차단 조치, 그리고 가장 뼈아팠던 사실
 date: 2026-09-25 20:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Troubleshooting]
 tags: [애드몹, 무효트래픽, 광고정책, 안드로이드, 1인개발자, 개발일지]
 image:
   path: /assets/img/20260925_invalid-traffic/cover.png

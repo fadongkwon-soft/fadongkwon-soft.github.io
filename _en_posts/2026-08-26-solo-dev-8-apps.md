@@ -5,7 +5,7 @@ image:
   path: /assets/img/20260826_devlog/apps-grid.jpg
   alt: Icons of the eight apps I have shipped so far
 date: 2026-08-26 20:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Retrospective]
 permalink: /posts/solo-dev-8-apps/
 alt_url: /ko/posts/solo-dev-8-apps/
 tags: [solo developer, app development, app launch, side project, dev log, play store, apps in toss, side hustle]

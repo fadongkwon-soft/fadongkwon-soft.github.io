@@ -2,7 +2,7 @@
 title: 한글 몬스터·수학 몬스터, 유료 상품을 없애고 전부 무료로 열었습니다
 description: 아이들 교육용 앱인 한글 몬스터와 수학 몬스터의 인앱 구매를 전부 없앴습니다. 일주일 동안 한 개도 팔리지 않은 상황에서, 유료로 파는 것보다 누구든 편하게 쓰는 쪽이 이 앱의 목적에 맞다고 판단한 이야기입니다
 date: 2026-09-05 17:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Retrospective]
 tags: [한글몬스터, 수학몬스터, 유아교육, 무료앱, 인앱결제, 1인개발자, 개발일지, education]
 image:
   path: /assets/img/20260905_monsters-free/cover.png

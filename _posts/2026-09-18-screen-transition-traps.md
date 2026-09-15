@@ -2,7 +2,7 @@
 title: 화면이 바뀌는 그 순간에 숨어 있던 버그 두 개 — 0으로 나눈 속도와 남아 있던 탭
 description: 벽돌깨기 공이 기어가듯 느렸던 진짜 이유는 숨겨진 화면의 높이를 재서 1px로 계산했기 때문이었습니다. 숫자 퍼즐은 마지막 조각을 놓은 그 손가락 동작이 방금 나타난 배너까지 눌러 완성 화면을 건너뛰었습니다. 둘 다 화면이 전환되는 한순간에 생긴 버그였고, 방어 코드가 원인을 감췄습니다
 date: 2026-09-18 20:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Troubleshooting]
 tags: [자바스크립트, 캔버스, 포인터이벤트, 디버깅, 미니게임, 개발일지]
 image:
   path: /assets/img/20260918_transition-traps/cover.png

@@ -2,7 +2,7 @@
 title: "\"안 된다\"고 적어 둔 코드가 사실은 되고 있었습니다 — 토스 웹뷰 마이크 이야기"
 description: "한글 몬스터 토스판은 말하기 모드를 아예 숨기고 듣기 전용으로 돌고 있었습니다. 토스 웹뷰에 음성 인식이 없다고 판단해 코드에 available:false를 박아 둔 탓입니다. 브라우저에서는 되는데 같은 웹앱인 토스에서 왜 안 되냐는 의문에서 시작해, 실제로 측정해 보니 인식은 처음부터 있었습니다. 잘못된 전제 하나가 기능을 반쪽으로 만든 이야기"
 date: 2026-09-10 23:28:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Troubleshooting]
 tags: [앱인토스, 웹뷰, 음성인식, 한글몬스터, 안드로이드, 1인개발자, 개발일지]
 image:
   path: /assets/img/20260910_toss-mic/cover.png

@@ -2,7 +2,7 @@
 title: "규칙이 없으면 같은 사고가 반복됩니다 — 홈페이지 URL 체계를 뒤집은 날"
 description: "영어 방문자가 개인정보처리방침을 누르면 한국어 사이트에 갇혔습니다. 원인은 홈만 규칙이 반대였던 것 — 루트는 영어인데 나머지 주소는 전부 한국어가 기본이었습니다. 규칙을 하나로 통일하면서 449개 파일을 옮기고, 조용히 실패하는 함정 세 개를 밟고, 그 셋을 도구가 잡도록 만든 기록"
 date: 2026-09-13 20:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Troubleshooting]
 tags: [Jekyll, i18n, SEO, GitHub Pages, 개발일지]
 image:
   path: /assets/img/20260913_url-scheme/cover.png

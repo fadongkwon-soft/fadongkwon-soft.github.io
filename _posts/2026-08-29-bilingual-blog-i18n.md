@@ -2,7 +2,7 @@
 title: 블로그를 한/영 이중 언어로 바꾸며 겪은 시행착오 8가지
 description: Jekyll(Chirpy) 블로그를 영어 기본 + 한국어 자동 선택 구조로 개편하면서 밟은 함정들 — 예약 게시, 테마 오버라이드, 서비스워커 좀비, 그리고 95편 배치 번역 운영기
 date: 2026-08-29 16:30:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Troubleshooting]
 tags: [jekyll, chirpy, i18n, SEO, github pages, 블로그, 다국어, 1인개발자]
 pin: false
 alt_url: /posts/bilingual-blog-i18n/

@@ -2,7 +2,7 @@
 title: 앱인토스 미니앱 14개, 첫 4주 광고 수익 13,365원 전부 공개합니다
 description: 앱인토스에 올린 미니앱 14개의 인앱광고 수익을 일자별·앱별로 전부 공개합니다. 27일간 13,365원, 노출 2,073회, 노출 한 건당 6.45원. 앱별 eCPM이 20배까지 벌어진 이유, 노출 1위가 수익 1위가 아닌 이유, 그리고 앱을 두 배로 늘렸을 때 수익이 얼마나 늘었는지까지 숫자로 정리했습니다
 date: 2026-09-12 20:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Platform]
 tags: [앱인토스, 인앱광고, 수익공개, 미니앱, eCPM, 1인개발자, 개발일지]
 image:
   path: /assets/img/20260912_toss-revenue/cover.png

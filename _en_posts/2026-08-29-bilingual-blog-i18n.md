@@ -2,7 +2,7 @@
 title: 8 Traps I Hit Making This Blog Bilingual (Jekyll + Chirpy)
 description: Turning a Korean-only Jekyll blog into English-first with automatic locale selection — scheduled-post pitfalls, theme override contracts, a zombie service worker, and running batch translation for 95 posts
 date: 2026-08-29 16:30:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Troubleshooting]
 permalink: /posts/bilingual-blog-i18n/
 alt_url: /ko/posts/bilingual-blog-i18n/
 tags: [jekyll, chirpy, i18n, seo, github pages, solo developer]

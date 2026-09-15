@@ -2,7 +2,7 @@
 title: The Day We Quit Kumon, Dad Started Building a Math Game
 description: After my eldest quit Kumon math, I built an app to keep the arithmetic practice going — the story of a personal app with my son's photo as its icon becoming Math Monsters.
 date: 2026-08-31 02:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Retrospective]
 image:
   path: /assets/img/20260825_math-monsters/feature.png
   alt: Math Monsters feature graphic

@@ -2,7 +2,7 @@
 title: 아이패드에서만 소리가 늦게 나왔다 — 재생 버튼을 누른 뒤에야 시작되던 네 단계
 description: 한글 몬스터가 단어를 읽어주기까지 눈에 띄게 늦었습니다. 안드로이드와 PC에서는 멀쩡했고 아이패드 사파리에서만 그랬습니다. 원인은 코드 한 줄이었습니다. 소리를 낼 때마다 오디오 엘리먼트를 새로 만들고 있었고, 그래서 엘리먼트 생성부터 디코드까지 네 단계가 전부 '재생 버튼을 누른 뒤에' 일어났습니다
 date: 2026-09-15 22:30:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Troubleshooting]
 tags: [웹오디오, iOS, 사파리, 성능, 디버깅, 개발일지]
 image:
   path: /assets/img/20260915_audio-latency/cover.png

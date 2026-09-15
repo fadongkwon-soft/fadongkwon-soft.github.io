@@ -2,7 +2,7 @@
 title: Checking 27 Apps by Hand Every Morning, Until I Built a Ledger
 description: Apps in Toss shows one app at a time, with no combined view across apps. Here is the ledger, the collector scripts and the single-file dashboard that replaced the morning clicking, and why the daily automation is still only half finished
 date: 2026-09-15 20:30:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Automation]
 image:
   path: /assets/img/20260915_revenue-dashboard/daily.png
   alt: Daily revenue dashboard

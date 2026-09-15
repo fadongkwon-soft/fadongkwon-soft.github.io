@@ -2,7 +2,7 @@
 title: Two Bugs Hiding in the Instant a Screen Changes — A Speed Divided by Nothing and a Tap That Lingered
 description: The real reason the brick-breaker ball crawled was that I measured a hidden element and got a height of 1px. In the slide puzzle, the same finger motion that placed the last tile also pressed the banner that had just appeared, skipping the completion screen entirely. Both bugs lived in the instant a screen changes, and in both cases my own defensive code hid the cause
 date: 2026-09-18 20:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Troubleshooting]
 permalink: /posts/screen-transition-traps/
 alt_url: /ko/posts/screen-transition-traps/
 image:

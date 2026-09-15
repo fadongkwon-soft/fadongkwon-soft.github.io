@@ -2,7 +2,7 @@
 title: "Play 콘솔을 클릭하던 일을 API로 옮겼습니다 — 로케일 121곳과 출시 한 줄"
 description: "스토어 등록정보의 동영상은 언어별 필드입니다. 앱마다 로케일 수가 2개·17개·29개로 다르고, 콘솔 웹으로는 언어당 12~15초씩 걸리는데 한국어 칸은 조용히 저장 실패하기도 했습니다. 서비스 계정 권한 두 개를 더해 Play Developer API로 옮기니 앱당 수 초가 됐고, AAB 업로드와 출시까지 한 줄이 됐습니다"
 date: 2026-09-16 20:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Automation]
 tags: [Play Store, API, 안드로이드, 1인개발자, 개발일지]
 image:
   path: /assets/img/20260916_play-api/cover.png

@@ -5,7 +5,7 @@ image:
   path: /assets/img/20260905_monsters-free/cover.png
   alt: Hangul Monsters and Math Monsters are now free
 date: 2026-09-05 17:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Retrospective]
 permalink: /posts/monsters-go-free/
 alt_url: /ko/posts/monsters-go-free/
 tags: [early education, solo developer, dev log, education]

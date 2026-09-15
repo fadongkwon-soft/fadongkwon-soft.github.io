@@ -2,7 +2,7 @@
 title: 구몬을 그만둔 날, 아빠는 수학 게임을 만들기 시작했다
 description: 첫째가 구몬수학을 그만둔 뒤 연산 연습을 이어가기 위해 직접 앱을 만든 이야기 — 아들 사진이 아이콘이던 개인용 앱이 수학 몬스터로 출시되기까지
 date: 2026-08-31 02:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Retrospective]
 tags: [1인개발자, 앱개발, 초등수학, 연산연습, 자녀교육, 사이드프로젝트, 수학공부]
 image:
   path: /assets/img/20260825_math-monsters/feature.png

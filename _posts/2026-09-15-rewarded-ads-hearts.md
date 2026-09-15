@@ -2,7 +2,7 @@
 title: 보상형 광고를 붙일 자리가 없는 게임에 하트를 달았습니다
 description: 힌트도 되돌리기도 없는 기록 게임에는 보상형 광고를 걸 훅이 없습니다. 게임 내용과 무관한 입장권을 공용 모듈로 만들어 7종에 붙인 과정과, 그 과정에서 밟은 두 가지 함정을 정리했습니다
 date: 2026-09-15 01:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Automation]
 tags: [광고, 보상형광고, 앱인토스, 구글플레이, 1인개발자, 개발일지, TypeScript]
 pin: false
 alt_url: /posts/rewarded-ads-hearts/

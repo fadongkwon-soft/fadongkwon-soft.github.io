@@ -2,7 +2,7 @@
 title: "Without a Rule, the Same Bug Comes Back — The Day I Flipped the Site's URL Scheme"
 description: "English readers who clicked the privacy policy got stranded on the Korean site. The cause was that only the home page followed the opposite rule — the root was English while every other path defaulted to Korean. A record of unifying the rule across 449 files, stepping on three silent failures, and making tools catch all three"
 date: 2026-09-13 20:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Troubleshooting]
 permalink: /posts/site-url-scheme/
 alt_url: /ko/posts/site-url-scheme/
 image:

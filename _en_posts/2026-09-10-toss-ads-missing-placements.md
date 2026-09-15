@@ -2,7 +2,7 @@
 title: I Shipped Ten Mini Games With No Ads — The Apps Were Done, the Ad Slots Were Never Created
 description: "On September 8 I launched ten mini games on Apps in Toss, and every one of them shipped with an empty ad slot because I never created the ad placements in the console. Nothing errored, so it took two days to notice. How I found a configuration gap that fails silently, and why fixing it in the console is not the end of it"
 date: 2026-09-10 01:06:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Troubleshooting]
 permalink: /posts/toss-ads-missing-placements/
 alt_url: /ko/posts/toss-ads-missing-placements/
 image:

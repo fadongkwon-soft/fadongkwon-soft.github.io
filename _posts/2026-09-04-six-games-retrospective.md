@@ -2,7 +2,7 @@
 title: 미니게임 6종을 한 번에 출시하며 배운 것 — 5일간의 회고
 description: 스도쿠·노노그램·불끄기·단어 맞추기·탭 버드·순발력 숫자판 6종을 Google Play와 앱인토스에 동시 출시한 5일을 돌아봅니다. 공용 스펙으로 묶은 이유, 원패스 등록 절차, 그리고 실제로 밟은 사고들
 date: 2026-09-04 23:50:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Retrospective]
 tags: [미니게임, 앱인토스, 구글플레이, 1인개발자, 개발일지, 회고, 퍼즐게임, TypeScript]
 image:
   path: /assets/img/20260904_six-games/cover.png

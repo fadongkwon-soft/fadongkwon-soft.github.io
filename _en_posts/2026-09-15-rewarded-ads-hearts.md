@@ -2,7 +2,7 @@
 title: Adding Hearts to Games With Nowhere to Put a Rewarded Ad
 description: Pure score games have no hint, no undo and no revive, so there is no hook to hang a rewarded ad on. Here is the shared entry-ticket module we built for seven games, and the two traps we walked into
 date: 2026-09-15 01:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Automation]
 permalink: /posts/rewarded-ads-hearts/
 alt_url: /ko/posts/rewarded-ads-hearts/
 tags: [ads, rewarded ads, apps in toss, google play, solo developer, devlog, TypeScript]

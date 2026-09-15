@@ -2,7 +2,7 @@
 title: 직장인 1인 개발, 앱 8개를 출시하며 배운 것들
 description: 퇴근 후 시간으로 앱 8개를 만들어 출시하면서 실제로 부딪힌 문제들과 그때마다 배운 것을 정리했습니다
 date: 2026-08-26 20:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Retrospective]
 tags: [1인개발자, 앱개발, 앱출시, 사이드프로젝트, 개발일지, PlayStore, 앱인토스, 직장인부업]
 image:
   path: /assets/img/20260826_devlog/apps-grid.jpg

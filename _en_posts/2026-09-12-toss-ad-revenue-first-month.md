@@ -2,7 +2,7 @@
 title: 14 Mini Apps, 13,365 KRW in Four Weeks — My Full Ad Revenue Numbers
 description: Every in-app ad number from 14 mini apps on Apps in Toss, broken down by day and by app. 13,365 KRW over 27 days, 2,073 impressions, 6.45 KRW per impression. Why eCPM varies twentyfold between apps, why the impression leader is not the revenue leader, and what actually happened when I doubled the number of apps
 date: 2026-09-12 20:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Platform]
 permalink: /posts/toss-ad-revenue-first-month/
 alt_url: /ko/posts/toss-ad-revenue-first-month/
 image:

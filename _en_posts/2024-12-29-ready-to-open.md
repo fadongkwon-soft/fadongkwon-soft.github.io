@@ -5,7 +5,7 @@ image:
   path: /assets/img/20241229_ready-to-open/developer_header_image.png
   alt: The logo of Fadongkwon Soft
 date: 2024-12-29 15:39:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Retrospective]
 permalink: /posts/ready-to-open/
 alt_url: /ko/posts/ready-to-open/
 tags: [app launch, developer, app development, solo developer, business registration, play store, app store, apple, financial freedom, digital assets]

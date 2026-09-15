@@ -2,7 +2,7 @@
 title: "I Moved the Play Console Clicking to the API — 121 Locale Slots and a One-Line Release"
 description: "The video on a store listing is a per-language field. Locale counts differ by app — 2, 17, or 29 — and through the console web each language took 12 to 15 seconds, while the Korean field sometimes failed to save without saying so. Adding two service account permissions moved the work to the Play Developer API: seconds per app, and AAB upload plus release in a single line"
 date: 2026-09-16 20:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Automation]
 permalink: /posts/play-console-api/
 alt_url: /ko/posts/play-console-api/
 image:

@@ -1,7 +1,7 @@
 ---
 layout: tag
-title: ios
-tag: ios
+title: iOS
+tag: iOS
 lang: en
 locale: en_US
 permalink: /tags/ios/

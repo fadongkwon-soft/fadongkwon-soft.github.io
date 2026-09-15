@@ -2,7 +2,7 @@
 title: Shipping Six Mini Games at Once — A Five-Day Retrospective
 description: Sudoku, Nonogram, All Lights Off, Hangul Word Guess, Tap Bird and Number Rush went live on Google Play and Apps in Toss within five days. Why one shared spec, the one-pass registration order, and the mistakes I actually made
 date: 2026-09-04 23:50:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Retrospective]
 permalink: /posts/six-games-retrospective/
 alt_url: /ko/posts/six-games-retrospective/
 image:

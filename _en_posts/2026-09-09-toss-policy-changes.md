@@ -2,7 +2,7 @@
 title: Apps in Toss Policy Changes for September and October — A Partner's Checklist
 description: Apps in Toss announced major changes across four separate notices since late August. Promotional smart-message push ends October 1, a full compliance review of every non-game mini app starts September 30, ad abuse stays permanently enforceable, a boosting program is unveiled on September 21, and business registration is now deferred. Here is what to do and by when, from someone running 26 mini apps
 date: 2026-09-09 22:40:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Platform]
 permalink: /posts/toss-policy-changes/
 alt_url: /ko/posts/toss-policy-changes/
 image:

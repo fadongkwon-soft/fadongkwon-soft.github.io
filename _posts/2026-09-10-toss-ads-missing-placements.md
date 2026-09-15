@@ -2,7 +2,7 @@
 title: 미니게임 10종을 광고 없이 출시했습니다 — 앱은 완성인데 지면을 안 만들었습니다
 description: "9월 8일 앱인토스에 미니게임 10종을 출시했는데, 광고 지면을 콘솔에서 만들지 않아 광고 영역이 비어 있는 채로 나갔습니다. 앱은 정상 동작하고 에러도 없어서 이틀 동안 눈치채지 못했습니다. 조용히 실패하는 설정 누락을 어떻게 발견했고, 왜 콘솔에서 고치는 것으로 끝나지 않는지 정리했습니다"
 date: 2026-09-10 01:06:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Troubleshooting]
 tags: [앱인토스, 인앱광고, 미니앱, 수익화, 1인개발자, 개발일지]
 image:
   path: /assets/img/20260910_missing-placements/cover.png

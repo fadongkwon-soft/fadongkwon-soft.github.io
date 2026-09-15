@@ -2,7 +2,7 @@
 title: "동의 시트는 왜 뜨지 않았나 — 규칙을 적어두고 기존 앱엔 적용하지 않았습니다"
 description: "5일 전에 '마지막 사고'라고 쓴 글이 틀렸습니다. 콘솔은 전부 승인이고 매일 발송 완료로 보이는데 받는 사람은 0명이었습니다. 그룹 코드와 템플릿 코드가 한 글자 다르면 동의 시트가 아예 뜨지 않고, 실패를 '물어봤다'로 기록하면 그 기기는 영영 다시 묻지 않습니다"
 date: 2026-09-12 11:00:00 +0900
-categories: [Blogging, Episode]
+categories: [Devlog, Troubleshooting]
 tags: [앱인토스, 푸시알림, 스마트메시지, 미니게임, 1인개발자, 개발일지, TypeScript]
 image:
   path: /assets/img/20260912_push-consent/cover.png
