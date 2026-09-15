@@ -2,7 +2,7 @@
 title: 초등 연산, 하루 10분이 30분보다 나은 이유
 description: 초등 저학년 연산 연습을 매일 짧게 이어가는 방법 — 문제 수 정하기, 시간 재기, 오답 다루기, 흥미 유지까지 정리했습니다
 date: 2026-08-30 20:00:00 +0900
-categories: [ETC]
+categories: [Other]
 tags: [초등수학, 연산연습, 수학공부법, 학습습관, 초등저학년, 자녀교육, 사칙연산]
 alt_url: /posts/math-drill-habit/
 ---
