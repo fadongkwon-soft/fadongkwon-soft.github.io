@@ -19,15 +19,29 @@
   돌려줄 수 있다. lang 은 lang.html 이 page.lang 에서 해석한 값이라 en/ko-KR 로 갈린다.
 {%- endcomment -%}
 {% if include.lang == 'en' %}
-  {% assign source = site.en_posts | where_exp: 'p', 'p.date <= site.time' %}
+  {% assign source = site.en_posts %}
 {% else %}
   {% assign source = site.posts %}
 {% endif %}
 
+{%- comment -%}
+  미래(예약) 문서는 양쪽 다 걸러야 한다. 아직 생성되지 않은 페이지를 링크하면
+  htmlproofer 가 빌드를 실패시킨다.
+{%- endcomment -%}
+{% assign source = source | where_exp: 'p', 'p.date <= site.time' %}
+
 {% assign all_list = '' | split: '' %}
 
 {% for post in source %}
-  {% assign datetime = post.last_modified_at | default: post.date %}
+{%- comment -%}
+    정렬은 **발행일(post.date)** 로 한다. last_modified_at 을 쓰면 안 된다 —
+    테마의 _plugins/posts-lastmod-hook.rb 가 `Jekyll::Hooks.register :posts` 로 걸려 있어
+    **한국어 _posts 에만** git 마지막 커밋 시각이 붙고 영문 컬렉션(en_posts)에는 안 붙는다.
+    그래서 한국어 패널만 '분류 일괄 수정' 같은 사소한 편집으로 8월 글이 맨 위로 올라오고,
+    영문 패널은 최신 글을 보여주는 비대칭이 생겼다(2026-09-16 발견).
+    양쪽을 발행일로 통일한다. 글 본문 상단의 '수정일' 표시는 post.html 이 그대로 쓴다.
+  {%- endcomment -%}
+  {% assign datetime = post.date %}
 
   {% capture elem %}
     {{- datetime | date: "%Y%m%d%H%M%S" -}}::{{- forloop.index0 -}}
