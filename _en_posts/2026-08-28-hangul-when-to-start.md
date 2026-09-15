@@ -2,7 +2,7 @@
 title: When to Start Teaching Hangul — Readiness Signs and Two Methods
 description: The readiness signs that tell you a child is ready to learn Hangul, and how the whole-word and letter-based methods actually differ.
 date: 2026-08-28 20:00:00 +0900
-categories: [Guides]
+categories: [ETC]
 permalink: /posts/hangul-when-to-start/
 alt_url: /ko/posts/hangul-when-to-start/
 tags: [hangul, early education, literacy, school readiness, parenting]

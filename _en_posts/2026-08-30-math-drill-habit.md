@@ -2,7 +2,7 @@
 title: Elementary Math Drills — Why 10 Minutes a Day Beats 30 Minutes
 description: How to keep daily arithmetic practice short for young kids — setting the number of problems, timing runs, handling wrong answers, and keeping interest up.
 date: 2026-08-30 20:00:00 +0900
-categories: [Guides]
+categories: [ETC]
 permalink: /posts/math-drill-habit/
 alt_url: /ko/posts/math-drill-habit/
 tags: [elementary math, arithmetic practice, math, study habits, early elementary, parenting, arithmetic]

@@ -2,7 +2,7 @@
 title: 아이 한글 떼기, 언제 시작할까 — 준비 신호와 두 가지 학습법
 description: 한글 학습을 시작할 시기를 판단하는 준비 신호와, 통문자 방식과 자모 방식의 차이를 정리했습니다
 date: 2026-08-28 20:00:00 +0900
-categories: [Guides]
+categories: [ETC]
 tags: [한글떼기, 한글공부, 유아교육, 문해력, 통문자, 자모학습, 초등입학준비, 자녀교육]
 alt_url: /posts/hangul-when-to-start/
 ---
