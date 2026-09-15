@@ -1,11 +1,11 @@
 ---
 title: 순위를 읽는 API가 없는 리더보드에 기록탭을 붙인 이야기 — 게임 20종
 description: 토스 게임센터 리더보드에 점수를 올리려다 읽기 API가 없다는 걸 알았습니다. 순위를 받아올 수 없으니 화면에 순위표를 그릴 수가 없습니다. 그래서 시간축은 우리가, 남들과의 비교는 토스가 맡는 2층 구조로 게임 20종에 일간·주간·월간·명예의 전당 기록탭을 붙였습니다. 하는 김에 일시정지와 하트 UI까지 손본 하루
-date: 2026-09-24 20:00:00 +0900
+date: 2026-09-16 01:33:00 +0900
 categories: [Devlog, Troubleshooting]
 tags: [토스, 앱인토스, 리더보드, 미니게임, UI, 1인개발자, 개발일지]
 image:
-  path: /assets/img/20260924_leaderboard-record-tabs/cover.png
+  path: /assets/img/20260916_leaderboard-record-tabs/cover.png
 alt_url: /posts/leaderboard-record-tabs/
 ---
 

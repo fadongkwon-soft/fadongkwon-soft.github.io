@@ -2,9 +2,9 @@
 title: Adding Record Tabs to a Leaderboard With No Read API — 20 Mini Games
 description: Toss Game Center lets you submit a score but never lets you read the rankings back. With no data to draw, I split the job in two — my app owns the time axis, Toss owns the comparison — and shipped daily, weekly, monthly and all-time record tabs across 20 games
 image:
-  path: /assets/img/20260924_leaderboard-record-tabs/cover.png
+  path: /assets/img/20260916_leaderboard-record-tabs/cover.png
   alt: Two panels showing my app owning personal records and Toss owning global rankings
-date: 2026-09-24 20:00:00 +0900
+date: 2026-09-16 01:33:00 +0900
 categories: [Devlog, Troubleshooting]
 permalink: /posts/leaderboard-record-tabs/
 alt_url: /ko/posts/leaderboard-record-tabs/
