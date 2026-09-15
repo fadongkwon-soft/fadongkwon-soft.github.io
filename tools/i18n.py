@@ -303,7 +303,10 @@ def gen_home_stubs():
         for i in range(2, pages + 1):
             d = os.path.join(base_dir, str(i))
             os.makedirs(d, exist_ok=True)
-            title = 'Apps, Tarot Meanings and Solo Dev Notes' if lang == 'en' else '앱, 타로 사전, 1인 개발 기록'
+            # 홈·페이지네이션의 제목은 사이트 이름으로 고정한다. 이 값이 og:title 로 나가서
+            # 카톡·SNS 공유 카드 제목이 된다 — 설명문을 넣으면 브랜드 대신 그게 뜬다(2026-09-16).
+            # 공유 카드의 설명 줄은 각 페이지의 description 이 맡는다.
+            title = 'Fadongkwon Soft'
             stub = chr(10).join([
                 '---', 'layout: home', 'lang: ' + lang, extra.rstrip(chr(10)), 'pnum: %d' % i,
                 'permalink: %s%d/' % (prefix, i), 'title: ' + title, 'sitemap: false', '---', '',
