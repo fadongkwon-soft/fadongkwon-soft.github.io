@@ -1,12 +1,12 @@
 ---
 title: The Sound Was Only Late on iPad — Four Steps That All Waited for the Play Button
 description: Hangul Monsters took noticeably long to read a word aloud. Android and desktop were fine; only Safari on iPad was slow. The cause was a single line. Every time the app spoke, it created a brand-new audio element, which meant everything from element creation to decoding happened only after the play button was pressed
-date: 2026-09-24 20:00:00 +0900
+date: 2026-09-15 22:30:00 +0900
 categories: [Blogging, Episode]
 permalink: /posts/audio-latency-ios/
 alt_url: /ko/posts/audio-latency-ios/
 image:
-  path: /assets/img/20260924_audio-latency/cover.png
+  path: /assets/img/20260915_audio-latency/cover.png
   alt: Diagram comparing four playback steps at press time against a single prepared playback step
 tags: [web audio, iOS, safari, performance, debugging, dev log]
 ---
@@ -108,4 +108,4 @@ Looking back, there is nothing wrong with the code that caused it. Creating an e
 
 When something is slow I usually look for *what* is slow. This time the answer was **when** the work happens. The same work, done while the user waits or done before they ask, is not the same thing at all.
 
-The web version already has the fix, and the Android and Apps-in-Toss builds went out with the same change.
+The web version already has the fix. The Android (Play) and Apps-in-Toss builds carry the same change and are waiting on review.
