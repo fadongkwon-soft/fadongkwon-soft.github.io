@@ -12,7 +12,10 @@
 #   즉 **앱을 낼 때마다 글을 고칠 필요가 없다.**
 #
 # 컬럼: id,name,tagline,emoji,play_package,toss_scheme,play,toss,name_en,tagline_en,
-#       icon,tagline_toss,tags,pos,kids
+#       icon,tagline_toss,tags,pos,kids,released,langs,name_ja,tagline_ja,... (총 31개)
+#   langs 는 그 앱이 지원하는 UI 언어(ko;en;ja;…), name_xx/tagline_xx 는 언어별 표기다.
+#   앱 안의 '이런 앱도 있어요' 리스트가 뷰어 언어로 나오도록 2026-09-17 에 추가됐다.
+#   이 사이트는 한/영뿐이라 name_en/tagline_en 만 쓰면 되고, 나머지는 읽지 않아도 된다.
 #   play / toss 는 '1' 이면 그 플랫폼에 라이브. 둘 다 0 이면 미출시라 목록에서 뺀다.
 #   pos 는 유사도 1차원 좌표(가까운 값 = 비슷한 앱)라 정렬에 쓰면 같은 계열이 붙는다.
 require 'csv'
