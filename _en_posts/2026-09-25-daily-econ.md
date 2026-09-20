@@ -4,7 +4,7 @@ description: Deposits, loans, taxes and pensions across ten topics, one question
 image:
   path: /assets/img/20260920_daily-econ/feature.png
   alt: Daily Money Quiz feature graphic
-date: 2026-09-27 09:00:00 +0900
+date: 2026-09-25 09:00:00 +0900
 categories: [Products, App]
 permalink: /posts/daily-econ/
 alt_url: /ko/posts/daily-econ/

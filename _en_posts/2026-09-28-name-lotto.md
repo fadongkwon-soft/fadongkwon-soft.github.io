@@ -4,7 +4,7 @@ description: A Korean name is broken into its consonants and vowels, read as the
 image:
   path: /assets/img/20260920_name-lotto/feature.png
   alt: Name Lotto feature graphic
-date: 2026-09-30 09:00:00 +0900
+date: 2026-09-28 09:00:00 +0900
 categories: [Products, App]
 permalink: /posts/name-lotto/
 alt_url: /ko/posts/name-lotto/

@@ -4,7 +4,7 @@ description: Ten eras from prehistory to the present, one question a day, with a
 image:
   path: /assets/img/20260920_daily-history/feature.png
   alt: Daily Korean History feature graphic
-date: 2026-09-26 09:00:00 +0900
+date: 2026-09-24 09:00:00 +0900
 categories: [Products, App]
 permalink: /posts/daily-history/
 alt_url: /ko/posts/daily-history/
