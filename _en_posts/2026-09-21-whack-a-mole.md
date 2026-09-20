@@ -2,9 +2,9 @@
 title: Mole Tap — Sixty Seconds of Reflexes
 description: A mole is +1, a gold mole is +3 and a bomb takes 2 away, across three difficulties with combos and six rank badges, now on Google Play and Apps in Toss
 image:
-  path: /assets/img/20260922_whack-a-mole/feature.png
+  path: /assets/img/20260921_whack-a-mole/feature.png
   alt: Mole Tap feature graphic
-date: 2026-09-22 09:00:00 +0900
+date: 2026-09-21 09:00:00 +0900
 categories: [Products, Game]
 permalink: /posts/whack-a-mole/
 alt_url: /ko/posts/whack-a-mole/
@@ -30,8 +30,8 @@ Scores are kept in a TOP 10 per difficulty, and you can share yours to challenge
 
 It works fully offline with no sign-up or login, and supports 9 languages.
 
-![Mole Tap home screen](/assets/img/20260922_whack-a-mole/shot-home.png){: w="360" }
-![Gameplay screen](/assets/img/20260922_whack-a-mole/shot-play.png){: w="360" }
+![Mole Tap home screen](/assets/img/20260921_whack-a-mole/shot-home.png){: w="360" }
+![Gameplay screen](/assets/img/20260921_whack-a-mole/shot-play.png){: w="360" }
 
 ## Gameplay Video
 {% include embed/youtube.html id='Jd7vIV57gJ4' %}

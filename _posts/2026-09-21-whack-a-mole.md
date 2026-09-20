@@ -1,12 +1,12 @@
 ---
 title: 두더지 잡기 — 60초 동안 튀어나오는 두더지를 톡톡
 description: 두더지는 +1, 황금 두더지는 +3, 폭탄은 -2. 3단계 난이도와 콤보, 새싹 농부부터 두더지 왕까지 6단계 배지를 담은 두더지 잡기를 Google Play와 앱인토스에 출시했습니다
-date: 2026-09-22 09:00:00 +0900
+date: 2026-09-21 09:00:00 +0900
 categories: [Products, Game]
 tags: [game, android, 두더지잡기, 순발력, 아케이드, 1인개발자]
 pin: false
 image:
-  path: /assets/img/20260922_whack-a-mole/feature.png
+  path: /assets/img/20260921_whack-a-mole/feature.png
 alt_url: /posts/whack-a-mole/
 ---
 ## Info
@@ -29,8 +29,8 @@ alt_url: /posts/whack-a-mole/
 
 완전 오프라인으로 동작하고, 회원가입·로그인 없이 바로 시작할 수 있습니다. 9개 언어를 지원합니다.
 
-![두더지 잡기 홈 화면](/assets/img/20260922_whack-a-mole/shot-home.png){: w="360" }
-![플레이 화면](/assets/img/20260922_whack-a-mole/shot-play.png){: w="360" }
+![두더지 잡기 홈 화면](/assets/img/20260921_whack-a-mole/shot-home.png){: w="360" }
+![플레이 화면](/assets/img/20260921_whack-a-mole/shot-play.png){: w="360" }
 
 ## 플레이 영상
 {% include embed/youtube.html id='Jd7vIV57gJ4' %}

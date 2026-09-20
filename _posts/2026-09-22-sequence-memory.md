@@ -1,12 +1,12 @@
 ---
 title: 순서 기억 — 빛나는 순서를 기억해 따라 누르기
 description: 4·6·9 패드 세 단계와 매일 하나씩 주어지는 오늘의 순서, 모드별 기록 TOP 10을 담은 순서 기억을 Google Play와 앱인토스에 출시했습니다
-date: 2026-09-23 09:00:00 +0900
+date: 2026-09-22 09:00:00 +0900
 categories: [Products, Game]
 tags: [game, android, 순서기억, 기억력, 두뇌게임, 1인개발자]
 pin: false
 image:
-  path: /assets/img/20260923_sequence-memory/feature.png
+  path: /assets/img/20260922_sequence-memory/feature.png
 alt_url: /posts/sequence-memory/
 ---
 ## Info
@@ -26,8 +26,8 @@ alt_url: /posts/sequence-memory/
 
 완전 오프라인으로 동작하고, 회원가입·로그인 없이 바로 시작할 수 있습니다. 9개 언어를 지원합니다.
 
-![순서 기억 홈 화면](/assets/img/20260923_sequence-memory/shot-home.png){: w="360" }
-![플레이 화면](/assets/img/20260923_sequence-memory/shot-play.png){: w="360" }
+![순서 기억 홈 화면](/assets/img/20260922_sequence-memory/shot-home.png){: w="360" }
+![플레이 화면](/assets/img/20260922_sequence-memory/shot-play.png){: w="360" }
 
 ## 플레이 영상
 {% include embed/youtube.html id='8SESsx_QpLg' %}

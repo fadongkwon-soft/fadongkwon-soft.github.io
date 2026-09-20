@@ -2,9 +2,9 @@
 title: Rock Paper Scissors — Streaks Against an AI That Reads You
 description: Two AI levels, one playing on pure luck and one reading the patterns in your hands, plus two-player matches on a single phone and TOP 10 streaks per level, now on Google Play and Apps in Toss
 image:
-  path: /assets/img/20260921_rock-paper-scissors/feature.png
+  path: /assets/img/20260920_rock-paper-scissors/feature.png
   alt: Rock Paper Scissors Streak feature graphic
-date: 2026-09-21 09:00:00 +0900
+date: 2026-09-20 09:00:00 +0900
 categories: [Products, Game]
 permalink: /posts/rock-paper-scissors/
 alt_url: /ko/posts/rock-paper-scissors/
@@ -31,8 +31,8 @@ If the person across from you could see it there would be no game, so both hands
 
 It works fully offline with no sign-up or login, and supports 9 languages.
 
-![Rock Paper Scissors home screen](/assets/img/20260921_rock-paper-scissors/shot-home.png){: w="360" }
-![Match screen](/assets/img/20260921_rock-paper-scissors/shot-play.png){: w="360" }
+![Rock Paper Scissors home screen](/assets/img/20260920_rock-paper-scissors/shot-home.png){: w="360" }
+![Match screen](/assets/img/20260920_rock-paper-scissors/shot-play.png){: w="360" }
 
 ## Gameplay Video
 {% include embed/youtube.html id='z0Zf7I5pq7k' %}

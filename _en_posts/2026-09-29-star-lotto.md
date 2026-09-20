@@ -4,7 +4,7 @@ description: Your birth date finds your star sign, and its lucky numbers go into
 image:
   path: /assets/img/20260920_star-lotto/feature.png
   alt: Star Sign Lotto feature graphic
-date: 2026-10-07 09:00:00 +0900
+date: 2026-09-29 09:00:00 +0900
 categories: [Products, App]
 permalink: /posts/star-lotto/
 alt_url: /ko/posts/star-lotto/

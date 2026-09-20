@@ -1,12 +1,12 @@
 ---
 title: 가위바위보 — 패턴을 읽는 AI와 연승 대결
 description: 운으로 겨루는 랜덤과 내 손버릇을 읽는 고수 두 단계 AI, 한 폰으로 마주 앉는 2인 대결, 난이도별 연승 기록을 담은 가위바위보를 Google Play와 앱인토스에 출시했습니다
-date: 2026-09-21 09:00:00 +0900
+date: 2026-09-20 09:00:00 +0900
 categories: [Products, Game]
 tags: [game, android, 가위바위보, 캐주얼, 대전게임, 1인개발자]
 pin: false
 image:
-  path: /assets/img/20260921_rock-paper-scissors/feature.png
+  path: /assets/img/20260920_rock-paper-scissors/feature.png
 alt_url: /posts/rock-paper-scissors/
 ---
 ## Info
@@ -30,8 +30,8 @@ alt_url: /posts/rock-paper-scissors/
 
 완전 오프라인으로 동작하고, 회원가입·로그인 없이 바로 시작할 수 있습니다. 9개 언어를 지원합니다.
 
-![가위바위보 홈 화면](/assets/img/20260921_rock-paper-scissors/shot-home.png){: w="360" }
-![대결 화면](/assets/img/20260921_rock-paper-scissors/shot-play.png){: w="360" }
+![가위바위보 홈 화면](/assets/img/20260920_rock-paper-scissors/shot-home.png){: w="360" }
+![대결 화면](/assets/img/20260920_rock-paper-scissors/shot-play.png){: w="360" }
 
 ## 플레이 영상
 {% include embed/youtube.html id='z0Zf7I5pq7k' %}

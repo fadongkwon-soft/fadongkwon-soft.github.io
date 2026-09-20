@@ -1,7 +1,7 @@
 ---
 title: 매일 한국사 — 하루 한 문제로 다시 만나는 한국사
 description: 선사부터 현대까지 열 개 시대에서 하루 한 문제, 해설과 오답 노트, 시대별 정답률까지 담은 매일 한국사를 Google Play와 앱인토스에 출시했습니다
-date: 2026-10-04 09:00:00 +0900
+date: 2026-09-26 09:00:00 +0900
 categories: [Products, App]
 tags: [app, android, 한국사, 한국사퀴즈, 상식퀴즈, 1인개발자]
 pin: false

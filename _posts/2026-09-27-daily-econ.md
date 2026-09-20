@@ -1,7 +1,7 @@
 ---
 title: 매일 경제 상식 — 하루 한 문제로 정리하는 생활 경제
 description: 예금·대출·세금·연금까지 열 개 주제에서 하루 한 문제, 용어를 짚어 주는 해설과 오답 노트를 담은 매일 경제 상식을 Google Play와 앱인토스에 출시했습니다
-date: 2026-10-05 09:00:00 +0900
+date: 2026-09-27 09:00:00 +0900
 categories: [Products, App]
 tags: [app, android, 경제상식, 재테크, 금융퀴즈, 1인개발자]
 pin: false

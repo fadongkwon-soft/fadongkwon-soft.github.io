@@ -1,12 +1,12 @@
 ---
 title: My Ad Account Was Suspended 29 Days for Invalid Traffic — The Culprit Was My Own Dev Phone
 description: On August 26 my ad publisher account was suspended for 29 days over invalid traffic, with no appeal available. Auditing every codebase turned up a cause that was not malicious clicking but builds carrying real ad IDs installed on my development phone and run for months. The investigation, the four code-level blocks I added, and the fact that hurt most
-date: 2026-09-25 20:00:00 +0900
+date: 2026-09-24 20:00:00 +0900
 categories: [Devlog, Troubleshooting]
 permalink: /posts/invalid-traffic-suspension/
 alt_url: /ko/posts/invalid-traffic-suspension/
 image:
-  path: /assets/img/20260925_invalid-traffic/cover.png
+  path: /assets/img/20260924_invalid-traffic/cover.png
   alt: Illustration of a development phone generating invalid ad traffic
 tags: [admob, invalid traffic, ad policy, android, solo developer, dev log]
 ---

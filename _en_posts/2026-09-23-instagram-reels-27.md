@@ -1,7 +1,7 @@
 ---
 title: Turning 27 Games Into Reels — 1.5x Speed, 9:16, and Links That Do Not Click
 description: Our Instagram account had 27 posts and not one video. The gameplay clips recorded for YouTube Shorts were already sitting there, so we re-cut all of them into Reels. Here is what mattered — why 1.5x, where a vertical video gets cropped, and the fact that a link in an Instagram caption is not clickable
-date: 2026-09-24 09:00:00 +0900
+date: 2026-09-23 09:00:00 +0900
 categories: [Devlog, Retrospective]
 permalink: /posts/instagram-reels-27/
 alt_url: /ko/posts/instagram-reels-27/

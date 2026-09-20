@@ -1,7 +1,7 @@
 ---
 title: Rejected Nine Times for a 20-Second Cold Start — the Culprit Was Not Loading
 description: An app that paints in 0.2 seconds on our machine was rejected for taking over 20 seconds to open. Six new apps, nine rejections in one day. It was not bundle size and not the SDK version. It was three outbound requests fired while the first screen was still painting
-date: 2026-09-26 09:00:00 +0900
+date: 2026-09-25 09:00:00 +0900
 categories: [Devlog, Troubleshooting]
 permalink: /posts/toss-20s-cold-start/
 alt_url: /ko/posts/toss-20s-cold-start/

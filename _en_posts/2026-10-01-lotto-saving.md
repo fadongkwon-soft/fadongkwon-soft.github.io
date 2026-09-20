@@ -4,7 +4,7 @@ description: Put weekly lottery spending next to the same amount in a savings ac
 image:
   path: /assets/img/20260920_lotto-saving/feature.png
   alt: Save Instead of Lotto feature graphic
-date: 2026-10-09 09:00:00 +0900
+date: 2026-10-01 09:00:00 +0900
 categories: [Products, App]
 permalink: /posts/lotto-saving/
 alt_url: /ko/posts/lotto-saving/
