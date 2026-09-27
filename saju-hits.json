@@ -1,0 +1,33 @@
+{
+  "schema": 2,
+  "generatedAt": "2026-09-24T09:25:37.003Z",
+  "card": {
+    "round": 1241,
+    "drawDate": "2026-09-12",
+    "numbers": [
+      7,
+      13,
+      16,
+      23,
+      24,
+      43
+    ],
+    "bonus": 9,
+    "periodKey": "20260906",
+    "gameCount": 5,
+    "match": {
+      "year": 2010,
+      "month": 4,
+      "day": 3,
+      "calendar": "solar",
+      "gender": "male",
+      "birthTime": 2,
+      "gameIndex": 2
+    }
+  },
+  "latestRound": 1242,
+  "latestDrawDate": "2026-09-19",
+  "matchCount": 0,
+  "searchedSeeds": 816686,
+  "carriedOver": true
+}
