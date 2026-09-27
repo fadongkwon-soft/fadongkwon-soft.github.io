@@ -1,9 +1,14 @@
 <!-- jekyll-theme-chirpy v7.6.0 의 _includes/head.html 오버라이드다.
   Gemfile 이 버전을 고정하고 있으니, 테마를 올릴 때 원본과 다시 대조할 것.
   원본 대비 변경점 하나.
-    · <title> 을 페이지별 제목 없이 site.title("Fadongkwon Soft")로 고정
-      (사용자 결정, 2026-08-30). SEO 메타(og:title 등)는 seo 태그(title=false)가
-      페이지별로 계속 내보내므로 브라우저 탭 표기만 바뀐다.
+    · <title> 은 원본과 같은 "페이지 제목 | 사이트명" 관례를 따르되, 원본의
+      tabs 분기(site.data.locales[lang].tabs[key])는 쓰지 않는다.
+      (2026-09-27 사용자 결정 — 2026-08-30 의 site.title 고정을 되돌린 것.)
+      이 사이트의 탭은 tarot·privacy·ko-about 처럼 테마 로케일에 키가 없어
+      원본 분기를 타면 제목이 빈 문자열이 되고 " | Fadongkwon Soft" 가 된다.
+      각 탭 파일이 이미 자기 언어로 title 을 들고 있으니 page.title 을 그대로 쓴다.
+      title 이 비어 있는 페이지에서 구분자만 남지 않도록 empty 검사도 건다.
+      SEO 메타(og:title 등)는 지금처럼 seo 태그(title=false)가 따로 내보낸다.
 -->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -60,7 +65,14 @@
     <meta name="fediverse:creator" content="{{ site.social.fediverse_handle }}">
   {% endif %}
 
-  <title>{{- site.title -}}</title>
+  <title>
+    {%- unless page.layout == 'home' -%}
+      {%- if page.title and page.title != empty -%}
+        {{- page.title | append: ' | ' -}}
+      {%- endif -%}
+    {%- endunless -%}
+    {{- site.title -}}
+  </title>
 
   {% include_cached favicons.html %}
 
