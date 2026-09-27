@@ -8,6 +8,7 @@ date: 2026-09-29 09:00:00 +0900
 categories: [Products, App]
 permalink: /posts/lotto-saving/
 alt_url: /ko/posts/lotto-saving/
+struct_exempt: [kramdown]
 tags: [app, android, savings, calculator, korea, solo developer]
 ---
 ## Info

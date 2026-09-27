@@ -8,6 +8,7 @@ date: 2026-09-25 09:00:00 +0900
 categories: [Products, App]
 permalink: /posts/daily-econ/
 alt_url: /ko/posts/daily-econ/
+struct_exempt: [kramdown]
 tags: [app, android, quiz, finance, korea, solo developer]
 ---
 ## Info

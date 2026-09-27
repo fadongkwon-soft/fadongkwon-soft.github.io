@@ -8,6 +8,10 @@
   - 이미지 개수와 **경로 동일성** (경로는 절대 바뀌면 안 된다)
   - 링크 href 집합 동일성 (fixup 전이므로 원문과 같아야 한다)
   - kramdown 속성 블록(`{: ... }`) 개수
+
+언어별로 일부러 다르게 쓴 항목은 **영문 front matter** 에
+`struct_exempt: [kramdown]` 처럼 적어 두면 [문제] 대신 [참고] 로 빠진다.
+(예: 한국어 전용 앱이라는 안내는 영문판에만 필요하다)
   - Liquid include / 태그 동일성
 """
 import io
@@ -306,6 +310,26 @@ def canon_liquid(t):
     return t.replace('tarot-app-banner.html', 'tarot-app-banner-ko.html')
 
 
+EXEMPT_KEYS = ('headings', 'tables', 'images', 'links', 'kramdown', 'liquid')
+
+
+def fm_exempt(fm, base, problems):
+    """영문 front matter 의 `struct_exempt: [a, b]` 를 집합으로 돌려준다.
+
+    언어별로 일부러 갈라 쓴 항목만 면제한다. 오타로 조용히 넘어가지 않도록
+    모르는 이름은 문제로 올린다.
+    """
+    m = re.search(r'^struct_exempt:[ \t]*\[(.*?)\][ \t]*$', fm, re.M)
+    if not m:
+        return set()
+    names = set(x.strip().strip('\'"') for x in m.group(1).split(',') if x.strip())
+    unknown = sorted(n for n in names if n not in EXEMPT_KEYS)
+    if unknown:
+        problems.append('%s: struct_exempt 에 모르는 이름 %s (쓸 수 있는 값: %s)'
+                        % (base, unknown, ', '.join(EXEMPT_KEYS)))
+    return names
+
+
 def profile(body):
     return dict(
         headings=re.findall(r'^(#{2,4})\s', body, re.M),
@@ -324,6 +348,7 @@ def main():
     ko_dir = os.path.join(ROOT, '_posts')
     en_dir = os.path.join(ROOT, '_en_posts')
     problems = []
+    notes = []
     checked = 0
 
     for enp in sorted(glob.glob(os.path.join(en_dir, '*.md'))):
@@ -349,27 +374,31 @@ def main():
         checked += 1
 
         k, e = profile(kb), profile(eb)
+        exempt = fm_exempt(efm, base, problems)
+
+        def report(key, msg):
+            (notes if key in exempt else problems).append(msg)
 
         if k['headings'] != e['headings']:
-            problems.append('%s: 제목 구조 불일치 ko=%s개%s en=%s개%s'
-                            % (base, len(k['headings']), k['headings'][:8],
-                               len(e['headings']), e['headings'][:8]))
+            report('headings', '%s: 제목 구조 불일치 ko=%s개%s en=%s개%s'
+                   % (base, len(k['headings']), k['headings'][:8],
+                      len(e['headings']), e['headings'][:8]))
         if k['tables'] != e['tables']:
-            problems.append('%s: 표 구조 불일치 ko=%s en=%s' % (base, k['tables'], e['tables']))
+            report('tables', '%s: 표 구조 불일치 ko=%s en=%s' % (base, k['tables'], e['tables']))
         if k['images'] != e['images']:
             only_ko = [x for x in k['images'] if x not in e['images']]
             only_en = [x for x in e['images'] if x not in k['images']]
-            problems.append('%s: 이미지 경로 불일치 ko전용=%s en전용=%s' % (base, only_ko, only_en))
+            report('images', '%s: 이미지 경로 불일치 ko전용=%s en전용=%s' % (base, only_ko, only_en))
         if k['links'] != e['links']:
             only_ko = [x for x in k['links'] if x not in e['links']]
             only_en = [x for x in e['links'] if x not in k['links']]
-            problems.append('%s: 링크 불일치 (fixup 전이라 같아야 함) ko전용=%s en전용=%s'
-                            % (base, only_ko, only_en))
+            report('links', '%s: 링크 불일치 (fixup 전이라 같아야 함) ko전용=%s en전용=%s'
+                   % (base, only_ko, only_en))
         if k['kramdown'] != e['kramdown']:
-            problems.append('%s: kramdown 속성 블록 개수 ko=%d en=%d'
-                            % (base, k['kramdown'], e['kramdown']))
+            report('kramdown', '%s: kramdown 속성 블록 개수 ko=%d en=%d'
+                   % (base, k['kramdown'], e['kramdown']))
         if k['liquid'] != e['liquid']:
-            problems.append('%s: Liquid 태그 불일치 ko=%s en=%s' % (base, k['liquid'], e['liquid']))
+            report('liquid', '%s: Liquid 태그 불일치 ko=%s en=%s' % (base, k['liquid'], e['liquid']))
 
         for key in ('title', 'description'):
             m = re.search(r'^' + key + r':[ \t]*(.*)$', efm, re.M)
@@ -396,6 +425,11 @@ def main():
     problems += check_en_category_pages()
 
     print('대조 %d개' % checked)
+    if notes:
+        print('')
+        print('[참고] struct_exempt 로 면제된 차이 %d건' % len(notes))
+        for n in notes:
+            print('  ~', n)
     if problems:
         print('')
         print('[문제] %d건' % len(problems))

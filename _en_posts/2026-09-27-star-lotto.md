@@ -8,6 +8,7 @@ date: 2026-09-27 09:00:00 +0900
 categories: [Products, App]
 permalink: /posts/star-lotto/
 alt_url: /ko/posts/star-lotto/
+struct_exempt: [kramdown]
 tags: [app, android, lottery, zodiac, korea, solo developer]
 ---
 ## Info

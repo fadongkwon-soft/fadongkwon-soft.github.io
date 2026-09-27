@@ -8,6 +8,7 @@ date: 2026-09-28 09:00:00 +0900
 categories: [Products, App]
 permalink: /posts/name-lotto/
 alt_url: /ko/posts/name-lotto/
+struct_exempt: [kramdown]
 tags: [app, android, lottery, korea, solo developer]
 ---
 ## Info
