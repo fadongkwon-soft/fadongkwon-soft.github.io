@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-09-27T16:59:02.517Z",
+  "card": {
+    "round": 1243,
+    "drawDate": "2026-09-26",
+    "numbers": [
+      9,
+      18,
+      24,
+      38,
+      43,
+      44
+    ],
+    "bonus": 35,
+    "periodKey": "20260920",
+    "gameCount": 5,
+    "match": {
+      "masked": "66나77○6",
+      "candidateCount": 10,
+      "gameIndex": 3
+    }
+  },
+  "latestRound": 1243,
+  "latestDrawDate": "2026-09-26",
+  "scanned": 569302,
+  "plateSpace": 346500000
+}
