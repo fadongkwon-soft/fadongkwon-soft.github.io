@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generatedAt": "2026-09-27T17:30:35.125Z",
+  "generatedAt": "2026-09-27T17:46:51.430Z",
   "card": {
     "round": 1243,
     "drawDate": "2026-09-26",
@@ -19,18 +19,21 @@
       {
         "masked": "23가06○0",
         "candidateCount": 10,
+        "spot": "back:2",
         "frontDigits": 2,
         "gameIndex": 3
       },
       {
-        "masked": "947마○297",
+        "masked": "○47마1297",
         "candidateCount": 10,
+        "spot": "front:0",
         "frontDigits": 3,
         "gameIndex": 2
       },
       {
-        "masked": "○45더1522",
+        "masked": "245더○522",
         "candidateCount": 10,
+        "spot": "back:0",
         "frontDigits": 3,
         "gameIndex": 2
       }
