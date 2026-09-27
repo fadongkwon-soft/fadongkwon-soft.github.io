@@ -1,6 +1,6 @@
 {
-  "schema": 1,
-  "generatedAt": "2026-09-27T16:59:02.517Z",
+  "schema": 2,
+  "generatedAt": "2026-09-27T17:30:35.125Z",
   "card": {
     "round": 1243,
     "drawDate": "2026-09-26",
@@ -15,14 +15,29 @@
     "bonus": 35,
     "periodKey": "20260920",
     "gameCount": 5,
-    "match": {
-      "masked": "66나77○6",
-      "candidateCount": 10,
-      "gameIndex": 3
-    }
+    "matches": [
+      {
+        "masked": "23가06○0",
+        "candidateCount": 10,
+        "frontDigits": 2,
+        "gameIndex": 3
+      },
+      {
+        "masked": "947마○297",
+        "candidateCount": 10,
+        "frontDigits": 3,
+        "gameIndex": 2
+      },
+      {
+        "masked": "○45더1522",
+        "candidateCount": 10,
+        "frontDigits": 3,
+        "gameIndex": 2
+      }
+    ]
   },
   "latestRound": 1243,
   "latestDrawDate": "2026-09-26",
-  "scanned": 569302,
+  "scanned": 3874587,
   "plateSpace": 346500000
 }
