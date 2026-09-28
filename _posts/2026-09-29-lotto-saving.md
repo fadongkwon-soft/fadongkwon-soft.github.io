@@ -35,11 +35,11 @@ alt_url: /posts/lotto-saving/
 ![로또 대신 저축 사용 화면](/assets/img/20260920_lotto-saving/shot-play.png){: w="360" }
 
 ## Download
-- Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.lotto_saving>
+- Google Play: 심사 중입니다. 통과하면 이 글에 링크를 넣겠습니다.
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/lotto-saving/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.
 
 ## 함께 나온 앱
 10월에 여섯 개를 함께 냈습니다. 하루 한 문제로 이어 가는 **매일 한국사**와 **매일 경제 상식**,
 늘 보던 것에서 번호를 뽑는 **차번호 로또**·**별자리 로또**·**내 이름 로또**,
 그리고 그 돈을 모았다면 어땠을지 계산해 보는 **로또 대신 저축**입니다.
-여섯 개 모두 Google Play와 앱인토스(토스 미니앱)에 함께 올렸습니다.
+여섯 개 모두 앱인토스(토스 미니앱)에 올렸고, Google Play판은 심사 중입니다.
