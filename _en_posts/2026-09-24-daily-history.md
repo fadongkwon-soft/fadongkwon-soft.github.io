@@ -41,7 +41,7 @@ Large type, roomy answer buttons, one-handed on a train. Fully offline, no sign-
 - Apps in Toss: <https://fadongkwon.com/toss/daily-history/> — open it on your phone and it connects straight into the Toss app.
 
 ## Released Alongside
-Six apps went out together in October: **Daily Korean History** and **Daily Money Quiz**, one question a day each;
+Six apps went out together in September: **Daily Korean History** and **Daily Money Quiz**, one question a day each;
 **Car Number Lotto**, **Star Sign Lotto** and **Name Lotto**, which draw numbers from something you already carry around;
 and **Save Instead of Lotto**, which adds up what the same money would have become in a savings account.
 All six are live as Toss mini apps; the Google Play versions are still under review.
