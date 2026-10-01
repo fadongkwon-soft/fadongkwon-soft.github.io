@@ -36,6 +36,9 @@ Large type, roomy answer buttons, one-handed on a train. Fully offline, no sign-
 ![Daily Korean History home screen](/assets/img/20260920_daily-history/shot-home.png){: w="360" }
 ![Daily Korean History in use](/assets/img/20260920_daily-history/shot-play.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='V4XoT4X7DJI' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.daily_history>
 - Apps in Toss: <https://fadongkwon.com/toss/daily-history/> — open it on your phone and it connects straight into the Toss app.

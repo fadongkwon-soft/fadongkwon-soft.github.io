@@ -40,6 +40,9 @@ Offline, no sign-up.
 ![Daily Money Quiz home screen](/assets/img/20260920_daily-econ/shot-home.png){: w="360" }
 ![Daily Money Quiz in use](/assets/img/20260920_daily-econ/shot-play.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='v7AznLr918E' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.daily_econ>
 - Apps in Toss: <https://fadongkwon.com/toss/daily-econ/> — open it on your phone and it connects straight into the Toss app.

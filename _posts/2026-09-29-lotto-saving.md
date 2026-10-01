@@ -34,6 +34,9 @@ alt_url: /posts/lotto-saving/
 ![로또 대신 저축 홈 화면](/assets/img/20260920_lotto-saving/shot-home.png){: w="360" }
 ![로또 대신 저축 사용 화면](/assets/img/20260920_lotto-saving/shot-play.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='eIUbi2BwPiw' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.lotto_saving>
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/lotto-saving/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.

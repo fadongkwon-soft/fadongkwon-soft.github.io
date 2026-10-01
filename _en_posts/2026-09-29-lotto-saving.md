@@ -40,6 +40,9 @@ First to third prize amounts vary by round, so long-run averages are used. Fourt
 ![Save Instead of Lotto home screen](/assets/img/20260920_lotto-saving/shot-home.png){: w="360" }
 ![Save Instead of Lotto in use](/assets/img/20260920_lotto-saving/shot-play.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='eIUbi2BwPiw' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.lotto_saving>
 - Apps in Toss: <https://fadongkwon.com/toss/lotto-saving/> — open it on your phone and it connects straight into the Toss app.

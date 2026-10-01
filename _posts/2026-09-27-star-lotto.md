@@ -32,6 +32,9 @@ alt_url: /posts/star-lotto/
 ![별자리 로또 홈 화면](/assets/img/20260920_star-lotto/shot-home.png){: w="360" }
 ![별자리 로또 사용 화면](/assets/img/20260920_star-lotto/shot-play.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='I9Y-Crq79Uk' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.star_lotto>
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/star-lotto/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.

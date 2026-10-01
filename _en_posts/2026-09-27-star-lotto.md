@@ -37,6 +37,9 @@ The balls that came from the sign are marked, and a one-line note explains the p
 ![Star Sign Lotto home screen](/assets/img/20260920_star-lotto/shot-home.png){: w="360" }
 ![Star Sign Lotto in use](/assets/img/20260920_star-lotto/shot-play.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='I9Y-Crq79Uk' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.star_lotto>
 - Apps in Toss: <https://fadongkwon.com/toss/star-lotto/> — open it on your phone and it connects straight into the Toss app.

@@ -33,6 +33,9 @@ alt_url: /posts/daily-econ/
 ![매일 경제 상식 홈 화면](/assets/img/20260920_daily-econ/shot-home.png){: w="360" }
 ![매일 경제 상식 사용 화면](/assets/img/20260920_daily-econ/shot-play.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='v7AznLr918E' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.daily_econ>
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/daily-econ/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.

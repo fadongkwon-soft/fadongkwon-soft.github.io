@@ -35,6 +35,9 @@ alt_url: /posts/daily-history/
 ![매일 한국사 홈 화면](/assets/img/20260920_daily-history/shot-home.png){: w="360" }
 ![매일 한국사 사용 화면](/assets/img/20260920_daily-history/shot-play.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='V4XoT4X7DJI' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.daily_history>
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/daily-history/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.

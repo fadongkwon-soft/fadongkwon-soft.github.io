@@ -37,6 +37,9 @@ Each game takes two numbers from that band and four from the name itself. Band n
 ![Name Lotto home screen](/assets/img/20260920_name-lotto/shot-home.png){: w="360" }
 ![Name Lotto in use](/assets/img/20260920_name-lotto/shot-play.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='bRyhQ25CMyo' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.name_lotto>
 - Apps in Toss: <https://fadongkwon.com/toss/name-lotto/> — open it on your phone and it connects straight into the Toss app.
