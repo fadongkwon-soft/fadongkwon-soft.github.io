@@ -12,7 +12,7 @@ tags: [app, android, tarot, tarot card, fortune telling, cute app, solo develope
 ## Info
 > **Tarot Ping** is the cute-deck edition of our tarot reading app: the same 78 cards ×
 > 12 themes × upright/reversed interpretations, drawn as pastel mascot characters.
-> 9 languages, no ads in the current version.
+> Available in 9 languages.
 {: .prompt-info }
 
 ## Same tarot, a friendlier face
@@ -26,7 +26,6 @@ keep things light.
 - 🧭 **12 themes** — today's fortune, love, marriage, relationships, career, business, money, investment, real estate, study, family, health
 - ➕ **Advice cards** — draw up to 2 more for a 3-card reading
 - 🌏 **9 languages** supported
-- 🚫 The current version has **no ads**
 
 If you want to know what each card means on its own, the [Tarot Card Meanings — All 78 Cards](/tarot/)
 has the full write-ups alongside the cute deck artwork.

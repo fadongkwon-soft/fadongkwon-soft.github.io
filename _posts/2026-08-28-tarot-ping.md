@@ -12,7 +12,7 @@ alt_url: /posts/tarot-ping/
 ## Info
 > **Tarot Ping** is the cute-deck edition of our tarot reading app: the same 78 cards ×
 > 12 themes × upright/reversed interpretations, drawn as pastel mascot characters.
-> 9 languages, no ads in the current version.
+> Available in 9 languages.
 {: .prompt-info }
 
 ## 같은 타로, 귀여운 얼굴
@@ -25,7 +25,6 @@ alt_url: /posts/tarot-ping/
 - 🧭 **12가지 주제** — 오늘의 운세, 연애, 결혼, 관계, 직장, 사업, 금전, 투자, 부동산, 학업, 가족, 건강
 - ➕ **조언 카드** — 최대 2장까지 추가로 뽑아 총 3장 리딩
 - 🌏 **9개 언어** 지원
-- 🚫 현재 버전은 **광고가 없습니다**
 
 카드 한 장 한 장의 뜻이 궁금하다면 [타로 카드 78장 의미 사전](/ko/tarot/)에서
 큐트 덱 그림과 함께 상세 풀이를 읽을 수 있어요.
