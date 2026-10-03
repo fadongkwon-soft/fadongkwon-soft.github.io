@@ -56,7 +56,7 @@ It also now tells **a zero day** apart from **a day that was never collected.** 
 A **Total · Toss · Play** switch now sits at the top. Pick one and every metric, chart and table is recalculated for that platform. In the total view each table gains a Toss column and a Play column, and the "this month" card shows both shares.
 
 ![Total view — key metrics and daily revenue](/assets/img/20261003_revenue-ledger-update/overview.png){: w="760" }
-_The total view. The this-month card splits Toss and Play, and promotion spend has a card of its own_
+_The total view. The this-month card splits Toss and Play, and promotion spend has a card of its own. Figures are blurred_
 
 Both Toss and AdMob are loaded **only up to yesterday.** If one side had today's numbers and the other did not, the last day of the total would be a fragment and look like a sudden drop.
 
@@ -64,7 +64,7 @@ Both Toss and AdMob are loaded **only up to yesterday.** If one side had today's
 Click an app in the per-app table and **its daily revenue opens right below it.** No page change, and only one app is open at a time.
 
 ![One app expanded — daily bars and table](/assets/img/20261003_revenue-ledger-update/app-detail.png){: w="760" }
-_Breakout expanded. Toss is stacked below and Play above; the dashed line marks the first promotion payout_
+_Breakout expanded. Toss is stacked below and Play above; the dashed line marks the first promotion payout. Figures are blurred_
 
 - Changing the period (14 days, 30 days, all) updates the summary, chart and table together.
 - Days **before an app launched count as "no data", not zero.** A mid-September app's 30-day average no longer looks low because of pre-launch zeros.
@@ -80,7 +80,7 @@ With the 1 KRW promotion running in 26 apps, I wanted to see every day how many 
 The dashboard has a new **Promotions** tab. For each app it puts **the average daily Toss ad revenue in the seven days before the first payout** next to the average since, and computes **ad revenue per 1 KRW spent.** If 1 KRW brings in more than 1 KRW, we keep going; if not, we stop.
 
 ![Promotions tab — payouts per app and ad revenue before and after](/assets/img/20261003_revenue-ledger-update/promo.png){: w="760" }
-_Taken around noon on 3 October, so today's payouts are only partly in. With one day of data, the per-1-KRW figures are for reference only_
+_Each app gets one row with its budget, spend, and ad revenue before and after the first payout. Figures are blurred_
 
 ## 6. One Name for Toss and Play
 The dashboard showed "Name Lotto" and the full Play store title of the same app as two separate rows. The Toss side used a label I had written; the Play side came in with the store title registered in AdMob. As a result, our four lotto apps looked as if they earned nothing on Toss.
