@@ -153,6 +153,11 @@ TAG_GLOSSARY = {
     '애드몹': 'admob',
     '무효트래픽': 'invalid traffic',
     '광고정책': 'ad policy',
+    '광고': 'ads',
+    '수익': 'revenue',
+    '구글플레이': 'google play',
+    '프로모션': 'promotion',
+    '마케팅': 'marketing',
     # 게임 장르·개별 게임
     '퍼즐': 'puzzle',
     '숫자퍼즐': 'number puzzle',
