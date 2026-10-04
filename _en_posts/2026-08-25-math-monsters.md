@@ -10,6 +10,8 @@ permalink: /posts/math-monsters/
 alt_url: /ko/posts/math-monsters/
 tags: [game, android, education, math, early education, monsters, solo developer]
 ---
+{% include app-badge.html id='math-monsters' %}
+
 ## Info
 > **Math Monsters** is a math-practice game for kids: solve addition, subtraction,
 > multiplication and division problems to catch monsters. Addition and subtraction

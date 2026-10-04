@@ -9,6 +9,8 @@ image:
   path: /assets/img/20260825_math-monsters/feature.png
 alt_url: /posts/math-monsters/
 ---
+{% include app-badge.html id='math-monsters' %}
+
 ## Info
 > **Math Monsters** is a math-practice game for kids: solve addition, subtraction,
 > multiplication and division problems to catch monsters. Addition and subtraction

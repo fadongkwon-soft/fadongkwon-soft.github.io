@@ -1,0 +1,12 @@
+# 앱 id(레지스트리 apps.csv 의 id) → 스토어가 공식으로 준 인정(배지).
+# _includes/app-badge.html 이 읽어 APPS 표 · PLAY 카드 · 앱 소개글에 배지를 단다.
+# 근거를 직접 확인한 것만 적는다(콘솔 화면 + 공개 스토어 페이지).
+math-monsters:
+  teacher_approved:
+    # Google Play 교사 추천(Teacher Approved). 콘솔 '교사 추천 프로그램' 상태 승인,
+    # 마지막 검토 2026-09-29, 콘솔 알림 2026-09-30.
+    # 공개 페이지 데이터: "Approved by teachers for: Ages 6-12" / "교사가 만 6~12세 연령대에 적합한 앱으로 승인함"
+    since: "2026-09-29"
+    ages_ko: "만 6~12세"
+    ages_en: "ages 6–12"
+    post: math-monsters-teacher-approved

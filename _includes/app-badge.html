@@ -1,0 +1,20 @@
+{%- comment -%}
+  스토어 공식 인정 배지 — 데이터는 _data/app_badges.yml.
+  사용 예: include app-badge.html id='math-monsters'   (APPS 표에서는 id=a.id)
+  · 언어는 include.lang > page.lang(영문 글·페이지는 en) > site.lang 순으로 고른다.
+    한·영 글이 같은 include 줄을 쓰게 하려는 것이다 — i18n_structcheck 가 include 동일성을 본다.
+  · 출력은 반드시 한 줄이어야 한다. APPS 페이지는 마크다운 표의 한 행 안에서 이걸 부르므로
+    줄바꿈이 하나라도 나가면 표가 깨진다. 그래서 모든 태그에 공백 제거용 하이픈을 붙였다.
+  · 주석 안에도 Liquid 태그 모양을 쓰지 말 것 — 주석 본문도 토큰화되어 빈 태그는 빌드 오류가 난다.
+  · 배지가 없는 앱이면 아무것도 출력하지 않는다.
+{%- endcomment -%}
+{%- assign _badge = site.data.app_badges[include.id] -%}
+{%- if _badge and _badge.teacher_approved -%}
+{%- assign _ta = _badge.teacher_approved -%}
+{%- assign _lang = include.lang | default: page.lang | default: site.lang -%}
+{%- if _lang == 'en' -%}
+<a class="ta-badge" href="/posts/{{ _ta.post }}/" title="Google Play Teacher Approved — approved by teachers for {{ _ta.ages_en }}"><i class="fas fa-award" aria-hidden="true"></i> Google Play Teacher Approved</a>
+{%- else -%}
+<a class="ta-badge" href="/ko/posts/{{ _ta.post }}/" title="Google Play 교사 추천 — 교사가 {{ _ta.ages_ko }}에게 적합한 앱으로 승인"><i class="fas fa-award" aria-hidden="true"></i> Google Play 교사 추천</a>
+{%- endif -%}
+{%- endif -%}

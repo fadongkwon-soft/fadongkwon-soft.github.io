@@ -23,6 +23,7 @@ alt_url: /play/
     <a class="play-thumb" href="/play/math-monsters/"><img src="/app-icons/math-monsters.png" alt="수학 몬스터"></a>
     <div class="play-body">
       <b>수학 몬스터</b>
+      {% include app-badge.html id='math-monsters' %}
       <small>문제를 풀어 몬스터를 잡아요. 덧셈·뺄셈·곱셈·나눗셈, 난이도 3단계 전부 무료.</small>
       <a class="play-btn" href="/play/math-monsters/">▶ 바로 하기</a>
     </div>

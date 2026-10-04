@@ -25,6 +25,7 @@ Learning games you can try right here, no install needed. They work on phones, t
     <a class="play-thumb" href="/play/math-monsters/"><img src="/app-icons/math-monsters.png" alt="Math Monsters"></a>
     <div class="play-body">
       <b>Math Monsters</b>
+      {% include app-badge.html id='math-monsters' %}
       <small>Solve problems to catch monsters. Addition, subtraction, multiplication and division at three difficulties, all free.</small>
       <a class="play-btn" href="/play/math-monsters/">▶ Play now</a>
     </div>
