@@ -1,1489 +1,1587 @@
 {
   "schema": 3,
-  "generatedAt": "2026-09-28T15:03:10.075Z",
+  "generatedAt": "2026-10-04T05:24:35.974Z",
   "card": {
-    "round": 1243,
-    "drawDate": "2026-09-26",
+    "round": 1244,
+    "drawDate": "2026-10-03",
     "numbers": [
-      9,
+      1,
+      13,
       18,
-      24,
-      38,
-      43,
-      44
+      26,
+      34,
+      38
     ],
-    "bonus": 35,
-    "periodKey": "20260920",
+    "bonus": 25,
+    "periodKey": "20260927",
     "gameCount": 5,
     "matches": [
       {
-        "masked": "37버35○4",
+        "masked": "9○3서0144",
         "candidateCount": 10,
-        "spot": "back:2",
-        "frontDigits": 2,
-        "gameIndex": 1
-      },
-      {
-        "masked": "866루5○36",
-        "candidateCount": 10,
-        "spot": "back:1",
+        "spot": "front:1",
         "frontDigits": 3,
-        "gameIndex": 5
+        "gameIndex": 2
       },
       {
-        "masked": "○13부8644",
+        "masked": "○5모6741",
         "candidateCount": 10,
         "spot": "front:0",
-        "frontDigits": 3,
+        "frontDigits": 2,
         "gameIndex": 3
+      },
+      {
+        "masked": "87허089○",
+        "candidateCount": 10,
+        "spot": "back:3",
+        "frontDigits": 2,
+        "gameIndex": 2
       }
     ]
   },
   "all": [
     {
-      "masked": "14도25○7",
-      "candidateCount": 10,
-      "spot": "back:2",
-      "frontDigits": 2,
-      "gameIndex": 3
-    },
-    {
-      "masked": "2○머1170",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 2,
-      "gameIndex": 4
-    },
-    {
-      "masked": "○3가0650",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 2,
-      "gameIndex": 3
-    },
-    {
-      "masked": "25부○721",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 2,
-      "gameIndex": 2
-    },
-    {
-      "masked": "34가○098",
+      "masked": "13노○090",
       "candidateCount": 10,
       "spot": "back:0",
       "frontDigits": 2,
       "gameIndex": 1
     },
     {
-      "masked": "3○주6568",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 2,
-      "gameIndex": 1
-    },
-    {
-      "masked": "37버○554",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 2,
-      "gameIndex": 1
-    },
-    {
-      "masked": "3○너0656",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 2,
-      "gameIndex": 4
-    },
-    {
-      "masked": "○0버8992",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 2,
-      "gameIndex": 3
-    },
-    {
-      "masked": "42서99○9",
-      "candidateCount": 10,
-      "spot": "back:2",
-      "frontDigits": 2,
-      "gameIndex": 5
-    },
-    {
-      "masked": "51하52○1",
-      "candidateCount": 10,
-      "spot": "back:2",
-      "frontDigits": 2,
-      "gameIndex": 2
-    },
-    {
-      "masked": "65루409○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 2,
-      "gameIndex": 4
-    },
-    {
-      "masked": "6○나7736",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 2,
-      "gameIndex": 3
-    },
-    {
-      "masked": "○0주0306",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 2,
-      "gameIndex": 4
-    },
-    {
-      "masked": "71가33○7",
-      "candidateCount": 10,
-      "spot": "back:2",
-      "frontDigits": 2,
-      "gameIndex": 2
-    },
-    {
-      "masked": "○2노1761",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 2,
-      "gameIndex": 3
-    },
-    {
-      "masked": "91서1○11",
-      "candidateCount": 10,
-      "spot": "back:1",
-      "frontDigits": 2,
-      "gameIndex": 5
-    },
-    {
-      "masked": "91로92○6",
-      "candidateCount": 10,
-      "spot": "back:2",
-      "frontDigits": 2,
-      "gameIndex": 4
-    },
-    {
-      "masked": "91구074○",
+      "masked": "14더301○",
       "candidateCount": 10,
       "spot": "back:3",
       "frontDigits": 2,
       "gameIndex": 2
     },
     {
-      "masked": "○02무6775",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "107너8○59",
+      "masked": "15모6○41",
       "candidateCount": 10,
       "spot": "back:1",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "○15서7551",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "116하424○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "1○6소1448",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "129버○127",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "13○허2851",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
+      "frontDigits": 2,
       "gameIndex": 3
     },
     {
-      "masked": "133호206○",
+      "masked": "33가713○",
       "candidateCount": 10,
       "spot": "back:3",
-      "frontDigits": 3,
+      "frontDigits": 2,
       "gameIndex": 1
     },
     {
-      "masked": "137버594○",
+      "masked": "○1조4494",
       "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 2
+      "spot": "front:0",
+      "frontDigits": 2,
+      "gameIndex": 1
     },
     {
-      "masked": "13○가6044",
+      "masked": "4○보4147",
       "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 2
+      "spot": "front:1",
+      "frontDigits": 2,
+      "gameIndex": 3
     },
     {
-      "masked": "142나02○3",
+      "masked": "47저6○51",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 2,
+      "gameIndex": 1
+    },
+    {
+      "masked": "51너14○6",
       "candidateCount": 10,
       "spot": "back:2",
-      "frontDigits": 3,
-      "gameIndex": 4
+      "frontDigits": 2,
+      "gameIndex": 5
     },
     {
-      "masked": "16○하9305",
+      "masked": "58다6○45",
       "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
+      "spot": "back:1",
+      "frontDigits": 2,
       "gameIndex": 3
     },
     {
-      "masked": "170더871○",
+      "masked": "58다○230",
       "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
+      "spot": "back:0",
+      "frontDigits": 2,
+      "gameIndex": 4
+    },
+    {
+      "masked": "○0너0882",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 2,
       "gameIndex": 5
     },
     {
-      "masked": "184하9○78",
+      "masked": "○0수5719",
       "candidateCount": 10,
-      "spot": "back:1",
-      "frontDigits": 3,
+      "spot": "front:0",
+      "frontDigits": 2,
       "gameIndex": 2
     },
     {
-      "masked": "1○8나9689",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "189버4○18",
-      "candidateCount": 10,
-      "spot": "back:1",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "1○3서2155",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "204주○927",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "20○부2761",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "2○9두8070",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "215다35○1",
+      "masked": "64두88○9",
       "candidateCount": 10,
       "spot": "back:2",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "2○6저1334",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "217구840○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "219보○822",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "222허○804",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
+      "frontDigits": 2,
       "gameIndex": 2
     },
     {
-      "masked": "2○5라5643",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "228고○267",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "2○4허5653",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "245가○844",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "24○더1522",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "○45허3693",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "24○오1711",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "250너○563",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "○59다0742",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "265나8○53",
-      "candidateCount": 10,
-      "spot": "back:1",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "265누783○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "289더312○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "289러241○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "292어○556",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "2○4마8746",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "29○루0048",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "298저524○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "300어4○88",
-      "candidateCount": 10,
-      "spot": "back:1",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "301누835○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "○05호8914",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "3○6호4018",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "312다72○9",
+      "masked": "64주52○6",
       "candidateCount": 10,
       "spot": "back:2",
+      "frontDigits": 2,
+      "gameIndex": 5
+    },
+    {
+      "masked": "6○소2695",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 2,
+      "gameIndex": 3
+    },
+    {
+      "masked": "71두1○38",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 2,
+      "gameIndex": 3
+    },
+    {
+      "masked": "73마9○50",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 2,
+      "gameIndex": 2
+    },
+    {
+      "masked": "○6다3525",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 2,
+      "gameIndex": 4
+    },
+    {
+      "masked": "7○어7033",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 2,
+      "gameIndex": 4
+    },
+    {
+      "masked": "81우042○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 2,
+      "gameIndex": 4
+    },
+    {
+      "masked": "81허8○76",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 2,
+      "gameIndex": 1
+    },
+    {
+      "masked": "8○다8926",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 2,
+      "gameIndex": 3
+    },
+    {
+      "masked": "○7허0895",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 2,
+      "gameIndex": 2
+    },
+    {
+      "masked": "119너7○75",
+      "candidateCount": 10,
+      "spot": "back:1",
       "frontDigits": 3,
       "gameIndex": 3
     },
     {
-      "masked": "○15다0157",
+      "masked": "12○누6948",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "1○1구9816",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "129고○536",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "○30어6868",
       "candidateCount": 10,
       "spot": "front:0",
       "frontDigits": 3,
-      "gameIndex": 3
+      "gameIndex": 4
     },
     {
-      "masked": "316주353○",
+      "masked": "130허841○",
       "candidateCount": 10,
       "spot": "back:3",
       "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "323누○234",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
       "gameIndex": 4
     },
     {
-      "masked": "32○두7073",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "326보○350",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "33○수4207",
+      "masked": "13○나1351",
       "candidateCount": 10,
       "spot": "front:2",
       "frontDigits": 3,
       "gameIndex": 4
     },
     {
-      "masked": "343수322○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "3○5더1606",
+      "masked": "1○0서7584",
       "candidateCount": 10,
       "spot": "front:1",
       "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "○45모7373",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "346무○051",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "34○나4594",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "○61로5750",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "362너7○78",
-      "candidateCount": 10,
-      "spot": "back:1",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "366노8○30",
-      "candidateCount": 10,
-      "spot": "back:1",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "373러92○1",
-      "candidateCount": 10,
-      "spot": "back:2",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "377노814○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
       "gameIndex": 1
     },
     {
-      "masked": "381보85○5",
-      "candidateCount": 10,
-      "spot": "back:2",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "○86무3436",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "3○2고5985",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "3○3모7364",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "395두○020",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "396루7○85",
-      "candidateCount": 10,
-      "spot": "back:1",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "398누29○3",
-      "candidateCount": 10,
-      "spot": "back:2",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "39○주7605",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "○02우8278",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "○11버1576",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "426조0○76",
-      "candidateCount": 10,
-      "spot": "back:1",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "428부○706",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "4○8너3891",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "○42두5285",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "○43너7519",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "449우9○17",
-      "candidateCount": 10,
-      "spot": "back:1",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "456저6○26",
-      "candidateCount": 10,
-      "spot": "back:1",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "461저5○01",
-      "candidateCount": 10,
-      "spot": "back:1",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "462무5○38",
-      "candidateCount": 10,
-      "spot": "back:1",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "46○러8321",
+      "masked": "15○두4683",
       "candidateCount": 10,
       "spot": "front:2",
       "frontDigits": 3,
       "gameIndex": 4
     },
     {
-      "masked": "○67로4620",
+      "masked": "15○저3613",
       "candidateCount": 10,
-      "spot": "front:0",
+      "spot": "front:2",
       "frontDigits": 3,
-      "gameIndex": 4
+      "gameIndex": 3
     },
     {
-      "masked": "470하○363",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "472하15○2",
+      "masked": "175로08○4",
       "candidateCount": 10,
       "spot": "back:2",
       "frontDigits": 3,
       "gameIndex": 1
     },
     {
-      "masked": "477거0○50",
-      "candidateCount": 10,
-      "spot": "back:1",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "47○다5719",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "○78조3719",
+      "masked": "○77조9942",
       "candidateCount": 10,
       "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "4○7머9855",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "○97루8309",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "506보391○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "510오○245",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "511머972○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "511조6○75",
-      "candidateCount": 10,
-      "spot": "back:1",
       "frontDigits": 3,
       "gameIndex": 1
     },
     {
-      "masked": "51○부8644",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "523소○771",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "523구595○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "526조596○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "529도25○1",
+      "masked": "179우48○3",
       "candidateCount": 10,
       "spot": "back:2",
       "frontDigits": 3,
       "gameIndex": 3
     },
     {
-      "masked": "5○4나5160",
+      "masked": "○83로2978",
       "candidateCount": 10,
-      "spot": "front:1",
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "○85보3173",
+      "candidateCount": 10,
+      "spot": "front:0",
       "frontDigits": 3,
       "gameIndex": 1
     },
     {
-      "masked": "536루○602",
+      "masked": "195모○027",
       "candidateCount": 10,
       "spot": "back:0",
       "frontDigits": 3,
       "gameIndex": 1
     },
     {
-      "masked": "538조○199",
+      "masked": "196호93○5",
       "candidateCount": 10,
-      "spot": "back:0",
+      "spot": "back:2",
       "frontDigits": 3,
-      "gameIndex": 1
+      "gameIndex": 4
     },
     {
-      "masked": "544마6○16",
+      "masked": "197두5○90",
       "candidateCount": 10,
       "spot": "back:1",
       "frontDigits": 3,
       "gameIndex": 2
     },
     {
-      "masked": "549무○156",
+      "masked": "206보668○",
       "candidateCount": 10,
-      "spot": "back:0",
+      "spot": "back:3",
       "frontDigits": 3,
-      "gameIndex": 2
+      "gameIndex": 4
     },
     {
-      "masked": "553루03○2",
-      "candidateCount": 10,
-      "spot": "back:2",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "554서5○07",
+      "masked": "212모7○39",
       "candidateCount": 10,
       "spot": "back:1",
       "frontDigits": 3,
       "gameIndex": 1
     },
     {
-      "masked": "55○버1929",
+      "masked": "○12소3381",
       "candidateCount": 10,
-      "spot": "front:2",
+      "spot": "front:0",
       "frontDigits": 3,
-      "gameIndex": 2
+      "gameIndex": 4
     },
     {
-      "masked": "56○서2090",
+      "masked": "214조○422",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "○25부9016",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "23○더2698",
       "candidateCount": 10,
       "spot": "front:2",
       "frontDigits": 3,
       "gameIndex": 4
     },
     {
-      "masked": "562나○492",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "571무150○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "5○1서3094",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "58○무1585",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "582하16○1",
+      "masked": "235고26○3",
       "candidateCount": 10,
       "spot": "back:2",
       "frontDigits": 3,
-      "gameIndex": 2
+      "gameIndex": 1
     },
     {
-      "masked": "590수○180",
+      "masked": "○37보4670",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "242라○108",
       "candidateCount": 10,
       "spot": "back:0",
       "frontDigits": 3,
       "gameIndex": 2
     },
     {
-      "masked": "601무○758",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "601우○701",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "606구○458",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "60○루6605",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "61○소0029",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "617로○703",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "6○3노6139",
+      "masked": "2○7나6353",
       "candidateCount": 10,
       "spot": "front:1",
       "frontDigits": 3,
-      "gameIndex": 5
+      "gameIndex": 4
     },
     {
-      "masked": "645버800○",
+      "masked": "○47저8792",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "251두124○",
       "candidateCount": 10,
       "spot": "back:3",
       "frontDigits": 3,
       "gameIndex": 1
     },
     {
-      "masked": "6○1조4988",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "652주○079",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "○59루6275",
+      "masked": "○60서0356",
       "candidateCount": 10,
       "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "66○하5333",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "6○5나4220",
-      "candidateCount": 10,
-      "spot": "front:1",
       "frontDigits": 3,
       "gameIndex": 3
     },
     {
-      "masked": "6○7로0940",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "6○3로3164",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "○95허7892",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "699수○788",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "7○1고5228",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "7○8서9698",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "71○허5778",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "7○4너5980",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "○28주0861",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "735무1○88",
+      "masked": "262노1○97",
       "candidateCount": 10,
       "spot": "back:1",
       "frontDigits": 3,
       "gameIndex": 5
     },
     {
-      "masked": "75○보6931",
+      "masked": "268우23○6",
       "candidateCount": 10,
-      "spot": "front:2",
+      "spot": "back:2",
       "frontDigits": 3,
-      "gameIndex": 5
+      "gameIndex": 1
     },
     {
-      "masked": "○53우1050",
+      "masked": "273너156○",
       "candidateCount": 10,
-      "spot": "front:0",
+      "spot": "back:3",
       "frontDigits": 3,
       "gameIndex": 2
     },
     {
-      "masked": "756노481○",
+      "masked": "276어8○47",
       "candidateCount": 10,
-      "spot": "back:3",
+      "spot": "back:1",
       "frontDigits": 3,
-      "gameIndex": 3
+      "gameIndex": 1
     },
     {
-      "masked": "○66두4060",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "7○0나4891",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "○71로3362",
-      "candidateCount": 10,
-      "spot": "front:0",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "775라506○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "77○너6717",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "77○고6283",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "797오○060",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "80○머0021",
-      "candidateCount": 10,
-      "spot": "front:2",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "811나0○04",
+      "masked": "280호5○38",
       "candidateCount": 10,
       "spot": "back:1",
       "frontDigits": 3,
       "gameIndex": 2
     },
     {
-      "masked": "8○2노2799",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "831누662○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "833구87○7",
-      "candidateCount": 10,
-      "spot": "back:2",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "83○부4251",
+      "masked": "28○허0244",
       "candidateCount": 10,
       "spot": "front:2",
       "frontDigits": 3,
       "gameIndex": 2
     },
     {
-      "masked": "841더11○3",
-      "candidateCount": 10,
-      "spot": "back:2",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "841저369○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "845다766○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 2
-    },
-    {
-      "masked": "847두6○09",
-      "candidateCount": 10,
-      "spot": "back:1",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "851저8○13",
-      "candidateCount": 10,
-      "spot": "back:1",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "852거173○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "866루○636",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "871허642○",
-      "candidateCount": 10,
-      "spot": "back:3",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "87○오4037",
+      "masked": "28○도1300",
       "candidateCount": 10,
       "spot": "front:2",
       "frontDigits": 3,
       "gameIndex": 2
     },
     {
-      "masked": "8○8거3553",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "884두70○4",
-      "candidateCount": 10,
-      "spot": "back:2",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "8○0두1961",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "892조53○3",
+      "masked": "285소18○5",
       "candidateCount": 10,
       "spot": "back:2",
       "frontDigits": 3,
       "gameIndex": 3
     },
     {
-      "masked": "○93모3139",
+      "masked": "○88나8538",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "○92저4531",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "29○보5625",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "298오8○59",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "306주62○1",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "308저○603",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "311누897○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "○12머6279",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "318호○417",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "325우○750",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "330더87○7",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "○31가1863",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "340주19○7",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "342버73○7",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "343허606○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "345나○609",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "○45우0565",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "346나5○74",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "351루1○30",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "351부54○8",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "351하279○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "355머1○22",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "358로558○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "361주○539",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "362하○973",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "367저507○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "○76나9348",
       "candidateCount": 10,
       "spot": "front:0",
       "frontDigits": 3,
       "gameIndex": 2
     },
     {
-      "masked": "89○러6009",
+      "masked": "○77주1767",
       "candidateCount": 10,
-      "spot": "front:2",
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "381허4○77",
+      "candidateCount": 10,
+      "spot": "back:1",
       "frontDigits": 3,
       "gameIndex": 2
     },
     {
-      "masked": "906어○252",
+      "masked": "○82루4723",
       "candidateCount": 10,
-      "spot": "back:0",
+      "spot": "front:0",
       "frontDigits": 3,
-      "gameIndex": 5
+      "gameIndex": 3
     },
     {
-      "masked": "909하05○2",
+      "masked": "384우40○7",
       "candidateCount": 10,
       "spot": "back:2",
       "frontDigits": 3,
-      "gameIndex": 1
+      "gameIndex": 4
     },
     {
-      "masked": "91○러8674",
+      "masked": "39○모1389",
       "candidateCount": 10,
       "spot": "front:2",
       "frontDigits": 3,
       "gameIndex": 3
     },
     {
-      "masked": "9○3저6889",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "920소677○",
+      "masked": "393누000○",
       "candidateCount": 10,
       "spot": "back:3",
       "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "9○9두2341",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 5
-    },
-    {
-      "masked": "934서○712",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
-      "gameIndex": 3
-    },
-    {
-      "masked": "940버○277",
-      "candidateCount": 10,
-      "spot": "back:0",
-      "frontDigits": 3,
       "gameIndex": 1
     },
     {
-      "masked": "9○0부7858",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 1
-    },
-    {
-      "masked": "9○5거4085",
-      "candidateCount": 10,
-      "spot": "front:1",
-      "frontDigits": 3,
-      "gameIndex": 4
-    },
-    {
-      "masked": "94○마1297",
+      "masked": "40○더8821",
       "candidateCount": 10,
       "spot": "front:2",
       "frontDigits": 3,
-      "gameIndex": 2
+      "gameIndex": 1
     },
     {
-      "masked": "948러96○4",
+      "masked": "405조○994",
       "candidateCount": 10,
-      "spot": "back:2",
+      "spot": "back:0",
       "frontDigits": 3,
       "gameIndex": 4
     },
     {
-      "masked": "949루26○7",
+      "masked": "○07허8596",
       "candidateCount": 10,
-      "spot": "back:2",
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "41○로3626",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "41○부8295",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "○19허6208",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "420부5○92",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "4○4마0784",
+      "candidateCount": 10,
+      "spot": "front:1",
       "frontDigits": 3,
       "gameIndex": 5
     },
     {
-      "masked": "9○5도0524",
+      "masked": "○32하0736",
       "candidateCount": 10,
-      "spot": "front:1",
+      "spot": "front:0",
       "frontDigits": 3,
-      "gameIndex": 2
+      "gameIndex": 5
     },
     {
-      "masked": "9○8가8432",
+      "masked": "440누728○",
       "candidateCount": 10,
-      "spot": "front:1",
+      "spot": "back:3",
       "frontDigits": 3,
-      "gameIndex": 2
+      "gameIndex": 1
     },
     {
-      "masked": "965어1○38",
+      "masked": "443노○289",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "450다9○52",
       "candidateCount": 10,
       "spot": "back:1",
       "frontDigits": 3,
       "gameIndex": 4
     },
     {
-      "masked": "○85머0248",
+      "masked": "○50하1238",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "451고2○56",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "○54무5782",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "46○머7772",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "4○1루8149",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "4○2로4115",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "464호4○28",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "○73구9686",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "477라34○9",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "48○다5410",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "484구421○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "487서○149",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "489모886○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "491고778○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "493가0○01",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "4○9나2929",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "5○2부9281",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "508루775○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "5○1로5075",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "518허○648",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "5○0머6066",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "52○오8965",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "52○소1165",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "532서88○0",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "538조73○0",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "54○오7185",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "546로986○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "547노○237",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "5○7우8539",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "552로○521",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "57○나8976",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "571누56○2",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "573고173○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "578노○420",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "581주700○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "584주405○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "○86노7748",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "58○주0890",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "58○다9515",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "589어○881",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "5○5거5249",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "59○가0681",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "○17도0385",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "618두○108",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "623가703○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "○26누3991",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "629로○632",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "630조○124",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "○40러3555",
       "candidateCount": 10,
       "spot": "front:0",
       "frontDigits": 3,
       "gameIndex": 2
     },
     {
-      "masked": "○96모3741",
+      "masked": "643조7○84",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "647보2○01",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "6○6호1698",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "674오0○24",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "677가3○52",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "679라81○7",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "679어754○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "70○무6550",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "707보372○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "713더8○99",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "730거2○02",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "733서949○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "○41모8384",
       "candidateCount": 10,
       "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "747도○190",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "7○1버2134",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "75○부0931",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "○65더4815",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "7○6너1224",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "783버05○4",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "783주92○2",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "785버761○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "○87버2949",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "793호98○8",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "80○너2178",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "803수97○7",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "807두3○74",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "809머○446",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "○20거2280",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "824머913○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "82○소0247",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "82○가0168",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "834무○251",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "8○6수1914",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "843두○956",
+      "candidateCount": 10,
+      "spot": "back:0",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "844도8○53",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "848로2○04",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "848하89○3",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "○54오8425",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "8○5나5315",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "859두6○33",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "862더7○92",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "864로06○8",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "866러138○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "867러155○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "876라8○60",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "8○5오1906",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "893루397○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "895노3○96",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "901우889○",
+      "candidateCount": 10,
+      "spot": "back:3",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "9○2다0666",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "○14누8932",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "9○3서0144",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "934오9○64",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "95○더2384",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "970조3○00",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 1
+    },
+    {
+      "masked": "97○너4042",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "971부06○0",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "9○2러9010",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 2
+    },
+    {
+      "masked": "○73다9485",
+      "candidateCount": 10,
+      "spot": "front:0",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "976호8○55",
+      "candidateCount": 10,
+      "spot": "back:1",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "9○7우6507",
+      "candidateCount": 10,
+      "spot": "front:1",
+      "frontDigits": 3,
+      "gameIndex": 3
+    },
+    {
+      "masked": "98○노6038",
+      "candidateCount": 10,
+      "spot": "front:2",
+      "frontDigits": 3,
+      "gameIndex": 5
+    },
+    {
+      "masked": "993두39○2",
+      "candidateCount": 10,
+      "spot": "back:2",
+      "frontDigits": 3,
+      "gameIndex": 4
+    },
+    {
+      "masked": "99○나0238",
+      "candidateCount": 10,
+      "spot": "front:2",
       "frontDigits": 3,
       "gameIndex": 3
     }
   ],
-  "latestRound": 1243,
-  "latestDrawDate": "2026-09-26",
+  "latestRound": 1244,
+  "latestDrawDate": "2026-10-03",
   "plateSpace": 346500000
 }
