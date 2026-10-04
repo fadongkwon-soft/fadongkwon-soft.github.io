@@ -144,6 +144,8 @@ TAG_GLOSSARY = {
     '디버깅': 'debugging',
     '음성인식': 'speech recognition',
     '한글몬스터': 'hangul monsters',
+    '수학몬스터': 'math monsters',
+    '교사추천': 'teacher approved',
     # 정책·수익
     '정책변화': 'policy update',
     '인앱광고': 'in-app ads',
