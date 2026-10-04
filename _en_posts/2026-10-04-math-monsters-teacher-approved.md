@@ -3,6 +3,7 @@ title: Math Monsters Is Now a Google Play 'Teacher Approved' App
 description: We never applied, yet a congratulations notice was waiting in the Play Console. Teachers and specialists reviewed Math Monsters and approved it as a good app for children aged 6 to 12, so it now carries the Teacher Approved badge on Google Play and can be featured in the Kids tab. What the reviewers noted, and how the fixes we made after two store rejections pointed the same way
 date: 2026-10-04 21:35:00 +0900
 categories: [Devlog, Retrospective]
+pin: true
 image:
   path: /assets/img/20261004_math-monsters-teacher-approved/play-badge.png
   alt: Math Monsters on Google Play with the Teacher Approved badge

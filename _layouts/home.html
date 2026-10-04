@@ -42,12 +42,23 @@ layout: default
   /ko/page/N/)은 tools/i18n.py fixup 의 gen_home_stubs 가 만드는 스텁(pnum: N)이다 —
   글이 늘어 쪽수가 바뀌면 fixup 을 다시 돌려야 한다.
 {%- endcomment -%}
-{% assign feed = '' | split: '' %}
+{%- comment -%}
+  상단 고정(2026-10-04): front matter `pin: true` 인 글을 피드 맨 앞에 둔다(Chirpy 원본 home 과 같은 동작).
+  고정 글을 앞에 모은 뒤 나머지를 이어 붙이므로 전체 개수·쪽수는 그대로이고, 고정 글은 1쪽 맨 위에 한 번만 나온다.
+  한·영 글 둘 다에 pin 을 넣어야 양쪽 홈에 고정된다(fixup 은 pin 을 맞춰 주지 않는다).
+{%- endcomment -%}
+{% assign pinned = '' | split: '' %}
+{% assign others = '' | split: '' %}
 {% for post in feature_posts %}
   {% unless post.categories contains 'Tarot' %}
-    {% assign feed = feed | push: post %}
+    {% if post.pin %}
+      {% assign pinned = pinned | push: post %}
+    {% else %}
+      {% assign others = others | push: post %}
+    {% endif %}
   {% endunless %}
 {% endfor %}
+{% assign feed = pinned | concat: others %}
 {% assign per_page = 10 %}
 {% assign pnum = page.pnum | default: 1 %}
 {% assign total_pages = feed.size | plus: per_page | minus: 1 | divided_by: per_page %}
@@ -110,6 +121,13 @@ layout: default
                     </span>
                   {% endif %}
                 </div>
+
+                {% if post.pin %}
+                  <div class="pin ms-1">
+                    <i class="fas fa-thumbtack fa-fw"></i>
+                    <span>{% if page.lang == 'en' %}Pinned{% else %}고정됨{% endif %}</span>
+                  </div>
+                {% endif %}
               </div>
               <!-- .post-meta -->
             </div>

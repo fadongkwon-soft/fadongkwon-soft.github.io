@@ -4,7 +4,7 @@ description: 신청한 적도 없는데 Play 콘솔에 축하 알림이 와 있�
 date: 2026-10-04 21:35:00 +0900
 categories: [Devlog, Retrospective]
 tags: [수학몬스터, 교사추천, 구글플레이, 유아교육, 초등수학, 자녀교육, 1인개발자, 개발일지]
-pin: false
+pin: true
 image:
   path: /assets/img/20261004_math-monsters-teacher-approved/play-badge.png
 alt_url: /posts/math-monsters-teacher-approved/
