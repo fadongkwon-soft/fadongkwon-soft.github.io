@@ -35,7 +35,7 @@ alt_url: /posts/math-monsters/
 ![플레이 화면](/assets/img/20260825_math-monsters/shot-play.png){: w="360" }
 
 ## 플레이 영상
-{% include embed/youtube.html id='wYHK44e5dpk' %}
+{% include embed/youtube.html id='i_Z0v8yNLhY' %}
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.math_monsters>
