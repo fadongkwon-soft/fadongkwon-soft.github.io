@@ -71,5 +71,7 @@ alt_url: /posts/math-drill-habit/
 
 ---
 
+> {% include app-badge.html id='math-monsters' %}
+>
 > 아이가 화면에서 푸는 방식을 좋아한다면, 문제를 풀어 몬스터를 잡는 연산 연습 게임 **[수학 몬스터](/ko/posts/math-monsters/)**를 만들어 두었습니다. 연산 4종과 난이도 3단계, 기록 저장 기능이 있고 광고는 없습니다.
 {: .prompt-tip }

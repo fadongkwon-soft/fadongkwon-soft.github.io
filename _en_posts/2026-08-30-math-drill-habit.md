@@ -72,5 +72,7 @@ In the next post I will lay out which operations are taught in which grade, and 
 
 ---
 
+> {% include app-badge.html id='math-monsters' %}
+>
 > If your child likes working on a screen, I built **[Math Monsters](/posts/math-monsters/)**, an arithmetic practice game where solving problems defeats monsters. It has the four operations, three difficulty levels, and saved records, and there are no ads.
 {: .prompt-tip }
