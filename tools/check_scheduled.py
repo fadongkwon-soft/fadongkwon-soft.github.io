@@ -15,12 +15,14 @@ htmlproofer(`Test site` 단계)는 **아직 생성되지 않은 페이지로의 
   4. permalink/alt_url 이 URL 규칙(영어 = /*, 한국어 = /ko/*)을 지키는가
   5. 홈 페이지네이션 스텁이 예약분 공개 후 쪽수까지 준비돼 있는가
   6. 본문·커버 이미지가 실재하는가 (예약 글은 htmlproofer 가 공개일까지 못 본다)
+  7. [경고만] 앱 소개 글(categories 첫 값 Products)이 /apps/ 와 이어지는가 — 아래 check_app_posts
 
 usage: python tools/check_scheduled.py
 """
 import io
 import os
 import re
+import csv
 import sys
 import glob
 import datetime
@@ -100,6 +102,37 @@ def collect():
                 images=collect_images(fm, body),
             ))
     return out
+
+
+def check_app_posts(docs, now):
+    """앱 소개 글(categories 첫 값 Products)이 /apps/ 와 이어지는지 본다(2026-10-06). 경고 목록을 돌려준다.
+
+    Products 는 hub_only_categories 라 홈·아카이브·RSS 에서 빠지고 /apps/ 링크로만 들어간다.
+    /apps/ 는 _plugins/apps-registry.rb 가 **슬러그 = apps.csv 의 앱 id**(다르면 APP_POST_SLUG)인 글만 잇는다.
+    그래서 슬러그가 어긋나면 그 글은 어디서도 링크되지 않는다 — 실사례 hangul-monsters-toss(본편의 토스판 소식).
+    빌드는 멀쩡하므로 실패가 아니라 경고로 둔다. ko/en 의 최상위 카테고리가 다르면 한쪽 홈에만 섞이므로 같이 본다."""
+    rows = list(csv.DictReader(io.open(os.path.join(ROOT, 'apps.csv'), encoding='utf-8-sig')))
+    live = dict((r['id'], r.get('play', '').strip() == '1' or r.get('toss', '').strip() == '1') for r in rows)
+    reg = read(os.path.join(ROOT, '_plugins', 'apps-registry.rb'))
+    block = re.search(r'APP_POST_SLUG\s*=\s*\{(.*?)\}', reg, re.S)
+    alias = dict(re.findall(r"'([\w-]+)'\s*=>\s*'([\w-]+)'", block.group(1))) if block else {}
+    slug_to_id = dict((s, i) for i, s in alias.items())
+    en_top = dict((d['slug'], top_category(d['cats'])) for d in docs if d['lang'] == 'en')
+    warns = []
+    for d in docs:
+        if d['lang'] != 'ko' or d['hidden'] or top_category(d['cats']) != 'Products':
+            continue
+        app = slug_to_id.get(d['slug'], d['slug'])
+        if app not in live:
+            warns.append('%s: 앱 소개 글인데 apps.csv 에 id "%s" 가 없다 -> /apps/ 에서 안 이어져 어디서도 링크되지 않는다'
+                         ' (파일 슬러그를 앱 id 로 맞추거나 apps-registry.rb APP_POST_SLUG 에 추가, 아니면 본편에 합치기)'
+                         % (d['base'], app))
+        elif not live[app] and d['date'] and d['date'] <= now:
+            warns.append('%s: 공개됐지만 앱 "%s" 가 아직 어느 스토어에도 라이브가 아니라 /apps/ 에 안 뜬다 (출시되면 자동으로 이어진다)'
+                         % (d['base'], app))
+        if d['slug'] in en_top and en_top[d['slug']] != 'Products':
+            warns.append('%s: 영문판 최상위 카테고리가 %s 다 (Products 여야 영문 홈에서도 빠진다)' % (d['base'], en_top[d['slug']]))
+    return warns
 
 
 def check_images(docs, now):
@@ -191,6 +224,9 @@ def main():
                    key=lambda d: d['date'])
     notes.append('예약 대기 %d편 (한국어 기준, 영문은 같은 날짜)' % len(sched))
 
+    # 7) 앱 소개 글 ↔ /apps/ 연결 (경고만 — 종료 코드에 영향 없음)
+    warns = check_app_posts(docs, now)
+
     print('=== 예약 게시 점검 ===')
     for x in notes:
         print('  ' + x)
@@ -200,6 +236,11 @@ def main():
         for d in sched:
             print('    %s  %s' % (d['date'].strftime('%m-%d %H:%M'), d['slug']))
     print()
+    if warns:
+        print('[경고] 앱 소개 글 연결 %d건 (빌드는 통과 — 고치면 없어진다)' % len(warns))
+        for x in warns:
+            print('  - ' + x)
+        print()
     if problems:
         print('[실패] 문제 %d건' % len(problems))
         for x in problems[:40]:
