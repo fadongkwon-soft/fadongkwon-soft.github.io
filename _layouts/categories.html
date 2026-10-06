@@ -5,6 +5,7 @@ layout: page
 # 에서 그룹을 계산하고, 링크를 /categories/<slug>/ 하위 페이지로 보낸다.
 # 하위 페이지 스텁은 tools/i18n.py fixup 이 자동 생성한다.
 # ⚠️ 컬렉션은 미래 날짜 문서가 남으므로 날짜 필터 필수.
+# 허브 전용 카테고리(_config.yml hub_only_categories)는 목록에서 뺀다(2026-10-06).
 ---
 
 {% include lang.html %}
@@ -21,7 +22,7 @@ layout: page
 {% for post in pool %}
   {% assign top = post.categories | first %}
   {% if top %}
-    {% unless tops contains top %}{% assign tops = tops | push: top %}{% endunless %}
+    {% unless tops contains top or site.hub_only_categories contains top %}{% assign tops = tops | push: top %}{% endunless %}
   {% endif %}
 {% endfor %}
 {% assign tops = tops | sort_natural %}

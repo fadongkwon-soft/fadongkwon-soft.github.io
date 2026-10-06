@@ -4,6 +4,9 @@
      하필 이 페이지의 주 진입로가 **인스타 QR(= 폰으로 스캔)** 이다.
      토스가 안 깔려 자동 이동이 실패했을 때 보게 되는 화면이라 더 중요하다. -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 검색에 올리지 않는다(2026-10-06). QR·스토어 버튼에서 넘어오는 중간 화면이라 읽을 내용이
+     없는데, 71개가 사이트맵에 실려 얇은 페이지로 잡혔다. 사이트맵 제외는 _config.yml defaults. -->
+<meta name="robots" content="noindex">
 
 <!-- 앱 설치/실행 중간 랜딩 공용 조각 (토스·Google Play 공통, 한/영 겸용).
      사용: 페이지 front matter 에 `store: toss` 또는 `store: play`, `app_name`, 그리고

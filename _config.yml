@@ -157,6 +157,15 @@ pwa:
 # paginate 제거(2026-08-29): 홈이 lang-home(비 paginator)으로 바뀌어 jekyll-paginate 가
 # 루트 index 를 복제한 /page2..N/ 중복 페이지만 만들게 되므로 끈다.
 
+# 허브 전용 카테고리(2026-10-06): 최상위 카테고리(categories 의 첫 값)가 여기 있는 글은
+# 글 목록에서 빠지고 각 허브(Tarot → /tarot/, Products → /apps/)의 링크로만 들어간다.
+# 빠지는 곳: 홈 피드·아카이브·카테고리 탭·RSS·우측 패널(최근 글·인기 태그)·
+# 다른 글 하단의 관련 글, 이전/다음 글(허브 글끼리는 서로 이어진다).
+# 그대로인 곳: 글 URL·사이트맵·검색·카테고리/태그 개별 페이지(글 상단 링크로 들어가는 곳).
+# 홈 쪽수 스텁(tools/i18n.py gen_home_stubs)과 tools/check_scheduled.py 도 이 줄을 읽는다
+# — 한 줄 배열 형식을 유지할 것.
+hub_only_categories: [Tarot, Products]
+
 # The base URL of your site
 baseurl: ""
 
@@ -217,6 +226,16 @@ defaults:
       layout: page
       # 기본은 영문(루트). 한국어 탭은 각 파일이 /ko/<name>/ 로 명시한다.
       permalink: /:title/
+  # 스토어 중간 랜딩(QR·딥링크 → 토스/Play, 2026-10-06): 검색 대상이 아니라 사이트맵에서 뺀다.
+  # 페이지 자체의 noindex 는 _includes/app-redirect.html 이 단다.
+  - scope:
+      path: "toss"
+    values:
+      sitemap: false
+  - scope:
+      path: "play-store"
+    values:
+      sitemap: false
 
 sass:
   style: compressed

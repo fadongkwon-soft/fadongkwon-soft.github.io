@@ -10,6 +10,9 @@ layout: page
 # 존재**해서 htmlproofer 가 잡지 못한다 — 404 없이 조용히 다른 언어로 새는 쪽이라
 # 태그보다 위험했다. 영문판은 _layouts/en-categories.html 이 담당한다.
 #
+# 허브 전용 카테고리(_config.yml hub_only_categories)는 이 목록에서 뺀다(2026-10-06) —
+# 각자의 허브(/ko/tarot/ · /ko/apps/)가 목록 역할을 한다.
+#
 # ⚠️ 이 주석은 반드시 front matter 안에 둘 것(tags.html 의 경고 참조).
 ---
 
@@ -27,8 +30,10 @@ layout: page
   {% assign category_name = category | first %}
   {% assign posts_of_category = category | last %}
   {% assign first_post = posts_of_category | first %}
+  {% assign is_hub = false %}
+  {% if site.hub_only_categories contains category_name %}{% assign is_hub = true %}{% endif %}
 
-  {% if category_name == first_post.categories[0] %}
+  {% if category_name == first_post.categories[0] and is_hub == false %}
     {% assign sub_categories = '' | split: '' %}
 
     {% for post in posts_of_category %}

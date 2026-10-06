@@ -14,24 +14,56 @@
   한국어판 동작은 그대로다.
 -->
 
-{% assign show_next = false %}
-{% if page.next.url %}
-  {% if page.next.date <= site.time %}
-    {% assign show_next = true %}
-  {% endif %}
+{%- comment -%}
+  2026-10-06 변경: page.previous/next(전체 글 기준) 대신 같은 무리 안에서 앞뒤 글을 찾는다.
+  허브 전용 카테고리(_config.yml hub_only_categories — 타로 사전·앱 소개) 글은 같은 최상위
+  카테고리끼리(타로 카드 → 다음 카드), 나머지 글은 나머지끼리 잇는다. 전체 기준이면 개발
+  일지 하단에 타로 카드나 앱 소개가 걸려, 허브로만 들어가게 한 글이 다시 목록처럼 이어진다.
+  발행일 오름차순으로 맞춘다 — site.posts 는 최신순, site.en_posts(컬렉션)는 오래된 순이다.
+  영문 컬렉션의 미래 문서는 여기서 날짜로 거르므로 위의 '다음 글 미공개' 문제도 함께 막힌다.
+{%- endcomment -%}
+{% if page.lang == 'en' %}
+  {% assign nav_source = site.en_posts | where_exp: 'p', 'p.date <= site.time' %}
+{% else %}
+  {% assign nav_source = site.posts | reverse %}
 {% endif %}
+{% assign page_top = page.categories.first %}
+{% assign page_is_hub = false %}
+{% if site.hub_only_categories contains page_top %}{% assign page_is_hub = true %}{% endif %}
+
+{% assign nav_pool = '' | split: '' %}
+{% for p in nav_source %}
+  {% assign p_top = p.categories.first %}
+  {% if page_is_hub %}
+    {% if p_top == page_top %}{% assign nav_pool = nav_pool | push: p %}{% endif %}
+  {% else %}
+    {% unless site.hub_only_categories contains p_top %}{% assign nav_pool = nav_pool | push: p %}{% endunless %}
+  {% endif %}
+{% endfor %}
+
+{% assign nav_prev = nil %}
+{% assign nav_next = nil %}
+{% for p in nav_pool %}
+  {% if p.url == page.url %}
+    {% assign i_prev = forloop.index0 | minus: 1 %}
+    {% assign i_next = forloop.index0 | plus: 1 %}
+    {% if i_prev >= 0 %}{% assign nav_prev = nav_pool[i_prev] %}{% endif %}
+    {% assign nav_next = nav_pool[i_next] %}
+    {% break %}
+  {% endif %}
+{% endfor %}
 
 <nav class="post-navigation d-flex justify-content-between" aria-label="Post Navigation">
   {% assign previous = site.data.locales[include.lang].post.button.previous %}
   {% assign next = site.data.locales[include.lang].post.button.next %}
 
-  {% if page.previous.url %}
+  {% if nav_prev.url %}
     <a
-      href="{{ site.baseurl }}{{ page.previous.url }}"
+      href="{{ site.baseurl }}{{ nav_prev.url }}"
       class="btn btn-outline-primary"
       aria-label="{{ previous }}"
     >
-      <p>{{ page.previous.title }}</p>
+      <p>{{ nav_prev.title }}</p>
     </a>
   {% else %}
     <div class="btn btn-outline-primary disabled" aria-label="{{ previous }}">
@@ -39,13 +71,13 @@
     </div>
   {% endif %}
 
-  {% if show_next %}
+  {% if nav_next.url %}
     <a
-      href="{{ site.baseurl }}{{page.next.url}}"
+      href="{{ site.baseurl }}{{ nav_next.url }}"
       class="btn btn-outline-primary"
       aria-label="{{ next }}"
     >
-      <p>{{ page.next.title }}</p>
+      <p>{{ nav_next.title }}</p>
     </a>
   {% else %}
     <div class="btn btn-outline-primary disabled" aria-label="{{ next }}">

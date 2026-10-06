@@ -3,7 +3,11 @@ layout: null
 permalink: /rss.xml
 sitemap: false
 ---
-{%- assign ko_desc = "퇴근 후 혼자 앱을 만들어 출시하며 배운 것들의 기록. 타로 카드 78장 의미 사전, 아이들을 위해 만든 학습 앱, 그리고 앱 운영·플랫폼 정책 정리." -%}
+{%- comment -%}
+  허브 전용 카테고리(_config.yml hub_only_categories — 타로 사전·앱 소개) 글은 피드에서 뺀다
+  (2026-10-06). 설명문도 피드에 실제로 실리는 글(개발 일지)에 맞춘다.
+{%- endcomment -%}
+{%- assign ko_desc = "퇴근 후 혼자 앱을 만들어 출시하며 배운 것들의 기록. 개발 일지와 회고, 트러블슈팅, 앱 운영·플랫폼 정책 정리." -%}
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
@@ -14,7 +18,11 @@ sitemap: false
     <generator>Jekyll</generator>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <atom:link href="{{ '/rss.xml' | absolute_url }}" rel="self" type="application/rss+xml" />
-    {%- for post in site.posts limit: 30 %}
+    {%- assign rss_n = 0 -%}
+    {%- for post in site.posts -%}
+    {%- if site.hub_only_categories contains post.categories.first -%}{%- continue -%}{%- endif -%}
+    {%- if rss_n >= 30 -%}{%- break -%}{%- endif -%}
+    {%- assign rss_n = rss_n | plus: 1 %}
     <item>
       <title>{{ post.title | xml_escape }}</title>
       <link>{{ post.url | absolute_url }}</link>

@@ -4,6 +4,9 @@
   이 파일은 7.2.4~7.6.0 사이 테마 변경이 없어 내용이 그대로 유효하다.
   Gemfile 이 버전을 고정하고 있으니, 테마를 올릴 때 원본과 다시 대조할 것.
   원본 대비 변경점: 영문 페이지에서는 카테고리 목록을 보여준다.
+  그리고 허브 전용 카테고리(_config.yml hub_only_categories) 글은 집계에서 뺀다
+  (2026-10-06 — 타로 78장의 태그가 상위 10개 중 5개를 차지해 모든 페이지 우측에
+  '타로'가 깔렸다).
 
   왜 필요한가 — site.tags 는 site.posts(한국어)에서만 만들어지므로 원본을 그대로 두면
   영문 페이지 우측 패널에 한국어 태그가 뜨고 `/ko/tags/<한글>/` 로 링크된다.
@@ -23,6 +26,7 @@
   {% assign en_live = site.en_posts | where_exp: 'p', 'p.date <= site.time' %}
   {% assign cat_names = '' | split: '' %}
   {% for p in en_live %}
+    {% if site.hub_only_categories contains p.categories.first %}{% continue %}{% endif %}
     {% for c in p.categories %}
       {% unless cat_names contains c %}
         {% assign cat_names = cat_names | push: c %}
@@ -48,11 +52,20 @@
   {% assign tag_list = '' | split: '' %}
 
   {% for tag in site.tags %}
-    {% assign size = tag | last | size %}
-    {% assign size_list = size_list | push: size %}
+    {% assign tag_posts = tag | last %}
+    {% assign size = 0 %}
+    {% for p in tag_posts %}
+      {% unless site.hub_only_categories contains p.categories.first %}
+        {% assign size = size | plus: 1 %}
+      {% endunless %}
+    {% endfor %}
 
-    {% assign tag_str = tag | first | append: '::' | append: size %}
-    {% assign tag_list = tag_list | push: tag_str %}
+    {% if size > 0 %}
+      {% assign size_list = size_list | push: size %}
+
+      {% assign tag_str = tag | first | append: '::' | append: size %}
+      {% assign tag_list = tag_list | push: tag_str %}
+    {% endif %}
   {% endfor %}
 
   {% assign size_list = size_list | sort | reverse %}

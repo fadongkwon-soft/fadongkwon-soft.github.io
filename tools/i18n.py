@@ -275,10 +275,26 @@ def gen_archive_stubs():
 HOME_PER_PAGE = 10
 
 
+def hub_only_categories():
+    """_config.yml 의 `hub_only_categories: [A, B]` 한 줄을 읽는다(2026-10-06).
+    이 최상위 카테고리 글은 홈 피드에서 빠지므로 쪽수 계산에서도 뺀다.
+    tools/check_scheduled.py 에 같은 함수가 있다 — 형식을 바꾸면 둘 다 고칠 것."""
+    m = re.search(r'^hub_only_categories:\s*\[([^\]]*)\]',
+                  io.open(os.path.join(ROOT, '_config.yml'), encoding='utf-8').read(), re.M)
+    if not m:
+        raise SystemExit('_config.yml 에 hub_only_categories: [..] 한 줄이 없다')
+    return [c.strip().strip('\'"') for c in m.group(1).split(',') if c.strip()]
+
+
+def top_category(cats):
+    """front matter 원문 `[Products, Game]` → 'Products' (첫 값이 최상위 카테고리)."""
+    return cats.strip().strip('[]').split(',')[0].strip().strip('\'"')
+
+
 def gen_home_stubs():
     """홈 피드 페이지네이션 스텁: /page/N/ (영문 루트) · /ko/page/N/ (한국어).
     홈(home.html)은 paginator 없이 Liquid 로 직접 슬라이스하므로 2쪽 이후 URL 은
-    이 스텁이 만들어 준다. 쪽수 = 공개된(오늘 이하) 비타로·비hidden 글 수 / 10.
+    이 스텁이 만들어 준다. 쪽수 = 허브 전용 카테고리(hub_only_categories)·hidden 이 아닌 글 수 / 10.
     영문 글 date 는 한국어와 동일하므로 한 번만 세어 양 언어에 같은 쪽수를 적용한다.
     글이 늘어 쪽수가 바뀌면 fixup 을 다시 돌리면 된다(사라진 쪽은 삭제).
 
@@ -289,11 +305,12 @@ def gen_home_stubs():
     2026-09-10 실제로 이걸로 빌드가 세 번 실패했다 — 예약 4편이 30개→34개로 만들어
     4쪽이 됐는데 스텁은 3쪽까지만 있었다."""
     import shutil, math
+    hubs = hub_only_categories()
     n = 0
     for p in glob.glob(os.path.join(KO_DIR, '*.md')):
         fm, _ = split_fm(io.open(p, encoding='utf-8').read())
         cats = fm_get(fm, 'categories') or ''
-        if 'Tarot' in cats or (fm_get(fm, 'hidden') or '').strip() == 'true':
+        if top_category(cats) in hubs or (fm_get(fm, 'hidden') or '').strip() == 'true':
             continue
         n += 1
     pages = max(1, int(math.ceil(n / float(HOME_PER_PAGE))))

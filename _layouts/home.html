@@ -38,7 +38,8 @@ layout: default
 
 {%- comment -%}
   페이지네이션(2026-09-04): paginator 플러그인 없이 Liquid 로 직접 슬라이스한다.
-  타로 사전은 피드에서 빼므로 먼저 걸러낸 뒤 10개씩 자른다. 2쪽 이후 URL(/page/N/,
+  허브 전용 카테고리(_config.yml hub_only_categories — 타로 사전·앱 소개)는 피드에서
+  빼므로 먼저 걸러낸 뒤 10개씩 자른다. 2쪽 이후 URL(/page/N/,
   /ko/page/N/)은 tools/i18n.py fixup 의 gen_home_stubs 가 만드는 스텁(pnum: N)이다 —
   글이 늘어 쪽수가 바뀌면 fixup 을 다시 돌려야 한다.
 {%- endcomment -%}
@@ -50,7 +51,7 @@ layout: default
 {% assign pinned = '' | split: '' %}
 {% assign others = '' | split: '' %}
 {% for post in feature_posts %}
-  {% unless post.categories contains 'Tarot' %}
+  {% unless site.hub_only_categories contains post.categories.first %}
     {% if post.pin %}
       {% assign pinned = pinned | push: post %}
     {% else %}
@@ -77,7 +78,7 @@ layout: default
 
 <div id="post-list" class="flex-grow-1 px-xl-1">
   {% for post in page_posts %}
-    {% unless post.categories contains 'Tarot' %}
+    {% unless site.hub_only_categories contains post.categories.first %}
       <article class="card-wrapper card">
         <a href="{{ post.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
           {% assign card_body_col = '12' %}

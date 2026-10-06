@@ -4,6 +4,7 @@ layout: page
 # site.posts(한국어) 대신 site.en_posts 를 쓴다.
 # ⚠️ 컬렉션은 미래 날짜 문서가 docs 에 남으므로 날짜 필터가 필수
 #    (안 걸면 미공개 글을 링크해 htmlproofer 가 빌드를 죽인다).
+# 허브 전용 카테고리(_config.yml hub_only_categories) 글은 목록에서 뺀다(2026-10-06).
 ---
 
 {% include lang.html %}
@@ -16,8 +17,16 @@ layout: page
   | where_exp: 'p', 'p.date <= site.time'
   | sort: 'date' | reverse %}
 
+{%- comment -%} forloop.first/last 로 <ul> 을 여닫으므로 continue 대신 미리 거른다. {%- endcomment -%}
+{% assign listed = '' | split: '' %}
+{% for p in en_live %}
+  {% unless site.hub_only_categories contains p.categories.first %}
+    {% assign listed = listed | push: p %}
+  {% endunless %}
+{% endfor %}
+
 <div id="archives" class="pl-xl-3">
-  {% for post in en_live %}
+  {% for post in listed %}
     {% assign cur_year = post.date | date: '%Y' %}
 
     {% if cur_year != last_year %}

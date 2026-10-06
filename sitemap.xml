@@ -35,9 +35,16 @@ sitemap: false
   {%- endfor -%}
 {%- endfor -%}
 
+{%- comment -%}
+  태그 목록(ko-tag = jekyll-archives, tag = 영문 스텁)은 noindex 라 넣지 않는다(2026-10-06,
+  _includes/metadata-hook.html). 스토어 중간 랜딩(/toss/ · /play-store/)은 _config.yml defaults 의
+  sitemap: false 로 빠진다.
+{%- endcomment -%}
 {%- assign pages = site.html_pages
     | where_exp: 'doc', 'doc.sitemap != false'
-    | where_exp: 'doc', 'doc.url != "/404.html"' -%}
+    | where_exp: 'doc', 'doc.url != "/404.html"'
+    | where_exp: 'doc', 'doc.layout != "ko-tag"'
+    | where_exp: 'doc', 'doc.layout != "tag"' -%}
 {%- for page in pages %}
   <url>
     <loc>{{ page.url | replace: '/index.html', '/' | absolute_url | xml_escape }}</loc>

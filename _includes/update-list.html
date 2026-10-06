@@ -30,6 +30,18 @@
 {%- endcomment -%}
 {% assign source = source | where_exp: 'p', 'p.date <= site.time' %}
 
+{%- comment -%}
+  허브 전용 카테고리(_config.yml hub_only_categories — 타로 사전·앱 소개) 글은 빼고
+  나머지만 보여준다(2026-10-06). 아래 루프가 source 의 인덱스를 쓰므로 그 전에 바꿔 둔다.
+{%- endcomment -%}
+{% assign listed = '' | split: '' %}
+{% for p in source %}
+  {% unless site.hub_only_categories contains p.categories.first %}
+    {% assign listed = listed | push: p %}
+  {% endunless %}
+{% endfor %}
+{% assign source = listed %}
+
 {% assign all_list = '' | split: '' %}
 
 {% for post in source %}

@@ -4,6 +4,16 @@
      이 훅은 head.html 안에서 include 되므로 <head> 에 들어간다. -->
 <meta name="naver-site-verification" content="6f8656ddd672a33aad08e855848547621d1ea281" />
 
+{%- comment -%}
+  태그 목록 페이지는 검색에서 뺀다(2026-10-06). 태그가 글보다 많아(한국어 389 · 영어 143,
+  상당수가 글 1편짜리 — 타로 카드마다 카드 이름 태그가 붙었다) 사이트맵 URL 954개 중
+  532개가 내용 없는 목록이었다. follow 라 거기 걸린 글은 그대로 크롤링된다.
+  사이트맵에서도 같이 뺀다(sitemap.xml). ko-tag = jekyll-archives, tag = 영문 스텁.
+{%- endcomment -%}
+{%- if page.layout == 'ko-tag' or page.layout == 'tag' %}
+<meta name="robots" content="noindex, follow">
+{%- endif %}
+
 <!-- Google AdSense site verification / ad serving -->
 <script
   async

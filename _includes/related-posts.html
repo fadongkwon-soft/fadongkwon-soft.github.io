@@ -13,11 +13,28 @@
 
 {% assign TOTAL_SIZE = 3 %}
 
+{%- comment -%}
+  허브 전용 카테고리(_config.yml hub_only_categories — 타로 사전·앱 소개) 글은 허브 밖 글의
+  관련 글로 추천하지 않는다(2026-10-06). 허브 글 자신의 관련 글은 그대로 둔다
+  (타로 카드 → 다른 카드, 앱 소개 → 그 앱의 개발 일지).
+{%- endcomment -%}
+{% assign page_is_hub = false %}
+{% if site.hub_only_categories contains page.categories.first %}{% assign page_is_hub = true %}{% endif %}
+
 {% if page.lang == 'en' %}
 
   {% assign candidates = site.en_posts
     | where_exp: 'p', 'p.date <= site.time'
     | sort: 'date' | reverse %}
+  {% unless page_is_hub %}
+    {% assign kept = '' | split: '' %}
+    {% for p in candidates %}
+      {% unless site.hub_only_categories contains p.categories.first %}
+        {% assign kept = kept | push: p %}
+      {% endunless %}
+    {% endfor %}
+    {% assign candidates = kept %}
+  {% endunless %}
 
   {% assign relate_posts = '' | split: '' %}
 
@@ -80,7 +97,7 @@
 
 {% else %}
 
-<!-- 이하 원본 로직 그대로 (한국어판) -->
+<!-- 이하 원본 로직 그대로 (한국어판) — 허브 글 건너뛰기(위 page_is_hub) 한 곳만 더했다 -->
 
 <!-- An random integer that bigger than 0 -->
 {% assign TAG_SCORE = 1 %}
@@ -108,6 +125,10 @@
   {% assign post = match_posts[i] %}
 
   {% if post.url == page.url %}
+    {% continue %}
+  {% endif %}
+
+  {% if page_is_hub == false and site.hub_only_categories contains post.categories.first %}
     {% continue %}
   {% endif %}
 

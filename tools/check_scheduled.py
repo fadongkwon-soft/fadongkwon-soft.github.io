@@ -29,6 +29,19 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HOME_PER_PAGE = 10
 
 
+def hub_only_categories():
+    """_config.yml 의 `hub_only_categories: [A, B]` 한 줄 — tools/i18n.py 의 같은 함수와 맞출 것."""
+    m = re.search(r'^hub_only_categories:\s*\[([^\]]*)\]', read(os.path.join(ROOT, '_config.yml')), re.M)
+    if not m:
+        raise SystemExit('_config.yml 에 hub_only_categories: [..] 한 줄이 없다')
+    return [c.strip().strip('\'"') for c in m.group(1).split(',') if c.strip()]
+
+
+def top_category(cats):
+    """front matter 원문 `[Products, Game]` → 'Products'."""
+    return cats.strip().strip('[]').split(',')[0].strip().strip('\'"')
+
+
 def read(p):
     return io.open(p, encoding='utf-8').read().replace('\r\n', '\n')
 
@@ -159,7 +172,8 @@ def main():
                     % (d['base'], d['lang'], when, u, t['date'].strftime('%m-%d %H:%M')))
 
     # 5) 홈 페이지네이션 쪽수 (예약분 포함해서 세어야 한다)
-    n = len([d for d in docs if d['lang'] == 'ko' and not d['hidden'] and 'Tarot' not in d['cats']])
+    hubs = hub_only_categories()
+    n = len([d for d in docs if d['lang'] == 'ko' and not d['hidden'] and top_category(d['cats']) not in hubs])
     import math
     pages = max(1, int(math.ceil(n / float(HOME_PER_PAGE))))
     for base, prefix in (('page', '/page/'), (os.path.join('ko', 'page'), '/ko/page/')):
@@ -167,7 +181,7 @@ def main():
             f = os.path.join(ROOT, base, str(i), 'index.html')
             if not os.path.exists(f):
                 problems.append('홈 스텁 없음: %s%d/ (예약분 공개일에 404 링크 -> 빌드 실패)' % (prefix, i))
-    notes.append('홈 피드 비타로 글 %d개 -> %d쪽 (양 언어 스텁 확인)' % (n, pages))
+    notes.append('홈 피드 글(허브 전용 %s 제외) %d개 -> %d쪽 (양 언어 스텁 확인)' % ('·'.join(hubs), n, pages))
 
     # 6) 이미지 실재 — 예약 글은 htmlproofer 가 공개일 전까지 못 본다
     problems += check_images(docs, now)
