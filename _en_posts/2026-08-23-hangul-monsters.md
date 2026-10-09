@@ -43,5 +43,9 @@ There are no ads.
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.hangul_monsters>
 - Apps in Toss (Toss mini app): <https://fadongkwon.com/toss/hangul-monsters/> — it runs right inside the Toss app, with nothing to install.
+  You can also search for **"한글 몬스터"** in the Toss app — handy when you'd rather not install another app on a child's phone.
+
+The Toss edition **focuses on the listening modes** (launched 2026-08-24). **Sentence reading**, where you read aloud into
+the microphone, is available in the Google Play app, which has speech recognition.
 
 I post updates here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).

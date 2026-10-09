@@ -40,5 +40,9 @@ alt_url: /posts/hangul-monsters/
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.hangul_monsters>
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/hangul-monsters/> — 토스 앱에서 설치 없이 바로 실행돼요.
+  토스 앱에서 **"한글 몬스터"**를 검색해도 됩니다. 아이 폰에 앱을 따로 깔아 주기 번거로울 때 편해요.
+
+토스 판은 **듣기 모드 중심**입니다(2026-08-24 출시). 마이크로 따라 읽는 **문장 읽기**는 음성 인식이 되는
+Google Play 앱에서 할 수 있어요.
 
 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.
