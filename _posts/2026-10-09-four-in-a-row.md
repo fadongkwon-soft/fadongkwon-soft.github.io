@@ -30,7 +30,8 @@ alt_url: /posts/four-in-a-row/
 ![사목 홈 화면](/assets/img/20261009_four-in-a-row/shot-home.png){: w="360" }
 ![플레이 화면](/assets/img/20261009_four-in-a-row/shot-play.png){: w="360" }
 
-<!-- TODO(video): Shorts 업로드 후 플레이 영상 제목과 youtube 임베드 include 를 이 자리에 넣을 것 -->
+## 플레이 영상
+{% include embed/youtube.html id='51Gq9YmJstU' %}
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.four_in_a_row>

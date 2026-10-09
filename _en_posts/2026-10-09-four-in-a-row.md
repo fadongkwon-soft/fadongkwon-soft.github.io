@@ -31,7 +31,8 @@ It is free to play and contains ads.
 ![Four in a Row home screen](/assets/img/20261009_four-in-a-row/shot-home.png){: w="360" }
 ![Gameplay screen](/assets/img/20261009_four-in-a-row/shot-play.png){: w="360" }
 
-<!-- TODO(video): after the Shorts upload, add the Gameplay Video heading and the youtube embed include here -->
+## Gameplay Video
+{% include embed/youtube.html id='51Gq9YmJstU' %}
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.four_in_a_row>

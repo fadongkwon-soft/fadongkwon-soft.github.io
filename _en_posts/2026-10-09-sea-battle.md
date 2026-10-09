@@ -32,7 +32,8 @@ It is free to play and contains ads.
 ![Sea Battle home screen](/assets/img/20261009_sea-battle/shot-home.png){: w="360" }
 ![Gameplay screen](/assets/img/20261009_sea-battle/shot-play.png){: w="360" }
 
-<!-- TODO(video): after the Shorts upload, add the Gameplay Video heading and the youtube embed include here -->
+## Gameplay Video
+{% include embed/youtube.html id='UicA3m-R230' %}
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.sea_battle>

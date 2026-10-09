@@ -30,7 +30,8 @@ alt_url: /posts/sea-battle/
 ![해전 홈 화면](/assets/img/20261009_sea-battle/shot-home.png){: w="360" }
 ![플레이 화면](/assets/img/20261009_sea-battle/shot-play.png){: w="360" }
 
-<!-- TODO(video): Shorts 업로드 후 플레이 영상 제목과 youtube 임베드 include 를 이 자리에 넣을 것 -->
+## 플레이 영상
+{% include embed/youtube.html id='UicA3m-R230' %}
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.sea_battle>
