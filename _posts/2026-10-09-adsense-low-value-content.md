@@ -6,6 +6,8 @@ categories: [Devlog, Troubleshooting]
 tags: [애드센스, 블로그, 지킬, 깃허브페이지, 사이트맵, 서치콘솔, 1인개발자, 개발일지]
 pin: false
 alt_url: /posts/adsense-low-value-content/
+image:
+  path: /assets/img/20261009_adsense-low-value-content/cover.png
 ---
 
 10월 5일, 애드센스에서 또 거절 메일이 왔습니다. 사유는 **가치가 별로 없는 콘텐츠**. 이번에는 사이트 검토 요청 횟수까지 다 써서 **10월 12일까지는 다시 요청할 수도 없다**는 안내가 붙어 있었습니다.

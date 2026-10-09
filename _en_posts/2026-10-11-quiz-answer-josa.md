@@ -5,6 +5,9 @@ date: 2026-10-11 09:00:00 +0900
 categories: [Devlog, Troubleshooting]
 permalink: /posts/quiz-answer-josa/
 alt_url: /ko/posts/quiz-answer-josa/
+image:
+  path: /assets/img/20261011_quiz-answer-josa/cover.png
+  alt: a Korean particle error in 310 of 700 quiz answers
 tags: [css, solo developer, dev log]
 ---
 

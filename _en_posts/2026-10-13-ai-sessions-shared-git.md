@@ -5,6 +5,9 @@ date: 2026-10-13 09:00:00 +0900
 categories: [Devlog, Automation]
 permalink: /posts/ai-sessions-shared-git/
 alt_url: /ko/posts/ai-sessions-shared-git/
+image:
+  path: /assets/img/20261013_ai-sessions-shared-git/cover.png
+  alt: shipped but never committed — AI sessions sharing one git repo
 tags: [git, solo developer, dev log]
 ---
 

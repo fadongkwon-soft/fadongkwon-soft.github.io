@@ -6,6 +6,8 @@ categories: [Devlog, Troubleshooting]
 tags: [한국어, 조사, 퀴즈앱, 매일한국사, CSS, 1인개발자, 개발일지]
 pin: false
 alt_url: /posts/quiz-answer-josa/
+image:
+  path: /assets/img/20261011_quiz-answer-josa/cover.png
 ---
 
 [매일 한국사](/ko/posts/daily-history/)는 하루 한 문제씩 한국사 문제를 푸는 앱입니다. 틀리면 "아쉬워요. 정답은 ○○예요." 하고 정답을 알려 줍니다. 그런데 이 한 줄이 절반 가까운 문제에서 틀린 한국어였습니다.

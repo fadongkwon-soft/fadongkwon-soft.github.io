@@ -6,6 +6,8 @@ categories: [Devlog, Automation]
 tags: [git, 클로드코드, AI에이전트, 모노레포, 협업, 1인개발자, 개발일지]
 pin: false
 alt_url: /posts/ai-sessions-shared-git/
+image:
+  path: /assets/img/20261013_ai-sessions-shared-git/cover.png
 ---
 
 혼자 개발하지만 작업하는 손은 여러 개입니다. 앱 48개가 들어 있는 저장소 하나를 놓고 AI 코딩 에이전트(Claude Code) 세션을 여러 개 띄워 둡니다. 한 세션은 새 게임을 만들고, 다른 세션은 기존 앱의 버그를 고치고, 또 다른 세션은 스토어 등록을 합니다.

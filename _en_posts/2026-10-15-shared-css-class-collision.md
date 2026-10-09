@@ -5,6 +5,9 @@ date: 2026-10-15 09:00:00 +0900
 categories: [Devlog, Troubleshooting]
 permalink: /posts/shared-css-class-collision/
 alt_url: /ko/posts/shared-css-class-collision/
+image:
+  path: /assets/img/20261015_shared-css-class-collision/cover.png
+  alt: one shared .sheet class name broke two games
 tags: [css, solo developer, dev log]
 ---
 
@@ -40,13 +43,18 @@ Changing the class in the HTML and the CSS rules was all it took. The game code 
 
 ## There were more
 
-It seemed unlikely that only two games did this, so I searched the whole repository. **Two more** games have rules for exactly `.sheet`. Both leave mid-game back handling to the shared package, so the same dialog can appear in them. No one has reported a symptom yet, but they will get the same rename.
+It seemed unlikely that only two games did this, so I searched the whole repository. **Two more** games have rules for exactly `.sheet`. Loading both in a headless browser showed each had its own reason for looking fine today.
+
+- **Sequence Memory**: pressing back really does open the dialog, and the game's `.sheet` rules really do apply. It looked fine only because the shared dialog's styles were **originally copied from this game**, so the values were identical. Edit either side alone and it breaks.
+- **Tarot**: there is no in-progress game screen, so the dialog never appears. Forcing the same dialog onto the page turned it into a box floating in the middle of the screen.
+
+Neither showed a symptom, but I renamed both anyway (`.again-sheet`, `.heart-sheet`). Fixing it now is far cheaper than after it breaks.
 
 Names that merely **start with** `.sheet`, like `.sheet-box`, are safe — a CSS class has to match as a whole word. Keep the two apart when you search or the count balloons (my first plain search for "sheet" turned up ten).
 
 ## The more fundamental fix
 
-Dodging the name in every game is closer to a stopgap; someone can write `.sheet` again in the next new game. The surer route is for **the shared package to use a name nobody else will**. With a package prefix like `.mini-sheet`, a collision with a game's own names becomes unlikely. Renaming the shared class means redeploying every game that uses it, so I plan to bundle it into the next regular update.
+Dodging the name in every game is closer to a stopgap; someone can write `.sheet` again in the next new game. The surer route is for **the shared package to use a name nobody else will**. With a package prefix like `.mini-sheet`, a collision with a game's own names becomes unlikely. It turns out the shared packages themselves also build bare `.sheet` elements, for the heart refill dialog and the board game screens. Renaming the shared class means redeploying every game that uses it, so I plan to bundle it into the next regular update.
 
 ## What I learned
 

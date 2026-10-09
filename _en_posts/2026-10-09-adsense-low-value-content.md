@@ -5,6 +5,9 @@ date: 2026-10-09 17:40:00 +0900
 categories: [Devlog, Troubleshooting]
 permalink: /posts/adsense-low-value-content/
 alt_url: /ko/posts/adsense-low-value-content/
+image:
+  path: /assets/img/20261009_adsense-low-value-content/cover.png
+  alt: 603 of 954 sitemap URLs were empty pages
 tags: [solo developer, dev log]
 ---
 
