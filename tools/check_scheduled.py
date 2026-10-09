@@ -107,7 +107,7 @@ def collect():
 def check_app_posts(docs, now):
     """앱 소개 글(categories 첫 값 Products)이 /apps/ 와 이어지는지 본다(2026-10-06). 경고 목록을 돌려준다.
 
-    Products 는 hub_only_categories 라 홈·아카이브·RSS 에서 빠지고 /apps/ 링크로만 들어간다.
+    Products 는 hub_only_categories 라 홈·아카이브·RSS 에서 빠지고 /games/ · /apps/ 링크로만 들어간다(10-09 둘로 나눔).
     /apps/ 는 _plugins/apps-registry.rb 가 **슬러그 = apps.csv 의 앱 id**(다르면 APP_POST_SLUG)인 글만 잇는다.
     그래서 슬러그가 어긋나면 그 글은 어디서도 링크되지 않는다 — 실사례 hangul-monsters-toss(본편의 토스판 소식).
     빌드는 멀쩡하므로 실패가 아니라 경고로 둔다. ko/en 의 최상위 카테고리가 다르면 한쪽 홈에만 섞이므로 같이 본다."""

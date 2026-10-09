@@ -4,7 +4,7 @@
 #    HTTP 200 이라 아무 검사도 못 잡는다(2026-09-11 실제로 겪음).
 layout: page
 title: Apps
-description: Every Fadongkwon Soft app with its live status on Google Play and Apps in Toss — generated from the shared registry, so it is never out of date.
+description: Fadongkwon Soft learning, exam-prep, fortune and party apps with its live status on Google Play and Apps in Toss — generated from the shared registry, so it is never out of date.
 lang: en
 locale: en_US
 permalink: /apps/
@@ -21,19 +21,9 @@ alt_url: /ko/apps/
 
 Everything below is generated from the registry every app shares, so it updates itself when a new app goes live — there is no hand-written list to forget. The two store columns track each platform separately, because an app can be live on one and still in review on the other.
 
-**{{ site.data.apps_count }} apps** — {{ site.data.apps_play_count }} live on Google Play, {{ site.data.apps_toss_count }} on Apps in Toss. Newest first.
+**{{ site.data.apps_others | size }} apps** — {{ site.data.apps_others | where: 'on_play', true | size }} live on Google Play, {{ site.data.apps_others | where: 'on_toss', true | size }} on Apps in Toss. Newest first. Games have their own page, [Games](/games/).
 
-## Games — {{ site.data.apps_games | size }}
-
-| | App | Released | Google Play | Apps in Toss |
-| --- | --- | --- | --- | --- |
-{% for a in site.data.apps_games -%}
-| {% if a.icon_path != '' %}![{{ a.name_en | default: a.name }}]({{ a.icon_path }}){: width="40" height="40" .normal}{% else %}{{ a.emoji }}{% endif %} | {% if a.post_en %}[**{{ a.name_en | default: a.name }}**]({{ a.post_en }}){% else %}**{{ a.name_en | default: a.name }}**{% endif %} {% include app-badge.html id=a.id %}<br>{{ a.tagline_en | default: a.tagline }} | {{ a.released }} | {% if a.on_play and a.play_landing %}[Install]({{ a.play_landing }}){: data-direct="https://play.google.com/store/apps/details?id={{ a.play_package }}"}{% elsif a.on_play %}[Install](https://play.google.com/store/apps/details?id={{ a.play_package }}){% else %}*in review*{% endif %} | {% if a.on_toss and a.toss_landing %}[Open]({{ a.toss_landing }}){: data-direct="{{ a.toss_scheme }}"}{% elsif a.on_toss %}live{% else %}*in review*{% endif %} |
-{% endfor %}
-
-## Everything else — {{ site.data.apps_others | size }}
-
-Learning and exam prep, party picks, and fortune-telling content.
+Learning and exam prep, party picks, and fortune-telling apps.
 
 <!-- 타로 사전 입구(2026-10-09) — 사이드바 TAROT 메뉴를 빼면서 여기(타로 앱 옆)와 ABOUT 으로 옮겼다. -->
 > 🔮 There is also a **[Tarot card meaning dictionary](/tarot/)** — the card-by-card companion to the tarot apps (Tarot Fortune, Tarot Ping), all 78 cards.
@@ -45,9 +35,6 @@ Learning and exam prep, party picks, and fortune-telling content.
 | {% if a.icon_path != '' %}![{{ a.name_en | default: a.name }}]({{ a.icon_path }}){: width="40" height="40" .normal}{% else %}{{ a.emoji }}{% endif %} | {% if a.post_en %}[**{{ a.name_en | default: a.name }}**]({{ a.post_en }}){% else %}**{{ a.name_en | default: a.name }}**{% endif %} {% include app-badge.html id=a.id %}<br>{{ a.tagline_en | default: a.tagline }} | {{ a.released }} | {% if a.on_play and a.play_landing %}[Install]({{ a.play_landing }}){: data-direct="https://play.google.com/store/apps/details?id={{ a.play_package }}"}{% elsif a.on_play %}[Install](https://play.google.com/store/apps/details?id={{ a.play_package }}){% else %}*in review*{% endif %} | {% if a.on_toss and a.toss_landing %}[Open]({{ a.toss_landing }}){: data-direct="{{ a.toss_scheme }}"}{% elsif a.on_toss %}live{% else %}*in review*{% endif %} |
 {% endfor %}
 
-> **Spin the Bottle** and **Juice Spinner** look like games but are registered as non-games in the stores. When I started out, releasing a game in Korea involved a much heavier process, so I avoided the game category. Later releases go to Play as games first — which earns the rating automatically — and then on to Apps in Toss.
-{: .prompt-info }
-
-**Tap an app's name to read its introduction post** (apps without one are not linked). Some of these also run straight in a browser — see [PLAY](/play/). For the story behind each one, the [dev log](/archives/) has the details.
+**Tap an app's name to read its introduction post** (apps without one are not linked). Games are on [Games](/games/), and the ones that run straight in a browser are on [PLAY](/play/). For the story behind each one, the [dev log](/archives/) has the details.
 
 {% include apps-direct-links.html %}

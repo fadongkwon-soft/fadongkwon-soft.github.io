@@ -4,7 +4,7 @@
 #    HTTP 200 이라 아무 검사도 못 잡는다(2026-09-11 실제로 겪음).
 layout: page
 title: APPS — 만든 앱
-description: 파동권소프트 앱 전체와 Google Play·앱인토스 각각의 출시 현황입니다. 공용 레지스트리에서 자동으로 만들어지므로 항상 최신입니다.
+description: 파동권소프트의 학습·시험 대비·운세·모임용 앱과 Google Play·앱인토스 각각의 출시 현황입니다. 공용 레지스트리에서 자동으로 만들어지므로 항상 최신입니다.
 alt_url: /apps/
 permalink: /ko/apps/
 ---
@@ -19,19 +19,9 @@ permalink: /ko/apps/
 
 아래 목록은 모든 앱이 함께 쓰는 레지스트리에서 자동으로 만들어집니다. 새 앱이 라이브가 되면 이 페이지도 같이 갱신되므로, 손으로 적어 두고 잊어버릴 목록이 없습니다. 스토어 두 칸은 각각 따로 표시합니다 — 한쪽은 출시됐고 다른 쪽은 심사 중인 앱이 실제로 있기 때문입니다.
 
-**앱 {{ site.data.apps_count }}개** — Google Play {{ site.data.apps_play_count }}개, 앱인토스 {{ site.data.apps_toss_count }}개 라이브입니다. 최근 출시 순입니다.
+**앱 {{ site.data.apps_others | size }}개** — Google Play {{ site.data.apps_others | where: 'on_play', true | size }}개, 앱인토스 {{ site.data.apps_others | where: 'on_toss', true | size }}개 라이브입니다. 최근 출시 순입니다. 게임은 [GAMES](/ko/games/)에 따로 모았습니다.
 
-## 게임 {{ site.data.apps_games | size }}개
-
-| | 앱 | 출시 | Google Play | 앱인토스 |
-| --- | --- | --- | --- | --- |
-{% for a in site.data.apps_games -%}
-| {% if a.icon_path != '' %}![{{ a.name }}]({{ a.icon_path }}){: width="40" height="40" .normal}{% else %}{{ a.emoji }}{% endif %} | {% if a.post_ko %}[**{{ a.name }}**]({{ a.post_ko }}){% else %}**{{ a.name }}**{% endif %} {% include app-badge.html id=a.id %}<br>{{ a.tagline }} | {{ a.released }} | {% if a.on_play and a.play_landing %}[설치]({{ a.play_landing }}){: data-direct="https://play.google.com/store/apps/details?id={{ a.play_package }}"}{% elsif a.on_play %}[설치](https://play.google.com/store/apps/details?id={{ a.play_package }}){% else %}*심사 중*{% endif %} | {% if a.on_toss and a.toss_landing %}[열기]({{ a.toss_landing }}){: data-direct="{{ a.toss_scheme }}"}{% elsif a.on_toss %}출시됨{% else %}*심사 중*{% endif %} |
-{% endfor %}
-
-## 그 외 {{ site.data.apps_others | size }}개
-
-학습·시험 대비, 모임용 복불복, 운세 콘텐츠입니다.
+학습·시험 대비, 모임용, 운세 앱입니다.
 
 <!-- 타로 사전 입구(2026-10-09) — 사이드바 TAROT 메뉴를 빼면서 여기(타로 앱 옆)와 ABOUT 으로 옮겼다. -->
 > 🔮 타로 앱(타로 운세·운세 타로핑)의 해석을 카드 78장 한 장씩 풀어 쓴 **[타로 카드 의미 사전](/ko/tarot/)**도 있습니다.
@@ -43,9 +33,6 @@ permalink: /ko/apps/
 | {% if a.icon_path != '' %}![{{ a.name }}]({{ a.icon_path }}){: width="40" height="40" .normal}{% else %}{{ a.emoji }}{% endif %} | {% if a.post_ko %}[**{{ a.name }}**]({{ a.post_ko }}){% else %}**{{ a.name }}**{% endif %} {% include app-badge.html id=a.id %}<br>{{ a.tagline }} | {{ a.released }} | {% if a.on_play and a.play_landing %}[설치]({{ a.play_landing }}){: data-direct="https://play.google.com/store/apps/details?id={{ a.play_package }}"}{% elsif a.on_play %}[설치](https://play.google.com/store/apps/details?id={{ a.play_package }}){% else %}*심사 중*{% endif %} | {% if a.on_toss and a.toss_landing %}[열기]({{ a.toss_landing }}){: data-direct="{{ a.toss_scheme }}"}{% elsif a.on_toss %}출시됨{% else %}*심사 중*{% endif %} |
 {% endfor %}
 
-> **병 돌리기**와 **주스 스피너**는 게임처럼 보이지만 스토어에는 비게임으로 등록돼 있습니다. 앱을 만들기 시작한 초기에는 국내에서 게임 출시 절차가 훨씬 까다로웠던 탓에 게임 카테고리를 피해 냈습니다. 이후 게임들은 Play에 게임 카테고리로 먼저 내서 등급을 자동으로 받고 앱인토스에 올리는 방식으로 바꿨습니다.
-{: .prompt-info }
-
-**앱 이름을 누르면 그 앱의 소개 글로 갑니다**(소개 글이 아직 없는 앱은 링크가 없습니다). 이 중 일부는 브라우저에서 바로 해볼 수 있습니다 — [PLAY](/ko/play/)에 있습니다. 각 앱을 만들며 겪은 이야기는 [개발 기록](/ko/archives/)에 적어 두었습니다.
+**앱 이름을 누르면 그 앱의 소개 글로 갑니다**(소개 글이 아직 없는 앱은 링크가 없습니다). 게임은 [GAMES](/ko/games/)에, 브라우저에서 바로 해볼 수 있는 것은 [PLAY](/ko/play/)에 있습니다. 각 앱을 만들며 겪은 이야기는 [개발 기록](/ko/archives/)에 적어 두었습니다.
 
 {% include apps-direct-links.html %}

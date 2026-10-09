@@ -31,6 +31,11 @@ APP_POST_SLUG = {
   'tarot' => 'tarot-fortune'
 }.freeze
 
+# 사이트에서는 게임(GAMES /games/)으로 보여 주는 앱(2026-10-09 사용자 결정). 스토어 등록은 비게임이고
+# apps.csv tags 에도 '게임'이 없지만(초창기 국내 게임 등급 절차를 피해 비게임으로 냈다), 방문자에게는 게임이다.
+# apps.csv 는 앱들의 크로스 프로모션이 같이 쓰는 단일 소스라 거기 tags 는 바꾸지 않고 사이트에서만 덮는다.
+SITE_GAME_IDS = %w[juice-spinner spin-the-bottle].freeze
+
 # 슬러그 → URL 표. **아직 공개되지 않은 예약 글은 뺀다** — 생성되지 않은 페이지로
 # 링크하면 htmlproofer 가 빌드를 죽인다(tools/check_scheduled.py 가 감시하는 바로 그 사고).
 def build_post_index(docs, site)
@@ -69,7 +74,7 @@ Jekyll::Hooks.register :site, :post_read do |site|
     # 아이콘은 CSV 가 절대 URL(앱이 실행 중에 받아가므로) — 사이트에서는 상대 경로로 쓴다.
     h['icon_path'] = h['icon'].to_s.sub(%r{\Ahttps?://[^/]+}, '')
     # 게임/비게임은 tags 의 '게임' 유무로 갈린다(현재 게임 21 / 비게임 8).
-    h['is_game'] = h['tag_list'].include?('게임')
+    h['is_game'] = h['tag_list'].include?('게임') || SITE_GAME_IDS.include?(h['id'])
     # 출시일. registry/apps.csv 의 released 컬럼이 근거다(비면 정렬 맨 뒤).
     h['released'] = h['released'].to_s.strip
     h['released_key'] = h['released'].empty? ? '0000-00-00' : h['released']

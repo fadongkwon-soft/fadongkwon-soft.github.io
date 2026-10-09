@@ -158,13 +158,18 @@ pwa:
 # 루트 index 를 복제한 /page2..N/ 중복 페이지만 만들게 되므로 끈다.
 
 # 허브 전용 카테고리(2026-10-06): 최상위 카테고리(categories 의 첫 값)가 여기 있는 글은
-# 글 목록에서 빠지고 각 허브(Tarot → /tarot/, Products → /apps/)의 링크로만 들어간다.
-# 빠지는 곳: 홈 피드·아카이브·카테고리 탭·RSS·우측 패널(최근 글·인기 태그)·
+# 글 목록에서 빠지고 각 허브(Tarot → /tarot/, Products → /games/ · /apps/)의 링크로만 들어간다.
+# 빠지는 곳: 홈 피드·아카이브·RSS·우측 패널(최근 글·인기 태그)·
 # 다른 글 하단의 관련 글, 이전/다음 글(허브 글끼리는 서로 이어진다).
 # 그대로인 곳: 글 URL·사이트맵·검색·카테고리/태그 개별 페이지(글 상단 링크로 들어가는 곳).
 # 홈 쪽수 스텁(tools/i18n.py gen_home_stubs)과 tools/check_scheduled.py 도 이 줄을 읽는다
 # — 한 줄 배열 형식을 유지할 것.
 hub_only_categories: [Tarot, Products]
+
+# 카테고리 탭(/categories/ · /ko/categories/)에서만 빼는 최상위 카테고리(2026-10-09 사용자 결정).
+# 앱 소개(Products)는 홈 피드의 큰 흐름(앱을 만들어 내는 이야기)과 결이 맞아 카테고리 탭에는 보인다.
+# 타로 사전은 /tarot/ 가 목록이라 탭에서 뺀다. 한 줄 배열 형식 유지.
+categories_tab_hidden: [Tarot]
 
 # The base URL of your site
 baseurl: ""

@@ -631,7 +631,8 @@ def cmd_scaffold():
                       ('_tabs/ko-tags.md', '/tags/'),
                       ('_tabs/ko-privacy.md', '/privacy/'),
                       ('ko/play/index.md', '/play/'),
-                      ('ko/apps/index.md', '/apps/')]:
+                      ('ko/apps/index.md', '/apps/'),
+                      ('ko/games/index.md', '/games/')]:
         p = os.path.join(ROOT, path)
         s = io.open(p, encoding='utf-8').read()
         fm, body = split_fm(s)
@@ -743,7 +744,7 @@ def known_urls(ko, files):
                 '/privacy/', '/ko/privacy/',
                 '/archives/', '/ko/archives/', '/categories/', '/ko/categories/',
                 '/tags/', '/ko/tags/', '/play/', '/ko/play/',
-                '/apps/', '/ko/apps/',
+                '/apps/', '/ko/apps/', '/games/', '/ko/games/',
                 '/kids/', '/kids/privacy/',
                 '/play/hangul-monsters/', '/play/math-monsters/'])
     for slug in ko:
