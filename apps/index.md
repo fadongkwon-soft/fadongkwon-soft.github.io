@@ -35,6 +35,10 @@ Everything below is generated from the registry every app shares, so it updates 
 
 Learning and exam prep, party picks, and fortune-telling content.
 
+<!-- 타로 사전 입구(2026-10-09) — 사이드바 TAROT 메뉴를 빼면서 여기(타로 앱 옆)와 ABOUT 으로 옮겼다. -->
+> 🔮 There is also a **[Tarot card meaning dictionary](/tarot/)** — the card-by-card companion to the tarot apps (Tarot Fortune, Tarot Ping), all 78 cards.
+{: .prompt-info }
+
 | | App | Released | Google Play | Apps in Toss |
 | --- | --- | --- | --- | --- |
 {% for a in site.data.apps_others -%}

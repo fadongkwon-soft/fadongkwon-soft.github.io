@@ -1,7 +1,7 @@
 ---
 title: About
 description: >-
-  A solo developer building small learning apps, quiz banks, tarot content and mini games after
+  A solo developer building small learning apps, quiz banks, mini games and tarot apps after
   work — and writing down what shipping them alone actually taught me.
 icon: fas fa-info-circle
 order: 1
@@ -39,14 +39,14 @@ The **F** in Fadongkwon was drawn by overlaying the joystick motion you use to p
 
 This site is both a home for the apps and a working notebook. Three things, mainly.
 
-**1. A tarot card meaning dictionary**
-The meaning of all 78 tarot cards, written one card at a time. The artwork is drawn in-house, and the interpretations are written from scratch based on the traditional Rider–Waite imagery. The full list is at [Tarot Dictionary](/tarot/).
+**1. Development records**
+What happens when you build and ship apps: where store reviews rejected me, how platform policies differ, and how one person keeps dozens of apps alive. The thinner the existing material on a topic, the more detail I try to give. The mistakes start with [What I learned shipping 8 apps as a solo developer with a day job](/posts/solo-dev-8-apps/) and continue through the whole [dev log](/archives/).
 
 **2. Learning and exam material**
 Notes gathered while helping my own children with Korean literacy and arithmetic, plus material on certification exams — systems, schedules, study methods. These are topics I actually had to research to build the apps, so I write up the parts likely to help someone looking for the same thing.
 
-**3. Development records**
-What happens when you build and ship apps: where store reviews rejected me, how platform policies differ, and how one person keeps dozens of apps alive. The thinner the existing material on a topic, the more detail I try to give. The mistakes start with [What I learned shipping 8 apps as a solo developer with a day job](/posts/solo-dev-8-apps/) and continue through the whole [dev log](/archives/).
+**3. A tarot card meaning dictionary**
+The card-by-card companion to my tarot apps (Tarot Fortune, Tarot Ping): all 78 cards, one at a time. The artwork is drawn in-house, and the interpretations are written from scratch based on the traditional Rider–Waite imagery. The full list is at [Tarot Dictionary](/tarot/).
 
 ## The apps
 
