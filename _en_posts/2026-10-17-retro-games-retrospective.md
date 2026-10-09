@@ -61,7 +61,7 @@ While fixing this I got it wrong once more. I carried over the "remove top and b
 
 I submitted all five to Play on October 3. Only Make Ten failed the quick check with **"cannot resolve the DNS for the privacy policy URL."** Resubmitting with the same URL gave the same error. The site and DNS were fine, and the other four passed with the very same URL.
 
-In the end, switching to the `www` form of the URL (which redirects to the canonical one) got it through. I never found the cause. I decided to switch the temporary URL back to the canonical one after approval.
+In the end, switching to the `www` form of the URL (which redirects to the canonical one) got it through. I never found the cause. That URL lands on the canonical page anyway, so users see no difference, and switching back risked the same error blocking other updates, so I left it as is.
 
 Toss came on the night of October 7, once Play approval produced the game rating certificate IDs, and the games went live on October 9. The first registration process, which had just changed around then, is [written up separately](/posts/toss-first-review-combined/).
 
