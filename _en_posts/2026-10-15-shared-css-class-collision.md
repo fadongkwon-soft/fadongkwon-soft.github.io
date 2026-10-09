@@ -54,7 +54,7 @@ Names that merely **start with** `.sheet`, like `.sheet-box`, are safe — a CSS
 
 ## The more fundamental fix
 
-Dodging the name in every game is closer to a stopgap; someone can write `.sheet` again in the next new game. The surer route is for **the shared package to use a name nobody else will**. With a package prefix like `.mini-sheet`, a collision with a game's own names becomes unlikely. It turns out the shared packages themselves also build bare `.sheet` elements, for the heart refill dialog and the board game screens. Renaming the shared class means redeploying every game that uses it, so I plan to bundle it into the next regular update.
+Dodging the name in every game is closer to a stopgap; someone can write `.sheet` again in the next new game. The surer route is for **the shared package to use a name nobody else will**. With a package prefix like `.mini-sheet`, a collision with a game's own names becomes unlikely. It turns out the shared packages themselves also build bare `.sheet` elements, for the heart refill dialog and the board game rules. So instead of waiting, I renamed all three shared parts to `.mini-sheet`. I type-checked all 48 games and screenshotted the confirm and rules dialogs in a headless browser before and after, checking that their look and position were identical. One game deliberately borrowed the shared name (the settings sheet in Save Instead of Lotto), so I fixed that game too. Each game picks up the new name with its next update.
 
 ## What I learned
 
