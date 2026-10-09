@@ -36,9 +36,10 @@ It is free to play and contains ads.
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.four_in_a_row>
+- Apps in Toss: <https://fadongkwon.com/toss/four-in-a-row/> — open it on your phone and it connects straight into the Toss app.
 
 ## Released Alongside
-Nine board games went up on Google Play together on October 7, alongside five retro puzzle and arcade games. The Apps in Toss versions are still in preparation.
+Nine board games went up on Google Play together on October 7, alongside five retro puzzle and arcade games. They are also available on Apps in Toss.
 
 - [Reversi](/posts/reversi/) — Flip discs and paint the board your color
 - [Gonu](/posts/gonu/) — Three classic Korean strategy board games

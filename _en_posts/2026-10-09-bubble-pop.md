@@ -36,9 +36,10 @@ It is free to play and contains ads.
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.bubble_pop>
+- Apps in Toss: <https://fadongkwon.com/toss/bubble-pop/> — open it on your phone and it connects straight into the Toss app.
 
 ## Released Alongside
-Five retro puzzle and arcade games went up on Google Play together on October 7, alongside nine board games. The Apps in Toss versions are still in preparation.
+Five retro puzzle and arcade games went up on Google Play together on October 7, alongside nine board games. They are also available on Apps in Toss.
 
 - [Block Fill](/posts/block-fill/) — Place blocks and clear the lines
 - [Merge Pop](/posts/merge-pop/) — Drop and merge to grow bigger

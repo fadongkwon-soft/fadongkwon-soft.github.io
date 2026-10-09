@@ -36,9 +36,10 @@ alt_url: /posts/dots-boxes/
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.dots_boxes>
+- 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/dots-boxes/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.
 
 ## 함께 나온 게임
-10월 7일 Google Play에 보드게임 9종을 함께 냈습니다. 같은 날 레트로 퍼즐·아케이드 5종도 나왔고, 앱인토스 버전은 준비 중입니다.
+10월 7일 Google Play에 보드게임 9종을 함께 냈습니다. 같은 날 레트로 퍼즐·아케이드 5종도 나왔고 앱인토스에서도 만나볼 수 있습니다.
 
 - [리버시](/ko/posts/reversi/) — 끼워서 뒤집고 판을 내 색으로
 - [사목](/ko/posts/four-in-a-row/) — 돌을 떨어뜨려 네 개를 먼저 이어요

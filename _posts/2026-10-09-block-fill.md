@@ -34,9 +34,10 @@ alt_url: /posts/block-fill/
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.block_fill>
+- 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/block-fill/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.
 
 ## 함께 나온 게임
-10월 7일 Google Play에 레트로 퍼즐·아케이드 5종을 함께 냈습니다. 같은 날 보드게임 9종도 나왔고, 앱인토스 버전은 준비 중입니다.
+10월 7일 Google Play에 레트로 퍼즐·아케이드 5종을 함께 냈습니다. 같은 날 보드게임 9종도 나왔고 앱인토스에서도 만나볼 수 있습니다.
 
 - [머지 팝](/ko/posts/merge-pop/) — 같은 것끼리 합쳐 더 크게 키우기
 - [10 만들기](/ko/posts/make-ten/) — 묶어서 합이 10이면 펑! 2분 숫자 퍼즐
