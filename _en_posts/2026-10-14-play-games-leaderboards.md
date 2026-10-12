@@ -1,6 +1,6 @@
 ---
-title: Adding Google Play Games Leaderboards to 25 Games That Used Toss Rankings — One Place in Code, 60 Clicks per App in the Console
-description: I am adding Google Play Games leaderboards to the Google Play versions of 25 minigames that already use the Toss game center ranking. Game code stays untouched; one shared platform module switches the ranking button. The console setup took nine steps per app. Here is where I got stuck, from Cloud project quotas and two signing keys to sort orders you cannot change after publishing
+title: I Added Google Play Games Leaderboards to 22 Games, Then Removed 20 — One Place in Code, Blocked by the Cloud Project Limit
+description: I started adding Google Play Games leaderboards to the Play versions of 25 minigames that use the Toss game center ranking, and got through setup and updates for 22. Game code stays untouched; one shared module does the switching, and the console took nine steps per app. Then Cloud projects capped out at 25 per account and three quota requests were all declined. In the end I kept the 2 games with real users and removed 20. Here is how that went
 image:
   path: /assets/img/20261014_play-games-leaderboards/cover.png
   alt: Google Play Games leaderboards for 25 minigames, progress as of October 10
@@ -15,7 +15,7 @@ A month ago I [added record tabs to my minigames](/posts/leaderboard-record-tabs
 
 The problem was the **Google Play version**. The same games are also on the Play Store, and there is no Toss game center there. Play users could see their own records but had nowhere to compare with anyone else.
 
-So I decided to add **Google Play Games Services (PGS) leaderboards** to all 25 games that use the Toss ranking. There was a suggestion to try one or two first, but I went with adding it to every game that keeps a score. This post is a progress report on that work.
+So I decided to add **Google Play Games Services (PGS) leaderboards** to all 25 games that use the Toss ranking. There was a suggestion to try one or two first, but I went with adding it to every game that keeps a score. To give away the ending: I got to 22, and two days later removed 20 of them. Here is how it went.
 
 ## The game code stays untouched
 
@@ -51,28 +51,36 @@ The code was a one-time job, but the console setup has to be done for every app.
 
 I got stuck in four places.
 
-- **One Cloud project per PGS project.** Every app needs its own Cloud project, and my account's project quota was smaller than the number of apps left. I have requested a quota increase and am waiting for a reply.
+- **One Cloud project per PGS project.** Every app needs its own Cloud project. This is what ended up overturning the whole plan, as described below.
 - **Apps with two signing keys.** In August and September I upgraded the signing key of almost every app. People on versions signed with the old key also need to sign in, so I had to create **one more OAuth client and one more credential, using the SHA-1 of the previous key** as well as the current one. The previous key's fingerprint is inside the "previous app signing key" menu on the app signing page in Play Console.
 - **Do not upload a logo to the consent screen.** Uploading a logo to the OAuth consent screen triggers Google's app verification review. I filled in only the name and links and left the logo empty.
 - **The Data safety form.** Using PGS means declaring that you collect a user ID and app activity (score submissions). I added those two items as app functionality and optional. I made one form with the common items for my ad-supported apps plus these two lines, and uploaded the same form for each app.
 
 I did this by clicking through the console in a browser, and **when the browser tab went into the background, its timers slowed down**, so dropdowns would not open and the work stalled. During console work, that tab had to stay in front.
 
-## Where things stand
+## Stopped at 22 — 25 Cloud projects per account
 
-As of October 10, when I am writing this:
+By October 10 I had finished the console setup for 22 games and submitted updates for all of them. Snake, the first one, I checked on a real phone (Galaxy S23): opening the app signed in to Play Games automatically, the old best score of 220 was uploaded once, and the ranking button opened the PGS leaderboard screen.
 
-| Stage | Games |
-| --- | ---: |
-| Console done, update submitted for review | 9 |
-| Console done, app not built yet | 5 |
-| Waiting for Cloud project quota | 11 |
-| Total | 25 |
+Three games were left, but when I tried to create the 23rd Cloud project I got **"You have reached your project limit."** This account's Cloud projects, the 3 it already had plus 22 for PGS, **came to 25, and that was the cap.**
 
-Snake, the first one, I checked on a real phone (Galaxy S23). Opening the app signs in to Play Games automatically, the old best score of 220 is uploaded once, and the ranking button opens the PGS leaderboard screen. After that I submitted updates for 8 more: Brick Breaker, 2048, Hangul Word Guess, All Lights Off, Pixel Pong, Sky Jump, Tap Bird and Tower Stack. The remaining 11 will follow as the quota increases.
+I requested a quota increase three times. All three were declined with an **automatic reply saying I had plenty of quota left**. The console said I was at the limit, while the request channel said I had room. The third time I quoted the console message word for word, with the same result.
 
-## New games get it from the start
+I looked at other options too.
 
-Having added this to 25 games after the fact, I decided that any new score-based game will **include PGS from the start**. I added a PGS item to the release checklist, and the release check script now fails when "the app is live on Play but its leaderboard ID is empty." A new app has only one signing key, so one client is enough.
+- **Several games sharing one PGS project.** According to the documentation, that feature is for different editions of the same game (such as free and paid versions), not for bundling different games together.
+- **Creating Cloud projects under another Google account.** Using multiple accounts to get around quotas can violate the Cloud terms. With every app depending on one account, I did not want to take that risk.
 
-Once all of them are done, I will look at how often Play users actually open the ranking and whether the return rate changes, and write that up separately.
+## So I removed 20
+
+I changed direction: keep leaderboards **only on games that people actually play**. The bar is 30 or more active devices on Play. Only **Sky Jump and Brick Breaker** cleared it.
+
+On October 11 I submitted updates removing the leaderboard from the other 20. The code kept the structure from the start, so removing an ID from the table was all it took. I also switched their Data safety forms back to the version without the PGS items. After confirming all the updates had gone live, on October 12 I shut down the 20 Cloud projects that were no longer used.
+
+Shutting them down does not free the slots right away, though. A shut-down project stays pending deletion for 30 days and keeps counting against the quota. So the slots only come back **after November 11**. Until then, no new PGS projects.
+
+## New games from here on
+
+At first I decided that every new score-based game would include PGS by default, and even changed the release check script. I have withdrawn that rule. **New games ship without PGS**, and only games that gather enough Play users get it later. As long as the game's row is already in the table, adding it later only means filling in the ID.
+
+Looking back, the early suggestion to try one or two first was right. Counting the console work and reviews for 22 games plus the updates to remove them again, adding leaderboards one at a time to games that already have users would have been far cheaper. **Before spending a resource that has a quota, check the total first.** That is the lesson from this one.
