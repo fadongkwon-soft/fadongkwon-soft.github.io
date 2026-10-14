@@ -45,6 +45,6 @@ alt_url: /posts/castle-topple/
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.castle_topple>
-- 앱인토스(토스 미니앱) 버전은 준비 중입니다. 열리면 이 글에 링크를 추가하겠습니다.
+- 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/castle-topple/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.
 
 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.

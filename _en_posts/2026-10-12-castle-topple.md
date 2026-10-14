@@ -47,6 +47,6 @@ It is free to play and contains ads.
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.castle_topple>
-- An Apps in Toss (Toss mini app) version is in preparation. I will add the link here once it opens.
+- Apps in Toss: <https://fadongkwon.com/toss/castle-topple/> — open it on your phone and it connects straight into the Toss app.
 
 I post updates here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
