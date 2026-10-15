@@ -41,7 +41,7 @@ alt_url: /posts/castle-topple/
 ![1-7 클리어 — 별 3개와 점수 화면](/assets/img/20261012_castle-topple/castle-topple-shot-ko-4.png){: w="360" }
 
 ## 플레이 영상
-{% include embed/youtube.html id='HQHv5_ezBvc' %}
+{% include embed/youtube.html id='hxRQglPQ0cc' %}
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.castle_topple>

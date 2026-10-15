@@ -43,7 +43,7 @@ It is free to play and contains ads.
 ![Level 1-7 cleared — three stars and the score screen](/assets/img/20261012_castle-topple/castle-topple-shot-en-4.png){: w="360" }
 
 ## Gameplay Video
-{% include embed/youtube.html id='HQHv5_ezBvc' %}
+{% include embed/youtube.html id='hxRQglPQ0cc' %}
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.castle_topple>
