@@ -11,7 +11,7 @@ alt_url: /ko/posts/castle-topple-planck/
 tags: [minigame, google play, typescript, solo developer, dev log]
 ---
 
-On October 12 I launched [Castle Topple](/posts/castle-topple/) on Google Play. It is a physics puzzle: pull back a cannon, fire, bring the castle down and knock over the knights guarding it.
+On October 12 I launched [Castle Topple](/posts/castle-topple/) on Google Play, and on October 14 it went out on Toss under its new Korean name, Siege King (파괴왕 공성전). It is a physics puzzle: pull back a cannon, fire, bring the castle down and knock over the knights guarding it.
 
 This game differs from every minigame I have made so far in one way. **It is the first to bring in an outside runtime library**: the physics engine **planck**.
 
@@ -85,7 +85,7 @@ The automatic 1 cm gap between stacked layers is there for the same reason. With
 
 ## How much bigger it got
 
-With planck included, the Toss build's JavaScript is **about 360 KB**, inside the 500 KB target set during design. There are no image files at all; block textures and castles are all drawn in code. There are more than 90 tests, and the physics, camera and level checks all run in Node.
+With planck included, the Toss build's JavaScript was **about 360 KB** in the first version and **about 450 KB** in 1.1.0, which went landscape with 60 levels — still inside the 500 KB target set during design. There are no image files at all; block textures and castles are all drawn in code. There are more than 90 tests, and the physics, camera and level checks all run in Node.
 
 ## One thing I got wrong
 

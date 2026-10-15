@@ -79,7 +79,7 @@ Concluding it was not a code problem, I repackaged the same build and this time 
 
 On September 30 that version was approved.
 
-On October 3 both apps were rejected again, with the ad layout exactly as approved. I resubmitted the same version of Tarot Ping unchanged, and it was approved on October 5. For Tarot Fortune I again rewrote the start of the release note as the checking steps and resubmitted; as of October 10, when I am writing this, it has been in review for a week.
+On October 3 both apps were rejected again, with the ad layout exactly as approved. I resubmitted the same version of Tarot Ping unchanged, and it was approved on October 5. For Tarot Fortune I again rewrote the start of the release note as the checking steps and resubmitted, and after eight days of waiting it was approved on October 11.
 
 What I took from this:
 

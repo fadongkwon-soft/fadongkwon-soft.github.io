@@ -44,7 +44,7 @@ The plan was to follow these three by **uploading the remaining 31 games at once
 
 But most of those 31 are also ports of classic genres — Minesweeper, Sudoku, 2048, Solitaire and so on — and are likely to be rejected for the same reason. So I **put the second upload and submissions to another portal (GameDistribution) on hold**.
 
-If I submit again, there is one condition: **a single new game that is differentiated from the start.** The current candidate is [Castle Topple](/posts/castle-topple/), built on a physics engine.
+If I submit again, there is one condition: **a single new game that is differentiated from the start.** The current candidate is [Castle Topple](/posts/castle-topple/) (now called Siege King in Korean stores), built on a physics engine.
 
 ## And then, Ragdoll Archers
 

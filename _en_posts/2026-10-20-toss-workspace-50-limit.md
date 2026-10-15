@@ -1,6 +1,6 @@
 ---
-title: An Apps in Toss Workspace Holds Only 50 Mini Apps — Getting Stuck at Number 51
-description: On October 10, creating Quick Go brought my Apps in Toss workspace to 50 mini apps, and the next one was blocked with "a workspace can have at most 50 mini apps." Billiards, Mini Golf and Castle Topple went out on Google Play first, and a second workspace had its settlement registration rejected as a duplicate business. Here is when I should have known about the limit, and how it lines up with the October 22 exposure policy
+title: An Apps in Toss Workspace Holds Only 50 Mini Apps — Stuck at Number 51, Then Raised to 52
+description: On October 10, creating Quick Go brought my Apps in Toss workspace to 50 mini apps, and the next one was blocked with "a workspace can have at most 50 mini apps." A second workspace had its settlement registration rejected as a duplicate business, and after contacting support the limit was raised to 52 as an exception, with no more beyond that. Here is where the two slots went, what to do until app deletion arrives, and how it lines up with the October 22 exposure policy
 image:
   path: /assets/img/20261020_toss-workspace-50-limit/cover.png
   alt: Apps in Toss workspace limit of 50 mini apps
@@ -35,13 +35,26 @@ Three games could not go to Toss right away:
 - **Mini Golf**
 - **[Castle Topple](/posts/castle-topple/)** — a cannon puzzle built on a physics engine
 
-All three **went out on Google Play first** and launched on October 12. The Toss code and app wrappers are ready, so they can go out as soon as a slot opens.
+All three **went out on Google Play first** and launched on October 12. The Toss code and app wrappers were ready.
 
 ## Two things I tried
 
-**1. Asking for a higher limit.** I asked through the Apps in Toss support chat whether the limit could be raised to 100 or more. As I write this, I am waiting for an answer.
+**1. A second workspace.** I first tried creating another workspace to hold new apps. But to receive ad revenue, each workspace needs its own settlement (business) information, and **registering settlement for a second workspace under the same business was rejected as "duplicate business information."** Putting apps in a workspace that cannot receive revenue made no sense, so I dropped that route.
 
-**2. A second workspace.** I also tried creating another workspace to hold new apps. But to receive ad revenue, each workspace needs its own settlement (business) information, and **registering settlement for a second workspace under the same business was rejected.** Putting apps in a workspace that cannot receive revenue made no sense, so I dropped that route.
+**2. Asking for a higher limit.** Through the Apps in Toss support chat I asked three things: whether the limit could be raised to 100 or more, whether one business can run more than one workspace, and whether deleting a retired app frees its slot.
+
+After some waiting, the answer came:
+
+- **As an exception, the limit was raised to 52.**
+- **An app deletion feature is planned.** For now there is no way to delete an app.
+
+I explained my hub app plan and asked once more whether 60 was possible, but since this increase was already an exception, **a further increase was not possible**.
+
+## Where the two slots went
+
+The two new slots went to **Siege King** (Castle Topple's new Korean name) and **Mini Golf**, both launched on Toss on October 14. Billiards is still Play-only, and the five board games I made after that are on hold for Toss too.
+
+This also changed how I build. For [Reaction Challenge](/posts/reaction-modes-retrospective/), instead of launching new apps, **I added eight modes to the existing app.** With no room for more apps, the direction became making each app deeper rather than adding apps.
 
 ## What matters more than the limit
 
@@ -49,17 +62,14 @@ Apart from hitting the limit, this coincided with a change in Toss's exposure po
 
 Looking back, 50 is probably not an arbitrary number. Toss wants **one app grown well rather than many apps launched**, and the limit and the policy point the same way.
 
-So here is how I will use the remaining room:
-
-- **Not for adding one more app at a time.** Even if the limit is raised, adding more of the same kind of app to a category only makes them pull down each other's rankings.
-- **Hub apps that bundle similar games come first** — one per category, like puzzle, arcade and board, with individual games as modes inside.
-- **Apps with weak metrics are candidates for cleanup**, starting with the lotto variants that differ only in theme.
+What remains is **hub apps** that bundle similar games: one per theme, such as fortune, puzzle, arcade, board games, quizzes and party games, with today's individual apps becoming modes inside them. With no free slots, the hubs will come **after app deletion arrives**, taking the places of low-activity apps that get cleaned up — starting with the lotto variants that differ only in theme.
 
 ## Summary
 
 - An Apps in Toss workspace holds **up to 50 mini apps**. There is no advance warning; you are blocked when creating number 51.
-- Unlaunched apps take a slot **from the moment they are created**.
-- A second workspace under the same business may have its **settlement registration rejected**.
-- If you are past 30 apps, **count your remaining slots now** — and keep an eye on the shift toward each app's metrics mattering more than the number of apps.
+- Unlaunched apps take a slot **from the moment they are created**, and right now **apps cannot be deleted.**
+- A second workspace under the same business gets its **settlement registration rejected**.
+- Support may raise the limit a little as an exception, but in my case **52 was the end**.
+- If you are past 30 apps, **count your remaining slots now** — and before a new app, consider **adding modes to an existing one**. The exposure policy points the same way.
 
-When a slot opens or the support team answers, I will write again along with the Toss launches of Billiards, Mini Golf and Castle Topple.
+When app deletion arrives, I will write about which apps I cleaned up and which hubs took their place.
