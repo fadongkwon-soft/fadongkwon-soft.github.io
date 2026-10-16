@@ -8,8 +8,8 @@ date: 2026-10-12 03:00:00 +0900
 categories: [Products, Game]
 permalink: /posts/castle-topple/
 alt_url: /ko/posts/castle-topple/
-tags: [game, android, puzzle, casual, solo developer]
 struct_exempt: [images]
+tags: [game, android, puzzle, casual, solo developer]
 ---
 ## Info
 > **Castle Topple: Cannon Puzzle** — Pull back, fire the cannon and topple the castle in this physics puzzle. Free to play on Google Play, with ads. Korean and English.

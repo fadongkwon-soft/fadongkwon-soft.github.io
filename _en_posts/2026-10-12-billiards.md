@@ -8,8 +8,8 @@ date: 2026-10-12 21:40:00 +0900
 categories: [Products, Game]
 permalink: /posts/billiards/
 alt_url: /ko/posts/billiards/
-tags: [game, android, two player, casual, solo developer]
 struct_exempt: [images]
+tags: [game, android, two player, casual, solo developer]
 ---
 ## Info
 > **Billiards — 8-Ball & 3-Cushion** — Pocket and carom billiards with one finger: 8-Ball, 9-Ball, Four-Ball, Three-Ball and 3-Cushion. Free to play on Google Play, with ads. 9 languages.

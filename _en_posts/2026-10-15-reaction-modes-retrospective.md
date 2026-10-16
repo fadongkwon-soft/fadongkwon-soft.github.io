@@ -8,9 +8,9 @@ date: 2026-10-15 00:35:00 +0900
 categories: [Devlog, Retrospective]
 permalink: /posts/reaction-modes-retrospective/
 alt_url: /ko/posts/reaction-modes-retrospective/
-tags: [reaction, minigame, apps in toss, solo developer, dev log]
 # mode screenshots are captured per language (English UI vs Korean UI)
 struct_exempt: [images]
+tags: [reaction, minigame, apps in toss, solo developer, dev log]
 ---
 
 [Reaction Challenge](/posts/reaction/) is the most-played of all our mini games across Toss and Google Play, and the one that pulls the most weight. It is a simple game — tap the moment the screen turns green — and that simplicity is exactly why people keep coming back for one more try.
