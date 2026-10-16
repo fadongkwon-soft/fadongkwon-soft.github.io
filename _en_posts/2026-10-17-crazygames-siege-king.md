@@ -4,7 +4,7 @@ description: On October 10 all three games I submitted to CrazyGames were reject
 image:
   path: /assets/img/20261017_crazygames-siege-king/cover.png
   alt: Back to CrazyGames — one new game submitted as Siege King after three rejections
-date: 2026-10-17 01:45:00 +0900
+date: 2026-10-17 01:40:00 +0900
 categories: [Devlog, Platform]
 permalink: /posts/crazygames-siege-king/
 alt_url: /ko/posts/crazygames-siege-king/
