@@ -1,13 +1,13 @@
 ---
 title: CrazyGames에 게임 3개를 냈다가 같은 날 전부 반려됐습니다 — 그리고 Ragdoll Archers에 빠진 이야기
 description: 웹 게임 포털 CrazyGames에 하늘 점프·벽돌깨기·오목을 냈다가 같은 날 셋 다 반려됐습니다. 오목은 "기존 게임과 콘셉트가 너무 비슷하다", 나머지 둘은 "완성도가 아직 기대에 못 미친다"였습니다. 포털용으로 바꾼 것, 반려 사유를 읽은 방식, 31개를 더 올리려던 계획을 멈춘 이유, 그리고 포털 인기 게임을 둘러보다 Ragdoll Archers에 빠져서 깨달은 것을 적었습니다
-date: 2026-10-19 09:00:00 +0900
+date: 2026-10-17 01:30:00 +0900
 categories: [Devlog, Platform]
 tags: [웹게임, 포털, 미니게임, 1인개발자, 개발일지]
 pin: false
 alt_url: /posts/crazygames-rejection/
 image:
-  path: /assets/img/20261019_crazygames-rejection/cover.png
+  path: /assets/img/20261017_crazygames-rejection/cover.png
 ---
 
 지금까지 만든 미니게임은 토스와 구글 플레이에 냈습니다. 그런데 플레이는 혼자 올려서는 사람이 잘 오지 않습니다. 앱이 있어도 찾아오는 길이 없으면 아무도 모릅니다. 그래서 다음 유통 경로로 **웹 게임 포털**을 골랐습니다. 첫 번째가 CrazyGames였습니다.

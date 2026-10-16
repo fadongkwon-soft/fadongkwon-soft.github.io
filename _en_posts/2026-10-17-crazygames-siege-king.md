@@ -11,7 +11,7 @@ alt_url: /ko/posts/crazygames-siege-king/
 tags: [minigame, solo developer, dev log]
 ---
 
-On October 10 I submitted three minigames to the web game portal CrazyGames: Sky Jump, Brick Breaker and Gomoku. **All three were rejected the same day.** This post is about what I changed over the following six days and how I went back.
+On October 10 I submitted three minigames to the web game portal CrazyGames: Sky Jump, Brick Breaker and Gomoku. **All three were rejected the same day.** That story is in the [previous post](/posts/crazygames-rejection/); this post is about what I changed over the following six days and how I went back.
 
 ## Reading the Rejection Reasons Again
 

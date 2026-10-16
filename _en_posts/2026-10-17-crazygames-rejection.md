@@ -2,9 +2,9 @@
 title: I Submitted Three Games to CrazyGames and All Three Were Rejected the Same Day — Plus How I Got Hooked on Ragdoll Archers
 description: I submitted Sky Jump, Brick Breaker and Gomoku to the web game portal CrazyGames, and all three were rejected the same day. Gomoku was "quite close to existing titles," and the other two "do not yet meet quality expectations." This covers what I changed for the portal, how I read the rejection reasons, why I stopped the plan to upload 31 more, and what I realized after getting hooked on Ragdoll Archers while browsing the portal's top games
 image:
-  path: /assets/img/20261019_crazygames-rejection/cover.png
+  path: /assets/img/20261017_crazygames-rejection/cover.png
   alt: CrazyGames rejection, three games rejected the same day
-date: 2026-10-19 09:00:00 +0900
+date: 2026-10-17 01:30:00 +0900
 categories: [Devlog, Platform]
 permalink: /posts/crazygames-rejection/
 alt_url: /ko/posts/crazygames-rejection/
