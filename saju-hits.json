@@ -1,6 +1,6 @@
 {
   "schema": 2,
-  "generatedAt": "2026-10-11T04:25:29.215Z",
+  "generatedAt": "2026-10-18T03:22:12.577Z",
   "card": {
     "round": 1245,
     "drawDate": "2026-10-10",
@@ -25,9 +25,9 @@
       "gameIndex": 2
     }
   },
-  "latestRound": 1245,
-  "latestDrawDate": "2026-10-10",
-  "matchCount": 1,
+  "latestRound": 1246,
+  "latestDrawDate": "2026-10-17",
+  "matchCount": 0,
   "searchedSeeds": 816686,
-  "carriedOver": false
+  "carriedOver": true
 }
