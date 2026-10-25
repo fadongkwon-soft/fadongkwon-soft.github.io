@@ -5,6 +5,7 @@ image:
   path: /assets/img/20261025_toss-growth-program-tap-bird/cover.png
   alt: Tap Bird selected for the Apps in Toss partner growth program
 date: 2026-10-25 10:20:00 +0900
+pin: true
 categories: [Devlog, Platform]
 permalink: /posts/toss-growth-program-tap-bird/
 alt_url: /ko/posts/toss-growth-program-tap-bird/
