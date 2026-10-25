@@ -1,6 +1,6 @@
 ---
 title: Moving Hub Apps onto Apps in Toss — Why I Withdrew the Shutdowns and Rewrote Existing Apps Instead
-description: The 50-app workspace cap on Apps in Toss blocked every new hub registration. Shutting apps down did not free a slot because apps pending shutdown still count, so I withdrew ten shutdown requests and converted existing apps into hubs by changing their name, icon and bundle. Four non-game hubs went live within a day and five game hubs are in review. Here is what could be changed, what could not, and how ad placements and user data carried over
+description: The 50-app workspace cap on Apps in Toss blocked every new hub registration. Shutting apps down did not free a slot because apps pending shutdown still count, so I withdrew ten shutdown requests and converted existing apps into hubs by changing their name, icon and bundle. Four non-game hubs went live within a day and five game hubs are in review. Here is what could be changed, what could not, how ad placements and user data carried over, and how the 1-won promotions were re-created per hub
 image:
   path: /assets/img/20261026_toss-hub-conversion/cover.png
   alt: Converting existing Apps in Toss mini apps into hub apps
@@ -82,13 +82,22 @@ There was one small trap. English names must capitalize only the first letter of
 - **Participant count in the Lucky Pick hub.** Tools like the roulette, ladder and lots only let you change the number of participants with minus and plus buttons. Now you can type the number. This landed in both the hub and the individual apps.
 - **A quiz hub, later.** The consonant quiz inside Lucky Pick does not quite belong with luck-based tools, so once head-to-head quizzes like trivia battles, twenty questions and riddles accumulate, it will move to its own hub. Until then it stays in Lucky Pick.
 
-## No promotions for now
+## Promotions, re-created per hub
 
-A natural question once the hubs are up is whether to run new [1-won promotions](/posts/toss-one-won-promotion-week1/) on them. The answer is **not yet**.
+With the hubs up, the [1-won promotions](/posts/toss-one-won-promotion-week1/) needed re-creating too. The four apps that gave up their slots never had promotions, so nothing broke, but the hubs got new ones. One per live hub, with the benefits-tab mission written to fit each hub.
 
-As the last post showed, the new exposure policy picks recommended and boosted apps by return rate. Users who arrive through a 1-won promotion often come once and do not return, so running promotions on the hubs first could inflate the denominator and push them away from the bar. The order is hub live, then two to three weeks of organic return-rate measurement, then a test on a single hub, then a decision on the rest based on the result.
+| Hub | Benefits-tab mission |
+| --- | --- |
+| FDK Lucky Lab | Get today's fortune or this week's numbers, 1 won once a day |
+| FDK Daily Quiz | Answer today's question in one subject, 1 won once a day |
+| FDK Lucky Pick | Spin one tool once, 1 won once a day |
+| FDK Exam Bank | Answer five questions, 1 won once a day |
 
-There is also cleanup in the other direction. The promotions still running on Memory Cards and Pixel Pong will stop paying out once the hub bundles go live, because the hub carries no reward code. I plan to end them right before releasing the Brain Check and Olympics hubs.
+One technical change was needed. Until now the payout lived inside each game, and in hub mode that code was switched off entirely, because paying one hub's code separately per game would pay several times a day. This time I added a single hub-wide payout. The moment any game inside the hub finishes a round, the same point where today's mission is recorded as done, the hub pays once per day for the whole hub, and only for sessions that arrived through the benefits-tab card. The Exam Bank hub uses a different shell, so it got its own hook at the fifth question answered.
+
+The four promotions are in review, and the bundles carrying the payout codes went back into review. A test payout has to go through before they can start, so going live takes another day or two.
+
+There is also cleanup. The promotions still running on Memory Cards and Pixel Pong carry the old codes and will stop paying out once the hub bundles go live. I plan to end them right before releasing the Brain Check and Olympics hubs and re-create them for the hubs.
 
 ## Summary
 
@@ -96,7 +105,7 @@ There is also cleanup in the other direction. The promotions still running on Me
 - Instead, I **replaced the app info and bundle of existing apps with the hubs**. Only the app identifier and app type stay, and ad placements, push consent and user data carry over.
 - **Four non-game hubs went live within a day**, and five game hubs are waiting on human review of their app info. Card Games comes after its Play release.
 - Swapping the game-rating link worked through the API, and the English name prefix could not be used on Toss.
-- 1-won promotions wait until the return rate has been measured, and then only one hub gets a test.
+- 1-won promotions were re-created per hub on the four live hubs, with payouts collapsed to once a day across the whole hub.
 
 When the five game hubs are approved, I will follow up with how that went and how return visits moved after the switch to hubs.
 
