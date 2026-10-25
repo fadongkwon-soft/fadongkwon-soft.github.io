@@ -11,6 +11,9 @@ image:
 tags: [solo developer, dev log]
 ---
 
+> **Update, October 25** — The re-request on October 12 was rejected as well, and this time the email gave no reason at all. What changed in between, the remaining candidate causes, and why I stopped the resubmission loop are in [the follow-up post](/posts/adsense-rejected-again/).
+{: .prompt-info }
+
 On October 5 another rejection arrived from AdSense. The reason: **low-value content**. This time I had also used up my review requests, so the notice said **I could not ask for another review until October 12**.
 
 Honestly, my first reaction was to bolt a different ad network onto the site instead. In the end I didn't. I took the site apart from the top instead, and a number I never expected came out of it.
