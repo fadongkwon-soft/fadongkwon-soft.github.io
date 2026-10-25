@@ -71,6 +71,23 @@
     opacity: 0.6;
   }
 
+  /* 언어 쌍 본문 링크(post.html .lang-twin, 2026-10-25) — 본문 첫 줄의 작은 안내 박스 */
+  .lang-twin {
+    font-size: 0.88rem;
+    margin: 0 0 1.5rem;
+    padding: 0.55rem 0.9rem;
+    border-left: 3px solid var(--link-color, #2a408e);
+    border-radius: 0 0.5rem 0.5rem 0;
+    background: var(--card-bg, rgba(0, 0, 0, 0.03));
+  }
+  .lang-twin .lang-twin-label {
+    color: var(--text-muted-color, #8e8e8e);
+    margin-right: 0.5rem;
+  }
+  .lang-twin a {
+    font-weight: 600;
+  }
+
   /* 본문 이미지 좌측 정렬 — Chirpy 기본(중앙)이 본문 좌측 정렬 텍스트와 어긋나
      깨져 보인다는 피드백(2026-08-29). 명시적 정렬 클래스(.left/.right)는 존중. */
   .content p > img:not(.left):not(.right),

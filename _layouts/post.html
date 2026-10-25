@@ -123,6 +123,32 @@ script_includes:
     </dialog>
   {% endif %}
 
+  {%- comment -%}
+    언어 쌍 본문 링크(2026-10-25). topbar 의 한국어/English 스위처는 본문 밖이라 크롤러가
+    약하게 본다. Search Console 실측(10/25)에서 한국어 글 157/200 이 '발견됨-미색인'이고
+    한국어 검색어에 영어 루트 글이 노출돼 CTR 0% 였다 → 색인된 영어 글 본문 안에서
+    한국어 제목을 앵커 텍스트로 쌍 글에 링크한다(반대 방향도). 쌍은 alt_url 로 찾고,
+    영문 컬렉션은 미래 날짜 문서가 docs 에 남으므로 date 로 걸러 htmlproofer 실패를 막는다.
+  {%- endcomment -%}
+  {% if page.alt_url %}
+    {% if page.lang == 'en' %}
+      {% assign twin = site.posts | where: 'url', page.alt_url | first %}
+    {% else %}
+      {% assign twin = site.en_posts | where: 'url', page.alt_url | first %}
+    {% endif %}
+    {% if twin and twin.date <= site.time %}
+      <p class="lang-twin">
+        {% if page.lang == 'en' %}
+          <span class="lang-twin-label" lang="ko">한국어로 읽기</span>
+          <a href="{{ twin.url | relative_url }}" hreflang="ko" lang="ko">{{ twin.title }}</a>
+        {% else %}
+          <span class="lang-twin-label" lang="en">Read in English</span>
+          <a href="{{ twin.url | relative_url }}" hreflang="en" lang="en">{{ twin.title }}</a>
+        {% endif %}
+      </p>
+    {% endif %}
+  {% endif %}
+
   <div class="content">
     {{ content }}
   </div>
