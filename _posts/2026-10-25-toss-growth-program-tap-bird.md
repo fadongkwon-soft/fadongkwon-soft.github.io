@@ -7,6 +7,7 @@ tags: [앱인토스, 토스, 미니앱, 성장프로그램, 탭버드, 게임개
 pin: true
 image:
   path: /assets/img/20261025_toss-growth-program-tap-bird/cover.png
+  alt: 앱인토스 콘솔의 성장 프로그램 선정 배너 — 축하해요! 탭 버드가 성장 프로그램에 선정됐어요
 alt_url: /posts/toss-growth-program-tap-bird/
 ---
 
