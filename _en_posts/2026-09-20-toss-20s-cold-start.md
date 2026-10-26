@@ -97,6 +97,32 @@ Review — human or automated — reads that as **still loading**. It also expla
 - An icon is drawn on first render only if it is already cached; otherwise the emoji stands for this session
 - Lottery round refresh behaves the same way: fetch, store, do not touch the screen
 
+The remote CSV is now fetched and stored without touching the screen. The key change is deleting the line that redrew the list.
+
+**Before**
+
+```ts
+afterSettled(() => {
+  void fetchShared(url).then((fresh) => {
+    if (!fresh || fresh === initial) return;
+    localStorage.setItem(CACHE_KEY, fresh);
+    render(fresh); // redraws the whole list
+  });
+});
+```
+
+**After**
+
+```ts
+afterSettled(() => {
+  void fetchShared(url).then((fresh) => {
+    if (!fresh || fresh === initial) return;
+    localStorage.setItem(CACHE_KEY, fresh); // store only; applied on next launch
+  });
+  void warmIconCache(renderedIconUrls); // icons are only cached too
+});
+```
+
 One line: **do not write code that updates the screen after boot. Remote data lands on the next launch.**
 
 What a user loses is "an app added today does not appear today". That is a fine trade for not being rejected.
@@ -107,6 +133,15 @@ A fix that lives only in code will be forgotten by the next app. Two machine che
 
 - **load_gate** — opens the app headless and counts **outbound requests during the first paint**. Anything but zero fails
 - **settle_gate** — watches the first screen's DOM for 16 seconds starting at load + 1.5s. **Zero changes** or it fails. Old bundles trip it at the five to six second mark when the promo row redraws
+
+The core of the second gate is these few lines. The boot render is allowed; any DOM change during the next 16 seconds fails the run.
+
+```js
+await ev(`window.__mut.length = 0`); // the boot render is allowed
+await sleep(16000);                  // watch 16s, starting at load + 1.5s
+const late = await ev(`window.__mut`);
+const ok = late.length === 0;        // any change at all fails
+```
 
 The need for that second gate is the point of this post. The first one only answers "when did we request", never "has the screen stopped".
 

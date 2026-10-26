@@ -71,6 +71,23 @@ alt_url: /posts/toss-ads-missing-placements/
 3. 번들을 다시 빌드해서 **앱인토스에 재검수를 제출합니다.**
 4. 검수를 통과해야 광고가 실제로 나갑니다.
 
+래퍼 폴더의 `ad-groups.json`이 비어 있던 것이 그대로 출시된 상태였습니다. 발급된 `groupId`를 채워 넣는 것이 2번 작업입니다.
+
+**고치기 전**
+
+```json
+{}
+```
+
+**고친 후**
+
+```json
+{
+  "banner": "ait.v2.live.xxxxxxxxxxxxxxxx",
+  "rewarded": "ait.v2.live.xxxxxxxxxxxxxxxx"
+}
+```
+
 즉 출시 한 번에 끝났어야 할 일이 **검수 사이클을 한 번 더 도는 일**이 됐습니다. 잃은 이틀보다 이 재검수 대기가 실질적인 비용입니다. 지금 그 작업을 진행하고 있고, 검수가 끝나면 광고가 붙습니다.
 
 ## 다음 배치에서 바꾸는 것
@@ -78,6 +95,28 @@ alt_url: /posts/toss-ads-missing-placements/
 같은 실수를 반복하지 않기 위해 정리해 둔 것들입니다.
 
 **출시 체크리스트에 수익화를 넣습니다.** 지금까지 체크리스트는 "스토어에 보이게 하는 것"까지였습니다. 광고 지면 생성을 그 안으로 옮깁니다. 다른 화면에 있는 단계일수록 절차에 명시해야 합니다.
+
+이 사고를 막으려고 만든 검사 스크립트(`toss-ad-audit.mjs`)에도 구멍이 하나 있었습니다. 광고 호출이 공용 패키지 안에 있는 게임은 `ads.showInterstitial(` 같은 문자열에 걸리지 않아 "광고 호출 없음"으로 빠졌습니다. 하트·광고 게이트 함수에 `ads`를 넘기는 경우도 광고를 쓰는 것으로 세도록 고쳤습니다.
+
+**고치기 전**
+
+```js
+if (/ads\.showInterstitial\s*\(/.test(code)) wants.add('interstitial');
+if (/ads\.showRewarded\s*\(/.test(code)) wants.add('rewarded');
+// ads.showInterstitial( / ads.showRewarded( 만 찾는다
+```
+
+**고친 후**
+
+```js
+// …
+for (const m of code.matchAll(/createHearts\s*\(\s*\{([\s\S]*?)\}\s*\)/g)) {
+  if (/\bads\b/.test(m[1])) wants.add('interstitial').add('rewarded');  // createHearts({ ads }) 는 전면과 보상형을 둘 다 요구한다
+}
+for (const m of code.matchAll(/createAdGate\s*\(\s*\{([\s\S]*?)\}\s*\)/g)) {
+  if (/\bads\b/.test(m[1])) wants.add('interstitial');  // createAdGate({ ads }) 는 전면만 요구한다
+}
+```
 
 **노출 0을 감시합니다.** 매일 앱별 노출을 보는 장부가 이미 있으니, 출시된 앱 중 노출이 0인 것이 있으면 눈에 걸리게 해 두려고 합니다. 조용히 실패하는 설정은 사람 기억이 아니라 지표로만 잡힙니다.
 

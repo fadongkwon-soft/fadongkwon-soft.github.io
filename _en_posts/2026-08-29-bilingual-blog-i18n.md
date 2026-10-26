@@ -55,6 +55,16 @@ search index all link to pages that don't exist yet, and htmlproofer kills the b
 
 Every place that iterates the collection needs a date filter:
 
+**Before**
+
+{% raw %}
+```liquid
+{% assign live = site.en_posts %}
+```
+{% endraw %}
+
+**After**
+
 ```liquid
 {% raw %}{% assign live = site.en_posts | where_exp: 'p', 'p.date <= site.time' %}{% endraw %}
 ```
@@ -86,6 +96,30 @@ newline**, so a `//` comment inside an inline script swallowed all the code that
 followed it on the (now single) line. Inline `<script>` blocks may only use block
 comments (`/* */`).
 
+Once the newlines are gone, everything after `//` becomes a comment. Block comments fixed it.
+
+**Before**
+
+```js
+document.addEventListener('DOMContentLoaded', function () {
+  // clean up service workers left by the old PWA
+  if ('serviceWorker' in navigator) {
+    /* ... */
+  }
+});
+```
+
+**After**
+
+```js
+document.addEventListener('DOMContentLoaded', function () {
+  /* clean up service workers left by the old PWA */
+  if ('serviceWorker' in navigator) {
+    /* ... */
+  }
+});
+```
+
 ## 6. Turning off PWA creates a zombie service worker
 
 Right after the relaunch, the site felt slow and looked broken — not because of the
@@ -105,6 +139,26 @@ long page of anchor sections, got a well-deserved "this looks weird", and ended 
 making the **translation pipeline auto-generate stub pages per category and tag**
 (currently 15 categories + 72 tags). New tags grow their own pages; removed tags get
 cleaned up. Zero manual work.
+
+The theme also hard-codes its link prefixes. Korean archives moved under `/ko/`, but the links still pointed at the old paths, and htmlproofer stopped the build with 283 errors. I overrode the layout and changed only the prefix.
+
+**Before**
+
+{% raw %}
+```liquid
+{% assign t = tag_name %}
+<a href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
+```
+{% endraw %}
+
+**After**
+
+{% raw %}
+```liquid
+{% assign t = tag_name %}
+<a href="{{ t | slugify | url_encode | prepend: '/ko/tags/' | append: '/' | relative_url }}">
+```
+{% endraw %}
 
 ## 8. Batch translation is protected by deterministic post-processing, not by specs
 

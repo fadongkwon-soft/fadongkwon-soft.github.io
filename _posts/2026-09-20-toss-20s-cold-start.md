@@ -99,6 +99,32 @@ export function afterSettled(fn: () => void, extraMs = 5000): void {
 - 아이콘은 캐시가 있을 때만 첫 렌더에 그리고, 없으면 이모지로 확정합니다. 이번 세션에서는 바꾸지 않습니다
 - 로또 회차 갱신도 같습니다. 받아서 저장만 하고 화면은 건드리지 않습니다
 
+원격 CSV를 받아 와도 화면에는 손대지 않고 저장만 하도록 바꿨습니다. 목록을 다시 그리는 줄을 지운 것이 핵심입니다.
+
+**고치기 전**
+
+```ts
+afterSettled(() => {
+  void fetchShared(url).then((fresh) => {
+    if (!fresh || fresh === initial) return;
+    localStorage.setItem(CACHE_KEY, fresh);
+    render(fresh); // 목록을 통째로 다시 그린다
+  });
+});
+```
+
+**고친 후**
+
+```ts
+afterSettled(() => {
+  void fetchShared(url).then((fresh) => {
+    if (!fresh || fresh === initial) return;
+    localStorage.setItem(CACHE_KEY, fresh); // 저장만. 다음 실행에 반영
+  });
+  void warmIconCache(renderedIconUrls); // 아이콘도 받아서 캐시만
+});
+```
+
 한 줄로 줄이면 이렇습니다. **부팅 뒤에 화면을 갱신하는 코드를 만들지 마세요. 원격 자료는 다음 실행에 반영합니다.**
 
 사용자 입장에서 잃는 것은 "오늘 추가된 앱이 오늘 안 보인다" 정도입니다. 반려와 바꿀 만한 값이 아닙니다.
@@ -109,6 +135,15 @@ export function afterSettled(fn: () => void, extraMs = 5000): void {
 
 - **load_gate** — headless 브라우저로 띄워 첫 로딩 구간에 나간 **외부 요청 수**를 셉니다. 0이 아니면 실패
 - **settle_gate** — load + 1.5초 이후 16초 동안 첫 화면 DOM이 바뀌는지 봅니다. **변화 0건**이 아니면 실패. 옛 번들은 5~6초 지점에서 프로모 영역이 바뀌며 걸립니다
+
+두 번째 게이트의 핵심은 이 몇 줄입니다. 부팅 렌더는 허용하고, 그 뒤 16초 동안 DOM이 한 번이라도 바뀌면 실패로 처리합니다.
+
+```js
+await ev(`window.__mut.length = 0`); // 부팅 렌더까지는 허용
+await sleep(16000);                  // load + 1.5초 뒤부터 16초 관찰
+const late = await ev(`window.__mut`);
+const ok = late.length === 0;        // 변화가 하나라도 있으면 실패
+```
 
 두 번째 게이트가 필요했던 이유가 이 글의 요점입니다. 첫 번째 게이트는 "언제 요청했나"만 보고, "화면이 멈췄나"는 보지 못합니다.
 

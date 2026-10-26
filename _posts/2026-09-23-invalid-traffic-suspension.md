@@ -59,9 +59,63 @@ Flutter 앱 두 개는 디버그 빌드에서도 **실제 광고 ID를 그대로
 
 디버그 빌드는 구글이 제공하는 테스트 광고 유닛만 쓰도록 분기했습니다. Flutter 쪽은 `kReleaseMode`로 갈랐고, 디버그 매니페스트에서 애플리케이션 ID까지 샘플 값으로 덮어썼습니다. 사람이 기억해서 바꾸는 방식은 반드시 한 번은 실패합니다.
 
+"사람이 기억해서 바꾸는 방식은 반드시 한 번은 실패합니다"를 빌드에 옮긴 것이 출시 빌드 게이트입니다. 10월에 추가했습니다. 구글 테스트 ID나 빈 ID가 남은 채로 출시 빌드를 만들면 빌드 자체가 멈춥니다. 아래는 핵심만 줄인 코드입니다.
+
+**고치기 전**
+
+```kotlin
+create("exampleGame") {
+    dimension = "game"
+    val ads = admobProps("example-game")   // 파일이 없으면 테스트 ID 로 떨어진다
+    buildConfigField("String", "INTERSTITIAL_AD_UNIT", "\"${ads.getProperty("interstitial")}\"")
+    // …이 값을 출시 전에 검사하는 단계가 없었다
+}
+```
+
+**고친 후**
+
+```kotlin
+val googleTestPublisher = "3940256099942544"
+androidComponents {
+    onVariants(selector().withBuildType("release")) { variant ->
+        // …광고가 들어가는 flavor 만 대상
+        val cap = variant.name.replaceFirstChar { it.uppercase() }
+        val gate = tasks.register("checkAdIds$cap") {
+            doLast {
+                val problems = ids.mapNotNull { (k, v) ->
+                    if (googleTestPublisher in v) "$k = 구글 테스트 ID" else null
+                }
+                check(problems.isEmpty()) { "광고 ID 게이트: 출시 빌드를 멈춥니다" }
+            }
+        }
+        tasks.matching { it.name == "pre${cap}Build" }.configureEach { dependsOn(gate) }
+    }
+}
+```
+
 ### 2. 테스트 기기를 코드에 등록한다
 
 개발용 폰, 태블릿, 가족 폰 세 대의 기기 해시를 확보해 네 개 코드베이스 전부에 `setTestDeviceIds`로 넣었습니다.
+
+테스트 기기 등록은 초기화 직전에 한 번 호출하면 됩니다. 아래는 개발폰 한 대를 넣던 첫 커밋의 모양입니다(해시는 자리표시자).
+
+**고치기 전**
+
+```kotlin
+// 테스트 기기 등록 없음
+MobileAds.initialize(activity) {}
+```
+
+**고친 후**
+
+```kotlin
+MobileAds.setRequestConfiguration(
+    RequestConfiguration.Builder()
+        .setTestDeviceIds(listOf("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")) // 개발폰
+        .build(),
+)
+MobileAds.initialize(activity) {}
+```
 
 기기 해시를 뽑는 방법이 조금 번거로웠습니다. 앱을 실행하면 로그에 "테스트 기기로 등록하려면 이 해시를 쓰세요"라는 안내가 찍히는데, 그 로그를 보려면 앱을 한 번 실행해야 합니다. **그 실행 자체가 무효 트래픽이 되면 안 되니 반드시 디버그 빌드로** 해야 합니다. 원격 폰은 무선 디버깅으로 붙어서 디버그 APK를 설치하고, 로그를 뽑은 뒤 지웠습니다.
 

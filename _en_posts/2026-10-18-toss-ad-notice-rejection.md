@@ -44,6 +44,40 @@ So I settled on three rules:
 2. **Position: the notice goes right below the button.** The same sentence above the button was rejected.
 3. **Wording: do not point.** Not "Tap the button below to…" but something like "An ad plays once before your numbers are drawn." The button gets a 📺 mark.
 
+Where the notice sits comes down to one markup order. The rejected layout had it above the button; the one that passed had it right below.
+
+**Before** (rejected)
+
+```html
+<div class="error" id="homeError" hidden></div>
+<p class="ad-note" id="adBeforeDraw" hidden></p>
+<button class="cta" id="btn-generate">Draw numbers</button>
+```
+
+**After** (approved)
+
+```html
+<div class="error" id="homeError" hidden></div>
+<button class="cta" id="btn-generate">Draw numbers</button>
+<p class="ad-note" id="adBeforeDraw" hidden></p>
+```
+
+For the wording, I dropped the phrase pointing at the button and only said when the ad plays.
+
+**Before**
+
+```ts
+drawWithAd: '📺 Watch an ad to draw numbers', // translated
+adBeforeDraw: 'Tap the button below and an ad plays first, then your numbers appear.', // translated
+```
+
+**After**
+
+```ts
+drawWithAd: '📺 Draw numbers', // translated
+adBeforeDraw: 'An ad plays once before your numbers are drawn.', // translated
+```
+
 Once the three lotto apps were changed to this layout, all of them were approved.
 
 ## Eighteen hidden unannounced ads
@@ -92,6 +126,27 @@ What I took from this:
 On October 4, I got a report that in Star Sign Lotto and Name Lotto there was **a screen's worth of empty space below the "Before your numbers are drawn…" notice**. You had to scroll a full page to see the text underneath.
 
 The cause was one line of shared CSS. I had given the notice `flex-basis: 100%` so it would take a full line inside a row of buttons, but when it sits directly inside a screen that stacks vertically, that value becomes **100% of the height, not the width**. One line giving `flex-basis: auto` to notices placed directly under the screen fixed it.
+
+I fixed it with one extra rule in the shared stylesheet. It restores content height only when the notice sits directly under the screen.
+
+**Before**
+
+```css
+.ad-note {
+  flex-basis: 100%; /* meant to take a full line in a button row */
+}
+```
+
+**After**
+
+```css
+.ad-note {
+  flex-basis: 100%;
+}
+.screen > .ad-note {
+  flex-basis: auto; /* directly under a vertical screen this means 100% of the height */
+}
+```
 
 This bug did not show up in the web preview, because, as above, the notice is hidden on the web. **To check the layout around a notice, you have to force the notice to show.**
 

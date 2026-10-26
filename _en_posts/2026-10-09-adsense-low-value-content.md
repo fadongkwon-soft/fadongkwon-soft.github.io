@@ -62,8 +62,96 @@ The blog theme (Jekyll Chirpy) and its sitemap plugin generate these by default,
 **1. Pages with no content are out of search.**
 I added `noindex` to the 532 tag lists and the 71 hand-off screens and removed them from the sitemap. The pages still exist, so tapping a tag at the top of a post or scanning a QR code works as before. The sitemap went from **954 URLs to 353**.
 
+Tag lists got `noindex, follow`, so crawlers still follow the links to the posts.
+
+**Before**
+
+{% raw %}
+```html
+<!-- _includes/metadata-hook.html -->
+<!-- (no robots tag for tag lists) -->
+```
+{% endraw %}
+
+**After**
+
+{% raw %}
+```html
+<!-- _includes/metadata-hook.html -->
+{%- if page.layout == 'ko-tag' or page.layout == 'tag' %}
+<meta name="robots" content="noindex, follow">
+{%- endif %}
+```
+{% endraw %}
+
+The sitemap filter skips the same two layouts.
+
+**Before**
+
+{% raw %}
+```liquid
+{%- assign pages = site.html_pages
+    | where_exp: 'doc', 'doc.sitemap != false'
+    | where_exp: 'doc', 'doc.url != "/404.html"' -%}
+```
+{% endraw %}
+
+**After**
+
+{% raw %}
+```liquid
+{%- assign pages = site.html_pages
+    | where_exp: 'doc', 'doc.sitemap != false'
+    | where_exp: 'doc', 'doc.url != "/404.html"'
+    | where_exp: 'doc', 'doc.layout != "ko-tag"'
+    | where_exp: 'doc', 'doc.layout != "tag"' -%}
+```
+{% endraw %}
+
+The store hand-off pages are excluded from the sitemap in one config rule.
+
+**Before**
+
+```yaml
+# _config.yml
+defaults:
+  # ... (no rule for the store hand-off pages)
+```
+
+**After**
+
+```yaml
+# _config.yml
+defaults:
+  # ...
+  - scope:
+      path: "toss"
+    values:
+      sitemap: false
+  - scope:
+      path: "play-store"
+    values:
+      sitemap: false
+```
+
 **2. Tarot and app introductions are reached only through their hubs.**
 Tarot card posts and app introduction posts are gone from the home feed, Archives, RSS, the right-hand panels and the related posts under other articles. Tarot posts are now reached from the tarot dictionary index, and app introductions from the app list pages. Every list reads one setting (`hub_only_categories: [Tarot, Products]`), so new posts need no special handling. The home feed went from **8 pages to 4**, and everything left on it is a dev log.
+
+That one line is the source of truth for every list.
+
+**Before**
+
+```yaml
+# _config.yml
+# (no such setting: every list showed every post)
+```
+
+**After**
+
+```yaml
+# _config.yml
+hub_only_categories: [Tarot, Products]
+```
 
 **3. The site now introduces itself differently.**
 The home description now opens with "Honest notes from shipping apps alone after work", and TAROT and TAGS are gone from the left menu. The tarot dictionary stays; it is linked from next to the tarot apps on the app list and from the About page, as "the card-by-card companion to my tarot apps". The trending tags now start with solo developer, dev log and Apps in Toss.

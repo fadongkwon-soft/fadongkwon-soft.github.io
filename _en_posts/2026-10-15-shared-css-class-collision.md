@@ -39,6 +39,22 @@ I gave each game's sheet a name of its own.
 - Mole Tap: `.sheet` → `.extend-sheet`
 - Rock Paper Scissors: `.sheet` → `.lost-sheet`
 
+**Before**
+
+```css
+/* whack-a-mole */
+.sheet { … }
+.sheet .btn { width: min(80%, 260px); }
+```
+
+**After**
+
+```css
+/* whack-a-mole: do not reuse the shared .sheet name */
+.extend-sheet { … }
+.extend-sheet .btn { width: min(80%, 260px); }
+```
+
 Changing the class in the HTML and the CSS rules was all it took. The game code finds these elements by `id`, not by class, so nothing else needed touching. I also left a CSS comment saying "don't reuse the shared `.sheet` name, and here's why" so the next person doesn't repeat it.
 
 ## There were more
@@ -55,6 +71,30 @@ Names that merely **start with** `.sheet`, like `.sheet-box`, are safe — a CSS
 ## The more fundamental fix
 
 Dodging the name in every game is closer to a stopgap; someone can write `.sheet` again in the next new game. The surer route is for **the shared package to use a name nobody else will**. With a package prefix like `.mini-sheet`, a collision with a game's own names becomes unlikely. It turns out the shared packages themselves also build bare `.sheet` elements, for the heart refill dialog and the board game rules. So instead of waiting, I renamed all three shared parts to `.mini-sheet`. I type-checked all 48 games and screenshotted the confirm and rules dialogs in a headless browser before and after, checking that their look and position were identical. One game deliberately borrowed the shared name (the settings sheet in Save Instead of Lotto), so I fixed that game too. Each game picks up the new name with its next update.
+
+The shared side changed like this. The stylesheet and the code that builds the dialog must use the same name, so both change together.
+
+**Before**
+
+```css
+.sheet { … }
+.sheet-body { … }
+```
+
+```ts
+sheet.className = 'sheet';
+```
+
+**After**
+
+```css
+.mini-sheet { … }
+.mini-sheet-body { … }
+```
+
+```ts
+sheet.className = 'mini-sheet';
+```
 
 ## What I learned
 

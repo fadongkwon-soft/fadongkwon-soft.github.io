@@ -33,6 +33,22 @@ alt_url: /posts/hub-promo-position/
 
 오히려 바로잡는 쪽에 가까웠습니다. 허브 좌표는 처음에 손으로 정한 값이었는데, 하루상식은 790이었지만 수록 앱인 매일 한국사는 215였습니다. 상식 퀴즈 앱들과 한참 떨어진 자리에 허브가 서 있었던 셈입니다.
 
+**고치기 전** (레지스트리 apps.csv, 필요한 칸만)
+
+```csv
+id,…,pos
+hub-edu,…,790
+daily-history,…,215
+```
+
+**고친 후**
+
+```csv
+id,…,pos
+hub-edu,…,215
+daily-history,…,215
+```
+
 새 좌표는 **토스에 단독으로 나가 있는 수록 앱 좌표의 중앙값**으로 정했습니다. 허브가 보여야 할 곳이 바로 그 앱들의 목록이기 때문입니다. 레지스트리에 있는 수록 앱 전부로 계산하면 Play 전용 앱까지 섞여 중심이 밀렸고, 시뮬레이션에서도 효과가 더 작았습니다.
 
 | 허브 | 이전 | 이후 |
@@ -66,9 +82,50 @@ alt_url: /posts/hub-promo-position/
 
 좌표는 태그가 바뀌거나 앱이 늘 때마다 스크립트로 전부 다시 매깁니다. 허브 좌표만 손으로 고쳐 두면 다음 재계산 때 사라집니다. 그래서 "허브 좌표는 토스 수록 앱 좌표의 중앙값"이라는 규칙을 작은 스크립트로 만들고, 재계산 스크립트가 끝에서 그것을 부르게 했습니다. 앞으로 허브가 늘어도 손으로 정할 일이 없습니다.
 
+**고친 후** (registry/hub-pos.py 핵심)
+
+```python
+def apply(rows, header):
+    col = {k: i for i, k in enumerate(header)}
+    pos = {r[col["id"]]: r[col["pos"]] for r in rows}
+    toss = {r[col["id"]] for r in rows if r[col["toss"]].strip() == "1"}
+    for hub, games in hub_members().items():        # hubs/<id>/hub.json 의 수록 게임
+        live = [g for g in games if g in toss]       # 토스에 단독으로 나가 있는 수록 앱
+        ms = [int(pos[g]) for g in (live or games) if pos.get(g, "").isdigit()]
+        if hub in pos and ms:
+            set_pos(rows, hub, int(statistics.median(ms)))   # 허브 좌표 = 중앙값
+```
+
+```python
+# compute-pos.py 끝 — 태그로 전부 다시 매긴 뒤 허브만 덮는다
+subprocess.run([sys.executable, os.path.join(HERE, "hub-pos.py")], check=True)
+```
+
+고치기 전에는 이 단계가 없었습니다. 재계산 스크립트가 허브도 태그만 보고 자리를 매겼고, 손으로 바꾼 값은 다음 실행에서 덮였습니다.
+
 ## 목록 밖의 전용 카드 하나
 
-같이 고친 게 하나 있습니다. 로또 앱 네 개는 '내 운' 결과 아래에 [로또 대신 저축](/ko/posts/lotto-saving/)으로 잇는 카드를 따로 띄웁니다. 그런데 토스에서 로또 대신 저축은 이제 행운연구소 허브 안에 있어서, 단독 앱으로는 목록에서 빠졌습니다. 카드는 "그 앱이 토스에 있을 때만" 뜨게 돼 있어서 통째로 사라졌습니다. 이제 그 자리에 행운연구소를 띄우고 허브로 연결합니다. 이건 앱 코드라 로또 앱들의 다음 빌드부터 실립니다.
+같이 고친 게 하나 있습니다. 로또 앱 네 개는 '내 운' 결과 아래에 [로또 대신 저축](/ko/posts/lotto-saving/)으로 잇는 카드를 따로 띄웁니다. 그런데 토스에서 로또 대신 저축은 이제 행운연구소 허브 안에 있어서, 단독 앱으로는 목록에서 빠졌습니다. 카드는 "그 앱이 토스에 있을 때만" 뜨게 돼 있어서 통째로 사라졌습니다. 이제 그 자리에 행운연구소를 띄우고 허브로 연결합니다.
+
+**고치기 전** (promo 패키지 findSavingsApp)
+
+```ts
+const app = csv ? parseAppsCsv(csv).find((a) => a.id === SAVINGS_APP_ID) : undefined;
+if (!app || !(platform === 'toss' ? app.toss : app.play) || !supportsLang(app, lang)) return null;
+return app;
+```
+
+**고친 후**
+
+```ts
+const all = csv ? parseAppsCsv(csv) : [];
+const ok = (a: PromoApp | undefined): a is PromoApp =>
+  !!a && (platform === 'toss' ? a.toss : a.play) && supportsLang(a, lang);
+const app = all.find((a) => a.id === SAVINGS_APP_ID);      // 'lotto-saving'
+if (ok(app)) return app;
+const hub = all.find((a) => a.id === SAVINGS_HUB_ID);      // 'hub-fortune'
+return ok(hub) ? hub : null;
+``` 이건 앱 코드라 로또 앱들의 다음 빌드부터 실립니다.
 
 ## 정리
 

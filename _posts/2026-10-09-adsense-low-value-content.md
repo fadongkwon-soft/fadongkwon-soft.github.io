@@ -61,8 +61,96 @@ image:
 **1. 내용 없는 페이지는 검색에서 뺐습니다.**
 태그 목록 532개와 중간 화면 71개에 `noindex`를 달고 사이트맵에서도 뺐습니다. 페이지 자체는 그대로 있어서 글 상단의 태그를 누르거나 QR을 찍으면 예전처럼 동작합니다. 사이트맵은 **954개 → 353개**가 됐습니다.
 
+태그 목록에는 `noindex, follow`를 달았습니다. 글로 가는 링크는 그대로 따라가게 둔 겁니다.
+
+**고치기 전**
+
+{% raw %}
+```html
+<!-- _includes/metadata-hook.html -->
+<!-- (no robots tag for tag lists) -->
+```
+{% endraw %}
+
+**고친 후**
+
+{% raw %}
+```html
+<!-- _includes/metadata-hook.html -->
+{%- if page.layout == 'ko-tag' or page.layout == 'tag' %}
+<meta name="robots" content="noindex, follow">
+{%- endif %}
+```
+{% endraw %}
+
+사이트맵에서는 두 레이아웃을 걸러냈습니다.
+
+**고치기 전**
+
+{% raw %}
+```liquid
+{%- assign pages = site.html_pages
+    | where_exp: 'doc', 'doc.sitemap != false'
+    | where_exp: 'doc', 'doc.url != "/404.html"' -%}
+```
+{% endraw %}
+
+**고친 후**
+
+{% raw %}
+```liquid
+{%- assign pages = site.html_pages
+    | where_exp: 'doc', 'doc.sitemap != false'
+    | where_exp: 'doc', 'doc.url != "/404.html"'
+    | where_exp: 'doc', 'doc.layout != "ko-tag"'
+    | where_exp: 'doc', 'doc.layout != "tag"' -%}
+```
+{% endraw %}
+
+스토어 중간 화면은 설정 한 곳에서 사이트맵 제외로 묶었습니다.
+
+**고치기 전**
+
+```yaml
+# _config.yml
+defaults:
+  # ... (no rule for the store hand-off pages)
+```
+
+**고친 후**
+
+```yaml
+# _config.yml
+defaults:
+  # ...
+  - scope:
+      path: "toss"
+    values:
+      sitemap: false
+  - scope:
+      path: "play-store"
+    values:
+      sitemap: false
+```
+
 **2. 타로와 앱 소개는 '허브'로만 들어가게 했습니다.**
 타로 카드 글과 앱 소개 글은 홈·아카이브·RSS·오른쪽 패널·다른 글 아래의 관련 글에서 모두 뺐습니다. 대신 타로는 타로 사전 목록에서, 앱 소개는 앱 목록 페이지에서만 들어갑니다. 설정 한 줄(`hub_only_categories: [Tarot, Products]`)을 모든 목록이 읽게 만들어서 새 글을 쓸 때 따로 신경 쓸 필요가 없습니다. 그 결과 홈은 **8쪽에서 4쪽**이 됐고, 남은 글은 전부 개발 기록입니다.
+
+이 설정 한 줄이 모든 목록의 기준입니다.
+
+**고치기 전**
+
+```yaml
+# _config.yml
+# (no such setting: every list showed every post)
+```
+
+**고친 후**
+
+```yaml
+# _config.yml
+hub_only_categories: [Tarot, Products]
+```
 
 **3. 사이트가 스스로를 소개하는 문장을 바꿨습니다.**
 홈 설명문을 "퇴근 후 혼자 앱을 만들어 출시하며 배운 것들의 기록"으로 시작하게 바꾸고, 왼쪽 메뉴에서 TAROT와 TAGS를 뺐습니다. 타로 사전은 없애지 않고 타로 앱 옆(앱 목록)과 소개 페이지에서 "타로 앱의 해석을 카드별로 풀어 쓴 자료"로 연결했습니다. 인기 태그도 이제 1인개발자·개발일지·앱인토스 순으로 나옵니다.

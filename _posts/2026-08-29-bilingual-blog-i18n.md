@@ -50,6 +50,16 @@ hreflang>`으로 가리키게 했습니다. 기존에 색인된 한국어 URL을
 
 컬렉션을 훑는 모든 곳에 날짜 필터가 필요합니다:
 
+**고치기 전**
+
+{% raw %}
+```liquid
+{% assign live = site.en_posts %}
+```
+{% endraw %}
+
+**고친 후**
+
 ```liquid
 {% raw %}{% assign live = site.en_posts | where_exp: 'p', 'p.date <= site.time' %}{% endraw %}
 ```
@@ -78,6 +88,30 @@ hreflang>`으로 가리키게 했습니다. 기존에 색인된 한국어 URL을
 **모든 줄바꿈을 제거**하면서, 인라인 스크립트의 `//` 주석이 뒤에 붙은 코드를 전부
 주석으로 삼켜버린 것이었습니다. 인라인 `<script>`에는 블록 주석(`/* */`)만 써야 합니다.
 
+줄바꿈이 사라지면 `//` 뒤의 코드가 전부 주석이 됩니다. 블록 주석으로 바꾸자 스크립트가 돌았습니다.
+
+**고치기 전**
+
+```js
+document.addEventListener('DOMContentLoaded', function () {
+  // PWA 를 끄면서 남은 서비스워커 정리
+  if ('serviceWorker' in navigator) {
+    /* ... */
+  }
+});
+```
+
+**고친 후**
+
+```js
+document.addEventListener('DOMContentLoaded', function () {
+  /* PWA 를 끄면서 남은 서비스워커 정리 */
+  if ('serviceWorker' in navigator) {
+    /* ... */
+  }
+});
+```
+
 ## 6. PWA를 끄면 서비스워커 좀비가 생긴다
 
 개편 직후 "사이트가 느리고 화면이 깨진다"는 증상이 나왔는데, 새 코드 문제가 아니라
@@ -96,6 +130,26 @@ hreflang>`으로 가리키게 했습니다. 기존에 색인된 한국어 URL을
 때웠다가 "이상하다"는 피드백을 받고, 결국 **번역 파이프라인이 카테고리·태그별 스텁
 페이지를 자동 생성**하도록 바꿨습니다(현재 카테고리 15 + 태그 72). 새 태그가 생기면
 스텁도 따라 생기고, 사라진 태그의 스텁은 지워집니다. 수작업 0.
+
+테마 원본이 링크 접두어를 하드코딩한 것도 걸렸습니다. 한국어 아카이브가 `/ko/` 아래로 옮겨졌는데 링크는 옛 주소를 가리켜 htmlproofer가 283건으로 빌드를 멈췄습니다. 레이아웃을 오버라이드해 접두어만 바꿨습니다.
+
+**고치기 전**
+
+{% raw %}
+```liquid
+{% assign t = tag_name %}
+<a href="{{ t | slugify | url_encode | prepend: '/tags/' | append: '/' | relative_url }}">
+```
+{% endraw %}
+
+**고친 후**
+
+{% raw %}
+```liquid
+{% assign t = tag_name %}
+<a href="{{ t | slugify | url_encode | prepend: '/ko/tags/' | append: '/' | relative_url }}">
+```
+{% endraw %}
 
 ## 8. 95편 배치 번역은 '규격'보다 '결정적 후처리'가 지킨다
 

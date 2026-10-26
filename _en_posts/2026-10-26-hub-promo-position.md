@@ -34,6 +34,22 @@ Under the old rule, hubs are chosen by coordinate distance like any other app. I
 
 If anything, this was a correction. The hub coordinates had been set by hand, and Daily Quiz sat at 790 while Daily Korean History, one of its own apps, was at 215. The hub was standing far away from the trivia apps it contains.
 
+**Before** (registry apps.csv, relevant columns only)
+
+```csv
+id,…,pos
+hub-edu,…,790
+daily-history,…,215
+```
+
+**After**
+
+```csv
+id,…,pos
+hub-edu,…,215
+daily-history,…,215
+```
+
 The new coordinate is **the median coordinate of the hub's apps that are live on Toss as standalone apps**, because those apps' lists are exactly where the hub needs to appear. Using every app in the hub from the registry mixed in Play-only apps, pulled the center off, and gave a smaller effect in simulation.
 
 | Hub | Before | After |
@@ -67,9 +83,50 @@ The coordinate is a single line, so a hub whose apps are spread widely cannot be
 
 The coordinates are recomputed by a script whenever tags change or apps are added. A hub coordinate fixed by hand would vanish at the next run. So I turned the rule, "a hub's coordinate is the median of its Toss apps' coordinates", into a small script that the recomputation script calls at the end. New hubs will not need hand-set values either.
 
+**After** (core of registry/hub-pos.py)
+
+```python
+def apply(rows, header):
+    col = {k: i for i, k in enumerate(header)}
+    pos = {r[col["id"]]: r[col["pos"]] for r in rows}
+    toss = {r[col["id"]] for r in rows if r[col["toss"]].strip() == "1"}
+    for hub, games in hub_members().items():        # games listed in hubs/<id>/hub.json
+        live = [g for g in games if g in toss]       # member apps live on Toss on their own
+        ms = [int(pos[g]) for g in (live or games) if pos.get(g, "").isdigit()]
+        if hub in pos and ms:
+            set_pos(rows, hub, int(statistics.median(ms)))   # hub coordinate = median
+```
+
+```python
+# end of compute-pos.py — after re-placing everything by tags, overwrite only the hubs
+subprocess.run([sys.executable, os.path.join(HERE, "hub-pos.py")], check=True)
+```
+
+Before this there was no such step. The recomputation script placed hubs by their tags like everything else, and any hand-set value was overwritten on the next run.
+
 ## One dedicated card outside the list
 
-One more thing got fixed along the way. The four lotto apps show a separate card under the "my luck" result that leads to [Save Instead of Lotto](/posts/lotto-saving/). On Toss, that app now lives inside the Lucky Lab hub and has dropped out of the list as a standalone app. The card was set to appear only when that app is on Toss, so it disappeared entirely. Now Lucky Lab takes its place and the card opens the hub. This is app code, so it ships with the lotto apps' next builds.
+One more thing got fixed along the way. The four lotto apps show a separate card under the "my luck" result that leads to [Save Instead of Lotto](/posts/lotto-saving/). On Toss, that app now lives inside the Lucky Lab hub and has dropped out of the list as a standalone app. The card was set to appear only when that app is on Toss, so it disappeared entirely. Now Lucky Lab takes its place and the card opens the hub.
+
+**Before** (findSavingsApp in the promo package)
+
+```ts
+const app = csv ? parseAppsCsv(csv).find((a) => a.id === SAVINGS_APP_ID) : undefined;
+if (!app || !(platform === 'toss' ? app.toss : app.play) || !supportsLang(app, lang)) return null;
+return app;
+```
+
+**After**
+
+```ts
+const all = csv ? parseAppsCsv(csv) : [];
+const ok = (a: PromoApp | undefined): a is PromoApp =>
+  !!a && (platform === 'toss' ? a.toss : a.play) && supportsLang(a, lang);
+const app = all.find((a) => a.id === SAVINGS_APP_ID);      // 'lotto-saving'
+if (ok(app)) return app;
+const hub = all.find((a) => a.id === SAVINGS_HUB_ID);      // 'hub-fortune'
+return ok(hub) ? hub : null;
+``` This is app code, so it ships with the lotto apps' next builds.
 
 ## Summary
 

@@ -49,11 +49,64 @@ alt_url: /posts/site-url-scheme/
 
 바꿔야 할 곳이 **449개 파일에 2,297군데**였습니다. 손으로 하면 반드시 빠뜨립니다. 그래서 규칙을 스크립트로 적고, 그 스크립트가 전환을 수행하게 했습니다. 같은 파일이 지금은 규칙 문서 역할을 합니다 — 몇 달 뒤에 "왜 이렇게 되어 있지" 하고 되돌리지 않도록요.
 
+규칙이 바뀐 곳은 두 군데입니다. 하나는 한국어 글의 기본 주소를 정하는 `_config.yml`이고, 다른 하나는 영문판 글의 front matter입니다. 한국어 글에는 `/ko`가 붙고, 영문판에서는 `/en`이 빠집니다.
+
+**고치기 전**
+
+```yaml
+# _config.yml
+defaults:
+  - scope: { path: "", type: posts }
+    values:
+      permalink: /posts/:title/
+```
+
+**고친 후**
+
+```yaml
+# _config.yml
+defaults:
+  - scope: { path: "", type: posts }
+    values:
+      permalink: /ko/posts/:title/
+```
+
+**고치기 전**
+
+```yaml
+# _en_posts/2026-08-12-apps-in-toss-launch.md
+permalink: /en/posts/apps-in-toss-launch/
+alt_url: /posts/apps-in-toss-launch/
+```
+
+**고친 후**
+
+```yaml
+# _en_posts/2026-08-12-apps-in-toss-launch.md
+permalink: /posts/apps-in-toss-launch/
+alt_url: /ko/posts/apps-in-toss-launch/
+```
+
 ## 옛 주소는 어떻게 되나
 
 가장 신경 쓴 부분입니다. 한국어 글 주소가 2024년 12월부터 색인돼 있었습니다.
 
 결과적으로 **404는 하나도 나지 않습니다.** 옛 한국어 주소 `/posts/x/`는 이제 같은 글의 **영문판**이 나오고, 한국어 브라우저로 들어오면 로케일 판정이 `/ko/posts/x/`로 보냅니다. 주소가 죽는 게 아니라 언어가 바뀌는 것이고, 검색 순위는 시간을 두고 새 주소로 옮겨갑니다.
+
+옛 영문 주소는 meta-refresh 스텁으로 새 주소에 연결했습니다. 이 전환으로 새로 생긴 파일이라 '전'은 없습니다. 옛 영문 주소 하나당 이런 스텁이 하나씩 있습니다.
+
+**고친 후**
+
+```html
+---
+layout: null
+sitemap: false
+permalink: /en/posts/apps-in-toss-launch/
+---
+<link rel="canonical" href="/posts/apps-in-toss-launch/">
+<meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="0; url=/posts/apps-in-toss-launch/">
+```
 
 ## 스토어와 인스타는 손댈 것이 없었습니다
 

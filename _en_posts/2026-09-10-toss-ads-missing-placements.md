@@ -73,6 +73,23 @@ This is the second painful part. Creating the placements is not the finish line.
 3. Rebuild the bundle and **submit it to Apps in Toss for review again.**
 4. Ads only serve once that review passes.
 
+The `ad-groups.json` in each wrapper folder had shipped empty. Filling in the issued `groupId` values is step two.
+
+**Before**
+
+```json
+{}
+```
+
+**After**
+
+```json
+{
+  "banner": "ait.v2.live.xxxxxxxxxxxxxxxx",
+  "rewarded": "ait.v2.live.xxxxxxxxxxxxxxxx"
+}
+```
+
 So something that should have been done in one release now costs **another full review cycle.** That wait, more than the two lost days, is the real price. That work is underway now, and ads will appear once review clears.
 
 ## What changes for the next batch
@@ -80,6 +97,28 @@ So something that should have been done in one release now costs **another full 
 Things I wrote down so this does not repeat.
 
 **Monetization goes into the launch checklist.** Until now the checklist ended at "visible in the store." Creating ad placements moves inside it. The further a step sits from the main flow, the more it needs to be written down.
+
+The audit script I built to prevent this (`toss-ad-audit.mjs`) had a hole of its own. Games whose ad calls live inside a shared package never matched strings like `ads.showInterstitial(`, so they were skipped as "no ad calls." I changed it to also count games that pass `ads` into the hearts and ad-gate helpers.
+
+**Before**
+
+```js
+if (/ads\.showInterstitial\s*\(/.test(code)) wants.add('interstitial');
+if (/ads\.showRewarded\s*\(/.test(code)) wants.add('rewarded');
+// only looks for ads.showInterstitial( / ads.showRewarded(
+```
+
+**After**
+
+```js
+// …
+for (const m of code.matchAll(/createHearts\s*\(\s*\{([\s\S]*?)\}\s*\)/g)) {
+  if (/\bads\b/.test(m[1])) wants.add('interstitial').add('rewarded');  // createHearts({ ads }) requires both interstitial and rewarded
+}
+for (const m of code.matchAll(/createAdGate\s*\(\s*\{([\s\S]*?)\}\s*\)/g)) {
+  if (/\bads\b/.test(m[1])) wants.add('interstitial');  // createAdGate({ ads }) requires interstitial only
+}
+```
 
 **Watch for zero impressions.** I already have a ledger that shows per-app impressions daily, so a released app sitting at zero impressions should be impossible to miss. Configuration that fails silently is caught by metrics, not by memory.
 

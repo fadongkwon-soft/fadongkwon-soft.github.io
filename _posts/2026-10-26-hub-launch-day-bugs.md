@@ -18,6 +18,29 @@ alt_url: /posts/hub-launch-day-bugs/
 
 원인은 토스 브릿지 파일이었습니다. 허브 래퍼를 만들 때 템플릿으로 [파괴왕 공성전](/ko/posts/castle-topple/)의 래퍼를 복사했는데, 이 게임은 가로 전용이라 브릿지가 부팅할 때 화면을 가로로 고정하고, 페이지를 오갈 때마다 다시 고정하는 코드가 들어 있었습니다. 템플릿을 그대로 아홉 허브에 나눠 줬으니 아홉 개가 모두 가로였습니다.
 
+**고치기 전** (래퍼 템플릿의 브릿지)
+
+```js
+// 성 무너뜨리기는 가로 전용 — 토스 미니앱 화면을 가로로 돌린다
+function setLandscape(type) {
+  try {
+    if (typeof Screen?.setOrientation?.isSupported === 'function' && !Screen.setOrientation.isSupported()) return;
+    Screen.setOrientation({ type });
+  } catch (e) { /* … */ }
+}
+setLandscape('landscape');
+window.addEventListener('pagehide', () => setLandscape('portrait'));
+window.addEventListener('pageshow', () => setLandscape('landscape'));
+```
+
+**고친 후**
+
+```js
+// 허브 번들은 세로 기본 — 가로가 필요한 게임은 각자 화면 방향 모듈로 직접 돌린다
+```
+
+블록 하나를 지운 것이 수정의 전부입니다. 카드 게임처럼 가로가 필요한 게임은 이미 각자 화면 방향 모듈로 돌리고 있었습니다.
+
 그 블록을 템플릿과 래퍼 아홉 개에서 지우고 다시 빌드했습니다. 문제는 같은 코드를 실은 게임 허브 다섯 개의 번들이 이미 검수 승인을 받아 둔 상태였다는 점입니다. 그날 저녁 앱 정보 승인과 함께 그 번들로 출시가 눌려 약 20분 동안 게임 허브가 가로로 열렸고, 고친 번들이 승인되자마자 교체했습니다.
 
 허브 점검 스크립트는 브릿지가 실렸는지만 확인하고 화면 방향은 보지 않았습니다. 템플릿을 어떤 게임에서 복사했는지가 그대로 결함이 됐습니다.
@@ -30,6 +53,38 @@ alt_url: /posts/hub-launch-day-bugs/
 
 그 다음 줄은 프로모 안내 문구를 만드는 곳이었습니다. 안내 문구 함수는 파일 아래쪽에 선언된 상수(유의 사항 한 줄)를 읽는데, 허브 홈은 그 상수 선언보다 **위에서** 부팅을 시작합니다. 함수 선언은 끌어올려지지만 상수는 선언 줄에 닿기 전까지 쓸 수 없어서, 안내 문구를 만드는 순간 오류가 나고 그 뒤가 모두 멈췄습니다.
 
+**고치기 전** (허브 홈 main.ts)
+
+```ts
+if (!C) {
+  app.append(el('p', 'hub-error', '…'));
+} else {
+  boot(C);            // ← 여기서 부팅이 시작된다
+}
+
+// … (아래쪽)
+const PROMO_FINE = '부정 참여 시 지급되지 않고, …';
+function promoText(st: PromoState): string {
+  return st === 'pending'
+    ? `허브 안의 게임이나 도구를 하나 끝내면 토스포인트 1원을 드려요(하루 1번). ${PROMO_FINE}`
+    : `오늘 몫 토스포인트 1원은 받았어요. … ${PROMO_FINE}`;
+}
+```
+
+**고친 후**
+
+```ts
+function promoText(st: PromoState): string {
+  // 모듈 최상단 상수는 boot(C) 보다 늦게 초기화된다 — 함수 안에 둔다
+  const PROMO_FINE = '부정 참여 시 지급되지 않고, …';
+  return st === 'pending'
+    ? `허브 안의 게임이나 도구를 하나 끝내면 토스포인트 1원을 드려요(하루 1번). ${PROMO_FINE}`
+    : `오늘 몫 토스포인트 1원은 받았어요. … ${PROMO_FINE}`;
+}
+```
+
+`promoText` 자체는 함수 선언이라 위에서 불러도 되지만, 그 안에서 읽는 `PROMO_FINE` 은 아직 초기화 전입니다. 상수를 함수 안으로 옮기면 부르는 순간 만들어지므로 순서와 상관없어집니다.
+
 평소 실행에서는 안내 문구를 만들 일이 없으니 그 상수를 읽지 않습니다. 로컬에서 재현이 안 된 이유도 같습니다. 프로모 진입인지는 토스가 넘겨 주는 진입 주소로 판단하는데, 브라우저에는 그 값이 없어서 주소 창에 `from=promo` 를 붙여도 평소 실행으로 처리됐습니다. 진입 주소를 프로모 링크로 바꿔 끼운 뒤 다시 실행하자 바로 같은 화면이 나왔고, 상수를 함수 안으로 옮기자 사라졌습니다.
 
 자격증 허브는 다른 틀로 만든 단일 페이지라 이 결함이 없었습니다. 대신 프로모 안내가 시험을 고른 뒤의 홈에만 있어서, 첫 화면인 시험 고르기에도 넣었습니다.
@@ -40,9 +95,45 @@ alt_url: /posts/hub-launch-day-bugs/
 
 허브 홈은 배너 지면 ID 를 허브 설정 파일에서 읽는데, 그 칸은 비어 있었습니다. 실제 지면 ID 는 앱마다 다른 래퍼 쪽 설정에만 있고, 브릿지가 그 값을 페이지에 심어 줍니다. 허브 안 게임 페이지는 브릿지 값을 함께 보도록 이미 고쳐져 있었는데 허브 홈만 빠져 있었습니다. 허브 설정이 비어 있으면 브릿지 값을 쓰도록 한 줄을 더했습니다.
 
+**고치기 전**
+
+```ts
+const bannerId = cfg.ads?.banner;   // hub.json 의 ads 칸 — 비어 있다
+```
+
+**고친 후**
+
+```ts
+const bannerId =
+  cfg.ads?.banner ||
+  (window as unknown as { __tossAdGroups?: { banner?: string } }).__tossAdGroups?.banner; // 래퍼가 심어 준 지면
+```
+
 ## 4. 비게임 허브 위쪽의 검은 띠
 
 행운연구소·하루상식·자격증 위쪽에 쓸데없는 검은 여백이 있었습니다. 토스의 비게임 미니앱은 화면 위에 토스 내비게이션 바가 따로 있는데, 허브 홈은 거기에 화면 안전 영역 여백을 한 번 더 더하고 있었습니다. [로또 대신 저축](/ko/posts/lotto-saving/)에서 9월에 한 번 겪은 일이라 처방도 같습니다. 토스 비게임 허브에서는 위아래 안전 영역 여백을 빼고, 게임 허브는 토스가 화면 위를 덮으므로 그대로 둡니다.
+
+**고치기 전** (허브 홈 style.css)
+
+```css
+body {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+```
+
+**고친 후**
+
+```css
+body {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+body.platform-toss.hub-nongame {
+  padding-top: 0;      /* 토스 내비게이션 바가 이미 위를 비운다 */
+  padding-bottom: 0;
+}
+```
+
+두 클래스는 부팅할 때 붙입니다. 토스 브릿지가 있으면 `platform-toss`, 허브 설정의 `isGame` 이 거짓이면 `hub-nongame` 입니다.
 
 ## 고친 순서
 

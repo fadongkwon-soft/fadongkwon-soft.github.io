@@ -61,9 +61,63 @@ While checking, though, I found something else: **release builds using real ad I
 
 Debug builds now use only Google's test ad units. On the Flutter side I branched on `kReleaseMode` and went as far as overriding the application ID with the sample value in the debug manifest. Any scheme that relies on a human remembering to switch it back will fail at least once.
 
+I later moved that principle into the build as a release-build gate, added in October. If a Google test ID or an empty ID is left in, building the release stops. The code below is trimmed to the core.
+
+**Before**
+
+```kotlin
+create("exampleGame") {
+    dimension = "game"
+    val ads = admobProps("example-game")   // falls back to a test ID if the file is missing
+    buildConfigField("String", "INTERSTITIAL_AD_UNIT", "\"${ads.getProperty("interstitial")}\"")
+    // …nothing checked these values before release
+}
+```
+
+**After**
+
+```kotlin
+val googleTestPublisher = "3940256099942544"
+androidComponents {
+    onVariants(selector().withBuildType("release")) { variant ->
+        // …only flavors that ship ads
+        val cap = variant.name.replaceFirstChar { it.uppercase() }
+        val gate = tasks.register("checkAdIds$cap") {
+            doLast {
+                val problems = ids.mapNotNull { (k, v) ->
+                    if (googleTestPublisher in v) "$k = Google test ID" else null
+                }
+                check(problems.isEmpty()) { "Ad ID gate: stopping the release build" }
+            }
+        }
+        tasks.matching { it.name == "pre${cap}Build" }.configureEach { dependsOn(gate) }
+    }
+}
+```
+
 ### 2. Register real devices in code
 
 I collected the device hashes for three devices — my dev phone, a tablet, and a family phone — and added them via `setTestDeviceIds` to all four codebases.
+
+Registering the test device is one call right before initialization. Below is the first commit that added a single dev phone (the hash is a placeholder).
+
+**Before**
+
+```kotlin
+// no test device registered
+MobileAds.initialize(activity) {}
+```
+
+**After**
+
+```kotlin
+MobileAds.setRequestConfiguration(
+    RequestConfiguration.Builder()
+        .setTestDeviceIds(listOf("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")) // dev phone
+        .build(),
+)
+MobileAds.initialize(activity) {}
+```
 
 Extracting a device hash is slightly awkward. Running the app prints a log line telling you the hash to use for registration, but to see that log you must run the app once. **That run itself must not become invalid traffic, so it has to be a debug build.** For the remote phone I connected over wireless debugging, installed the debug APK, pulled the log, and uninstalled it.
 

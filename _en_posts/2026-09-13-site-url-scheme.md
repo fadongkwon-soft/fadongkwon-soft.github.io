@@ -51,11 +51,64 @@ I allowed exactly one exception: **language-neutral addresses** — the games yo
 
 There were **2,297 occurrences across 449 files** to change. Do that by hand and you will miss some. So I wrote the rule as a script and let the script perform the migration. That same file now serves as the rule document — so that months from now nobody looks at this and undoes it.
 
+The rule changed in two places. One is `_config.yml`, which sets the default address of Korean posts; the other is the front matter of the English posts. Korean posts gain `/ko`, and English posts lose `/en`.
+
+**Before**
+
+```yaml
+# _config.yml
+defaults:
+  - scope: { path: "", type: posts }
+    values:
+      permalink: /posts/:title/
+```
+
+**After**
+
+```yaml
+# _config.yml
+defaults:
+  - scope: { path: "", type: posts }
+    values:
+      permalink: /ko/posts/:title/
+```
+
+**Before**
+
+```yaml
+# _en_posts/2026-08-12-apps-in-toss-launch.md
+permalink: /en/posts/apps-in-toss-launch/
+alt_url: /posts/apps-in-toss-launch/
+```
+
+**After**
+
+```yaml
+# _en_posts/2026-08-12-apps-in-toss-launch.md
+permalink: /posts/apps-in-toss-launch/
+alt_url: /ko/posts/apps-in-toss-launch/
+```
+
 ## What happens to the old addresses
 
 This is the part I worried about most. The Korean post addresses had been indexed since December 2024.
 
 In the end **not one of them 404s.** The old Korean address `/posts/x/` now serves the **English** version of the same article, and a Korean browser arriving there gets sent on to `/ko/posts/x/` by the locale check. The address does not die; the language changes, and search rankings migrate to the new address over time.
+
+The old English addresses are connected to the new ones with meta-refresh stubs. This file did not exist before the switch, so there is no before. Each old English address has one such stub.
+
+**After**
+
+```html
+---
+layout: null
+sitemap: false
+permalink: /en/posts/apps-in-toss-launch/
+---
+<link rel="canonical" href="/posts/apps-in-toss-launch/">
+<meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="0; url=/posts/apps-in-toss-launch/">
+```
 
 ## The stores and Instagram needed nothing
 
