@@ -1,6 +1,6 @@
 ---
 title: Moving Hub Apps onto Apps in Toss — Why I Withdrew the Shutdowns and Rewrote Existing Apps Instead
-description: The 50-app workspace cap on Apps in Toss blocked every new hub registration. Shutting apps down did not free a slot because apps pending shutdown still count, so I withdrew ten shutdown requests and converted existing apps into hubs by changing their name, icon and bundle. Four non-game hubs went live within a day and five game hubs are in review. Here is what could be changed, what could not, how ad placements and user data carried over, and how the 1-won promotions were re-created per hub
+description: The 50-app workspace cap on Apps in Toss blocked every new hub registration. Shutting apps down did not free a slot because apps pending shutdown still count, so I withdrew ten shutdown requests and converted existing apps into hubs by changing their name, icon and bundle. Four non-game hubs went live first, and the five game hubs followed that same evening. Here is what could be changed, what could not, how ad placements and user data carried over, and how the 1-won promotions were re-created per hub
 image:
   path: /assets/img/20261026_toss-hub-conversion/cover.png
   alt: Converting existing Apps in Toss mini apps into hub apps
@@ -56,11 +56,11 @@ There was one rule. **Among the games bundled in a hub, the app with the lowest 
 | FDK Daily Quiz | [Daily Money Quiz](/posts/daily-econ/) | Non-game | **Live** |
 | FDK Lucky Pick | [Juice Spinner](/posts/juice-spinner/) | Non-game | **Live** |
 | FDK Exam Bank | [Nursing Exam Bank](/posts/nursing-quiz/) | Non-game | **Live** |
-| [FDK Puzzle Cafe](/posts/hub-puzzle/) | [Merge Pop](/posts/merge-pop/) | Game | App info in review |
-| [FDK Brain Check](/posts/hub-brain/) | [Memory Cards](/posts/memory-card/) | Game | App info in review |
-| [FDK Arcade](/posts/hub-arcade/) | [Rock Paper Scissors](/posts/rock-paper-scissors/) | Game | App info in review |
-| [FDK Board Duel](/posts/hub-board/) | [Sea Battle](/posts/sea-battle/) | Game | App info in review |
-| [FDK Olympics](/posts/hub-sports/) | [Pixel Pong](/posts/pixel-pong/) | Game | App info in review |
+| [FDK Puzzle Cafe](/posts/hub-puzzle/) | [Merge Pop](/posts/merge-pop/) | Game | Released the evening of October 26 |
+| [FDK Brain Check](/posts/hub-brain/) | [Memory Cards](/posts/memory-card/) | Game | Released the evening of October 26 |
+| [FDK Arcade](/posts/hub-arcade/) | [Rock Paper Scissors](/posts/rock-paper-scissors/) | Game | Released the evening of October 26 |
+| [FDK Board Duel](/posts/hub-board/) | [Sea Battle](/posts/sea-battle/) | Game | Released the evening of October 26 |
+| [FDK Olympics](/posts/hub-sports/) | [Pixel Pong](/posts/pixel-pong/) | Game | Released the evening of October 26 |
 | FDK Card Games | Solitaire | Game | After the Play release |
 
 Because the app type cannot change, a non-game hub can only come from a non-game app and a game hub only from a game app. Why Card Games is last comes below.
@@ -95,19 +95,23 @@ With the hubs up, the [1-won promotions](/posts/toss-one-won-promotion-week1/) n
 
 One technical change was needed. Until now the payout lived inside each game, and in hub mode that code was switched off entirely, because paying one hub's code separately per game would pay several times a day. This time I added a single hub-wide payout. The moment any game inside the hub finishes a round, the same point where today's mission is recorded as done, the hub pays once per day for the whole hub, and only for sessions that arrived through the benefits-tab card. The Exam Bank hub uses a different shell, so it got its own hook at the fifth question answered.
 
-The four promotions are in review, and the bundles carrying the payout codes went back into review. A test payout has to go through before they can start, so going live takes another day or two.
+These four went through a test payout and started on the evening of October 26. When the five game hubs were released the same day, I ended the old promotions on Memory Cards and Pixel Pong (their old codes do not pay out inside a hub) and created hub promotions for the five game hubs as well. All nine hubs now run a benefits-tab mission.
 
-There is also cleanup. The promotions still running on Memory Cards and Pixel Pong carry the old codes and will stop paying out once the hub bundles go live. I plan to end them right before releasing the Brain Check and Olympics hubs and re-create them for the hubs.
+## Update, evening of October 26
+
+- The five game hubs (Puzzle Cafe, Brain Check, Arcade, Board Duel, Olympics) had their app info approved and were released. There are now **nine** hubs on Toss.
+- Four defects surfaced on launch day: the screen was forced into landscape, the hub home went blank below the title on promo entries, the hub home had no banner, and non-game hubs had a black band at the top. The game hubs were released first on old bundles carrying these defects and opened in landscape for about 20 minutes. The causes and fixes are in [Four Defects on Hub Launch Day](/posts/hub-launch-day-bugs/).
+- I moved the hubs' similarity coordinates so they land near the top of other apps' "You might also like" lists. Why I did not rebuild the apps is in [the post about moving one coordinate](/posts/hub-promo-position/).
 
 ## Summary
 
 - Putting hubs on Toss needed free slots, but **apps pending shutdown still count toward the 50-app cap**, so shutting apps down freed nothing.
 - Instead, I **replaced the app info and bundle of existing apps with the hubs**. Only the app identifier and app type stay, and ad placements, push consent and user data carry over.
-- **Four non-game hubs went live within a day**, and five game hubs are waiting on human review of their app info. Card Games comes after its Play release.
+- **Four non-game hubs** went live in the early hours and **five game hubs** that evening, making nine hubs on Toss. Card Games comes after its Play release.
 - Swapping the game-rating link worked through the API, and the English name prefix could not be used on Toss.
-- 1-won promotions were re-created per hub on the four live hubs, with payouts collapsed to once a day across the whole hub.
+- 1-won promotions were re-created per hub on all nine hubs, with payouts collapsed to once a day across the whole hub.
 
-When the five game hubs are approved, I will follow up with how that went and how return visits moved after the switch to hubs.
+Once two to three weeks of numbers are in, I will follow up with how return visits moved after the switch to hubs.
 
 The apps are listed under [GAMES](/ko/games/) and [APPS](/ko/apps/), and some can be [played right in the browser](/play/). Updates go out on this blog and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
 
