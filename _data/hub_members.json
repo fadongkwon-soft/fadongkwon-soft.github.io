@@ -77,6 +77,12 @@
     "merge-pop",
     "bubble-pop"
   ],
+  "hub-quiz": [
+    "quiz-battle",
+    "chosung-quiz",
+    "twenty-q",
+    "nonsense-quiz"
+  ],
   "hub-sports": [
     "mini-golf",
     "billiards",
