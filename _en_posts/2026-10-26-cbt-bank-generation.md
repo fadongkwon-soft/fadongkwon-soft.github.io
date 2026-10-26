@@ -5,7 +5,7 @@ image:
   path: /assets/img/20261026_cbt-bank-generation/cover.png
   alt: Building a 7,200-question certification exam bank with AI agents
 date: 2026-10-26 01:41:00 +0900
-categories: [Devlog, Learning]
+categories: [Devlog, Automation]
 permalink: /posts/cbt-bank-generation/
 alt_url: /ko/posts/cbt-bank-generation/
 tags: [certification, question bank, solo developer, dev log]
