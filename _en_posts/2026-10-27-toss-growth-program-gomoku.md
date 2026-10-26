@@ -1,6 +1,6 @@
 ---
 title: Gomoku Was Picked for the Apps in Toss Growth Program Too — No Email, a Promotion Already Running, and a First Screen Rebuilt From Day-One Data
-description: Right after Tap Bird, Gomoku turned out to be selected for the Apps in Toss partner growth program as well. Tap Bird got an email; Gomoku got nothing, and I only found out from the console the day after the promotion started. Day-one traffic was five times normal, but fewer than 1 percent of people who came from the Benefits tab returned the next day. So I turned the first screen from a settings form into a board you can play right away, and added a daily puzzle, streaks, and a Hard win-streak ranking
+description: Right after Tap Bird, Gomoku turned out to be selected for the Apps in Toss partner growth program as well. Tap Bird got an email; Gomoku got nothing, and I only found out from the console the day after the promotion started. Day-one traffic was five times normal. But normally, fewer than 1 percent of people who arrive from the Benefits tab come back the next day. So I turned the first screen from a settings form into a board you can play right away, and added a daily puzzle, streaks, and a Hard win-streak ranking
 image:
   path: /assets/img/20261027_toss-growth-program-gomoku/cover.png
   alt: The growth program banner in the Apps in Toss console — Congratulations! Gomoku was selected for the growth program
@@ -22,7 +22,7 @@ The Apps in Toss announcement says that selected apps get a growth program menu 
 
 To see whether I had missed anything else, I checked **all 52 live apps** in the console. Only two were selected: Tap Bird and Gomoku. From now on I check each app in the console instead of trusting the inbox.
 
-## Day-one data — five times the traffic, and almost all of it left
+## Day-one data — five times the traffic, and it is too early to know who returns
 
 The promotion started at 11 a.m. on October 26. The terms match Tap Bird's: people arrive from the Toss Benefits tab through "browse for 10 seconds, earn 5 won," stay 10 seconds, and get their points.
 
@@ -30,10 +30,12 @@ The promotion started at 11 a.m. on October 26. The terms match Tap Bird's: peop
 | --- | --- |
 | Daily users (normal) | 82–133 |
 | Daily users (Oct 26, day one) | 480, of which 430 from the Benefits tab |
-| Next-day return, users from the All tab | 18% |
-| Next-day return, users from the Benefits tab | 0.8% |
+| Next-day return, users from the All tab (arrived Oct 1–25) | 18% |
+| Next-day return, users from the Benefits tab (arrived Oct 1–25) | 0.8% |
 
-On a normal day, one in five people who find Gomoku in the All tab comes back the next day. Of the people who arrive through the Benefits tab, not even one in a hundred does. That is exactly the number the growth program watches to decide on further support: **do the people who came to browse come back?**
+The two return rows come from before the promotion, from people who arrived between October 1 and 25. The Benefits tab already carried traffic from my own one-won promotions then. For the people who came in through the growth promotion on day one (October 26), next-day return is **not known yet.** As I write this it is the early hours of that "next day," and the number only exists once the day is over.
+
+On a normal day, one in five people who find Gomoku in the All tab comes back the next day. Of the people who arrived through the Benefits tab, not even one in a hundred did. The promotion traffic also comes through the Benefits tab, so with the old first screen it would likely wash out the same way. That is exactly the number the growth program watches to decide on further support: **do the people who came to browse come back?**
 
 ## The first screen was a settings form
 
@@ -75,12 +77,12 @@ Running it on a phone turned up a few fixes.
 
 - The new Gomoku entered Toss review early on October 27. The promotion is already running, so people arriving right now still see the old screen.
 - Once approved, I will release it immediately and add `?from=growth` to the promotion's landing path so growth-program visitors are counted separately.
-- The metrics are the same as for Tap Bird: first-game start rate, second-game start rate, and next-day and one-week return. The baseline is **0.8 percent next-day return from the Benefits tab**.
+- The metrics are the same as for Tap Bird: first-game start rate, second-game start rate, and next-day and one-week return. The point of comparison is **0.8 percent next-day return for Benefits-tab arrivals before the promotion** (Oct 1–25). The promotion's own numbers come in one day at a time.
 
 ## Summary
 
 - Gomoku was also selected for the Apps in Toss **partner growth program**. **No notification email arrived**, so I had to check each app in the console. Of 52 apps, two were selected: Tap Bird and Gomoku.
-- Day one brought five times the usual users, but only 0.8 percent of Benefits-tab visitors came back the next day.
+- Day one brought five times the usual users. Before the promotion, 0.8 percent of Benefits-tab arrivals came back the next day; the promotion's own return rate is still being counted.
 - The first screen went from a settings form to **a board you can play right away**, and the **daily puzzle**, **streaks**, and a **Hard win-streak ranking** give people a reason to return.
 - The ranking uses **streaks** instead of win rate, to close the loopholes of leaving, resigning, and undoing to protect a record.
 
