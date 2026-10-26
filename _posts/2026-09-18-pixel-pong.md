@@ -35,6 +35,7 @@ alt_url: /posts/pixel-pong/
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.pixel_pong>
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/pixel-pong/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.
+  - 2026년 10월 26일부터 앱인토스에서는 **파동권 올림픽** 안에서 열립니다. 토스의 미니앱 노출 방식이 바뀌고 계정당 등록할 수 있는 앱 수도 한도에 닿아, 이 앱 자리를 비슷한 앱을 모은 허브로 바꿨기 때문입니다. 위 링크로 들어가면 허브가 열리고, 이 앱은 허브 안에 그대로 있으며 기존 기록도 이어집니다. 사정은 [허브 전환기](/ko/posts/toss-hub-conversion/)에 적었습니다.
 
 ## 함께 나온 게임
 9월 8일에 10종을 함께 출시했고, 하루에 하나씩 소개하고 있습니다. 지금까지 올린 글입니다.

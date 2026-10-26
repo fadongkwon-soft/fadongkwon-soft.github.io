@@ -31,5 +31,6 @@ alt_url: /posts/nursing-quiz/
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.nursing_quiz>
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/nursing-quiz/>
+  - 2026년 10월 26일부터 앱인토스에서는 **파동권 자격증** 안에서 열립니다. 토스의 미니앱 노출 방식이 바뀌고 계정당 등록할 수 있는 앱 수도 한도에 닿아, 이 앱 자리를 비슷한 앱을 모은 허브로 바꿨기 때문입니다. 위 링크로 들어가면 허브가 열리고, 이 앱은 허브 안에 그대로 있으며 기존 기록도 이어집니다. 사정은 [허브 전환기](/ko/posts/toss-hub-conversion/)에 적었습니다.
 
 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.

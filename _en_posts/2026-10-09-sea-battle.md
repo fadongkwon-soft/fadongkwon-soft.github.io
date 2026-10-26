@@ -38,6 +38,7 @@ It is free to play and contains ads.
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.sea_battle>
 - Apps in Toss: <https://fadongkwon.com/toss/sea-battle/> — open it on your phone and it connects straight into the Toss app.
+  - Since October 26, 2026 it opens inside **FDK Board Duel** on Apps in Toss. Toss changed how mini apps are surfaced and the number of apps one account can list had hit its limit, so this app's slot was turned into a hub that gathers similar apps. The link above now opens the hub, this app is still inside it, and existing records carry over. The background is in [the hub conversion post](/posts/toss-hub-conversion/).
 
 ## Released Alongside
 Nine board games went up on Google Play together on October 7, alongside five retro puzzle and arcade games. They are also available on Apps in Toss.

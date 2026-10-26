@@ -46,6 +46,7 @@ Offline, no sign-up.
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.daily_econ>
 - Apps in Toss: <https://fadongkwon.com/toss/daily-econ/> — open it on your phone and it connects straight into the Toss app.
+  - Since October 26, 2026 it opens inside **FDK Daily Quiz** on Apps in Toss. Toss changed how mini apps are surfaced and the number of apps one account can list had hit its limit, so this app's slot was turned into a hub that gathers similar apps. The link above now opens the hub, this app is still inside it, and existing records carry over. The background is in [the hub conversion post](/posts/toss-hub-conversion/).
 
 ## Released Alongside
 Six apps went out together in September: **Daily Korean History** and **Daily Money Quiz**, one question a day each;

@@ -43,6 +43,7 @@ Google Play에 올려둔 세 앱을 Flutter Web으로 포팅해 토스 미니앱
 순서 정하기 등 모임에서 가볍게 쓰기 좋습니다.
 
 - 열기: [토스에서 주스 스피너 열기](https://fadongkwon.com/toss/juice-spinner/) — 아래 QR을 폰 카메라로 찍어도 바로 열립니다
+  - 2026년 10월 26일부터 앱인토스에서는 **파동권 복불복** 안에서 열립니다. 토스의 미니앱 노출 방식이 바뀌고 계정당 등록할 수 있는 앱 수도 한도에 닿아, 이 앱 자리를 비슷한 앱을 모은 허브로 바꿨기 때문입니다. 위 링크로 들어가면 허브가 열리고, 이 앱은 허브 안에 그대로 있으며 기존 기록도 이어집니다. 사정은 [허브 전환기](/ko/posts/toss-hub-conversion/)에 적었습니다.
 
 ![주스 스피너 QR](/assets/img/20260812_apps-in-toss/qr-juice-spinner.png){: .w-25 .normal}
 ![Desktop View](/assets/img/20260812_apps-in-toss/juice-main.png){: .w-25 .normal}

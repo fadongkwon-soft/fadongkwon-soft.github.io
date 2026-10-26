@@ -37,6 +37,7 @@ It works fully offline with no sign-up or login.
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.memory_card>
 - Apps in Toss: <https://fadongkwon.com/toss/memory-card/> — open it on your phone and it connects straight into the Toss app.
+  - Since October 26, 2026 it opens inside **FDK Brain Check** on Apps in Toss. Toss changed how mini apps are surfaced and the number of apps one account can list had hit its limit, so this app's slot was turned into a hub that gathers similar apps. The link above now opens the hub, this app is still inside it, and existing records carry over. The background is in [the hub conversion post](/posts/toss-hub-conversion/).
 
 ## Released Alongside
 [Reaction Challenge](/posts/reaction/) went out the same day. These two were where I first tried building in web technology and publishing to Google Play and Apps in Toss at the same time.

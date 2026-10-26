@@ -1,0 +1,91 @@
+{
+  "hub-arcade": [
+    "tap-bird",
+    "sky-jump",
+    "snake",
+    "breakout",
+    "tower-stack",
+    "whack-a-mole",
+    "rock-paper-scissors"
+  ],
+  "hub-board": [
+    "janggi",
+    "mini-go",
+    "gomoku",
+    "yut-nori",
+    "gonu",
+    "reversi",
+    "checkers",
+    "four-in-a-row",
+    "mancala",
+    "backgammon",
+    "morris",
+    "hex",
+    "amazons",
+    "ultimate-ttt",
+    "sea-battle",
+    "dots-boxes"
+  ],
+  "hub-brain": [
+    "hangul-word",
+    "memory-card",
+    "sequence-memory",
+    "reaction",
+    "number-tap"
+  ],
+  "hub-card": [
+    "solitaire",
+    "freecell",
+    "spider",
+    "pyramid"
+  ],
+  "hub-edu": [
+    "daily-history",
+    "daily-econ",
+    "daily-spelling",
+    "daily-idiom",
+    "daily-science",
+    "daily-geo"
+  ],
+  "hub-fortune": [
+    "saju-lotto",
+    "car-lotto",
+    "star-lotto",
+    "name-lotto",
+    "lotto-saving",
+    "tarot"
+  ],
+  "hub-party": [
+    "juice-spinner",
+    "spin-the-bottle",
+    "ladder",
+    "draw-lots",
+    "penalty-roulette",
+    "marble-race",
+    "chosung-quiz"
+  ],
+  "hub-puzzle": [
+    "sudoku",
+    "nonogram",
+    "lights-off",
+    "minesweeper",
+    "slide-puzzle",
+    "box-push",
+    "game-2048",
+    "make-ten",
+    "block-fill",
+    "merge-pop",
+    "bubble-pop"
+  ],
+  "hub-sports": [
+    "mini-golf",
+    "billiards",
+    "pixel-pong",
+    "bowling",
+    "archery",
+    "hoop-shot"
+  ],
+  "cert-hub": [
+    "nursing-quiz"
+  ]
+}

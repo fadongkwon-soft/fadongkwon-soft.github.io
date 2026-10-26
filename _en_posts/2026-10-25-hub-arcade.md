@@ -52,6 +52,7 @@ It is free to play and contains ads.
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.hub_arcade>
+- Apps in Toss: <https://fadongkwon.com/toss/hub-arcade/> — open it on your phone and it connects straight into the Toss app. It went live on October 26, 2026, taking over an existing app's slot ([how and why](/posts/toss-hub-conversion/)).
 
 ![FDK Arcade: Classic Games Google Play QR code](/assets/img/play-qr/hub-arcade.png){: w="200" .normal }
 

@@ -19,9 +19,9 @@ alt_url: /ko/apps/
         미리 만들어 두는 경우가 있어서, 랜딩 존재만 보면 미출시 미니앱으로 링크가 걸린다
         (2026-09-11 실제로 3개가 그렇게 나갔다). -->
 
-Everything below is generated from the registry every app shares, so it updates itself when a new app goes live — there is no hand-written list to forget. The two store columns track each platform separately, because an app can be live on one and still in review on the other.
+Everything below is generated from the registry every app shares, so it updates itself when a new app goes live — there is no hand-written list to forget. The two store columns track each platform separately, because an app can be on only one of them, or reachable on Apps in Toss only inside a hub.
 
-**{{ site.data.apps_others | size }} apps** — {{ site.data.apps_others | where: 'on_play', true | size }} live on Google Play, {{ site.data.apps_others | where: 'on_toss', true | size }} on Apps in Toss. Newest first. Games have their own page, [Games](/games/).
+**{{ site.data.apps_others | size }} apps** — {{ site.data.apps_others | where: 'on_play', true | size }} live on Google Play, {{ site.data.apps_others | where: 'on_toss', true | size }} on Apps in Toss, plus {{ site.data.apps_others | where_exp: 'a', 'a.toss_hub' | size }} available inside an Apps in Toss hub. Newest first. Games have their own page, [Games](/games/).
 
 Learning and exam prep, party picks, and fortune-telling apps.
 
@@ -29,10 +29,13 @@ Learning and exam prep, party picks, and fortune-telling apps.
 > 🔮 There is also a **[Tarot card meaning dictionary](/tarot/)** — the card-by-card companion to the tarot apps (Tarot Fortune, Tarot Ping), all 78 cards.
 {: .prompt-info }
 
+> On Apps in Toss, similar apps have been bundled into a single **FDK hub** since October 26, 2026. Toss changed how mini apps are surfaced, and the number of apps one account can list had hit its limit, so the existing standalone apps were turned into hubs. An entry marked "In …" in the Apps in Toss column is available inside that hub, and old links now open the hub. The full story is in [the hub conversion post](/posts/toss-hub-conversion/).
+{: .prompt-info }
+
 | | App | Released | Google Play | Apps in Toss |
 | --- | --- | --- | --- | --- |
 {% for a in site.data.apps_others -%}
-| {% if a.icon_path != '' %}![{{ a.name_en | default: a.name }}]({{ a.icon_path }}){: width="40" height="40" .normal}{% else %}{{ a.emoji }}{% endif %} | {% if a.post_en %}[**{{ a.name_en | default: a.name }}**]({{ a.post_en }}){% else %}**{{ a.name_en | default: a.name }}**{% endif %} {% include app-badge.html id=a.id %}<br>{{ a.tagline_en | default: a.tagline }} | {{ a.released }} | {% if a.on_play and a.play_landing %}[Install]({{ a.play_landing }}){: data-direct="https://play.google.com/store/apps/details?id={{ a.play_package }}"}{% elsif a.on_play %}[Install](https://play.google.com/store/apps/details?id={{ a.play_package }}){% else %}*in review*{% endif %} | {% if a.on_toss and a.toss_landing %}[Open]({{ a.toss_landing }}){: data-direct="{{ a.toss_scheme }}"}{% elsif a.on_toss %}live{% else %}*in review*{% endif %} |
+| {% if a.icon_path != '' %}![{{ a.name_en | default: a.name }}]({{ a.icon_path }}){: width="40" height="40" .normal}{% else %}{{ a.emoji }}{% endif %} | {% if a.post_en %}[**{{ a.name_en | default: a.name }}**]({{ a.post_en }}){% else %}**{{ a.name_en | default: a.name }}**{% endif %} {% include app-badge.html id=a.id %}<br>{{ a.tagline_en | default: a.tagline }} | {{ a.released }} | {% if a.on_play and a.play_landing %}[Install]({{ a.play_landing }}){: data-direct="https://play.google.com/store/apps/details?id={{ a.play_package }}"}{% elsif a.on_play %}[Install](https://play.google.com/store/apps/details?id={{ a.play_package }}){% else %}coming soon{% endif %} | {% if a.on_toss and a.toss_landing %}[Open]({{ a.toss_landing }}){: data-direct="{{ a.toss_scheme }}"}{% elsif a.on_toss %}live{% elsif a.toss_hub and a.toss_hub.landing %}[In {{ a.toss_hub.name_en | default: a.toss_hub.name }}]({{ a.toss_hub.landing }}){: data-direct="{{ a.toss_hub.scheme }}"}{% elsif a.toss_hub %}In {{ a.toss_hub.name_en | default: a.toss_hub.name }}{% else %}not on Toss{% endif %} |
 {% endfor %}
 
 **Tap an app's name to read its introduction post** (apps without one are not linked). Games are on [Games](/games/), and the ones that run straight in a browser are on [PLAY](/play/). For the story behind each one, the [dev log](/archives/) has the details.

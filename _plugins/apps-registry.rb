@@ -85,6 +85,24 @@ Jekyll::Hooks.register :site, :post_read do |site|
     h
   end
 
+  # 토스 허브 소속(2026-10-26). 토스는 계정당 앱 수 한도 때문에 개별 앱 자리를 허브로 바꿨다
+  # (앱 정보 변경). 그 결과 toss=0 이 된 앱이 목록에서 '심사 중'으로 보였는데 사실은 허브 안에서
+  # 그대로 쓸 수 있다. 소속표 _data/hub_members.json 은 게임 저장소 publish:registry 가 hubs/*/hub.json 으로 만든다.
+  # 토스에 라이브인 허브(toss=1)에 든 앱만 '허브에서 열기'로 표시하고, 나머지 toss=0 은 '토스 미출시'다.
+  members = site.data['hub_members'] || {}
+  by_id = rows.to_h { |h| [h['id'], h] }
+  rows.each do |h|
+    h['toss_hub'] = nil
+    next if h['on_toss']
+    hub_id, = members.find { |hid, list| list.include?(h['id']) && by_id[hid] && by_id[hid]['on_toss'] }
+    next unless hub_id
+    hub = by_id[hub_id]
+    h['toss_hub'] = {
+      'id' => hub_id, 'name' => hub['name'], 'name_en' => hub['name_en'],
+      'landing' => hub['toss_landing'], 'scheme' => hub['toss_scheme']
+    }
+  end
+
   # 출시 역순(최신 먼저). 같은 날 출시가 많아 2차 키로 pos(유사도 좌표)를 써서
   # 같은 계열이 붙어 나오게 한다.
   live = rows.select { |h| h['live'] }

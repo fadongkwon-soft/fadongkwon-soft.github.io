@@ -40,6 +40,7 @@ It works fully offline with no sign-up or login, and supports 9 languages.
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.rock_paper_scissors>
 - Apps in Toss: <https://fadongkwon.com/toss/rock-paper-scissors/> — open it on your phone and it connects straight into the Toss app.
+  - Since October 26, 2026 it opens inside **FDK Arcade** on Apps in Toss. Toss changed how mini apps are surfaced and the number of apps one account can list had hit its limit, so this app's slot was turned into a hub that gathers similar apps. The link above now opens the hub, this app is still inside it, and existing records carry over. The background is in [the hub conversion post](/posts/toss-hub-conversion/).
 
 ## Released Alongside
 Thirteen games went up on Google Play together on September 8. Ten of them reached Apps in Toss at the same time and I have been introducing one a day. This game and two others took longer to clear review there and joined on September 13, so here they are.

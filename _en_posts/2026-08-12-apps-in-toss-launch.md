@@ -44,6 +44,7 @@ Pick a group size (2 to 12 people) and a set of fruits, then spin. It is the kin
 reach for when someone has to buy the drinks, take the cleaning shift, or go first.
 
 - Open: [Open Juice Spinner in Toss](https://fadongkwon.com/toss/juice-spinner/) — or scan the QR code below with your phone camera
+  - Since October 26, 2026 it opens inside **FDK Lucky Pick** on Apps in Toss. Toss changed how mini apps are surfaced and the number of apps one account can list had hit its limit, so this app's slot was turned into a hub that gathers similar apps. The link above now opens the hub, this app is still inside it, and existing records carry over. The background is in [the hub conversion post](/posts/toss-hub-conversion/).
 
 ![Juice Spinner QR code](/assets/img/20260812_apps-in-toss/qr-juice-spinner.png){: .w-25 .normal}
 ![Desktop View](/assets/img/20260812_apps-in-toss/juice-main.png){: .w-25 .normal}

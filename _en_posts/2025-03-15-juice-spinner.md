@@ -42,6 +42,7 @@ There is no sign-up or login, and it runs without a connection.
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.juice_spinner_ad>
 - Apps in Toss: <https://fadongkwon.com/toss/juice-spinner/> — open it on your phone and it connects straight into the Toss app.
+  - Since October 26, 2026 it opens inside **FDK Lucky Pick** on Apps in Toss. Toss changed how mini apps are surfaced and the number of apps one account can list had hit its limit, so this app's slot was turned into a hub that gathers similar apps. The link above now opens the hub, this app is still inside it, and existing records carry over. The background is in [the hub conversion post](/posts/toss-hub-conversion/).
 
 ## In the Same Family
 For drinking nights, [Spin the Bottle](/posts/spin-the-bottle/) has the same structure. The only difference is that you pick from nine bottles instead of fruit.
