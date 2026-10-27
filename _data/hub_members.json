@@ -31,13 +31,16 @@
     "memory-card",
     "sequence-memory",
     "reaction",
-    "number-tap"
+    "number-tap",
+    "mental-math"
   ],
   "hub-card": [
     "solitaire",
     "freecell",
     "spider",
-    "pyramid"
+    "pyramid",
+    "golf-solitaire",
+    "tripeaks"
   ],
   "hub-edu": [
     "daily-history",
