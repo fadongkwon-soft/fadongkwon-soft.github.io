@@ -100,3 +100,19 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  # 배포가 끝나면 바뀐 페이지를 IndexNow 로 네이버·Bing 에 알린다(2026-10-28).
+  # 구글은 일괄 '색인 요청' API 가 없어 여기서 못 부른다 — 구글은 사이트맵과 tools/gsc.py 쪽이다.
+  # 라이브 사이트맵의 lastmod 기준이라 push 배포와 예약 글 공개 빌드를 같은 방법으로 잡는다.
+  # 알림이 실패해도 사이트는 이미 배포됐으므로 이 job 실패는 배포 실패가 아니다.
+  indexnow:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Notify IndexNow (Naver, Bing)
+        continue-on-error: true
+        run: |
+          sleep 60   # Pages CDN 반영 대기 — 키 파일·새 lastmod 가 보여야 한다
+          python3 tools/indexnow.py --hours 36
