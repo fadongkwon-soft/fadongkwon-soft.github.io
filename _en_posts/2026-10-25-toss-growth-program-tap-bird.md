@@ -20,7 +20,7 @@ Here is what the email said.
 
 - Toss **itself** creates a "browse a mini app and earn points" promotion and starts it **automatically on Monday, October 26**. Unlike the [1-won promotions](/posts/toss-one-won-promotion/) I run, Toss pays for it.
 - The condition is **10 seconds of browsing**. Enter the app, stay 10 seconds, points are paid, up to twice per person per 12 hours.
-- The scale is thousands of visits a day until the budget runs out, **roughly a week**. With the two-per-person cap, that is 10,000–20,000 unique arrivals.
+- With the two-per-person cap, the full budget means 10,000–20,000 unique arrivals. I first wrote that it would pay out thousands of times a day and end in **roughly a week**. In the first three days (Oct 26–28) it actually ran at about 1,000 a day, so at that pace it will take **several weeks** to use up the budget. (Updated Oct 28)
 - We choose the screen the promotion lands on, in the console. The email asked for "a screen that shows what the app is right away."
 - After the promotion ends, Toss looks at **whether users come back**.
 
