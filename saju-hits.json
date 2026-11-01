@@ -1,33 +1,33 @@
 {
   "schema": 2,
-  "generatedAt": "2026-10-25T03:31:41.515Z",
+  "generatedAt": "2026-11-01T04:45:18.236Z",
   "card": {
-    "round": 1247,
-    "drawDate": "2026-10-24",
+    "round": 1248,
+    "drawDate": "2026-10-31",
     "numbers": [
-      8,
-      14,
-      21,
-      22,
-      42,
-      45
+      16,
+      18,
+      27,
+      36,
+      38,
+      42
     ],
-    "bonus": 24,
-    "periodKey": "20261018",
+    "bonus": 22,
+    "periodKey": "20261025",
     "gameCount": 5,
     "match": {
-      "year": 1965,
-      "month": 3,
-      "day": 13,
+      "year": 1950,
+      "month": 9,
+      "day": 12,
       "calendar": "solar",
       "gender": "male",
-      "birthTime": 5,
-      "gameIndex": 2
+      "birthTime": 12,
+      "gameIndex": 5
     }
   },
-  "latestRound": 1247,
-  "latestDrawDate": "2026-10-24",
-  "matchCount": 1,
+  "latestRound": 1248,
+  "latestDrawDate": "2026-10-31",
+  "matchCount": 3,
   "searchedSeeds": 816686,
   "carriedOver": false
 }
