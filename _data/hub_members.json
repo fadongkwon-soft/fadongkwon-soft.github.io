@@ -95,6 +95,12 @@
     "hoop-shot"
   ],
   "cert-hub": [
-    "nursing-quiz"
+    "nursing-quiz",
+    "care-quiz",
+    "beauty-quiz",
+    "cook-quiz",
+    "bake-quiz",
+    "heavy-quiz",
+    "drive-quiz"
   ]
 }
