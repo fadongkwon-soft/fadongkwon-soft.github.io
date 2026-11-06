@@ -32,7 +32,10 @@
     "sequence-memory",
     "reaction",
     "number-tap",
-    "mental-math"
+    "mental-math",
+    "odd-one-out",
+    "shell-game",
+    "left-right"
   ],
   "hub-card": [
     "solitaire",
@@ -51,12 +54,18 @@
     "daily-geo"
   ],
   "hub-fortune": [
+    "tarot",
+    "zodiac-pet",
     "saju-lotto",
     "car-lotto",
     "star-lotto",
     "name-lotto",
-    "lotto-saving",
-    "tarot"
+    "lotto-saving"
+  ],
+  "hub-monsters": [
+    "hangul-monsters",
+    "math-monsters",
+    "english-monsters"
   ],
   "hub-party": [
     "juice-spinner",
@@ -74,6 +83,7 @@
     "minesweeper",
     "slide-puzzle",
     "box-push",
+    "block-escape",
     "game-2048",
     "make-ten",
     "block-fill",
