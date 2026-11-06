@@ -4,7 +4,7 @@ description: 탭 버드에 이어 오목도 앱인토스 파트너 성장 프로
 date: 2026-10-27 01:12:00 +0900
 categories: [Devlog, Platform]
 tags: [앱인토스, 토스, 미니앱, 성장프로그램, 오목, 게임개발, 1인개발자, 개발일지]
-pin: true
+pin: false
 image:
   path: /assets/img/20261027_toss-growth-program-gomoku/cover.png
   alt: 앱인토스 콘솔의 성장 프로그램 선정 배너 — 축하해요! 오목이 성장 프로그램에 선정됐어요

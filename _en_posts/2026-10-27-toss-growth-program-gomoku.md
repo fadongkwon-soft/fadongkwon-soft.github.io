@@ -5,7 +5,7 @@ image:
   path: /assets/img/20261027_toss-growth-program-gomoku/cover.png
   alt: The growth program banner in the Apps in Toss console — Congratulations! Gomoku was selected for the growth program
 date: 2026-10-27 01:12:00 +0900
-pin: true
+pin: false
 categories: [Devlog, Platform]
 permalink: /posts/toss-growth-program-gomoku/
 alt_url: /ko/posts/toss-growth-program-gomoku/

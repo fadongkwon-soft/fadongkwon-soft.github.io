@@ -4,7 +4,7 @@ description: 10월 24일 앱인토스에서 탭 버드가 파트너 성장 프�
 date: 2026-10-25 10:20:00 +0900
 categories: [Devlog, Platform]
 tags: [앱인토스, 토스, 미니앱, 성장프로그램, 탭버드, 게임개발, 1인개발자, 개발일지]
-pin: true
+pin: false
 image:
   path: /assets/img/20261025_toss-growth-program-tap-bird/cover.png
   alt: 앱인토스 콘솔의 성장 프로그램 선정 배너 — 축하해요! 탭 버드가 성장 프로그램에 선정됐어요
