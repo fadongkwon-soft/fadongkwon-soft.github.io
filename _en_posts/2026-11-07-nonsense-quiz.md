@@ -1,6 +1,6 @@
 ---
-title: "Nonsense Quiz: Korean Puns — 300 Original Riddles to Groan and Laugh At (in Korean)"
-description: "300 original Korean pun riddles with an explanation for every answer. Laugh together in a group or play solo. The riddles are in Korean, so you need to read Hangul. Now on Google Play"
+title: "Nonsense Quiz: Korean Puns — 320 Riddles to Groan and Laugh At (in Korean)"
+description: "320 Korean pun riddles, centered on classics Koreans actually trade at parties, with an explanation for every answer. Laugh together in a group or play solo. The riddles are in Korean, so you need to read Hangul. Now on Google Play"
 image:
   path: /assets/img/20261106_nonsense-quiz/nonsense-quiz-feature-en.png
   alt: "Nonsense Quiz: Korean Puns feature graphic"
@@ -12,11 +12,11 @@ struct_exempt: [images]
 tags: [game, android, quiz, puns, riddles, party, solo developer]
 ---
 ## Info
-> **Nonsense Quiz: Korean Puns** — 300 original Korean pun riddles. Laugh together in a group or play solo. The riddles are in Korean. Free to play on Google Play, with ads.
+> **Nonsense Quiz: Korean Puns** — 320 Korean pun riddles, party classics to new wordplay. Play together or solo. The riddles are in Korean. Free to play on Google Play, with ads.
 {: .prompt-info }
 
 ## About the Game
-Nonsense Quiz is a collection of Korean pun riddles that make everyone groan and then laugh. I wrote all 300 riddles myself around wordplay, and every answer comes with an explanation. Play together in a group or alone.
+Nonsense Quiz is a collection of Korean pun riddles that make everyone groan and then laugh. 320 riddles, centered on classics Koreans actually trade at parties, with every explanation written fresh. Play together in a group or alone.
 
 One honest note: the riddles are in Korean and many depend on Korean wordplay, so you need to read Hangul.
 
@@ -27,7 +27,7 @@ One honest note: the riddles are in Korean and many depend on Korean wordplay, s
 - You can pause anytime
 
 ## Features
-- 300 original riddles based on wordplay, with an explanation for every answer
+- 320 riddles, from well-known Korean party classics to new wordplay, with an explanation for every answer
 - Three difficulty levels: easy, normal and hard
 - Group and solo modes, and in solo you can pick from choices or type your answer
 - Recently seen riddles are skipped
@@ -40,7 +40,7 @@ It is free to play and contains ads.
 ![Solo mode: four choices with Show hint and I don't know buttons, and a note that a hint costs 3 points (in Korean)](/assets/img/20261106_nonsense-quiz/nonsense-quiz-shot-en-4.png){: w="360" }
 
 ## Gameplay Video
-{% include embed/youtube.html id='HrJ0FGmfd84' %}
+{% include embed/youtube.html id='BMURWwgH6Us' %}
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.nonsense_quiz>

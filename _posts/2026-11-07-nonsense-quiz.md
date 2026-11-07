@@ -1,6 +1,6 @@
 ---
-title: 넌센스 퀴즈 — 직접 만든 말장난 300문제
-description: "듣고 나면 '아~' 하고 웃게 되는 넌센스 퀴즈를 Google Play에 출시했습니다. 직접 만든 말장난 문제 300개, 모임에서 다 같이 또는 혼자서 즐겨요"
+title: 넌센스 퀴즈 — 말장난 320문제
+description: "듣고 나면 '아~' 하고 웃게 되는 넌센스 퀴즈를 Google Play에 출시했습니다. 모임에서 주고받는 유명한 넌센스 320문제, 다 같이 또는 혼자서 즐겨요"
 date: 2026-11-07 00:28:00 +0900
 categories: [Products, Game]
 tags: [game, android, 넌센스퀴즈, 말장난, 모임, 퀴즈, 1인개발자]
@@ -10,11 +10,11 @@ image:
 alt_url: /posts/nonsense-quiz/
 ---
 ## Info
-> **Nonsense Quiz: Korean Puns** — 300 original Korean pun riddles. Laugh together in a group or play solo. The riddles are in Korean. Free to play on Google Play, with ads.
+> **Nonsense Quiz: Korean Puns** — 320 Korean pun riddles, party classics to new wordplay. Play together or solo. The riddles are in Korean. Free to play on Google Play, with ads.
 {: .prompt-info }
 
 ## 이런 게임입니다
-듣고 나면 '아~' 하고 웃게 되는 넌센스 퀴즈 게임이에요. 말장난에 바탕을 둔 문제 300개를 직접 만들었고, 정답마다 풀이가 있어요. 모임에서 다 같이 웃거나 혼자서 풀 수 있어요.
+듣고 나면 '아~' 하고 웃게 되는 넌센스 퀴즈 게임이에요. 모임에서 주고받는 유명한 넌센스를 중심으로 320문제를 모았고, 풀이는 모두 새로 썼어요. 모임에서 다 같이 웃거나 혼자서 풀 수 있어요.
 
 ## 어떻게 하나요
 - 난이도를 쉬움·보통·어려움 중에서 골라요(전체도 가능해요)
@@ -23,7 +23,7 @@ alt_url: /posts/nonsense-quiz/
 - 언제든 일시정지할 수 있어요
 
 ## 특징
-- 직접 만든 말장난 문제 300개, 정답마다 풀이 제공
+- 모임에서 주고받는 유명한 넌센스를 중심으로 320문제, 정답마다 새로 쓴 풀이 제공
 - 난이도 3단계: 쉬움·보통·어려움
 - 여럿이 하기와 혼자 하기, 혼자 하기는 보기 고르기와 직접 입력 중 선택
 - 최근에 나온 문제는 다시 나오지 않아요
@@ -36,7 +36,7 @@ alt_url: /posts/nonsense-quiz/
 ![혼자 하기 화면 — 4개의 보기와 힌트 보기·모르겠어요 버튼, 힌트를 보면 3점이 깎인다는 안내](/assets/img/20261106_nonsense-quiz/nonsense-quiz-shot-ko-4.png){: w="360" }
 
 ## 플레이 영상
-{% include embed/youtube.html id='HrJ0FGmfd84' %}
+{% include embed/youtube.html id='BMURWwgH6Us' %}
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.nonsense_quiz>
