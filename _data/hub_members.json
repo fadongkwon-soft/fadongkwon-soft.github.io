@@ -27,6 +27,7 @@
     "dots-boxes"
   ],
   "hub-brain": [
+    "senior-brain",
     "hangul-word",
     "memory-card",
     "sequence-memory",
@@ -84,6 +85,7 @@
     "slide-puzzle",
     "box-push",
     "block-escape",
+    "mahjong-rogue",
     "game-2048",
     "make-ten",
     "block-fill",
@@ -104,6 +106,11 @@
     "archery",
     "hoop-shot",
     "wobbly-baseball"
+  ],
+  "hub-weekend": [
+    "travel-season",
+    "museum-map",
+    "exercise-count"
   ],
   "cert-hub": [
     "nursing-quiz",
