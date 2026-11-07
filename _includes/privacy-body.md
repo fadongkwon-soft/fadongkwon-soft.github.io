@@ -20,11 +20,9 @@ The operating system you use on your mobile device
 
 The Application does not gather precise information about the location of your mobile device.
 
-The Application collects your device's location, which helps the Service Provider determine your approximate geographical location and make use of in below ways:
+The Application's own code does not request or collect location, except in "Museum Map". As described in the Location Information section below, "Museum Map" uses location only on your device and does not store or transmit it.
 
-Geolocation Services: The Service Provider utilizes location data to provide features such as personalized content, relevant recommendations, and location-based services.
-Analytics and Improvements: Aggregated and anonymized location data helps the Service Provider to analyze user behavior, identify trends, and improve the overall performance and functionality of the Application.
-Third-Party Services: Periodically, the Service Provider may transmit anonymized location data to external services. These services assist them in enhancing the Application and optimizing their offerings.
+However, the advertising SDK (Google AdMob / Google Mobile Ads SDK) may process your advertising ID, IP address and similar data on its own for ad delivery, analytics and fraud prevention, and may estimate the approximate location of your device from the IP address. This processing is performed by the advertising SDK, not by the Application's code, and is governed by Google's Privacy Policy and the Google Mobile Ads SDK data disclosures.
 
 
  
@@ -103,7 +101,7 @@ This Privacy Policy may be updated from time to time for any reason. The Service
 
  
 
-This privacy policy is effective as of 2024-12-25. The Location Information section was added on 2026-11-08.
+This privacy policy is effective as of 2024-12-25. The Location Information section was added on 2026-11-08. On the same day, the general location-related statements were tidied up.
 
 
 ## Your Consent
