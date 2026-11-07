@@ -1,3 +1,7 @@
+## 운영 메모 (fadongkwon.com)
+
+- **play/<게임>/ 웹판에 TTS 클립 수천 개를 커밋하지 말 것** — 2026-11-07 영어 몬스터 클립 6,147개를 넣자 추적 파일이 9,448개가 되어 `actions/deploy-pages` 가 `syncing_files` 에서 10분 타임아웃으로 두 번 실패했다(build·htmlproofer 는 성공, 라이브는 옛 판 그대로). 웹판은 tts/ 를 빼고 브라우저 음성합성(speechSynthesis) 폴백을 쓴다.
+
 # Chirpy Starter
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
