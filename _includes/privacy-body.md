@@ -37,6 +37,16 @@ The Service Provider may use the information you provided to contact you from ti
 For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information. The information that the Service Provider request will be retained by them and used as described in this privacy policy.
 
 
+## Location Information (Museum Map app)
+
+The only Application that requests the location permission (approximate location, ACCESS_COARSE_LOCATION) is "Museum Map". Our other Applications do not request any location permission.
+
+"Museum Map" reads your device's approximate location once, only when you tap the "Nearby" button, and uses it solely to list nearby museums and galleries by distance. It does not request precise location.
+
+The location is used only on your device to calculate distances. It stays in memory while the app is in use and is not stored. It is not sent to the Service Provider's servers, and the app's own code does not transmit it to any external party.
+
+If you do not grant the permission, or location is turned off on your device, you can still find museums by browsing by region. You can withdraw the permission at any time in your device's Settings > Apps > Permissions.
+
 ## Third Party Access
 
 Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.
@@ -93,7 +103,7 @@ This Privacy Policy may be updated from time to time for any reason. The Service
 
  
 
-This privacy policy is effective as of 2024-12-25
+This privacy policy is effective as of 2024-12-25. The Location Information section was added on 2026-11-08.
 
 
 ## Your Consent
