@@ -1,7 +1,7 @@
 ---
 layout: page
 title: PLAY — Learning games right in your browser
-description: Play Hangul Monsters and Math Monsters right in your browser, no install needed. Works on phones, tablets and desktops.
+description: Play Hangul Monsters, Math Monsters and English Monsters right in your browser, no install needed. Works on phones, tablets and desktops.
 permalink: /play/
 icon: fas fa-gamepad
 lang: en
@@ -30,6 +30,14 @@ Learning games you can try right here, no install needed. They work on phones, t
       <a class="play-btn" href="/play/math-monsters/">▶ Play now</a>
     </div>
   </div>
+  <div class="play-card">
+    <a class="play-thumb" href="/play/english-monsters/"><img src="/app-icons/english-monsters.png" alt="English Monsters"></a>
+    <div class="play-body">
+      <b>English Monsters</b>
+      <small>Learn English words on cards, then catch monsters in a 10-question hunt. 3,000 curriculum words and 127 irregular verbs, all free.</small>
+      <a class="play-btn" href="/play/english-monsters/">▶ Play now</a>
+    </div>
+  </div>
 </div>
 <style>
 .play-grid{display:grid;gap:14px;margin:1.2rem 0}
@@ -49,5 +57,6 @@ Learning games you can try right here, no install needed. They work on phones, t
 
 - Hangul Monsters: [Google Play](https://play.google.com/store/apps/details?id=com.fadongkwon.hangul_monsters) · [Apps in Toss](https://fadongkwon.com/toss/hangul-monsters/) · [Post](/posts/hangul-monsters/)
 - Math Monsters: [Google Play](https://play.google.com/store/apps/details?id=com.fadongkwon.math_monsters) · [Apps in Toss](https://fadongkwon.com/toss/math-monsters/) · [Post](/posts/math-monsters/)
+- English Monsters: [Google Play](https://play.google.com/store/apps/details?id=com.fadongkwon.english_monsters) (in review) · [Post](/posts/english-monsters/)
 
 <small>Hangul Monsters' speaking mode needs a browser with microphone speech recognition (Chrome). The first tap on 🎤 asks for microphone permission; once allowed, it starts right away. The games themselves follow your browser language (9 languages supported).</small>

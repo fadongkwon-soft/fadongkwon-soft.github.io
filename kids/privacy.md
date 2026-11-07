@@ -1,12 +1,12 @@
 ---
 layout: plain
 title: 개인정보처리방침 (어린이 학습 앱) · Privacy Policy (Kids Apps)
-description: 한글 몬스터·수학 몬스터의 개인정보처리방침. 개인정보를 수집하지 않으며 광고와 인앱 결제가 없습니다.
+description: 한글 몬스터·수학 몬스터·영어 몬스터의 개인정보처리방침. 개인정보를 수집하지 않으며 광고와 인앱 결제가 없습니다.
 permalink: /kids/privacy/
 lang: ko
 ---
 # 개인정보처리방침 — 어린이 학습 앱
-**적용 대상:** Fadongkwon Soft가 배포하는 **한글 몬스터(Hangul Monsters)**, **수학 몬스터(Math Monsters)** 앱 · **시행일:** 2026년 9월 1일
+**적용 대상:** Fadongkwon Soft가 배포하는 **한글 몬스터(Hangul Monsters)**, **수학 몬스터(Math Monsters)**, **영어 몬스터(English Monsters)** 앱 · **시행일:** 2026년 9월 1일
 
 ## 1. 수집하는 개인정보가 없습니다
 이 앱들은 이름, 이메일, 전화번호, 위치, 광고 식별자 등 **어떠한 개인정보도 수집·저장·전송하지 않습니다.** 회원가입이나 로그인이 없습니다.
@@ -30,7 +30,7 @@ lang: ko
 <a href="mailto:fadongkwon.soft@gmail.com">fadongkwon.soft@gmail.com</a>
 
 ## Privacy Policy (English)
-**Applies to:** *Hangul Monsters* and *Math Monsters* by Fadongkwon Soft · **Effective:** September 1, 2026
+**Applies to:** *Hangul Monsters*, *Math Monsters* and *English Monsters* by Fadongkwon Soft · **Effective:** September 1, 2026
 
 **We collect no personal information.** These apps do not collect, store, or transmit names, email addresses, phone numbers, location, advertising identifiers, or any other personal data. There is no account or sign-in.
 

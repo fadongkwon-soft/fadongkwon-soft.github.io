@@ -107,6 +107,8 @@ TAG_GLOSSARY = {
     '한글공부': 'hangul',
     '한글떼기': 'hangul',
     '몬스터': 'monsters',
+    '영어': 'english',
+    '영단어': 'vocabulary',
     '수학': 'math',
     '수학공부': 'math',
     '수학공부법': 'math',
@@ -746,7 +748,8 @@ def known_urls(ko, files):
                 '/tags/', '/ko/tags/', '/play/', '/ko/play/',
                 '/apps/', '/ko/apps/', '/games/', '/ko/games/',
                 '/kids/', '/kids/privacy/',
-                '/play/hangul-monsters/', '/play/math-monsters/'])
+                '/play/hangul-monsters/', '/play/math-monsters/',
+                '/play/english-monsters/'])
     for slug in ko:
         urls.add('/ko/posts/' + slug + '/')
     for p in files:
