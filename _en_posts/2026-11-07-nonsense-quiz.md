@@ -50,12 +50,11 @@ It is free to play and contains ads.
 ## Launched Alongside
 These apps came out on Google Play around the same time.
 
-<!-- TODO: hub-quiz·quiz-battle·cert-hub 글 게시 뒤 링크 복원 -->
 
 - [FDK Quiz Fest](/posts/hub-quiz/) — Four party quiz games, including Nonsense Quiz
-- Trivia Battle — Four-choice trivia duels in history, economics, science and geography
+- [Trivia Battle](/posts/quiz-battle/) — Four-choice trivia duels in history, economics, science and geography
 - [Chosung Quiz](/posts/chosung-quiz/) — Guess Korean words from their initials
 - [Twenty Questions](/posts/twenty-q/) — Find the secret word in 20 yes-or-no questions
-- FDK Certification Exam Prep — Question banks for seven Korean license exams in one app
+- [FDK Certification Exam Prep](/posts/cert-hub/) — Question banks for seven Korean license exams in one app
 
 I post updates here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
