@@ -52,7 +52,7 @@ These apps came out on Google Play around the same time.
 
 <!-- TODO: hub-quiz·quiz-battle·cert-hub 글 게시 뒤 링크 복원 -->
 
-- FDK Quiz Fest — Four party quiz games, including Nonsense Quiz
+- [FDK Quiz Fest](/posts/hub-quiz/) — Four party quiz games, including Nonsense Quiz
 - Trivia Battle — Four-choice trivia duels in history, economics, science and geography
 - [Chosung Quiz](/posts/chosung-quiz/) — Guess Korean words from their initials
 - [Twenty Questions](/posts/twenty-q/) — Find the secret word in 20 yes-or-no questions

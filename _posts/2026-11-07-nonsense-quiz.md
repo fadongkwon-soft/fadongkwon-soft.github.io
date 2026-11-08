@@ -48,7 +48,7 @@ alt_url: /posts/nonsense-quiz/
 
 <!-- TODO: hub-quiz·quiz-battle·cert-hub 글 게시 뒤 링크 복원 -->
 
-- 파동권 퀴즈한마당 — 넌센스 퀴즈를 포함한 모임 퀴즈 4종
+- [파동권 퀴즈한마당](/ko/posts/hub-quiz/) — 넌센스 퀴즈를 포함한 모임 퀴즈 4종
 - 상식 대결 — 역사·경제·과학·지리 4지선다 퀴즈 대결
 - [초성 퀴즈](/ko/posts/chosung-quiz/) — 초성만 보고 단어 맞히기
 - [스무고개](/ko/posts/twenty-q/) — 예/아니요 질문 스무 개로 단어 맞히기
