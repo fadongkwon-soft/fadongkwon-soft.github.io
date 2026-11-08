@@ -17,8 +17,8 @@
     <meta name="apple-mobile-web-app-title" content="영어 몬스터" />
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
     <link rel="manifest" href="./manifest.webmanifest" />
-    <script type="module" crossorigin src="./assets/index-Db2CBakA.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CZLNRds3.css">
+    <script type="module" crossorigin src="./assets/index-rOjwbEQE.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BHWVZj7V.css">
   </head>
   <body>
     <div id="app">
@@ -48,6 +48,7 @@
         <div class="card word-card" id="word-card"></div>
         <button class="btn" id="btn-learn-next">다음</button>
         <button class="link-btn" id="btn-skip-hunt">바로 사냥하기</button>
+        <button class="btn secondary say-entry" id="btn-say" hidden>🎤 말하기 연습</button>
       </section>
 
       <section class="screen" data-screen="game">
@@ -64,6 +65,14 @@
         <div class="spell" id="spell" hidden>
           <div class="slots" id="slots"></div>
           <div class="tiles" id="tiles"></div>
+        </div>
+        <div class="say" id="say" hidden>
+          <div class="say-status" id="say-status"></div>
+          <div class="say-btns">
+            <button class="say-side" id="btn-say-listen" aria-label="듣기">🔊</button>
+            <button class="mic-btn" id="btn-mic" aria-label="마이크">🎤</button>
+            <button class="say-side say-skip" id="btn-say-skip">건너뛰기</button>
+          </div>
         </div>
       </section>
 
