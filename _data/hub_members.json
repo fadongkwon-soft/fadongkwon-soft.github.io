@@ -6,13 +6,20 @@
     "breakout",
     "tower-stack",
     "whack-a-mole",
-    "rock-paper-scissors"
+    "rock-paper-scissors",
+    "snake-2048",
+    "survivor-bird",
+    "rhythm-mole",
+    "merge-defense",
+    "fortune-tycoon"
   ],
   "hub-board": [
     "janggi",
     "mini-go",
     "gomoku",
+    "board-cards",
     "yut-nori",
+    "yut-territory",
     "gonu",
     "reversi",
     "checkers",
@@ -52,7 +59,9 @@
     "daily-spelling",
     "daily-idiom",
     "daily-science",
-    "daily-geo"
+    "daily-geo",
+    "geo-history",
+    "hangul-alchemy"
   ],
   "hub-fortune": [
     "tarot",
@@ -61,6 +70,7 @@
     "car-lotto",
     "star-lotto",
     "name-lotto",
+    "lotto-fishing",
     "lotto-saving"
   ],
   "hub-monsters": [
@@ -85,6 +95,8 @@
     "box-push",
     "block-escape",
     "mahjong-rogue",
+    "screw-fill",
+    "merge-diner",
     "game-2048",
     "make-ten",
     "block-fill",
@@ -100,6 +112,7 @@
   "hub-sports": [
     "mini-golf",
     "billiards",
+    "billiards-castle",
     "pixel-pong",
     "bowling",
     "archery",
