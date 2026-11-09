@@ -17,8 +17,8 @@
     <meta name="apple-mobile-web-app-title" content="영어 몬스터" />
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
     <link rel="manifest" href="./manifest.webmanifest" />
-    <script type="module" crossorigin src="./assets/index-rOjwbEQE.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-BHWVZj7V.css">
+    <script type="module" crossorigin src="./assets/index-BfhkitVP.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Di2xklhD.css">
   </head>
   <body>
     <div id="app">
@@ -47,8 +47,18 @@
         <div class="monster small-mon" id="learn-monster"></div>
         <div class="card word-card" id="word-card"></div>
         <button class="btn" id="btn-learn-next">다음</button>
-        <button class="link-btn" id="btn-skip-hunt">바로 사냥하기</button>
-        <button class="btn secondary say-entry" id="btn-say" hidden>🎤 말하기 연습</button>
+        <button class="link-btn" id="btn-skip-hunt" hidden>바로 사냥하기</button>
+      </section>
+
+      <section class="screen" data-screen="unit">
+        <div class="learn-head">
+          <button class="hud-quit" id="btn-unit-back" aria-label="돌아가기">←</button>
+          <span class="learn-title" id="unit-title"></span>
+        </div>
+        <div class="monster small-mon" id="unit-monster"></div>
+        <p class="dim small" id="unit-sub"></p>
+        <div class="quest" id="unit-steps"></div>
+        <div class="quiet-box" id="unit-quiet"></div>
       </section>
 
       <section class="screen" data-screen="game">
@@ -74,6 +84,8 @@
             <button class="say-side say-skip" id="btn-say-skip">건너뛰기</button>
           </div>
         </div>
+        <p class="dim small alt-note" id="alt-note" hidden></p>
+        <button class="link-btn cant-btn" id="btn-cant" hidden></button>
       </section>
 
       <section class="screen" data-screen="result">
@@ -95,6 +107,8 @@
           <h3 id="grad-title"></h3>
           <ul id="grad-list"></ul>
         </div>
+        <p class="dim small" id="result-note" hidden></p>
+        <button class="btn" id="btn-next-step" hidden></button>
         <button class="btn" id="btn-retry">다시하기</button>
         <div class="result-actions">
           <button class="btn secondary" id="btn-share">📤 자랑하기</button>
