@@ -15,6 +15,9 @@ tags: [game, android, puzzle, casual, solo developer]
 > **Castle Topple: Cannon Puzzle** — Pull back, fire the cannon and topple the castle in this physics puzzle. Free to play on Google Play, with ads. Korean and English.
 {: .prompt-info }
 
+> **2026-11-10 update**: Version 1.2.0 adds a new 3D Siege mode. The full story is in [Castle Topple 3D Siege Mode](/posts/castle-topple-3d/).
+{: .prompt-tip }
+
 ## About the Game
 Pull back anywhere on the screen to aim, then let go to fire the cannon. Hit the right block and the whole castle comes tumbling down — knock down every knight guarding it to clear the level.
 

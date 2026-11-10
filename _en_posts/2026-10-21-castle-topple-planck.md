@@ -11,6 +11,9 @@ alt_url: /ko/posts/castle-topple-planck/
 tags: [minigame, google play, typescript, solo developer, dev log]
 ---
 
+> **2026-11-10 update**: Version 1.2.0 adds a new 3D Siege mode. The full story is in [Castle Topple 3D Siege Mode](/posts/castle-topple-3d/).
+{: .prompt-tip }
+
 On October 12 I launched [Castle Topple](/posts/castle-topple/) on Google Play, and on October 14 it went out on Toss under its new Korean name, Siege King (파괴왕 공성전). It is a physics puzzle: pull back a cannon, fire, bring the castle down and knock over the knights guarding it.
 
 This game differs from every minigame I have made so far in one way. **It is the first to bring in an outside runtime library**: the physics engine **planck**.

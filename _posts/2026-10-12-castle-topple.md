@@ -1,5 +1,5 @@
 ---
-title: 성 무너뜨리기 — 대포 한 발에 성이 와르르
+title: 파괴왕 공성전 — 대포 한 발에 성이 와르르
 description: "당겨서 조준하고 떼면 발사! 대포로 성을 무너뜨리는 물리 퍼즐. 초원 왕국 10레벨, 오늘의 공성전, 무한 공성. Google Play에 출시했습니다"
 date: 2026-10-12 03:00:00 +0900
 categories: [Products, Game]
@@ -12,6 +12,9 @@ alt_url: /posts/castle-topple/
 ## Info
 > **Castle Topple: Cannon Puzzle** — Pull back, fire the cannon and topple the castle in this physics puzzle. Free to play on Google Play, with ads. Korean and English.
 {: .prompt-info }
+
+> **2026-11-10 업데이트**: 1.2.0에서 새 모드 3D 공성전이 생겼습니다. 자세한 이야기는 [파괴왕 공성전 3D 공성전 모드](/ko/posts/castle-topple-3d/)에 적었습니다.
+{: .prompt-tip }
 
 ## 이런 게임입니다
 화면 아무 데나 누르고 당겨서 조준, 손을 떼면 대포 발사! 딱 맞는 블록을 맞히면 성 전체가 와르르 무너져요. 성을 지키는 기사를 모두 쓰러뜨리면 클리어예요.
