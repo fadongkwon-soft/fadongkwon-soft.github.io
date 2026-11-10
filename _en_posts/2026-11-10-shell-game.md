@@ -9,7 +9,7 @@ categories: [Products, Game]
 permalink: /posts/shell-game/
 alt_url: /ko/posts/shell-game/
 struct_exempt: [images]
-tags: [game, android, focus, brain games, shell game, solo developer]
+tags: [game, android, focus, brain games, puzzle, solo developer]
 ---
 ## Info
 > **Shell Game: Follow the Cup** — Watch the ball, follow the cup as it shuffles, then pick it. Free to play on Google Play, with ads.
