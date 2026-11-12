@@ -109,10 +109,14 @@
     "twenty-q",
     "nonsense-quiz"
   ],
+  "hub-siege": [
+    "castle-topple",
+    "billiards-castle",
+    "wrecking-siege"
+  ],
   "hub-sports": [
     "mini-golf",
     "billiards",
-    "billiards-castle",
     "pixel-pong",
     "bowling",
     "archery",
