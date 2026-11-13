@@ -10,7 +10,7 @@ image:
 alt_url: /posts/golf-solitaire/
 ---
 ## Info
-> **골프 솔리테어** — 버림 더미보다 한 끗 높거나 낮은 카드를 눌러 판의 35장을 모두 걷어 내는 클래식 카드 게임이에요. Google Play에서 무료, 광고 포함. 토스에서는 [파동권 카드놀이](/ko/posts/hub-card/) 안에서 즐길 수 있어요.
+> **골프 솔리테어** — 버림 더미보다 한 끗 높거나 낮은 카드를 눌러 판의 35장을 모두 걷어 내는 클래식 카드 게임이에요. Google Play에서 무료, 광고 포함. 카드 게임 모음 앱 [파동권 카드놀이](/ko/posts/hub-card/)(Google Play)에도 들어 있어요.
 {: .prompt-info }
 
 ## 이런 게임입니다
@@ -44,7 +44,7 @@ alt_url: /posts/golf-solitaire/
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.golf_solitaire>
-- 토스: [파동권 카드놀이](/ko/posts/hub-card/) 안의 '골프 솔리테어'
+- 카드 게임 모음: [파동권 카드놀이](/ko/posts/hub-card/)(Google Play) 안의 '골프 솔리테어'
 
 ![골프 솔리테어 Google Play QR 코드](/assets/img/play-qr/golf-solitaire.png){: w="200" .normal }
 

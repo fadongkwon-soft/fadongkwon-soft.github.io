@@ -12,7 +12,7 @@ struct_exempt: [images]
 tags: [game, android, card game, solitaire, golf solitaire, solo developer]
 ---
 ## Info
-> **Golf Solitaire** — A classic card game where you clear all 35 cards by playing one rank above or below the waste card. Free on Google Play, with ads. On Toss, play it inside [FDK Card Games](/posts/hub-card/).
+> **Golf Solitaire** — A classic card game where you clear all 35 cards by playing one rank above or below the waste card. Free on Google Play, with ads. It is also part of the [FDK Card Games](/posts/hub-card/) collection on Google Play.
 {: .prompt-info }
 
 ## About the Game
@@ -46,7 +46,7 @@ Contains ads (banner).
 
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.golf_solitaire>
-- Toss: Golf Solitaire inside [FDK Card Games](/posts/hub-card/)
+- Card game collection: Golf Solitaire inside [FDK Card Games](/posts/hub-card/) (Google Play)
 
 ![Golf Solitaire Google Play QR code](/assets/img/play-qr/golf-solitaire.png){: w="200" .normal }
 
