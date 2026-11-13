@@ -48,7 +48,7 @@ alt_url: /posts/hangul-alchemy/
 
 ## 함께 보면 좋은 앱
 - [파동권 하루상식](/ko/posts/hub-edu/) — 하루 한 문제 상식 퀴즈 6과목과 역사 지도 찍기·한글 연금술을 한 앱에 모은 허브
-- [단어 맞추기](/ko/posts/hangul-word/) — 여섯 자모로 한글 단어를 추리하는 한글 워들
+- [단어 맞추기](/ko/posts/hangul-word/) — 여섯 자모로 한글 단어를 추리하는 낱말 추리 게임
 - [초성 퀴즈](/ko/posts/chosung-quiz/) — 초성만 보고 단어를 맞혀요
 
 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.

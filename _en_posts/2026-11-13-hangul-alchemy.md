@@ -53,7 +53,7 @@ The screenshots below show the Korean screens, since the app is in Korean only.
 
 ## You May Also Like
 - [FDK Daily Quiz](/posts/hub-edu/) — six daily trivia subjects plus History Map Pin and Hangul Alchemy in one hub
-- [Hangul Word Guess](/posts/hangul-word/) — a Korean Wordle played one jamo at a time
+- [Hangul Word Guess](/posts/hangul-word/) — guess a Korean word one jamo at a time
 - [Chosung Quiz](/posts/chosung-quiz/) — guess Korean words from their initials
 
 Follow updates on this blog and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
