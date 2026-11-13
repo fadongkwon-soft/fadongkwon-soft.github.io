@@ -20,7 +20,7 @@ The operating system you use on your mobile device
 
 The Application does not gather precise information about the location of your mobile device.
 
-The Application's own code does not request or collect location, except in "Museum Map" and "Natural Recreation Forest Map". As described in the Location Information section below, these two apps use location only on your device and do not store or transmit it.
+The Application's own code does not request or collect location, except in "Museum Map", "Natural Recreation Forest Map" and "Weekend Life", the hub app that contains both. As described in the Location Information section below, these apps use location only on your device and do not store or transmit it.
 
 However, the advertising SDK (Google AdMob / Google Mobile Ads SDK) may process your advertising ID, IP address and similar data on its own for ad delivery, analytics and fraud prevention, and may estimate the approximate location of your device from the IP address. This processing is performed by the advertising SDK, not by the Application's code, and is governed by Google's Privacy Policy and the Google Mobile Ads SDK data disclosures.
 
@@ -35,13 +35,15 @@ The Service Provider may use the information you provided to contact you from ti
 For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information. The information that the Service Provider request will be retained by them and used as described in this privacy policy.
 
 
-## Location Information (Museum Map and Natural Recreation Forest Map apps)
+## Location Information (Museum Map, Natural Recreation Forest Map and Weekend Life apps)
 
-The only Applications that request the location permission (approximate location, ACCESS_COARSE_LOCATION) are "Museum Map" and "Natural Recreation Forest Map". Our other Applications do not request any location permission.
+The only Applications that request the location permission (approximate location, ACCESS_COARSE_LOCATION) are "Museum Map", "Natural Recreation Forest Map" and "Weekend Life" (the hub app that contains both). Our other Applications do not request any location permission.
 
 "Museum Map" reads your device's approximate location once, only when you tap the "Nearby" button, and uses it solely to list nearby museums and galleries by distance. It does not request precise location.
 
 "Natural Recreation Forest Map" reads your device's approximate location once, only when you tap the "Nearby" button, and uses it solely to list nearby natural recreation forests by distance. It does not request precise location.
+
+"Weekend Life" reads your device's approximate location once, only when you tap the "Nearby" button in one of the two apps it contains ("Museum Map" and "Natural Recreation Forest Map"), in the same way as those apps, and uses it solely to list nearby museums and galleries or natural recreation forests by distance. It does not request precise location, and does not store the location or send it to the Service Provider's servers or any third party. Other screens of the hub and the other apps it contains do not use location.
 
 The location is used only on your device to calculate distances. It stays in memory while the app is in use and is not stored. It is not sent to the Service Provider's servers, and the app's own code does not transmit it to any external party.
 
@@ -103,7 +105,7 @@ This Privacy Policy may be updated from time to time for any reason. The Service
 
  
 
-This privacy policy is effective as of 2024-12-25. The Location Information section was added on 2026-11-08, and "Natural Recreation Forest Map" was added to it on 2026-11-14. On the same day, the general location-related statements were tidied up.
+This privacy policy is effective as of 2024-12-25. The Location Information section was added on 2026-11-08, and "Natural Recreation Forest Map" and "Weekend Life" were added to it on 2026-11-14. On the same day, the general location-related statements were tidied up.
 
 
 ## Your Consent
