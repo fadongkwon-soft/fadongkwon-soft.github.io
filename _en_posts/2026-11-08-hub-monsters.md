@@ -15,7 +15,7 @@ tags: [app, android, education, hangul, math, english, monsters, solo developer]
 > **FDK Monsters** — A kids' app that bundles three learning games: Hangul Monsters, Math Monsters and English Monsters. No ads, no purchases, no rating prompts. Korean and English screens.
 {: .prompt-info }
 
-> It is available on Toss right now. Google Play is still reviewing it; until then, the three games can be played in the [browser versions](#download) below.
+> It is available on Google Play and Toss right now. To try it without installing, use the [browser versions](#download) below.
 {: .prompt-tip }
 
 ## What it is
@@ -64,10 +64,12 @@ A Toss workspace holds [only 50 apps](/posts/toss-workspace-50-limit/), and mine
 
 Bundle size was also something to watch. With 6,146 audio clips for English words and examples and 1,076 Hangul audio clips, the bundle is about 38 MB, more than twice the size of Lucky Lab, the largest hub so far. Both the upload and the review went through without trouble.
 
-On Toss it passed both the app-info and bundle reviews and was released on the night of November 7. On Google Play, FDK Monsters and English Monsters went into review the same day. The in-app name and the Korean store title on Play will be updated to the plural name in the next update after approval.
+On Toss it passed both the app-info and bundle reviews and was released on the night of November 7. On Google Play, FDK Monsters and English Monsters went into review the same day, and FDK Monsters was released on November 13. The in-app name and the Korean store title on Play now use the plural name as well.
 
 ## Gameplay video
-Gameplay videos of the three games in the hub.
+A tour of the hub home and the three games, followed by a gameplay video for each game.
+
+{% include embed/youtube.html id='hhuTuHXEYSs' %}
 
 {% include embed/youtube.html id='8c4po9L3OB4' %}
 
@@ -76,8 +78,10 @@ Gameplay videos of the three games in the hub.
 {% include embed/youtube.html id='3_ReVAFqsDg' %}
 
 ## Download
+- Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.hub_monsters>
 - Apps in Toss (Toss mini app): <https://fadongkwon.com/toss/hub-monsters/> — open it on your phone and it goes straight to the Toss app.
-- Google Play: in review. I will add the link to this post once it is approved.
 - Play in the browser: [Hangul Monsters](/play/hangul-monsters/) · [Math Monsters](/play/math-monsters/) · [English Monsters](/play/english-monsters/)
+
+![FDK Monsters Google Play QR code](/assets/img/play-qr/hub-monsters.png){: w="200" .normal }
 
 My other kids' apps are collected on the [kids page](/kids/). Updates go out on this blog and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).

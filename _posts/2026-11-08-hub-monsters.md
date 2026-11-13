@@ -13,7 +13,7 @@ alt_url: /posts/hub-monsters/
 > **파동권 몬스터즈 · FDK Monsters** — 한글 몬스터, 수학 몬스터, 영어 몬스터 세 가지 학습 게임을 한 앱에 모은 아이용 앱. 광고·결제·별점 요청 없음. 한국어·영어 화면.
 {: .prompt-info }
 
-> 토스에서는 지금 바로 쓸 수 있어요. Google Play는 출시 심사 중이고, 그동안 세 게임은 아래 [브라우저판](#download)으로 해 볼 수 있어요.
+> Google Play와 토스에서 지금 바로 쓸 수 있어요. 설치 없이 해 보고 싶다면 아래 [브라우저판](#download)도 있어요.
 {: .prompt-tip }
 
 ## 이런 앱입니다
@@ -62,10 +62,12 @@ alt_url: /posts/hub-monsters/
 
 번들이 커진 것도 확인할 거리였어요. 영어 단어와 예문 발음 클립 6,146개, 한글 발음 클립 1,076개가 들어가 번들이 약 38MB예요. 지금까지 올린 허브 중 가장 큰 행운연구소의 두 배가 넘는데, 업로드와 검수 모두 문제없이 통과했어요.
 
-토스에서는 앱 정보와 번들 검수를 모두 통과해 11월 7일 밤에 출시됐어요. Google Play에는 같은 날 파동권 몬스터즈와 영어 몬스터를 함께 심사에 넣었어요. Play 앱 안 이름과 스토어 한국어 제목은 승인 뒤 다음 업데이트에서 '몬스터즈'로 맞출 예정이에요.
+토스에서는 앱 정보와 번들 검수를 모두 통과해 11월 7일 밤에 출시됐어요. Google Play에는 같은 날 파동권 몬스터즈와 영어 몬스터를 함께 심사에 넣었고, 파동권 몬스터즈는 11월 13일에 출시됐어요. Play 앱 안 이름과 스토어 한국어 제목도 '파동권 몬스터즈'로 맞췄어요.
 
 ## 플레이 영상
-허브에 들어간 세 게임의 플레이 영상이에요.
+허브 홈에서 세 게임을 차례로 둘러보는 영상과, 세 게임 각각의 플레이 영상이에요.
+
+{% include embed/youtube.html id='hhuTuHXEYSs' %}
 
 {% include embed/youtube.html id='8c4po9L3OB4' %}
 
@@ -74,8 +76,10 @@ alt_url: /posts/hub-monsters/
 {% include embed/youtube.html id='3_ReVAFqsDg' %}
 
 ## Download
+- Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.hub_monsters>
 - 앱인토스(토스 미니앱): <https://fadongkwon.com/toss/hub-monsters/> — 휴대폰에서 열면 토스 앱으로 바로 연결됩니다.
-- Google Play: 출시 심사 중이에요. 승인되면 이 글에 링크를 붙일게요.
 - 브라우저에서 바로 하기: [한글 몬스터](/play/hangul-monsters/) · [수학 몬스터](/play/math-monsters/) · [영어 몬스터](/play/english-monsters/)
+
+![파동권 몬스터즈 Google Play QR 코드](/assets/img/play-qr/hub-monsters.png){: w="200" .normal }
 
 다른 아이용 앱은 [키즈 페이지](/kids/)에 모아 두었어요. 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.
