@@ -15,7 +15,7 @@ tags: [android, education, english, vocabulary, monsters, solo developer]
 > **English Monsters: Vocab Hunt** — learn the 3,000 basic words of Korea's national English curriculum and 127 irregular verbs by catching monsters. No ads, no purchases, no sign-up. Korean and English screens.
 {: .prompt-info }
 
-> The Google Play release is still in review. Until it clears, you can try the [browser version](/play/english-monsters/) right away.
+> Available now on Google Play and on Toss inside [FDK Monsters](/posts/hub-monsters/). If you want to try it without installing, the [browser version](/play/english-monsters/) is below too.
 {: .prompt-tip }
 
 ## About the App
@@ -49,8 +49,11 @@ The word list is the **3,000 basic vocabulary words** of the 2022 revised Englis
 {% include embed/youtube.html id='3_ReVAFqsDg' %}
 
 ## Download
-- Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.english_monsters> (in review)
+- Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.english_monsters>
+- Toss: English Monsters inside [FDK Monsters](/posts/hub-monsters/)
 - Play in your browser: [fadongkwon.com/play/english-monsters/](/play/english-monsters/) — no install needed, works on phones, tablets and desktops. Progress is saved in this browser only.
+
+![English Monsters Google Play QR code](/assets/img/play-qr/english-monsters.png){: w="200" .normal }
 
 The sibling apps [Hangul Monsters](/posts/hangul-monsters/) and [Math Monsters](/posts/math-monsters/) are here too, and all of our kids' learning apps are collected on the [Learning Apps for Kids](/kids/) page.
 

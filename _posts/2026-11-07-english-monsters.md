@@ -13,7 +13,7 @@ alt_url: /posts/english-monsters/
 > **영어 몬스터 · 초중고 영단어** — 교육부 교육과정 기본 어휘 3,000단어와 불규칙동사 127개를 몬스터를 잡으며 익히는 영단어 앱. 광고·결제·회원가입 없음. 한국어·영어 화면.
 {: .prompt-info }
 
-> Google Play는 출시 심사 중이에요. 심사가 끝나기 전에는 아래 [브라우저판](/play/english-monsters/)으로 바로 해 볼 수 있어요.
+> Google Play와 토스([파동권 몬스터즈](/ko/posts/hub-monsters/))에서 지금 바로 쓸 수 있어요. 설치 없이 해 보고 싶다면 아래 [브라우저판](/play/english-monsters/)도 있어요.
 {: .prompt-tip }
 
 ## 이런 앱입니다
@@ -47,8 +47,11 @@ alt_url: /posts/english-monsters/
 {% include embed/youtube.html id='3_ReVAFqsDg' %}
 
 ## Download
-- Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.english_monsters> (출시 심사 중)
+- Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.english_monsters>
+- 토스: [파동권 몬스터즈](/ko/posts/hub-monsters/) 안의 '영어 몬스터'
 - 브라우저에서 바로 하기: [fadongkwon.com/play/english-monsters/](/play/english-monsters/) — 설치 없이 스마트폰·태블릿·PC에서 돼요. 기록은 이 브라우저 안에만 저장돼요.
+
+![영어 몬스터 Google Play QR 코드](/assets/img/play-qr/english-monsters.png){: w="200" .normal }
 
 함께 만든 [한글 몬스터](/ko/posts/hangul-monsters/)와 [수학 몬스터](/ko/posts/math-monsters/)도 있어요. 아이 학습 앱은 [아이들을 위한 학습 앱](/kids/) 페이지에 모아 두었어요.
 
