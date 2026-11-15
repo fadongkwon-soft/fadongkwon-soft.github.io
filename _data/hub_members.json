@@ -73,6 +73,11 @@
     "lotto-fishing",
     "lotto-saving"
   ],
+  "hub-health": [
+    "exercise-count",
+    "stretch-routine",
+    "food-calorie"
+  ],
   "hub-monsters": [
     "hangul-monsters",
     "math-monsters",
@@ -126,7 +131,7 @@
   "hub-weekend": [
     "travel-season",
     "museum-map",
-    "exercise-count"
+    "forest-map"
   ],
   "cert-hub": [
     "nursing-quiz",
