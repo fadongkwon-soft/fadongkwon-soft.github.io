@@ -21,7 +21,8 @@ A party tool for picking who pays, who goes first or who does the chore. Give ev
 ## How to Play
 - Type one name per line (commas work too). Add *3 after a name for 3 marbles (up to 10), or *0 to sit a round out
 - Say what you are deciding, like snacks, cleaning duty or turn order, and it shows on the result card
-- Pick one of 4 maps: Pin Forest, Zigzag Canyon, Windmill Hill and Moving Gates
+- Pick one of 6 maps: Pin Forest, Zigzag Canyon, Windmill Hill, Moving Gates, Bumper Pinball and Forks & Funnels
+- Up to 50 names and 100 marbles in one race
 - Choose who wins: first to finish or last to finish, with 1 to 3 winners
 - Shuffle the starting spots, play at 1x or 2x speed, skip to the result or pause
 
