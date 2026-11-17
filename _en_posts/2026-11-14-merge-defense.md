@@ -42,6 +42,9 @@ Contains ads (banner and rewarded).
 ![Result screen showing 4 waves cleared and 35 enemies defeated](/assets/img/20261114_merge-defense/merge-defense-shot-en-4.png){: w="360" }
 ![Records screen with best wave, highest guard level and total enemies defeated](/assets/img/20261114_merge-defense/merge-defense-shot-en-5.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='SYd6wTKTYXY' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.merge_defense>
 - Toss: Merge Gate Guards inside [FDK Arcade](/posts/hub-arcade/)

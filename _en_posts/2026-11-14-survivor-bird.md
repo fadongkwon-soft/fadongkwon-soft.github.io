@@ -41,6 +41,9 @@ Contains ads (banner and rewarded).
 ![Result screen showing 1:41 survived, Lv 4, 41 enemies defeated and score 817](/assets/img/20261114_survivor-bird/survivor-bird-shot-en-4.png){: w="360" }
 ![Home screen with Today's Sky, New Game, Records and How to Play](/assets/img/20261114_survivor-bird/survivor-bird-shot-en-5.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='jyfyZsnoPH0' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.survivor_bird>
 - Toss: Wingbeat Survivors inside [FDK Arcade](/posts/hub-arcade/)

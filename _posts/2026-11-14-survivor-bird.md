@@ -39,6 +39,9 @@ alt_url: /posts/survivor-bird/
 ![결과 화면 — 버틴 시간 1:41, 레벨 4, 물리친 적 41마리, 점수 817점](/assets/img/20261114_survivor-bird/survivor-bird-shot-ko-4.png){: w="360" }
 ![홈 화면 — 오늘의 하늘, 새 게임, 기록, 게임 방법](/assets/img/20261114_survivor-bird/survivor-bird-shot-ko-5.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='jyfyZsnoPH0' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.survivor_bird>
 - 토스: [파동권 오락실](/ko/posts/hub-arcade/) 안의 '버드 서바이버'

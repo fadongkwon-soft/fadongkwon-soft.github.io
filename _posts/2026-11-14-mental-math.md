@@ -39,6 +39,9 @@ alt_url: /posts/mental-math/
 ![결과 화면 — 오늘의 20문제 17.40초(푼 시간 8.40초, 정답 17/20)](/assets/img/20261114_mental-math/mental-math-shot-ko-4.png){: w="360" }
 ![기록 화면 — 모드별 오늘·이번 주·이번 달·명예의 전당 순위](/assets/img/20261114_mental-math/mental-math-shot-ko-5.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='luaNqBd1gAY' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.mental_math>
 - 토스: [파동권 뇌나이](/ko/posts/hub-brain/) 안의 '번개 암산'

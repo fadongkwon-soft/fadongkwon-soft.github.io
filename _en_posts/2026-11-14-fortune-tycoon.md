@@ -40,6 +40,9 @@ Contains ads (banner and rewarded).
 ![Honor earned screen showing +8 Honor and a x1.8 production multiplier](/assets/img/20261114_fortune-tycoon/fortune-tycoon-shot-en-4.png){: w="360" }
 ![Home screen with Daily Fortune Card, Open Workshop, Records and How to Play](/assets/img/20261114_fortune-tycoon/fortune-tycoon-shot-en-5.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='SlpTsuxz_JY' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.fortune_tycoon>
 - Toss: Zodiac Fortune Workshop inside [FDK Arcade](/posts/hub-arcade/)

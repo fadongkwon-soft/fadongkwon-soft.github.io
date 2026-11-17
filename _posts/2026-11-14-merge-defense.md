@@ -40,6 +40,9 @@ alt_url: /posts/merge-defense/
 ![결과 화면 — 막아 낸 웨이브 4웨이브, 처치한 적 35마리, 다시 하기 버튼](/assets/img/20261114_merge-defense/merge-defense-shot-ko-4.png){: w="360" }
 ![기록 화면 — 최고 웨이브와 누적 처치 통계](/assets/img/20261114_merge-defense/merge-defense-shot-ko-5.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='SYd6wTKTYXY' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.merge_defense>
 - 토스: [파동권 오락실](/ko/posts/hub-arcade/) 안의 '합체 수비대'

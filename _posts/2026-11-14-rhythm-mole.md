@@ -40,6 +40,9 @@ alt_url: /posts/rhythm-mole/
 ![결과 화면 — 두더지 행진 A 등급, 점수 4508점, 정확도 89.3%, 최대 콤보 23](/assets/img/20261114_rhythm-mole/rhythm-mole-shot-ko-4.png){: w="360" }
 ![기록 화면 — 5곡별 최고 등급·점수와 최고점 합계](/assets/img/20261114_rhythm-mole/rhythm-mole-shot-ko-5.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='dELi-hlpWik' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.rhythm_mole>
 - 토스: [파동권 오락실](/ko/posts/hub-arcade/) 안의 '박자 두더지'

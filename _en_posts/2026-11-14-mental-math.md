@@ -41,6 +41,9 @@ Contains ads (banner and rewarded).
 ![Result screen for Today's 20 Questions showing 17.40s total time and 17/20 correct](/assets/img/20261114_mental-math/mental-math-shot-en-4.png){: w="360" }
 ![Records screen showing daily, weekly, monthly and all-time rankings by mode](/assets/img/20261114_mental-math/mental-math-shot-en-5.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='luaNqBd1gAY' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.mental_math>
 - Toss: Lightning Math inside [FDK Brain Age](/posts/hub-brain/)

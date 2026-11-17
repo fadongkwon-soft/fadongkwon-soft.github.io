@@ -38,6 +38,9 @@ alt_url: /posts/fortune-tycoon/
 ![명예 획득 화면 — 얻은 명예 +8, 생산 배수 ×1.8](/assets/img/20261114_fortune-tycoon/fortune-tycoon-shot-ko-4.png){: w="360" }
 ![홈 화면 — 오늘의 운세 카드, 공방 열기, 기록, 게임 방법](/assets/img/20261114_fortune-tycoon/fortune-tycoon-shot-ko-5.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='SlpTsuxz_JY' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.fortune_tycoon>
 - 토스: [파동권 오락실](/ko/posts/hub-arcade/) 안의 '띠 운세 공방'

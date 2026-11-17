@@ -39,6 +39,9 @@ alt_url: /posts/board-cards/
 ![원정 종료 화면 — 이긴 상대 1/5, 둔 수 12수, 점수 1476점](/assets/img/20261114_board-cards/board-cards-shot-ko-4.png){: w="360" }
 ![홈 화면 — 오늘의 원정, 새 원정, 기록, 게임 방법](/assets/img/20261114_board-cards/board-cards-shot-ko-5.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='CXlSDg1Lx3k' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.board_cards>
 - 토스: [파동권 한판승부](/ko/posts/hub-board/) 안의 '오목 카드 대국'

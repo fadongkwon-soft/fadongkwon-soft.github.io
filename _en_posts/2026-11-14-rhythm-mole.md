@@ -42,6 +42,9 @@ Contains ads (banner and rewarded).
 ![Result screen with Grade A, score 4508, 89.3% accuracy and 23 max combo](/assets/img/20261114_rhythm-mole/rhythm-mole-shot-en-4.png){: w="360" }
 ![Records screen listing best scores for each song and the total score across all five](/assets/img/20261114_rhythm-mole/rhythm-mole-shot-en-5.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='dELi-hlpWik' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.rhythm_mole>
 - Toss: Drum Beat Moles inside [FDK Arcade](/posts/hub-arcade/)

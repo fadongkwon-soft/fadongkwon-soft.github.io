@@ -41,6 +41,9 @@ Contains ads (banner and rewarded).
 ![Run summary screen showing rivals beaten, moves played, deck size and final score](/assets/img/20261114_board-cards/board-cards-shot-en-4.png){: w="360" }
 ![Home screen with Daily Run, New Run, Records and How to Play](/assets/img/20261114_board-cards/board-cards-shot-en-5.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='CXlSDg1Lx3k' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.board_cards>
 - Toss: Gomoku Card Duel inside [FDK Board Duel](/posts/hub-board/)
