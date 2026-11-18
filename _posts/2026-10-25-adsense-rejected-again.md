@@ -10,6 +10,9 @@ image:
 alt_url: /posts/adsense-rejected-again/
 ---
 
+> **11월 18일 덧붙임** — 11월 10일 무렵 다시 낸 네 번째 신청도 11월 16일 같은 사유로 거절됐습니다. 이 글에서 정한 조건을 채우기 전에 낸 신청이었습니다. 색인과 검색 클릭 재측정과 함께 [다음 글](/ko/posts/adsense-fourth-rejection-index-recheck/)에 적었습니다.
+{: .prompt-info }
+
 [지난 글](/ko/posts/adsense-low-value-content/)의 끝에 "10월 12일에 다시 요청하고, 결과가 나오면 덧붙이겠다"고 썼습니다. 결과가 나왔습니다. **또 거절**입니다.
 
 이번 메일은 지난번과 조금 다릅니다. 지난번에는 "가치가 별로 없는 콘텐츠"라는 사유가 있었는데, 이번에는 이렇게만 적혀 있습니다.

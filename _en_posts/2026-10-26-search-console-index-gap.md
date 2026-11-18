@@ -11,6 +11,9 @@ alt_url: /ko/posts/search-console-index-gap/
 tags: [seo, solo developer, dev log]
 ---
 
+> **Update, November 18** — The promised remeasurement is in [the follow-up post](/posts/adsense-fourth-rejection-index-recheck/), comparing indexed Korean URLs and search clicks at three points, October 25, November 3 and November 18, measured the same way.
+{: .prompt-info }
+
 After [AdSense rejected the site a third time](/posts/adsense-rejected-again/), I decided to look at search traffic before talking about reapplying. It was worse than I expected. This post is the Search Console measurement from October 25, how I read it, and the response I put in during the early hours of the 26th. Every number is an impression count, a click count or a page count. No amounts.
 
 ## Measurement

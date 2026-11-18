@@ -11,6 +11,9 @@ alt_url: /ko/posts/adsense-rejected-again/
 tags: [solo developer, dev log]
 ---
 
+> **Update, November 18** — A fourth application, filed around November 10, was rejected on November 16 for the same reason. It went in before the conditions set in this post were met. The details, along with a remeasurement of indexing and search clicks, are in [the follow-up post](/posts/adsense-fourth-rejection-index-recheck/).
+{: .prompt-info }
+
 At the end of [the last post](/posts/adsense-low-value-content/) I wrote that I would re-request on October 12 and add the result. The result is in. **Rejected again.**
 
 This email is a little different from the last one. Last time there was a reason, "low value content." This time it only says this:

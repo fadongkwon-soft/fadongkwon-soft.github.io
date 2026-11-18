@@ -6,9 +6,10 @@ image:
   alt: "Korea Museum Map feature graphic"
 date: 2026-11-18 20:55:00 +0900
 categories: [Products, App]
-tags: [app, android, museum, gallery, opendata, travel, korea, indiedev]
 pin: false
 alt_url: /ko/posts/museum-map/
+permalink: /posts/museum-map/
+tags: [app, android, museum, gallery, opendata, travel, korea, indiedev]
 ---
 ## Info
 > **Korea Museum Map** — find museums and galleries across Korea by region or near you, check address, hours and admission, and stamp the places you visit. Free on Google Play, with ads. On Toss it lives inside [Weekend Life](/posts/hub-weekend/).

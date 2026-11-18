@@ -11,6 +11,8 @@ alt_url: /ko/posts/toss-exposure-policy-revenue-drop/
 tags: [apps in toss, toss, mini app, solo developer, dev log]
 ---
 
+> **Correction (November 18)** — Rerunning the analysis with data through November 6 showed that this post's claim that "returning users are unchanged" was wrong; the number of returning users kept falling. Reaction Challenge was also less a decline than a return to its late-September level after an 18-day All-tab surge that began on October 1 had ended. The corrections and evidence are in [Correcting my October Toss revenue analysis](/posts/toss-revenue-drop-correction/).
+
 After [publishing every won of the first four weeks](/posts/toss-ad-revenue-first-month/) back in September, I decided to stop posting amounts on this blog. So every number here is a **ratio or a user count**. Read "revenue" as "how much, with the peak week set to 100."
 
 The short version: Toss ad revenue peaked in the third week of October, and the daily average is now **a little over 60 percent of that peak week**. Most of the drop came from **one app**.

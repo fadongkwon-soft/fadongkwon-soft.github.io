@@ -10,6 +10,9 @@ image:
 alt_url: /posts/search-console-index-gap/
 ---
 
+> **11월 18일 덧붙임** — 약속한 재측정 결과를 [다음 글](/ko/posts/adsense-fourth-rejection-index-recheck/)에 적었습니다. 10월 25일, 11월 3일, 11월 18일 세 시점의 한국어 주소 색인 수와 검색 클릭을 같은 방법으로 비교했습니다.
+{: .prompt-info }
+
 [애드센스가 세 번째로 거절](/ko/posts/adsense-rejected-again/)된 뒤, 재신청을 이야기하기 전에 검색 유입부터 보기로 했습니다. 결과는 생각보다 나빴습니다. 이 글은 10월 25일 Search Console 실측과 그 해석, 그리고 26일 새벽에 넣은 대응입니다. 숫자는 전부 노출 수·클릭 수·페이지 수이고 금액은 없습니다.
 
 ## 측정
