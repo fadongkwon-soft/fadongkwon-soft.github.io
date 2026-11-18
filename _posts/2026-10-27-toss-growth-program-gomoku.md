@@ -11,6 +11,9 @@ image:
 alt_url: /posts/toss-growth-program-gomoku/
 ---
 
+> **11월 19일 덧붙임** — 약속한 재방문 결과를 [결과 글](/ko/posts/toss-growth-program-d7-result/)에 적었습니다. 오목 프로모션은 11월 5일에 끝났고, 그 기간 신규 21,676명 중 종료 다음 주에 다시 온 사람은 215명(1.0%)이었습니다.
+{: .prompt-info }
+
 [탭 버드가 성장 프로그램에 뽑힌 이야기](/ko/posts/toss-growth-program-tap-bird/)를 쓴 지 이틀 만에, [오목](/ko/posts/gomoku/)도 같은 프로그램에 선정돼 있었다는 걸 알았습니다. 위 배너는 앱인토스 콘솔의 오목 화면에 떠 있던 공식 안내입니다.
 
 ## 안내 메일이 오지 않았습니다

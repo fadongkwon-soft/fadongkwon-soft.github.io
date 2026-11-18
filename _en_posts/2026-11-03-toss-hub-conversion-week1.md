@@ -12,6 +12,9 @@ tags: [apps in toss, toss, mini app, solo developer, dev log]
 struct_exempt: [images]
 ---
 
+> **Update, November 19** — The promised week-three table, filled with the same columns, is in [the follow-up post](/posts/toss-hub-conversion-week3/). While building it I found that October 27–28 of the "three-day gap after the switch" below also appeared in apps that were never converted, so that explanation is corrected there too.
+{: .prompt-info }
+
 In [the hub conversion post](/posts/toss-hub-conversion/) I wrote that once two to three weeks of numbers were in, I would follow up on how return visits moved. It has been one week and a day. The first week already shows the direction, though, so here is week one. I will fill the same table again for week three in mid-November.
 
 As before, no amounts. Only user counts, ratios and ad impression counts.

@@ -12,6 +12,9 @@ alt_url: /ko/posts/toss-growth-program-gomoku/
 tags: [apps in toss, toss, mini app, gomoku, solo developer, dev log]
 ---
 
+> **Update, November 19** — The promised return results are in [the results post](/posts/toss-growth-program-d7-result/). Gomoku's promotion ended on November 5, and of the 21,676 new users in that period, 215 (1.0%) came back in the week after it ended.
+{: .prompt-info }
+
 Two days after I wrote about [Tap Bird being picked for the growth program](/posts/toss-growth-program-tap-bird/), I learned that [Gomoku](/posts/gomoku/) had been selected for the same program. The banner above is the official notice that was sitting on Gomoku's page in the Apps in Toss console.
 
 ## No email arrived

@@ -12,6 +12,9 @@ alt_url: /ko/posts/toss-growth-program-tap-bird/
 tags: [apps in toss, toss, mini app, solo developer, dev log]
 ---
 
+> **Update, November 19** — The promised return results are in [the results post](/posts/toss-growth-program-d7-result/). The promotion ended on November 6, and of the 21,471 new users in that period, 30 (0.14%) came back in the week after it ended.
+{: .prompt-info }
+
 On Friday, October 24, an email arrived from Apps in Toss. [Tap Bird](/posts/tap-bird/) had been selected for the **partner growth program**. I had never applied for it, so I read the email twice.
 
 ## What the program is
