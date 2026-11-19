@@ -11,6 +11,9 @@ alt_url: /ko/posts/adsense-fourth-rejection-index-recheck/
 tags: [seo, solo developer, dev log]
 ---
 
+> **Update, November 19** — The appeal for the same publisher account was rejected on November 19. With the account closed, applying for AdSense on this site is now impossible regardless of any conditions. The reapplication conditions below no longer mean anything; the wrap-up is in [the follow-up post](/posts/google-ads-appeal-rejected/).
+{: .prompt-info }
+
 At the end of [the third rejection post](/posts/adsense-rejected-again/) I wrote that I would write up the next result, and at the end of [the index gap post](/posts/search-console-index-gap/) I wrote that I would fill in the same table again in two to three weeks. This post pays off both promises at once.
 
 The result first. **The fourth application was rejected too.** On November 16 an email arrived titled "You need to fix issues found on your site," and the reason in the console was the same as the previous three: **low value content**.

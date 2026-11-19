@@ -12,6 +12,9 @@ struct_exempt: [images]
 tags: [admob, invalid traffic, ad policy, android, solo developer, dev log]
 ---
 
+> **Update, November 19** — The appeal was rejected. At 1:04 p.m. on November 19, fifteen hours after the acknowledgment email, a reply arrived with no reasoning: the account will not be reinstated, there will be no further payments, and no new account is allowed. The result and what follows from it are in [the follow-up post](/posts/google-ads-appeal-rejected/).
+{: .prompt-info }
+
 > **This post has no ending yet.** I filed the appeal on the night of November 18, and as I write this there is no answer. The acknowledgment email said processing may take a week or more. Every cause below is my own estimate from my own data, and I do not know whether the account will be restored.
 {: .prompt-warning }
 
