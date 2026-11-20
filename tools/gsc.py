@@ -31,11 +31,15 @@ OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'out')
 
 
 def client():
+    """요청마다 30초 제한을 건 클라이언트. 제한 없이 만들면 응답 하나가 멈췄을 때 전체가 한 시간씩 서 있었다(10/28)."""
+    import httplib2
     from google.oauth2 import service_account
+    from google_auth_httplib2 import AuthorizedHttp
     from googleapiclient.discovery import build
     creds = service_account.Credentials.from_service_account_file(
         KEY, scopes=['https://www.googleapis.com/auth/webmasters'])
-    return build('searchconsole', 'v1', credentials=creds, cache_discovery=False)
+    http = AuthorizedHttp(creds, http=httplib2.Http(timeout=30))
+    return build('searchconsole', 'v1', http=http, cache_discovery=False)
 
 
 def sitemap_urls():
@@ -44,8 +48,26 @@ def sitemap_urls():
     return re.findall(r'<loc>([^<]+)</loc>', xml)
 
 
+def _inspect_one(u):
+    """스레드마다 클라이언트를 따로 쓴다(googleapiclient 객체는 스레드 간 공유가 안전하지 않다)."""
+    import threading
+    loc = _inspect_one.local
+    if not hasattr(loc, 'sc'):
+        loc.sc = client()
+    for attempt in range(3):
+        try:
+            r = loc.sc.urlInspection().index().inspect(body={'inspectionUrl': u, 'siteUrl': SITE}).execute()
+            return r.get('inspectionResult', {}).get('indexStatusResult', {})
+        except Exception as e:  # noqa: BLE001
+            if attempt == 2:
+                return {'coverageState': f'ERROR {str(e)[:80]}'}
+            time.sleep(3)
+
+
 def cmd_inspect(a):
-    sc = client()
+    import threading
+    from concurrent.futures import ThreadPoolExecutor
+    _inspect_one.local = threading.local()
     urls = sitemap_urls()
     if a.only == 'ko':
         urls = [u for u in urls if '/ko/' in u]
@@ -56,26 +78,17 @@ def cmd_inspect(a):
     os.makedirs(OUT, exist_ok=True)
     path = os.path.join(OUT, f'gsc-inspect-{dt.date.today().isoformat()}.csv')
     counts = {}
-    with open(path, 'w', encoding='utf-8-sig', newline='') as f:
+    # 4개 동시 — 분당 600건 한도 아래(요청 하나에 1~2초).
+    with open(path, 'w', encoding='utf-8-sig', newline='') as f, ThreadPoolExecutor(4) as ex:
         w = csv.writer(f)
         w.writerow(['url', 'verdict', 'coverageState', 'lastCrawlTime', 'googleCanonical'])
-        for i, u in enumerate(urls, 1):
-            for attempt in range(3):
-                try:
-                    r = sc.urlInspection().index().inspect(body={'inspectionUrl': u, 'siteUrl': SITE}).execute()
-                    break
-                except Exception as e:  # noqa: BLE001
-                    if attempt == 2:
-                        r = {'inspectionResult': {'indexStatusResult': {'coverageState': f'ERROR {str(e)[:80]}'}}}
-                    else:
-                        time.sleep(3)
-            s = r.get('inspectionResult', {}).get('indexStatusResult', {})
+        for i, (u, s) in enumerate(zip(urls, ex.map(_inspect_one, urls)), 1):
             state = s.get('coverageState', '')
             counts[state] = counts.get(state, 0) + 1
             w.writerow([u, s.get('verdict', ''), state, s.get('lastCrawlTime', ''), s.get('googleCanonical', '')])
+            f.flush()
             if i % 50 == 0:
-                print(f'  {i}/{len(urls)}')
-            time.sleep(0.12)  # 분당 600건 아래로
+                print(f'  {i}/{len(urls)}', flush=True)
     print(f'{len(urls)}건 → {path}')
     for k, v in sorted(counts.items(), key=lambda x: -x[1]):
         print(f'  {v:4}  {k}')
