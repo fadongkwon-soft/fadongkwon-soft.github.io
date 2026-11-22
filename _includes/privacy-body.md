@@ -22,7 +22,7 @@ The Application does not gather precise information about the location of your m
 
 The Application's own code does not request or collect location, except in "Museum Map", "Korea Forest Map" and "Weekend Life", the hub app that contains both. As described in the Location Information section below, these apps use location only on your device and do not store or transmit it.
 
-However, the advertising SDK (Google AdMob / Google Mobile Ads SDK) may process your advertising ID, IP address and similar data on its own for ad delivery, analytics and fraud prevention, and may estimate the approximate location of your device from the IP address. This processing is performed by the advertising SDK, not by the Application's code, and is governed by Google's Privacy Policy and the Google Mobile Ads SDK data disclosures.
+However, third-party advertising SDKs (such as Google AdMob / Google Mobile Ads SDK and Unity LevelPlay / Unity Ads) may process your advertising ID, IP address, ad interactions, and diagnostic data on their own for ad delivery, analytics, and fraud prevention, and may estimate the approximate location of your device from the IP address. This processing is performed by the advertising SDKs, not by the Application's code, and is governed by each provider's privacy policy (including Google's Privacy Policy and the Unity Privacy Policy).
 
 
  
@@ -60,6 +60,7 @@ Please note that the Application utilizes third-party services that have their o
 
 Google Play Services
 AdMob
+[Unity Ads / Unity LevelPlay (Unity Privacy Policy)](https://unity.com/legal/privacy-policy)
 
 
  
@@ -105,7 +106,7 @@ This Privacy Policy may be updated from time to time for any reason. The Service
 
  
 
-This privacy policy is effective as of 2024-12-25. The Location Information section was added on 2026-11-08, and "Korea Forest Map" and "Weekend Life" were added to it on 2026-11-14. On the same day, the general location-related statements were tidied up.
+This privacy policy is effective as of 2024-12-25. The Location Information section was added on 2026-11-08, and "Korea Forest Map" and "Weekend Life" were added to it on 2026-11-14. On the same day, the general location-related statements were tidied up. On 2026-11-23, Unity Ads / Unity LevelPlay and the link to Unity's Privacy Policy were added.
 
 
 ## Your Consent
