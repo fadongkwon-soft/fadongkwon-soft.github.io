@@ -66,8 +66,8 @@ alt_url: /posts/toss-growth-program-mini-go/
 
 ## 지금 상태
 
-- 최종 번들 **`20261127-9`**은 단위 테스트 19건(365문제 전수 검증 포함)과 토스 게이트(`load_gate`·`settle_gate`·`banner_safe`·`hearts`·`leaderboard`·`toss-ad`·`ip_guard`)를 모두 통과해 **11월 27일 밤 토스 검수 요청(`REVIEWING`)**에 들어갔습니다.
-- 검수가 승인되면 바로 출시하고, 11월 30일 프로모션 시작 전에 콘솔에서 **연령대 타깃팅·최근 참여자 제외**와 **진입 경로 `?from=growth`**를 맞출 예정입니다.
+- 최종 번들 **`20261127-9`**은 단위 테스트 19건(365문제 전수 검증 포함)과 토스 게이트(`load_gate`·`settle_gate`·`banner_safe`·`hearts`·`leaderboard`·`toss-ad`·`ip_guard`)를 모두 통과해 **11월 27일 밤 자동 승인 및 라이브 출시까지 완료**했습니다.
+- 콘솔 성장 프로그램 설정도 마무리했습니다. 이동할 화면은 **`intoss://mini-go/?from=growth`**, 노출 대상은 **`신규 유저 · 만 40세 이상(40~49·50~59·60~69·70세 이상)`**으로 맞춰 두어 11월 30일 첫 유입부터 바로 적용됩니다.
 - 프로모션이 끝나고 일주일(D+7)이 지나면, 탭 버드·오목 때와 마찬가지로 몇 명이 실제로 다시 돌아왔는지 숫자를 있는 그대로 정리해 공유하겠습니다.
 
 만든 앱들은 [GAMES](/ko/games/)와 [APPS](/ko/apps/)에 있고, 일부는 [브라우저에서 바로](/ko/play/) 해볼 수 있습니다. 소식은 이 블로그와 [인스타그램(@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/)에서 전해드립니다.

@@ -67,8 +67,8 @@ Testing the bundle directly on my phone surfaced four quick improvements to the 
 
 ## Where things stand
 
-- Final bundle **`20261127-9`** passed all 19 unit tests (including exhaustive verification of all 365 puzzles) and every Toss compliance gate (`load_gate`, `settle_gate`, `banner_safe`, `hearts`, `leaderboard`, `toss-ad`, `ip_guard`), and was **submitted for Toss review (`REVIEWING`) on the night of November 27**.
-- Once approved, I will release it and configure the growth campaign's **age targeting, recent-participant exclusion, and `?from=growth` landing path** before November 30.
+- Final bundle **`20261127-9`** passed all 19 unit tests (including exhaustive verification of all 365 puzzles) and every Toss compliance gate (`load_gate`, `settle_gate`, `banner_safe`, `hearts`, `leaderboard`, `toss-ad`, `ip_guard`), and was **approved and deployed live on the night of November 27**.
+- The console growth program settings are also in place: landing path set to **`intoss://mini-go/?from=growth`**, and audience targeted to **new users aged 40+ (40–49, 50–59, 60–69, 70+)**, ready for the November 30 launch.
 - Seven days after the promotion ends (D+7), I will share the exact post-promotion return numbers just as I did for Tap Bird and Gomoku.
 
 My apps are listed under [GAMES](/games/) and [APPS](/apps/), and several can be tried [right in the browser](/play/). Updates are posted here and on [Instagram (@fadongkwon.soft)](https://www.instagram.com/fadongkwon.soft/).
