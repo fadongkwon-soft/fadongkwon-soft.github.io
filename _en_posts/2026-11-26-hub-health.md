@@ -35,6 +35,9 @@ Contains ads (banner and optional rewarded ads).
 ![Health Life screenshot 3](/assets/img/20261126_hub-health/hub-health-shot-en-3.png){: w="360" }
 ![Health Life screenshot 4](/assets/img/20261126_hub-health/hub-health-shot-en-4.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='8hybC-Do7do' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.hub_health>
 

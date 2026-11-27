@@ -36,6 +36,9 @@ Contains ads (banner and optional rewarded ads). Search, nutrition details, and 
 ![Korean Food Calorie Guide screenshot 3](/assets/img/20261126_food-calorie/food-calorie-shot-ko-3.png){: w="360" }
 ![Korean Food Calorie Guide screenshot 4](/assets/img/20261126_food-calorie/food-calorie-shot-ko-4.png){: w="360" }
 
+## Gameplay Video
+{% include embed/youtube.html id='nQekEryT00k' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.food_calorie>
 

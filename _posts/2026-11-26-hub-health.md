@@ -33,6 +33,9 @@ alt_url: /posts/hub-health/
 ![파동권 건강생활 스크린샷 3](/assets/img/20261126_hub-health/hub-health-shot-ko-3.png){: w="360" }
 ![파동권 건강생활 스크린샷 4](/assets/img/20261126_hub-health/hub-health-shot-ko-4.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='8hybC-Do7do' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.hub_health>
 

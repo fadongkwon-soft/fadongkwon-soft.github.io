@@ -37,6 +37,9 @@ alt_url: /posts/stretch-routine/
 ![스트레칭 루틴 스크린샷 3](/assets/img/20261126_stretch-routine/stretch-routine-shot-ko-3.png){: w="360" }
 ![스트레칭 루틴 스크린샷 4](/assets/img/20261126_stretch-routine/stretch-routine-shot-ko-4.png){: w="360" }
 
+## 플레이 영상
+{% include embed/youtube.html id='K9ZhH41DgOk' %}
+
 ## Download
 - Google Play: <https://play.google.com/store/apps/details?id=com.fadongkwon.stretch_routine>
 
