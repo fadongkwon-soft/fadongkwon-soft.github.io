@@ -4,7 +4,7 @@ description: "Following Tap Bird and Gomoku in October, Quick Go is my third app
 image:
   path: /assets/img/20261127_toss-growth-program-mini-go/cover.png
   alt: Apps in Toss growth program selection email — Quick Go has been selected for the growth program
-date: 2026-11-27 20:45:00 +0900
+date: 2026-11-27 20:40:00 +0900
 pin: true
 categories: [Devlog, Platform]
 permalink: /posts/toss-growth-program-mini-go/
